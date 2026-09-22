@@ -7,10 +7,13 @@ score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
 full-inference source/norm cells and contrasts. The v3 input lock contains
 246 generated numerical fields and retains the v4 diagnostic boundaries.
+Literal numerical references in the manuscript and generated tables are checked
+against the generated keys; an unknown key also raises a LaTeX PackageError.
 
 ```sh
 python -m pip install numpy matplotlib torch
 python scripts/build_paper_assets.py
+python tests/test_numeric_keys.py
 python reproducibility/operator_smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex
 ```

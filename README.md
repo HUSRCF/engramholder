@@ -2,6 +2,7 @@
 
 **2026-09-23：完整推理四格与v4机制边界已整合，新增近邻定位与复现范围说明；本地编译成功，排版由作者在Overleaf检查。** 写作主分支是 `main`；本地未提交改动不代表远端已同步。当前状态以[填稿进度](reports/manuscript_fill_20260922.md)为准，历史报告保留各自日期。
 
+- [正式审读修改与数值键保护](reports/editorial_review_response_20260923.md)；[作者提交清单](notes/writing_branch_20260922/author_submission_checklist.md)。
 - [9月23日稿件更新](reports/full_inference_manuscript_update_20260923.md)与[剩余交付优先级](reports/submission_priorities_20260923.md)。
 - [最新PDF](build/iclr2027_conference.pdf)（本机构建产物，不随Git上传）；[表图生成脚本](scripts/build_paper_assets.py)与[数值来源映射](generated/cell_sources.json)。
 - [当前章节与写作任务](notes/writing_branch_20260922/skeleton_files.md)：入口 `iclr2027_conference.tex`，正文在 `sections/`，附录在 `appendices/`。

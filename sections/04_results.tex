@@ -99,7 +99,9 @@ $a\in\{N,R\}$. Each trained rotation is paired with the same-seed native model.
 We inject $m_Nd_N$, $m_Rd_N$, $m_Nd_R$, or $m_Rd_R$ throughout c4/s5 inference,
 scaling completed pair residuals rather than factor increments. Norms use no
 reference-structure mask. All 720 pure and mixed predictions are rerun on the
-same backend; none fails.
+same backend; none fails. The mixed residuals are inference-time interventions
+and need not correspond to outputs of the trained factor head or states
+encountered during training.
 
 Here, \emph{direction source} includes learned content and relative pair/channel
 magnitudes after global normalization, unlike the original channel-rotation
@@ -147,7 +149,7 @@ task response favored Native despite smaller mean norms
 endpoint differ here. These results therefore do not form a same-model mechanism
 chain or identify how training produced the residuals.
 
-\subsection{Native orientation does not guarantee gains or superiority over generic heads}
+\subsection{Competitiveness and limits across predictors}
 \label{sec:limits_results}
 Table~\ref{tab:coverage} places direction effects next to absolute performance
 and the generic comparator. In the matched Protenix Train384 follow-up, Native

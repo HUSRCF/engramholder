@@ -3778,6 +3778,11 @@
   "verified_target_interactions": 144,
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
+  "numeric_key_audit": {
+    "literal_references": 264,
+    "distinct_keys": 202,
+    "missing": []
+  },
   "pending": [],
   "unrun": [
     "pt96_c96_gplus"

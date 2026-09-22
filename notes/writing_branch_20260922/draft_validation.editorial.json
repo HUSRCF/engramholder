@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-09-22T18:17:48.938127+00:00",
+  "compile_exit_code": 0,
+  "numeric_keys": {
+    "literal_references": 264,
+    "distinct_keys": 202,
+    "missing": []
+  },
+  "numerical_values_unchanged_from_previous_commit": true,
+  "literal_guard_tests_passed": 3,
+  "deliberate_missing_key_tex_failed": true,
+  "generated_numeric_fields": 246,
+  "pdf_sha256": "bff2f15496a2ad7bbecdd6f22a03717ba2e294c46b4bb7316478dd29bbd2de76",
+  "pdf_visual_or_page_check": "not performed per user instruction; author will use Overleaf",
+  "anonymous_artifact": "build/anonymous_artifact_v7.zip",
+  "anonymous_artifact_sha256": "b7da75126af4b76314e60a5676e77889adad5d9a48072e67ffeaee6e111494d0",
+  "end_to_end_prediction_entry_validated": false,
+  "author_disclosure_and_license_confirmation": "pending author; moved from manuscript prose into author checklist, not marked complete"
+}

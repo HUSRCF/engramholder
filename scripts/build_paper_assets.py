@@ -95,6 +95,22 @@ def verify_full_cross():
         assert np.max(abs(arrays['Edir']+arrays['Eamp']-arrays['NN_minus_RR']))<1e-12
     return checked
 
+def validate_numeric_keys(root, cells):
+    """Check literal result references in current manuscript and generated tables."""
+    files=[root/'iclr2027_conference.tex']
+    for folder in ['sections','appendices','generated']:
+        files.extend(sorted((root/folder).glob('*.tex')))
+    uses={}
+    for path in files:
+        for line,text in enumerate(path.read_text().splitlines(),1):
+            text=re.sub(r'(?<!\\)%.*','',text)
+            for key in re.findall(r'\\result\{([^{}]+)\}',text):
+                uses.setdefault(key,[]).append(f'{path.relative_to(root)}:{line}')
+    if not uses:raise ValueError('No literal numerical references found in the manuscript')
+    missing={key:locations for key,locations in uses.items() if key not in cells}
+    if missing:raise ValueError('Missing numerical keys: '+json.dumps(missing,sort_keys=True))
+    return {'literal_references':sum(map(len,uses.values())), 'distinct_keys':len(uses), 'missing':[]}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
@@ -246,8 +262,9 @@ def main():
     (OUT/'scope_table_rows.tex').write_text('\n'.join(' & '.join([label.replace('_',r'\_'),status,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for label,key,status in scope)+'\n')
     for table in ["main_table_rows", "paired_table_rows", "scope_table_rows"]:
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
+    key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

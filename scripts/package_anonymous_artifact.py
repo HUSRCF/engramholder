@@ -34,6 +34,7 @@ lock={name:hashlib.sha256((DEST/name).read_bytes()).hexdigest() for name in inpu
 (DEST/lockpath).parent.mkdir(parents=True,exist_ok=True)
 (DEST/lockpath).write_text(json.dumps(lock,indent=2)+'\n')
 write(ROOT/'scripts/build_paper_assets.py',DEST/'scripts/build_paper_assets.py')
+write(ROOT/'tests/test_numeric_keys.py',DEST/'tests/test_numeric_keys.py')
 (DEST/'README.md').write_text((DEST/'reproducibility/README.md').read_text())
 source_manifest=json.loads((DEST/'reproducibility/source_manifest.json').read_text())
 for name,row in source_manifest.items():
@@ -42,6 +43,7 @@ for name,row in source_manifest.items():
     row['redaction']='Only host/user/path strings, when present; algorithms unchanged.'
 (DEST/'reproducibility/source_manifest.json').write_text(json.dumps(source_manifest,indent=2)+'\n')
 subprocess.run([sys.executable,str(DEST/'scripts/build_paper_assets.py')],check=True,cwd=DEST)
+subprocess.run([sys.executable,str(DEST/'tests/test_numeric_keys.py')],check=True,cwd=DEST)
 subprocess.run([sys.executable,str(DEST/'reproducibility/operator_smoke.py')],check=True,cwd=DEST)
 a=json.loads((ROOT/'generated/cell_sources.json').read_text())['cells']
 b=json.loads((DEST/'generated/cell_sources.json').read_text())['cells']

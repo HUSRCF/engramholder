@@ -19,7 +19,14 @@
 % Only genuinely unfinished results retain a visible marker.
 \newcommand{\pending}{\textit{Pending}}
 
-\newcommand{\result}[1]{\csname data:#1\endcsname}
+\newcommand{\result}[1]{%
+  \ifcsname data:#1\endcsname
+    \csname data:#1\endcsname
+  \else
+    \PackageError{paper}{Missing numerical key: #1}%
+      {Check the key and regenerate the paper assets.}%
+  \fi
+}
 \input{generated/numbers}
 
 \begin{document}

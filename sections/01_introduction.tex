@@ -35,9 +35,9 @@ The empirical evidence separates controlled effects from their scope. The origin
 comparisons and a separately locked length study establish native-direction
 effects and their tested scope. A subsequent four-cell OpenFold experiment
 \citep{ahdritz2024openfold} directly tests whether rotation sensitivity differs
-between factor and generic parameterizations. We present this interaction first
-because it sharpens the scientific question, while retaining its status as a
-follow-up on already observed panels. A matched Protenix Train384 comparison
+between factor and generic parameterizations. This is an observed-panel
+follow-up; the original Protenix and length studies retain their prospective
+study identities. A matched Protenix Train384 comparison
 also favors Native over G+, whereas OpenFold's generic head can outperform
 Native. OpenFold does not establish the direction advantage in every setting,
 and the tested non-OPM AtlasFold interface yields no established benefit.
@@ -53,9 +53,9 @@ for an unseen predictor.
 
 Our contributions are an empirical parameterization-by-orientation interaction
 under a matched training recipe; a concrete query-anchored residual construction
-with explicit zero-initialization and local spectral controls; and an assessment
-of transfer and limits across predictors, training-set sizes, and adaptation
-lengths. Together they support the following claim: \emph{native update
+with explicit zero-initialization and local spectral controls; and a
+norm-controlled full-inference test together with an assessment of transfer
+and limits across predictors, training-set sizes, and adaptation lengths. Together they support the following claim: \emph{native update
 orientation can matter for constrained adaptation, but its effect depends on
 the parameterization and frozen predictor; preserving native directions neither
 guarantees adaptation gains nor makes native factor heads uniformly superior
