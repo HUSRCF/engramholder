@@ -412,7 +412,7 @@ intervention and cannot identify a direction-only effect. A 24-target final-cycl
 retaining-effect contrast is −0.00325 [−0.00690, 0.00049]; differing preceding
 states prevent a pure directional interpretation. All 58 primary finite-difference
 exceptions are retained. These are loss diagnostics, not new folding results
-or evidence of mediation; see the [v4 report](../reports/gradient_hpc3_v4_20260920/results.md).
+or evidence of mediation; see the [v4 report](../reports/mechanism_evidence/gradient_hpc3_v4_20260920/results.md).
 
 The shared-parameter transfer study stopped at its numerical smoke gate. The
 parameter gradient chain and FP64 linear-writer check agree, but some shared

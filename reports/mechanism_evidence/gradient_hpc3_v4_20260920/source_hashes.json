@@ -1,0 +1,8 @@
+{
+  "scripts/run_gradient_v4.py": "b09552e47869cf62c3362788d713bf1d35d3fd49b16b8517e26637eab6f09282",
+  "scripts/run_gradient_v4_e3.py": "34907a4252a451d48bd52d3eabee3460ac745f56233aa2d0bb0bc1ad63cd85c3",
+  "scripts/analyze_gradient_v4.py": "e18f54a7d39bbfb347827a642535970b16f548ce806712f70e333a28c6b275ce",
+  "scripts/analyze_gradient_v4_e3.py": "5243dfa99f8c02bda6b579f046db3eea02a1a1bf19b6d73bafc52096fb16ae04",
+  "src/engramfold/experiments/learned_direction.py": "a65b9bb833a97f755ee520e2f7f8289041c61f28108020e6da4189558726955a",
+  "src/engramfold/experiments/gradient_runtime_v3.py": "72264571ee5508d3601c94e7a2a6cabb5cf9e7e4f571fff49b02db5a879516fd"
+}

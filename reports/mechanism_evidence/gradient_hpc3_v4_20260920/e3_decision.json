@@ -1,0 +1,7 @@
+{
+  "launch": true,
+  "conditional": true,
+  "requires_all_formal_reports_pass": true,
+  "minimum_remaining_seconds": 12600,
+  "reason": "time/resource/coverage only; guard repeats at execution"
+}

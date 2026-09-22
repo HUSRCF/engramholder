@@ -1,0 +1,467 @@
+{
+  "n24_tangent_native_s20260923_u384": {
+    "sha256": "44a28feace3c1ec2b9e922a603aaaaad2077017b044131a1ee327cf58e0c7b8a",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": null,
+      "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_native_s20260924_u384": {
+    "sha256": "06719c3efa01dc0a3258df49441bd73e583053538cc2ab98de772e4f497aa0c5",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": null,
+      "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_native_s20260925_u384": {
+    "sha256": "20199cb55046ddb5ded813efa5212c6a4160003c79b7bb1aecdce0308f3f7bda",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": null,
+      "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261001_s20260923_u384": {
+    "sha256": "95047c4243ff03ff1dbef0298edade8c72b8cbe437ad4a1951c0cd294489ef62",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261001,
+      "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261001_s20260924_u384": {
+    "sha256": "5d898c4c429a3a111a80798e85bb81ddafbaf3751fd9f4238bb58485625074d7",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261001,
+      "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261001_s20260925_u384": {
+    "sha256": "4f60aac421f213f682ef8f6db6b0f41f78d01e039d6297eb7d40fd91c026c4ae",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261001,
+      "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261002_s20260923_u384": {
+    "sha256": "909d7cbbec179c10515879184baafc4fd7b32768b18f4317277642ebeb96b5b4",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261002,
+      "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261002_s20260924_u384": {
+    "sha256": "f2c74919a2c62fd9f7805bea862c8bcf72466ef92737e7285b71eccbbe6d2cf5",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261002,
+      "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261002_s20260925_u384": {
+    "sha256": "5f4b47995a1408bfa7c1a4230688b241324867fb1e823d49450357ef4c448863",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261002,
+      "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261003_s20260923_u384": {
+    "sha256": "aeaee23d481405ec951e8fe33405014f07e01a9dbcf6df750682955a4bd6110f",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261003,
+      "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261003_s20260924_u384": {
+    "sha256": "6faa4bc9e1444f524f067d1c2a2015b3f09527dacae3a6af6d56720792dcd34e",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261003,
+      "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n24_tangent_r20261003_s20260925_u384": {
+    "sha256": "60f86e2c69a6d971e032e4656bb2524a84a618b3683e28cdf0dac5935c2ad56b",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 384,
+    "geometry": {
+      "order": "tangent",
+      "rotation_seed": 20261003,
+      "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n96_full_native_s20260923_u1536": {
+    "sha256": "3c946d196accd6a904e1e075219cade0f0d95916a5f340c58a0f25ec6b93b795",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": null,
+      "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n96_full_native_s20260924_u1536": {
+    "sha256": "07291a77ab7730ef3eb186a834f12f8444f3c6313b9ed2d9a9716c96f1ec3362",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": null,
+      "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "n96_full_native_s20260925_u1536": {
+    "sha256": "a407b7b09286e63d9bf25dfe1261f3bafceeed06c4340fcb605f9b5db01454c9",
+    "schema": "engramfold.native_geometry_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": null,
+      "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261001_s20260923": {
+    "sha256": "10f8cd117f44ae48947e40140795f75055fac2e8f1dac3fdb662777775923e11",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261001,
+      "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261001_s20260924": {
+    "sha256": "b5f22d73f2dc175054f01e8154ff388a258f745937a2db13154f9eece96fd302",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261001,
+      "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261001_s20260925": {
+    "sha256": "c9412a056697ccdb3d67f55c952ab7bd4250677a2d29daa5296f275c17713685",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261001,
+      "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261002_s20260923": {
+    "sha256": "198a5c3ea0032155efbf4f3293d800841233900b69960d6ea1f7ae5e27b5e1c5",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261002,
+      "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261002_s20260924": {
+    "sha256": "a0dff7d08704934cf2ab1c4c0ddf9691dccd86daec9cbcbe79627850eb6152c5",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261002,
+      "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261002_s20260925": {
+    "sha256": "f257f59639018acc06dbc99de682e72f6892087ec973c6b29576f93633cf9172",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261002,
+      "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261003_s20260923": {
+    "sha256": "4e763769a4f6693063e5c2d0a66a9d4db3b0f7d317090ae41ae6b9607ca7bdf0",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261003,
+      "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261003_s20260924": {
+    "sha256": "a4a78679f51468cf9b05778b0b959e64f7cf778535415a411c8b9bbf44ba92d8",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261003,
+      "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  },
+  "C_mini_ordinary_r20261003_s20260925": {
+    "sha256": "08a53aad5594dc89b5a0ba550c43d29750b2d8e0b707520b722d1bb8c967f327",
+    "schema": "engramfold.direction_extension_checkpoint.v1",
+    "step": 1536,
+    "geometry": {
+      "order": "full",
+      "rotation_seed": 20261003,
+      "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3",
+      "rotation_kind": "ordinary"
+    },
+    "base": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81",
+    "feature_provenance": {
+      "root": "/media/PM982/engramfold/runs/native_direction96_20260919/features",
+      "index_sha256": "1f36c96ff1d942209297493157b8f52c6fb689aa76f9424f90ca882f9f73eb96",
+      "model_name": "esm2_t12_35M_UR50D",
+      "checkpoint_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+      "input_dim": 480,
+      "layer": 12
+    }
+  }
+}

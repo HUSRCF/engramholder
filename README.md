@@ -6,6 +6,7 @@
 - [当前章节与写作任务](notes/writing_branch_20260922/skeleton_files.md)：入口 `iclr2027_conference.tex`，正文在 `sections/`，附录在 `appendices/`。
 - [已确认主线与Introduction候选](notes/writing_branch_20260922/structure_and_opening.md)：参数化×方向交互 → 方法构造 → 迁移与边界。
 
+- [机制证据归档：v4](reports/mechanism_evidence/gradient_hpc3_v4_20260920/README.md)：正式协议、逐目标与精简逐条件数据、独立复算，以及完整推理干预的未启动候选；保留源码哈希差异和数值边界。
 - [Protenix匹配G+最终结果](reports/protenix_gplus384_results_20260922.md)：3组训练与432次预测全部完成，补齐Train384两个面板的G+；[三项审阅意见](reports/reviewer_priorities_20260922.md)保留决策过程。
 - [9月22日完成结果更新](reports/results_update_20260922.md)：OpenFold旋转G+交互、AtlasFold完整边界与ESMFold2最终评分。
 - [证据审阅报告](reports/evidence_review.md)：核心问题、直接核对的数字、可支持与不可支持的解释，以及仍待补齐的记录。

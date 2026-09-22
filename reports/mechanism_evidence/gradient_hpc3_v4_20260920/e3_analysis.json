@@ -1,0 +1,413 @@
+{
+  "complete": true,
+  "expected_cases": 864,
+  "completed_cases": 864,
+  "failures": [],
+  "chains": [
+    {
+      "target_id": "1a44_A",
+      "retaining_effect_native": -0.014745116233825684,
+      "retaining_effect_rotated": -0.012088652010317202,
+      "retaining_effect_difference": -0.0026564642235084816,
+      "norm_ratio_native": 1.0046423990748352,
+      "norm_ratio_rotated": 1.0930578052965183,
+      "norm_ratio_difference": -0.08841540622168309,
+      "baseline_native_loss": 1.964052849345737,
+      "baseline_rotated_loss": 1.9472686979505751,
+      "removed_native_loss": 1.9493077331119113,
+      "removed_rotated_loss": 1.935180045940258
+    },
+    {
+      "target_id": "1bk7_A",
+      "retaining_effect_native": -0.007393055491977268,
+      "retaining_effect_rotated": 0.0009989870919121637,
+      "retaining_effect_difference": -0.008392042583889432,
+      "norm_ratio_native": 1.0087408398505318,
+      "norm_ratio_rotated": 1.0692587157903795,
+      "norm_ratio_difference": -0.0605178759398477,
+      "baseline_native_loss": 1.8179848459031847,
+      "baseline_rotated_loss": 1.8299974512170862,
+      "removed_native_loss": 1.8105917904112074,
+      "removed_rotated_loss": 1.8309964383089985
+    },
+    {
+      "target_id": "1ccz_A",
+      "retaining_effect_native": 0.010971281263563368,
+      "retaining_effect_rotated": 0.007349398401048448,
+      "retaining_effect_difference": 0.0036218828625149205,
+      "norm_ratio_native": 0.7210297913235222,
+      "norm_ratio_rotated": 0.8946062814532387,
+      "norm_ratio_difference": -0.17357649012971654,
+      "baseline_native_loss": 1.4124397436777751,
+      "baseline_rotated_loss": 1.4286995243143152,
+      "removed_native_loss": 1.4234110249413385,
+      "removed_rotated_loss": 1.4360489227153637
+    },
+    {
+      "target_id": "1j84_A",
+      "retaining_effect_native": -0.00476886166466607,
+      "retaining_effect_rotated": 0.0008390567920826099,
+      "retaining_effect_difference": -0.00560791845674868,
+      "norm_ratio_native": 1.0121205725452052,
+      "norm_ratio_rotated": 1.0938251596415647,
+      "norm_ratio_difference": -0.08170458709635953,
+      "baseline_native_loss": 1.7915762662887573,
+      "baseline_rotated_loss": 1.7906815520039312,
+      "removed_native_loss": 1.7868074046240912,
+      "removed_rotated_loss": 1.7915206087960138
+    },
+    {
+      "target_id": "1wba_A",
+      "retaining_effect_native": -0.006032228469848633,
+      "retaining_effect_rotated": 0.0027706534774215134,
+      "retaining_effect_difference": -0.008802881947270146,
+      "norm_ratio_native": 1.0256255459441932,
+      "norm_ratio_rotated": 1.0445248913387248,
+      "norm_ratio_difference": -0.01889934539453164,
+      "baseline_native_loss": 1.8958632283740573,
+      "baseline_rotated_loss": 1.8966515373300623,
+      "removed_native_loss": 1.8898309999042087,
+      "removed_rotated_loss": 1.8994221908074838
+    },
+    {
+      "target_id": "1yn9_A",
+      "retaining_effect_native": 0.02452520529429118,
+      "retaining_effect_rotated": 0.011040978961520724,
+      "retaining_effect_difference": 0.013484226332770455,
+      "norm_ratio_native": 0.9255517188384087,
+      "norm_ratio_rotated": 0.9877191099108273,
+      "norm_ratio_difference": -0.06216739107241864,
+      "baseline_native_loss": 1.4429230557547674,
+      "baseline_rotated_loss": 1.4937965472539265,
+      "removed_native_loss": 1.4674482610490587,
+      "removed_rotated_loss": 1.5048375262154474
+    },
+    {
+      "target_id": "1dua_A",
+      "retaining_effect_native": 0.0003025929133097331,
+      "retaining_effect_rotated": -0.0038697278058087386,
+      "retaining_effect_difference": 0.0041723207191184716,
+      "norm_ratio_native": 0.9379814049412796,
+      "norm_ratio_rotated": 1.0093971385659637,
+      "norm_ratio_difference": -0.07141573362468412,
+      "baseline_native_loss": 1.4432110124164157,
+      "baseline_rotated_loss": 1.4890879745836612,
+      "removed_native_loss": 1.4435136053297255,
+      "removed_rotated_loss": 1.4852182467778523
+    },
+    {
+      "target_id": "1g69_A",
+      "retaining_effect_native": -0.0038247505823771157,
+      "retaining_effect_rotated": 0.009135087331136068,
+      "retaining_effect_difference": -0.012959837913513184,
+      "norm_ratio_native": 0.8879857203357264,
+      "norm_ratio_rotated": 0.8736134691824268,
+      "norm_ratio_difference": 0.014372251153299653,
+      "baseline_native_loss": 1.2641507784525554,
+      "baseline_rotated_loss": 1.2840944705186066,
+      "removed_native_loss": 1.2603260278701782,
+      "removed_rotated_loss": 1.2932295578497428
+    },
+    {
+      "target_id": "1h5y_A",
+      "retaining_effect_native": -0.005823638704087999,
+      "retaining_effect_rotated": -0.004795604281955295,
+      "retaining_effect_difference": -0.0010280344221327035,
+      "norm_ratio_native": 0.9115480809531102,
+      "norm_ratio_rotated": 0.8806503251600558,
+      "norm_ratio_difference": 0.030897755793054427,
+      "baseline_native_loss": 1.3022134039137099,
+      "baseline_rotated_loss": 1.3079438209533691,
+      "removed_native_loss": 1.296389765209622,
+      "removed_rotated_loss": 1.303148216671414
+    },
+    {
+      "target_id": "1lxz_A",
+      "retaining_effect_native": 0.01656190554300944,
+      "retaining_effect_rotated": 0.00863351203777172,
+      "retaining_effect_difference": 0.007928393505237722,
+      "norm_ratio_native": 1.0354113717196967,
+      "norm_ratio_rotated": 1.0987549027210497,
+      "norm_ratio_difference": -0.06334353100135304,
+      "baseline_native_loss": 1.785440829065111,
+      "baseline_rotated_loss": 1.7804415535043787,
+      "removed_native_loss": 1.8020027346081204,
+      "removed_rotated_loss": 1.7890750655421503
+    },
+    {
+      "target_id": "1m1u_A",
+      "retaining_effect_native": 0.0048408110936482745,
+      "retaining_effect_rotated": 0.011160700409500688,
+      "retaining_effect_difference": -0.006319889315852413,
+      "norm_ratio_native": 0.8524831245027346,
+      "norm_ratio_rotated": 0.9752090991937921,
+      "norm_ratio_difference": -0.1227259746910575,
+      "baseline_native_loss": 1.435043281979031,
+      "baseline_rotated_loss": 1.4525909997798778,
+      "removed_native_loss": 1.4398840930726793,
+      "removed_rotated_loss": 1.4637517001893785
+    },
+    {
+      "target_id": "1pxr_A",
+      "retaining_effect_native": 0.009226176473829482,
+      "retaining_effect_rotated": 0.008340111485234013,
+      "retaining_effect_difference": 0.0008860649885954683,
+      "norm_ratio_native": 1.0741822881807137,
+      "norm_ratio_rotated": 1.1699902583128536,
+      "norm_ratio_difference": -0.09580797013213993,
+      "baseline_native_loss": 1.5828266673617892,
+      "baseline_rotated_loss": 1.6381365325715807,
+      "removed_native_loss": 1.5920528438356187,
+      "removed_rotated_loss": 1.6464766440568146
+    },
+    {
+      "target_id": "1c91_A",
+      "retaining_effect_native": -0.01656173335181342,
+      "retaining_effect_rotated": -0.0072160738485830805,
+      "retaining_effect_difference": -0.00934565950323034,
+      "norm_ratio_native": 0.991236918498516,
+      "norm_ratio_rotated": 1.0762847801270896,
+      "norm_ratio_difference": -0.08504786162857358,
+      "baseline_native_loss": 1.6433129840426974,
+      "baseline_rotated_loss": 1.6185815113562125,
+      "removed_native_loss": 1.626751250690884,
+      "removed_rotated_loss": 1.6113654375076294
+    },
+    {
+      "target_id": "2bod_A",
+      "retaining_effect_native": -0.00986260837978787,
+      "retaining_effect_rotated": -0.0022154340037593137,
+      "retaining_effect_difference": -0.007647174376028556,
+      "norm_ratio_native": 1.0774171969392397,
+      "norm_ratio_rotated": 1.048077074350243,
+      "norm_ratio_difference": 0.029340122588996653,
+      "baseline_native_loss": 1.681024392445882,
+      "baseline_rotated_loss": 1.706672778836003,
+      "removed_native_loss": 1.6711617840660944,
+      "removed_rotated_loss": 1.7044573448322438
+    },
+    {
+      "target_id": "2c6z_A",
+      "retaining_effect_native": -0.0017112493515014648,
+      "retaining_effect_rotated": -0.0052740662186234084,
+      "retaining_effect_difference": 0.0035628168671219436,
+      "norm_ratio_native": 1.0655953540942043,
+      "norm_ratio_rotated": 1.089654389460471,
+      "norm_ratio_difference": -0.024059035366266857,
+      "baseline_native_loss": 1.6863496038648818,
+      "baseline_rotated_loss": 1.7646723279246577,
+      "removed_native_loss": 1.6846383545133803,
+      "removed_rotated_loss": 1.7593982617060344
+    },
+    {
+      "target_id": "2cex_A",
+      "retaining_effect_native": 0.005780683623419868,
+      "retaining_effect_rotated": 0.020934144655863445,
+      "retaining_effect_difference": -0.015153461032443577,
+      "norm_ratio_native": 0.8092648390784044,
+      "norm_ratio_rotated": 0.8865668870017814,
+      "norm_ratio_difference": -0.07730204792337703,
+      "baseline_native_loss": 1.4209396574232314,
+      "baseline_rotated_loss": 1.5833291080262926,
+      "removed_native_loss": 1.4267203410466511,
+      "removed_rotated_loss": 1.604263252682156
+    },
+    {
+      "target_id": "2ioy_A",
+      "retaining_effect_native": 0.0031051370832655164,
+      "retaining_effect_rotated": 0.0019496546851264106,
+      "retaining_effect_difference": 0.0011554823981391059,
+      "norm_ratio_native": 0.8136464289132487,
+      "norm_ratio_rotated": 0.8519569484238559,
+      "norm_ratio_difference": -0.038310519510607266,
+      "baseline_native_loss": 1.1690113412009344,
+      "baseline_rotated_loss": 1.1668322174637407,
+      "removed_native_loss": 1.1721164782842,
+      "removed_rotated_loss": 1.168781872148867
+    },
+    {
+      "target_id": "2iry_A",
+      "retaining_effect_native": -0.00415390067630344,
+      "retaining_effect_rotated": 0.0005453471784238462,
+      "retaining_effect_difference": -0.004699247854727286,
+      "norm_ratio_native": 0.956480036992474,
+      "norm_ratio_rotated": 0.9476544561470499,
+      "norm_ratio_difference": 0.008825580845424064,
+      "baseline_native_loss": 1.6744136412938435,
+      "baseline_rotated_loss": 1.6732610684854012,
+      "removed_native_loss": 1.6702597406175401,
+      "removed_rotated_loss": 1.673806415663825
+    },
+    {
+      "target_id": "1dvn_A",
+      "retaining_effect_native": 0.010895278718736436,
+      "retaining_effect_rotated": 0.03627324987340857,
+      "retaining_effect_difference": -0.025377971154672132,
+      "norm_ratio_native": 0.9686071420440084,
+      "norm_ratio_rotated": 1.0198636660487124,
+      "norm_ratio_difference": -0.05125652400470393,
+      "baseline_native_loss": 1.553918719291687,
+      "baseline_rotated_loss": 1.5598831662425288,
+      "removed_native_loss": 1.5648139980104234,
+      "removed_rotated_loss": 1.5961564161159374
+    },
+    {
+      "target_id": "1hb1_A",
+      "retaining_effect_native": 0.039129151238335505,
+      "retaining_effect_rotated": 0.021919806798299152,
+      "retaining_effect_difference": 0.017209344440036353,
+      "norm_ratio_native": 0.9720332796201868,
+      "norm_ratio_rotated": 1.012027207690175,
+      "norm_ratio_difference": -0.03999392806998825,
+      "baseline_native_loss": 1.510808269182841,
+      "baseline_rotated_loss": 1.5836576399979767,
+      "removed_native_loss": 1.5499374204211764,
+      "removed_rotated_loss": 1.605577446796276
+    },
+    {
+      "target_id": "1jcf_A",
+      "retaining_effect_native": -0.002403471204969618,
+      "retaining_effect_rotated": 0.00040175738158049407,
+      "retaining_effect_difference": -0.002805228586550112,
+      "norm_ratio_native": 0.9651195277278963,
+      "norm_ratio_rotated": 0.9312060530621417,
+      "norm_ratio_difference": 0.03391347466575467,
+      "baseline_native_loss": 1.2492665582233005,
+      "baseline_rotated_loss": 1.265235150301898,
+      "removed_native_loss": 1.2468630870183308,
+      "removed_rotated_loss": 1.2656369076834784
+    },
+    {
+      "target_id": "1v79_A",
+      "retaining_effect_native": 0.0048677391476101345,
+      "retaining_effect_rotated": 0.01527294847700331,
+      "retaining_effect_difference": -0.010405209329393175,
+      "norm_ratio_native": 0.9236591589561721,
+      "norm_ratio_rotated": 0.9402452769173585,
+      "norm_ratio_difference": -0.016586117961186364,
+      "baseline_native_loss": 1.5846156411700778,
+      "baseline_rotated_loss": 1.6746878314901281,
+      "removed_native_loss": 1.589483380317688,
+      "removed_rotated_loss": 1.6899607799671315
+    },
+    {
+      "target_id": "1woo_A",
+      "retaining_effect_native": 0.0010419156816270617,
+      "retaining_effect_rotated": 0.01174819027936017,
+      "retaining_effect_difference": -0.01070627459773311,
+      "norm_ratio_native": 0.8887904991574784,
+      "norm_ratio_rotated": 0.9351506292762843,
+      "norm_ratio_difference": -0.04636013011880591,
+      "baseline_native_loss": 1.5564156373341878,
+      "baseline_rotated_loss": 1.5467017535810117,
+      "removed_native_loss": 1.5574575530158148,
+      "removed_rotated_loss": 1.5584499438603718
+    },
+    {
+      "target_id": "1z2n_A",
+      "retaining_effect_native": 0.009087231424119737,
+      "retaining_effect_rotated": 0.007091818032441316,
+      "retaining_effect_difference": 0.001995413391678421,
+      "norm_ratio_native": 0.9507206631017472,
+      "norm_ratio_rotated": 0.9512572685060083,
+      "norm_ratio_difference": -0.0005366054042611479,
+      "baseline_native_loss": 1.6187294986512926,
+      "baseline_rotated_loss": 1.687983027210942,
+      "removed_native_loss": 1.6278167300754123,
+      "removed_rotated_loss": 1.6950748452433833
+    }
+  ],
+  "metrics": {
+    "retaining_effect_native": {
+      "n": 24,
+      "mean": 0.0026272706411502983,
+      "ci95": [
+        -0.0020200010940984443,
+        0.007914162096050047
+      ],
+      "positive": 13
+    },
+    "retaining_effect_rotated": {
+      "n": 24,
+      "mean": 0.0058727435491703174,
+      "ci95": [
+        0.0018119850874315072,
+        0.010299223357880551
+      ],
+      "positive": 18
+    },
+    "retaining_effect_difference": {
+      "n": 24,
+      "mean": -0.0032454729080200195,
+      "ci95": [
+        -0.006898216972196543,
+        0.0004946833959332183
+      ],
+      "positive": 9
+    },
+    "norm_ratio_native": {
+      "n": 24,
+      "mean": 0.9491614126388973,
+      "ci95": [
+        0.9128566739735673,
+        0.9825339272081373
+      ],
+      "positive": 24
+    },
+    "norm_ratio_rotated": {
+      "n": 24,
+      "mean": 0.9950229913991069,
+      "ci95": [
+        0.9606016295554759,
+        1.028704482883027
+      ],
+      "positive": 24
+    },
+    "norm_ratio_difference": {
+      "n": 24,
+      "mean": -0.04586157876020969,
+      "ci95": [
+        -0.06630852065468845,
+        -0.026300192813730573
+      ],
+      "positive": 5
+    },
+    "baseline_native_loss": {
+      "n": 24,
+      "mean": 1.5619388294440728,
+      "ci95": [
+        1.4799762549775617,
+        1.6427572983144605
+      ],
+      "positive": 24
+    },
+    "baseline_rotated_loss": {
+      "n": 24,
+      "mean": 1.5904536767874233,
+      "ci95": [
+        1.5084155729247462,
+        1.6679958674550794
+      ],
+      "positive": 24
+    },
+    "removed_native_loss": {
+      "n": 24,
+      "mean": 1.564566100085223,
+      "ci95": [
+        1.4833823046750496,
+        1.6436089031398295
+      ],
+      "positive": 24
+    },
+    "removed_rotated_loss": {
+      "n": 24,
+      "mean": 1.596326420336594,
+      "ci95": [
+        1.5143487814997816,
+        1.6730430604269106
+      ],
+      "positive": 24
+    }
+  },
+  "scope": "models have different learned preceding states; not a pure direction intervention"
+}
