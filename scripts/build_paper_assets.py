@@ -22,7 +22,10 @@ FIG = ROOT / 'figures'
 SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','length48',
  'openfold_train96','openfold_train384','openfold_paired','openfold_gplus_rotation_final',
  'atlasfold_adapters_final','protenix_data_interaction','protenix_generic',
- 'openfold_gplus_rotation_records','openfold_train384_records','atlasfold_adapters_records']
+ 'openfold_gplus_rotation_records','openfold_train384_records','atlasfold_adapters_records',
+ 'protenix_gplus384_summary','protenix_gplus384_records','protenix_gplus384_verification',
+ 'protenix_gplus384_historical_confirm96_records','length48_records',
+ 'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock']
 CELLS = {}
 DATA = {}
 
@@ -68,7 +71,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v2.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -101,6 +104,39 @@ def main():
             observed=avg('native_s[0-9]+',3)-avg('r[0-9]+_s[0-9]+',9)-avg('gplus_s[0-9]+',3)+avg('gplus_r[0-9]+_s[0-9]+',9)
             assert abs(observed-expected)<1e-12
             interaction_checks+=1
+    # New matched Protenix G+ scores: independently reconstruct six locked contrasts.
+    pt_checks=0
+    for panel in ['confirm96','length48']:
+        pd=DATA['protenix_gplus384_summary'][panel]
+        assert pd['failure_count']==0
+        ids=pd['target_ids'];assert len(ids)==len(set(ids))==(96 if panel=='confirm96' else 48)
+        old=DATA['protenix_gplus384_historical_confirm96_records'] if panel=='confirm96' else DATA['length48_records']
+        new=DATA['protenix_gplus384_records'][panel]
+        for metric,md in pd['metrics'].items():
+            oldmetric=({'ca_pair_lddt':'original_ca_lddt','residue_ca_lddt':'residue_average_ca_lddt'}.get(metric,metric) if panel=='confirm96' else metric)
+            def arr(rows,key):
+                by={x['target_id']:x for x in rows};assert len(rows)==len(by)==len(ids) and set(by)==set(ids)
+                return np.array([by[i][key] for i in ids])
+            n=np.stack([arr(old[f'n384_full_native_s{s}_u1536'],oldmetric) for s in [20260923,20260924,20260925]])
+            g=np.stack([arr(new[f'gplus_s{s}'],metric) for s in [20260923,20260924,20260925]])
+            assert abs(g.mean()-md['means']['generic_plus'])<1e-12
+            assert np.max(abs(g.mean(1)-md['gplus_per_seed']))<1e-12
+            target=(n-g).mean(0);reported=md['native_minus_gplus']
+            assert np.max(abs(target-reported['per_target']))<1e-12
+            draws=np.random.default_rng(20260926).integers(len(ids),size=(20000,len(ids)))
+            ci=np.quantile(target[draws].mean(1),[.025,.975])
+            assert np.max(abs(ci-reported['ci95']))<1e-12
+            assert abs(target.mean()-reported['mean'])<1e-12
+            assert (target>0).sum()==reported['positive_targets']
+            pt_checks+=1
+    assert DATA['protenix_gplus384_verification']['passed'] and DATA['protenix_gplus384_collection_audit']['passed']
+    for panel,short in [('confirm96','c96'),('length48','l48')]:
+        pre=[panel,'metrics']
+        number(f'pt384_{short}_gplus','protenix_gplus384_summary',pre+['ca_pair_lddt','means','generic_plus'])
+        number(f'pt384_{short}_gquery','protenix_gplus384_summary',pre+['ca_pair_lddt','gplus_minus_query','mean'],signed=True)
+        number(f'pt384_{short}_gmedian','protenix_gplus384_verification',['results',panel,'ca_pair_lddt','median'],signed=True)
+        for metric,suffix in [('ca_pair_lddt','gdiff'),('residue_ca_lddt','gdiff_residue'),('tm_score_fixed_full_length','gdiff_tm')]:
+            contrast(f'pt384_{short}_{suffix}','protenix_gplus384_summary',pre+[metric,'native_minus_gplus'])
     rows=[]
     for size,file in [(96,'protenix_direction'),(384,'protenix_train384')]:
         pre=['systems']; means={n:v['mean_ca_lddt'] for n,v in read(file,pre).items()}
@@ -114,12 +150,12 @@ def main():
             ns=[n for n in group_means if re.fullmatch(pattern,n)];assert len(ns)==num,(source_file,pattern,len(ns))
             key=f'pt{size}_c96_{group}';value=np.mean([group_means[n] for n in ns]);CELLS[key]=dict(source=f'evidence/{source_file}.json',field_paths=[['systems',n,'mean_ca_lddt'] for n in ns],operation='mean',value=float(value),formatted=f'{value:.5f}');keys.append(key)
         number(f'pt{size}_c96_query','protenix_direction',['systems','query','mean_ca_lddt'])
-        rows.append((f'Protenix, Train{size}', 'C96-B', [f'pt{size}_c96_query',*keys], r'---' if size==96 else r'\pending'))
+        rows.append((f'Protenix, Train{size}', 'C96-B', [f'pt{size}_c96_query',*keys], r'---' if size==96 else tex('pt384_c96_gplus')))
     for group,pattern,n in [('native','n384_full_native_s[0-9]+_u1536',3),('rotated','n384_full_r[0-9]+_s[0-9]+_u1536',9)]:
         pre=['metrics','ca_pair_lddt','absolute_means'];ns=names_matching('length48',pre,pattern,n);mean_systems('pt384_l48_'+group,'length48',pre,ns)
     number('pt384_l48_query','length48',['metrics','ca_pair_lddt','absolute_means','query'])
     number('pt384_l48_official','length48',['metrics','ca_pair_lddt','absolute_means','official_mini_esm'])
-    rows.append(('Protenix, Train384','L48',['pt384_l48_query','pt384_l48_native','pt384_l48_rotated'],r'\pending'))
+    rows.append(('Protenix, Train384','L48',['pt384_l48_query','pt384_l48_native','pt384_l48_rotated'],tex('pt384_l48_gplus')))
     for size in [96,384]:
         file=f'openfold_train{size}'
         for panel,short in [('confirm96','c96'),('length48','l48')]:
@@ -153,13 +189,14 @@ def main():
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
-    (OUT/'paired_table_rows.tex').write_text('\n'.join(' & '.join([model,panel,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for model,panel,key in [('OpenFold, Train96','C96-B','of96_c96_gdiff'),('OpenFold, Train96','L48','of96_l48_gdiff'),('OpenFold, Train384','C96-B','of384_c96_gdiff'),('OpenFold, Train384','L48','of384_l48_gdiff'),('AtlasFold, Train96','C96-B','atlas_c96_gdiff'),('AtlasFold, Train96','L48','atlas_l48_gdiff')])+'\n')
+    (OUT/'paired_table_rows.tex').write_text('\n'.join(' & '.join([model,panel,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for model,panel,key in [('Protenix, Train384','C96-B','pt384_c96_gdiff'),('Protenix, Train384','L48','pt384_l48_gdiff'),('OpenFold, Train96','C96-B','of96_c96_gdiff'),('OpenFold, Train96','L48','of96_l48_gdiff'),('OpenFold, Train384','C96-B','of384_c96_gdiff'),('OpenFold, Train384','L48','of384_l48_gdiff'),('AtlasFold, Train96','C96-B','atlas_c96_gdiff'),('AtlasFold, Train96','L48','atlas_l48_gdiff')])+'\n')
+    (OUT/'protenix_gplus_supplement_rows.tex').write_text('\n'.join(' & '.join([panel,label,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for panel,short in [('C96-B','c96'),('L48','l48')] for label,suffix in [('Pair-lDDT','gdiff'),('Residue-lDDT','gdiff_residue'),('TM-score','gdiff_tm')] for key in [f'pt384_{short}_{suffix}'])+'\n'+r'\bottomrule'+'\n')
     scope=[('Protenix Mini: Train24, tangent, 384 / C96-B','pt_tangent','P'),('Protenix Mini: Train24, Full, 384 / C96-B','pt_full24','S'),('Protenix Tiny: Train24, tangent, 384 / C96-B','pt_tiny','F'),('Protenix Mini: mean-preserving R / C96-B','pt_mean','F'),('Protenix Mini: Train96, Full, 1536 / C96-B','pt_full96','F'),('Protenix Mini: Train384, Full, 1536 / C96-B','pt_full384','F'),('Protenix Mini: Train384, Full, 1536 / L48','pt_length','P'),('OpenFold: Train96, Full, 1536 / C96-B','of96_c96_direction','F'),('OpenFold: Train96, Full, 1536 / L48','of96_l48_direction','F'),('OpenFold: Train384, Full, 1536 / C96-B','of384_c96_direction','F'),('OpenFold: Train384, Full, 1536 / L48','of384_l48_direction','F'),('AtlasFold: Train96, 1536 / C96-B','atlas_c96_direction','F'),('AtlasFold: Train96, 1536 / L48','atlas_l48_direction','F')]
     (OUT/'scope_table_rows.tex').write_text('\n'.join(' & '.join([label.replace('_',r'\_'),status,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for label,key,status in scope)+'\n')
     for table in ["main_table_rows", "paired_table_rows", "scope_table_rows"]:
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'pending':['pt384_c96_gplus','pt384_l48_gplus'],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

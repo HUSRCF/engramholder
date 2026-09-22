@@ -145,8 +145,10 @@ the earlier Kabsch-based proxy is not substituted for that metric.
 A target's complete seed/rotation record is the paired resampling unit.
 The original Protenix direction bootstrap uses seed 20260926, the original
 Length48 bootstrap uses 20260928, and the OpenFold four-cell study uses 20260921,
-each with 20,000 draws. The paper generation script reads locked intervals
-instead of selecting a new resampling rule. Original primary gate definitions
+each with 20,000 draws. The matched Protenix G+ study uses seed 20260926 and
+20,000 draws on each panel. The paper generation script reads locked intervals
+and independently reconstructs the six new G+ contrasts with the same rule;
+it does not select a new resampling procedure. Original primary gate definitions
 remain in the historical records; later comparisons do not replace them.
 Unadjusted secondary intervals and limited training-seed coverage should not be
 interpreted as a universal simultaneous confidence guarantee.
@@ -187,6 +189,33 @@ Structural-separation analysis retains its original bins 1--11, 12--23 and
 at least 24 residues. It describes which reference relationships improve,
 not recovery of evolutionary covariance or a causal mechanism for the scores.
 
+\subsection{Matched Protenix Train384 generic-head comparison}
+\label{app:protenix_gplus}
+The three G+ fits use the same 1536-update order, paired noise levels, frozen
+representations, learning rate and optimizer as Native. There is no additional
+G+ learning-rate search. Confirm96-B Native--G+ is the fixed primary endpoint
+of this observed-panel follow-up; Length48 is secondary. Table~\ref{tab:pt_gplus_all}
+retains all three scoring variants. Each metric has positive paired-seed means
+on both panels. Primary-score target medians are \result{pt384_c96_gmedian}
+and \result{pt384_l48_gmedian}, with 78/96 and 43/48 positive targets,
+respectively. These counts and medians complement the means without treating
+metrics or training instances as independent proteins.
+
+\begin{table}[h]
+\caption{Matched Protenix Train384 Native minus G+. Supplementary metric
+intervals are unadjusted and all intervals condition on the fitted models.}
+\label{tab:pt_gplus_all}\centering\small
+\begin{tabular}{llrr}\toprule
+Panel & Metric & Difference & 95\% interval \\\midrule
+\input{generated/protenix_gplus_supplement_rows}
+\end{tabular}
+\end{table}
+
+These results establish competitive performance under the shared recipe;
+they do not estimate a separately tuned generic head's performance limit.
+No Protenix rotated-G+ models were trained, so these comparisons supply no
+Protenix estimate of the parameterization-by-rotation interaction $\Psi$.
+
 \section{Local compatibility and shared-transfer diagnostics}
 \label{app:mechanisms}
 At a shared query-only state, let $A_x$ map free factor increments to the
@@ -224,11 +253,16 @@ were complete; the original attempts were not erased or selected by quality.
 Post-start supplementary checks in the original length study retain their
 actual chronology rather than being relabeled as prelaunch checks.
 
-For pending matched Protenix G+, three two-step prefixes passed before formal
-continuation; those steps count within 1536. The long-chain replay across H100
-and MI250 is numerically close rather than bitwise identical. Final comparisons
-must retain the recorded backend distinction and all prescribed failures.
-The manuscript does not infer completion from dispatch or checkpoint creation.
+For matched Protenix G+, three two-step prefixes passed before formal
+continuation; those steps count within each completed 1536-update run.
+All 432 formal predictions succeeded without HIP retries. Audits checked the
+complete training order, paired noise levels, frozen-parameter and artifact
+hashes; score contrasts were independently reconstructed. Confirm96-B uses
+MI250 for both sides. Length48 reuses historical H100 Native/Rotated predictions
+and new MI250 G+ predictions. Short-chain replay was exact, while a 750-residue
+replay had relative coordinate L2 error 0.00032018, below the predeclared
+$10^{-3}$ engineering tolerance. This limited replay does not establish a
+numerical error bound for the entire long-chain panel.
 
 \section{Historical exploratory branches}
 \label{app:historical}

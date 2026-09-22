@@ -1,0 +1,16 @@
+{
+  "reason": "User approved inclusion of completed matched Protenix Train384 G+ on 2026-09-22",
+  "previous_lock": "paper_sources.lock.json",
+  "active_lock": "paper_sources.v2.lock.json",
+  "all_previous_sources_unchanged": true,
+  "added_sources": {
+    "evidence/protenix_gplus384_summary.json": "c802f8432bd94bf964af74c2470ec54981df8f76b02e91dcd87cbd9ef7659f85",
+    "evidence/protenix_gplus384_records.json": "5b6b387d0c8c192b870142c40953a08bf3f9bc39a200eb7e4d9a3a574f753f81",
+    "evidence/protenix_gplus384_verification.json": "6352c14e84f2dd42f231a53e303896934330275c8a22494be05bcaad49f780cf",
+    "evidence/protenix_gplus384_historical_confirm96_records.json": "f50bbd0f1c6d3ad076cc96306ef0469c45e3284a4b2da9a2f0efbd1cccfad8e3",
+    "evidence/length48_records.json": "03c9b8823d7e024dcd54cdf565e82966a2c0571257d81d78488fa2620b7fce96",
+    "evidence/protenix_gplus384_collection_audit.json": "743e8a976203bbfad42b6a263c078b5d8f70e4a05872b7548e8939756119f0f8",
+    "evidence/protenix_gplus384_execution_lock.json": "453cb7040aceca4af3180b19e1d574fca3088e820ab194671530d114d9217e1b"
+  },
+  "endpoint_unchanged": "Confirm96-B Native-minus-G+ primary; Length48 secondary; both observed follow-ups"
+}

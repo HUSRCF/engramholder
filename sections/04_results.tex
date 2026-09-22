@@ -93,7 +93,21 @@ independent replications. Null and negative conditions are retained.}
 \subsection{Native orientation does not guarantee gains or superiority over generic heads}
 \label{sec:limits_results}
 Table~\ref{tab:coverage} places direction effects next to absolute performance
-and the generic comparator. OpenFold Train384 gives
+and the generic comparator. In the matched Protenix Train384 follow-up, Native
+exceeds G+ by \result{pt384_c96_gdiff}
+[\result{pt384_c96_gdiffLo}, \result{pt384_c96_gdiffHi}] on Confirm96-B and
+\result{pt384_l48_gdiff}
+[\result{pt384_l48_gdiffLo}, \result{pt384_l48_gdiffHi}] on Length48.
+The differences are positive for 78/96 and 43/48 targets and all three paired
+seed means. G+ itself improves over query-only by \result{pt384_c96_gquery}
+and \result{pt384_l48_gquery} in mean score. Thus Native's advantage holds
+against a functioning explicit-factor generic comparator under this common
+learning rate and budget, not against a separately optimized G+ upper bound.
+The long-chain comparison combines historical H100 predictions with new MI250
+G+ predictions; replay checks are limited engineering evidence, not a
+panel-wide numerical error bound (Appendix~\ref{app:engineering}).
+
+OpenFold Train384 gives
 \result{of384_c96_direction}
 [\result{of384_c96_directionLo}, \result{of384_c96_directionHi}] on Confirm96-B,
 without an established advantage. On Length48 it gives
@@ -109,8 +123,7 @@ Protenix/OpenFold use Full. Native and G+ average three seeds; Rotated averages
 three seeds and three rotations. C96-B: Confirm96-B; L48: Length48.
 Unadapted is the query-only baseline for Protenix/OpenFold and retains native
 AtlasLM for AtlasFold; it does not receive the added adapter ESM2 features.
-Pending marks only the two unfinished matched G+ evaluations; --- indicates no
-matched experiment.}
+--- indicates no matched experiment.}
 \label{tab:coverage}\centering\footnotesize
 \begin{tabular}{llrrrr}\toprule
 Backbone / recipe & Panel & Unadapted & Native & Rotated & G+ \\\midrule
@@ -130,9 +143,11 @@ recipe, not evidence that only weak systems can benefit from adaptation.
 
 \begin{table}[t]
 \caption{Native minus G+: paired follow-up comparisons. Negative values favor
-G+. Intervals are conditional on fitted models and unadjusted for these secondary
-comparisons. These estimates address method competitiveness, separately from
-Native--Rotated direction effects.}
+G+. Intervals condition on fitted models. Protenix Confirm96-B is the primary
+endpoint of its matched-G+ follow-up; Length48 is secondary. Other rows are
+supplementary comparisons; intervals are not jointly multiplicity-adjusted.
+All panels were already observed for these studies. These estimates address
+method competitiveness, separately from Native--Rotated direction effects.}
 \label{tab:gplus}\centering\footnotesize
 \begin{tabular}{llrr}\toprule
 Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
@@ -150,5 +165,3 @@ The corresponding OpenFold Length48 estimate is
 These direct interactions concern changes in training-set composition and
 repetition at fixed update count (16 versus 4 average passes). They neither
 establish a general sample-efficiency law nor identify why the predictors differ.
-The matched Protenix Train384 G+ study remains pending; its already fixed primary
-endpoint is Confirm96-B Native--G+, with Length48 secondary.

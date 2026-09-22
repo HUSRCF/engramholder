@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-09-22T13:23:34.800118+00:00",
+  "main_text_ends_page": 8,
+  "total_pdf_pages": 13,
+  "undefined_references_or_citations": false,
+  "overfull_boxes": false,
+  "underfull_warning_count": 8,
+  "official_files_unchanged": {
+    "iclr2027_conference.sty": true,
+    "iclr2027_conference.bst": true,
+    "math_commands.tex": true
+  },
+  "checked_raw_system_metric_means": 348,
+  "checked_target_interactions": 144,
+  "checked_new_protenix_contrasts": 6,
+  "generated_numeric_fields": 153,
+  "pending_result_cells": [],
+  "unrun_matched_cells": [
+    "pt96_c96_gplus"
+  ],
+  "active_source_lock": "paper_sources.v2.lock.json",
+  "pdf_sha256": "9e4fce5340768869d0b9f9f1b0324ca51ea195727fb6e9d0ac2f145764dd98ca",
+  "anonymous_artifact": "build/anonymous_artifact_v4.zip",
+  "anonymous_artifact_sha256": "aed86147c6b363d7cc4eb440c4ac885acb59c67535a83bf3312d9c9713943f98",
+  "artifact_scope": "verified analysis and operator reproduction only; not full retraining; author anonymity review remains necessary",
+  "table_visual_review": "PDF page 7: completed means and paired intervals readable, no clipping",
+  "no_training_or_cif_rescoring": true
+}
