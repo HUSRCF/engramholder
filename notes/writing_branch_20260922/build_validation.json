@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-09-22T03:47:29.035799+00:00",
+  "compiler": "DiamondHill /usr/bin/latexmk and pdflatex (CPU only)",
+  "pages_including_statements_and_appendix": 6,
+  "official_files_unchanged": {
+    "iclr2027_conference.sty": true,
+    "iclr2027_conference.bst": true,
+    "math_commands.tex": true
+  },
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "underfull_warning_count": 1,
+  "pending_markers_intentional": true,
+  "pdf_sha256": "813686c1258dbd0de40aeae544d8ad1a44d992f4bce3204f867f3fa8a0371de4",
+  "source_sha256": {
+    "iclr2027_conference.tex": "b22bbbf147a492e2c1c1d53e2ce966a1f9ff6f99c8ed440c3dea345e0e0f1ffe",
+    "sections/00_abstract.tex": "184377ee8c44a545df3900fc38e6d21bb39f45c58f5757b5f8509f89873945e3",
+    "sections/01_introduction.tex": "689a2f560b3c8017eecef6efa4ff6c2469ede9aac5c24791e45ace557bb341aa",
+    "sections/02_construction.tex": "749cbc60fd386573ce00f6bf7fedac43b97ebaeb3ad6419774e3c49a114839fb",
+    "sections/03_design.tex": "778ed6ff5988f96de4f7f381e30478012a35f91201225573edb7047742b4f909",
+    "sections/04_results.tex": "7898688001867e5090c1811bd8d984ecdcc1eaef6141a0ad6443e6f9420d0cae",
+    "sections/05_discussion.tex": "2f236ca84dafe4321049ee90fe2f1a0a8d00890ded7ad3d997359316fc4394fd",
+    "sections/06_related_work.tex": "d81734cdc9e7aa3b63f4086e2f447a216ef06e8f4cd880384ccea6f7ea668e57",
+    "sections/07_conclusion.tex": "20fedffed9c09874bbb80c4368a0f3dbab3bcbe943e904588d77322c655c3d1e",
+    "sections/08_statements.tex": "16d325b331da23204ff4d5ed51f198a5dc47866dea460cfa8a0a0e3bdb68b3e2",
+    "appendices/implementation_and_evidence.tex": "2d5f8d360d6aa53719c1f263f2561ee238eb0ee5ac2431a24b3eeed7760aa5ef"
+  },
+  "initial_bibliography_placeholder_error": "Non-author-year dummy bibitem rejected by natbib; replaced with visible References placeholder, rebuilt successfully."
+}

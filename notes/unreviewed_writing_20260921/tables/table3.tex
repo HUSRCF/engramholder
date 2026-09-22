@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{AF2/OpenFold at the fixed 1,536-update endpoint. Both panels were previously observed. Means average three training seeds and, for rotated models, three rotations. G+ remains in the main comparison regardless of ranking.}
+\label{tab:openfold}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llrrrr@{}}
+\toprule
+Adaptation & Panel & Query & Native & Rotated & G+ \\
+\midrule
+Train96 & Confirm96-B & .30191 & .50190 & .48209 & .49534 \\
+Train96 & Length48 & .26079 & .38872 & .37834 & .39849 \\
+Train384 & Confirm96-B & .30191 & .50684 & .50381 & .51333 \\
+Train384 & Length48 & .26079 & .40165 & .39040 & .40868 \\
+\midrule
+\multicolumn{2}{l}{Native minus rotation} & \multicolumn{4}{r}{Mean [95\% target-bootstrap interval]} \\
+Train96 & Confirm96-B & \multicolumn{4}{r}{$+.01981\ [+.00928,+.03129]$} \\
+Train96 & Length48 & \multicolumn{4}{r}{$+.01038\ [+.00403,+.01705]$} \\
+Train384 & Confirm96-B & \multicolumn{4}{r}{$+.00303\ [-.00675,+.01218]$} \\
+Train384 & Length48 & \multicolumn{4}{r}{$+.01126\ [+.00527,+.01734]$} \\
+\bottomrule
+\end{tabular*}
+\end{table}

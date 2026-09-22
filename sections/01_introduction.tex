@@ -1,0 +1,31 @@
+\section{Introduction}
+\label{sec:introduction}
+\placeholder{Paragraph 1: motivate frozen adaptation through pretrained internal
+pair-generating computations. Distinguish update construction from output
+orientation. Explain why rotation sensitivity alone is insufficient to establish
+parameterization-specific behavior.}
+\placeholder{Paragraph 2: introduce query-anchored residuals, paired training from
+zero residual, and a generic head with explicit factor access and a free output
+layer. Explain the purpose of the absorbable-rotation control before giving results.}
+\placeholder{Paragraph 3: lead with the directly estimated OpenFold interaction.
+Then summarize the positive scope and non-supporting conditions. Preserve the
+follow-up status of the interaction study; do not rewrite the study chronology.}
+
+\paragraph{Central claim.}
+Native update orientation can matter for constrained adaptation, but its effect
+depends on the parameterization and frozen predictor; preserving native
+directions neither guarantees adaptation gains nor makes native factor heads
+uniformly superior to generic alternatives.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item \textbf{An empirical interaction.}
+\placeholder{State the directly tested head-by-rotation interaction under the
+matched OpenFold AdamW recipe. Do not uniquely attribute it to expressivity.}
+\item \textbf{A concrete construction and control.}
+\placeholder{State the query-anchored native residual, zero initialization, and
+explicit local spectral properties of the rotation control.}
+\item \textbf{Transfer and limits.}
+\placeholder{State the tested checkpoint, training-size, and length ranges, together
+with OpenFold comparator limits and the AtlasFold configuration without established gains.}
+\end{enumerate}

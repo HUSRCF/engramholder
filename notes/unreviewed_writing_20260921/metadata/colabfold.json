@@ -1,0 +1,681 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        20
+      ]
+    ],
+    "date-time": "2026-09-20T14:59:33Z",
+    "timestamp": 1789916373224,
+    "version": "4.0.1"
+  },
+  "reference-count": 36,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "6",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            30
+          ]
+        ],
+        "date-time": "2022-05-30T00:00:00Z",
+        "timestamp": 1653868800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            30
+          ]
+        ],
+        "date-time": "2022-05-30T00:00:00Z",
+        "timestamp": 1653868800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Nat Methods"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        6
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    ColabFold offers accelerated prediction of protein structures and complexes by combining the fast homology search of MMseqs2 with AlphaFold2 or RoseTTAFold. ColabFold\u2019s 40\u221260-fold faster search and optimized model utilization enables prediction of close to 1,000 structures per day on a server with one graphics processing unit. Coupled with Google Colaboratory, ColabFold becomes a free and accessible platform for protein folding. ColabFold is open-source software available at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/sokrypton/ColabFold\">https://github.com/sokrypton/ColabFold</jats:ext-link>\n                    and its novel environmental databases are available at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://colabfold.mmseqs.com\">https://colabfold.mmseqs.com</jats:ext-link>\n                    .\n                  </jats:p>",
+  "DOI": "10.1038/s41592-022-01488-1",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        30
+      ]
+    ],
+    "date-time": "2022-05-30T12:03:50Z",
+    "timestamp": 1653912230000
+  },
+  "page": "679-682",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 9455,
+  "title": [
+    "ColabFold: making protein folding accessible to all"
+  ],
+  "prefix": "10.1038",
+  "volume": "19",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-8637-6719",
+      "authenticated-orcid": false,
+      "given": "Milot",
+      "family": "Mirdita",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3957-412X",
+      "authenticated-orcid": false,
+      "given": "Konstantin",
+      "family": "Sch\u00fctze",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-0448-9790",
+      "authenticated-orcid": false,
+      "given": "Yoshitaka",
+      "family": "Moriwaki",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3153-2363",
+      "authenticated-orcid": false,
+      "given": "Lim",
+      "family": "Heo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-2774-2744",
+      "authenticated-orcid": false,
+      "given": "Sergey",
+      "family": "Ovchinnikov",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8781-9753",
+      "authenticated-orcid": false,
+      "given": "Martin",
+      "family": "Steinegger",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        30
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "1488_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "DOI": "10.1038/s41586-021-03819-2",
+      "volume": "596",
+      "author": "J Jumper",
+      "year": "2021",
+      "unstructured": "Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583\u2013589 (2021).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "1488_CR2",
+      "doi-asserted-by": "publisher",
+      "first-page": "1607",
+      "DOI": "10.1002/prot.26237",
+      "volume": "89",
+      "author": "A Kryshtafovych",
+      "year": "2021",
+      "unstructured": "Kryshtafovych, A., Schwede, T., Topf, M., Fidelis, K. & Moult, J. Critical assessment of methods of protein structure prediction (CASP): round XIV. Proteins 89, 1607\u20131617 (2021).",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "1488_CR3",
+      "doi-asserted-by": "publisher",
+      "first-page": "871",
+      "DOI": "10.1126/science.abj8754",
+      "volume": "373",
+      "author": "M Baek",
+      "year": "2021",
+      "unstructured": "Baek, M. et al. Accurate prediction of protein structures and interactions using a three-track neural network. Science 373, 871\u2013876 (2021).",
+      "journal-title": "Science"
+    },
+    {
+      "key": "1488_CR4",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Evans, R. et al. Protein complex prediction with AlphaFold-Multimer. Preprint at bioRxiv https://doi.org/10.1101/2021.10.04.463034 (2021).",
+      "DOI": "10.1101/2021.10.04.463034"
+    },
+    {
+      "key": "1488_CR5",
+      "doi-asserted-by": "publisher",
+      "first-page": "D506",
+      "DOI": "10.1093/nar/gky1049",
+      "volume": "47",
+      "author": "UniProt Consortium",
+      "year": "2019",
+      "unstructured": "UniProt Consortium UniProt: a worldwide hub of protein knowledge. Nucleic Acids Res. 47, D506\u2013D515 (2019).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "1488_CR6",
+      "first-page": "D570",
+      "volume": "48",
+      "author": "AL Mitchell",
+      "year": "2020",
+      "unstructured": "Mitchell, A. L. et al. MGnify: the microbiome analysis resource in 2020. Nucleic Acids Res. 48, D570\u2013D578 (2020).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "1488_CR7",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1002195",
+      "DOI": "10.1371/journal.pcbi.1002195",
+      "volume": "7",
+      "author": "SR Eddy",
+      "year": "2011",
+      "unstructured": "Eddy, S. R. Accelerated profile HMM searches. PLoS Comput. Biol. 7, e1002195 (2011).",
+      "journal-title": "PLoS Comput. Biol."
+    },
+    {
+      "key": "1488_CR8",
+      "doi-asserted-by": "publisher",
+      "first-page": "473",
+      "DOI": "10.1186/s12859-019-3019-7",
+      "volume": "20",
+      "author": "M Steinegger",
+      "year": "2019",
+      "unstructured": "Steinegger, M. et al. HH-suite 3 for fast remote homology detection and deep protein annotation. BMC Bioinformatics 20, 473 (2019).",
+      "journal-title": "BMC Bioinformatics"
+    },
+    {
+      "key": "1488_CR9",
+      "doi-asserted-by": "publisher",
+      "first-page": "590",
+      "DOI": "10.1038/s41586-021-03828-1",
+      "volume": "596",
+      "author": "K Tunyasuvunakool",
+      "year": "2021",
+      "unstructured": "Tunyasuvunakool, K. et al. Highly accurate protein structure prediction for the human proteome. Nature 596, 590\u2013596 (2021).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "1488_CR10",
+      "doi-asserted-by": "publisher",
+      "first-page": "1026",
+      "DOI": "10.1038/nbt.3988",
+      "volume": "35",
+      "author": "M Steinegger",
+      "year": "2017",
+      "unstructured": "Steinegger, M. & S\u00f6ding, J. MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets. Nat. Biotechnol. 35, 1026\u20131028 (2017).",
+      "journal-title": "Nat. Biotechnol."
+    },
+    {
+      "key": "1488_CR11",
+      "doi-asserted-by": "publisher",
+      "first-page": "2856",
+      "DOI": "10.1093/bioinformatics/bty1057",
+      "volume": "35",
+      "author": "M Mirdita",
+      "year": "2019",
+      "unstructured": "Mirdita, M., Steinegger, M. & S\u00f6ding, J. MMseqs2 desktop and local web server app for fast, interactive sequence searches. Bioinformatics 35, 2856\u20132858 (2019).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "1488_CR12",
+      "doi-asserted-by": "publisher",
+      "first-page": "255",
+      "DOI": "10.1038/nprot.2016.169",
+      "volume": "12",
+      "author": "D Kozakov",
+      "year": "2017",
+      "unstructured": "Kozakov, D. et al. The ClusPro web server for protein\u2013protein docking. Nat. Protoc. 12, 255\u2013278 (2017).",
+      "journal-title": "Nat. Protoc."
+    },
+    {
+      "key": "1488_CR13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1186/s40168-020-00808-x",
+      "volume": "8",
+      "author": "E Levy Karin",
+      "year": "2020",
+      "unstructured": "Levy Karin, E., Mirdita, M. & S\u00f6ding, J. MetaEuk-sensitive, high-throughput gene discovery, and annotation for large-scale eukaryotic metagenomics. Microbiome 8, 48 (2020).",
+      "journal-title": "Microbiome"
+    },
+    {
+      "key": "1488_CR14",
+      "doi-asserted-by": "publisher",
+      "first-page": "100123",
+      "DOI": "10.1016/j.xgen.2022.100123",
+      "volume": "2",
+      "author": "TO Delmont",
+      "year": "2022",
+      "unstructured": "Delmont, T. O. et al. Functional repertoire convergence of distantly related eukaryotic plankton lineages abundant in the sunlit ocean. Cell Genomics 2, 100123 (2022).",
+      "journal-title": "Cell Genomics"
+    },
+    {
+      "key": "1488_CR15",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Alexander, H. et al. Eukaryotic genomes from a global metagenomic dataset illuminate trophic modes and biogeography of ocean plankton. Preprint at bioRxiv https://doi.org/10.1101/2021.07.25.453713 (2021).",
+      "DOI": "10.1101/2021.07.25.453713"
+    },
+    {
+      "key": "1488_CR16",
+      "doi-asserted-by": "publisher",
+      "first-page": "960",
+      "DOI": "10.1038/s41564-021-00928-6",
+      "volume": "6",
+      "author": "S Nayfach",
+      "year": "2021",
+      "unstructured": "Nayfach, S. et al. Metagenomic compendium of 189,680 DNA viruses from the human gut microbiome. Nat. Microbiol. 6, 960\u2013970 (2021).",
+      "journal-title": "Nat. Microbiol."
+    },
+    {
+      "key": "1488_CR17",
+      "doi-asserted-by": "publisher",
+      "first-page": "1098",
+      "DOI": "10.1016/j.cell.2021.01.029",
+      "volume": "184",
+      "author": "LF Camarillo-Guerrero",
+      "year": "2021",
+      "unstructured": "Camarillo-Guerrero, L. F., Almeida, A., Rangel-Pineros, G., Finn, R. D. & Lawley, T. D. Massive expansion of human gut bacteriophage diversity. Cell 184, 1098\u20131109 (2021).",
+      "journal-title": "Cell"
+    },
+    {
+      "key": "1488_CR18",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-018-04964-5",
+      "volume": "9",
+      "author": "M Steinegger",
+      "year": "2018",
+      "unstructured": "Steinegger, M. & S\u00f6ding, J. Clustering huge protein sequence sets in linear time. Nat. Commun. 9, 2542 (2018).",
+      "journal-title": "Nat. Commun."
+    },
+    {
+      "key": "1488_CR19",
+      "doi-asserted-by": "publisher",
+      "first-page": "D412",
+      "DOI": "10.1093/nar/gkaa913",
+      "volume": "49",
+      "author": "J Mistry",
+      "year": "2021",
+      "unstructured": "Mistry, J. et al. Pfam: the protein families database in 2021. Nucleic Acids Res. 49, D412\u2013D419 (2021).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "1488_CR20",
+      "unstructured": "Moriwaki, Y. AlphaFold2 can also predict heterocomplexes. all you have to do is input the two sequences you want to predict and connect them with a long linker. Twitter https://twitter.com/Ag_smith/status/1417063635000598528 (2021)."
+    },
+    {
+      "key": "1488_CR21",
+      "unstructured": "Baek, M. Adding a big enough number for \u2018residue_index\u2019 feature is enough to model hetero-complex using AlphaFold. Twitter https://twitter.com/minkbaek/status/1417538291709071362 (2021)."
+    },
+    {
+      "key": "1488_CR22",
+      "doi-asserted-by": "publisher",
+      "first-page": "1265",
+      "DOI": "10.1038/s41467-022-28865-w",
+      "volume": "13",
+      "author": "P Bryant",
+      "year": "2022",
+      "unstructured": "Bryant, P., Pozzati, G. & Elofsson, A. Improved prediction of protein\u2013protein interactions using AlphaFold2. Nat. Commun. 13, 1265 (2022).",
+      "journal-title": "Nat. Commun."
+    },
+    {
+      "key": "1488_CR23",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Mosalaganti, S. et al. Artificial intelligence reveals nuclear pore complexity. Preprint at bioRxiv https://doi.org/10.1101/2021.10.26.465776 (2021).",
+      "DOI": "10.1101/2021.10.26.465776"
+    },
+    {
+      "key": "1488_CR24",
+      "unstructured": "Kluyver, T. et al. Jupyter Notebooks: a publishing format for reproducible computational workflows. In Positioning and Power in Academic Publishing: Players, Agents and Agendas (eds Loizides, F. & Schmidt, B.) 87\u201390 (IOS Press, 2016)."
+    },
+    {
+      "key": "1488_CR25",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1005659",
+      "DOI": "10.1371/journal.pcbi.1005659",
+      "volume": "13",
+      "author": "P Eastman",
+      "year": "2017",
+      "unstructured": "Eastman, P. et al. OpenMM7: rapid development of high performance algorithms for molecular dynamics. PLoS Comput. Biol. 13, e1005659 (2017).",
+      "journal-title": "PLoS Comput. Biol."
+    },
+    {
+      "key": "1488_CR26",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Gal, Y. & Ghahramani, Z. Dropout as a Bayesian approximation: representing model uncertainty in deep learning. Preprint at arXiv https://doi.org/10.48550/arxiv.1506.02142 (2016).",
+      "DOI": "10.48550/arxiv.1506.02142"
+    },
+    {
+      "key": "1488_CR27",
+      "doi-asserted-by": "publisher",
+      "first-page": "778",
+      "DOI": "10.1002/prot.22488",
+      "volume": "77",
+      "author": "GG Krivov",
+      "year": "2009",
+      "unstructured": "Krivov, G. G., Shapovalov, M. V. & Dunbrack Jr, R. L. Improved prediction of protein side-chain conformations with SCWRL4. Proteins 77, 778\u2013795 (2009).",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "1488_CR28",
+      "doi-asserted-by": "publisher",
+      "first-page": "689",
+      "DOI": "10.1093/bioinformatics/btq007",
+      "volume": "26",
+      "author": "S Chaudhury",
+      "year": "2010",
+      "unstructured": "Chaudhury, S., Lyskov, S. & Gray, J. J. PyRosetta: a script-based interface for implementing molecular modeling algorithms using Rosetta. Bioinformatics 26, 689\u2013691 (2010).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "1488_CR29",
+      "doi-asserted-by": "publisher",
+      "first-page": "926",
+      "DOI": "10.1093/bioinformatics/btu739",
+      "volume": "31",
+      "author": "BE Suzek",
+      "year": "2015",
+      "unstructured": "Suzek, B. E. et al. UniRef clusters: a comprehensive and scalable alternative for improving sequence similarity searches. Bioinformatics 31, 926\u2013932 (2015).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "1488_CR30",
+      "doi-asserted-by": "publisher",
+      "first-page": "D136",
+      "DOI": "10.1093/nar/gkr1178",
+      "volume": "40",
+      "author": "S Federhen",
+      "year": "2012",
+      "unstructured": "Federhen, S. The NCBI Taxonomy database. Nucleic Acids Res. 40, D136\u2013D143 (2012).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "1488_CR31",
+      "unstructured": "Bradbury, J. et al. JAX: composable transformations of Python+NumPy programs. Github https://github.com/google/jax (2018)."
+    },
+    {
+      "key": "1488_CR32",
+      "doi-asserted-by": "publisher",
+      "first-page": "90",
+      "DOI": "10.1109/MCSE.2007.55",
+      "volume": "9",
+      "author": "JD Hunter",
+      "year": "2007",
+      "unstructured": "Hunter, J. D. Matplotlib: a 2D graphics environment. Comput. Sci. Eng. 9, 90\u201395 (2007).",
+      "journal-title": "Comput. Sci. Eng."
+    },
+    {
+      "key": "1488_CR33",
+      "doi-asserted-by": "publisher",
+      "first-page": "1322",
+      "DOI": "10.1093/bioinformatics/btu829",
+      "volume": "31",
+      "author": "N Rego",
+      "year": "2015",
+      "unstructured": "Rego, N. & Koes, D. 3Dmol.js: molecular visualization with WebGL. Bioinformatics 31, 1322\u20131324 (2015).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "1488_CR34",
+      "doi-asserted-by": "publisher",
+      "first-page": "D170",
+      "DOI": "10.1093/nar/gkw1081",
+      "volume": "45",
+      "author": "M Mirdita",
+      "year": "2017",
+      "unstructured": "Mirdita, M. et al. Uniclust databases of clustered and deeply annotated protein sequences and alignments. Nucleic Acids Res. 45, D170\u2013D176 (2017).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "1488_CR35",
+      "doi-asserted-by": "publisher",
+      "first-page": "2302",
+      "DOI": "10.1093/nar/gki524",
+      "volume": "33",
+      "author": "Y Zhang",
+      "year": "2005",
+      "unstructured": "Zhang, Y. & Skolnick, J. TM-align: a protein structure alignment algorithm based on the TM-score. Nucleic Acids Res. 33, 2302\u20132309 (2005).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "1488_CR36",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0161879",
+      "DOI": "10.1371/journal.pone.0161879",
+      "volume": "11",
+      "author": "S Basu",
+      "year": "2016",
+      "unstructured": "Basu, S. & Wallner, B. DockQ: a quality measure for protein\u2013protein docking models. PLoS One 11, e0161879 (2016).",
+      "journal-title": "PLoS One"
+    }
+  ],
+  "container-title": [
+    "Nature Methods"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41592-022-01488-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41592-022-01488-1",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41592-022-01488-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        10,
+        14
+      ]
+    ],
+    "date-time": "2024-10-14T08:06:52Z",
+    "timestamp": 1728893212000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41592-022-01488-1"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        30
+      ]
+    ]
+  },
+  "references-count": 36,
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          6
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "1488"
+  ],
+  "URL": "https://doi.org/10.1038/s41592-022-01488-1",
+  "relation": {
+    "has-preprint": [
+      {
+        "id-type": "doi",
+        "id": "10.1101/2021.08.15.456425",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.21203/rs.3.rs-1032816/v1",
+        "asserted-by": "object"
+      }
+    ]
+  },
+  "ISSN": [
+    "1548-7091",
+    "1548-7105"
+  ],
+  "issn-type": [
+    {
+      "value": "1548-7091",
+      "type": "print"
+    },
+    {
+      "value": "1548-7105",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        30
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "29 October 2021",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "11 April 2022",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "30 May 2022",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "The authors declare no competing interests.",
+      "order": 1,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Competing interests"
+      }
+    }
+  ]
+}

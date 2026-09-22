@@ -1,0 +1,86 @@
+\section{Native residuals and trained direction controls}
+\label{sec:2}
+\subsection{A common construction, with backbone-specific operators}\label{a-common-construction-with-backbone-specific-operators}
+
+Let \(k\) denote an injection site and its invocation, including recycle state.
+At this invocation, let \(a_k,b_k\) be native factors, \(U_{k,0}\) the unmodified
+update, and \(G_k\) the frozen factor-combination map used to construct a residual.
+A sequence-conditioned adapter produces residue increments \((\delta a,\delta b)\):
+
+\[
+\Delta U_k=G_k(a_k+\delta a,b_k+\delta b)-G_k(a_k,b_k),
+\qquad
+U_k^{(R)}=U_{k,0}+\mathcal R_k\Delta U_k.
+\tag{1}
+\]
+
+\(\mathcal R_k\) applies a fixed orthogonal matrix \(R_k\) to each pair's output
+channels; the native arm uses \(R_k=I\). The chosen matrix is reused across
+invocations at the selected site. Only the final increment projection is
+zero-initialized, making every arm exactly equal to its backbone's baseline
+function at initialization. Upstream adapter layers are normally initialized.
+Backbone, decoder and PLM parameters remain frozen.
+
+\(U_{k,0}\) means the unmodified update \textbf{at the current state}, not necessarily
+one tensor cached for the whole forward. In AF2 and AtlasFold, live factors
+can change with recycle state, including the effects of earlier adapter calls.
+The Protenix experiment uses its cached query-only factors. These are different
+instantiations of Eq. (1); the shared principle does not require a shared
+normalization constant or structure loss.
+
+For Protenix, the implemented residual decoder is
+\(G_D(a,b)=[D W\operatorname{vec}(a\otimes b)+b_{\rm out}]/(D+0.001)\),
+with \(D=508.5\), the training-set median MSA depth. The baseline \(U_q\) retains
+its exact depth-one affine and normalization. \(D\) is a scalar in the residual
+construction, not homolog information supplied at inference. For OpenFold,
+\(G_k\) uses the selected layer's native masked OPM and pair-specific denominator;
+the Protenix scalar is not transferred.
+
+For the non-OPM AtlasFold extension \citep{atlasfold_code}, the frozen map combines projected factors
+as \(G_k(a_i,b_j)=W_k[a_i-b_j;\,a_i\odot b_j]+b_k\).
+Its native AtlasLM remains present. This extension has a fixed experimental
+slot below, but its incomplete adapter results are not evidence in this draft.
+
+\input{tables/table1.tex}
+
+The Protenix bond term is zero for the recorded empty protein-only bond masks.
+Confidence losses are disabled; OpenFold also excludes masked-MSA loss.
+AtlasFold retains native MLM conditioning with probability 0.15. Its pinned
+implementation executes \nolinkurl{num_recycles+1} trunk passes. Losses retain native
+component definitions and supervision masks;
+experimental structures enter labels and scoring, not sequence-only inputs.
+The appendix specifies precision, optimizer settings and invocation semantics.
+
+\subsection{What the intervention controls}\label{what-the-intervention-controls}
+
+At a common factor input and writer parameter state,
+
+\[
+\|\mathcal R\Delta U\|_F=\|\Delta U\|_F,
+\quad \sigma_j(RW)=\sigma_j(W),
+\quad J_R^\top J_R=J^\top J.
+\tag{2}
+\]
+
+Here \(J\) is the local residual writer Jacobian, holding its incoming state
+fixed. The downstream responses \(J_{\rm down}J\) and
+\(J_{\rm down}\mathcal R J\) can differ. Independently trained trajectories,
+state-dependent anchors and the full recurrent network are not asserted to
+have identical Jacobian spectra or optimization geometry. The fixed baseline
+and downstream weights are never rotated.
+
+For OPM, the full residual contains a first-order term
+\(T=\mathcal W(\delta a\otimes b+a\otimes\delta b)\) and quadratic increment
+term \(Q=\mathcal W(\delta a\otimes\delta b)\). The first-order arm retains
+\(T\) only. In the Protenix setting without an additional pair-dependent gate,
+each output-channel residual has rank at most \(2r=64\); this bound need not
+survive downstream nonlinear processing. The quadratic term is a combination
+of adapter increments, not measured evolutionary covariance.
+
+Generic predicts a pair residual using projected sequence features and clipped
+relative sequence separation. G+ additionally receives the relevant native
+factors. All heads share parameters across residue positions. G+ changes the
+pair MLP width to approximately match parameter count; it is a competitive
+explicit-access control, not a pure one-variable ablation. The N/R comparison
+asks about orientation within a fixed family; Native-G+ asks which family
+performs better. These contrasts need not have the same sign.

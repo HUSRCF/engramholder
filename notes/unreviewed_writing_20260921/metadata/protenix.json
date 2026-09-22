@@ -1,0 +1,28 @@
+{
+  "citation_title": [
+    "Protenix-Mini: Efficient Structure Predictor via Compact Architecture, Few-Step Diffusion and Switchable pLM"
+  ],
+  "citation_author": [
+    "Gong, Chengyue",
+    "Chen, Xinshi",
+    "Zhang, Yuxuan",
+    "Song, Yuxuan",
+    "Zhou, Hao",
+    "Xiao, Wenzhi"
+  ],
+  "citation_date": [
+    "2025/07/16"
+  ],
+  "citation_online_date": [
+    "2025/07/16"
+  ],
+  "citation_pdf_url": [
+    "https://arxiv.org/pdf/2507.11839"
+  ],
+  "citation_arxiv_id": [
+    "2507.11839"
+  ],
+  "citation_abstract": [
+    "Lightweight inference is critical for biomolecular structure prediction and other downstream tasks, enabling efficient real-world deployment and inference-time scaling for large-scale applications. In this work, we address the challenge of balancing model efficiency and prediction accuracy by making several key modifications, 1) Multi-step AF3 sampler is replaced by a few-step ODE sampler, significantly reducing computational overhead for the diffusion module part during inference; 2) In the open-source Protenix framework, a subset of pairformer or diffusion transformer blocks doesn't make contributions to the final structure prediction, presenting opportunities for architectural pruning and lightweight redesign; 3) A model incorporating an ESM module is trained to substitute the conventional MSA module, reducing MSA preprocessing time. Building on these key insights, we present Protenix-Mini, a compact and optimized model designed for efficient protein structure prediction. This streamlined version incorporates a more efficient architectural design with a two-step Ordinary Differential Equation (ODE) sampling strategy. By eliminating redundant Transformer components and refining the sampling process, Protenix-Mini significantly reduces model complexity with slight accuracy drop. Evaluations on benchmark datasets demonstrate that it achieves high-fidelity predictions, with only a negligible 1 to 5 percent decrease in performance on benchmark datasets compared to its full-scale counterpart. This makes Protenix-Mini an ideal choice for applications where computational resources are limited but accurate structure prediction remains crucial."
+  ]
+}

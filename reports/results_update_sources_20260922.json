@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-09-22T11:02:28.721958+08:00",
+  "files": {
+    "atlasfold_adapters_final.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/atlas_adapter_final_20260922/summary.json",
+      "sha256": "f974101bdc76da17c6f66b5c1100effb01bfafc9b193f706e06e5d8a771ca9b5"
+    },
+    "atlasfold_adapters_records.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/atlas_adapter_final_20260922/metric_records.json",
+      "sha256": "82e347b8c887271d8b7a645a781787d6b9855ee7de0e1b7e844ca2b64690c506"
+    },
+    "atlasfold_adapters_scoring_lock.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/atlas_adapter_final_20260922/scoring_lock.json",
+      "sha256": "74f1b3f0d7ed56646743ada69de92a377718926138146a413baf4cb27256efd4"
+    },
+    "openfold_gplus_rotation_final.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_gplus_rotation_20260921/analysis.json",
+      "sha256": "610050a1687d269ba50a48e655869f73eddbb9a11a8826cd5d35d8c988439fe0"
+    },
+    "openfold_gplus_rotation_records.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_gplus_rotation_20260921/combined_metric_records.json",
+      "sha256": "8b9b72d610ff99f068dfee3d8f956d0f8f48bfd82ef4fdd097cb9b343aea9f7a"
+    },
+    "esmfold2_system.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/esmfold2_final_20260922/summary.json",
+      "sha256": "6ef39fc7897d4bd0404adc3843d1509ed5191ca308feafaa74f1059886738ff7"
+    },
+    "esmfold2_records.json": {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/esmfold2_final_20260922/records.json",
+      "sha256": "dee760dc33bbc435388f53a2263b6a135e3a068155fbc5173a9d8c8d57e91aea"
+    }
+  }
+}

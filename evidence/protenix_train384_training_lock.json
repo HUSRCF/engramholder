@@ -1,0 +1,68 @@
+{
+  "jobs": [
+    {
+      "name": "n384_full_native_s20260923",
+      "rotation": null,
+      "seed": 20260923
+    },
+    {
+      "name": "n384_full_native_s20260924",
+      "rotation": null,
+      "seed": 20260924
+    },
+    {
+      "name": "n384_full_native_s20260925",
+      "rotation": null,
+      "seed": 20260925
+    },
+    {
+      "name": "n384_full_r20261001_s20260923",
+      "rotation": 20261001,
+      "seed": 20260923
+    },
+    {
+      "name": "n384_full_r20261001_s20260924",
+      "rotation": 20261001,
+      "seed": 20260924
+    },
+    {
+      "name": "n384_full_r20261001_s20260925",
+      "rotation": 20261001,
+      "seed": 20260925
+    },
+    {
+      "name": "n384_full_r20261002_s20260923",
+      "rotation": 20261002,
+      "seed": 20260923
+    },
+    {
+      "name": "n384_full_r20261002_s20260924",
+      "rotation": 20261002,
+      "seed": 20260924
+    },
+    {
+      "name": "n384_full_r20261002_s20260925",
+      "rotation": 20261002,
+      "seed": 20260925
+    },
+    {
+      "name": "n384_full_r20261003_s20260923",
+      "rotation": 20261003,
+      "seed": 20260923
+    },
+    {
+      "name": "n384_full_r20261003_s20260924",
+      "rotation": 20261003,
+      "seed": 20260924
+    },
+    {
+      "name": "n384_full_r20261003_s20260925",
+      "rotation": 20261003,
+      "seed": 20260925
+    }
+  ],
+  "steps": 1536,
+  "cache_sha256": "cb22d6f0e84acfde071bf941dc110836fc8ff2765ed5d20e72569c00de121391",
+  "protocol_sha256": "e4ac4c5e33c04d1acd44ea113b37beb38b703984bb86d2d38c4ace0f22b875f6",
+  "trainer_sha256": "887d9ae76e41945b571fd2b518934905fea43f158b267cde1e3ad98ab762c842"
+}

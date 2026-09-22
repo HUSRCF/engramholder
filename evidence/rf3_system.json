@@ -1,0 +1,22 @@
+{
+  "model": "rf3",
+  "purpose": "descriptive system reference, not adapter-direction evidence",
+  "execution_lock_sha256": "1adf198dcef20e5f2bc4f0320a540f50ce00cc8347c703187817df7f3dc8ac5e",
+  "scoring_lock_sha256": "172061352d83f176cbe7e293955df13f925a10a0013173b535b54da6c23f4e54",
+  "n": 144,
+  "failed": 0,
+  "panels": {
+    "confirm96": {
+      "n": 96,
+      "ca_lddt": 0.4155778100646472,
+      "residue_ca_lddt": 0.421512306819847,
+      "tm_score_fixed_full_length": 0.3925010416666666
+    },
+    "length48": {
+      "n": 48,
+      "ca_lddt": 0.34672058866839867,
+      "residue_ca_lddt": 0.35757378951650765,
+      "tm_score_fixed_full_length": 0.2993645833333333
+    }
+  }
+}

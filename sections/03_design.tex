@@ -1,0 +1,39 @@
+\section{Experimental design}
+\label{sec:design}
+\subsection{Predictors, inputs, and training recipes}
+\placeholder{Provide a compact configuration table for Protenix, OpenFold, and
+AtlasFold: checkpoint, injection site, anchor dependence, normalization, frozen
+PLM, trainable parameter count, native task loss, and inference budget.
+Within-backbone Native/Rotated/G+ share extra features; Query-only does not
+receive the added ESM2 representation. AtlasFold retains AtlasLM. Do not call
+these baselines identical representations or equal-compute systems.}
+
+\subsection{Panels, study chronology, and endpoints}
+\label{sec:panels}
+\placeholder{Define training-set counts separately from evaluation-panel names.
+Identify the original Protenix locked comparisons and the first Length48 lock;
+mark subsequent OpenFold, AtlasFold, and G+ analyses as observed-panel follow-ups.
+State actual length ranges, sequence screening, masks, and failure scoring.
+Refer to Appendix~\ref{app:chronology} for locks and cumulative exposure limits.}
+
+\subsection{Paired contrasts and uncertainty}
+For target $i$, form the paired direction contrast by averaging training seeds
+and rotations within the target:
+\begin{equation}
+ d_i=\frac{1}{3}\sum_{s=1}^{3}
+ \left(S_{F,i,s}-\frac{1}{3}\sum_{r=1}^{3}S_{F,R_r,i,s}\right).
+\end{equation}
+The head-by-rotation interaction is
+\begin{equation}
+ \Psi_i=\left(S_{F,i}-S_{F,R,i}\right)
+        -\left(S_{G+,i}-S_{G+,R,i}\right),
+ \qquad \Psi=\frac{1}{N}\sum_i\Psi_i,
+ \label{eq:interaction}
+\end{equation}
+where each system score in the last expression is already averaged over its
+prespecified seed and rotation instances.
+\placeholder{Specify target-level paired bootstrap, conditional-on-fitted-model
+interpretation, and primary versus secondary comparisons. Define C$\alpha$
+pair-lDDT; supplementary residue-average lDDT and fixed-correspondence TM-score
+are not independent biological replications. Three seeds and three rotations
+do not multiply the number of independent targets.}

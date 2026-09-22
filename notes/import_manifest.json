@@ -1,0 +1,14 @@
+{
+  "source_repository": "engramfold",
+  "source_revision_file": "notes/source_revision_evidence_lock_20260921.json",
+  "template_git_head": "b2e789c75082d44c3191fda4d91894498b6b79dc",
+  "files": {
+    "notes/source_abstract_submission_draft.md": "82ba1442e1d5922824c408fdc46e08f8ee9a43e0d7f446f51d2052e238703909",
+    "notes/source_appendix.md": "4d858209b2d9a8e183b1d37e0cc18125a0a52b70ec3b6d01beb3ff82027a6b99",
+    "notes/source_revision_plan_20260921.md": "ed4939accf810e50cf710d1aaf8cf834b9e28560135f6b8101e32530ad9df589",
+    "notes/source_manuscript.md": "bd4ccd4ddc9b332951240f86b4028caec9df3004bfa8359a6de453141b8f2967",
+    "notes/source_revision_evidence_lock_20260921.json": "f951dddf0eba05eeb7d32ce65d1ccb0cb43f2bcd281ea063164e3c154b199315"
+  },
+  "status": "Writing paused; generated LaTeX archived under notes/unreviewed_writing_20260921; root template restored",
+  "superseding_user_instruction": "先完善Markdown报告，用户搞清楚后再帮助完成正式写作"
+}

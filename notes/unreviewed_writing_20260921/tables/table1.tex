@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Backbone-specific implementations of Eq.~(1). N/R: native and rotated factor heads. All adapters additionally receive frozen ESM2-35M layer-12 features (480 channels). AtlasFold adaptation results remain pending.}
+\label{tab:interfaces}
+\small
+\begin{tabularx}{\linewidth}{@{}lXXX@{}}
+\toprule
+& Protenix-Mini / Tiny & AF2 / OpenFold & AtlasFold \\
+\midrule
+Site & Single MSA OPM boundary; pair stack retained & First main Evoformer OPM; all 48 blocks retained & First LM-stack product/difference update \\
+Anchor & Cached query factors; $r=32$ & Live MSA factors; $r=32$ & Live sequence factors; $r=128$ \\
+Normalization & Residual $D/(D+.001)$; exact depth-one baseline & Masked native row count plus layer epsilon & Native affine; no OPM depth constant \\
+Native PLM & None in adapted default checkpoint & None & AtlasLM-3B retained \\
+Parameters & N/R: 373,824; Generic: 378,272; G+: 378,144 & N/R: 373,824; G+: 378,144 & N/R: 423,168; G+: 415,008 \\
+Loss & $4L_{\rm MSE}+4L_{\rm bond}$\newline $+4L_{\rm smooth}+.03L_{\rm dist}$ & $L_{\rm FAPE}+.3L_{\rm dist}$\newline $+L_{\rm torsion}$ & $.4L_{\rm dist}$\newline $+2(L_{\rm wMSE}+L_{\rm smooth})$ \\
+Inference & 4 recycles; 5 diffusion steps; 1 sample; seed 101 & 4 trunk passes; no early stop; seed 20260921 & 5 trunk passes; 20/30 diffusion steps by length; 1 sample; seed 1 \\
+\bottomrule
+\end{tabularx}
+\end{table}

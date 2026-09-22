@@ -1,0 +1,1380 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        20
+      ]
+    ],
+    "date-time": "2026-09-20T09:50:22Z",
+    "timestamp": 1789897822847,
+    "version": "4.0.1"
+  },
+  "reference-count": 67,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "8",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            14
+          ]
+        ],
+        "date-time": "2024-05-14T00:00:00Z",
+        "timestamp": 1715644800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            14
+          ]
+        ],
+        "date-time": "2024-05-14T00:00:00Z",
+        "timestamp": 1715644800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000057",
+      "name": "U.S. Department of Health & Human Services | NIH | National Institute of General Medical Sciences",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "R35GM150546"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "R35GM150546"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000057",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000057",
+      "name": "U.S. Department of Health & Human Services | NIH | National Institute of General Medical Sciences",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "R35GM150546"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "R35GM150546"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000057",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000057",
+      "name": "U.S. Department of Health & Human Services | NIH | National Institute of General Medical Sciences",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "R35GM150546"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "R35GM150546"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000057",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000054",
+      "name": "U.S. Department of Health & Human Services | NIH | National Cancer Institute",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "U54-CA225088"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "U54-CA225088"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000054",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "OAC-2106661"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "OAC-2106661"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "OAC-2112606"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "OAC-2112606"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Nat Methods"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        8
+      ]
+    ]
+  },
+  "DOI": "10.1038/s41592-024-02272-z",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        14
+      ]
+    ],
+    "date-time": "2024-05-14T06:02:37Z",
+    "timestamp": 1715666557000
+  },
+  "page": "1514-1524",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 313,
+  "title": [
+    "OpenFold: retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization"
+  ],
+  "prefix": "10.1038",
+  "volume": "21",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-8283-5324",
+      "authenticated-orcid": false,
+      "given": "Gustaf",
+      "family": "Ahdritz",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6524-874X",
+      "authenticated-orcid": false,
+      "given": "Nazim",
+      "family": "Bouatta",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Christina",
+      "family": "Floristean",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sachin",
+      "family": "Kadyan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Qinghui",
+      "family": "Xia",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "William",
+      "family": "Gerecke",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Timothy J.",
+      "family": "O\u2019Donnell",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Daniel",
+      "family": "Berenberg",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ian",
+      "family": "Fisk",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Niccol\u00f2",
+      "family": "Zanichelli",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-9714-2827",
+      "authenticated-orcid": false,
+      "given": "Bo",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Arkadiusz",
+      "family": "Nowaczynski",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Bei",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Marta M.",
+      "family": "Stepniewska-Dziubinska",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Shang",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-2661-4388",
+      "authenticated-orcid": false,
+      "given": "Adegoke",
+      "family": "Ojewole",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Murat Efe",
+      "family": "Guney",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Stella",
+      "family": "Biderman",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Andrew M.",
+      "family": "Watkins",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Stephen",
+      "family": "Ra",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Pablo Ribalta",
+      "family": "Lorenzo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Lucas",
+      "family": "Nivon",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1909-0961",
+      "authenticated-orcid": false,
+      "given": "Brian",
+      "family": "Weitzner",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yih-En Andrew",
+      "family": "Ban",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-2626-7865",
+      "authenticated-orcid": false,
+      "given": "Shiyang",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Minjia",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Conglong",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Shuaiwen Leon",
+      "family": "Song",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yuxiong",
+      "family": "He",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3364-1838",
+      "authenticated-orcid": false,
+      "given": "Peter K.",
+      "family": "Sorger",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Emad",
+      "family": "Mostaque",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-5921-0035",
+      "authenticated-orcid": false,
+      "given": "Zhao",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Richard",
+      "family": "Bonneau",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6817-1322",
+      "authenticated-orcid": false,
+      "given": "Mohammed",
+      "family": "AlQuraishi",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        14
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "2272_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "223",
+      "DOI": "10.1126/science.181.4096.223",
+      "volume": "181",
+      "author": "CB Anfinsen",
+      "year": "1973",
+      "unstructured": "Anfinsen, C. B. Principles that govern the folding of protein chains. Science 181, 223\u2013230 (1973).",
+      "journal-title": "Science"
+    },
+    {
+      "key": "2272_CR2",
+      "doi-asserted-by": "publisher",
+      "first-page": "289",
+      "DOI": "10.1146/annurev.biophys.37.092707.153558",
+      "volume": "37",
+      "author": "KA Dill",
+      "year": "2008",
+      "unstructured": "Dill, K. A., Ozkan, S. B., Shell, M. S. & Weikl, T. R. The protein folding problem. Annu. Rev. Biophys. 37, 289\u2013316 (2008).",
+      "journal-title": "Annu. Rev. Biophys."
+    },
+    {
+      "key": "2272_CR3",
+      "doi-asserted-by": "publisher",
+      "first-page": "999",
+      "DOI": "10.1093/bioinformatics/btu791",
+      "volume": "31",
+      "author": "DT Jones",
+      "year": "2015",
+      "unstructured": "Jones, D. T., Singh, T., Kosciolek, T. & Tetchner, S. MetaPSICOV: combining coevolution methods for accurate prediction of contacts and long range hydrogen bonding in proteins. Bioinformatics 31, 999\u20131006 (2015).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "2272_CR4",
+      "unstructured": "Golkov, V. et al. Protein contact prediction from amino acid co-evolution using convolutional networks for graph-valued images. In Advances in Neural Information Processing Systems (eds Lee, D. et al.) (Curran Associates, 2016)."
+    },
+    {
+      "key": "2272_CR5",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1005324",
+      "DOI": "10.1371/journal.pcbi.1005324",
+      "volume": "13",
+      "author": "S Wang",
+      "year": "2017",
+      "unstructured": "Wang, S., Sun, S., Li, Z., Zhang, R. & Xu, J. Accurate de novo prediction of protein contact map by ultra-deep learning model. PLoS Comput. Biol. 13, e1005324 (2017).",
+      "journal-title": "PLoS Comput. Biol."
+    },
+    {
+      "key": "2272_CR6",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "DOI": "10.1016/j.cels.2017.11.014",
+      "volume": "6",
+      "author": "Y Liu",
+      "year": "2018",
+      "unstructured": "Liu, Y., Palmedo, P., Ye, Q., Berger, B. & Peng, J. Enhancing evolutionary couplings with deep convolutional neural networks. Cell Syst. 6, 65\u201374 (2018).",
+      "journal-title": "Cell Syst."
+    },
+    {
+      "key": "2272_CR7",
+      "doi-asserted-by": "publisher",
+      "first-page": "706",
+      "DOI": "10.1038/s41586-019-1923-7",
+      "volume": "577",
+      "author": "AW Senior",
+      "year": "2020",
+      "unstructured": "Senior, A. W. et al. Improved protein structure prediction using potentials from deep learning. Nature 577, 706\u2013710 (2020).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "2272_CR8",
+      "doi-asserted-by": "publisher",
+      "first-page": "601",
+      "DOI": "10.1038/s42256-021-00348-5",
+      "volume": "3",
+      "author": "J Xu",
+      "year": "2021",
+      "unstructured": "Xu, J., McPartlon, M. & Li, J. Improved protein structure prediction by deep learning irrespective of co-evolution information. Nat. Mach. Intell. 3, 601\u2013609 (2021).",
+      "journal-title": "Nat. Mach. Intell."
+    },
+    {
+      "key": "2272_CR9",
+      "doi-asserted-by": "publisher",
+      "first-page": "779",
+      "DOI": "10.1006/jmbi.1993.1626",
+      "volume": "234",
+      "author": "A \u0160ali",
+      "year": "1993",
+      "unstructured": "\u0160ali, A. & Blundell, T. L. Comparative protein modelling by satisfaction of spatial restraints. J. Mol. Biol. 234, 779\u2013815 (1993).",
+      "journal-title": "J. Mol. Biol."
+    },
+    {
+      "key": "2272_CR10",
+      "doi-asserted-by": "publisher",
+      "first-page": "725",
+      "DOI": "10.1038/nprot.2010.5",
+      "volume": "5",
+      "author": "A Roy",
+      "year": "2010",
+      "unstructured": "Roy, A., Kucukural, A. & Zhang, Y. I-TASSER: a unified platform for automated protein structure and function prediction. Nat. Protoc. 5, 725\u2013738 (2010).",
+      "journal-title": "Nat. Protoc."
+    },
+    {
+      "key": "2272_CR11",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "DOI": "10.1038/s41586-021-03819-2",
+      "volume": "577",
+      "author": "J Jumper",
+      "year": "2021",
+      "unstructured": "Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 577, 583\u2013589 (2021).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "2272_CR12",
+      "doi-asserted-by": "publisher",
+      "first-page": "679",
+      "DOI": "10.1038/s41592-022-01488-1",
+      "volume": "19",
+      "author": "M Mirdita",
+      "year": "2022",
+      "unstructured": "Mirdita, M. et al. ColabFold: making protein folding accessible to all. Nat. Methods 19, 679\u2013682 (2022).",
+      "journal-title": "Nat. Methods"
+    },
+    {
+      "key": "2272_CR13",
+      "unstructured": "Baek, M. Adding a big enough number for \u2018residue_index\u2019 feature is enough to model hetero-complex using AlphaFold (green&cyan: crystal structure / magenta: predicted model w/ residue_index modification). Twitter twitter.com/minkbaek/status/1417538291709071362?lang=en (2021)."
+    },
+    {
+      "key": "2272_CR14",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-021-27838-9",
+      "volume": "13",
+      "author": "T Tsaban",
+      "year": "2022",
+      "unstructured": "Tsaban, T. et al. Harnessing protein folding neural networks for peptide\u2013protein docking. Nat. Commun. 13, 176 (2022).",
+      "journal-title": "Nat. Commun."
+    },
+    {
+      "key": "2272_CR15",
+      "doi-asserted-by": "publisher",
+      "first-page": "238101",
+      "DOI": "10.1103/PhysRevLett.129.238101",
+      "volume": "129",
+      "author": "JP Roney",
+      "year": "2022",
+      "unstructured": "Roney, J. P. & Ovchinnikov, S. State-of-the-art estimation of protein model accuracy using AlphaFold. Phys. Rev. Lett. 129, 238101 (2022).",
+      "journal-title": "Phys. Rev. Lett."
+    },
+    {
+      "key": "2272_CR16",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Baltzis, A. et al. Highly significant improvement of protein sequence alignments with AlphaFold2. Bioinformatics 38, 5007\u20135011 (2022).",
+      "DOI": "10.1093/bioinformatics/btac625"
+    },
+    {
+      "key": "2272_CR17",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-022-28865-w",
+      "volume": "13",
+      "author": "P Bryant",
+      "year": "2022",
+      "unstructured": "Bryant, P., Pozzati, G. & Elofsson, A. Improved prediction of protein\u2013protein interactions using AlphaFold2. Nat. Commun. 13, 1265 (2022).",
+      "journal-title": "Nat. Commun."
+    },
+    {
+      "key": "2272_CR18",
+      "doi-asserted-by": "publisher",
+      "first-page": "832",
+      "DOI": "10.1038/s41586-023-06832-9",
+      "volume": "625",
+      "author": "HK Wayment-Steele",
+      "year": "2024",
+      "unstructured": "Wayment-Steele, H. K., Ovchinnikov, S., Colwell, L. & Kern, D. Prediction of multiple conformational states by combining sequence clustering with AlphaFold2. Nature 625, 832\u2013839 (2024).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "2272_CR19",
+      "doi-asserted-by": "publisher",
+      "first-page": "590",
+      "DOI": "10.1038/s41586-021-03828-1",
+      "volume": "596",
+      "author": "K Tunyasuvunakool",
+      "year": "2021",
+      "unstructured": "Tunyasuvunakool, K. et al. Highly accurate protein structure prediction for the human proteome. Nature 596, 590\u2013596 (2021).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "2272_CR20",
+      "doi-asserted-by": "publisher",
+      "first-page": "D439",
+      "DOI": "10.1093/nar/gkab1061",
+      "volume": "50",
+      "author": "M Varadi",
+      "year": "2021",
+      "unstructured": "Varadi, M. et al. AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models. Nucleic Acids Res. 50, D439\u2013D444 (2021).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2272_CR21",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "DOI": "10.1038/d41586-022-02083-2",
+      "volume": "608",
+      "author": "E Callaway",
+      "year": "2022",
+      "unstructured": "Callaway, E. \u2018The entire protein universe\u2019: AI predicts shape of nearly every known protein. Nature 608, 15\u201316 (2022).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "2272_CR22",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Evans, R. et al. Protein complex prediction with AlphaFold-Multimer. Preprint at bioRxiv https://doi.org/10.1101/2021.10.04.463034 (2021).",
+      "DOI": "10.1101/2021.10.04.463034"
+    },
+    {
+      "key": "2272_CR23",
+      "unstructured": "Ahdritz, G. et al. OpenProteinSet: training data for structural biology at scale. In Advances in Neural Information Processing Systems (eds Oh, A. et al.) 4597-4609 (Curran Associates, 2023)."
+    },
+    {
+      "key": "2272_CR24",
+      "unstructured": "Paszke, A. et al. PyTorch: An Imperative Style, High-Performance Deep Learning Library. In Advances in Neural Information Processing Systems (eds Wallach, H. et al.) 8026\u20138037 (Curran Associates, 2019)."
+    },
+    {
+      "key": "2272_CR25",
+      "unstructured": "Bradbury, J. et al. JAX: composable transformations of Python+NumPy programs. GitHub github.com/google/jax (2018)."
+    },
+    {
+      "key": "2272_CR26",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Rasley, J., Rajbhandari, S., Ruwase, O. & He, Y. DeepSpeed: system optimizations enable training deep learning models with over 100 billion parameters. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD \u201920 3505\u20133506 (Association for Computing Machinery, 2020).",
+      "DOI": "10.1145/3394486.3406703"
+    },
+    {
+      "key": "2272_CR27",
+      "first-page": "1",
+      "volume": "22",
+      "author": "B Charlier",
+      "year": "2021",
+      "unstructured": "Charlier, B., Feydy, J., Glaun\u00e8s, J., Collin, F.-D. & Durif, G. Kernel operations on the GPU, with autodiff, without memory overflows. J. Mach. Learn. Res. 22, 1\u20136 (2021).",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "2272_CR28",
+      "unstructured": "Falcon, W. & the PyTorch Lightning team. PyTorch Lightning (PyTorch Lightning, 2019)."
+    },
+    {
+      "key": "2272_CR29",
+      "unstructured": "Dao, T., Fu, D. Y., Ermon, S., Rudra, A. & R\u00e9, C. FlashAttention: fast and memory-efficient exact attention with IO-awareness. In Advances in Neural Information Processing Systems (eds Koyejo, S. et al.) 16344\u201316359 (Curran Associates, 2022)."
+    },
+    {
+      "key": "2272_CR30",
+      "doi-asserted-by": "publisher",
+      "first-page": "D170",
+      "DOI": "10.1093/nar/gkw1081",
+      "volume": "45",
+      "author": "M Mirdita",
+      "year": "2017",
+      "unstructured": "Mirdita, M. et al. Uniclust databases of clustered and deeply annotated protein sequences and alignments. Nucleic Acids Res. 45, D170\u2013D176 (2017).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2272_CR31",
+      "doi-asserted-by": "publisher",
+      "first-page": "D520",
+      "DOI": "10.1093/nar/gky949",
+      "volume": "47",
+      "author": "wwPDB Consortium.",
+      "year": "2018",
+      "unstructured": "wwPDB Consortium. Protein Data Bank: the single global archive for 3D macromolecular structure data. Nucleic Acids Res. 47, D520\u2013D528 (2018).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2272_CR32",
+      "doi-asserted-by": "publisher",
+      "first-page": "387",
+      "DOI": "10.1002/prot.25431",
+      "volume": "86",
+      "author": "J\u00fcrgen Haas",
+      "year": "2018",
+      "unstructured": "Haas, J. \u00fcrgen et al. Continuous automated model evaluation (CAMEO) complementing the critical assessment of structure prediction in CASP12. Proteins 86, 387\u2013398 (2018).",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2272_CR33",
+      "doi-asserted-by": "publisher",
+      "first-page": "2722",
+      "DOI": "10.1093/bioinformatics/btt473",
+      "volume": "29",
+      "author": "V Mariani",
+      "year": "2013",
+      "unstructured": "Mariani, V., Biasini, M., Barbato, A. & Schwede, T. lDDT: a local superposition-free score for comparing protein structures and models using distance difference tests. Bioinformatics 29, 2722\u20132728 (2013).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "2272_CR34",
+      "doi-asserted-by": "publisher",
+      "first-page": "1093",
+      "DOI": "10.1016/S0969-2126(97)00260-8",
+      "volume": "5",
+      "author": "CA Orengo",
+      "year": "1997",
+      "unstructured": "Orengo, C. A. et al. CATH\u2014a hierarchic classification of protein domain structures. Structure 5, 1093\u20131108 (1997).",
+      "journal-title": "Structure"
+    },
+    {
+      "key": "2272_CR35",
+      "doi-asserted-by": "publisher",
+      "first-page": "D266",
+      "DOI": "10.1093/nar/gkaa1079",
+      "volume": "49",
+      "author": "I Sillitoe",
+      "year": "2021",
+      "unstructured": "Sillitoe, I. et al. CATH: increased structural coverage of functional space. Nucleic Acids Res. 49, D266\u2013D273 (2021).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2272_CR36",
+      "doi-asserted-by": "publisher",
+      "first-page": "D376",
+      "DOI": "10.1093/nar/gkz1064",
+      "volume": "48",
+      "author": "A Andreeva",
+      "year": "2020",
+      "unstructured": "Andreeva, A., Kulesha, E., Gough, J. & Murzin, A. G. The SCOP database in 2020: expanded classification of representative family and superfamily domains of known protein structures. Nucleic Acids Res. 48, D376\u2013D382 (2020).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2272_CR37",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-021-26535-x",
+      "volume": "12",
+      "author": "Y Saitoh",
+      "year": "2021",
+      "unstructured": "Saitoh, Y. et al. Structural basis for high selectivity of a rice silicon channel Lsi1. Nat. Commun. 12, 6236 (2021).",
+      "journal-title": "Nat. Commun."
+    },
+    {
+      "key": "2272_CR38",
+      "doi-asserted-by": "publisher",
+      "first-page": "72",
+      "DOI": "10.1016/j.biochi.2021.10.002",
+      "volume": "192",
+      "author": "DaniellyCAM Mota",
+      "year": "2022",
+      "unstructured": "Mota, DaniellyC. A. M. et al. Structural and thermodynamic analyses of human TMED1 (p241) Golgi dynamics. Biochimie 192, 72\u201382 (2022).",
+      "journal-title": "Biochimie"
+    },
+    {
+      "key": "2272_CR39",
+      "unstructured": "Vaswani, A. et al. Attention is all you need. In Advances in Neural Information Processing Systems (eds Guyon, I. et al.) (Curran Associates, 2017)."
+    },
+    {
+      "key": "2272_CR40",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Rabe, M. N. & Staats, C. Self-attention does not need O(n2) memory. Preprint at https://doi.org/10.48550/arXiv.2112.05682 (2021).",
+      "DOI": "10.48550/arXiv.2112.05682"
+    },
+    {
+      "key": "2272_CR41",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Cheng, S. et al. FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters. In Proceedings of the 29th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming 417\u2013430 (Association for Computing Machinery, 2024).",
+      "DOI": "10.1145/3627535.3638465"
+    },
+    {
+      "key": "2272_CR42",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Li, Z. et al. Uni-Fold: an open-source platform for developing protein folding models beyond AlphaFold. Preprint at bioRxiv https://doi.org/10.1101/2022.08.04.502811 (2022).",
+      "DOI": "10.1101/2022.08.04.502811"
+    },
+    {
+      "key": "2272_CR43",
+      "first-page": "2577",
+      "volume": "22",
+      "author": "W Kabsch",
+      "year": "1983",
+      "unstructured": "Kabsch, W. & Sander, C. Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Science 22, 2577\u20132637 (1983).",
+      "journal-title": "Science"
+    },
+    {
+      "key": "2272_CR44",
+      "doi-asserted-by": "publisher",
+      "first-page": "3370",
+      "DOI": "10.1093/nar/gkg571",
+      "volume": "31",
+      "author": "A Zemla",
+      "year": "2003",
+      "unstructured": "Zemla, A. LGA: a method for finding 3D similarities in protein structures. Nucleic Acids Res. 31, 3370\u20133374 (2003).",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2272_CR45",
+      "doi-asserted-by": "publisher",
+      "first-page": "e28766",
+      "DOI": "10.1371/journal.pone.0028766",
+      "volume": "6",
+      "author": "DS Marks",
+      "year": "2011",
+      "unstructured": "Marks, D. S. et al. Protein 3D structure computed from evolutionary sequence variation. PLoS ONE 6, e28766 (2011).",
+      "journal-title": "PLoS ONE"
+    },
+    {
+      "key": "2272_CR46",
+      "doi-asserted-by": "publisher",
+      "first-page": "10340",
+      "DOI": "10.1073/pnas.1207864109",
+      "volume": "109",
+      "author": "JI Su\u0142kowska",
+      "year": "2012",
+      "unstructured": "Su\u0142kowska, J. I., Morcos, F., Weigt, M., Hwa, T. & Onuchic, Jos\u00e9 Genomics-aided structure prediction. Proc. Natl Acad. Sci. USA 109, 10340\u201310345 (2012).",
+      "journal-title": "Proc. Natl Acad. Sci. USA"
+    },
+    {
+      "key": "2272_CR47",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kaplan, J. et al. Scaling laws for neural language models. Preprint at https://doi.org/10.48550/arXiv.2001.08361 (2020).",
+      "DOI": "10.48550/arXiv.2001.08361"
+    },
+    {
+      "key": "2272_CR48",
+      "unstructured": "Hoffmann, J. et al. An empirical analysis of compute-optimal large language model training. In Advances in Neural Information Processing Systems (eds Oh, A. H. et al.) 30016\u201330030 (NeurIPS, 2022)."
+    },
+    {
+      "key": "2272_CR49",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tay, Y. et al. Scaling laws vs model architectures: how does inductive bias influence scaling? In Findings of the Association for Computational Linguistics: EMNLP 2023 (eds Bouamor, H. et al.) 12342\u201312364 (Association for Computational Linguistics, 2023).",
+      "DOI": "10.18653/v1/2023.findings-emnlp.825"
+    },
+    {
+      "key": "2272_CR50",
+      "doi-asserted-by": "publisher",
+      "first-page": "1123",
+      "DOI": "10.1126/science.ade2574",
+      "volume": "379",
+      "author": "Z Lin",
+      "year": "2023",
+      "unstructured": "Lin, Z. et al. Evolutionary-scale prediction of atomic-level protein structure with a language model. Science 379, 1123\u20131130 (2023).",
+      "journal-title": "Science"
+    },
+    {
+      "key": "2272_CR51",
+      "doi-asserted-by": "publisher",
+      "first-page": "1315",
+      "DOI": "10.1038/s41592-019-0598-1",
+      "volume": "16",
+      "author": "EC Alley",
+      "year": "2019",
+      "unstructured": "Alley, E. C., Khimulya, G., Biswas, S., AlQuraishi, M. & Church, G. M. Unified rational protein engineering with sequence-based deep representation learning. Nat. Methods 16, 1315\u20131322 (2019).",
+      "journal-title": "Nat. Methods"
+    },
+    {
+      "key": "2272_CR52",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Chowdhury, R. et al. Single-sequence protein structure prediction using a language model and deep learning. Nat. Biotechnol. 40, 1617\u20131623 (2022).",
+      "DOI": "10.1038/s41587-022-01432-w"
+    },
+    {
+      "key": "2272_CR53",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wu, R. et al. High-resolution de novo structure prediction from primary sequence. Preprint at bioRxiv https://doi.org/10.1101/2022.07.21.500999 (2022).",
+      "DOI": "10.1101/2022.07.21.500999"
+    },
+    {
+      "key": "2272_CR54",
+      "doi-asserted-by": "publisher",
+      "first-page": "3900",
+      "DOI": "10.1093/bioinformatics/btac421",
+      "volume": "38",
+      "author": "J Singh",
+      "year": "2022",
+      "unstructured": "Singh, J., Paliwal, K., Litfin, T., Singh, J. & Zhou, Y. Predicting RNA distance-based contact maps by integrated deep learning on physics-inferred secondary structure and evolutionary-derived mutational coupling. Bioinformatics 38, 3900\u20133910 (2022).",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "2272_CR55",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "DOI": "10.1038/s41592-023-02086-5",
+      "volume": "21",
+      "author": "M Baek",
+      "year": "2024",
+      "unstructured": "Baek, M., McHugh, R., Anishchenko, I., Baker, D. & DiMaio, F. Accurate prediction of protein\u2013nucleic acid complexes using RoseTTAFoldNA. Nat. Methods 21, 117\u2013121 (2024).",
+      "journal-title": "Nat. Methods"
+    },
+    {
+      "key": "2272_CR56",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Pearce, R., Omenn, G. S. & Zhang, Y. De novo RNA tertiary structure prediction at atomic resolution using geometric potentials from deep learning. Preprint at bioRxiv https://doi.org/10.1101/2022.05.15.491755 (2022).",
+      "DOI": "10.1101/2022.05.15.491755"
+    },
+    {
+      "key": "2272_CR57",
+      "doi-asserted-by": "publisher",
+      "unstructured": "McPartlon, M., Lai, B. & Xu, J. A deep SE(3)-equivariant model for learning inverse protein folding. Preprint at bioRxiv https://doi.org/10.1101/2022.04.15.488492 (2022).",
+      "DOI": "10.1101/2022.04.15.488492"
+    },
+    {
+      "key": "2272_CR58",
+      "doi-asserted-by": "crossref",
+      "unstructured": "McPartlon, M. & Xu, J. An end-to-end deep learning method for protein side-chain packing and inverse folding. In Proceedings of the National Academy of Sciences e2216438120 (PNAS, 2023).",
+      "DOI": "10.1101/2022.03.11.483812"
+    },
+    {
+      "key": "2272_CR59",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "DOI": "10.1038/s41586-021-04392-4",
+      "volume": "602",
+      "author": "HL Knox",
+      "year": "2022",
+      "unstructured": "Knox, H. L., Sinner, E. K., Townsend, C. A., Boal, A. K. & Booker, S. J. Structure of a B12-dependent radical SAM enzyme in carbapenem biosynthesis. Nature 602, 343\u2013348 (2022).",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "2272_CR60",
+      "doi-asserted-by": "publisher",
+      "first-page": "702",
+      "DOI": "10.1002/prot.20264",
+      "volume": "57",
+      "author": "Y Zhang",
+      "year": "2004",
+      "unstructured": "Zhang, Y. & Skolnick, J. Scoring function for automated assessment of protein structure template quality. Proteins 57, 702\u2013710 (2004).",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2272_CR61",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Rajbhandari, S., Rasley, J., Ruwase, O. & He, Y. Zero: memory optimizations toward training trillion parameter models. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (IEEE Press, 2020).",
+      "DOI": "10.1109/SC41405.2020.00024"
+    },
+    {
+      "key": "2272_CR62",
+      "unstructured": "Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization. In 3rd International Conference on Learning Representations (eds Bengio, Y. & LeCun, Y.) (ICLR, 2015)."
+    },
+    {
+      "key": "2272_CR63",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wang, G. et al. HelixFold: an efficient implementation of AlphaFold2 using PaddlePaddle. Preprint at https://doi.org/10.48550/arXiv.2207.05477 (2022).",
+      "DOI": "10.48550/arXiv.2207.05477"
+    },
+    {
+      "key": "2272_CR64",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Yuan, J. et al. OneFlow: redesign the distributed deep learning framework from scratch. Preprint at https://doi.org/10.48550/arXiv.2110.15032 (2021).",
+      "DOI": "10.48550/arXiv.2110.15032"
+    },
+    {
+      "key": "2272_CR65",
+      "unstructured": "Ovchinnikov, S. Weekend project! nerd-face So now that OpenFold weights are available. I was curious how different they are from AlphaFold weights and if they can be used for AfDesign evaluation. More specifically, if you design a protein with AlphaFold, can OpenFold predict it (and vice-versa)? (1/5). Twitter twitter.com/sokrypton/status/1551242121528520704?lang=en (2022)."
+    },
+    {
+      "key": "2272_CR66",
+      "doi-asserted-by": "publisher",
+      "first-page": "6064",
+      "DOI": "10.1021/acs.jafc.1c00940",
+      "volume": "69",
+      "author": "X Wei",
+      "year": "2021",
+      "unstructured": "Wei, X. et al. The \u03b1-helical cap domain of a novel esterase from gut Alistipes shahii shaping the substrate-binding pocket. J. Agric. Food Chem. 69, 6064\u20136072 (2021).",
+      "journal-title": "J. Agric. Food Chem."
+    },
+    {
+      "key": "2272_CR67",
+      "doi-asserted-by": "publisher",
+      "first-page": "13165",
+      "DOI": "10.1093/nar/gkab1162",
+      "volume": "49",
+      "author": "BL Carroll",
+      "year": "2021",
+      "unstructured": "Carroll, B. L. et al. Caught in motion: human NTHL1 undergoes interdomain rearrangement necessary for catalysis. Nucleic Acids Res. 49, 13165\u201313178 (2021).",
+      "journal-title": "Nucleic Acids Res."
+    }
+  ],
+  "container-title": [
+    "Nature Methods"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41592-024-02272-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41592-024-02272-z",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41592-024-02272-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2024-08-08T19:06:37Z",
+    "timestamp": 1723143997000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41592-024-02272-z"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        14
+      ]
+    ]
+  },
+  "references-count": 67,
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          8
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "2272"
+  ],
+  "URL": "https://doi.org/10.1038/s41592-024-02272-z",
+  "relation": {
+    "has-preprint": [
+      {
+        "id-type": "doi",
+        "id": "10.1101/2022.11.20.517210",
+        "asserted-by": "object"
+      }
+    ]
+  },
+  "ISSN": [
+    "1548-7091",
+    "1548-7105"
+  ],
+  "issn-type": [
+    {
+      "value": "1548-7091",
+      "type": "print"
+    },
+    {
+      "value": "1548-7105",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        14
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "14 August 2023",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "3 April 2024",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "14 May 2024",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "M.A. is a member of the scientific advisory boards of Cyrus Biotechnology, Deep Forest Sciences, Nabla Bio, Oracle Therapeutics and FL2021-002, a Foresite Labs company. P.K.S. is a cofounder and member of the BOD of Glencoe Software, member of the BOD for Applied BioMath and a member of the SAB for RareCyte, NanoString, Reverb Therapeutics and Montai Health; he holds equity in Glencoe, Applied BioMath and RareCyte. L.N. is an employee of Cyrus Biotechnology. The other authors declare no competing interests.",
+      "order": 1,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Competing interests"
+      }
+    }
+  ]
+}

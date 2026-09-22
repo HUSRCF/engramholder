@@ -1,0 +1,58 @@
+\section{Architecture and length boundaries}
+\label{sec:5}
+\subsection{Fixed Protenix adapters beyond their adaptation lengths}\label{fixed-protenix-adapters-beyond-their-adaptation-lengths}
+
+On Length48, native full-factor adapters trained on Train384 score 0.52919,
+versus 0.48667 for trained rotations and 0.32122 for query-only. The locked
+primary difference is \textbf{+0.04252 {[}0.02899, 0.05765{]}}, with 41/48 positive
+target differences. Residue-averaged lDDT gives +0.04029 and TM-score +0.04782,
+both with positive intervals. Native-query (+0.20797) is a descriptive secondary
+comparison. All 672 model--target predictions complete without input cropping.
+
+Shared residue updates therefore remain useful beyond the adapter's training
+lengths in this test. The experiment does not establish arbitrary-length,
+family or pretraining generalization. The three length-bin effects are positive,
+but do not establish a monotonic length trend. Protenix G+ was not evaluated
+on this longer-chain panel; its AF2 evaluation below is a different experiment.
+
+\subsection{AF2: supported effects and competitive boundaries}\label{af2-supported-effects-and-competitive-boundaries}
+
+\input{tables/table3.tex}
+
+All three adapter families improve mean scores over query-only. Direction
+effects are supported on both Train96 panels and on Length48 after Train384
+adaptation. At Train384 on Confirm96-B, all three metric intervals cross zero;
+one of three training seeds favors rotation. This establishes neither a native
+advantage nor equivalence in that condition. The longer-chain Train384 effect
+has positive intervals for both supplementary metrics, although one TM-score
+rotation marginal is slightly negative.
+
+A post-result paired analysis finds Train384 Native-G+ of
+-0.00648 {[}-0.01777, 0.00536{]} on Confirm96-B and
+-0.00703 {[}-0.01369, -0.00039{]} on Length48. Train96 Native-G+ on Length48
+is also negative, -0.00977 {[}-0.01674, -0.00288{]}. These unadjusted intervals
+support a longer-chain competitive limitation in the tested recipes. They do
+not show that G+ learned a particular alignment mechanism.
+
+The direction-effect change from Train96 to Train384 is
+-0.01678 {[}-0.03214, -0.00261{]} on Confirm96-B and
++0.00087 {[}-0.00728, 0.00863{]} on Length48. This directly contrasts the paired
+effects; it does not infer an interaction from separate significance decisions.
+The short-panel pattern differs from Protenix. Neither interaction identifies
+which architectural or optimization property causes that difference.
+
+\subsection{AtlasFold: fixed non-OPM extension slot}\label{atlasfold-fixed-non-opm-extension-slot}
+
+\textbf{Pending complete matrix; no adapter-effect claim.} This extension asks whether
+native orientation matters at a product/difference interface while retaining
+AtlasLM-3B. The locked matrix is Train96, 1,536 updates, three native fits,
+three rotations crossed with three seeds, and three G+ fits. Symmetric Dev8
+calibration has selected the common \(10^{-4}\) learning rate. The primary
+comparison is native-rotation on observed Confirm96-B; Length48 and G+ are
+secondary. Table 1 already specifies the construction independently of results.
+
+The final table will report query-only, native, rotation and G+ scores on both
+panels, paired intervals, all seed marginals and prediction failures. A positive,
+null or negative outcome fills the same slot and does not change the main
+question. Completed original AtlasFold predictions in Table 4 do not count as
+this adapter experiment.

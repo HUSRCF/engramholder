@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{System references under the executed single-sequence, no-template/no-homolog conditions. These are not best MSA-enabled scores or a quality-matched compute comparison. Original-system rows do not replicate the adapter direction experiment.}
+\label{tab:systems}
+\small
+\begin{tabularx}{\linewidth}{@{}Xrr@{}}
+\toprule
+Executed system & Confirm96-B & Length48 \\
+\midrule
+Protenix-Mini Train384 native adapter & .62572 & .52919 \\
+Official Protenix-Mini-ESM (native ESM2-3B) & .93599 & .92139 \\
+AF2 query-only, OpenFold & .30191 & .26079 \\
+AF2 query-only, ColabFold (same AF2 weights) & .30191 & .26074 \\
+AtlasFold, original (native AtlasLM-3B) & .95676 & .95050 \\
+OpenFold3 / OpenBind-0, query-only & .36091 & .30814 \\
+RF3 Benchmark, query-only & .41558 & .34672 \\
+ESMFold2 (full ESMC-6B) & Pending & Pending \\
+\bottomrule
+\end{tabularx}
+\end{table}

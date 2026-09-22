@@ -1,0 +1,45 @@
+\section{Introduction}
+\label{sec:1}
+A frozen structure predictor already contains operators that transform residue
+information into pair representations. An adapter can reuse this computation,
+or learn a generic pair update from new sequence features. These alternatives
+raise two distinct questions: whether native factor composition is a useful
+constraint, and whether its output directions are compatible with the fixed
+network that consumes them. Neither question is answered by parameter count alone.
+
+We construct zero-initialized residuals around native operators and investigate
+these questions with trained controls. Protenix-Mini provides the initial setting:
+a residue-wise predictor uses frozen ESM2 features to modify native query factors,
+while retaining the frozen decoder and downstream pair processing. A generic
+pair head tests the overall parameterization. Fixed orthogonal output rotations
+then retain the factor construction and decoder spectrum while changing its
+orientation relative to the downstream model. Rotated adapters receive training;
+they are not native adapters damaged only at inference.
+
+The evidence has three levels. First, independently locked Protenix comparisons
+establish an advantage over the original generic head and a separate direction
+effect. Second, fixed adapters remain useful on complete proteins longer than
+those used for adaptation. Third, experiments using AlphaFold2 weights in
+OpenFold test a substantially different architecture and expose the conditional
+nature of the effect. Native orientation is advantageous in some AF2 settings,
+but native factors do not consistently outperform a generic head given explicit
+factor access. We report these boundaries alongside the positive results.
+
+Our contribution is an operator-centered adaptation construction and controlled
+empirical evidence about its orientation, scope and competitive limits. We do
+not introduce OPM itself, claim recovery of evolutionary covariance, or identify
+a complete mechanism for folding generalization.
+
+\subsection{Related work}\label{related-work}
+
+PLM-based folding includes HelixFold-Single, ESMFold and the ESM-conditioned
+Protenix-Mini route \citep{protenix,helixfold,esmfold}. Our question is the parameterization of an internal
+update in a frozen predictor. Adapters and Side-Tuning establish learning small
+modules around pretrained networks \citep{adapters,sidetuning}, while ReZero studies residual
+initialization \citep{rezero}. PiSSA, VeRA and ReFT respectively examine pretrained weight
+directions, fixed random adaptation matrices and representation interventions
+\citep{pissa,vera,reft}. Native directions or activation adaptation are therefore not new in
+general. We study input-dependent native factor anchors and trained,
+spectrum-preserving direction interventions in structure prediction. OpenFold
+provides a trainable AF2 implementation \citep{openfold}; ColabFold is an additional AF2
+execution pipeline \citep{colabfold}, not a second independent architecture in our study.

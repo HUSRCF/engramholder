@@ -1,0 +1,57 @@
+{
+  "checked_utc": "2026-09-21T14:20:08.407532+00:00",
+  "status": "read-only audit; no implementation or experiment launched",
+  "source_hashes": {
+    "src/engramfold/models/live_opm.py": {
+      "current": "9d3130cf6db896da6fa3aa1932651d10060a8845156e5c389e4c7e7d9cad38c0",
+      "historical_train96": "9d3130cf6db896da6fa3aa1932651d10060a8845156e5c389e4c7e7d9cad38c0"
+    },
+    "src/engramfold/models/interface_heads.py": {
+      "current": "f1a2fb0de3bca444c9a5db1ac6bc9648b25824a11ab095a3801ba7ab84b52d9a",
+      "historical_train96": "f1a2fb0de3bca444c9a5db1ac6bc9648b25824a11ab095a3801ba7ab84b52d9a"
+    },
+    "src/engramfold/models/native_geometry.py": {
+      "current": "3173f554ed252ffbd3f1d5a261e91155a157cc41bcb24b2536c00f6bace0abfe",
+      "historical_train96": "3173f554ed252ffbd3f1d5a261e91155a157cc41bcb24b2536c00f6bace0abfe"
+    },
+    "scripts/run_openfold_study.py": {
+      "current": "953d73a3c31ef852cf3ac3df614bccac8d879ff40f8755a9b260a5ba8f93df5a",
+      "historical_train96": "0ba88e3cc821387946d125994d0a0f7d57a35e7861b7b5f4cac094f1eaa6cf2c"
+    },
+    "src/engramfold/experiments/cross_backbone_protocol.py": {
+      "current": "620eee78dd54c6f0c7f86ba7450ac080f037023dfec1dedd06c0e9985ec6ef68",
+      "historical_train96": "620eee78dd54c6f0c7f86ba7450ac080f037023dfec1dedd06c0e9985ec6ef68"
+    }
+  },
+  "runner_difference": "Only optional train_manifest/size support and count assertion; use sealed Train96 source for future isolated extension",
+  "historical_gplus_timings": [
+    {
+      "seed": 20260923,
+      "steps": 1536,
+      "train_hours": 1.7470142529791015,
+      "evaluation_seconds": 867.4318599076942,
+      "peak_gib": 8.47797966003418
+    },
+    {
+      "seed": 20260924,
+      "steps": 1536,
+      "train_hours": 1.7419925166780337,
+      "evaluation_seconds": 861.5433549568988,
+      "peak_gib": 8.473244667053223
+    },
+    {
+      "seed": 20260925,
+      "steps": 1536,
+      "train_hours": 1.8684189239881623,
+      "evaluation_seconds": 883.4852763861418,
+      "peak_gib": 8.4716157913208
+    }
+  ],
+  "timing_source": "hpc3:/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/gplus_s{seed}/{training.jsonl,evaluation.json}",
+  "timing_caveat": "Measured record intervals, not complete wall time; no resource reservation",
+  "queue_observation": "squeue for own user empty at read; partition capacity not established",
+  "new_fit_count": 9,
+  "new_updates": 13824,
+  "new_predictions": 1296,
+  "core_gpu_hours_estimate": 18.249327490311504
+}

@@ -1,0 +1,64 @@
+% Evidence: reports/math_contract.md; update stale completion labels using Sept22 report.
+\section{Native update construction and orientation controls}
+\label{sec:construction}
+
+\subsection{Query-anchored residual adaptation}
+\label{sec:residual}
+Let $x$ denote the query sequence, $e(x)$ frozen sequence features, and
+$f_\theta$ a trainable shared predictor. At interface $k$ and recycle $t$,
+write the native factors as $a_{k,t},b_{k,t}$ and the baseline update as
+$U_{k,t,0}$. Define
+\begin{align}
+ (\delta a,\delta b)&=f_\theta(e(x)),\label{eq:increments}\\
+ \Delta U_{k,t}
+ &=G_{k,t}(a_{k,t}+\delta a,b_{k,t}+\delta b)
+   -G_{k,t}(a_{k,t},b_{k,t}),\label{eq:residual}\\
+ U^{(R)}_{k,t}&=U_{k,t,0}+\mathcal R_k\Delta U_{k,t}.\label{eq:injection}
+\end{align}
+\placeholder{Define frozen versus trainable components and the exact injection
+site. Zero the final output weight and bias, not the entire encoder. Explain
+Protenix cached anchors versus state-dependent OpenFold/AtlasFold anchors.
+In Protenix, the residual decoder scale differs from the query baseline scale:
+do not identify $U_{k,t,0}$ with $G_{k,t}(a_{k,t},b_{k,t})$.}
+
+\subsection{Full and first-order factor updates}
+\label{sec:full_tangent}
+\placeholder{Give the bilinear expansion with the two linear factor-increment
+terms and the quadratic term. Define tangent by omitting the quadratic term,
+with unchanged predictor parameter count. State the provenance of Protenix
+$D=508.5$: the historical Train24 training-side MSA-depth median, retained as
+a fixed residual scale. Preserve the depth-one query baseline; other backbones
+use their own normalization. Detailed derivation goes in Appendix~\ref{app:operators}.}
+
+\subsection{Fixed orthogonal output controls}
+\label{sec:rotation}
+\placeholder{Define $(\mathcal R\Delta U)_{ij}=R\Delta U_{ij}$ for column channel
+vectors, with $R^\top R=I$. Rotate only the residual, using one fixed matrix
+across residue pairs. Each control is trained from initialization. State which
+local spectra and norms are preserved at matched states, and why this does not
+preserve the full recurrent Jacobian or trained-output norms.}
+
+\subsection{A generic head that can absorb the rotation}
+\label{sec:generic}
+For a generic residual with a free final affine layer,
+\begin{equation}
+ \Delta U_G=Wh_\phi+b,\qquad
+ \Delta U_{G,R}=R(W_Rh_\phi+b_R).
+\end{equation}
+Taking $W_R=R^\top W$ and $b_R=R^\top b$ gives
+$\Delta U_{G,R}=\Delta U_G$ and hence $\mathcal F_G^R=\mathcal F_G$.
+\placeholder{Specify the G+ inputs: sequence features, explicit corresponding
+query factors, and relative sequence position. Distinguish old Generic from G+.
+State the conditions of the reparameterization and why coordinate-wise AdamW
+is not generally equivariant to an arbitrary orthogonal change of coordinates.
+This is a control property, not a claim of equal learned functions.}
+
+\begin{figure}[t]
+\centering
+\figureplaceholder{2.2cm}{Figure 1 placeholder: information flow and the
+$2\times2$ Factor/G+ by native/rotated control matrix.\\
+Mark frozen operators, trainable heads, zero initialization, and rotation position.}
+\caption{Query-anchored updates and the parameterization-by-orientation control.
+\textit{Draft diagram; replace with the audited computational paths.}}
+\label{fig:construction}
+\end{figure}

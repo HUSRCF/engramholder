@@ -1,0 +1,22 @@
+{
+  "model": "openfold3",
+  "purpose": "descriptive system reference, not adapter-direction evidence",
+  "execution_lock_sha256": "f820d9b415bf0c19359a4a6c47a2a63712672d53dd83e3b9ba4e6b8ef4394495",
+  "scoring_lock_sha256": "b7e8addee5541834fd6bb6582ab0cb6ebba1525c77a686185b1b8abe5d0fca48",
+  "n": 144,
+  "failed": 0,
+  "panels": {
+    "confirm96": {
+      "n": 96,
+      "ca_lddt": 0.3609051335525479,
+      "residue_ca_lddt": 0.37192654219865423,
+      "tm_score_fixed_full_length": 0.3355729166666667
+    },
+    "length48": {
+      "n": 48,
+      "ca_lddt": 0.30813529824943414,
+      "residue_ca_lddt": 0.3260256574751504,
+      "tm_score_fixed_full_length": 0.26150833333333334
+    }
+  }
+}

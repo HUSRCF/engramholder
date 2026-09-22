@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Protenix native minus trained-rotation pair-lDDT. The first two rows are the locked primary and prespecified full-factor secondary comparisons. Remaining rows reuse the observed panel. Intervals are target-bootstrap 95\% intervals.}
+\label{tab:protenix}
+\small
+\begin{tabularx}{\linewidth}{@{}Xll@{}}
+\toprule
+Backbone / adapter & Training / updates & Confirm96-B difference \\
+\midrule
+Mini / first-order (primary) & Train24 / 384 & $+.05710\ [+.04249,+.07274]$ \\
+Mini / full & Train24 / 384 & $+.04650\ [+.03118,+.06336]$ \\
+Tiny / first-order & Train24 / 384 & $+.02206\ [+.01397,+.03075]$ \\
+Mini / first-order, mean-preserving & Train24 / 384 & $+.10059\ [+.07958,+.12233]$ \\
+Mini / full & Train96 / 1536 & $+.02505\ [+.01378,+.03730]$ \\
+Mini / full & Train384 / 1536 & $+.03951\ [+.02800,+.05216]$ \\
+\bottomrule
+\end{tabularx}
+\end{table}

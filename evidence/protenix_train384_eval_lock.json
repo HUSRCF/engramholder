@@ -1,0 +1,257 @@
+{
+  "schema": "engramfold.native_geometry_lock.v1",
+  "manifest_sha256": "bc4fec0db346e9ebcb56d2e7f52168805b8d617bbff2c6f5ec098c583364da21",
+  "adapters": {
+    "n384_full_native_s20260923_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_native_s20260923/task_1536.pt",
+      "sha256": "1dd8f00b516be9cbf0b1d6eb33917b8aff68915b37ef533d39f5900610ef65b2",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      }
+    },
+    "n384_full_native_s20260924_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_native_s20260924/task_1536.pt",
+      "sha256": "36294f45e6456f92b6c62d05e0147694aeeca627d10c49c36c6fd42e9e2a0aab",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      }
+    },
+    "n384_full_native_s20260925_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_native_s20260925/task_1536.pt",
+      "sha256": "83d0160560412f2c39262140462b2ec642134ee278aca9934513fac02fe5acec",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      }
+    },
+    "n384_full_r20261001_s20260923_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261001_s20260923/task_1536.pt",
+      "sha256": "09d1fa084a52f0131861b072b76d1233a3eaf888f455e06cfc05c695289470b1",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      }
+    },
+    "n384_full_r20261001_s20260924_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261001_s20260924/task_1536.pt",
+      "sha256": "a8e41f402f85d241a0c068b77cc81a084aa9b17103cf692b85c4e715677edd96",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      }
+    },
+    "n384_full_r20261001_s20260925_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261001_s20260925/task_1536.pt",
+      "sha256": "0f0661c5fc2d0fd2530d8a7b765bc67fd44e155e7dfb908ee076b6f9683d03f7",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      }
+    },
+    "n384_full_r20261002_s20260923_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261002_s20260923/task_1536.pt",
+      "sha256": "23631acbaf3b76df75e1574daad07360935535f36182d2f73a6de8f47e6e29c9",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      }
+    },
+    "n384_full_r20261002_s20260924_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261002_s20260924/task_1536.pt",
+      "sha256": "444c9cd94c6fa9b2ea75b40f3224fae30b6d1abee67c6368c1263cbb9a0a0148",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      }
+    },
+    "n384_full_r20261002_s20260925_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261002_s20260925/task_1536.pt",
+      "sha256": "eec3b4b8ca76692e81697c2da13d0b6dda730ed3c65ac908194cc3606d7e927c",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      }
+    },
+    "n384_full_r20261003_s20260923_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261003_s20260923/task_1536.pt",
+      "sha256": "d0d07c1b5bd675030bef60001e63b69099694262fbb41564253531d33f09809f",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      }
+    },
+    "n384_full_r20261003_s20260924_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261003_s20260924/task_1536.pt",
+      "sha256": "f246920096bcd3629aff921c9966f5d05ad201d2af3ea29771913b83a3eff364",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      }
+    },
+    "n384_full_r20261003_s20260925_u1536": {
+      "path": "/media/PM982/engramfold/runs/train384_direction_20260920/training/n384_full_r20261003_s20260925/task_1536.pt",
+      "sha256": "7b47357a900f27f01c7b2820c3a68cdc10180b15258e55057fc2c36e5ddf6b3f",
+      "step": 1536,
+      "geometry": {
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      }
+    }
+  },
+  "systems": [
+    "n384_full_native_s20260923_u1536",
+    "n384_full_native_s20260924_u1536",
+    "n384_full_native_s20260925_u1536",
+    "n384_full_r20261001_s20260923_u1536",
+    "n384_full_r20261001_s20260924_u1536",
+    "n384_full_r20261001_s20260925_u1536",
+    "n384_full_r20261002_s20260923_u1536",
+    "n384_full_r20261002_s20260924_u1536",
+    "n384_full_r20261002_s20260925_u1536",
+    "n384_full_r20261003_s20260923_u1536",
+    "n384_full_r20261003_s20260924_u1536",
+    "n384_full_r20261003_s20260925_u1536"
+  ],
+  "base": {
+    "protenix_mini_default_v0.5.0.pt": {
+      "path": "/media/PM982/onestepfold/protenix_stage0_pkg/v1_1/runtime/checkpoint/protenix_mini_default_v0.5.0.pt",
+      "sha256": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81"
+    },
+    "protenix_mini_esm_v0.5.0.pt": {
+      "path": "/media/PM982/onestepfold/protenix_stage0_pkg/v1_1/runtime/checkpoint/protenix_mini_esm_v0.5.0.pt",
+      "sha256": "1301bba9ad322518eace60fd244ded7904439f55317e90d402cc7a0c06026664"
+    },
+    "esm2_t36_3B_UR50D.pt": {
+      "path": "/media/PM982/onestepfold/protenix_stage0_pkg/v1_1/runtime/checkpoint/esm2_t36_3B_UR50D.pt",
+      "sha256": "7de8b4082ba15891959ab368b77ce3886697af1efb16d3c9e9e7b0c5d3f07500"
+    },
+    "esm2_t36_3B_UR50D-contact-regression.pt": {
+      "path": "/media/PM982/onestepfold/protenix_stage0_pkg/v1_1/runtime/checkpoint/esm2_t36_3B_UR50D-contact-regression.pt",
+      "sha256": "4da500eab246481dc9c8c95bc7b1d02f2803d761c380b0e95186d4a07d0fc84e"
+    }
+  },
+  "reference_files": {
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/gx/3gxb.cif.gz": "32bdefb0d6d76df44602720293333744e814a0c6f9c94f2e300e6176566a1513",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/a8/6a89.cif.gz": "875b3c47863724fd392a16c835216eaca284ea161aa39b4b1e505bcf1bac567e",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/xb/4xbc.cif.gz": "3dbf5a51124e9b439ad98d5568ec721999c7eab6e37390117db37b90c2683816",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/q3/6q3v.cif.gz": "982134816df5144de3806a266f32779f2367c78cc3a51faf56f94d443354e9cc",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/nu/7nuw.cif.gz": "0e9372c5e69d470f74f401c1376609ae764410d177f0b53fd0a1c369dbb8e6b7",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ob/2obi.cif.gz": "a0f63d337f6f5837e4b507a387c7c56ef035cd0c129252cc2311003f3c1369ab",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/qz/3qzq.cif.gz": "e34b2577b615b0a0b4d830c7b4c7db35a0957f81dbe28fa7276ab11f23186be8",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/wo/4woh.cif.gz": "f7a6f98ecacee3e559ab350d856f8450ce1af6f0f10049cda8bf6afb081f2936",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/nd/6ndw.cif.gz": "69926c827d2ea7c31f2d7fcbdbd70f12e6b707c931d22ef7c7426082bf6c5edc",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/hn/3hny.cif.gz": "f2ad02f8a7d0546d0304b6a1869d5f96176fd17ceb1b509dd0fd9b2a0d9a9b50",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/wb/1wba.cif.gz": "0fe72909ed7eb0cbe0c1f1a5ee7eec606cbaf97fd20dd6dbc3f39d854b4336f9",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/yn/1yn9.cif.gz": "723059038d1c79452b297f89a222387894d11aa46cd6b5db1d721057bf6cf131",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/a4/1a44.cif.gz": "0b407f1cb8c46cccde9edc20ab9a01ce7bb0c96ebea4aa44f5b7bc5e57ec5c15",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/xj/4xje.cif.gz": "b1e6cac08bb4751929d22c1ab876988c0122b3c261bbc1ff7f737a27a33f3797",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/cc/1ccz.cif.gz": "7ece6540f441511fd02821fe7c4b28a53805a68be273c3a379f8d44096045a0e",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/p3/2p3k.cif.gz": "b02551c127b58d39d70f5e36f1e1c2826534fea46a405237eb6f8f448400aa25",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ib/6ibj.cif.gz": "b6eb84296d56c8764f8c669f3358a2419ffc4f2996345b7250dc96372abb8c06",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/j8/1j84.cif.gz": "80e34499debddb99d43a82d00875115d28e2812d147cd31a1297def6776c0c24",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/es/3esx.cif.gz": "cb4f5b83401ce831f767e090cf4e291660be77b96523a9e59b195c2b46d24adb",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/p2/4p27.cif.gz": "5ef0c15a89954c7e45b3384316c6de27a1ad843afb14202554f2554f9271d6ab",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/fp/6fpc.cif.gz": "31c5c14220332cacc3da7e07d942f15397e5204a82e6b4764e33406cad177c66",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/c8/7c82.cif.gz": "0536634998d471320c2da2091a418f722b85d19177099f8dbdd52e883f786132",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/bk/1bk7.cif.gz": "46645e323bae7d6ef39899997eb297a955d8216a4f60434ea7fc9ab8bdfad237",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ht/6ht1.cif.gz": "ae4aa35ed52585a12519807205d48f9583223b4bff48671924727a3cca46996e",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/d6/5d6p.cif.gz": "2860ef5bcb82e20c2a10e4e4af188751a76dd1f1b0cb6b955d7f2ac97fcc925c",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/lx/1lxz.cif.gz": "6e2006041ac5fa4531547160969e74a2914a168d754db20218c79025100bbebd",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/kd/5kdi.cif.gz": "9958077a1f3f8a861024370bd010aeb8f346ad9de6101506463dd2a31bac0849",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/np/7np5.cif.gz": "d48ad51ab6cbaf666f7177d4614f9a9c5b3f49c0fef2c4d39e3806572b6ae727",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/nl/5nl7.cif.gz": "f1e1594a052c5510b1cbe7fb11bc41be1ea7aa55cf34f56b69aa2ede8f62d1b0",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ei/3eii.cif.gz": "39d7af0abcb169562b964ed31cb818299036c56efa21ba670afd7df0b461938b",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/f9/3f95.cif.gz": "471e941fbd64cd7894da175891198e4effe4aa566cdf3cc476e988b1a5d94ce2",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/zj/3zj0.cif.gz": "a19e46f732a7c60c1acd5e6480762f84470aa71c3083e8d3a8a8fad788868abd",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/nl/2nlr.cif.gz": "43d2f7973a7ffe42d42634b7956758314c62a5c5371d1bbb812bea1f706a0959",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/m1/1m1u.cif.gz": "acb5a9bfca1be47a3a22fb26601a89d70c549262c54cb67c3049d212ed02d974",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/a7/2a7m.cif.gz": "d199be88df0a2310dc777d0f584e792addfd659cd6f9168088bd03f96e2ad559",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/n3/3n36.cif.gz": "9ea0d1d2d71fe0b4a765911edfe6da09ebb58548d8e6a4379018de6a4e79cfe4",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/xa/1xa1.cif.gz": "943272838b8830f528dd8e3e38ac292bb9a8378537fa0fa9702b6500065462f9",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/j5/6j5q.cif.gz": "d4c8269da216b598543d204b321a4a54bd7e6dadf7acca6156a8d136e0490411",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/er/2erf.cif.gz": "5a9a60ca1ca7c2767953adb8b39d47337cc3978dd71de6cbb1c57ed5c76307f6",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/dr/4dr9.cif.gz": "7eac779a536d220ae5b836ecda2b434479c60a00954c01f08a7187e0738caff7",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/h5/1h5y.cif.gz": "0b77b22fe091601748368c031c846c8a2ecd7af340bbfb7a1bf663e20e3da207",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/g6/1g69.cif.gz": "eff228c2a8c91795f2c5dfd5b2ad4034e1020ab8561ba86fdd534998d797ca8a",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/zy/4zyx.cif.gz": "6513f8fa2d4f41cf0ae9737c8d111404700dea39906c7b5349307b60ab37e3d9",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/px/1pxr.cif.gz": "8093f829118f6c1229c2ea251a9fe40ca9fb975f117494c5c3d0f295a281b5ca",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/xr/5xrb.cif.gz": "12e75b2135261f8f8a8ae1526e2666296aa83464a3e637c776c767a72db03d39",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/f1/4f1j.cif.gz": "74c347647d8c5414db7bf0b5ec18a631c15f109258d218998ffd7f152b2adfbc",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/du/1dua.cif.gz": "8c3a45db6f102addab27260f22da5112512e530bfa4913abb41ea6280a6f5923",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/oc/2ocg.cif.gz": "68e5ed70101dc669ea04d27b2c89a6c9946aab8faf7cf1c04decf4b6a585c6a9",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/vo/3voa.cif.gz": "87c16adcbee3fa75f6e9e619703f1e8889074d53953db7e9807f6d512f4e7cdc",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/c9/1c91.cif.gz": "7e051c1b90ac887853491e71ce56383d7bdd1fe8586070b255259c7ca53cfbea",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/f9/3f99.cif.gz": "1f7e721de97a4f5fe2ba114677eab7f4225caa65b4d9c26eeeabdf389eb9a928",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ah/3ah4.cif.gz": "1c714467ec88223e936c23783caf083f940778543437527feebbe44dd1d45e23",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/bw/7bwv.cif.gz": "144ba9beb352a34c9232673169fc88a58b6e9ba9989e4c690cd10bc65fec8945",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/q3/4q3c.cif.gz": "3e75c4e84b3f086d3a946cc524f8e873f5778dc5c54dfb6fb6f900bd72e49fc5",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/vi/2vi0.cif.gz": "cb2a8506b67b9fc175d002f826a956b01ed0be8c908f65b0f0af9f83aec45269",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/n1/4n13.cif.gz": "e9dee297bfedc641669a9b70d9f8d85a98c3b822d19d8f9e8a755834da644709",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/c6/2c6z.cif.gz": "187f29220b94fdf96ec016b398bd59e34c2865f8c77660e78e78a738e6c7a908",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/by/5byl.cif.gz": "54f480f0ffe7bd919e1ab7d7ae69141404c7add3e2159e447787fb853484081f",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ce/2cex.cif.gz": "45efe6d9de88c6e2cb3089f435e65933898ae9252792f5f2a3bd8c1b098ab997",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ea/3ea3.cif.gz": "876c9193eea2c9c83e337860e73010d7e92500639193dbe2752c8231de87b914",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ir/2iry.cif.gz": "25ef37d1cb04ea7fc6d70910b5bb7d7e3338c318cb12d6608c68943c88abbee5",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/dx/5dxn.cif.gz": "adfd12930588f483f49fc5d7011b31ccd144595b6f8589117367e93f162f5053",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/jp/4jpx.cif.gz": "d941077a1aeb44ec274899a65b99c3c8a1dbebb452581669eb439d8ec598d7ef",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/k2/7k27.cif.gz": "97e61a09cee453cd061e88113ed3eb781e8eba244a9b7fe7d2aeb79499f6aff0",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/bo/2bod.cif.gz": "63a1dd77ec337e1a640b4e53a164e73f6be2f3ce4b7132b9976af507e5095d4f",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/tr/5trq.cif.gz": "bdf42a4b9eca4e8f80e54efde46a12a88f024a35236353b22395bfa016e92632",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/wi/3wib.cif.gz": "d87982b7575357d449f137ee8b7eb2a56801caa992c649f802373a8a74f45287",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/i6/4i6k.cif.gz": "7a3a2fe509f9ebb1f0361c7b3223112fd257b7bf74d1b1a5cd0041d21583d475",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/io/2ioy.cif.gz": "f296c76015ba8a536e840d91e8afcf3b875a0493888925c9aff3ccfe84891e37",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ap/6ap7.cif.gz": "f75e8dd9e6c6dccd0c177fea16e8416f6a7bdd26dcdb9662c174c71fb849a145",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/w2/6w2p.cif.gz": "f72bafc02c8e011ad17efc29e243c8aa69ab5f830b5f34722046c87bff5693d3",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ji/4jin.cif.gz": "00ba41364a43da8ab7ca7f397fc6abc1768d9b9f6b90cbd990232af214895585",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/it/3ita.cif.gz": "0afded86217e37d1e821a02aa9cb016971c6bf82d95bd554362880c4fb35cbdf",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ob/5obx.cif.gz": "bae0acc66ad3500292004ab5e886fbe9a5d520ff0a9648f2b329590adf1ebf66",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/fj/3fjl.cif.gz": "04c708e33eb5e617622c47eb9e64c31bbc7c806af9827328db68a19d84d7d300",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/v7/1v79.cif.gz": "5944802813ea219981fb6719f74906bad310d69885d58014729255df3855d808",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/kk/7kk6.cif.gz": "1a074a9cec963beb4bbf1e6971d0e0961de8dac0b625b25550330e40b8ea006c",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/tg/3tgh.cif.gz": "c39b6bffa435728c2702bd9c5f138ce594b653884490785eddd62b83180897f4",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/xq/6xqx.cif.gz": "f413dbe731a5d222e44e10aace957194d10caf7cb0971e139c960d7f935c6308",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/l1/6l1h.cif.gz": "9eedd3cc6494d5fa5f9420dc48b4d5581e61b6f0142a3a221e6b692585fc3593",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/a1/7a16.cif.gz": "f5ac8c733bbb3a7632ce2c0119fbff450ef415e4b11bdf4c2db131625a22ab79",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/zz/1zze.cif.gz": "d24a74a367bfe8a1122a388874da125c9bb0f77e7b805fcc619b0ea6d79fcbc3",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/pa/4pam.cif.gz": "d593f984cad881e085e9f17e2e85402584bba1ed0fd590c330888636dc7c44aa",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/m1/3m10.cif.gz": "b2248b28e45356d61697e9c931ab6579d1f94fc67794e3ee62dfccdf25e4fc17",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/z2/1z2n.cif.gz": "8df4ee6aacff093ba7a51c740d4c6de9f9e6d97a27ccd9796fbafdb478b6703e",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/lv/4lv8.cif.gz": "bc86de1c97dd0f59f69a992cec58d66de36590c72697fab9961e9773da55a2c4",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ih/4ihm.cif.gz": "88f97abd1b683b035ead6861cdf104fd37d2e09c88c8e625b5bf19ef4cb48f0e",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/dv/1dvn.cif.gz": "36b5122e8583ec34be5bc71e36db7e3925f2542a9bed80d02d1a0cff36bb586e",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/t8/6t8d.cif.gz": "60661e8516f281c6f58ee61a3ef57532e2844f6edfb01adf2f4dbbc6dcc138e2",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/jc/1jcf.cif.gz": "1a65527211bdfad416a54a7a926d0941fde9ae317a8a7fa4e1837b7fdea9716f",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ij/6ijn.cif.gz": "d3a71288edf1f5988d2c7fed1465ab0c948ff718cdaa60a83e7627e3e852e164",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/fk/4fk9.cif.gz": "cf0dca16adcea750105b1b8a3e9bce3959e5bdfc1d642cedd7a0a805f3873287",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/wo/1woo.cif.gz": "600c512a6452abaf9bcfc09debb59fad32a51867d1ea4087968db3ae06f25ada",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/ch/6ch1.cif.gz": "8eac838dbd74e0755e35a076977735076bdd4e47d7a587f83a555b5df7cde073",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/d5/2d5j.cif.gz": "421736d9d61c5b141d1fb627f2a2b5eb6e4c838dce55ef04a074d9679c455e5c",
+    "/media/PM982/onestepfold/Dataset/raw/pdb_mmcif/hb/1hb1.cif.gz": "68ffb3e57a4dd6e3317730eb1b2236a8266f6d9c6250ff01c13b320c01df23a9"
+  },
+  "execution_lock_sha256": "207d57ec62bcab9ef18ab41b97c449ba4248284b423028e7bc066f91836f84e4"
+}

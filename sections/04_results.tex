@@ -1,0 +1,87 @@
+% Numerical sources: reports/results_update_20260922.md; evidence_review.md.
+% Do not populate from rounded prose when source arrays are available.
+\section{Results}
+\label{sec:results}
+
+\subsection{Rotation sensitivity interacts with adapter parameterization}
+\label{sec:interaction_result}
+\placeholder{Lead with OpenFold Train96/1536: give all four absolute means,
+the two direction contrasts, and the direct interaction from
+Eq.~\ref{eq:interaction}. Confirm96-B is this follow-up study's primary
+comparison; Length48 is secondary. Report confidence intervals and seed/rotation
+consistency. Do not infer interaction from separate significance tests or claim
+G+ equivalence from a confidence interval containing zero.}
+\begin{figure}[t]
+\centering
+\figureplaceholder{2.2cm}{Figure 2 placeholder: four system means and paired
+head-by-rotation interaction intervals on Confirm96-B and Length48.\\
+Show the direct interaction separately from the two direction contrasts.}
+\caption{Rotation sensitivity under the matched OpenFold training recipe.
+\textit{Draft: insert verified paired estimates, not illustrative bars.}}
+\label{fig:interaction}
+\end{figure}
+
+\subsection{Native orientation benefits factor adaptation in tested Protenix settings}
+\label{sec:protenix}
+\placeholder{Present the original locked tangent comparison alongside Full;
+then Tiny and mean-preserving rotation controls. State which observations reuse
+Confirm96-B. The tangent construction is a diagnostic, not a superior main
+method. Historical Factor--Generic evidence cannot substitute for G+.
+No Protenix head-by-rotation interaction is available without rotated G+.}
+
+\subsection{Fixed adapters transfer beyond their adaptation-training lengths}
+\label{sec:length}
+\placeholder{Present the fixed-model Protenix Length48 result: adaptation lengths
+152--383 versus actual evaluation lengths 392--750 residues, complete inputs,
+Native/Rotated/Query/official absolute quality and the paired direction interval.
+Matched Train384 G+ is pending. Length48 was prospective for the original
+length study and observed for later follow-ups. Do not infer family or
+foundation-pretraining isolation.}
+\begin{figure}[t]
+\centering
+\figureplaceholder{1.8cm}{Figure 3 placeholder: direction contrasts and length
+scope. Include non-supporting conditions and mark study/panel status.}
+\caption{Tested scope of native-direction effects.
+\textit{Draft: distinguish checkpoint, recipe, and target-distribution changes.}}
+\label{fig:scope}
+\end{figure}
+
+\subsection{Native orientation does not guarantee gains or superiority over generic heads}
+\label{sec:limits_results}
+\placeholder{Keep OpenFold Train384/Confirm96 without an established direction
+advantage, OpenFold G+ competitive results, and AtlasFold's two non-supporting
+panels in the main comparison. Discuss the matched Full/1536 Train96--Train384
+interaction using both actual terms. Do not compare tangent Train24 against Full
+Train384 as a data-scale interaction.}
+
+\begin{table}[t]
+\caption{Coverage scaffold for matched-input adapter comparisons. \reported{}
+means completed evidence awaiting insertion; Pending means no final result;
+--- means no matched experiment. Values are not zeros. Each paired panel row
+uses its stated training recipe. Query-only lacks the extra adapter ESM2
+features; native AtlasLM is retained in the AtlasFold baseline.}
+\label{tab:coverage}
+\centering
+\scriptsize
+\begin{tabular}{llrrrr}
+\toprule
+Predictor / training & Panel & Query & Native & Rotated & G+ \\
+\midrule
+Protenix / T96 Full & C96-B & \reported & \reported & \reported & --- \\
+Protenix / T384 Full & C96-B & \reported & \reported & \reported & \pending \\
+Protenix / T384 Full & L48 & \reported & \reported & \reported & \pending \\
+OpenFold / T96 Full & C96-B & \reported & \reported & \reported & \reported \\
+OpenFold / T96 Full & L48 & \reported & \reported & \reported & \reported \\
+OpenFold / T384 Full & C96-B & \reported & \reported & \reported & \reported \\
+OpenFold / T384 Full & L48 & \reported & \reported & \reported & \reported \\
+AtlasFold / T96 & C96-B & \reported & \reported & \reported & \reported \\
+AtlasFold / T96 & L48 & \reported & \reported & \reported & \reported \\
+\bottomrule
+\end{tabular}
+\end{table}
+\placeholder{Table~\ref{tab:coverage} is a scope/comparator table, not a replacement
+for the four-cell OpenFold interaction or original Protenix main comparison.
+All rows here use 1536 updates. Insert exact paired differences/intervals in
+adjacent panels or text. Keep native-system references with different PLMs and
+budgets separate; baseline-only RF3/OpenFold3/ESMFold2 runs do not establish
+additional adapter direction replications.}

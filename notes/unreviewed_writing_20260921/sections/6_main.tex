@@ -1,0 +1,18 @@
+\section{System position}
+\label{sec:6}
+\input{tables/table4.tex}
+
+AtlasFold, OpenFold3 and RF3 each complete 144/144 predictions with zero
+recorded prediction failures. AtlasFold uses 20/30 length-dependent diffusion
+steps and one sample; OpenFold3 uses its pinned prediction preset and one
+sample. Kernel paths, weight hashes and remaining cost fields are specified
+in the appendix. OpenFold/ColabFold means are close, but this does not prove
+coordinate equality. These system rows establish context, not additional
+replications of the direction hypothesis.
+
+Official Mini-ESM exceeds the adapted Mini by 0.39220 on Length48. Earlier
+matched-hardware measurements found lower allocated memory with the small-PLM
+system, but not a quality-matched speedup. Lower parameter count or partial
+stage timings do not establish deployment superiority. Newer models' different
+pretraining exposures, native PLMs and inference budgets also prevent attributing
+cross-system score differences to our adapter construction.

@@ -1,0 +1,35 @@
+{
+  "citation_title": [
+    "HelixFold-Single: MSA-free Protein Structure Prediction by Using Protein Language Model as an Alternative"
+  ],
+  "citation_author": [
+    "Fang, Xiaomin",
+    "Wang, Fan",
+    "Liu, Lihang",
+    "He, Jingzhou",
+    "Lin, Dayong",
+    "Xiang, Yingfei",
+    "Zhang, Xiaonan",
+    "Wu, Hua",
+    "Li, Hui",
+    "Song, Le"
+  ],
+  "citation_doi": [
+    "10.1038/s42256-023-00721-6"
+  ],
+  "citation_date": [
+    "2022/07/28"
+  ],
+  "citation_online_date": [
+    "2023/02/22"
+  ],
+  "citation_pdf_url": [
+    "https://arxiv.org/pdf/2207.13921"
+  ],
+  "citation_arxiv_id": [
+    "2207.13921"
+  ],
+  "citation_abstract": [
+    "AI-based protein structure prediction pipelines, such as AlphaFold2, have achieved near-experimental accuracy. These advanced pipelines mainly rely on Multiple Sequence Alignments (MSAs) as inputs to learn the co-evolution information from the homologous sequences. Nonetheless, searching MSAs from protein databases is time-consuming, usually taking dozens of minutes. Consequently, we attempt to explore the limits of fast protein structure prediction by using only primary sequences of proteins. HelixFold-Single is proposed to combine a large-scale protein language model with the superior geometric learning capability of AlphaFold2. Our proposed method, HelixFold-Single, first pre-trains a large-scale protein language model (PLM) with thousands of millions of primary sequences utilizing the self-supervised learning paradigm, which will be used as an alternative to MSAs for learning the co-evolution information. Then, by combining the pre-trained PLM and the essential components of AlphaFold2, we obtain an end-to-end differentiable model to predict the 3D coordinates of atoms from only the primary sequence. HelixFold-Single is validated in datasets CASP14 and CAMEO, achieving competitive accuracy with the MSA-based methods on the targets with large homologous families. Furthermore, HelixFold-Single consumes much less time than the mainstream pipelines for protein structure prediction, demonstrating its potential in tasks requiring many predictions. The code of HelixFold-Single is available at https://github.com/PaddlePaddle/PaddleHelix/tree/dev/apps/protein_folding/helixfold-single, and we also provide stable web services on https://paddlehelix.baidu.com/app/drug/protein-single/forecast."
+  ]
+}

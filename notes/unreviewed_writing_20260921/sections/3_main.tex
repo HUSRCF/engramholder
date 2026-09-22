@@ -1,0 +1,51 @@
+\section{Evaluation design}
+\label{sec:3}
+Confirm96-A is the prospectively locked original Factor-Generic panel;
+Confirm96-B is the separately locked primary direction panel. Each contains
+96 proteins in four prespecified length strata. Later Protenix and all AF2
+comparisons reuse observed Confirm96-B. Length48 was prospectively locked for
+fixed Protenix adapters, but was already observed when used for AF2 and later
+models. Changing the backbone does not restore blinded target status.
+
+Adaptation expands from Train24 to nested Train96 and Train384; Dev8 remains
+the development set. Protenix Train384 contains chains of 152--383 residues.
+Length48 selects 16 chains per bin 385--512, 513--640 and 641--768, with actual
+lengths 392--750. Inputs are complete sequences. Common observed-coordinate
+masks affect scoring, not input length. The panels use single-model experimental
+structures, X-ray resolution at most 2.5 Å and at least 90\% Cα coverage.
+Sequence exclusion rules and their pre-scoring revisions are preserved in
+Appendix B and the Length48 supplement. Four known CATH family pairs remain
+retrieval-stage misses: sequence screening does not establish family isolation
+or foundation-model pretraining exclusion.
+
+The primary score is Cα pair-lDDT: fixed reference distances below 15 Å,
+positive distances only, no self-pairs, and strict 0.5/1/2/4 Å error thresholds
+\citep{alphafold_code,openstructure,lddt}. Missing predictions receive zero credit under the common reference
+mask. Residue-averaged Cα-lDDT and fixed-correspondence TM-score normalized by
+complete query length are secondary audits of the same structures \citep{usalign}.
+No prediction is selected by true structural quality.
+
+For each target \(i\), direction effects average rotations within paired training
+seed and seeds within target:
+
+\[
+d_i=\frac13\sum_{s=1}^3\left(S_{N,i,s}-\frac13\sum_{r=1}^3S_{R,i,s,r}\right).
+\tag{3}
+\]
+
+We report target means and 20,000-draw paired target-bootstrap intervals,
+conditional on fitted models. Seeds, rotations and noise conditions are not
+independent proteins. Secondary and post-result intervals are unadjusted for
+multiple comparisons. The original panels retain their locked primary
+comparisons and continuation rules; follow-ups do not redefine them.
+
+For OpenFold, official AF2 \nolinkurl{model_3_ptm} weights remain frozen, with no templates
+or homolog rows. Train96 and Train384 each use 15 fits: three native, nine
+rotated and three G+. All run 1,536 updates and use the final checkpoint. A
+separate development seed and symmetric 384-step calibration over native,
+one fixed rotation and G+ select one common learning rate from
+\(\{5\times10^{-5},10^{-4}\}\); \(10^{-4}\) is selected for Train96 and retained
+for Train384. AdamW weight decay is 0.01. Protenix direction studies instead
+use \(5\times10^{-5}\) and their locked native loss. Equal update counts across
+architectures do not imply equal computation. ColabFold supplies a separately
+executed AF2 query-only reference, not an MSA-enabled comparison.

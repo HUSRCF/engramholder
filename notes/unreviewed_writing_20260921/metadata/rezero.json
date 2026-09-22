@@ -1,0 +1,27 @@
+{
+  "citation_title": [
+    "ReZero is All You Need: Fast Convergence at Large Depth"
+  ],
+  "citation_author": [
+    "Bachlechner, Thomas",
+    "Majumder, Bodhisattwa Prasad",
+    "Mao, Huanru Henry",
+    "Cottrell, Garrison W.",
+    "McAuley, Julian"
+  ],
+  "citation_date": [
+    "2020/03/10"
+  ],
+  "citation_online_date": [
+    "2020/06/25"
+  ],
+  "citation_pdf_url": [
+    "https://arxiv.org/pdf/2003.04887"
+  ],
+  "citation_arxiv_id": [
+    "2003.04887"
+  ],
+  "citation_abstract": [
+    "Deep networks often suffer from vanishing or exploding gradients due to inefficient signal propagation, leading to long training times or convergence difficulties. Various architecture designs, sophisticated residual-style networks, and initialization schemes have been shown to improve deep signal propagation. Recently, Pennington et al. used free probability theory to show that dynamical isometry plays an integral role in efficient deep learning. We show that the simplest architecture change of gating each residual connection using a single zero-initialized parameter satisfies initial dynamical isometry and outperforms more complex approaches. Although much simpler than its predecessors, this gate enables training thousands of fully connected layers with fast convergence and better test performance for ResNets trained on CIFAR-10. We apply this technique to language modeling and find that we can easily train 120-layer Transformers. When applied to 12 layer Transformers, it converges 56% faster on enwiki8."
+  ]
+}

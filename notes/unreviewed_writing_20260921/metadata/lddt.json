@@ -1,0 +1,638 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        21
+      ]
+    ],
+    "date-time": "2026-09-21T05:39:50Z",
+    "timestamp": 1789969190811,
+    "version": "4.0.1"
+  },
+  "reference-count": 39,
+  "publisher": "Oxford University Press (OUP)",
+  "issue": "21",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            2
+          ]
+        ],
+        "date-time": "2016-10-02T00:00:00Z",
+        "timestamp": 1475366400000
+      },
+      "content-version": "vor",
+      "delay-in-days": 1132,
+      "URL": "http://creativecommons.org/licenses/by-nc/3.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [],
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Motivation: The assessment of protein structure prediction techniques requires objective criteria to measure the similarity between a computational model and the experimentally determined reference structure. Conventional similarity measures based on a global superposition of carbon \u03b1 atoms are strongly influenced by domain motions and do not assess the accuracy of local atomic details in the model.</jats:p>\n                  <jats:p>Results: The Local Distance Difference Test (lDDT) is a superposition-free score that evaluates local distance differences of all atoms in a model, including validation of stereochemical plausibility. The reference can be a single structure, or an ensemble of equivalent structures. We demonstrate that lDDT is well suited to assess local model quality, even in the presence of domain movements, while maintaining good correlation with global measures. These properties make lDDT a robust tool for the automated assessment of structure prediction servers without manual intervention.</jats:p>\n                  <jats:p>Availability and implementation: Source code, binaries for Linux and MacOSX, and an interactive web server are available at http://swissmodel.expasy.org/lddt</jats:p>\n                  <jats:p>Contact: \u00a0torsten.schwede@unibas.ch</jats:p>\n                  <jats:p>Supplementary information: Supplementary data are available at Bioinformatics online.</jats:p>",
+  "DOI": "10.1093/bioinformatics/btt473",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        8,
+        28
+      ]
+    ],
+    "date-time": "2013-08-28T20:29:04Z",
+    "timestamp": 1377721744000
+  },
+  "page": "2722-2728",
+  "source": "Crossref",
+  "is-referenced-by-count": 1239,
+  "title": [
+    "lDDT: a local superposition-free score for comparing protein structures and models using distance difference tests"
+  ],
+  "prefix": "10.1093",
+  "volume": "29",
+  "author": [
+    {
+      "given": "Valerio",
+      "family": "Mariani",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Marco",
+      "family": "Biasini",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Alessandro",
+      "family": "Barbato",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Torsten",
+      "family": "Schwede",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "286",
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        8,
+        27
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "2023063010273832900_btt473-B1",
+      "doi-asserted-by": "crossref",
+      "first-page": "380",
+      "DOI": "10.1107/S0108768102003890",
+      "article-title": "The Cambridge Structural Database: a quarter of a million crystal structures and rising",
+      "volume": "58",
+      "author": "Allen",
+      "year": "2002",
+      "journal-title": "Acta Crystallogr. B"
+    },
+    {
+      "key": "2023063010273832900_btt473-B2",
+      "doi-asserted-by": "crossref",
+      "first-page": "68",
+      "DOI": "10.1002/prot.21761",
+      "article-title": "Automated server predictions in CASP7",
+      "volume": "69",
+      "author": "Battey",
+      "year": "2007",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B3",
+      "doi-asserted-by": "crossref",
+      "first-page": "2626",
+      "DOI": "10.1093/bioinformatics/btq481",
+      "article-title": "OpenStructure: a flexible software framework for computational structural biology",
+      "volume": "26",
+      "author": "Biasini",
+      "year": "2010",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "2023063010273832900_btt473-B4",
+      "doi-asserted-by": "crossref",
+      "first-page": "81",
+      "DOI": "10.1002/jcc.21601",
+      "article-title": "Predicting the accuracy of protein-ligand docking on homology models",
+      "volume": "32",
+      "author": "Bordogna",
+      "year": "2011",
+      "journal-title": "J. Comput. Chem."
+    },
+    {
+      "key": "2023063010273832900_btt473-B5",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "DOI": "10.1107/S0907444909042073",
+      "article-title": "MolProbity: all-atom structure validation for macromolecular crystallography",
+      "volume": "66",
+      "author": "Chen",
+      "year": "2010",
+      "journal-title": "Acta Crystallogr. D Biol. Crystallogr."
+    },
+    {
+      "key": "2023063010273832900_btt473-B6",
+      "doi-asserted-by": "crossref",
+      "first-page": "10",
+      "DOI": "10.1002/prot.21686",
+      "article-title": "Domain definition and target classification for CASP7",
+      "volume": "69",
+      "author": "Clarke",
+      "year": "2007",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B7",
+      "doi-asserted-by": "crossref",
+      "first-page": "D420",
+      "DOI": "10.1093/nar/gkq1001",
+      "article-title": "Extending CATH: increasing coverage of the protein structure universe and linking structure with function",
+      "volume": "39",
+      "author": "Cuff",
+      "year": "2011",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2023063010273832900_btt473-B8",
+      "doi-asserted-by": "crossref",
+      "first-page": "392",
+      "DOI": "10.1107/S0108767391001071",
+      "article-title": "Accurate bond and angle parameters for X-ray protein structure refinement",
+      "volume": "47",
+      "author": "Engh",
+      "year": "1991",
+      "journal-title": "Acta Crystallogr. A"
+    },
+    {
+      "key": "2023063010273832900_btt473-B9",
+      "doi-asserted-by": "crossref",
+      "first-page": "382",
+      "DOI": "10.1107/97809553602060000695",
+      "article-title": "Structure quality and target parameters",
+      "volume-title": "International Tables for Crystallography",
+      "author": "Engh",
+      "year": "2006"
+    },
+    {
+      "key": "2023063010273832900_btt473-B10",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/bip.1969.360080514",
+      "volume-title": "Statistical mechanics of chain molecules",
+      "author": "Flory",
+      "year": "1969"
+    },
+    {
+      "key": "2023063010273832900_btt473-B11",
+      "doi-asserted-by": "crossref",
+      "first-page": "S162",
+      "DOI": "10.1002/elps.200900140",
+      "article-title": "Automated comparative protein structure modeling with SWISS-MODEL and Swiss-PdbViewer: a historical perspective",
+      "volume": "30",
+      "author": "Guex",
+      "year": "2009",
+      "journal-title": "Electrophoresis"
+    },
+    {
+      "key": "2023063010273832900_btt473-B12",
+      "doi-asserted-by": "crossref",
+      "first-page": "W542",
+      "DOI": "10.1093/nar/gks373",
+      "article-title": "RPF: a quality assessment tool for protein NMR structures",
+      "volume": "40",
+      "author": "Huang",
+      "year": "2012",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2023063010273832900_btt473-B13",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.1002/(SICI)1097-0134(1999)37:3+<15::AID-PROT4>3.0.CO;2-Z",
+      "article-title": "RMS/coverage graphs: a qualitative method for comparing three-dimensional protein structure predictions",
+      "volume": "37",
+      "author": "Hubbard",
+      "year": "1999",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B14",
+      "volume-title": "Physical chemistry of high polymers",
+      "author": "Huggins",
+      "year": "1958"
+    },
+    {
+      "key": "2023063010273832900_btt473-B15",
+      "doi-asserted-by": "crossref",
+      "first-page": "30",
+      "DOI": "10.1002/(SICI)1097-0134(1999)37:3+<30::AID-PROT6>3.0.CO;2-S",
+      "article-title": "CASP3 comparative modeling evaluation",
+      "author": "Jones",
+      "year": "1999",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B16",
+      "doi-asserted-by": "crossref",
+      "first-page": "29",
+      "DOI": "10.1002/prot.22551",
+      "article-title": "The other 90% of the protein: assessment beyond the Calphas for CASP8 template-based and high-accuracy models",
+      "volume": "77",
+      "author": "Keedy",
+      "year": "2009",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B17",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "DOI": "10.1002/prot.23190",
+      "article-title": "CASP9 target classification",
+      "volume": "79",
+      "author": "Kinch",
+      "year": "2011",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B18",
+      "doi-asserted-by": "crossref",
+      "first-page": "38",
+      "DOI": "10.1002/prot.21753",
+      "article-title": "Assessment of CASP7 predictions for template-based modeling targets",
+      "volume": "69",
+      "author": "Kopp",
+      "year": "2007",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B19",
+      "doi-asserted-by": "crossref",
+      "first-page": "778",
+      "DOI": "10.1002/prot.22488",
+      "article-title": "Improved prediction of protein side-chain conformations with SCWRL4",
+      "volume": "77",
+      "author": "Krivov",
+      "year": "2009",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B20",
+      "article-title": "CASP Prediction Center infrastructure and evaluation measures in CASP10 and CASP ROLL",
+      "volume": "81",
+      "author": "Kryshtafovych",
+      "year": "2013",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B21",
+      "doi-asserted-by": "crossref",
+      "first-page": "74",
+      "DOI": "10.1002/prot.23131",
+      "article-title": "Assessment of protein structure refinement in CASP9",
+      "volume": "79",
+      "author": "MacCallum",
+      "year": "2011",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B22",
+      "doi-asserted-by": "crossref",
+      "first-page": "757",
+      "DOI": "10.1016/j.str.2011.04.005",
+      "article-title": "Improved technologies now routinely provide protein NMR structures useful for molecular replacement",
+      "volume": "19",
+      "author": "Mao",
+      "year": "2011",
+      "journal-title": "Structure"
+    },
+    {
+      "key": "2023063010273832900_btt473-B23",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.1002/prot.23177",
+      "article-title": "Assessment of template based protein structure predictions in CASP9",
+      "volume": "79",
+      "author": "Mariani",
+      "year": "2011",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B24",
+      "doi-asserted-by": "crossref",
+      "first-page": "14",
+      "DOI": "10.1002/(SICI)1097-0134(1997)1+<14::AID-PROT4>3.0.CO;2-O",
+      "article-title": "Assessment of comparative modeling in CASP2",
+      "volume": "29",
+      "author": "Martin",
+      "year": "1997",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B25",
+      "doi-asserted-by": "crossref",
+      "first-page": "301",
+      "DOI": "10.1002/prot.340230305",
+      "article-title": "A critical assessment of comparative molecular modeling of tertiary structures of proteins",
+      "volume": "23",
+      "author": "Mosimann",
+      "year": "1995",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B26",
+      "doi-asserted-by": "crossref",
+      "first-page": "285",
+      "DOI": "10.1016/j.sbi.2005.05.011",
+      "article-title": "A decade of CASP: progress, bottlenecks and prognosis in protein structure prediction, Curr",
+      "volume": "15",
+      "author": "Moult",
+      "year": "2005",
+      "journal-title": "Opin. Struct. Biol."
+    },
+    {
+      "key": "2023063010273832900_btt473-B27",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1002/prot.23200",
+      "article-title": "Critical assessment of methods of protein structure prediction (CASP)\u2013round IX",
+      "volume": "79",
+      "author": "Moult",
+      "year": "2011",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B28",
+      "doi-asserted-by": "crossref",
+      "first-page": "149",
+      "DOI": "10.1002/prot.24172",
+      "article-title": "CAD-score: a new contact area difference-based function for evaluation of protein structural models",
+      "volume": "81",
+      "author": "Olechnovic",
+      "year": "2013",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B29",
+      "doi-asserted-by": "crossref",
+      "first-page": "3985",
+      "DOI": "10.1021/ct300148f",
+      "article-title": "FlexE: using elastic network models to compare models of protein structure",
+      "volume": "8",
+      "author": "Perez",
+      "year": "2012",
+      "journal-title": "J. Chem. Theory Comput."
+    },
+    {
+      "key": "2023063010273832900_btt473-B30",
+      "doi-asserted-by": "crossref",
+      "first-page": "1395",
+      "DOI": "10.1016/j.str.2011.08.006",
+      "article-title": "A new generation of crystallographic validation tools for the protein data bank",
+      "volume": "19",
+      "author": "Read",
+      "year": "2011",
+      "journal-title": "Structure"
+    },
+    {
+      "key": "2023063010273832900_btt473-B31",
+      "doi-asserted-by": "crossref",
+      "first-page": "1810",
+      "DOI": "10.1002/prot.24078",
+      "article-title": "Clustering biomolecular complexes by residue contacts similarity",
+      "volume": "80",
+      "author": "Rodrigues",
+      "year": "2012",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B32",
+      "doi-asserted-by": "crossref",
+      "first-page": "151",
+      "DOI": "10.1016/j.str.2008.12.014",
+      "article-title": "Outcome of a workshop on applications of protein models in biomedical research",
+      "volume": "17",
+      "author": "Schwede",
+      "year": "2009",
+      "journal-title": "Structure"
+    },
+    {
+      "key": "2023063010273832900_btt473-B33",
+      "doi-asserted-by": "crossref",
+      "first-page": "bap003",
+      "DOI": "10.1093/database/bap003",
+      "article-title": "Analysis of CASP8 targets, predictions and assessment methods",
+      "volume": "2009",
+      "author": "Shi",
+      "year": "2009",
+      "journal-title": "Database"
+    },
+    {
+      "key": "2023063010273832900_btt473-B34",
+      "doi-asserted-by": "crossref",
+      "first-page": "776",
+      "DOI": "10.1093/bioinformatics/16.9.776",
+      "article-title": "MaxSub: an automated measure for the assessment of protein structure prediction quality",
+      "volume": "16",
+      "author": "Siew",
+      "year": "2000",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "2023063010273832900_btt473-B35",
+      "doi-asserted-by": "crossref",
+      "first-page": "872",
+      "DOI": "10.1093/bioinformatics/btn040",
+      "article-title": "On distance and similarity in fold space",
+      "volume": "24",
+      "author": "Sippl",
+      "year": "2008",
+      "journal-title": "Bioinformatics"
+    },
+    {
+      "key": "2023063010273832900_btt473-B36",
+      "author": "Vendruscolo",
+      "year": "1999",
+      "journal-title": "Statistical properties of contact maps"
+    },
+    {
+      "key": "2023063010273832900_btt473-B37",
+      "doi-asserted-by": "crossref",
+      "first-page": "3370",
+      "DOI": "10.1093/nar/gkg571",
+      "article-title": "LGA: a method for finding 3D similarities in protein structures",
+      "volume": "31",
+      "author": "Zemla",
+      "year": "2003",
+      "journal-title": "Nucleic Acids Res."
+    },
+    {
+      "key": "2023063010273832900_btt473-B38",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.1002/prot.10052",
+      "article-title": "Processing and evaluation of predictions in CASP4",
+      "volume": "45",
+      "author": "Zemla",
+      "year": "2001",
+      "journal-title": "Proteins"
+    },
+    {
+      "key": "2023063010273832900_btt473-B39",
+      "doi-asserted-by": "crossref",
+      "first-page": "702",
+      "DOI": "10.1002/prot.20264",
+      "article-title": "Scoring function for automated assessment of protein structure template quality",
+      "volume": "57",
+      "author": "Zhang",
+      "year": "2004",
+      "journal-title": "Proteins"
+    }
+  ],
+  "container-title": [
+    "Bioinformatics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://academic.oup.com/bioinformatics/article-pdf/29/21/2722/50746741/bioinformatics_29_21_2722.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://academic.oup.com/bioinformatics/article-pdf/29/21/2722/50746741/bioinformatics_29_21_2722.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        17
+      ]
+    ],
+    "date-time": "2024-05-17T07:29:18Z",
+    "timestamp": 1715930958000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://academic.oup.com/bioinformatics/article/29/21/2722/195896"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        8,
+        27
+      ]
+    ]
+  },
+  "references-count": 39,
+  "journal-issue": {
+    "issue": "21",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          11,
+          1
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.1093/bioinformatics/btt473",
+  "relation": {},
+  "ISSN": [
+    "1367-4803",
+    "1367-4811"
+  ],
+  "issn-type": [
+    {
+      "value": "1367-4803",
+      "type": "print"
+    },
+    {
+      "value": "1367-4811",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published-other": {
+    "date-parts": [
+      [
+        2013,
+        11
+      ]
+    ]
+  },
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        8,
+        27
+      ]
+    ]
+  }
+}

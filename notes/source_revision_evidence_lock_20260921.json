@@ -1,0 +1,47 @@
+{
+  "status": "working manuscript revision, not submission-ready PDF",
+  "created_utc": "2026-09-21T13:59:00.671858+00:00",
+  "new_experiments": false,
+  "new_scoring": false,
+  "new_statistical_endpoints": false,
+  "checks": [
+    "abstract_exactly_synchronized",
+    "Train96_all_three_metrics_aggregation_and_main_table_match",
+    "Train384_all_three_metrics_aggregation_and_main_table_match",
+    "all_paired_contrast_means_and_appendix_primary_intervals_match",
+    "completed_original_system_rows_match_zero_failure_summaries",
+    "locked_protenix_direction_and_length_primary_values_retained",
+    "pending_results_not_promoted_to_evidence",
+    "stale_no_expansion_statement_removed",
+    "atlas_argument_and_actual_pass_count_distinguished"
+  ],
+  "main_whitespace_words_including_references": 3568,
+  "main_whitespace_words_excluding_references": 3348,
+  "typeset_main_pages": null,
+  "pending": [
+    "AtlasFold complete adapter matrix",
+    "ESMFold2 complete scoring",
+    "new-system cost aggregation",
+    "official-template pagination and anonymous submission cleanup"
+  ],
+  "files": {
+    "paper/evidence_20260921/openfold_train96.json": "6000a4e063600b5dfffc07c09016dde2abc9f7d6481abeae2bde60a1207d5081",
+    "reports/openfold_train384_formal_20260921/analysis/analysis.json": "b5969dd586b0841fa443e1534c2da55003e7195955b7bb38c8efe1a4cbd95ca9",
+    "reports/openfold_followup_20260921/paired_analysis.json": "98444ff57a8b38db73f00dd8420641c592a67e0f76db8e0d409dd4a06f529d20",
+    "reports/cross_backbone_20260921/formal_execution_lock.json": "426d9f2db5ccc1bb0abd4b68277bb709548f8e34c9a4a17ab5b693676057740d",
+    "reports/folding_e2e_20260921/formal/atlas_v3_execution_lock.json": "7369e40024b70097401b4e8f0e2e0d664e78022cefa844c3ea0afdf7d8f4be17",
+    "reports/folding_e2e_20260921/formal/diamond_execution_lock.json": "f820d9b415bf0c19359a4a6c47a2a63712672d53dd83e3b9ba4e6b8ef4394495",
+    "reports/native_direction96_20260919/confirmation_analysis.json": "937e074f4df061fd393913dcbd01a5601c3436276a1e3191bc324ad023b4d1a9",
+    "reports/length48_v2_20260920/metric_analysis/analysis.json": "191c3c7f1d9cf70bd0ec234c8e025748a32b50be32983975e98938ab798172c3",
+    "paper/evidence_20260921/atlasfold_system.json": "90101ff62fddbef32b1aac0f97bf1ddba8f4bf0b828b8acb3292755442de2d1e",
+    "paper/evidence_20260921/openfold3_system.json": "cb0be9a2a7b172343c7fb206ba75492bbe39d2f65eae3892fe8462debf7d3465",
+    "paper/evidence_20260921/rf3_system.json": "1bbe5a901d2d4bfc35f06d4ecc0cec431f5ee1aca1a354f5b7d3fa7f2b7e18b4",
+    "paper/manuscript.md": "bd4ccd4ddc9b332951240f86b4028caec9df3004bfa8359a6de453141b8f2967",
+    "paper/appendix.md": "4d858209b2d9a8e183b1d37e0cc18125a0a52b70ec3b6d01beb3ff82027a6b99",
+    "paper/abstract_submission_draft.md": "82ba1442e1d5922824c408fdc46e08f8ee9a43e0d7f446f51d2052e238703909",
+    "paper/README.md": "07f9f65b2815bc2781388247839be62903ed88d81bf16fbd2a86d33704c60d08",
+    "paper/revision_plan_20260921.md": "ed4939accf810e50cf710d1aaf8cf834b9e28560135f6b8101e32530ad9df589",
+    "paper/audit_revision_20260921.py": "b9dfd05ef4fb1c342652304343c81a299157544f0ba00f7daecd9944b2707934",
+    "paper/manuscript_preview.html": "29dab09c102a7a0d9cd7329d36b595ec544236a0d4ab03d775b15dbef610dc86"
+  }
+}

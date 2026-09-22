@@ -1,0 +1,27 @@
+\section{Structural evidence in Protenix}
+\label{sec:4}
+On Confirm96-A, task-only Factor scores 0.56241 versus 0.49725 for Generic:
+\textbf{+0.06516 {[}0.04936, 0.08288{]}}, with 77/96 positive target differences and
+three positive seed means. The comparison establishes an advantage over this
+specific generic parameterization. In a later frozen-checkpoint comparison
+on observed Confirm96-B, Factor also exceeds G+ by
++0.05230 {[}0.03553, 0.06983{]}. The latter uses independently selected,
+head-specific learning rates and is not new blinded confirmation.
+
+\input{tables/table2.tex}
+
+The primary direction comparison has 78/96 positive target differences and
+positive means for all seeds and rotation marginals. Supplementary lDDT and
+TM-score contrasts support the same direction. Thus factor form, parameter
+count and decoder spectrum alone do not determine adaptation quality.
+Fixing the channel-mean direction while rotating its orthogonal complement
+does not remove the effect. This controls mean-direction mixing, not complete
+LayerNorm behavior after adding an unrotated background.
+
+First-order truncation is useful as a control, not a better default method:
+first-order-full is -0.01871 at Train24/384 and -0.01764 at Train96/1536,
+with intervals below zero. Native expansion from Train96 to Train384 at
+1,536 updates gives a smaller gain, +0.00919 {[}0.00115, 0.01741{]}, with one
+seed declining. Its direction interaction is +0.01446 {[}0.00350, 0.02586{]}
+in a subsequent paired analysis. This changes data composition and per-chain
+repetition as well as count, and does not establish a scaling law.

@@ -1,0 +1,22 @@
+{
+  "model": "esmfold2",
+  "purpose": "descriptive system reference, not adapter-direction evidence",
+  "execution_lock_sha256": "41db6021b9e2e14e91b5c600e6719ac5920960639b335bcb46416718997fc48d",
+  "scoring_lock_sha256": "b753f7d9380e868b984cd48f42bfdb1decd9609b6b13b29d4e4d83a07e677400",
+  "n": 144,
+  "failed": 0,
+  "panels": {
+    "confirm96": {
+      "n": 96,
+      "ca_lddt": 0.942332245892857,
+      "residue_ca_lddt": 0.9356848266124129,
+      "tm_score_fixed_full_length": 0.9217666666666666
+    },
+    "length48": {
+      "n": 48,
+      "ca_lddt": 0.9341274304113997,
+      "residue_ca_lddt": 0.9286130861204894,
+      "tm_score_fixed_full_length": 0.9215770833333333
+    }
+  }
+}
