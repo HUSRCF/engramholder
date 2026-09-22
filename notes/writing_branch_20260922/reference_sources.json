@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-09-22",
+  "scope": "Primary paper/repository metadata and described scope; Protenix author list additionally matched the existing saved arXiv citation metadata. No claim of exhaustive novelty review.",
+  "entries": {
+    "jumper2021alphafold": "https://www.nature.com/articles/s41586-021-03819-2",
+    "ahdritz2024openfold": "https://www.nature.com/articles/s41592-024-02272-z",
+    "gong2025protenix": "https://arxiv.org/abs/2507.11839",
+    "seo2026atlasfold": "https://www.biorxiv.org/content/10.64898/2026.09.04.749352v2",
+    "hu2021lora": "https://arxiv.org/abs/2106.09685",
+    "wu2024reft": "https://arxiv.org/abs/2404.03592",
+    "loshchilov2019adamw": "https://github.com/loshchil/AdamW-and-SGDW",
+    "liu2023boft": "https://arxiv.org/abs/2311.06243",
+    "mariani2013lddt": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3799472/",
+    "zhang2004tm": "https://zhanggroup.org/TM-score/TM-score.pdf"
+  }
+}

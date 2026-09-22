@@ -1,18 +1,37 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-\placeholder{Interpret the interaction as a property of the tested
-parameterizations and AdamW recipe. Explain why function-class invariance of G+
-does not imply optimizer invariance, and why head differences do not uniquely
-isolate representational restriction. Cross-backbone differences also change
-interfaces, losses, and existing representations.}
-\placeholder{State the two prohibited mechanism inferences explicitly in the
-working prose: AtlasFold does not establish that only weak baselines need
-adaptation; OpenFold does not establish learned rotation invariance of G+.
-Preserving orientation is neither sufficient for gains nor a guarantee of
-superiority to generic heads.}
-\placeholder{Briefly retain the local-gradient finding and its lack of positive
-association with trained folding gains; the finite-step shared-transfer study
-established neither mean positive transfer nor native advantage in its tested
-scope. Full details belong in Appendix~\ref{app:mechanisms}. Discuss limited
-rotation families, conditional uncertainty, observed-panel reuse, family and
-pretraining exposure limits, and the quality gap to stronger native systems.}
+The OpenFold interaction is the clearest evidence that a rotation intervention
+must be interpreted together with the adapter parameterization. Under a common
+recipe, a head built through a fixed native operator is more sensitive than a
+head whose free output layer can absorb the same transformation. This sharpens
+the original direction observation while leaving two sources of sensitivity
+entangled: the constraints on representable updates and the optimization geometry
+of their parameters. Establishing their separate contributions would require a
+different experiment, not a reinterpretation of the present contrast.
+
+The structural results also distinguish three questions: whether adaptation
+helps an unadapted system, whether native orientation helps within a constrained
+family, and whether that family is preferable to a generic alternative. Protenix
+supports direction and length-transfer effects, while OpenFold illustrates that
+G+ can be more effective even when direction matters. AtlasFold provides no
+established adaptation gain in this setting. Its high baseline is descriptive;
+we have not isolated a ceiling effect, nor identified an architectural component
+that explains the difference between predictors.
+
+Local task diagnostics provide a narrower supplementary observation. At a
+shared query-only state, native factor spaces show a modest average advantage in
+ridge-gradient compatibility and equal-norm task response, but those diagnostics
+do not establish a positive target-level association with trained folding gains.
+A bounded Train8-to-Dev8 finite-update study likewise does not establish mean
+positive transfer or a native advantage. These results leave shared learning and
+complete inference dynamics unresolved (Appendix~\ref{app:mechanisms}).
+
+Our intervals quantify target variation conditional on the fitted models, not
+all uncertainty from retraining or research selection. Three rotations and seeds
+sample a limited family; several studies reuse observed panels. Sequence
+screening does not ensure target-family independence, and cumulative historical
+exposure and foundation pretraining overlap remain incompletely characterized.
+Cross-predictor comparisons change interfaces, representations and training losses
+along with the backbone. Finally, the absolute gap to strong native single-sequence
+systems limits deployment claims. The evidence supports a conditional design
+factor for frozen adaptation rather than a universal adapter prescription.

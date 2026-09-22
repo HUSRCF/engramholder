@@ -1,4 +1,4 @@
-% Working skeleton, authorized 2026-09-22. Keep the official style unchanged.
+% Evidence-backed working draft, 2026-09-22. Official style unchanged.
 \documentclass{article}
 \usepackage{iclr2027_conference,times}
 \input{math_commands.tex}
@@ -14,14 +14,11 @@
 % Do not enable camera-ready mode for an anonymous submission.
 %\iclrfinalcopy
 
-% Visible drafting markers: intentionally not hidden behind a final-mode switch.
-% All markers must be resolved before submission.
-\newcommand{\placeholder}[1]{\par\begingroup\small\color{blue!55!black}\noindent
-\textbf{[DRAFT PLACEHOLDER]} #1\par\endgroup}
-\newcommand{\reported}{\textit{[insert]}}
+% Only genuinely unfinished results retain a visible marker.
 \newcommand{\pending}{\textit{Pending}}
-\newcommand{\figureplaceholder}[2]{%
-  \fbox{\parbox[c][#1][c]{0.93\linewidth}{\centering\small #2}}}
+
+\newcommand{\result}[1]{\csname data:#1\endcsname}
+\input{generated/numbers}
 
 \begin{document}
 \maketitle
@@ -36,12 +33,8 @@
 \label{sec:main_text_end}
 
 \input{sections/08_statements}
-% Replace this empty bibliography scaffold with verified cited entries.
-% The supplied example .bib is preserved; its example citations are not ours.
-\section*{References}
-\placeholder{Insert verified cited references here using the supplied bibliography style.}
-% \bibliography{iclr2027_conference}
-% \bibliographystyle{iclr2027_conference}
+\bibliography{paper_references}
+\bibliographystyle{iclr2027_conference}
 
 \clearpage
 \appendix

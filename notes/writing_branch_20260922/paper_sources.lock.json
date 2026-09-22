@@ -1,0 +1,16 @@
+{
+  "evidence/protenix_direction.json": "937e074f4df061fd393913dcbd01a5601c3436276a1e3191bc324ad023b4d1a9",
+  "evidence/protenix_extensions.json": "9dc280429b84d754830e4936a80ba451a7e38068968668aa5b1a14a97788eba7",
+  "evidence/protenix_train384.json": "b343181c2d64049d07d4c3cb3a41652f8b2f6adf657d9675cec88d00905f05da",
+  "evidence/length48.json": "191c3c7f1d9cf70bd0ec234c8e025748a32b50be32983975e98938ab798172c3",
+  "evidence/openfold_train96.json": "6000a4e063600b5dfffc07c09016dde2abc9f7d6481abeae2bde60a1207d5081",
+  "evidence/openfold_train384.json": "b5969dd586b0841fa443e1534c2da55003e7195955b7bb38c8efe1a4cbd95ca9",
+  "evidence/openfold_paired.json": "98444ff57a8b38db73f00dd8420641c592a67e0f76db8e0d409dd4a06f529d20",
+  "evidence/openfold_gplus_rotation_final.json": "610050a1687d269ba50a48e655869f73eddbb9a11a8826cd5d35d8c988439fe0",
+  "evidence/atlasfold_adapters_final.json": "f974101bdc76da17c6f66b5c1100effb01bfafc9b193f706e06e5d8a771ca9b5",
+  "evidence/protenix_data_interaction.json": "714ca138410eb59e26720431ff099977626a82086292a910dd1e5df9698bd499",
+  "evidence/protenix_generic.json": "75de24cbab418774cce5d12a376e2fb0786f540a23e2defcd2637dd38d47aba5",
+  "evidence/openfold_gplus_rotation_records.json": "8b9b72d610ff99f068dfee3d8f956d0f8f48bfd82ef4fdd097cb9b343aea9f7a",
+  "evidence/openfold_train384_records.json": "a13cb2d7557b8aa3d3fca2808bc59a7e6a8f7d725a2ee391a8de7e5d8d183de4",
+  "evidence/atlasfold_adapters_records.json": "82e347b8c887271d8b7a645a781787d6b9855ee7de0e1b7e844ca2b64690c506"
+}

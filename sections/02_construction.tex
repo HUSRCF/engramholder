@@ -1,64 +1,94 @@
-% Evidence: reports/math_contract.md; update stale completion labels using Sept22 report.
 \section{Native update construction and orientation controls}
 \label{sec:construction}
-
 \subsection{Query-anchored residual adaptation}
 \label{sec:residual}
-Let $x$ denote the query sequence, $e(x)$ frozen sequence features, and
-$f_\theta$ a trainable shared predictor. At interface $k$ and recycle $t$,
-write the native factors as $a_{k,t},b_{k,t}$ and the baseline update as
-$U_{k,t,0}$. Define
+Let $e(x)$ be frozen sequence features and $f_\theta$ a shared trainable predictor
+of residue-level factor increments. At interface $k$ and recycle $t$, let
+$a_{k,t},b_{k,t}$ denote the native factors, $G_{k,t}$ the frozen pair-generating
+operator, and $U_{k,t,0}$ its baseline update. We define
 \begin{align}
  (\delta a,\delta b)&=f_\theta(e(x)),\label{eq:increments}\\
- \Delta U_{k,t}
- &=G_{k,t}(a_{k,t}+\delta a,b_{k,t}+\delta b)
-   -G_{k,t}(a_{k,t},b_{k,t}),\label{eq:residual}\\
+ \Delta U_{k,t}&=G_{k,t}(a_{k,t}+\delta a,b_{k,t}+\delta b)
+               -G_{k,t}(a_{k,t},b_{k,t}),\label{eq:residual}\\
  U^{(R)}_{k,t}&=U_{k,t,0}+\mathcal R_k\Delta U_{k,t}.\label{eq:injection}
 \end{align}
-\placeholder{Define frozen versus trainable components and the exact injection
-site. Zero the final output weight and bias, not the entire encoder. Explain
-Protenix cached anchors versus state-dependent OpenFold/AtlasFold anchors.
-In Protenix, the residual decoder scale differs from the query baseline scale:
-do not identify $U_{k,t,0}$ with $G_{k,t}(a_{k,t},b_{k,t})$.}
+The last predictor affine layer has zero weights and bias, giving zero residual
+and exactly the unadapted initial function. The sequence encoder remains
+nonzero. Only the adapter is optimized; gradients propagate through the frozen
+folding model. Query factors provide the composition anchors, rather than
+structure labels as predictor inputs.
+
+The operator is specific to the backbone. Protenix uses a cached query anchor
+and update, retaining the downstream pair stack. OpenFold uses factors at the
+first main Evoformer OPM call, whose values depend on the current MSA/pair state
+and recycle history. AtlasFold uses its first difference/product sequence-to-pair
+interface. Freezing operator weights does not make these latter anchors
+constant. Figure~\ref{fig:construction} summarizes the intervention.
 
 \subsection{Full and first-order factor updates}
 \label{sec:full_tangent}
-\placeholder{Give the bilinear expansion with the two linear factor-increment
-terms and the quadratic term. Define tangent by omitting the quadratic term,
-with unchanged predictor parameter count. State the provenance of Protenix
-$D=508.5$: the historical Train24 training-side MSA-depth median, retained as
-a fixed residual scale. Preserve the depth-one query baseline; other backbones
-use their own normalization. Detailed derivation goes in Appendix~\ref{app:operators}.}
+For Protenix's bilinear decoder, write
+\begin{equation}
+ G_D(a,b)_{ij}=\frac{D W\operatorname{vec}(a_i\otimes b_j)+b_{\rm out}}{D+\epsilon},
+ \qquad \widetilde W=\frac{D}{D+\epsilon}W.
+\end{equation}
+The full residual is
+\begin{equation}
+ \Delta U^{\rm full}_{ij}=\widetilde W\operatorname{vec}
+ (\delta a_i\otimes b_{q,j}+a_{q,i}\otimes\delta b_j+
+ \delta a_i\otimes\delta b_j).
+ \label{eq:full}
+\end{equation}
+The first-order, or tangent, construction omits the final quadratic term while
+keeping the same predictor and parameter count. The output bias cancels.
+We use $\epsilon=10^{-3}$ and the historical training-side scale $D=508.5$, the
+median MSA depth in the original Train24 cache. Subsequent experiments retain
+this constant. The original depth-one query update remains the baseline;
+$U_q$ is not replaced by $G_D(a_q,b_q)$. OpenFold retains its own mask and
+effective-row normalization; AtlasFold has no OPM depth constant
+(Appendix~\ref{app:operators}).
 
 \subsection{Fixed orthogonal output controls}
 \label{sec:rotation}
-\placeholder{Define $(\mathcal R\Delta U)_{ij}=R\Delta U_{ij}$ for column channel
-vectors, with $R^\top R=I$. Rotate only the residual, using one fixed matrix
-across residue pairs. Each control is trained from initialization. State which
-local spectra and norms are preserved at matched states, and why this does not
-preserve the full recurrent Jacobian or trained-output norms.}
+For a pair-channel column vector,
+$(\mathcal R\Delta U)_{ij}=R\Delta U_{ij}$ with $R^\top R=I$.
+A single fixed matrix acts across all residue pairs; the baseline, labels and
+protein coordinates are unchanged. Native uses $R=I$. Each rotated adapter
+starts from zero residual and receives task training, so the experiment does
+not perturb an already trained native adapter at inference time.
+At matched factors and parameters, orthogonality preserves residual norms,
+decoder singular values and the local writer's $J^\top J$. It need not preserve
+its composition with the frozen downstream Jacobian, AdamW dynamics, or norms
+of the different updates learned after training. For state-dependent anchors,
+this is a local control, not a spectral equivalence of the whole recycled model.
 
 \subsection{A generic head that can absorb the rotation}
 \label{sec:generic}
-For a generic residual with a free final affine layer,
+G+ uses the same sequence encoder and explicitly receives the corresponding
+query factors. Its pair input concatenates projected node features $z_i,z_j$,
+$a_i,b_j$, and clipped relative sequence position. A pair MLP ends in a free
+affine layer and produces a zero-initialized residual. Unlike the earlier
+Generic control, G+ has explicit factor access.
+For $\Delta U_G=Wh_\phi+b$ and
+$\Delta U_{G,R}=R(W_Rh_\phi+b_R)$, the choice
 \begin{equation}
- \Delta U_G=Wh_\phi+b,\qquad
- \Delta U_{G,R}=R(W_Rh_\phi+b_R).
+ W_R=R^\top W,\qquad b_R=R^\top b
+ \quad\Longrightarrow\quad \mathcal F_G^R=\mathcal F_G
+ \label{eq:absorb}
 \end{equation}
-Taking $W_R=R^\top W$ and $b_R=R^\top b$ gives
-$\Delta U_{G,R}=\Delta U_G$ and hence $\mathcal F_G^R=\mathcal F_G$.
-\placeholder{Specify the G+ inputs: sequence features, explicit corresponding
-query factors, and relative sequence position. Distinguish old Generic from G+.
-State the conditions of the reparameterization and why coordinate-wise AdamW
-is not generally equivariant to an arbitrary orthogonal change of coordinates.
-This is a control property, not a claim of equal learned functions.}
+absorbs the rotation. The fixed factor decoder has no corresponding general
+guarantee. Equation~\ref{eq:absorb} concerns representable functions: coordinate-wise
+second moments can still make AdamW sensitive to the reparameterization.
+We therefore measure both heads' rotation effects rather than require G+'s
+effect to be zero. Factor and G+ have similar, not identical, sizes: 373,824
+versus 378,144 trainable parameters for Protenix and OpenFold.
 
 \begin{figure}[t]
 \centering
-\figureplaceholder{2.2cm}{Figure 1 placeholder: information flow and the
-$2\times2$ Factor/G+ by native/rotated control matrix.\\
-Mark frozen operators, trainable heads, zero initialization, and rotation position.}
-\caption{Query-anchored updates and the parameterization-by-orientation control.
-\textit{Draft diagram; replace with the audited computational paths.}}
+\includegraphics[width=\linewidth]{figures/construction.pdf}
+\caption{Native residual construction and the four-cell control. All cells receive
+task training from zero residual. The baseline is never rotated. G+ receives
+explicit factors and has a free output layer; only its representable function
+class is guaranteed to absorb the output rotation.}
 \label{fig:construction}
 \end{figure}

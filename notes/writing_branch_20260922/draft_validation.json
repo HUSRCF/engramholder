@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-09-22T04:27:13.580931+00:00",
+  "main_text_ends_page": 8,
+  "total_pdf_pages": 13,
+  "undefined_references_or_citations": false,
+  "overfull_boxes": false,
+  "underfull_warning_count": 8,
+  "official_files_unchanged": {
+    "iclr2027_conference.sty": true,
+    "iclr2027_conference.bst": true,
+    "math_commands.tex": true
+  },
+  "checked_raw_system_metric_means": 348,
+  "checked_target_interactions": 144,
+  "generated_numeric_fields": 129,
+  "pending_result_cells": [
+    "pt384_c96_gplus",
+    "pt384_l48_gplus"
+  ],
+  "pdf_sha256": "4c0144c53bd41a27658bd5df1515f134d34893a2b221b14918f0bd9349489bfa",
+  "anonymous_artifact": "build/anonymous_artifact_v3.zip",
+  "anonymous_artifact_sha256": "fa19c4f31389e1acb924ff617f42fff1a3d556a72c3133e4a225ba6e196e8017",
+  "artifact_scope": "verified analysis and operator reproduction only; not full retraining; author anonymity review remains necessary"
+}

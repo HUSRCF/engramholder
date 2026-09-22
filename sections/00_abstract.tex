@@ -1,9 +1,22 @@
-% Evidence: results_update_20260922.md and evidence_review.md.
 \begin{abstract}
-\placeholder{Write one paragraph, approximately 150--190 words. Order:
-question about orientation and parameterization; query-anchored construction;
-OpenFold head-by-rotation interaction; transfer scope and explicit limits.
-Do not claim universal superiority, optimizer-independent invariance, or a
-complete explanation of folding gains. Include only verified completed
-results; matched Protenix Train384 G+ remains pending.}
+Small adapters can alter the internal representations of a frozen protein
+structure predictor, but their effectiveness may depend on both the form and
+the orientation of the updates. We study this dependence using query-anchored
+factor residuals composed through pretrained native operators. Fixed orthogonal
+controls rotate residual channels, and every adapter is trained from zero
+residual under paired conditions. Our central comparison adds a generic head
+with explicit factor access and a free output layer that can absorb the rotation.
+In an OpenFold follow-up on previously observed targets, rotation sensitivity
+interacts with head parameterization: the difference-in-differences is
+\result{inter_c96_interaction} in C$\alpha$ pair-lDDT on Confirm96-B
+(95\% target-bootstrap interval
+[\result{inter_c96_interactionLo}, \result{inter_c96_interactionHi}]).
+Separately locked Protenix studies establish native-direction effects and an
+advantage of \result{pt_length} on proteins beyond the adapters' training-length
+range. The scope is conditional: an expanded-data OpenFold comparison does not
+establish a direction advantage, generic heads can be more effective, and the
+tested AtlasFold configuration establishes no native-direction benefit.
+These results identify orientation as a consequential aspect of constrained
+adaptation, without attributing the interaction solely to expressivity or
+claiming universal superiority of native factor heads.
 \end{abstract}

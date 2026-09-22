@@ -1,0 +1,34 @@
+{
+  "src/engramfold/models/interface_heads.py": {
+    "sha256": "f1a2fb0de3bca444c9a5db1ac6bc9648b25824a11ab095a3801ba7ab84b52d9a",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/models/pair_predictors.py": {
+    "sha256": "e5c49811116c7137902d9540ca70a07e8d0f179b6e33d248ffb3ad515df2d131",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/models/residue_predictors.py": {
+    "sha256": "ce98ec03dfe15c13f42305b78cbc7b9e922a36c3363eef9221b8b6dc474cb5f2",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/models/native_geometry.py": {
+    "sha256": "3173f554ed252ffbd3f1d5a261e91155a157cc41bcb24b2536c00f6bace0abfe",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/models/live_opm.py": {
+    "sha256": "fd8ca8acaebb5c1bac181d68b97336275a57774a0ab26a0d481c513b7ce6f662",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/models/live_prod_diff.py": {
+    "sha256": "11c6cc18b1f7f96987edb56109c95e703cafdc2046d58e5f88ec7b82d6f6dabb",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/experiments/openfold_adapter_runtime.py": {
+    "sha256": "19a97fa53c143e80586a927005e01039d580fa12be68684482f2d7cb27f5737a",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "src/engramfold/experiments/atlas_adapter_runtime.py": {
+    "sha256": "599ab0295db8e949250089aaf41051406d3487349e31aae4cd2648e4c8727825",
+    "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  }
+}

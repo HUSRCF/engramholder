@@ -1,31 +1,53 @@
 \section{Introduction}
 \label{sec:introduction}
-\placeholder{Paragraph 1: motivate frozen adaptation through pretrained internal
-pair-generating computations. Distinguish update construction from output
-orientation. Explain why rotation sensitivity alone is insufficient to establish
-parameterization-specific behavior.}
-\placeholder{Paragraph 2: introduce query-anchored residuals, paired training from
-zero residual, and a generic head with explicit factor access and a free output
-layer. Explain the purpose of the absorbable-rotation control before giving results.}
-\placeholder{Paragraph 3: lead with the directly estimated OpenFold interaction.
-Then summarize the positive scope and non-supporting conditions. Preserve the
-follow-up status of the interaction study; do not rewrite the study chronology.}
+Protein structure predictors construct and refine pairwise representations
+through learned computations that couple sequence information to geometry
+\citep{jumper2021alphafold,gong2025protenix,seo2026atlasfold}.
+Adapting a small interface while freezing the predictor makes it possible to
+study how an update is used by an existing downstream computation. A natural
+adapter reuses a pretrained pair-generating operator: it predicts residue-level
+factor increments and combines them in the operator's native coordinates.
+This construction inherits both a restricted form of update and an orientation
+relative to the frozen downstream model. Their roles need not be the same.
 
-\paragraph{Central claim.}
-Native update orientation can matter for constrained adaptation, but its effect
-depends on the parameterization and frozen predictor; preserving native
-directions neither guarantees adaptation gains nor makes native factor heads
-uniformly superior to generic alternatives.
+Parameter-efficient adaptation can constrain weight updates, as in
+LoRA \citep{hu2021lora}, or intervene on frozen-model representations, as in
+ReFT \citep{wu2024reft}. Here we ask a more specific question about an internal
+interface: \emph{does the effect of changing an update's output orientation
+depend on how that update is parameterized?} A rotation can preserve local
+spectral properties yet alter the representations received by a fixed
+predictor. Observing a performance drop alone would leave open whether the
+sensitivity concerns a particular constrained head or affects a more flexible
+head to a similar degree.
 
-\paragraph{Contributions.}
-\begin{enumerate}
-\item \textbf{An empirical interaction.}
-\placeholder{State the directly tested head-by-rotation interaction under the
-matched OpenFold AdamW recipe. Do not uniquely attribute it to expressivity.}
-\item \textbf{A concrete construction and control.}
-\placeholder{State the query-anchored native residual, zero initialization, and
-explicit local spectral properties of the rotation control.}
-\item \textbf{Transfer and limits.}
-\placeholder{State the tested checkpoint, training-size, and length ranges, together
-with OpenFold comparator limits and the AtlasFold configuration without established gains.}
-\end{enumerate}
+We address this question with query-anchored residuals and trained rotation
+controls. The adapters begin at the same unadapted function; orthogonal matrices
+act only on residual pair channels, and each condition is trained independently
+under paired settings. The factor head predicts increments that are composed
+through a frozen native operator. A generic head, G+, receives the same extra
+sequence features and explicit query factors, but has a free affine output
+layer. An output rotation can be absorbed by reparameterizing this layer without
+changing G+'s function class. This gives a discriminating control, although
+coordinate-wise AdamW updates do not generally preserve an arbitrary orthogonal
+parameter correspondence \citep{loshchilov2019adamw}.
+
+The empirical evidence has two complementary roles. The original Protenix
+comparisons and a separately locked length study establish native-direction
+effects and their tested scope. A subsequent four-cell OpenFold experiment
+\citep{ahdritz2024openfold} directly tests whether rotation sensitivity differs
+between factor and generic parameterizations. We present this interaction first
+because it sharpens the scientific question, while retaining its status as a
+follow-up on already observed panels. Broader results reveal boundaries:
+OpenFold does not establish the direction advantage in every setting, G+ can
+outperform the factor head, and the tested non-OPM AtlasFold interface yields
+no established benefit.
+
+Our contributions are an empirical parameterization-by-orientation interaction
+under a matched training recipe; a concrete query-anchored residual construction
+with explicit zero-initialization and local spectral controls; and an assessment
+of transfer and limits across predictors, training-set sizes, and adaptation
+lengths. Together they support the following claim: \emph{native update
+orientation can matter for constrained adaptation, but its effect depends on
+the parameterization and frozen predictor; preserving native directions neither
+guarantees adaptation gains nor makes native factor heads uniformly superior
+to generic alternatives.}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "source_and_panel_hashes": true,
+  "scoring_input_hashes": true,
+  "all_cif_hashes": true,
+  "full_1536_schedule_and_noise_pairing": true,
+  "frozen_parameters": true,
+  "counts": {
+    "confirm96": 288,
+    "length48": 144
+  },
+  "formal_prediction_failures": 0,
+  "hip_retry_logs": [],
+  "last_prediction_utc": "2026-09-22T05:01:11.810712+00:00",
+  "completed_utc": "2026-09-22T05:01:36.517498+00:00",
+  "checked_utc": "2026-09-22T08:18:15.633965+00:00"
+}

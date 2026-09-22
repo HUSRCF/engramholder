@@ -1,39 +1,77 @@
 \section{Experimental design}
 \label{sec:design}
-\subsection{Predictors, inputs, and training recipes}
-\placeholder{Provide a compact configuration table for Protenix, OpenFold, and
-AtlasFold: checkpoint, injection site, anchor dependence, normalization, frozen
-PLM, trainable parameter count, native task loss, and inference budget.
-Within-backbone Native/Rotated/G+ share extra features; Query-only does not
-receive the added ESM2 representation. AtlasFold retains AtlasLM. Do not call
-these baselines identical representations or equal-compute systems.}
+\paragraph{Predictors and information.}
+We adapt frozen Protenix-Mini/Tiny default checkpoints, the official AF2
+\texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with its native
+AtlasLM retained. No evaluation homologs, templates, or target structures are
+provided as folding inputs. Adapters receive frozen ESM2-35M features (480
+channels, layer 12), and Native/Rotated/G+ share this added representation.
+The unadapted baseline does not receive the added adapter features; AtlasFold
+already has AtlasLM-3B. Thus improvements over the baseline combine feature
+access and adaptation, whereas Native--Rotated is the tighter direction control.
+Table~\ref{tab:recipes} summarizes the backbone-specific paths.
 
-\subsection{Panels, study chronology, and endpoints}
+\begin{table}[t]
+\caption{Core configurations. We transfer a residual construction, not a universal
+normalization or loss. All folding and PLM weights are frozen.}
+\label{tab:recipes}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{.16\linewidth}p{.25\linewidth}p{.29\linewidth}p{.19\linewidth}}
+\toprule
+Predictor & Interface / anchor & Task supervision & Structure inference \\
+\midrule
+Protenix & Single MSA-block OPM; cached query & $4$ MSE + $4$ bond + $4$ smooth-lDDT + $0.03$ distogram & 4 recycles; 5 diffusion steps \\
+OpenFold & First of 48 Evoformer OPMs; live & FAPE + $0.3$ distogram + supervised-chi & 4 trunk passes; structure module \\
+AtlasFold & First difference/product update; live & $0.4$ distogram + $2$ (weighted MSE + smooth-lDDT) & 5 trunk passes; 20/30 diffusion steps$^*$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize $^*$20 steps for $L\le512$ and 30 for $513\le L\le1024$,
+fixed before evaluation. Protenix's protein-only bond mask is empty in this
+setting. Confidence losses are excluded. Full recipes are in Appendix~\ref{app:recipes}.
+\end{table}
+
+\paragraph{Training and pairing.}
+The Protenix direction study uses Train24/384 updates, with tangent as the
+locked main comparison and Full as a secondary comparison. Full Train96/1536
+and Train384/1536 test larger sets at a fixed update budget. OpenFold uses Full
+Train96 and Train384, each for 1536 updates; AtlasFold uses Train96/1536.
+Within each formal recipe, heads share the data order, training seeds,
+random-condition rule, and optimizer settings. Three native seeds are paired
+with three seeds for each of three fixed rotations; G+ has three seeds, and the
+OpenFold Train96 extension adds nine rotated G+ fits. Checkpoint selection is the
+fixed final step, not evaluation quality. One fixed inference sample is scored;
+no target-label selection or cropping is used. Training backpropagates through
+the final recycle under the native task losses.
+
+\paragraph{Panels and study identity.}
 \label{sec:panels}
-\placeholder{Define training-set counts separately from evaluation-panel names.
-Identify the original Protenix locked comparisons and the first Length48 lock;
-mark subsequent OpenFold, AtlasFold, and G+ analyses as observed-panel follow-ups.
-State actual length ranges, sequence screening, masks, and failure scoring.
-Refer to Appendix~\ref{app:chronology} for locks and cumulative exposure limits.}
+Confirm96-A supports the historical Factor--Generic comparison; Confirm96-B
+supports the original Protenix direction comparison. Both contain 96 short-chain
+targets. Length48 comprises 16 targets in each prespecified range 385--512,
+513--640 and 641--768; actual lengths are 392--750, beyond the Train384 adapter
+training range of 152--383. The original length study locked targets and
+configurations before new structure scores. Later OpenFold, AtlasFold and G+
+studies reuse observed panels. The OpenFold four-cell Confirm96-B interaction
+is the primary comparison of that follow-up, not the project's initial endpoint.
+Sequence screening, complete-chain mappings and study-specific exclusions are
+recorded in Appendix~\ref{app:chronology}; they do not establish family or
+foundation-model pretraining isolation.
 
-\subsection{Paired contrasts and uncertainty}
-For target $i$, form the paired direction contrast by averaging training seeds
-and rotations within the target:
+\paragraph{Scores and uncertainty.}
+Our primary score is C$\alpha$ pair-lDDT: for all fixed reference pairs within
+15\,\AA, average distance-preservation credit at thresholds 0.5, 1, 2 and
+4\,\AA, then give each target equal weight. Missing prediction pairs receive
+zero credit without changing the reference denominator. This is a C$\alpha$
+pair-averaged variant of lDDT \citep{mariani2013lddt}. Residue-average C$\alpha$
+lDDT and fixed-correspondence TM-score \citep{zhang2004tm} are supplementary.
+For target $i$ define
 \begin{equation}
- d_i=\frac{1}{3}\sum_{s=1}^{3}
- \left(S_{F,i,s}-\frac{1}{3}\sum_{r=1}^{3}S_{F,R_r,i,s}\right).
+ d_{H,i}=\frac13\sum_s\left(S_{H,i,s}-\frac13\sum_rS_{H,R_r,i,s}\right),
+ \quad \Psi_i=d_{F,i}-d_{G+,i},\quad
+ \Psi=\frac1N\sum_i\Psi_i.\label{eq:interaction}
 \end{equation}
-The head-by-rotation interaction is
-\begin{equation}
- \Psi_i=\left(S_{F,i}-S_{F,R,i}\right)
-        -\left(S_{G+,i}-S_{G+,R,i}\right),
- \qquad \Psi=\frac{1}{N}\sum_i\Psi_i,
- \label{eq:interaction}
-\end{equation}
-where each system score in the last expression is already averaged over its
-prespecified seed and rotation instances.
-\placeholder{Specify target-level paired bootstrap, conditional-on-fitted-model
-interpretation, and primary versus secondary comparisons. Define C$\alpha$
-pair-lDDT; supplementary residue-average lDDT and fixed-correspondence TM-score
-are not independent biological replications. Three seeds and three rotations
-do not multiply the number of independent targets.}
+We resample whole target records for 20,000 paired bootstrap draws, preserving
+within-target seed/rotation pairing. Intervals condition on the fitted models;
+seeds, rotations and supplementary metrics are not additional independent
+proteins. Secondary and follow-up intervals are unadjusted. Protocol-specific
+bootstrap seeds and endpoint roles are preserved in the accompanying records.

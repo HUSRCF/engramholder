@@ -1,0 +1,60 @@
+{
+  "protenix": {
+    "checkpoint": "protenix_mini_default_v0.5.0",
+    "factor_dim": 32,
+    "pair_channels": 128,
+    "hidden_dim": 128,
+    "extra_plm": "esm2_t12_35M_UR50D",
+    "feature_layer": 12,
+    "residual_depth": 508.5,
+    "eps": 0.001,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.0001,
+    "clip_norm": 1,
+    "inference_seed": 101,
+    "recycles": 4,
+    "diffusion_steps": 5
+  },
+  "openfold": {
+    "checkpoint": "model_3_ptm",
+    "interface": "evoformer block 0 OPM",
+    "factor_dim": 32,
+    "pair_channels": 128,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "clip_norm": 1,
+    "inference_seed": 20260921,
+    "trunk_calls": 4,
+    "loss": {
+      "fape": 1,
+      "distogram": 0.3,
+      "supervised_chi": 1
+    }
+  },
+  "atlasfold": {
+    "checkpoint": "atlasfold-260703",
+    "native_plm": "AtlasLM-3B retained",
+    "extra_plm": "ESM2-35M",
+    "interface": "lm_stack.blocks.0.pairwise_prod_diff",
+    "factor_dim": 128,
+    "learning_rate": 0.0001,
+    "training_trunk_calls": 4,
+    "inference_trunk_calls": 5,
+    "inference_seed": 1,
+    "diffusion_steps_by_length": {
+      "L<=512": 20,
+      "513<=L<=1024": 30
+    }
+  },
+  "formal_seeds": [
+    20260923,
+    20260924,
+    20260925
+  ],
+  "rotation_seeds": [
+    20261001,
+    20261002,
+    20261003
+  ],
+  "scope": "Fixed checked configuration summary; not a turnkey training launcher."
+}

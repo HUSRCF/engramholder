@@ -1,10 +1,25 @@
 \section{Related work}
 \label{sec:related}
-\placeholder{Add verified primary references in three short connected paragraphs:
-(1) frozen representation adaptation, low-rank and orthogonal parameterizations;
-(2) protein folding with MSA or native PLM representations and the implementations
-actually tested; (3) training geometry and gradient/representation interventions.
-Explain the distinction of a native internal operator plus paired trained output
-controls. Do not claim the rotation reparameterization proof, gradient inner
-product, or activation-space adaptation itself is new. Check citations before
-adding bibliography entries; the template's example references are not evidence.}
+Low-rank weight adaptation \citep{hu2021lora} and learned interventions on hidden
+representations \citep{wu2024reft} both exploit a frozen model while restricting
+the trainable component. Our construction instead composes residue-level changes
+through a pretrained internal pair-generating operator. The contribution is the
+controlled comparison of its orientation sensitivity with an absorbable generic
+head, not the introduction of activation adaptation or orthogonal
+reparameterization itself. Orthogonal finetuning, including butterfly
+parameterizations \citep{liu2023boft}, learns transformations for adaptation;
+our fixed rotations instead act as trained control conditions for native
+operator residuals. Adaptive coordinate-wise optimization
+\citep{loshchilov2019adamw} motivates separating function-class equivalence from
+training behavior.
+
+AlphaFold2 and its trainable OpenFold implementation couple MSA and pair
+representations with structural prediction
+\citep{jumper2021alphafold,ahdritz2024openfold}. Protenix-Mini provides compact
+folding models with a switchable PLM path \citep{gong2025protenix}; AtlasFold
+uses metagenomic-scale language-model representations \citep{seo2026atlasfold}.
+These systems provide distinct tested computational contexts. We preserve each
+context's native operator and loss rather than equate all sequence-to-pair
+interfaces with OPM. Their native system scores locate our adapters' practical
+quality, but baseline-only evaluations do not constitute direction-effect
+replications.

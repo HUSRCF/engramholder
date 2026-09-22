@@ -1,5 +1,7 @@
 # Protenix匹配G+：2026-09-22执行状态
 
+**已完成：2026-09-22 13:01 HKT。** 三组1536步和432次预测全部成功，六项三指标对比独立复算通过。[完整结果与分析](protenix_gplus384_results_20260922.md)。以下保留启动过程；末尾旧“尚无结果”已被本状态替代。
+
 用户批准后只增加Train384/1536 G+三个种子20260923/24/25。
 4608正式updates、432正式预测；Native/Rotated/Query沿用匹配历史结果。
 
@@ -22,4 +24,4 @@
 [协议](/home/husrcf/Code/onestepfold/engramfold/docs/protenix_gplus384_v1.md)
 [锁与工程记录](/home/husrcf/Code/onestepfold/engramfold/reports/protenix_gplus384_20260922)
 
-当前尚无新G+最终结构结果，不改论文正文或旧结论。
+启动时尚无最终结果；现已完成，见上方结果链接。本轮只更新MD证据，论文生成表和证据锁尚未接纳新增来源。

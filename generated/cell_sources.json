@@ -1,0 +1,2214 @@
+{
+  "inputs": {
+    "evidence/protenix_direction.json": "937e074f4df061fd393913dcbd01a5601c3436276a1e3191bc324ad023b4d1a9",
+    "evidence/protenix_extensions.json": "9dc280429b84d754830e4936a80ba451a7e38068968668aa5b1a14a97788eba7",
+    "evidence/protenix_train384.json": "b343181c2d64049d07d4c3cb3a41652f8b2f6adf657d9675cec88d00905f05da",
+    "evidence/length48.json": "191c3c7f1d9cf70bd0ec234c8e025748a32b50be32983975e98938ab798172c3",
+    "evidence/openfold_train96.json": "6000a4e063600b5dfffc07c09016dde2abc9f7d6481abeae2bde60a1207d5081",
+    "evidence/openfold_train384.json": "b5969dd586b0841fa443e1534c2da55003e7195955b7bb38c8efe1a4cbd95ca9",
+    "evidence/openfold_paired.json": "98444ff57a8b38db73f00dd8420641c592a67e0f76db8e0d409dd4a06f529d20",
+    "evidence/openfold_gplus_rotation_final.json": "610050a1687d269ba50a48e655869f73eddbb9a11a8826cd5d35d8c988439fe0",
+    "evidence/atlasfold_adapters_final.json": "f974101bdc76da17c6f66b5c1100effb01bfafc9b193f706e06e5d8a771ca9b5",
+    "evidence/protenix_data_interaction.json": "714ca138410eb59e26720431ff099977626a82086292a910dd1e5df9698bd499",
+    "evidence/protenix_generic.json": "75de24cbab418774cce5d12a376e2fb0786f540a23e2defcd2637dd38d47aba5",
+    "evidence/openfold_gplus_rotation_records.json": "8b9b72d610ff99f068dfee3d8f956d0f8f48bfd82ef4fdd097cb9b343aea9f7a",
+    "evidence/openfold_train384_records.json": "a13cb2d7557b8aa3d3fca2808bc59a7e6a8f7d725a2ee391a8de7e5d8d183de4",
+    "evidence/atlasfold_adapters_records.json": "82e347b8c887271d8b7a645a781787d6b9855ee7de0e1b7e844ca2b64690c506"
+  },
+  "cells": {
+    "pt96_c96_native": {
+      "source": "evidence/protenix_direction.json",
+      "field_paths": [
+        [
+          "systems",
+          "n96_full_native_s20260923_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n96_full_native_s20260924_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n96_full_native_s20260925_u1536",
+          "mean_ca_lddt"
+        ]
+      ],
+      "operation": "mean",
+      "value": 0.6165282605305852,
+      "formatted": "0.61653"
+    },
+    "pt96_c96_rotated": {
+      "source": "evidence/protenix_extensions.json",
+      "field_paths": [
+        [
+          "systems",
+          "C_mini_ordinary_r20261001_s20260923",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261001_s20260924",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261001_s20260925",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261002_s20260923",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261002_s20260924",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261002_s20260925",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261003_s20260923",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261003_s20260924",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "C_mini_ordinary_r20261003_s20260925",
+          "mean_ca_lddt"
+        ]
+      ],
+      "operation": "mean",
+      "value": 0.5914760057523224,
+      "formatted": "0.59148"
+    },
+    "pt96_c96_query": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "systems",
+        "query",
+        "mean_ca_lddt"
+      ],
+      "operation": "identity",
+      "value": 0.3793080201245919,
+      "formatted": "0.37931"
+    },
+    "pt384_c96_native": {
+      "source": "evidence/protenix_train384.json",
+      "field_paths": [
+        [
+          "systems",
+          "n384_full_native_s20260923_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_native_s20260924_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_native_s20260925_u1536",
+          "mean_ca_lddt"
+        ]
+      ],
+      "operation": "mean",
+      "value": 0.6257196927838583,
+      "formatted": "0.62572"
+    },
+    "pt384_c96_rotated": {
+      "source": "evidence/protenix_train384.json",
+      "field_paths": [
+        [
+          "systems",
+          "n384_full_r20261001_s20260923_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261001_s20260924_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261001_s20260925_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261002_s20260923_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261002_s20260924_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261002_s20260925_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261003_s20260923_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261003_s20260924_u1536",
+          "mean_ca_lddt"
+        ],
+        [
+          "systems",
+          "n384_full_r20261003_s20260925_u1536",
+          "mean_ca_lddt"
+        ]
+      ],
+      "operation": "mean",
+      "value": 0.5862107152025524,
+      "formatted": "0.58621"
+    },
+    "pt384_c96_query": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "systems",
+        "query",
+        "mean_ca_lddt"
+      ],
+      "operation": "identity",
+      "value": 0.3793080201245919,
+      "formatted": "0.37931"
+    },
+    "pt384_l48_native": {
+      "source": "evidence/length48.json",
+      "field_paths": [
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_native_s20260923_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_native_s20260924_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_native_s20260925_u1536"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.5291924583572504,
+      "formatted": "0.52919"
+    },
+    "pt384_l48_rotated": {
+      "source": "evidence/length48.json",
+      "field_paths": [
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261001_s20260923_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261001_s20260924_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261001_s20260925_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261002_s20260923_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261002_s20260924_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261002_s20260925_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261003_s20260923_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261003_s20260924_u1536"
+        ],
+        [
+          "metrics",
+          "ca_pair_lddt",
+          "absolute_means",
+          "n384_full_r20261003_s20260925_u1536"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.4866682726042055,
+      "formatted": "0.48667"
+    },
+    "pt384_l48_query": {
+      "source": "evidence/length48.json",
+      "field_path": [
+        "metrics",
+        "ca_pair_lddt",
+        "absolute_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3212187384778337,
+      "formatted": "0.32122"
+    },
+    "pt384_l48_official": {
+      "source": "evidence/length48.json",
+      "field_path": [
+        "metrics",
+        "ca_pair_lddt",
+        "absolute_means",
+        "official_mini_esm"
+      ],
+      "operation": "identity",
+      "value": 0.9213893554942022,
+      "formatted": "0.92139"
+    },
+    "of96_c96_native": {
+      "source": "evidence/openfold_train96.json",
+      "field_paths": [
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "native_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "native_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "native_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.5019025118487536,
+      "formatted": "0.50190"
+    },
+    "of96_c96_rotated": {
+      "source": "evidence/openfold_train96.json",
+      "field_paths": [
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260925"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260925"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.4820937620791109,
+      "formatted": "0.48209"
+    },
+    "of96_c96_gplus": {
+      "source": "evidence/openfold_train96.json",
+      "field_paths": [
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.4953386632334904,
+      "formatted": "0.49534"
+    },
+    "of96_c96_query": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "system_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.30191"
+    },
+    "of96_c96_direction": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019808749769642652,
+      "formatted": "+0.01981"
+    },
+    "of96_c96_directionLo": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.009281453729498545,
+      "formatted": "+0.00928"
+    },
+    "of96_c96_directionHi": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.031289882660125966,
+      "formatted": "+0.03129"
+    },
+    "of96_c96_gdiff": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "train96_native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.006563848615263229,
+      "formatted": "+0.00656"
+    },
+    "of96_c96_gdiffLo": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "train96_native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.005148272339873681,
+      "formatted": "-0.00515"
+    },
+    "of96_c96_gdiffHi": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "train96_native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.018454530353400736,
+      "formatted": "+0.01845"
+    },
+    "of96_l48_native": {
+      "source": "evidence/openfold_train96.json",
+      "field_paths": [
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "native_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "native_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "native_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.3887202763321403,
+      "formatted": "0.38872"
+    },
+    "of96_l48_rotated": {
+      "source": "evidence/openfold_train96.json",
+      "field_paths": [
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260925"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260925"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.3783364588144406,
+      "formatted": "0.37834"
+    },
+    "of96_l48_gplus": {
+      "source": "evidence/openfold_train96.json",
+      "field_paths": [
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.39849430548181264,
+      "formatted": "0.39849"
+    },
+    "of96_l48_query": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "system_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.2607893500665757,
+      "formatted": "0.26079"
+    },
+    "of96_l48_direction": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010383817517699727,
+      "formatted": "+0.01038"
+    },
+    "of96_l48_directionLo": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0040314633161299155,
+      "formatted": "+0.00403"
+    },
+    "of96_l48_directionHi": {
+      "source": "evidence/openfold_train96.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017053394608561274,
+      "formatted": "+0.01705"
+    },
+    "of96_l48_gdiff": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "train96_native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0097740291496723,
+      "formatted": "-0.00977"
+    },
+    "of96_l48_gdiffLo": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "train96_native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01673775144932786,
+      "formatted": "-0.01674"
+    },
+    "of96_l48_gdiffHi": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "train96_native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.002880099021948805,
+      "formatted": "-0.00288"
+    },
+    "of384_c96_native": {
+      "source": "evidence/openfold_train384.json",
+      "field_paths": [
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "native_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "native_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "native_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.5068443393728,
+      "formatted": "0.50684"
+    },
+    "of384_c96_rotated": {
+      "source": "evidence/openfold_train384.json",
+      "field_paths": [
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260925"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260925"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.5038130028423794,
+      "formatted": "0.50381"
+    },
+    "of384_c96_gplus": {
+      "source": "evidence/openfold_train384.json",
+      "field_paths": [
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260923"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260924"
+        ],
+        [
+          "panels",
+          "confirm96",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.5133273534331355,
+      "formatted": "0.51333"
+    },
+    "of384_c96_query": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "system_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.30191"
+    },
+    "of384_c96_direction": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0030313365304205867,
+      "formatted": "+0.00303"
+    },
+    "of384_c96_directionLo": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006746726188981041,
+      "formatted": "-0.00675"
+    },
+    "of384_c96_directionHi": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012179339272595102,
+      "formatted": "+0.01218"
+    },
+    "of384_c96_gdiff": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "train384_native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.006483014060335523,
+      "formatted": "-0.00648"
+    },
+    "of384_c96_gdiffLo": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "train384_native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01776649412246442,
+      "formatted": "-0.01777"
+    },
+    "of384_c96_gdiffHi": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "train384_native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00536503632884126,
+      "formatted": "+0.00537"
+    },
+    "of384_l48_native": {
+      "source": "evidence/openfold_train384.json",
+      "field_paths": [
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "native_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "native_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "native_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.40165206821200905,
+      "formatted": "0.40165"
+    },
+    "of384_l48_rotated": {
+      "source": "evidence/openfold_train384.json",
+      "field_paths": [
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261001_s20260925"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261002_s20260925"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "r20261003_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.39039511813057604,
+      "formatted": "0.39040"
+    },
+    "of384_l48_gplus": {
+      "source": "evidence/openfold_train384.json",
+      "field_paths": [
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260923"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260924"
+        ],
+        [
+          "panels",
+          "length48",
+          "ca_lddt",
+          "system_means",
+          "gplus_s20260925"
+        ]
+      ],
+      "operation": "arithmetic mean of complete system means",
+      "value": 0.408683082860721,
+      "formatted": "0.40868"
+    },
+    "of384_l48_query": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "system_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.2607893500665757,
+      "formatted": "0.26079"
+    },
+    "of384_l48_direction": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011256950081433015,
+      "formatted": "+0.01126"
+    },
+    "of384_l48_directionLo": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.005274419574636443,
+      "formatted": "+0.00527"
+    },
+    "of384_l48_directionHi": {
+      "source": "evidence/openfold_train384.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01734281779087698,
+      "formatted": "+0.01734"
+    },
+    "of384_l48_gdiff": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "train384_native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0070310146487119335,
+      "formatted": "-0.00703"
+    },
+    "of384_l48_gdiffLo": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "train384_native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.013687406680317971,
+      "formatted": "-0.01369"
+    },
+    "of384_l48_gdiffHi": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "train384_native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0003892913902542542,
+      "formatted": "-0.00039"
+    },
+    "atlas_c96_query_native_plm": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "means",
+        "query_native_plm"
+      ],
+      "operation": "identity",
+      "value": 0.9567569611557952,
+      "formatted": "0.95676"
+    },
+    "atlas_c96_native": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "means",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.9562626299253364,
+      "formatted": "0.95626"
+    },
+    "atlas_c96_rotated": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "means",
+        "rotated"
+      ],
+      "operation": "identity",
+      "value": 0.9565506426015835,
+      "formatted": "0.95655"
+    },
+    "atlas_c96_gplus": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "means",
+        "gplus"
+      ],
+      "operation": "identity",
+      "value": 0.957062330398456,
+      "formatted": "0.95706"
+    },
+    "atlas_c96_direction": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0002880126762471237,
+      "formatted": "-0.00029"
+    },
+    "atlas_c96_directionLo": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.001320010589401476,
+      "formatted": "-0.00132"
+    },
+    "atlas_c96_directionHi": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0006881670083814916,
+      "formatted": "+0.00069"
+    },
+    "atlas_c96_gdiff": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0007997004731194159,
+      "formatted": "-0.00080"
+    },
+    "atlas_c96_gdiffLo": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0021299135577088945,
+      "formatted": "-0.00213"
+    },
+    "atlas_c96_gdiffHi": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00044142705841375407,
+      "formatted": "+0.00044"
+    },
+    "inter_c96_factor_native": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.5019025118487536,
+      "formatted": "0.50190"
+    },
+    "inter_c96_factor_rotated": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.482093762079111,
+      "formatted": "0.48209"
+    },
+    "inter_c96_gplus_native": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.49533866323349035,
+      "formatted": "0.49534"
+    },
+    "inter_c96_gplus_rotated": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.49434912958995,
+      "formatted": "0.49435"
+    },
+    "inter_c96_factor_rotation": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019808749769642656,
+      "formatted": "+0.01981"
+    },
+    "inter_c96_factor_rotationLo": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.00928145372949855,
+      "formatted": "+0.00928"
+    },
+    "inter_c96_factor_rotationHi": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.031289882660125966,
+      "formatted": "+0.03129"
+    },
+    "inter_c96_gplus_rotation": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0009895336435403767,
+      "formatted": "+0.00099"
+    },
+    "inter_c96_gplus_rotationLo": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00500277501832022,
+      "formatted": "-0.00500"
+    },
+    "inter_c96_gplus_rotationHi": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0070140359719092415,
+      "formatted": "+0.00701"
+    },
+    "inter_c96_interaction": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018819216126102278,
+      "formatted": "+0.01882"
+    },
+    "inter_c96_interactionLo": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.006622437585606222,
+      "formatted": "+0.00662"
+    },
+    "inter_c96_interactionHi": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.032088041600984274,
+      "formatted": "+0.03209"
+    },
+    "of_scale_c96": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "direction_interaction_384_minus_96",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.016777413239222074,
+      "formatted": "-0.01678"
+    },
+    "of_scale_c96Lo": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "direction_interaction_384_minus_96",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.032142196440776,
+      "formatted": "-0.03214"
+    },
+    "of_scale_c96Hi": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "direction_interaction_384_minus_96",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.002607123802077745,
+      "formatted": "-0.00261"
+    },
+    "atlas_l48_query_native_plm": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "means",
+        "query_native_plm"
+      ],
+      "operation": "identity",
+      "value": 0.9505000362033348,
+      "formatted": "0.95050"
+    },
+    "atlas_l48_native": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "means",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.9478940106845601,
+      "formatted": "0.94789"
+    },
+    "atlas_l48_rotated": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "means",
+        "rotated"
+      ],
+      "operation": "identity",
+      "value": 0.9485289933851122,
+      "formatted": "0.94853"
+    },
+    "atlas_l48_gplus": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "means",
+        "gplus"
+      ],
+      "operation": "identity",
+      "value": 0.9483764791040584,
+      "formatted": "0.94838"
+    },
+    "atlas_l48_direction": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0006349827005521233,
+      "formatted": "-0.00063"
+    },
+    "atlas_l48_directionLo": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.002206967740621316,
+      "formatted": "-0.00221"
+    },
+    "atlas_l48_directionHi": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0008677512982171807,
+      "formatted": "+0.00087"
+    },
+    "atlas_l48_gdiff": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0004824684194980851,
+      "formatted": "-0.00048"
+    },
+    "atlas_l48_gdiffLo": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0030151942555363778,
+      "formatted": "-0.00302"
+    },
+    "atlas_l48_gdiffHi": {
+      "source": "evidence/atlasfold_adapters_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0019109465309528467,
+      "formatted": "+0.00191"
+    },
+    "inter_l48_factor_native": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.38872027633214035,
+      "formatted": "0.38872"
+    },
+    "inter_l48_factor_rotated": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.3783364588144406,
+      "formatted": "0.37834"
+    },
+    "inter_l48_gplus_native": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.3984943054818127,
+      "formatted": "0.39849"
+    },
+    "inter_l48_gplus_rotated": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.4021132278779156,
+      "formatted": "0.40211"
+    },
+    "inter_l48_factor_rotation": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010383817517699727,
+      "formatted": "+0.01038"
+    },
+    "inter_l48_factor_rotationLo": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004031463316129921,
+      "formatted": "+0.00403"
+    },
+    "inter_l48_factor_rotationHi": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017053394608561277,
+      "formatted": "+0.01705"
+    },
+    "inter_l48_gplus_rotation": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.003618922396102921,
+      "formatted": "-0.00362"
+    },
+    "inter_l48_gplus_rotationLo": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.010097555145644518,
+      "formatted": "-0.01010"
+    },
+    "inter_l48_gplus_rotationHi": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00320357354427364,
+      "formatted": "+0.00320"
+    },
+    "inter_l48_interaction": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014002739913802645,
+      "formatted": "+0.01400"
+    },
+    "inter_l48_interactionLo": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.00604358850213833,
+      "formatted": "+0.00604"
+    },
+    "inter_l48_interactionHi": {
+      "source": "evidence/openfold_gplus_rotation_final.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.022030404769870594,
+      "formatted": "+0.02203"
+    },
+    "of_scale_l48": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "direction_interaction_384_minus_96",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0008731325637332878,
+      "formatted": "+0.00087"
+    },
+    "of_scale_l48Lo": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "direction_interaction_384_minus_96",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.007276962294874878,
+      "formatted": "-0.00728"
+    },
+    "of_scale_l48Hi": {
+      "source": "evidence/openfold_paired.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "direction_interaction_384_minus_96",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008625500454431789,
+      "formatted": "+0.00863"
+    },
+    "pt_tangent": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "primary",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.05710271185842938,
+      "formatted": "+0.05710"
+    },
+    "pt_tangentLo": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "primary",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.042490518182223894,
+      "formatted": "+0.04249"
+    },
+    "pt_tangentHi": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "primary",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.07273807629239482,
+      "formatted": "+0.07274"
+    },
+    "pt_full24": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "secondary",
+        "native_full_minus_rotated_full_n24_u384",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04649631906851324,
+      "formatted": "+0.04650"
+    },
+    "pt_full24Lo": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "secondary",
+        "native_full_minus_rotated_full_n24_u384",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.031179907709991166,
+      "formatted": "+0.03118"
+    },
+    "pt_full24Hi": {
+      "source": "evidence/protenix_direction.json",
+      "field_path": [
+        "secondary",
+        "native_full_minus_rotated_full_n24_u384",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06336395378138317,
+      "formatted": "+0.06336"
+    },
+    "pt_tiny": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "primary",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.022060299742567208,
+      "formatted": "+0.02206"
+    },
+    "pt_tinyLo": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "primary",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.013967172643793773,
+      "formatted": "+0.01397"
+    },
+    "pt_tinyHi": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "primary",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.030752894165039703,
+      "formatted": "+0.03075"
+    },
+    "pt_mean": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "secondary",
+        "mini_native_minus_mean_preserving",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.1005871948440555,
+      "formatted": "+0.10059"
+    },
+    "pt_meanLo": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "secondary",
+        "mini_native_minus_mean_preserving",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.07957553797750133,
+      "formatted": "+0.07958"
+    },
+    "pt_meanHi": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "secondary",
+        "mini_native_minus_mean_preserving",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.12232550674741625,
+      "formatted": "+0.12233"
+    },
+    "pt_full96": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "secondary",
+        "mini_train96_full_native_minus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02505225477826281,
+      "formatted": "+0.02505"
+    },
+    "pt_full96Lo": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "secondary",
+        "mini_train96_full_native_minus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.013783998853212933,
+      "formatted": "+0.01378"
+    },
+    "pt_full96Hi": {
+      "source": "evidence/protenix_extensions.json",
+      "field_path": [
+        "secondary",
+        "mini_train96_full_native_minus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03730457232770079,
+      "formatted": "+0.03730"
+    },
+    "pt_full384": {
+      "source": "evidence/protenix_train384.json",
+      "field_path": [
+        "primary",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03950897758130575,
+      "formatted": "+0.03951"
+    },
+    "pt_full384Lo": {
+      "source": "evidence/protenix_train384.json",
+      "field_path": [
+        "primary",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.028000841233137914,
+      "formatted": "+0.02800"
+    },
+    "pt_full384Hi": {
+      "source": "evidence/protenix_train384.json",
+      "field_path": [
+        "primary",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0521630107345301,
+      "formatted": "+0.05216"
+    },
+    "pt_length": {
+      "source": "evidence/length48.json",
+      "field_path": [
+        "metrics",
+        "ca_pair_lddt",
+        "primary",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04252418575304498,
+      "formatted": "+0.04252"
+    },
+    "pt_lengthLo": {
+      "source": "evidence/length48.json",
+      "field_path": [
+        "metrics",
+        "ca_pair_lddt",
+        "primary",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.028988545714189816,
+      "formatted": "+0.02899"
+    },
+    "pt_lengthHi": {
+      "source": "evidence/length48.json",
+      "field_path": [
+        "metrics",
+        "ca_pair_lddt",
+        "primary",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05764759180829479,
+      "formatted": "+0.05765"
+    },
+    "pt_scale": {
+      "source": "evidence/protenix_data_interaction.json",
+      "field_path": [
+        "direction_difference_in_differences",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014456722803042938,
+      "formatted": "+0.01446"
+    },
+    "pt_scaleLo": {
+      "source": "evidence/protenix_data_interaction.json",
+      "field_path": [
+        "direction_difference_in_differences",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0034961043514766445,
+      "formatted": "+0.00350"
+    },
+    "pt_scaleHi": {
+      "source": "evidence/protenix_data_interaction.json",
+      "field_path": [
+        "direction_difference_in_differences",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02585633611947358,
+      "formatted": "+0.02586"
+    },
+    "pt_scale_native": {
+      "source": "evidence/protenix_data_interaction.json",
+      "field_path": [
+        "native_train384_minus96",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.00919143225327299,
+      "formatted": "+0.00919"
+    },
+    "pt_scale_nativeLo": {
+      "source": "evidence/protenix_data_interaction.json",
+      "field_path": [
+        "native_train384_minus96",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0011536484490198887,
+      "formatted": "+0.00115"
+    },
+    "pt_scale_nativeHi": {
+      "source": "evidence/protenix_data_interaction.json",
+      "field_path": [
+        "native_train384_minus96",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017408847700324907,
+      "formatted": "+0.01741"
+    }
+  },
+  "verified_raw_system_metric_means": 348,
+  "verified_target_interactions": 144,
+  "pending": [
+    "pt384_c96_gplus",
+    "pt384_l48_gplus"
+  ],
+  "unrun": [
+    "pt96_c96_gplus"
+  ]
+}

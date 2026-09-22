@@ -1,87 +1,154 @@
-% Numerical sources: reports/results_update_20260922.md; evidence_review.md.
-% Do not populate from rounded prose when source arrays are available.
 \section{Results}
 \label{sec:results}
-
 \subsection{Rotation sensitivity interacts with adapter parameterization}
 \label{sec:interaction_result}
-\placeholder{Lead with OpenFold Train96/1536: give all four absolute means,
-the two direction contrasts, and the direct interaction from
-Eq.~\ref{eq:interaction}. Confirm96-B is this follow-up study's primary
-comparison; Length48 is secondary. Report confidence intervals and seed/rotation
-consistency. Do not infer interaction from separate significance tests or claim
-G+ equivalence from a confidence interval containing zero.}
+Under the matched OpenFold Train96 recipe, output rotation affects the factor
+head more than G+ (Figure~\ref{fig:interaction}). On Confirm96-B, the factor
+contrast is \result{inter_c96_factor_rotation}, while G+'s contrast is
+\result{inter_c96_gplus_rotation}. The directly estimated interaction is
+\result{inter_c96_interaction}
+[\result{inter_c96_interactionLo}, \result{inter_c96_interactionHi}].
+The Length48 secondary comparison is also positive:
+\result{inter_l48_interaction}
+[\result{inter_l48_interactionLo}, \result{inter_l48_interactionHi}].
+These are differences-in-differences on a 0--1 score scale, not relative
+percentage improvements.
+
+The main-metric interaction is positive in all three seed marginals and all
+three rotation marginals on both panels, but in 8/9 and 7/9 individual
+seed-by-rotation cells, respectively. Target-level interactions are positive
+for 61/96 and 34/48 proteins. Supplementary lDDT and TM-score interaction
+intervals agree in direction, although a Length48 TM-score seed marginal is
+negative. The effect is therefore not confined to a single marginal instance,
+and it is not positive for every fitted combination.
+
+G+'s direction intervals include zero on both panels; its Length48 rotated mean
+is slightly higher. This does not establish equivalence of trained G+ systems.
+Instead, the direct interaction shows different rotation sensitivity under the
+tested parameterizations and optimizer. The function-class control rules out a
+loss of representable functions as a necessary effect of rotating G+, while
+leaving optimization dynamics as part of the empirical comparison.
+
 \begin{figure}[t]
-\centering
-\figureplaceholder{2.2cm}{Figure 2 placeholder: four system means and paired
-head-by-rotation interaction intervals on Confirm96-B and Length48.\\
-Show the direct interaction separately from the two direction contrasts.}
-\caption{Rotation sensitivity under the matched OpenFold training recipe.
-\textit{Draft: insert verified paired estimates, not illustrative bars.}}
+\centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
+\caption{OpenFold Train96 four-cell experiment. Left: absolute mean scores
+(F: factor, RF: rotated factor, RG+: rotated G+). Right: paired factor and G+
+direction effects and their direct interaction $\Psi$, with 95\% target-bootstrap
+intervals conditional on fitted models. Both panels were previously observed;
+Confirm96-B is the primary endpoint of this follow-up.}
 \label{fig:interaction}
 \end{figure}
 
 \subsection{Native orientation benefits factor adaptation in tested Protenix settings}
 \label{sec:protenix}
-\placeholder{Present the original locked tangent comparison alongside Full;
-then Tiny and mean-preserving rotation controls. State which observations reuse
-Confirm96-B. The tangent construction is a diagnostic, not a superior main
-method. Historical Factor--Generic evidence cannot substitute for G+.
-No Protenix head-by-rotation interaction is available without rotated G+.}
+The original Protenix-Mini tangent comparison on Confirm96-B gives a native
+advantage of \result{pt_tangent} [\result{pt_tangentLo}, \result{pt_tangentHi}],
+with 78/96 positive targets. Full gives \result{pt_full24}
+[\result{pt_full24Lo}, \result{pt_full24Hi}]. The tangent construction serves to
+isolate first-order updates; it is not a uniformly better adapter than Full.
+Using Tiny's own factors and decoder retains an advantage of
+\result{pt_tiny} [\result{pt_tinyLo}, \result{pt_tinyHi}], extending the evidence
+to a second checkpoint within the same family.
+
+A mean-preserving orthogonal control, $Ru=u$ for the all-ones unit vector $u$,
+also underperforms native updates: \result{pt_mean}
+[\result{pt_meanLo}, \result{pt_meanHi}]. Preserving this special channel
+direction therefore does not remove the effect in the tested setting. It does
+not isolate all downstream normalization behavior. These follow-ups, together
+with the Full training-scale comparisons, are shown in
+Figure~\ref{fig:scope}. They establish a scope for the factor direction effect;
+they do not constitute additional factor-versus-G+ rotation interactions.
 
 \subsection{Fixed adapters transfer beyond their adaptation-training lengths}
 \label{sec:length}
-\placeholder{Present the fixed-model Protenix Length48 result: adaptation lengths
-152--383 versus actual evaluation lengths 392--750 residues, complete inputs,
-Native/Rotated/Query/official absolute quality and the paired direction interval.
-Matched Train384 G+ is pending. Length48 was prospective for the original
-length study and observed for later follow-ups. Do not infer family or
-foundation-pretraining isolation.}
+Without further training, the fixed Train384 Full adapters retain an advantage
+on Length48 of \result{pt_length} [\result{pt_lengthLo}, \result{pt_lengthHi}],
+with 41/48 positive targets. Native and rotated means are
+\result{pt384_l48_native} and \result{pt384_l48_rotated}, both above the
+unadapted mean of \result{pt384_l48_query} (Table~\ref{tab:coverage}).
+Thus the contrast is accompanied by useful adaptation in mean score, rather
+than only less damage from one update family. Baseline comparisons here remain
+descriptive secondary results. Supplementary residue-average lDDT and TM-score
+support the same direction.
+
+This study tests complete sequences beyond the adapters' training-length
+range, not arbitrary-length prediction or family novelty. The pretrained
+folding model and PLM may already have encountered long or related proteins.
+Official Mini-ESM scores \result{pt384_l48_official} on the same panel, leaving
+a substantial quality gap. Length transfer strengthens the tested applicability
+of the adapter but does not establish a competitive replacement for the full
+native system.
+
 \begin{figure}[t]
-\centering
-\figureplaceholder{1.8cm}{Figure 3 placeholder: direction contrasts and length
-scope. Include non-supporting conditions and mark study/panel status.}
-\caption{Tested scope of native-direction effects.
-\textit{Draft: distinguish checkpoint, recipe, and target-distribution changes.}}
+\centering\includegraphics[width=\linewidth]{figures/scope.pdf}
+\caption{Scope of native-minus-rotation effects. P: primary comparison on a newly
+locked panel at the time of that study; S: prespecified secondary comparison in
+the original Protenix direction study; F: subsequent observed-panel study or
+extension. The mean-preserving row uses Train24/tangent/384. All intervals are
+conditional target-bootstrap intervals; rows share targets and are not
+independent replications. Null and negative conditions are retained.}
 \label{fig:scope}
 \end{figure}
 
 \subsection{Native orientation does not guarantee gains or superiority over generic heads}
 \label{sec:limits_results}
-\placeholder{Keep OpenFold Train384/Confirm96 without an established direction
-advantage, OpenFold G+ competitive results, and AtlasFold's two non-supporting
-panels in the main comparison. Discuss the matched Full/1536 Train96--Train384
-interaction using both actual terms. Do not compare tangent Train24 against Full
-Train384 as a data-scale interaction.}
+Table~\ref{tab:coverage} places direction effects next to absolute performance
+and the generic comparator. OpenFold Train384 gives
+\result{of384_c96_direction}
+[\result{of384_c96_directionLo}, \result{of384_c96_directionHi}] on Confirm96-B,
+without an established advantage. On Length48 it gives
+\result{of384_l48_direction}
+[\result{of384_l48_directionLo}, \result{of384_l48_directionHi}].
+G+ exceeds the native factor head on the two OpenFold long-chain comparisons;
+Table~\ref{tab:gplus} gives the paired estimates. A direction benefit within
+one constrained family can coexist with a better generic adapter.
 
 \begin{table}[t]
-\caption{Coverage scaffold for matched-input adapter comparisons. \reported{}
-means completed evidence awaiting insertion; Pending means no final result;
---- means no matched experiment. Values are not zeros. Each paired panel row
-uses its stated training recipe. Query-only lacks the extra adapter ESM2
-features; native AtlasLM is retained in the AtlasFold baseline.}
-\label{tab:coverage}
-\centering
-\scriptsize
-\begin{tabular}{llrrrr}
-\toprule
-Predictor / training & Panel & Query & Native & Rotated & G+ \\
-\midrule
-Protenix / T96 Full & C96-B & \reported & \reported & \reported & --- \\
-Protenix / T384 Full & C96-B & \reported & \reported & \reported & \pending \\
-Protenix / T384 Full & L48 & \reported & \reported & \reported & \pending \\
-OpenFold / T96 Full & C96-B & \reported & \reported & \reported & \reported \\
-OpenFold / T96 Full & L48 & \reported & \reported & \reported & \reported \\
-OpenFold / T384 Full & C96-B & \reported & \reported & \reported & \reported \\
-OpenFold / T384 Full & L48 & \reported & \reported & \reported & \reported \\
-AtlasFold / T96 & C96-B & \reported & \reported & \reported & \reported \\
-AtlasFold / T96 & L48 & \reported & \reported & \reported & \reported \\
-\bottomrule
+\caption{Absolute C$\alpha$ pair-lDDT means. All rows use 1536 task updates;
+Protenix/OpenFold use Full. Native and G+ average three seeds; Rotated averages
+three seeds and three rotations. C96-B: Confirm96-B; L48: Length48.
+Unadapted is the query-only baseline for Protenix/OpenFold and retains native
+AtlasLM for AtlasFold; it does not receive the added adapter ESM2 features.
+Pending marks only the two unfinished matched G+ evaluations; --- indicates no
+matched experiment.}
+\label{tab:coverage}\centering\footnotesize
+\begin{tabular}{llrrrr}\toprule
+Backbone / recipe & Panel & Unadapted & Native & Rotated & G+ \\\midrule
+\input{generated/main_table_rows}
 \end{tabular}
 \end{table}
-\placeholder{Table~\ref{tab:coverage} is a scope/comparator table, not a replacement
-for the four-cell OpenFold interaction or original Protenix main comparison.
-All rows here use 1536 updates. Insert exact paired differences/intervals in
-adjacent panels or text. Keep native-system references with different PLMs and
-budgets separate; baseline-only RF3/OpenFold3/ESMFold2 runs do not establish
-additional adapter direction replications.}
+
+AtlasFold's unadapted means are \result{atlas_c96_query_native_plm} and
+\result{atlas_l48_query_native_plm}. Its tested adapters yield little
+native--rotation separation: \result{atlas_c96_direction}
+[\result{atlas_c96_directionLo}, \result{atlas_c96_directionHi}] and
+\result{atlas_l48_direction}
+[\result{atlas_l48_directionLo}, \result{atlas_l48_directionHi}], respectively.
+The configurations establish neither a native-direction benefit nor improved
+adaptation over that baseline. This is a boundary of the tested interface and
+recipe, not evidence that only weak systems can benefit from adaptation.
+
+\begin{table}[t]
+\caption{Native minus G+: paired follow-up comparisons. Negative values favor
+G+. Intervals are conditional on fitted models and unadjusted for these secondary
+comparisons. These estimates address method competitiveness, separately from
+Native--Rotated direction effects.}
+\label{tab:gplus}\centering\footnotesize
+\begin{tabular}{llrr}\toprule
+Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
+\input{generated/paired_table_rows}
+\end{tabular}
+\end{table}
+
+The fixed-budget data interaction also differs by predictor. Using Full and
+1536 updates on both sides, $(N-R)_{384}-(N-R)_{96}$ is
+\result{pt_scale} [\result{pt_scaleLo}, \result{pt_scaleHi}] for Protenix on
+Confirm96-B, versus \result{of_scale_c96}
+[\result{of_scale_c96Lo}, \result{of_scale_c96Hi}] for OpenFold.
+The corresponding OpenFold Length48 estimate is
+\result{of_scale_l48} [\result{of_scale_l48Lo}, \result{of_scale_l48Hi}].
+These direct interactions concern changes in training-set composition and
+repetition at fixed update count (16 versus 4 average passes). They neither
+establish a general sample-efficiency law nor identify why the predictors differ.
+The matched Protenix Train384 G+ study remains pending; its already fixed primary
+endpoint is Confirm96-B Native--G+, with Length48 secondary.

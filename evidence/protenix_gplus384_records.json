@@ -1,0 +1,3906 @@
+{
+  "confirm96": {
+    "gplus_s20260923": [
+      {
+        "target_id": "3gxb_A",
+        "status": "ok",
+        "query_length": 184,
+        "ca_pair_lddt": 0.6611707841031149,
+        "residue_ca_lddt": 0.6497277572167427,
+        "tm_score_fixed_full_length": 0.7691,
+        "prediction_sha256": "6dff8ae02238d4322ee18938d4b835ec93e0d8de56125569de4d15b57a69d782"
+      },
+      {
+        "target_id": "6a89_A",
+        "status": "ok",
+        "query_length": 167,
+        "ca_pair_lddt": 0.6142281105990783,
+        "residue_ca_lddt": 0.6008357562751915,
+        "tm_score_fixed_full_length": 0.7133,
+        "prediction_sha256": "293ffb5679d3c228aebe0636369c577dad888e05d4ff9930d57b9ee9eccfc367"
+      },
+      {
+        "target_id": "4xbc_A",
+        "status": "ok",
+        "query_length": 188,
+        "ca_pair_lddt": 0.4968542667581789,
+        "residue_ca_lddt": 0.48808013978356946,
+        "tm_score_fixed_full_length": 0.5508,
+        "prediction_sha256": "355606819bbac235f22a55fd8d49bc14b07621dfab9c3b3d4221e6d4a341319a"
+      },
+      {
+        "target_id": "6q3v_A",
+        "status": "ok",
+        "query_length": 188,
+        "ca_pair_lddt": 0.5579178885630498,
+        "residue_ca_lddt": 0.5644795029916477,
+        "tm_score_fixed_full_length": 0.3604,
+        "prediction_sha256": "b41f5390d574ce1f87ebe3d9b3b41c2f967235abac7bca700c2be6a53d129fb4"
+      },
+      {
+        "target_id": "7nuw_A",
+        "status": "ok",
+        "query_length": 162,
+        "ca_pair_lddt": 0.7013568129330254,
+        "residue_ca_lddt": 0.6853760291213816,
+        "tm_score_fixed_full_length": 0.727,
+        "prediction_sha256": "364bbeb5df7752f5005dd255fa0a0b5d0f44674d780d76f8bd546dca7aa141ab"
+      },
+      {
+        "target_id": "2obi_A",
+        "status": "ok",
+        "query_length": 183,
+        "ca_pair_lddt": 0.5478929522886897,
+        "residue_ca_lddt": 0.5403486337529713,
+        "tm_score_fixed_full_length": 0.5573,
+        "prediction_sha256": "b9b2b17b9e2edb193dfe01ef46da95dc2ba508dc628336975d2a8cf5c33adf22"
+      },
+      {
+        "target_id": "3qzq_A",
+        "status": "ok",
+        "query_length": 187,
+        "ca_pair_lddt": 0.5507478632478633,
+        "residue_ca_lddt": 0.5515406746659437,
+        "tm_score_fixed_full_length": 0.5839,
+        "prediction_sha256": "0c6662bf539edab48838cf2d5aa9d3ca9dd1d5860049384ca5034e984f7b8a0f"
+      },
+      {
+        "target_id": "4woh_A",
+        "status": "ok",
+        "query_length": 166,
+        "ca_pair_lddt": 0.6520485770363101,
+        "residue_ca_lddt": 0.658861244773255,
+        "tm_score_fixed_full_length": 0.7281,
+        "prediction_sha256": "5412ca76583ce9582d9f3f76cf05221a9d96c4ed61d8f92cdfb0c02aaa60e18c"
+      },
+      {
+        "target_id": "6ndw_A",
+        "status": "ok",
+        "query_length": 178,
+        "ca_pair_lddt": 0.38312544974814106,
+        "residue_ca_lddt": 0.3866947590972028,
+        "tm_score_fixed_full_length": 0.4098,
+        "prediction_sha256": "1df7a1b5bf52477fe3d5ab84ce15c87895c1955308477a90cfbe3e29829d523b"
+      },
+      {
+        "target_id": "3hny_A",
+        "status": "ok",
+        "query_length": 159,
+        "ca_pair_lddt": 0.6332904884318766,
+        "residue_ca_lddt": 0.6318268196168756,
+        "tm_score_fixed_full_length": 0.7194,
+        "prediction_sha256": "34b8bdba19934410d4af09d961cbe95d5e2d7410babbe3f5d87d2d45f819d8e2"
+      },
+      {
+        "target_id": "1wba_A",
+        "status": "ok",
+        "query_length": 175,
+        "ca_pair_lddt": 0.3582662765179225,
+        "residue_ca_lddt": 0.3633107736616667,
+        "tm_score_fixed_full_length": 0.343,
+        "prediction_sha256": "da4c62add4e53beb911fac87df01c541de03599bfcc1ef0161190e961111a33e"
+      },
+      {
+        "target_id": "1yn9_A",
+        "status": "ok",
+        "query_length": 169,
+        "ca_pair_lddt": 0.7487986544930322,
+        "residue_ca_lddt": 0.7381296026424776,
+        "tm_score_fixed_full_length": 0.8162,
+        "prediction_sha256": "d41400665e9240428431856b301386b8daf82758a230c223a47ea13954936b16"
+      },
+      {
+        "target_id": "1a44_A",
+        "status": "ok",
+        "query_length": 185,
+        "ca_pair_lddt": 0.3404807285048708,
+        "residue_ca_lddt": 0.34350772823353,
+        "tm_score_fixed_full_length": 0.399,
+        "prediction_sha256": "33428bf82c9e123ce1d5ec5ee7fa3ab9dc1ddaa7f140a1c2d5078b9bb3dfb98e"
+      },
+      {
+        "target_id": "4xje_A",
+        "status": "ok",
+        "query_length": 185,
+        "ca_pair_lddt": 0.7644749754661433,
+        "residue_ca_lddt": 0.7514445052451526,
+        "tm_score_fixed_full_length": 0.7515,
+        "prediction_sha256": "4623d475f57e84fbb7be777a1be668959900c72c9c7f58485bb67f784490efe2"
+      },
+      {
+        "target_id": "1ccz_A",
+        "status": "ok",
+        "query_length": 171,
+        "ca_pair_lddt": 0.7061246910189508,
+        "residue_ca_lddt": 0.6957377013345127,
+        "tm_score_fixed_full_length": 0.5328,
+        "prediction_sha256": "90d5e322c8653bff2cc35e6fefa48066af4c69f3baa3fbdf0ec211bd9dee809b"
+      },
+      {
+        "target_id": "2p3k_A",
+        "status": "ok",
+        "query_length": 161,
+        "ca_pair_lddt": 0.34172885572139305,
+        "residue_ca_lddt": 0.3466228451306313,
+        "tm_score_fixed_full_length": 0.2772,
+        "prediction_sha256": "3421eeefbcf5979c060d9c27311dc7baf278ae1bbb6b67a4ab09c1f643980b59"
+      },
+      {
+        "target_id": "6ibj_A",
+        "status": "ok",
+        "query_length": 155,
+        "ca_pair_lddt": 0.3643335192414947,
+        "residue_ca_lddt": 0.358382467292374,
+        "tm_score_fixed_full_length": 0.4156,
+        "prediction_sha256": "90731dad1674994837dd203434320e681cb0e763660ba448bc3000eb267463f0"
+      },
+      {
+        "target_id": "1j84_A",
+        "status": "ok",
+        "query_length": 180,
+        "ca_pair_lddt": 0.4576665224913495,
+        "residue_ca_lddt": 0.4596523287507867,
+        "tm_score_fixed_full_length": 0.5032,
+        "prediction_sha256": "fe70f589a613acc653f1051a2d43959bbfce64014eab0662e08375092d2218e0"
+      },
+      {
+        "target_id": "3esx_A",
+        "status": "ok",
+        "query_length": 169,
+        "ca_pair_lddt": 0.6687226193221121,
+        "residue_ca_lddt": 0.6739907092907842,
+        "tm_score_fixed_full_length": 0.7876,
+        "prediction_sha256": "5ac9bce5eeba8fb90a46026f9715d4178bedadfb83a8d033a8bf8da50ecd646f"
+      },
+      {
+        "target_id": "4p27_A",
+        "status": "ok",
+        "query_length": 162,
+        "ca_pair_lddt": 0.3526737242128122,
+        "residue_ca_lddt": 0.34969598666398377,
+        "tm_score_fixed_full_length": 0.2759,
+        "prediction_sha256": "48905a891fafb7180a91462591208ca30f882bce5baee7781e5feceee3257261"
+      },
+      {
+        "target_id": "6fpc_A",
+        "status": "ok",
+        "query_length": 191,
+        "ca_pair_lddt": 0.6394561725562184,
+        "residue_ca_lddt": 0.6315811635655946,
+        "tm_score_fixed_full_length": 0.6908,
+        "prediction_sha256": "1f076bb4f0b303bdc3eaad7eae6f038de467bfabeb4af29021b6ed55873ac8b3"
+      },
+      {
+        "target_id": "7c82_A",
+        "status": "ok",
+        "query_length": 191,
+        "ca_pair_lddt": 0.7874641647120146,
+        "residue_ca_lddt": 0.782392169961444,
+        "tm_score_fixed_full_length": 0.7526,
+        "prediction_sha256": "a4856b4f4fc4182fa5f6469307b7bc11b0c3b3e15c5e101ff7049b6f9d10bbcd"
+      },
+      {
+        "target_id": "1bk7_A",
+        "status": "ok",
+        "query_length": 190,
+        "ca_pair_lddt": 0.34071475553606667,
+        "residue_ca_lddt": 0.34727460946582445,
+        "tm_score_fixed_full_length": 0.2847,
+        "prediction_sha256": "9a8ebb7c3854469eef1f057ead7db7171860661a572979b1f466d28cd41a1c05"
+      },
+      {
+        "target_id": "6ht1_A",
+        "status": "ok",
+        "query_length": 155,
+        "ca_pair_lddt": 0.31256231306081755,
+        "residue_ca_lddt": 0.31969826716827454,
+        "tm_score_fixed_full_length": 0.2352,
+        "prediction_sha256": "bad894749d640aff974dea321edb0caa93cf8a8643c93314b725c35602d11679"
+      },
+      {
+        "target_id": "5d6p_A",
+        "status": "ok",
+        "query_length": 212,
+        "ca_pair_lddt": 0.5269477644975653,
+        "residue_ca_lddt": 0.5275689506554851,
+        "tm_score_fixed_full_length": 0.5374,
+        "prediction_sha256": "9f27da089a0951bf35d2a55bd7212eee36258cc4b2dd87736227d425598e1a00"
+      },
+      {
+        "target_id": "1lxz_A",
+        "status": "ok",
+        "query_length": 207,
+        "ca_pair_lddt": 0.370843070285817,
+        "residue_ca_lddt": 0.37747130711913046,
+        "tm_score_fixed_full_length": 0.3893,
+        "prediction_sha256": "f0b8216a94639af8ff82e90ad1cf4ef8d1ef89757c9e319b833a85aa21fe2ebd"
+      },
+      {
+        "target_id": "5kdi_A",
+        "status": "ok",
+        "query_length": 211,
+        "ca_pair_lddt": 0.45308324768756425,
+        "residue_ca_lddt": 0.4588724883523447,
+        "tm_score_fixed_full_length": 0.3598,
+        "prediction_sha256": "a5dc2726e3e69137057b2ac81d0b8c4e2e1fd34c04a0681270a4a34fb9035b26"
+      },
+      {
+        "target_id": "7np5_A",
+        "status": "ok",
+        "query_length": 247,
+        "ca_pair_lddt": 0.39702329594478,
+        "residue_ca_lddt": 0.40052694296695057,
+        "tm_score_fixed_full_length": 0.2903,
+        "prediction_sha256": "2c9c4f7f0aceca44532b2b06e94e73276385cbe8c7a174b4ebc7b5ebd99fd25d"
+      },
+      {
+        "target_id": "5nl7_A",
+        "status": "ok",
+        "query_length": 234,
+        "ca_pair_lddt": 0.3827188115267586,
+        "residue_ca_lddt": 0.38752739630586625,
+        "tm_score_fixed_full_length": 0.2563,
+        "prediction_sha256": "6a6d9b9eaf757c58ac9356d82a19e96e8de49e59ee1d95a76df8ffce3a0f7339"
+      },
+      {
+        "target_id": "3eii_A",
+        "status": "ok",
+        "query_length": 208,
+        "ca_pair_lddt": 0.37181616832779624,
+        "residue_ca_lddt": 0.3617894470667811,
+        "tm_score_fixed_full_length": 0.4525,
+        "prediction_sha256": "c99956b9e9a4fa7441699fe881fd87bd6ba07d6963bad36de097c099ae216c38"
+      },
+      {
+        "target_id": "3f95_A",
+        "status": "ok",
+        "query_length": 193,
+        "ca_pair_lddt": 0.3978905887807139,
+        "residue_ca_lddt": 0.3956841397173223,
+        "tm_score_fixed_full_length": 0.4274,
+        "prediction_sha256": "a3076274f26af9ccb6933d5fa3f883fc6892e11949645b4e9743c91e0ea1a8ed"
+      },
+      {
+        "target_id": "3zj0_A",
+        "status": "ok",
+        "query_length": 206,
+        "ca_pair_lddt": 0.7408736669401148,
+        "residue_ca_lddt": 0.7277637304739187,
+        "tm_score_fixed_full_length": 0.7752,
+        "prediction_sha256": "d0307ee9e8bd9bef8bfabd5fd352222670388bb959e195c56a87786fec1b6873"
+      },
+      {
+        "target_id": "2nlr_A",
+        "status": "ok",
+        "query_length": 234,
+        "ca_pair_lddt": 0.3174995876628732,
+        "residue_ca_lddt": 0.3225788060845524,
+        "tm_score_fixed_full_length": 0.3068,
+        "prediction_sha256": "894656c5f85cb7b952eb5cb6e6381182f75568e87e8bb5d85b3a72548ee4cc9a"
+      },
+      {
+        "target_id": "1m1u_A",
+        "status": "ok",
+        "query_length": 195,
+        "ca_pair_lddt": 0.6902095746866653,
+        "residue_ca_lddt": 0.6744455430740629,
+        "tm_score_fixed_full_length": 0.7469,
+        "prediction_sha256": "5d0752b76525af78023b431b6a53ccc6e62b76a6fad0cd3359f72690edec261d"
+      },
+      {
+        "target_id": "2a7m_A",
+        "status": "ok",
+        "query_length": 250,
+        "ca_pair_lddt": 0.5950532386867791,
+        "residue_ca_lddt": 0.5963880706654705,
+        "tm_score_fixed_full_length": 0.6795,
+        "prediction_sha256": "8bc9bc509043e2c8cf6b632e8addbf1f07fe2643632527fbf7560484f096f6bc"
+      },
+      {
+        "target_id": "3n36_A",
+        "status": "ok",
+        "query_length": 242,
+        "ca_pair_lddt": 0.36745837788299984,
+        "residue_ca_lddt": 0.36808232059716955,
+        "tm_score_fixed_full_length": 0.4505,
+        "prediction_sha256": "fcb14e4da52e1bc7cac52f99090469c0ca0ccee6eb6162531239b275184ccfbb"
+      },
+      {
+        "target_id": "1xa1_A",
+        "status": "ok",
+        "query_length": 255,
+        "ca_pair_lddt": 0.40644075755204256,
+        "residue_ca_lddt": 0.41251448484839837,
+        "tm_score_fixed_full_length": 0.2872,
+        "prediction_sha256": "71d8b6863f2aca36f5353217431471a2572635b59112c9408b57dfe2744a7145"
+      },
+      {
+        "target_id": "6j5q_A",
+        "status": "ok",
+        "query_length": 251,
+        "ca_pair_lddt": 0.4381104432757325,
+        "residue_ca_lddt": 0.4422761275575811,
+        "tm_score_fixed_full_length": 0.4375,
+        "prediction_sha256": "c685993856547b0f8f23a024c99ef8c3f47cdeb0fa0cc3652982e2624f61c3d8"
+      },
+      {
+        "target_id": "2erf_A",
+        "status": "ok",
+        "query_length": 209,
+        "ca_pair_lddt": 0.30232984773436067,
+        "residue_ca_lddt": 0.301011148536044,
+        "tm_score_fixed_full_length": 0.2651,
+        "prediction_sha256": "08b6f3eefb1daccbbfd03347847cc1abab5661c89c44144ea7b8f2b3bfd07899"
+      },
+      {
+        "target_id": "4dr9_A",
+        "status": "ok",
+        "query_length": 192,
+        "ca_pair_lddt": 0.3547982676088443,
+        "residue_ca_lddt": 0.3552820606269532,
+        "tm_score_fixed_full_length": 0.2586,
+        "prediction_sha256": "0210597e5e099b19a7deefb231db498f091b157f54767185e340bd818d4ea0fe"
+      },
+      {
+        "target_id": "1h5y_A",
+        "status": "ok",
+        "query_length": 253,
+        "ca_pair_lddt": 0.8786451792939863,
+        "residue_ca_lddt": 0.8683605905649439,
+        "tm_score_fixed_full_length": 0.9362,
+        "prediction_sha256": "eabebb484ccd9ddcd2bd46b374b964056984a6b3a3b879aba5995b17aaa11f7d"
+      },
+      {
+        "target_id": "1g69_A",
+        "status": "ok",
+        "query_length": 228,
+        "ca_pair_lddt": 0.902759897006759,
+        "residue_ca_lddt": 0.8913327260634973,
+        "tm_score_fixed_full_length": 0.9447,
+        "prediction_sha256": "3574eb9d42eba4a3eca317f44e7c4ba994e1f3687035cef657bfb30c3cec23af"
+      },
+      {
+        "target_id": "4zyx_A",
+        "status": "ok",
+        "query_length": 210,
+        "ca_pair_lddt": 0.8402874132804757,
+        "residue_ca_lddt": 0.8431486811378244,
+        "tm_score_fixed_full_length": 0.8561,
+        "prediction_sha256": "a88faa6e5d633b729ad396a8db9c4cbf0fe43682303792d4649203e048f2ca28"
+      },
+      {
+        "target_id": "1pxr_A",
+        "status": "ok",
+        "query_length": 249,
+        "ca_pair_lddt": 0.4579164472529401,
+        "residue_ca_lddt": 0.46766501568111796,
+        "tm_score_fixed_full_length": 0.3417,
+        "prediction_sha256": "bc968b1c059daebc8cbf745af6f0fd38ae9aaa2ae9d70b74e92fa012dd528cf1"
+      },
+      {
+        "target_id": "5xrb_A",
+        "status": "ok",
+        "query_length": 228,
+        "ca_pair_lddt": 0.6103630560542589,
+        "residue_ca_lddt": 0.5940876647940292,
+        "tm_score_fixed_full_length": 0.5901,
+        "prediction_sha256": "509928bcb635aca0724210625b3a60038e21c001d421336ca71405977a7070f9"
+      },
+      {
+        "target_id": "4f1j_A",
+        "status": "ok",
+        "query_length": 203,
+        "ca_pair_lddt": 0.6788504464285714,
+        "residue_ca_lddt": 0.6672197389140925,
+        "tm_score_fixed_full_length": 0.8047,
+        "prediction_sha256": "89ee3124d41e15e08b775069a81909f9c93b4f26c675a230e372068f85581cc5"
+      },
+      {
+        "target_id": "1dua_A",
+        "status": "ok",
+        "query_length": 242,
+        "ca_pair_lddt": 0.7654010369014943,
+        "residue_ca_lddt": 0.7343212615018131,
+        "tm_score_fixed_full_length": 0.7871,
+        "prediction_sha256": "169fc8e81e937494fc53c7e46a0144e7670da06c1e28adb286e56c73cf2de82b"
+      },
+      {
+        "target_id": "2ocg_A",
+        "status": "ok",
+        "query_length": 254,
+        "ca_pair_lddt": 0.8412921348314607,
+        "residue_ca_lddt": 0.8323450966631359,
+        "tm_score_fixed_full_length": 0.9223,
+        "prediction_sha256": "c6c36d139d6fa4a6a553d026fec22f59c4330dd7f82571018fd03bb6dc707f44"
+      },
+      {
+        "target_id": "3voa_A",
+        "status": "ok",
+        "query_length": 308,
+        "ca_pair_lddt": 0.7341382845426586,
+        "residue_ca_lddt": 0.7230339422550933,
+        "tm_score_fixed_full_length": 0.6542,
+        "prediction_sha256": "5d3f50a8d46d8c8f8d5f02d50156bc1d0506ab3e12ae616782dbd432116e036d"
+      },
+      {
+        "target_id": "1c91_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.5944900430570506,
+        "residue_ca_lddt": 0.5817358494417381,
+        "tm_score_fixed_full_length": 0.7087,
+        "prediction_sha256": "71803a3a3cb994d0908f0d728432232b2cca75215fa24193c290a5f0f9065568"
+      },
+      {
+        "target_id": "3f99_A",
+        "status": "ok",
+        "query_length": 306,
+        "ca_pair_lddt": 0.5712598425196851,
+        "residue_ca_lddt": 0.5791732911307151,
+        "tm_score_fixed_full_length": 0.6256,
+        "prediction_sha256": "b3e3f5930a13ab3d56a15f73af05b43ff2f0e0c0de27d35706f703ff4e173a10"
+      },
+      {
+        "target_id": "3ah4_A",
+        "status": "ok",
+        "query_length": 288,
+        "ca_pair_lddt": 0.3690715434083601,
+        "residue_ca_lddt": 0.36743974333573215,
+        "tm_score_fixed_full_length": 0.2826,
+        "prediction_sha256": "ef10099fe045ddedccf52ea59002c7a8cc88e66cbfe45af3e4305d077e3bdc16"
+      },
+      {
+        "target_id": "7bwv_A",
+        "status": "ok",
+        "query_length": 276,
+        "ca_pair_lddt": 0.6627056672760512,
+        "residue_ca_lddt": 0.6377274106696553,
+        "tm_score_fixed_full_length": 0.5772,
+        "prediction_sha256": "bce836a67f4c97ee3a2484a864ea59e0eafee34ee4213af0c805d7983ca87c70"
+      },
+      {
+        "target_id": "4q3c_A",
+        "status": "ok",
+        "query_length": 260,
+        "ca_pair_lddt": 0.5868432479374729,
+        "residue_ca_lddt": 0.5961857282339861,
+        "tm_score_fixed_full_length": 0.5525,
+        "prediction_sha256": "7175f7d563ccf99b9f492c6ec1bf716aa64238619cfac8231d813ec789cde00f"
+      },
+      {
+        "target_id": "2vi0_A",
+        "status": "ok",
+        "query_length": 282,
+        "ca_pair_lddt": 0.696286829005785,
+        "residue_ca_lddt": 0.684035181704433,
+        "tm_score_fixed_full_length": 0.7938,
+        "prediction_sha256": "536192e58dfb5de7fd14df7881571f3be77b6b7677e77e8e97c5ca0f72ad7ec2"
+      },
+      {
+        "target_id": "4n13_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.7870120596635989,
+        "residue_ca_lddt": 0.7755914448763731,
+        "tm_score_fixed_full_length": 0.624,
+        "prediction_sha256": "d753cf73e82b521e6ae661ba4ddd0b0a2af0e73f0ef32158ed734b50a201f145"
+      },
+      {
+        "target_id": "2c6z_A",
+        "status": "ok",
+        "query_length": 284,
+        "ca_pair_lddt": 0.5682057699907785,
+        "residue_ca_lddt": 0.5814908014194576,
+        "tm_score_fixed_full_length": 0.6857,
+        "prediction_sha256": "36354117c89e8fc3d7cb216c7360e0a82a2853f31ffba9e0132662b9d703a56d"
+      },
+      {
+        "target_id": "5byl_A",
+        "status": "ok",
+        "query_length": 305,
+        "ca_pair_lddt": 0.7067169540229885,
+        "residue_ca_lddt": 0.7248188525331971,
+        "tm_score_fixed_full_length": 0.5337,
+        "prediction_sha256": "9a99437eb9702c6b1ba738c87fff95be4b1bd1c113024a39993fc4b3899427c5"
+      },
+      {
+        "target_id": "2cex_A",
+        "status": "ok",
+        "query_length": 306,
+        "ca_pair_lddt": 0.47375,
+        "residue_ca_lddt": 0.49170366937406224,
+        "tm_score_fixed_full_length": 0.4667,
+        "prediction_sha256": "39285af9a30db71cef224bc68cf4c8c7a8050a82c8178a92bc7168db5d19a307"
+      },
+      {
+        "target_id": "3ea3_A",
+        "status": "ok",
+        "query_length": 298,
+        "ca_pair_lddt": 0.3835695955028718,
+        "residue_ca_lddt": 0.3765471558700292,
+        "tm_score_fixed_full_length": 0.4165,
+        "prediction_sha256": "763a155112a338abcdb1c976ff04a31b110519a6b4ae495ff6fc16b095783dc5"
+      },
+      {
+        "target_id": "2iry_A",
+        "status": "ok",
+        "query_length": 303,
+        "ca_pair_lddt": 0.4764512227895727,
+        "residue_ca_lddt": 0.4837353201403236,
+        "tm_score_fixed_full_length": 0.5178,
+        "prediction_sha256": "8c377f58cf8c15f9b00e9500304117c9d41e2ae42d7efdc595de64a9781af52a"
+      },
+      {
+        "target_id": "5dxn_A",
+        "status": "ok",
+        "query_length": 286,
+        "ca_pair_lddt": 0.8256398537477148,
+        "residue_ca_lddt": 0.8199740358681703,
+        "tm_score_fixed_full_length": 0.8145,
+        "prediction_sha256": "598c144f7ff5e3587cdac4982be9fcefcb831feac997432bf34ce24253a978e6"
+      },
+      {
+        "target_id": "4jpx_A",
+        "status": "ok",
+        "query_length": 302,
+        "ca_pair_lddt": 0.2914362682546434,
+        "residue_ca_lddt": 0.30560075017342186,
+        "tm_score_fixed_full_length": 0.2368,
+        "prediction_sha256": "c015393ef1d1cfb456937ba39b002b6e229fcc2145d9ff10b59d40db49809667"
+      },
+      {
+        "target_id": "7k27_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.6835278276481149,
+        "residue_ca_lddt": 0.6770749626303391,
+        "tm_score_fixed_full_length": 0.3866,
+        "prediction_sha256": "3ac14cee208a53180a5e1b4c0b4bb2be2375e00727cfebd1f624a310826fd29c"
+      },
+      {
+        "target_id": "2bod_A",
+        "status": "ok",
+        "query_length": 286,
+        "ca_pair_lddt": 0.44862002567394094,
+        "residue_ca_lddt": 0.45811609579484486,
+        "tm_score_fixed_full_length": 0.5276,
+        "prediction_sha256": "afa4c58b570a1a49c5d93c875bda8244f158b0a2c9d998806ff1ee7600413cf1"
+      },
+      {
+        "target_id": "5trq_A",
+        "status": "ok",
+        "query_length": 291,
+        "ca_pair_lddt": 0.5242070116861436,
+        "residue_ca_lddt": 0.5288012069675981,
+        "tm_score_fixed_full_length": 0.6063,
+        "prediction_sha256": "c0d4c1576df6b59db4fe1d7afe8962d0cc232907b13ed4b67007fd43134a87bc"
+      },
+      {
+        "target_id": "3wib_A",
+        "status": "ok",
+        "query_length": 304,
+        "ca_pair_lddt": 0.633223475725694,
+        "residue_ca_lddt": 0.6298775046667421,
+        "tm_score_fixed_full_length": 0.6851,
+        "prediction_sha256": "adaa6853dd042679ec8c7621d99b80cd68d5d64baf82498f6dcc6a619707b7b4"
+      },
+      {
+        "target_id": "4i6k_A",
+        "status": "ok",
+        "query_length": 294,
+        "ca_pair_lddt": 0.7451378200643627,
+        "residue_ca_lddt": 0.7429847569015164,
+        "tm_score_fixed_full_length": 0.785,
+        "prediction_sha256": "80bb5af6c299fffef1cda6ed097b624c967431d4c05a81ce1bdc2e125a24b280"
+      },
+      {
+        "target_id": "2ioy_A",
+        "status": "ok",
+        "query_length": 283,
+        "ca_pair_lddt": 0.9153132250580046,
+        "residue_ca_lddt": 0.9171385954926458,
+        "tm_score_fixed_full_length": 0.7307,
+        "prediction_sha256": "a7b5a02845b1fcae727eadd7035ffc71a31d7573304ca47437b2c4a2749ba993"
+      },
+      {
+        "target_id": "6ap7_A",
+        "status": "ok",
+        "query_length": 269,
+        "ca_pair_lddt": 0.7920913025268742,
+        "residue_ca_lddt": 0.7786788525728752,
+        "tm_score_fixed_full_length": 0.8803,
+        "prediction_sha256": "31c7f5374c89c033ae5b9f0ebd7c04186b308035fa3d7eb41236b80cea5952bb"
+      },
+      {
+        "target_id": "6w2p_B",
+        "status": "ok",
+        "query_length": 276,
+        "ca_pair_lddt": 0.65126196089308,
+        "residue_ca_lddt": 0.6324446818143099,
+        "tm_score_fixed_full_length": 0.7323,
+        "prediction_sha256": "c7a0a619ac1da3f0f55fbf30757121e0fc60082944d029d3ba46469e95efe769"
+      },
+      {
+        "target_id": "4jin_A",
+        "status": "ok",
+        "query_length": 258,
+        "ca_pair_lddt": 0.5488386891504932,
+        "residue_ca_lddt": 0.5551035553210086,
+        "tm_score_fixed_full_length": 0.5562,
+        "prediction_sha256": "33e1f71e41628352ea1610d4fbef69708d6831d514980f3928bc7910b16c8810"
+      },
+      {
+        "target_id": "3ita_A",
+        "status": "ok",
+        "query_length": 352,
+        "ca_pair_lddt": 0.5778220594571305,
+        "residue_ca_lddt": 0.5767235678430854,
+        "tm_score_fixed_full_length": 0.5678,
+        "prediction_sha256": "57103ba99d5a5f72075fa1bce9dd82ce5cfc85a5b0b2d17f0dc3d69cabc3b098"
+      },
+      {
+        "target_id": "5obx_A",
+        "status": "ok",
+        "query_length": 374,
+        "ca_pair_lddt": 0.8259191549867967,
+        "residue_ca_lddt": 0.8151790686699416,
+        "tm_score_fixed_full_length": 0.7936,
+        "prediction_sha256": "f8f5e00d2e96a036f99efe09146ef03d889d6c72c5f38e6e116f39af91ba01f5"
+      },
+      {
+        "target_id": "3fjl_A",
+        "status": "ok",
+        "query_length": 367,
+        "ca_pair_lddt": 0.6006493506493507,
+        "residue_ca_lddt": 0.5929790559623063,
+        "tm_score_fixed_full_length": 0.7155,
+        "prediction_sha256": "44f9fdc516e94016da55fa28dd013566ca3dd49a59e38784652dd9e9eb322e07"
+      },
+      {
+        "target_id": "1v79_A",
+        "status": "ok",
+        "query_length": 356,
+        "ca_pair_lddt": 0.734917642389363,
+        "residue_ca_lddt": 0.7284612040858564,
+        "tm_score_fixed_full_length": 0.8546,
+        "prediction_sha256": "f51ba516b65e0624549e7cf639915c7aa2b3fb5126b2fa41e7321bc72a2dff60"
+      },
+      {
+        "target_id": "7kk6_A",
+        "status": "ok",
+        "query_length": 352,
+        "ca_pair_lddt": 0.2939434573695385,
+        "residue_ca_lddt": 0.3165069368500987,
+        "tm_score_fixed_full_length": 0.2188,
+        "prediction_sha256": "0dd90b43d15e3cfa6eee6155aa70422a6e7f03a67b156f0b3b59a59a8bf92090"
+      },
+      {
+        "target_id": "3tgh_A",
+        "status": "ok",
+        "query_length": 342,
+        "ca_pair_lddt": 0.644120322984192,
+        "residue_ca_lddt": 0.6187690560512358,
+        "tm_score_fixed_full_length": 0.7327,
+        "prediction_sha256": "807e75b0f724a142db169deb8ea337e9cbbc0b37945a8edb0dec19ad1d6f73d3"
+      },
+      {
+        "target_id": "6xqx_A",
+        "status": "ok",
+        "query_length": 327,
+        "ca_pair_lddt": 0.3608171817705605,
+        "residue_ca_lddt": 0.3651537942413858,
+        "tm_score_fixed_full_length": 0.3795,
+        "prediction_sha256": "fd6c8e220444e2be0814e1b527c3fc59eff18d1bef7d47cb6cb1a2eb84e6cff5"
+      },
+      {
+        "target_id": "6l1h_A",
+        "status": "ok",
+        "query_length": 330,
+        "ca_pair_lddt": 0.5990977533460803,
+        "residue_ca_lddt": 0.5786428300981734,
+        "tm_score_fixed_full_length": 0.5868,
+        "prediction_sha256": "63f5f8b329a03f99afcc9957ec67459184fe3fb61b6b7a34c7daef79e7780c61"
+      },
+      {
+        "target_id": "7a16_A",
+        "status": "ok",
+        "query_length": 371,
+        "ca_pair_lddt": 0.34135182998819363,
+        "residue_ca_lddt": 0.3488857053623154,
+        "tm_score_fixed_full_length": 0.3605,
+        "prediction_sha256": "74f9ce2c9f58ec2232c10cf83889145d05364e47bf2be96097bb4aace1b10693"
+      },
+      {
+        "target_id": "1zze_A",
+        "status": "ok",
+        "query_length": 342,
+        "ca_pair_lddt": 0.7125210260723297,
+        "residue_ca_lddt": 0.7081138215745927,
+        "tm_score_fixed_full_length": 0.8376,
+        "prediction_sha256": "70958ebd9c82cb92c8324bf0d52a3562e3ff194a834e3fc0bc63945ea12181d4"
+      },
+      {
+        "target_id": "4pam_A",
+        "status": "ok",
+        "query_length": 354,
+        "ca_pair_lddt": 0.6916415208207604,
+        "residue_ca_lddt": 0.68301879679098,
+        "tm_score_fixed_full_length": 0.7464,
+        "prediction_sha256": "22a0f69bc20246f6302185feed0b4f078a5872104ce15b5756640b454180dd9f"
+      },
+      {
+        "target_id": "3m10_A",
+        "status": "ok",
+        "query_length": 357,
+        "ca_pair_lddt": 0.29754401217126714,
+        "residue_ca_lddt": 0.3128454310966209,
+        "tm_score_fixed_full_length": 0.2343,
+        "prediction_sha256": "8ee232688897e08a6f09a1ba2ce83fa568afd587ca774e527466b7ee154d9cf0"
+      },
+      {
+        "target_id": "1z2n_A",
+        "status": "ok",
+        "query_length": 324,
+        "ca_pair_lddt": 0.3311046511627907,
+        "residue_ca_lddt": 0.3441373852738411,
+        "tm_score_fixed_full_length": 0.2424,
+        "prediction_sha256": "b88aa08c449b2aabc72e4668f4f449c3ccee6cd0019d1efe1a43989e70de4c40"
+      },
+      {
+        "target_id": "4lv8_A",
+        "status": "ok",
+        "query_length": 371,
+        "ca_pair_lddt": 0.44341813575424893,
+        "residue_ca_lddt": 0.44882327310013637,
+        "tm_score_fixed_full_length": 0.4066,
+        "prediction_sha256": "a8093d15df8f8175fbc191378214da36503762fa0a5446dc6b0d115cf90a5b4a"
+      },
+      {
+        "target_id": "4ihm_A",
+        "status": "ok",
+        "query_length": 326,
+        "ca_pair_lddt": 0.4827312534209086,
+        "residue_ca_lddt": 0.4869041437754958,
+        "tm_score_fixed_full_length": 0.6358,
+        "prediction_sha256": "e4da0fa932b7327d5757a45a2d0b715f4408b86a26410d3206a1e24c5f3d47f7"
+      },
+      {
+        "target_id": "1dvn_A",
+        "status": "ok",
+        "query_length": 379,
+        "ca_pair_lddt": 0.3334184147020605,
+        "residue_ca_lddt": 0.34709273732988927,
+        "tm_score_fixed_full_length": 0.2602,
+        "prediction_sha256": "2c54eabd89afc05da10dff44d2f58c2a07597aeb8dac0d4161c0177a47f3cbe4"
+      },
+      {
+        "target_id": "6t8d_A",
+        "status": "ok",
+        "query_length": 380,
+        "ca_pair_lddt": 0.48146403635154605,
+        "residue_ca_lddt": 0.49172954204081587,
+        "tm_score_fixed_full_length": 0.4967,
+        "prediction_sha256": "afcb9c3ae778a35a7f715b6122ebc350019040756506a2321efa22a2de40eb96"
+      },
+      {
+        "target_id": "1jcf_A",
+        "status": "ok",
+        "query_length": 344,
+        "ca_pair_lddt": 0.7101786280520029,
+        "residue_ca_lddt": 0.7290029515467071,
+        "tm_score_fixed_full_length": 0.5748,
+        "prediction_sha256": "7435832cc44b4eeea698e8f3a788d791f91d8de6de33b765585842845344a507"
+      },
+      {
+        "target_id": "6ijn_A",
+        "status": "ok",
+        "query_length": 376,
+        "ca_pair_lddt": 0.6640600481221886,
+        "residue_ca_lddt": 0.660830459433463,
+        "tm_score_fixed_full_length": 0.7227,
+        "prediction_sha256": "020eb0b0b4cbee6a46e8fd5d5366119d617570479a122a2c640ae87527f8c74a"
+      },
+      {
+        "target_id": "4fk9_A",
+        "status": "ok",
+        "query_length": 337,
+        "ca_pair_lddt": 0.6675124041497519,
+        "residue_ca_lddt": 0.6424445378089139,
+        "tm_score_fixed_full_length": 0.7254,
+        "prediction_sha256": "874be01394de445b589fa3b6f6ff4f851a29441ffb27ee5b11c6df9457045ffd"
+      },
+      {
+        "target_id": "1woo_A",
+        "status": "ok",
+        "query_length": 364,
+        "ca_pair_lddt": 0.5538172096247154,
+        "residue_ca_lddt": 0.5641586539865846,
+        "tm_score_fixed_full_length": 0.4272,
+        "prediction_sha256": "a3853da41cf8412b62a31df1f075e55a4fc73c72c50cf5c3fbfdf39154d59416"
+      },
+      {
+        "target_id": "6ch1_A",
+        "status": "ok",
+        "query_length": 337,
+        "ca_pair_lddt": 0.40054917308420657,
+        "residue_ca_lddt": 0.4089597738170662,
+        "tm_score_fixed_full_length": 0.2617,
+        "prediction_sha256": "583e61b3022495c84148137c652e5e3ef4e2a120fc136aaafefe1d34f05fbcba"
+      },
+      {
+        "target_id": "2d5j_A",
+        "status": "ok",
+        "query_length": 377,
+        "ca_pair_lddt": 0.6655402459230836,
+        "residue_ca_lddt": 0.6530031037741881,
+        "tm_score_fixed_full_length": 0.7976,
+        "prediction_sha256": "e4349cccf449c9c131b09c68a8d59366d208fcc786a1bee749271d72fde2e3e2"
+      },
+      {
+        "target_id": "1hb1_A",
+        "status": "ok",
+        "query_length": 331,
+        "ca_pair_lddt": 0.4762001391465677,
+        "residue_ca_lddt": 0.4762982575057958,
+        "tm_score_fixed_full_length": 0.5284,
+        "prediction_sha256": "d832642d964bcc8a134e9322904f8d2cc25458367ddfb10f40e8cac1452ac196"
+      }
+    ],
+    "gplus_s20260924": [
+      {
+        "target_id": "3gxb_A",
+        "status": "ok",
+        "query_length": 184,
+        "ca_pair_lddt": 0.5925886143931257,
+        "residue_ca_lddt": 0.5767472900791124,
+        "tm_score_fixed_full_length": 0.6575,
+        "prediction_sha256": "9e1e0ba3109537aca7c79cd450d7a60fc4efe10a82b9e61f6df4e8942182272a"
+      },
+      {
+        "target_id": "6a89_A",
+        "status": "ok",
+        "query_length": 167,
+        "ca_pair_lddt": 0.555126728110599,
+        "residue_ca_lddt": 0.5439407396720133,
+        "tm_score_fixed_full_length": 0.5907,
+        "prediction_sha256": "f6987d0f5f4af5039cc897a42c4f5bebb7c53b7cf8caafec6debfb284440fcc8"
+      },
+      {
+        "target_id": "4xbc_A",
+        "status": "ok",
+        "query_length": 188,
+        "ca_pair_lddt": 0.42696179363989933,
+        "residue_ca_lddt": 0.4437125583594527,
+        "tm_score_fixed_full_length": 0.4188,
+        "prediction_sha256": "a6836ce366a86fa63835eade2c9bc4f0ac619122623268a8d0d0f1ba333a361b"
+      },
+      {
+        "target_id": "6q3v_A",
+        "status": "ok",
+        "query_length": 188,
+        "ca_pair_lddt": 0.5673264907135875,
+        "residue_ca_lddt": 0.5701927055909588,
+        "tm_score_fixed_full_length": 0.3523,
+        "prediction_sha256": "82abafb0fa393ca712b154db3c9f11fe8933d56f843420c193443f3750463840"
+      },
+      {
+        "target_id": "7nuw_A",
+        "status": "ok",
+        "query_length": 162,
+        "ca_pair_lddt": 0.6314232101616628,
+        "residue_ca_lddt": 0.6339850834357388,
+        "tm_score_fixed_full_length": 0.6965,
+        "prediction_sha256": "fe5066edd9ff9b8d0e51efd221e3a03a147b903f86b4e053949ea786d3075c42"
+      },
+      {
+        "target_id": "2obi_A",
+        "status": "ok",
+        "query_length": 183,
+        "ca_pair_lddt": 0.5905788326471301,
+        "residue_ca_lddt": 0.5804080137377143,
+        "tm_score_fixed_full_length": 0.6091,
+        "prediction_sha256": "7189b51fa37308dcd4b46e21846eb5fe32cdc30015cfe1d09b867b8f4a1685b4"
+      },
+      {
+        "target_id": "3qzq_A",
+        "status": "ok",
+        "query_length": 187,
+        "ca_pair_lddt": 0.5331730769230769,
+        "residue_ca_lddt": 0.5356084585733533,
+        "tm_score_fixed_full_length": 0.5337,
+        "prediction_sha256": "f9eea5abd8fb622d4aa637018bccf98321bfd45a044edf27518e0c327e4fa7e8"
+      },
+      {
+        "target_id": "4woh_A",
+        "status": "ok",
+        "query_length": 166,
+        "ca_pair_lddt": 0.6501472031403337,
+        "residue_ca_lddt": 0.6583998790585566,
+        "tm_score_fixed_full_length": 0.7199,
+        "prediction_sha256": "82580537ef554b11870cb932915dd36c05711190c176543a62a1e6b7ea0790f9"
+      },
+      {
+        "target_id": "6ndw_A",
+        "status": "ok",
+        "query_length": 178,
+        "ca_pair_lddt": 0.39086111777404653,
+        "residue_ca_lddt": 0.3922416203260476,
+        "tm_score_fixed_full_length": 0.4044,
+        "prediction_sha256": "6ba5ba4201ca0ada924f1d01338b5edde2dce8cfc18f4bd03e1db59d5db97bcf"
+      },
+      {
+        "target_id": "3hny_A",
+        "status": "ok",
+        "query_length": 159,
+        "ca_pair_lddt": 0.647879177377892,
+        "residue_ca_lddt": 0.6481892044840656,
+        "tm_score_fixed_full_length": 0.7255,
+        "prediction_sha256": "79c5c631335be5993f6a580e5bf65e4ae26775064066b814535dabbe9ce94d88"
+      },
+      {
+        "target_id": "1wba_A",
+        "status": "ok",
+        "query_length": 175,
+        "ca_pair_lddt": 0.341441111923921,
+        "residue_ca_lddt": 0.34603516070622187,
+        "tm_score_fixed_full_length": 0.308,
+        "prediction_sha256": "639d7709f1a3d85e2ee7efd618af8303535df12e997d29a3a0ad343d67a02928"
+      },
+      {
+        "target_id": "1yn9_A",
+        "status": "ok",
+        "query_length": 169,
+        "ca_pair_lddt": 0.7310187409899087,
+        "residue_ca_lddt": 0.7198668834197107,
+        "tm_score_fixed_full_length": 0.798,
+        "prediction_sha256": "8512e9a3b6735e432100b9307cce3e7d7a0c641ef801df80bc9a2b3fe5ab5e8d"
+      },
+      {
+        "target_id": "1a44_A",
+        "status": "ok",
+        "query_length": 185,
+        "ca_pair_lddt": 0.35922278695468024,
+        "residue_ca_lddt": 0.35950377173625664,
+        "tm_score_fixed_full_length": 0.4259,
+        "prediction_sha256": "6009115ec33bed011e33b01ed05c8c275ff9ea8b986d126a526d75760656cd4a"
+      },
+      {
+        "target_id": "4xje_A",
+        "status": "ok",
+        "query_length": 185,
+        "ca_pair_lddt": 0.7763738959764475,
+        "residue_ca_lddt": 0.7645388480730453,
+        "tm_score_fixed_full_length": 0.7845,
+        "prediction_sha256": "c08cd24e046e7a9f9bb6471589ebd18c8b911ae4d33c9d3fdb822891fb03472f"
+      },
+      {
+        "target_id": "1ccz_A",
+        "status": "ok",
+        "query_length": 171,
+        "ca_pair_lddt": 0.8184564680032957,
+        "residue_ca_lddt": 0.809575277531767,
+        "tm_score_fixed_full_length": 0.7695,
+        "prediction_sha256": "f8c1d9ca9ae333fb81622169028a544c6dd1f1c9f05ec080be67a153668fa90e"
+      },
+      {
+        "target_id": "2p3k_A",
+        "status": "ok",
+        "query_length": 161,
+        "ca_pair_lddt": 0.33998756218905474,
+        "residue_ca_lddt": 0.34925650642043077,
+        "tm_score_fixed_full_length": 0.2914,
+        "prediction_sha256": "06c7a2296f7f21a3d93084eb47df1b9d718d79eaab3d1ccdb51dd509abbcac7d"
+      },
+      {
+        "target_id": "6ibj_A",
+        "status": "ok",
+        "query_length": 155,
+        "ca_pair_lddt": 0.26735917456776354,
+        "residue_ca_lddt": 0.26626234780972996,
+        "tm_score_fixed_full_length": 0.2752,
+        "prediction_sha256": "af46d6da59a59c5544bfc69703fc8f0b46049a70f74a6be9911c3f5fc52c7ebd"
+      },
+      {
+        "target_id": "1j84_A",
+        "status": "ok",
+        "query_length": 180,
+        "ca_pair_lddt": 0.4155493079584775,
+        "residue_ca_lddt": 0.4210739561967921,
+        "tm_score_fixed_full_length": 0.4348,
+        "prediction_sha256": "161431107b4c6411dfb3f13c32d6fe9ac2a0d43f02bf997d1cf745470b9ed416"
+      },
+      {
+        "target_id": "3esx_A",
+        "status": "ok",
+        "query_length": 169,
+        "ca_pair_lddt": 0.6914918146183998,
+        "residue_ca_lddt": 0.6942104061815454,
+        "tm_score_fixed_full_length": 0.8104,
+        "prediction_sha256": "da3fdd4abb27173eddc85ccef88345b7972016655c269aca07fcd69bda0953f9"
+      },
+      {
+        "target_id": "4p27_A",
+        "status": "ok",
+        "query_length": 162,
+        "ca_pair_lddt": 0.3346226927252986,
+        "residue_ca_lddt": 0.3347104438546882,
+        "tm_score_fixed_full_length": 0.2575,
+        "prediction_sha256": "06d4da9f3262c992aca3d15f2364ecd372f06aaa65f57fae5f3641c6e68176de"
+      },
+      {
+        "target_id": "6fpc_A",
+        "status": "ok",
+        "query_length": 191,
+        "ca_pair_lddt": 0.5618976594768242,
+        "residue_ca_lddt": 0.5567898064167447,
+        "tm_score_fixed_full_length": 0.5863,
+        "prediction_sha256": "0d92d106ae252390f971bc14ca1b7af020e8d5b97d75a1314857b89244bd95d6"
+      },
+      {
+        "target_id": "7c82_A",
+        "status": "ok",
+        "query_length": 191,
+        "ca_pair_lddt": 0.79782382069325,
+        "residue_ca_lddt": 0.7963079619819985,
+        "tm_score_fixed_full_length": 0.7633,
+        "prediction_sha256": "7ec718255aa972a65f4a4fc78f1bbc6c7445ab23a50f787127181a3fc2c0030c"
+      },
+      {
+        "target_id": "1bk7_A",
+        "status": "ok",
+        "query_length": 190,
+        "ca_pair_lddt": 0.35819995614996714,
+        "residue_ca_lddt": 0.3594475095895381,
+        "tm_score_fixed_full_length": 0.3141,
+        "prediction_sha256": "c51ba432b4ec9fa7b36c9c68bcb0f9f5066f2f86cf7c4531721c110f676bf93e"
+      },
+      {
+        "target_id": "6ht1_A",
+        "status": "ok",
+        "query_length": 155,
+        "ca_pair_lddt": 0.3059155865736125,
+        "residue_ca_lddt": 0.31078409210446717,
+        "tm_score_fixed_full_length": 0.2342,
+        "prediction_sha256": "529ff47077f9a54d6353adf3745769a73309d5bae7e32d659b9ba06b546dc27e"
+      },
+      {
+        "target_id": "5d6p_A",
+        "status": "ok",
+        "query_length": 212,
+        "ca_pair_lddt": 0.5714364763169544,
+        "residue_ca_lddt": 0.573346870239104,
+        "tm_score_fixed_full_length": 0.5746,
+        "prediction_sha256": "d29a777db2d55a45740cb3f66e418a2e9b1b16ef5637dab494e059cada822532"
+      },
+      {
+        "target_id": "1lxz_A",
+        "status": "ok",
+        "query_length": 207,
+        "ca_pair_lddt": 0.42557972317095094,
+        "residue_ca_lddt": 0.4326784024282395,
+        "tm_score_fixed_full_length": 0.4742,
+        "prediction_sha256": "067d95fe593a2fb369eb22ecfab1eb36beea1d7b8f446bffb8331f125f97c2ad"
+      },
+      {
+        "target_id": "5kdi_A",
+        "status": "ok",
+        "query_length": 211,
+        "ca_pair_lddt": 0.4070400822199383,
+        "residue_ca_lddt": 0.41761947327823506,
+        "tm_score_fixed_full_length": 0.3067,
+        "prediction_sha256": "1d73e54cd0063ae025e4ea7077c2a644154c747a7f41bff2cc41adcd049ee9ac"
+      },
+      {
+        "target_id": "7np5_A",
+        "status": "ok",
+        "query_length": 247,
+        "ca_pair_lddt": 0.40159620362381365,
+        "residue_ca_lddt": 0.40652711160589977,
+        "tm_score_fixed_full_length": 0.3016,
+        "prediction_sha256": "aac46d0234df1422ecbd4c628697adc60748bd9af01d17562f60547048e95f69"
+      },
+      {
+        "target_id": "5nl7_A",
+        "status": "ok",
+        "query_length": 234,
+        "ca_pair_lddt": 0.4296581349561482,
+        "residue_ca_lddt": 0.43531953846091,
+        "tm_score_fixed_full_length": 0.2963,
+        "prediction_sha256": "972c7c3fd7e0a5a31235a5ddd81e55d3c1a8c6f0f6212da0a2eea7388cc436d4"
+      },
+      {
+        "target_id": "3eii_A",
+        "status": "ok",
+        "query_length": 208,
+        "ca_pair_lddt": 0.36540236249538577,
+        "residue_ca_lddt": 0.35680059075901926,
+        "tm_score_fixed_full_length": 0.4496,
+        "prediction_sha256": "df84988c8d474e764296d2a7fb1cd8f5892986a515da278a934ba1be61506822"
+      },
+      {
+        "target_id": "3f95_A",
+        "status": "ok",
+        "query_length": 193,
+        "ca_pair_lddt": 0.30974733426054707,
+        "residue_ca_lddt": 0.31108568954860844,
+        "tm_score_fixed_full_length": 0.3136,
+        "prediction_sha256": "c1c47906b38fb0594071cd2c94e7788134bd56a3860b6b43b86c7973e7f81dcb"
+      },
+      {
+        "target_id": "3zj0_A",
+        "status": "ok",
+        "query_length": 206,
+        "ca_pair_lddt": 0.6356644790812142,
+        "residue_ca_lddt": 0.6254939833412172,
+        "tm_score_fixed_full_length": 0.6273,
+        "prediction_sha256": "2c761ec9994a03f7677bd352207390a299233be495d5455c67a43ba836784c4a"
+      },
+      {
+        "target_id": "2nlr_A",
+        "status": "ok",
+        "query_length": 234,
+        "ca_pair_lddt": 0.2926356589147287,
+        "residue_ca_lddt": 0.3018478971889018,
+        "tm_score_fixed_full_length": 0.2422,
+        "prediction_sha256": "ab4b44c28079e4978b2b9cb702da0e78f52f1a0f99500300305ba9e46578e9f3"
+      },
+      {
+        "target_id": "1m1u_A",
+        "status": "ok",
+        "query_length": 195,
+        "ca_pair_lddt": 0.7287856996096158,
+        "residue_ca_lddt": 0.7134638960219314,
+        "tm_score_fixed_full_length": 0.7943,
+        "prediction_sha256": "6ad008dc2368ab06bda7c99e23152cc39a83664dcb4dc117ecefcaf0bb35d2b0"
+      },
+      {
+        "target_id": "2a7m_A",
+        "status": "ok",
+        "query_length": 250,
+        "ca_pair_lddt": 0.5881026323572908,
+        "residue_ca_lddt": 0.5873195369038394,
+        "tm_score_fixed_full_length": 0.6866,
+        "prediction_sha256": "4f0cd243c3c28e72c5221fd008100fd513ea710d9eaefd2737db2fb6a9fac6c9"
+      },
+      {
+        "target_id": "3n36_A",
+        "status": "ok",
+        "query_length": 242,
+        "ca_pair_lddt": 0.36386894760959215,
+        "residue_ca_lddt": 0.36708163953946626,
+        "tm_score_fixed_full_length": 0.4525,
+        "prediction_sha256": "c9ed9af099e7d82000d1c759a1cad58e434e343e62a81390fcbbe9ee86568666"
+      },
+      {
+        "target_id": "1xa1_A",
+        "status": "ok",
+        "query_length": 255,
+        "ca_pair_lddt": 0.403819064016278,
+        "residue_ca_lddt": 0.4081056832044136,
+        "tm_score_fixed_full_length": 0.2708,
+        "prediction_sha256": "52fb9ae89403a150286c635161642ca6744c518f2bcb5fc523c4c47ff6bef372"
+      },
+      {
+        "target_id": "6j5q_A",
+        "status": "ok",
+        "query_length": 251,
+        "ca_pair_lddt": 0.43998873027798646,
+        "residue_ca_lddt": 0.4439196775354144,
+        "tm_score_fixed_full_length": 0.4437,
+        "prediction_sha256": "20bdb20475baa5c60e128b08119f3d2d9cd9328858453cfaf39e1835842e5dbf"
+      },
+      {
+        "target_id": "2erf_A",
+        "status": "ok",
+        "query_length": 209,
+        "ca_pair_lddt": 0.39125848468170976,
+        "residue_ca_lddt": 0.388659966644368,
+        "tm_score_fixed_full_length": 0.4153,
+        "prediction_sha256": "b5f50fe23ed2baaff4d976ad4d057423853e2d5fd7b88945522417c14da873ec"
+      },
+      {
+        "target_id": "4dr9_A",
+        "status": "ok",
+        "query_length": 192,
+        "ca_pair_lddt": 0.3494985183496695,
+        "residue_ca_lddt": 0.3442509901627039,
+        "tm_score_fixed_full_length": 0.2967,
+        "prediction_sha256": "c9caaf7e16cdf7c8581ccc708603da4a03d0c1f491e6639cccbcccca1aaf1b29"
+      },
+      {
+        "target_id": "1h5y_A",
+        "status": "ok",
+        "query_length": 253,
+        "ca_pair_lddt": 0.8810171619924655,
+        "residue_ca_lddt": 0.8715589451459447,
+        "tm_score_fixed_full_length": 0.9356,
+        "prediction_sha256": "5da969683284c2efe7b5ad7bfb90b901e90edf334b264808c9e96a2bd2a88b32"
+      },
+      {
+        "target_id": "1g69_A",
+        "status": "ok",
+        "query_length": 228,
+        "ca_pair_lddt": 0.8858625683939492,
+        "residue_ca_lddt": 0.8713257156022978,
+        "tm_score_fixed_full_length": 0.9308,
+        "prediction_sha256": "a8ee367a328e81bc97001a2f73050f4ab3ab46e5e9952b534e317fe0a1e42ef0"
+      },
+      {
+        "target_id": "4zyx_A",
+        "status": "ok",
+        "query_length": 210,
+        "ca_pair_lddt": 0.8814172447968286,
+        "residue_ca_lddt": 0.8844142058286636,
+        "tm_score_fixed_full_length": 0.8921,
+        "prediction_sha256": "8829022f9f04920c613e38ccbf697d1e05d027af557606cce69cbfc41d16f35f"
+      },
+      {
+        "target_id": "1pxr_A",
+        "status": "ok",
+        "query_length": 249,
+        "ca_pair_lddt": 0.4982008074425136,
+        "residue_ca_lddt": 0.504243960630301,
+        "tm_score_fixed_full_length": 0.4136,
+        "prediction_sha256": "728a7e1f5d98dc99741dee0f8f34b3d1b00a8187650c354203d406f0ad3985ae"
+      },
+      {
+        "target_id": "5xrb_A",
+        "status": "ok",
+        "query_length": 228,
+        "ca_pair_lddt": 0.6473668461998803,
+        "residue_ca_lddt": 0.6456382958595295,
+        "tm_score_fixed_full_length": 0.6414,
+        "prediction_sha256": "61a8a677d265aeb79c0aebf82914b8232a3971a5b26c8738c7248f86a1057449"
+      },
+      {
+        "target_id": "4f1j_A",
+        "status": "ok",
+        "query_length": 203,
+        "ca_pair_lddt": 0.6702008928571429,
+        "residue_ca_lddt": 0.6621919316018443,
+        "tm_score_fixed_full_length": 0.7836,
+        "prediction_sha256": "a10f332ed17ec916dc7392973ecd885e204e387bda2ccf3634b8ba6d8eb3552e"
+      },
+      {
+        "target_id": "1dua_A",
+        "status": "ok",
+        "query_length": 242,
+        "ca_pair_lddt": 0.7257548032936871,
+        "residue_ca_lddt": 0.6955793425238072,
+        "tm_score_fixed_full_length": 0.7598,
+        "prediction_sha256": "06d64a2a94d9854d3b8afacec49d853cefaec063cb2fee7a38990ef85b3cb01a"
+      },
+      {
+        "target_id": "2ocg_A",
+        "status": "ok",
+        "query_length": 254,
+        "ca_pair_lddt": 0.8361063094209161,
+        "residue_ca_lddt": 0.8285386705735712,
+        "tm_score_fixed_full_length": 0.9261,
+        "prediction_sha256": "15e87cc72ecf89913f88d55b9c544ce28c0a4b47c27db30c7d53b40b91849039"
+      },
+      {
+        "target_id": "3voa_A",
+        "status": "ok",
+        "query_length": 308,
+        "ca_pair_lddt": 0.6075862854539241,
+        "residue_ca_lddt": 0.5903203869945102,
+        "tm_score_fixed_full_length": 0.5996,
+        "prediction_sha256": "c21e2e506157f2ddb549963ec551aa390020321d9060c415d44c3fd74ac394d3"
+      },
+      {
+        "target_id": "1c91_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.6395317545748116,
+        "residue_ca_lddt": 0.623136168690749,
+        "tm_score_fixed_full_length": 0.7699,
+        "prediction_sha256": "71a56c7ab8906b79aec9152d2e0cd924af962d61fbb6d0fd7d683ed8eea3ed91"
+      },
+      {
+        "target_id": "3f99_A",
+        "status": "ok",
+        "query_length": 306,
+        "ca_pair_lddt": 0.5187335958005249,
+        "residue_ca_lddt": 0.5279937337334939,
+        "tm_score_fixed_full_length": 0.5733,
+        "prediction_sha256": "f776d6831782d213616e2f885e2ee029b7e4230512523e04b857cb002ac21926"
+      },
+      {
+        "target_id": "3ah4_A",
+        "status": "ok",
+        "query_length": 288,
+        "ca_pair_lddt": 0.40444131832797425,
+        "residue_ca_lddt": 0.402114717958712,
+        "tm_score_fixed_full_length": 0.3211,
+        "prediction_sha256": "7cbe42f2d25ee76f55d7d54dce6c435f106b4448fc2f83cfa4e51914968e418c"
+      },
+      {
+        "target_id": "7bwv_A",
+        "status": "ok",
+        "query_length": 276,
+        "ca_pair_lddt": 0.649375380865326,
+        "residue_ca_lddt": 0.6253621112710418,
+        "tm_score_fixed_full_length": 0.5757,
+        "prediction_sha256": "437059f3f454dcad54df278d551d2b43b114084214adfe43436c854e43f8eb5a"
+      },
+      {
+        "target_id": "4q3c_A",
+        "status": "ok",
+        "query_length": 260,
+        "ca_pair_lddt": 0.55424084527428,
+        "residue_ca_lddt": 0.5578615974984124,
+        "tm_score_fixed_full_length": 0.5359,
+        "prediction_sha256": "1efe53b71fd333b26eeb880bd87c3a3e5e93b9630c90d585702c88983b567fc8"
+      },
+      {
+        "target_id": "2vi0_A",
+        "status": "ok",
+        "query_length": 282,
+        "ca_pair_lddt": 0.6826987757298534,
+        "residue_ca_lddt": 0.6673497072834481,
+        "tm_score_fixed_full_length": 0.7867,
+        "prediction_sha256": "ee8672b754665bb7ddfeea74d61a1a3636bded4821e5a27773f3771ed97cd5e9"
+      },
+      {
+        "target_id": "4n13_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.6893843224373215,
+        "residue_ca_lddt": 0.6857213466933637,
+        "tm_score_fixed_full_length": 0.5045,
+        "prediction_sha256": "60e1dcb968f91c5a3b0ac9d59e211300495bc2c8cdcb0826e58501c453d22b45"
+      },
+      {
+        "target_id": "2c6z_A",
+        "status": "ok",
+        "query_length": 284,
+        "ca_pair_lddt": 0.6254446054538269,
+        "residue_ca_lddt": 0.6346787745717012,
+        "tm_score_fixed_full_length": 0.7308,
+        "prediction_sha256": "da4d24ae1e0463dacdaeab80db3a299c352bb4c9652d5070199f584eab1aec4b"
+      },
+      {
+        "target_id": "5byl_A",
+        "status": "ok",
+        "query_length": 305,
+        "ca_pair_lddt": 0.6017600574712644,
+        "residue_ca_lddt": 0.6157230721183812,
+        "tm_score_fixed_full_length": 0.5318,
+        "prediction_sha256": "b431a400ff508aef5ff5c4a4c394cb1901acde96765506f946cc91384eeb21ce"
+      },
+      {
+        "target_id": "2cex_A",
+        "status": "ok",
+        "query_length": 306,
+        "ca_pair_lddt": 0.5334375,
+        "residue_ca_lddt": 0.5552724281639931,
+        "tm_score_fixed_full_length": 0.4967,
+        "prediction_sha256": "b7f722f36c9fcb15788630b392327b0cc29b509d39e03ea2e12b269c651e8d71"
+      },
+      {
+        "target_id": "3ea3_A",
+        "status": "ok",
+        "query_length": 298,
+        "ca_pair_lddt": 0.36820237076866674,
+        "residue_ca_lddt": 0.3694738140750031,
+        "tm_score_fixed_full_length": 0.4205,
+        "prediction_sha256": "a4fcf0cb7428f4a81591132e7f2889a5356062b53ae6cffeb2854d4d58708373"
+      },
+      {
+        "target_id": "2iry_A",
+        "status": "ok",
+        "query_length": 303,
+        "ca_pair_lddt": 0.44124563289438323,
+        "residue_ca_lddt": 0.4469994919633936,
+        "tm_score_fixed_full_length": 0.4257,
+        "prediction_sha256": "85e1888cb82914560a9f810e195b99aeb67c59316c08608ff54e4b8db3aec0c9"
+      },
+      {
+        "target_id": "5dxn_A",
+        "status": "ok",
+        "query_length": 286,
+        "ca_pair_lddt": 0.8561852528945765,
+        "residue_ca_lddt": 0.8468820510981848,
+        "tm_score_fixed_full_length": 0.7032,
+        "prediction_sha256": "2084f14d2d4057dcd74980d365de84bd1e2ff1f2f2539e78fb8921b67f6b2cdb"
+      },
+      {
+        "target_id": "4jpx_A",
+        "status": "ok",
+        "query_length": 302,
+        "ca_pair_lddt": 0.27832128172408904,
+        "residue_ca_lddt": 0.2914971751280803,
+        "tm_score_fixed_full_length": 0.2281,
+        "prediction_sha256": "3b0de6f399067a420b681020331d40fce516547fe2fdac9e5bdf59fc97184c89"
+      },
+      {
+        "target_id": "7k27_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.6744165170556553,
+        "residue_ca_lddt": 0.6668721660062872,
+        "tm_score_fixed_full_length": 0.3819,
+        "prediction_sha256": "620df9b00c3ddccc92a0dc9e2d2b1688fe318614a52f6a4709aa6077d8e86c3f"
+      },
+      {
+        "target_id": "2bod_A",
+        "status": "ok",
+        "query_length": 286,
+        "ca_pair_lddt": 0.4865853658536585,
+        "residue_ca_lddt": 0.49550629050573747,
+        "tm_score_fixed_full_length": 0.5491,
+        "prediction_sha256": "a64f5830a5161c2d07f363002543301e21624c2e7e41e3a9be5f8096082115d1"
+      },
+      {
+        "target_id": "5trq_A",
+        "status": "ok",
+        "query_length": 291,
+        "ca_pair_lddt": 0.4263007790762382,
+        "residue_ca_lddt": 0.446905267555489,
+        "tm_score_fixed_full_length": 0.4755,
+        "prediction_sha256": "a069995d09c9ed8fb85ea5fc4e947e533c4a20e839efae22268c6033a5b81662"
+      },
+      {
+        "target_id": "3wib_A",
+        "status": "ok",
+        "query_length": 304,
+        "ca_pair_lddt": 0.603086576245405,
+        "residue_ca_lddt": 0.6020194987372021,
+        "tm_score_fixed_full_length": 0.6671,
+        "prediction_sha256": "eed4a876456fc022e00ec798aac7cc687aeb2f55a6177584c5212deb7e8541cc"
+      },
+      {
+        "target_id": "4i6k_A",
+        "status": "ok",
+        "query_length": 294,
+        "ca_pair_lddt": 0.7371274660696796,
+        "residue_ca_lddt": 0.732590686370616,
+        "tm_score_fixed_full_length": 0.7842,
+        "prediction_sha256": "c40fc93953d708baef4a9552269deac097fee153d7a684659c7a6d5692bb2dcb"
+      },
+      {
+        "target_id": "2ioy_A",
+        "status": "ok",
+        "query_length": 283,
+        "ca_pair_lddt": 0.916569992266048,
+        "residue_ca_lddt": 0.9184285273718585,
+        "tm_score_fixed_full_length": 0.7497,
+        "prediction_sha256": "3b62d80e32bfa6cc2bfeefb3823fbbbdf511e08ae3a175bd7cfdfcd9eb4bd345"
+      },
+      {
+        "target_id": "6ap7_A",
+        "status": "ok",
+        "query_length": 269,
+        "ca_pair_lddt": 0.7960351807901718,
+        "residue_ca_lddt": 0.7848949208053023,
+        "tm_score_fixed_full_length": 0.8844,
+        "prediction_sha256": "da72daf294e90a8ab0db5ca8e18db2d238f4994852f0c438eb10dd78652aef17"
+      },
+      {
+        "target_id": "6w2p_B",
+        "status": "ok",
+        "query_length": 276,
+        "ca_pair_lddt": 0.60906947718763,
+        "residue_ca_lddt": 0.5811771971346784,
+        "tm_score_fixed_full_length": 0.701,
+        "prediction_sha256": "e3aa3ee047853935b8ad9c500c8ec1e41681d52552440bf3c2fd24558405ff6d"
+      },
+      {
+        "target_id": "4jin_A",
+        "status": "ok",
+        "query_length": 258,
+        "ca_pair_lddt": 0.5967626471524021,
+        "residue_ca_lddt": 0.5973559483677596,
+        "tm_score_fixed_full_length": 0.6142,
+        "prediction_sha256": "197bfd352fb7fadd263805c4cd6fdc0566a4f5b321fcf073481b1885caeb9f2f"
+      },
+      {
+        "target_id": "3ita_A",
+        "status": "ok",
+        "query_length": 352,
+        "ca_pair_lddt": 0.49596079276174065,
+        "residue_ca_lddt": 0.5005392466262976,
+        "tm_score_fixed_full_length": 0.4657,
+        "prediction_sha256": "1ed285062fe25a9b43a1cfa5aecfa2a825eeac837f73ac0d52e0cb84d9e14d67"
+      },
+      {
+        "target_id": "5obx_A",
+        "status": "ok",
+        "query_length": 374,
+        "ca_pair_lddt": 0.8427787934186471,
+        "residue_ca_lddt": 0.8309098248796717,
+        "tm_score_fixed_full_length": 0.7974,
+        "prediction_sha256": "3d31dd8110079ded642944fa5a0846667561bdbf380b62b193f4024bde7a5a4a"
+      },
+      {
+        "target_id": "3fjl_A",
+        "status": "ok",
+        "query_length": 367,
+        "ca_pair_lddt": 0.5311828459310474,
+        "residue_ca_lddt": 0.5195556117056906,
+        "tm_score_fixed_full_length": 0.6173,
+        "prediction_sha256": "8cda9a9d3c69cafb67925fca756cf4b009baf3f7049994a99e2fc5bd4065a5da"
+      },
+      {
+        "target_id": "1v79_A",
+        "status": "ok",
+        "query_length": 356,
+        "ca_pair_lddt": 0.690960508037309,
+        "residue_ca_lddt": 0.6875622428024222,
+        "tm_score_fixed_full_length": 0.7749,
+        "prediction_sha256": "4dedb05d7da7668cbb313a5ff1acb356fb90b47f95f0c9b7228d4c6e50c2005f"
+      },
+      {
+        "target_id": "7kk6_A",
+        "status": "ok",
+        "query_length": 352,
+        "ca_pair_lddt": 0.2993909934070846,
+        "residue_ca_lddt": 0.3191668024013701,
+        "tm_score_fixed_full_length": 0.2205,
+        "prediction_sha256": "25f097165bd17e355ca0e7d1cd5d3681540627c63f020587e03a4d96934ef6c8"
+      },
+      {
+        "target_id": "3tgh_A",
+        "status": "ok",
+        "query_length": 342,
+        "ca_pair_lddt": 0.6219720232002729,
+        "residue_ca_lddt": 0.5930722209965833,
+        "tm_score_fixed_full_length": 0.6829,
+        "prediction_sha256": "b4abf169efad7e1afad153480d81e91183b6a9f891b9149931d38f001b935fb0"
+      },
+      {
+        "target_id": "6xqx_A",
+        "status": "ok",
+        "query_length": 327,
+        "ca_pair_lddt": 0.46600314300680984,
+        "residue_ca_lddt": 0.46626237399307574,
+        "tm_score_fixed_full_length": 0.5624,
+        "prediction_sha256": "f490a88e4c1ad8231156e13f7538ee7d2384f6468be20e1471a03c606ece64fe"
+      },
+      {
+        "target_id": "6l1h_A",
+        "status": "ok",
+        "query_length": 330,
+        "ca_pair_lddt": 0.6245518642447419,
+        "residue_ca_lddt": 0.60191684719293,
+        "tm_score_fixed_full_length": 0.6199,
+        "prediction_sha256": "29b7832dc0bf6dba90d22da1c358037d37e41001108029ef0657d17afdf48cf1"
+      },
+      {
+        "target_id": "7a16_A",
+        "status": "ok",
+        "query_length": 371,
+        "ca_pair_lddt": 0.3443280204643841,
+        "residue_ca_lddt": 0.3502320483096376,
+        "tm_score_fixed_full_length": 0.3796,
+        "prediction_sha256": "7601e9c7313fb6f8bb00e6c1cb97e59f7807f3fca29de6a39391af2f200daf07"
+      },
+      {
+        "target_id": "1zze_A",
+        "status": "ok",
+        "query_length": 342,
+        "ca_pair_lddt": 0.6324905382674516,
+        "residue_ca_lddt": 0.621754437384922,
+        "tm_score_fixed_full_length": 0.6795,
+        "prediction_sha256": "39a873330252eeb676ecd557d1a08f61661daa2df3f33ef25641183af7a42776"
+      },
+      {
+        "target_id": "4pam_A",
+        "status": "ok",
+        "query_length": 354,
+        "ca_pair_lddt": 0.6956547978273989,
+        "residue_ca_lddt": 0.6848057457094783,
+        "tm_score_fixed_full_length": 0.6471,
+        "prediction_sha256": "b9d9fe075b1b3b10b8943467107a66cf01f556a5bd0ad4bc59e857ac6366cdad"
+      },
+      {
+        "target_id": "3m10_A",
+        "status": "ok",
+        "query_length": 357,
+        "ca_pair_lddt": 0.3089002390784612,
+        "residue_ca_lddt": 0.3268975475230448,
+        "tm_score_fixed_full_length": 0.2769,
+        "prediction_sha256": "7974b2632c74e7bdf1b81808c1e4774f880601e45e85eaccbfdb5b17e55f0bb8"
+      },
+      {
+        "target_id": "1z2n_A",
+        "status": "ok",
+        "query_length": 324,
+        "ca_pair_lddt": 0.333171834625323,
+        "residue_ca_lddt": 0.34567840633975444,
+        "tm_score_fixed_full_length": 0.2086,
+        "prediction_sha256": "354bce63ece5126cf921dca2bbe59cde7f48c4c8941d03073d8d6cd2f166950c"
+      },
+      {
+        "target_id": "4lv8_A",
+        "status": "ok",
+        "query_length": 371,
+        "ca_pair_lddt": 0.4266335902037369,
+        "residue_ca_lddt": 0.42902116074149965,
+        "tm_score_fixed_full_length": 0.4108,
+        "prediction_sha256": "f87716a7a2cc8fef3c08027f89218255255ab3463cdbf2722f367ce77245b4ba"
+      },
+      {
+        "target_id": "4ihm_A",
+        "status": "ok",
+        "query_length": 326,
+        "ca_pair_lddt": 0.512616310892173,
+        "residue_ca_lddt": 0.5147647551065138,
+        "tm_score_fixed_full_length": 0.6077,
+        "prediction_sha256": "a4497e0abac8b761a08d80b37181a2e8db13c4de6338d948a9821ee29f2ff274"
+      },
+      {
+        "target_id": "1dvn_A",
+        "status": "ok",
+        "query_length": 379,
+        "ca_pair_lddt": 0.30562001113792464,
+        "residue_ca_lddt": 0.3215621441855957,
+        "tm_score_fixed_full_length": 0.2763,
+        "prediction_sha256": "fe0bb6283f8e4348ec05e2165fee0abd3a868ce613d1e578f791ffb7ec4ff37f"
+      },
+      {
+        "target_id": "6t8d_A",
+        "status": "ok",
+        "query_length": 380,
+        "ca_pair_lddt": 0.45910451069489083,
+        "residue_ca_lddt": 0.4708073797687852,
+        "tm_score_fixed_full_length": 0.5028,
+        "prediction_sha256": "9c8c8109243c96dd90ea91721ea780a4c1f8e39ebe964ed61055186d6393d143"
+      },
+      {
+        "target_id": "1jcf_A",
+        "status": "ok",
+        "query_length": 344,
+        "ca_pair_lddt": 0.8306204418137617,
+        "residue_ca_lddt": 0.8266203666735196,
+        "tm_score_fixed_full_length": 0.8227,
+        "prediction_sha256": "a0ac9e70a9a876d67c3d366b221874eff99928333dafd1cc1c816573f5345195"
+      },
+      {
+        "target_id": "6ijn_A",
+        "status": "ok",
+        "query_length": 376,
+        "ca_pair_lddt": 0.6518202740872476,
+        "residue_ca_lddt": 0.6549638146079088,
+        "tm_score_fixed_full_length": 0.7057,
+        "prediction_sha256": "ceb08625efc9dab1e41ac488e0828ba372685e7fa21fb4c5e4550c33ae404a7f"
+      },
+      {
+        "target_id": "4fk9_A",
+        "status": "ok",
+        "query_length": 337,
+        "ca_pair_lddt": 0.6329499323410014,
+        "residue_ca_lddt": 0.6137345527288277,
+        "tm_score_fixed_full_length": 0.6917,
+        "prediction_sha256": "251081112244e43e565de0fb58317613450f3190dcc58438785c539eb65d0184"
+      },
+      {
+        "target_id": "1woo_A",
+        "status": "ok",
+        "query_length": 364,
+        "ca_pair_lddt": 0.5060897118526587,
+        "residue_ca_lddt": 0.5185097637041378,
+        "tm_score_fixed_full_length": 0.3899,
+        "prediction_sha256": "804193546e8aa2e07edd13b608b2e822712ae9feaa40d1ee6c6c1b09d89cfb67"
+      },
+      {
+        "target_id": "6ch1_A",
+        "status": "ok",
+        "query_length": 337,
+        "ca_pair_lddt": 0.39613053907334933,
+        "residue_ca_lddt": 0.4030899956334685,
+        "tm_score_fixed_full_length": 0.2636,
+        "prediction_sha256": "25e167fc4ad47955b9e59692b340a37b07b84d00da64059846a737b12f59f493"
+      },
+      {
+        "target_id": "2d5j_A",
+        "status": "ok",
+        "query_length": 377,
+        "ca_pair_lddt": 0.6499738379698264,
+        "residue_ca_lddt": 0.6386024567868458,
+        "tm_score_fixed_full_length": 0.7961,
+        "prediction_sha256": "908d439007c4e26d8b0866cd9855500283c06cd2a9edbcc0ffede78ccc602cc4"
+      },
+      {
+        "target_id": "1hb1_A",
+        "status": "ok",
+        "query_length": 331,
+        "ca_pair_lddt": 0.3131087662337662,
+        "residue_ca_lddt": 0.32088206471829583,
+        "tm_score_fixed_full_length": 0.3018,
+        "prediction_sha256": "e8bf36bb4e6ac2670ee5fe252c97b9a3c13bc32aeb2f54e50dfe0bb253126575"
+      }
+    ],
+    "gplus_s20260925": [
+      {
+        "target_id": "3gxb_A",
+        "status": "ok",
+        "query_length": 184,
+        "ca_pair_lddt": 0.6413533834586466,
+        "residue_ca_lddt": 0.6271686284766228,
+        "tm_score_fixed_full_length": 0.7477,
+        "prediction_sha256": "bf719dffdc738484dfb395ca8a6f5eeade83ef3627075a2a3741f2d4204739a9"
+      },
+      {
+        "target_id": "6a89_A",
+        "status": "ok",
+        "query_length": 167,
+        "ca_pair_lddt": 0.6228110599078341,
+        "residue_ca_lddt": 0.6063217401593083,
+        "tm_score_fixed_full_length": 0.7124,
+        "prediction_sha256": "deb6cea3b6ced96a5de8ab2ffdc3d2f3d263b02adfec9e58f21c3ae1442468aa"
+      },
+      {
+        "target_id": "4xbc_A",
+        "status": "ok",
+        "query_length": 188,
+        "ca_pair_lddt": 0.3472889498970487,
+        "residue_ca_lddt": 0.3547390758362264,
+        "tm_score_fixed_full_length": 0.2774,
+        "prediction_sha256": "e877c5988e7ed716d4569ebcee69a3721fe3360ee8640de7b14a671011e86a0e"
+      },
+      {
+        "target_id": "6q3v_A",
+        "status": "ok",
+        "query_length": 188,
+        "ca_pair_lddt": 0.550281036168133,
+        "residue_ca_lddt": 0.5599816459109522,
+        "tm_score_fixed_full_length": 0.3441,
+        "prediction_sha256": "ff5d64d171d927fe97a072ebd854eaf41c2d198959432529003ee009876c1550"
+      },
+      {
+        "target_id": "7nuw_A",
+        "status": "ok",
+        "query_length": 162,
+        "ca_pair_lddt": 0.726039260969977,
+        "residue_ca_lddt": 0.7090463099564227,
+        "tm_score_fixed_full_length": 0.7624,
+        "prediction_sha256": "87728f935e129d5ae8c390c68a141ee162ae012cd616d69528ae21765024375f"
+      },
+      {
+        "target_id": "2obi_A",
+        "status": "ok",
+        "query_length": 183,
+        "ca_pair_lddt": 0.6461612981351417,
+        "residue_ca_lddt": 0.6348143983511286,
+        "tm_score_fixed_full_length": 0.6597,
+        "prediction_sha256": "8f65e3f9b6c47c79655dcdf76647ad3556c7b1293fc5e4e5d6c2ab7e78383505"
+      },
+      {
+        "target_id": "3qzq_A",
+        "status": "ok",
+        "query_length": 187,
+        "ca_pair_lddt": 0.5142628205128205,
+        "residue_ca_lddt": 0.5142967102056816,
+        "tm_score_fixed_full_length": 0.5496,
+        "prediction_sha256": "6ddfca59e1c1baeaf51c5c922f45bddf32c618104eb51e118ade33f70301c94c"
+      },
+      {
+        "target_id": "4woh_A",
+        "status": "ok",
+        "query_length": 166,
+        "ca_pair_lddt": 0.6965161923454367,
+        "residue_ca_lddt": 0.7014377695919115,
+        "tm_score_fixed_full_length": 0.776,
+        "prediction_sha256": "c2364f7422e0a5c3920676283539ea686ee46d67d9361b0f636a5d6ee789ef5a"
+      },
+      {
+        "target_id": "6ndw_A",
+        "status": "ok",
+        "query_length": 178,
+        "ca_pair_lddt": 0.37820820340609257,
+        "residue_ca_lddt": 0.38082289685997456,
+        "tm_score_fixed_full_length": 0.3877,
+        "prediction_sha256": "bd8e9ce55a27474fd5d60b966f48a83303da689d491f196ca52ee1493f96fd00"
+      },
+      {
+        "target_id": "3hny_A",
+        "status": "ok",
+        "query_length": 159,
+        "ca_pair_lddt": 0.4043701799485861,
+        "residue_ca_lddt": 0.4006744807006529,
+        "tm_score_fixed_full_length": 0.4809,
+        "prediction_sha256": "be5695d96740a22c6c733a48d71c882e9304b56efc412c3ae54acc1af7316d24"
+      },
+      {
+        "target_id": "1wba_A",
+        "status": "ok",
+        "query_length": 175,
+        "ca_pair_lddt": 0.3222994391611802,
+        "residue_ca_lddt": 0.32818059222900214,
+        "tm_score_fixed_full_length": 0.3213,
+        "prediction_sha256": "8f5d1e4f751871e357f09340031faed099dcb61d7dbe5632b3d5d825ccfee858"
+      },
+      {
+        "target_id": "1yn9_A",
+        "status": "ok",
+        "query_length": 169,
+        "ca_pair_lddt": 0.7445939452186449,
+        "residue_ca_lddt": 0.7321015951753715,
+        "tm_score_fixed_full_length": 0.811,
+        "prediction_sha256": "3f010cb566b1340a05642700c57fc8200807e019411ad08cf99711b2b7034249"
+      },
+      {
+        "target_id": "1a44_A",
+        "status": "ok",
+        "query_length": 185,
+        "ca_pair_lddt": 0.3238034731046167,
+        "residue_ca_lddt": 0.3272744313646348,
+        "tm_score_fixed_full_length": 0.3276,
+        "prediction_sha256": "522dcc28199b8ba68c9f88261ead0a4c54b402edf35cb4715a98381cff35caf7"
+      },
+      {
+        "target_id": "4xje_A",
+        "status": "ok",
+        "query_length": 185,
+        "ca_pair_lddt": 0.7520240431795878,
+        "residue_ca_lddt": 0.7422333588429368,
+        "tm_score_fixed_full_length": 0.7519,
+        "prediction_sha256": "d737cdddeda5bb5c2e85188eb8e0869203d36a215ed1a1baedd936f1982a64bb"
+      },
+      {
+        "target_id": "1ccz_A",
+        "status": "ok",
+        "query_length": 171,
+        "ca_pair_lddt": 0.7616039549574293,
+        "residue_ca_lddt": 0.754272946600021,
+        "tm_score_fixed_full_length": 0.5726,
+        "prediction_sha256": "a449e84f5561a5f90e26d3124f7ab5cbb7e441721e8928395046249da0686867"
+      },
+      {
+        "target_id": "2p3k_A",
+        "status": "ok",
+        "query_length": 161,
+        "ca_pair_lddt": 0.3365671641791045,
+        "residue_ca_lddt": 0.3457017577496533,
+        "tm_score_fixed_full_length": 0.3093,
+        "prediction_sha256": "a9ae7f091e78d869bc9e69b67d137589863e2a80734115f4ff7374bb02473308"
+      },
+      {
+        "target_id": "6ibj_A",
+        "status": "ok",
+        "query_length": 155,
+        "ca_pair_lddt": 0.3988427216954824,
+        "residue_ca_lddt": 0.3912446468439884,
+        "tm_score_fixed_full_length": 0.4321,
+        "prediction_sha256": "c432ee12f8324da4a757938d5405822c1a573d02f90b014620efcf13e77f9db8"
+      },
+      {
+        "target_id": "1j84_A",
+        "status": "ok",
+        "query_length": 180,
+        "ca_pair_lddt": 0.41517084775086505,
+        "residue_ca_lddt": 0.42334687271433474,
+        "tm_score_fixed_full_length": 0.4674,
+        "prediction_sha256": "a46a7c18f6938380d3edfd6134edf98c1c5c100c11fb1a18aa986c585c7bc49c"
+      },
+      {
+        "target_id": "3esx_A",
+        "status": "ok",
+        "query_length": 169,
+        "ca_pair_lddt": 0.6771962185842748,
+        "residue_ca_lddt": 0.6813624029672232,
+        "tm_score_fixed_full_length": 0.8002,
+        "prediction_sha256": "7cf9b358042a12175f04b08e9ec26e0f059104a73c5abc7104b0e170f8258fa8"
+      },
+      {
+        "target_id": "4p27_A",
+        "status": "ok",
+        "query_length": 162,
+        "ca_pair_lddt": 0.6253393051031487,
+        "residue_ca_lddt": 0.6095435569860025,
+        "tm_score_fixed_full_length": 0.6081,
+        "prediction_sha256": "0e2a95c27c82177925387a860f32d7cfe04fecfc9b1181602eed2ca9513d0878"
+      },
+      {
+        "target_id": "6fpc_A",
+        "status": "ok",
+        "query_length": 191,
+        "ca_pair_lddt": 0.6345800826067003,
+        "residue_ca_lddt": 0.6233301639108625,
+        "tm_score_fixed_full_length": 0.6624,
+        "prediction_sha256": "a31ab8864a8a783e9277ac97015892809751e5e363b08d8b52fd01b081d8a847"
+      },
+      {
+        "target_id": "7c82_A",
+        "status": "ok",
+        "query_length": 191,
+        "ca_pair_lddt": 0.7813395882199635,
+        "residue_ca_lddt": 0.7816850893433122,
+        "tm_score_fixed_full_length": 0.7365,
+        "prediction_sha256": "363c844b048da4c42f064e05111b1f399d18047bad83b8ffaf478f9973aaf35e"
+      },
+      {
+        "target_id": "1bk7_A",
+        "status": "ok",
+        "query_length": 190,
+        "ca_pair_lddt": 0.3608309581232186,
+        "residue_ca_lddt": 0.3629723797913248,
+        "tm_score_fixed_full_length": 0.3075,
+        "prediction_sha256": "a30b602baa551c018c1e49fd80a7e2eb74d9664e51d5601824013e1a35e02f7b"
+      },
+      {
+        "target_id": "6ht1_A",
+        "status": "ok",
+        "query_length": 155,
+        "ca_pair_lddt": 0.36839481555333997,
+        "residue_ca_lddt": 0.3855430036691406,
+        "tm_score_fixed_full_length": 0.275,
+        "prediction_sha256": "260346fe2ad33941134f1b6c8876f2f5cd860a49651b04ce5c46dbcf80328d24"
+      },
+      {
+        "target_id": "5d6p_A",
+        "status": "ok",
+        "query_length": 212,
+        "ca_pair_lddt": 0.5894200973882249,
+        "residue_ca_lddt": 0.5929243923987016,
+        "tm_score_fixed_full_length": 0.5929,
+        "prediction_sha256": "8ca2d35ff35c5f8008bc46545ef5416f30ff4414c695dc3ad0ae50b001966da1"
+      },
+      {
+        "target_id": "1lxz_A",
+        "status": "ok",
+        "query_length": 207,
+        "ca_pair_lddt": 0.35057522919288153,
+        "residue_ca_lddt": 0.35798222299986776,
+        "tm_score_fixed_full_length": 0.3361,
+        "prediction_sha256": "d7355d7fc3645d0a7def719d937f31775be1caef9f65f9972ad680831db3c3a5"
+      },
+      {
+        "target_id": "5kdi_A",
+        "status": "ok",
+        "query_length": 211,
+        "ca_pair_lddt": 0.4477389516957862,
+        "residue_ca_lddt": 0.4546005139015461,
+        "tm_score_fixed_full_length": 0.3119,
+        "prediction_sha256": "bd03b929fe7dc3892d4ac78915fa5db443bb220416dcbcc24d33832330f9fe2f"
+      },
+      {
+        "target_id": "7np5_A",
+        "status": "ok",
+        "query_length": 247,
+        "ca_pair_lddt": 0.4157031924072476,
+        "residue_ca_lddt": 0.4179595815564126,
+        "tm_score_fixed_full_length": 0.3308,
+        "prediction_sha256": "d403c912ffcb787ab496e1407cdc90010a95c5c455969e71ae5f036751c15115"
+      },
+      {
+        "target_id": "5nl7_A",
+        "status": "ok",
+        "query_length": 234,
+        "ca_pair_lddt": 0.4202613209235726,
+        "residue_ca_lddt": 0.4275343942461796,
+        "tm_score_fixed_full_length": 0.336,
+        "prediction_sha256": "0f91af85c2fe4c2e48d34e746da6069e947ca8e0b4d9f406005b0271ac591b46"
+      },
+      {
+        "target_id": "3eii_A",
+        "status": "ok",
+        "query_length": 208,
+        "ca_pair_lddt": 0.362172388335179,
+        "residue_ca_lddt": 0.35347892799219505,
+        "tm_score_fixed_full_length": 0.4443,
+        "prediction_sha256": "d56a7761d6b639e6c07f1e3a361c1e47da3fa8fc0e0f04a95520b44f808fda11"
+      },
+      {
+        "target_id": "3f95_A",
+        "status": "ok",
+        "query_length": 193,
+        "ca_pair_lddt": 0.2930574872508113,
+        "residue_ca_lddt": 0.29740224661390546,
+        "tm_score_fixed_full_length": 0.2852,
+        "prediction_sha256": "b23b92a11744d11a6a3a40679a93a684930e747f47955c9eaad665d0e62a845c"
+      },
+      {
+        "target_id": "3zj0_A",
+        "status": "ok",
+        "query_length": 206,
+        "ca_pair_lddt": 0.6317678424938474,
+        "residue_ca_lddt": 0.6238449015780304,
+        "tm_score_fixed_full_length": 0.6775,
+        "prediction_sha256": "62bf80f1bbe8706602c3201ca35d30909d676ab6e64fa28bc092903433f322c6"
+      },
+      {
+        "target_id": "2nlr_A",
+        "status": "ok",
+        "query_length": 234,
+        "ca_pair_lddt": 0.32092198581560283,
+        "residue_ca_lddt": 0.32803755482182256,
+        "tm_score_fixed_full_length": 0.3017,
+        "prediction_sha256": "9b73c8b07bd8d935ea9ffccd2ad33668349596fe979d30782fee9ef3a1b36d10"
+      },
+      {
+        "target_id": "1m1u_A",
+        "status": "ok",
+        "query_length": 195,
+        "ca_pair_lddt": 0.7200534209985617,
+        "residue_ca_lddt": 0.7046643746431963,
+        "tm_score_fixed_full_length": 0.7744,
+        "prediction_sha256": "33bb0d16ddad4e1ce5e500660de63263f54700ee58766c13c26bcc8b3df3399e"
+      },
+      {
+        "target_id": "2a7m_A",
+        "status": "ok",
+        "query_length": 250,
+        "ca_pair_lddt": 0.6216725820763088,
+        "residue_ca_lddt": 0.6188257634866162,
+        "tm_score_fixed_full_length": 0.7142,
+        "prediction_sha256": "5884e306278e51f0d8109d427f023a1555e2282b84368ba3b2d3780834d3992b"
+      },
+      {
+        "target_id": "3n36_A",
+        "status": "ok",
+        "query_length": 242,
+        "ca_pair_lddt": 0.36161600733160226,
+        "residue_ca_lddt": 0.3698223277354792,
+        "tm_score_fixed_full_length": 0.464,
+        "prediction_sha256": "5dab57f6826ccb58043bec31ca0573e25894161669fb1a93accffa0c04bac13a"
+      },
+      {
+        "target_id": "1xa1_A",
+        "status": "ok",
+        "query_length": 255,
+        "ca_pair_lddt": 0.37861950226952573,
+        "residue_ca_lddt": 0.3819767540548618,
+        "tm_score_fixed_full_length": 0.2721,
+        "prediction_sha256": "006374e93e0b76a8cfcee0dcff41bdc01fbe96a9ca9fd1a04774d18ee6ce215b"
+      },
+      {
+        "target_id": "6j5q_A",
+        "status": "ok",
+        "query_length": 251,
+        "ca_pair_lddt": 0.43059729526671675,
+        "residue_ca_lddt": 0.43480421747822795,
+        "tm_score_fixed_full_length": 0.4366,
+        "prediction_sha256": "fb56e920a73b164dda778e25c72c61ca06c4b7bfaf285c6154c3aff72cd7474b"
+      },
+      {
+        "target_id": "2erf_A",
+        "status": "ok",
+        "query_length": 209,
+        "ca_pair_lddt": 0.4179966978536048,
+        "residue_ca_lddt": 0.40804426036356145,
+        "tm_score_fixed_full_length": 0.452,
+        "prediction_sha256": "78196d648e17007624f3adee16f2076b0ad4f3b26023f330b89d71892bf834ab"
+      },
+      {
+        "target_id": "4dr9_A",
+        "status": "ok",
+        "query_length": 192,
+        "ca_pair_lddt": 0.35992705721449736,
+        "residue_ca_lddt": 0.3526976895160436,
+        "tm_score_fixed_full_length": 0.2691,
+        "prediction_sha256": "0e71ac4d6db740f8ea702282174732d7b65fa73d335c06798e5fbe7d04748e0a"
+      },
+      {
+        "target_id": "1h5y_A",
+        "status": "ok",
+        "query_length": 253,
+        "ca_pair_lddt": 0.8793079391656202,
+        "residue_ca_lddt": 0.8674389752746918,
+        "tm_score_fixed_full_length": 0.9326,
+        "prediction_sha256": "064642da065ba992e414eb4df55f834ae1254965b0df632cd5bf4c7fef501780"
+      },
+      {
+        "target_id": "1g69_A",
+        "status": "ok",
+        "query_length": 228,
+        "ca_pair_lddt": 0.8861039588027035,
+        "residue_ca_lddt": 0.8748038189609297,
+        "tm_score_fixed_full_length": 0.9349,
+        "prediction_sha256": "d109063d7fe67557853ed342b8e1eceb41d6cb9a069d0abaab6e8e35c2363f22"
+      },
+      {
+        "target_id": "4zyx_A",
+        "status": "ok",
+        "query_length": 210,
+        "ca_pair_lddt": 0.9189296333002973,
+        "residue_ca_lddt": 0.9189370963412691,
+        "tm_score_fixed_full_length": 0.9127,
+        "prediction_sha256": "48d265431f233abdca636f5590bc31a2120f8672a041efd74dcced38ff0710b5"
+      },
+      {
+        "target_id": "1pxr_A",
+        "status": "ok",
+        "query_length": 249,
+        "ca_pair_lddt": 0.44418114797261715,
+        "residue_ca_lddt": 0.45360408623473125,
+        "tm_score_fixed_full_length": 0.3324,
+        "prediction_sha256": "fa182743cf2fdfc70dbcdb93ea85f3d08860f345cbbef856e2d8d838b17f7b84"
+      },
+      {
+        "target_id": "5xrb_A",
+        "status": "ok",
+        "query_length": 228,
+        "ca_pair_lddt": 0.738130859764612,
+        "residue_ca_lddt": 0.7276696388555147,
+        "tm_score_fixed_full_length": 0.718,
+        "prediction_sha256": "38e60ade414a18932dac6ce09a576ef731212445e0b6dea313a0e8ce2204d44c"
+      },
+      {
+        "target_id": "4f1j_A",
+        "status": "ok",
+        "query_length": 203,
+        "ca_pair_lddt": 0.5145554315476191,
+        "residue_ca_lddt": 0.52061928554196,
+        "tm_score_fixed_full_length": 0.6194,
+        "prediction_sha256": "308546f92c11eabfac92bf544a0b59bedea0609333bfabc51156d71dc85b76fe"
+      },
+      {
+        "target_id": "1dua_A",
+        "status": "ok",
+        "query_length": 242,
+        "ca_pair_lddt": 0.7154620311070449,
+        "residue_ca_lddt": 0.679435160225598,
+        "tm_score_fixed_full_length": 0.7519,
+        "prediction_sha256": "5ff9c059a6f3c6e49e2622766f5b4f49eb1cfdf66fffd468b68f8ae3f1327e34"
+      },
+      {
+        "target_id": "2ocg_A",
+        "status": "ok",
+        "query_length": 254,
+        "ca_pair_lddt": 0.8102492077211179,
+        "residue_ca_lddt": 0.803408891888909,
+        "tm_score_fixed_full_length": 0.8611,
+        "prediction_sha256": "598e978855c454ce5bc182dd710681c4cf0c5d3876b356008cc1be84ed42b4ba"
+      },
+      {
+        "target_id": "3voa_A",
+        "status": "ok",
+        "query_length": 308,
+        "ca_pair_lddt": 0.6386547442761135,
+        "residue_ca_lddt": 0.6227754229787706,
+        "tm_score_fixed_full_length": 0.6386,
+        "prediction_sha256": "b0f3765412790dbf4e9d728ac1d7e1985578c60b4c41539641a60b7d5829f2b3"
+      },
+      {
+        "target_id": "1c91_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.6528525296017222,
+        "residue_ca_lddt": 0.6376429046353601,
+        "tm_score_fixed_full_length": 0.7924,
+        "prediction_sha256": "3e961616b6d27e3bfbf0309af52dbf4a77280a5cdd0e096592d73178e5bbc2b0"
+      },
+      {
+        "target_id": "3f99_A",
+        "status": "ok",
+        "query_length": 306,
+        "ca_pair_lddt": 0.5342847769028871,
+        "residue_ca_lddt": 0.5445392627279578,
+        "tm_score_fixed_full_length": 0.607,
+        "prediction_sha256": "aa6c14d067a2577b13db36292a1c52c0b425ff7d14d2bab945132e551012bcbf"
+      },
+      {
+        "target_id": "3ah4_A",
+        "status": "ok",
+        "query_length": 288,
+        "ca_pair_lddt": 0.3709472132904609,
+        "residue_ca_lddt": 0.37019109644639636,
+        "tm_score_fixed_full_length": 0.2932,
+        "prediction_sha256": "e7397b5c8009c984290f30c873a24abf3220cf402d259eb28af656be09faa5cd"
+      },
+      {
+        "target_id": "7bwv_A",
+        "status": "ok",
+        "query_length": 276,
+        "ca_pair_lddt": 0.6616392443631932,
+        "residue_ca_lddt": 0.6350399284060211,
+        "tm_score_fixed_full_length": 0.6323,
+        "prediction_sha256": "1d7b66106f3c5979caf914ca6180d422f16906e3fda9180b950035010cf79e17"
+      },
+      {
+        "target_id": "4q3c_A",
+        "status": "ok",
+        "query_length": 260,
+        "ca_pair_lddt": 0.6303734259661311,
+        "residue_ca_lddt": 0.6351459230972695,
+        "tm_score_fixed_full_length": 0.6562,
+        "prediction_sha256": "e9134681420980c3b26b40c98081f091fcc8f2d16e4bd522fb29759476f6b1c2"
+      },
+      {
+        "target_id": "2vi0_A",
+        "status": "ok",
+        "query_length": 282,
+        "ca_pair_lddt": 0.6925534777344275,
+        "residue_ca_lddt": 0.6836490597634124,
+        "tm_score_fixed_full_length": 0.798,
+        "prediction_sha256": "f73604f4078da4f4c46ffa5ef9fcd40f040336ee96441812adce0adc5eecd824"
+      },
+      {
+        "target_id": "4n13_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.42343700412567437,
+        "residue_ca_lddt": 0.4253753807671604,
+        "tm_score_fixed_full_length": 0.3082,
+        "prediction_sha256": "5dccde328b8d381c7deb5830f7fe24e2455166f63ad483d36cbc1a6482cb0064"
+      },
+      {
+        "target_id": "2c6z_A",
+        "status": "ok",
+        "query_length": 284,
+        "ca_pair_lddt": 0.35173231458305887,
+        "residue_ca_lddt": 0.3685715818145835,
+        "tm_score_fixed_full_length": 0.2783,
+        "prediction_sha256": "c1cb0fbe65b2a95fae4bf031c0974b9a2789ce6c0764cebe87deb2cdfc597fc3"
+      },
+      {
+        "target_id": "5byl_A",
+        "status": "ok",
+        "query_length": 305,
+        "ca_pair_lddt": 0.44102011494252874,
+        "residue_ca_lddt": 0.4543123731458879,
+        "tm_score_fixed_full_length": 0.3743,
+        "prediction_sha256": "485788eff2a216df183723240e6a3843d928a29a2026b478ecb949fb7ae26e8a"
+      },
+      {
+        "target_id": "2cex_A",
+        "status": "ok",
+        "query_length": 306,
+        "ca_pair_lddt": 0.390375,
+        "residue_ca_lddt": 0.40811264595793084,
+        "tm_score_fixed_full_length": 0.3718,
+        "prediction_sha256": "d4956da3058cef5e3265b45973e124d0a7ec9e008a49b5c4ab220ca480b26c3b"
+      },
+      {
+        "target_id": "3ea3_A",
+        "status": "ok",
+        "query_length": 298,
+        "ca_pair_lddt": 0.4253635585970915,
+        "residue_ca_lddt": 0.42272730652929325,
+        "tm_score_fixed_full_length": 0.5018,
+        "prediction_sha256": "51ba91bd0c391b62b57211f06ce887585e26847885761d91133f6234f497fe13"
+      },
+      {
+        "target_id": "2iry_A",
+        "status": "ok",
+        "query_length": 303,
+        "ca_pair_lddt": 0.444672131147541,
+        "residue_ca_lddt": 0.4473364875603688,
+        "tm_score_fixed_full_length": 0.3964,
+        "prediction_sha256": "54e26dedb3271ef020acdc5b2134be2c7e39cd333ff69fcf7a88fd006fe38940"
+      },
+      {
+        "target_id": "5dxn_A",
+        "status": "ok",
+        "query_length": 286,
+        "ca_pair_lddt": 0.780735831809872,
+        "residue_ca_lddt": 0.7767893663027997,
+        "tm_score_fixed_full_length": 0.6114,
+        "prediction_sha256": "f8dedd6f2288a82c327f0d4a87744d6c853bbaae59b6f9311157685bf0a98f63"
+      },
+      {
+        "target_id": "4jpx_A",
+        "status": "ok",
+        "query_length": 302,
+        "ca_pair_lddt": 0.2956897773996881,
+        "residue_ca_lddt": 0.30290954459546277,
+        "tm_score_fixed_full_length": 0.2388,
+        "prediction_sha256": "fc93c918d5b71b1424e03c9263548ad9c46ab428bf22e2d2ff18c2ecb7a2ea09"
+      },
+      {
+        "target_id": "7k27_A",
+        "status": "ok",
+        "query_length": 265,
+        "ca_pair_lddt": 0.6452423698384201,
+        "residue_ca_lddt": 0.64253302317374,
+        "tm_score_fixed_full_length": 0.3732,
+        "prediction_sha256": "0b17a417ac258a7bd4f6fa1a5f40732a65a2c906432fe63e165bcca4d02d3fb1"
+      },
+      {
+        "target_id": "2bod_A",
+        "status": "ok",
+        "query_length": 286,
+        "ca_pair_lddt": 0.5479460847240052,
+        "residue_ca_lddt": 0.5535119427648098,
+        "tm_score_fixed_full_length": 0.665,
+        "prediction_sha256": "842cd9a335ee9934c9eaf49722130d35138930d49daa4500ec8523558cf7d606"
+      },
+      {
+        "target_id": "5trq_A",
+        "status": "ok",
+        "query_length": 291,
+        "ca_pair_lddt": 0.38477323316638845,
+        "residue_ca_lddt": 0.4056377801123315,
+        "tm_score_fixed_full_length": 0.4381,
+        "prediction_sha256": "64fb6809b82a77826f7f0a1364fef473db0b44bafe7406a31c31b63c04a4e21f"
+      },
+      {
+        "target_id": "3wib_A",
+        "status": "ok",
+        "query_length": 304,
+        "ca_pair_lddt": 0.554759792115604,
+        "residue_ca_lddt": 0.5488975748182607,
+        "tm_score_fixed_full_length": 0.6282,
+        "prediction_sha256": "41ac4341b8c2f174f6cc14df9842bd53a0176feab587ff924691933f0103dfa8"
+      },
+      {
+        "target_id": "4i6k_A",
+        "status": "ok",
+        "query_length": 294,
+        "ca_pair_lddt": 0.6722051210298027,
+        "residue_ca_lddt": 0.673908946422543,
+        "tm_score_fixed_full_length": 0.7579,
+        "prediction_sha256": "8d3c7024bfac3841bf96fa285468f2bb09624e338171c623a1c774c894d27f14"
+      },
+      {
+        "target_id": "2ioy_A",
+        "status": "ok",
+        "query_length": 283,
+        "ca_pair_lddt": 0.9707721062129415,
+        "residue_ca_lddt": 0.9680910965221874,
+        "tm_score_fixed_full_length": 0.9557,
+        "prediction_sha256": "458e14da215ab0e8ba3ec8fe50f2c4988e35609bd0fc1db46c20300951d3c623"
+      },
+      {
+        "target_id": "6ap7_A",
+        "status": "ok",
+        "query_length": 269,
+        "ca_pair_lddt": 0.8229093955046768,
+        "residue_ca_lddt": 0.8139815184857556,
+        "tm_score_fixed_full_length": 0.9052,
+        "prediction_sha256": "a5ebf95183a589ee0593e2b10a070501c7c969db38241d0bbe5b701d6782402a"
+      },
+      {
+        "target_id": "6w2p_B",
+        "status": "ok",
+        "query_length": 276,
+        "ca_pair_lddt": 0.6106989321869366,
+        "residue_ca_lddt": 0.5869863157848285,
+        "tm_score_fixed_full_length": 0.6985,
+        "prediction_sha256": "25249fc986c049c93ed64527f0e90502af10e6b5d5fe1977639a3c83996f6090"
+      },
+      {
+        "target_id": "4jin_A",
+        "status": "ok",
+        "query_length": 258,
+        "ca_pair_lddt": 0.5048918230989501,
+        "residue_ca_lddt": 0.5133634801108119,
+        "tm_score_fixed_full_length": 0.4947,
+        "prediction_sha256": "7a41d4d8aa1f16cbe0339fbfbcfe44fbff287e503bf568aaa18253ed333856d3"
+      },
+      {
+        "target_id": "3ita_A",
+        "status": "ok",
+        "query_length": 352,
+        "ca_pair_lddt": 0.6399181387333046,
+        "residue_ca_lddt": 0.6301465194559269,
+        "tm_score_fixed_full_length": 0.6127,
+        "prediction_sha256": "fd9b013521fe82df784e129305ddba5be7b338a90740fbf0311e30632764b7e3"
+      },
+      {
+        "target_id": "5obx_A",
+        "status": "ok",
+        "query_length": 374,
+        "ca_pair_lddt": 0.7830591102985984,
+        "residue_ca_lddt": 0.770940838710641,
+        "tm_score_fixed_full_length": 0.7427,
+        "prediction_sha256": "aaa50228f1825458fd217f28b944d8ec7d67ad16f7822e13eea8f29b374da2ea"
+      },
+      {
+        "target_id": "3fjl_A",
+        "status": "ok",
+        "query_length": 367,
+        "ca_pair_lddt": 0.6211576193590582,
+        "residue_ca_lddt": 0.6067857725492452,
+        "tm_score_fixed_full_length": 0.7359,
+        "prediction_sha256": "b852a7abdb5469853bb4eacb59d27722050f2562a9f66b83f4ebca0152165115"
+      },
+      {
+        "target_id": "1v79_A",
+        "status": "ok",
+        "query_length": 356,
+        "ca_pair_lddt": 0.7392587815042667,
+        "residue_ca_lddt": 0.732858155759093,
+        "tm_score_fixed_full_length": 0.8058,
+        "prediction_sha256": "828fe332faad8eea87d7528055f0a8966d7c3878d318b277486d8908e2ccfbaa"
+      },
+      {
+        "target_id": "7kk6_A",
+        "status": "ok",
+        "query_length": 352,
+        "ca_pair_lddt": 0.2965694491004581,
+        "residue_ca_lddt": 0.31727160824503065,
+        "tm_score_fixed_full_length": 0.2227,
+        "prediction_sha256": "882fc00498f73765dcfbe8f450d79aaab6913422f860202d2edde85bfc9f8957"
+      },
+      {
+        "target_id": "3tgh_A",
+        "status": "ok",
+        "query_length": 342,
+        "ca_pair_lddt": 0.6286250426475606,
+        "residue_ca_lddt": 0.5986190278441232,
+        "tm_score_fixed_full_length": 0.7114,
+        "prediction_sha256": "4395691f66ab0e5c948c81316f2f1c40144a88dd53e338efda87a9d540a032d9"
+      },
+      {
+        "target_id": "6xqx_A",
+        "status": "ok",
+        "query_length": 327,
+        "ca_pair_lddt": 0.34070193818753275,
+        "residue_ca_lddt": 0.3344365323087866,
+        "tm_score_fixed_full_length": 0.3857,
+        "prediction_sha256": "1cbe137730b150cf5b40fe040cdd8e28bc9fc1bc41a4212442e202646678b5bb"
+      },
+      {
+        "target_id": "6l1h_A",
+        "status": "ok",
+        "query_length": 330,
+        "ca_pair_lddt": 0.5999043977055449,
+        "residue_ca_lddt": 0.581766997876797,
+        "tm_score_fixed_full_length": 0.5842,
+        "prediction_sha256": "9af450fa3a17c8a4fc1f2dc320bf0e82052ce830dfbfdb5d8f39b67b02ce69d8"
+      },
+      {
+        "target_id": "7a16_A",
+        "status": "ok",
+        "query_length": 371,
+        "ca_pair_lddt": 0.35325659189295555,
+        "residue_ca_lddt": 0.3555762584303764,
+        "tm_score_fixed_full_length": 0.3893,
+        "prediction_sha256": "96fb93c7c33559e468ac5eae34f4e66b3573f54affa4f734a4ca70fe5a340925"
+      },
+      {
+        "target_id": "1zze_A",
+        "status": "ok",
+        "query_length": 342,
+        "ca_pair_lddt": 0.6564602607232969,
+        "residue_ca_lddt": 0.6496201819715889,
+        "tm_score_fixed_full_length": 0.7272,
+        "prediction_sha256": "62fd343818d0c80138ace969c540f3f8b0f24b363d5533fa6d481d74d4989561"
+      },
+      {
+        "target_id": "4pam_A",
+        "status": "ok",
+        "query_length": 354,
+        "ca_pair_lddt": 0.6317742908871454,
+        "residue_ca_lddt": 0.6263597375554391,
+        "tm_score_fixed_full_length": 0.4882,
+        "prediction_sha256": "902a4110005f05dac5f7058dd460dcc54d583b36416a189342d99ff23ce24833"
+      },
+      {
+        "target_id": "3m10_A",
+        "status": "ok",
+        "query_length": 357,
+        "ca_pair_lddt": 0.30254292545098893,
+        "residue_ca_lddt": 0.31967175287523875,
+        "tm_score_fixed_full_length": 0.2423,
+        "prediction_sha256": "7131fca236adf2ffdc2b8f4e0fa2991113b93ccb995b3ae8e2af7334d44fcb02"
+      },
+      {
+        "target_id": "1z2n_A",
+        "status": "ok",
+        "query_length": 324,
+        "ca_pair_lddt": 0.4537144702842377,
+        "residue_ca_lddt": 0.47102808328527485,
+        "tm_score_fixed_full_length": 0.353,
+        "prediction_sha256": "6597307a7e8768fd2bee586f3670348abe5b131f0d232e446f632a7800d50ede"
+      },
+      {
+        "target_id": "4lv8_A",
+        "status": "ok",
+        "query_length": 371,
+        "ca_pair_lddt": 0.3615538900031669,
+        "residue_ca_lddt": 0.367196357465428,
+        "tm_score_fixed_full_length": 0.239,
+        "prediction_sha256": "5608fd5983df07fbdd89d4ad7003fd7aeabe2d5adae298a7c921779d08099d5f"
+      },
+      {
+        "target_id": "4ihm_A",
+        "status": "ok",
+        "query_length": 326,
+        "ca_pair_lddt": 0.5284619594964423,
+        "residue_ca_lddt": 0.5302301506107195,
+        "tm_score_fixed_full_length": 0.6637,
+        "prediction_sha256": "67a11a4458619b700d79effb433660db4770bca735cae4d19ea837cc6e3688d2"
+      },
+      {
+        "target_id": "1dvn_A",
+        "status": "ok",
+        "query_length": 379,
+        "ca_pair_lddt": 0.32353350658993874,
+        "residue_ca_lddt": 0.3392452109198629,
+        "tm_score_fixed_full_length": 0.3035,
+        "prediction_sha256": "bbc30a85518d78bac93e8253388dbcf73b49180cdd0be02bb6ae4c3b48c2848e"
+      },
+      {
+        "target_id": "6t8d_A",
+        "status": "ok",
+        "query_length": 380,
+        "ca_pair_lddt": 0.2985980272636595,
+        "residue_ca_lddt": 0.30919972729128925,
+        "tm_score_fixed_full_length": 0.2813,
+        "prediction_sha256": "2347d36e29b03f5b8afd33fb0e4714ff9d47bbc722b2cc1cec31cab6d3f77432"
+      },
+      {
+        "target_id": "1jcf_A",
+        "status": "ok",
+        "query_length": 344,
+        "ca_pair_lddt": 0.7269316139942924,
+        "residue_ca_lddt": 0.7397027183758826,
+        "tm_score_fixed_full_length": 0.5678,
+        "prediction_sha256": "90b2244230420324baa25eea0540ac60d11bc4ec10ca902e862851bceea53d93"
+      },
+      {
+        "target_id": "6ijn_A",
+        "status": "ok",
+        "query_length": 376,
+        "ca_pair_lddt": 0.5649388011298253,
+        "residue_ca_lddt": 0.5620661350731163,
+        "tm_score_fixed_full_length": 0.5659,
+        "prediction_sha256": "259c88894332012c26e6c8dcb3c5ee05beee3eefcab81159c3dbdfbeb6f29ff0"
+      },
+      {
+        "target_id": "4fk9_A",
+        "status": "ok",
+        "query_length": 337,
+        "ca_pair_lddt": 0.6434370771312584,
+        "residue_ca_lddt": 0.6228982675291791,
+        "tm_score_fixed_full_length": 0.7064,
+        "prediction_sha256": "aee10369da3b859926474fd84591935fe558a15c4d2de5945ef8849e6520d53f"
+      },
+      {
+        "target_id": "1woo_A",
+        "status": "ok",
+        "query_length": 364,
+        "ca_pair_lddt": 0.3860530745618378,
+        "residue_ca_lddt": 0.4016294803398569,
+        "tm_score_fixed_full_length": 0.3119,
+        "prediction_sha256": "5477a9107a4b999867e1f834d146e8e46de525c072759627936ab21b3ae1b170"
+      },
+      {
+        "target_id": "6ch1_A",
+        "status": "ok",
+        "query_length": 337,
+        "ca_pair_lddt": 0.39963388461052896,
+        "residue_ca_lddt": 0.40438144468094717,
+        "tm_score_fixed_full_length": 0.2604,
+        "prediction_sha256": "fcfa98f7299695d058e8c18844407ef8f690caa7d61a92c7088d1bcdca873a76"
+      },
+      {
+        "target_id": "2d5j_A",
+        "status": "ok",
+        "query_length": 377,
+        "ca_pair_lddt": 0.6760922647597454,
+        "residue_ca_lddt": 0.6616985089609216,
+        "tm_score_fixed_full_length": 0.8096,
+        "prediction_sha256": "203786456b0df078ad184cb635139503af2ec9cc3ff703cfa7ccfffaa5e9455e"
+      },
+      {
+        "target_id": "1hb1_A",
+        "status": "ok",
+        "query_length": 331,
+        "ca_pair_lddt": 0.4532699443413729,
+        "residue_ca_lddt": 0.45337122962606163,
+        "tm_score_fixed_full_length": 0.5397,
+        "prediction_sha256": "cdb7fca81fc524493269758334dc076a2311cb76697f47c042ef6ddcf969bd99"
+      }
+    ]
+  },
+  "length48": {
+    "gplus_s20260923": [
+      {
+        "target_id": "2qri_A",
+        "status": "ok",
+        "query_length": 422,
+        "ca_pair_lddt": 0.5328819123832974,
+        "residue_ca_lddt": 0.5484527765616531,
+        "tm_score_fixed_full_length": 0.2924,
+        "prediction_sha256": "530081603dbffbcfe12bed32a3b6ccbe23edbd7f39f8e0ebaff475d5e0c07091"
+      },
+      {
+        "target_id": "7b60_A",
+        "status": "ok",
+        "query_length": 496,
+        "ca_pair_lddt": 0.7565828512090195,
+        "residue_ca_lddt": 0.7424808520226255,
+        "tm_score_fixed_full_length": 0.6569,
+        "prediction_sha256": "8c8aa80cb458cb43e3929fba8fbf47e0aeb20e48a7b66d6883dc761d05a6a6bd"
+      },
+      {
+        "target_id": "2x1i_A",
+        "status": "ok",
+        "query_length": 500,
+        "ca_pair_lddt": 0.4170937314319667,
+        "residue_ca_lddt": 0.43104355196876626,
+        "tm_score_fixed_full_length": 0.4324,
+        "prediction_sha256": "1f3f409f5a59e1f343df07f43627a1746bbe9093f5fb49c8e3b8b9b9e8d91649"
+      },
+      {
+        "target_id": "4ego_A",
+        "status": "ok",
+        "query_length": 410,
+        "ca_pair_lddt": 0.38407884078840787,
+        "residue_ca_lddt": 0.3852835342179911,
+        "tm_score_fixed_full_length": 0.3696,
+        "prediction_sha256": "b363244781cf27977f8451e5ea23bc899dddc3a2b889f776ca67ec9b283af935"
+      },
+      {
+        "target_id": "3re2_A",
+        "status": "ok",
+        "query_length": 472,
+        "ca_pair_lddt": 0.4827564157217154,
+        "residue_ca_lddt": 0.4809982808255318,
+        "tm_score_fixed_full_length": 0.4536,
+        "prediction_sha256": "7e1e9809ece3b6ed54896224928a06da87e002922b157337e5a92cc4447c2a55"
+      },
+      {
+        "target_id": "2v3d_A",
+        "status": "ok",
+        "query_length": 505,
+        "ca_pair_lddt": 0.5584658401832637,
+        "residue_ca_lddt": 0.5473234086411265,
+        "tm_score_fixed_full_length": 0.653,
+        "prediction_sha256": "253f0ecacd6f70cb1a4638afe0670267e142c23d1f07dcfadc06b21571e5dd13"
+      },
+      {
+        "target_id": "1u3d_A",
+        "status": "ok",
+        "query_length": 509,
+        "ca_pair_lddt": 0.4086683709040205,
+        "residue_ca_lddt": 0.4151083557355617,
+        "tm_score_fixed_full_length": 0.4072,
+        "prediction_sha256": "08f1e428518f49b4cee9edde7c888c16a667f319e40eae9725db1a5f343b3caa"
+      },
+      {
+        "target_id": "6uqj_A",
+        "status": "ok",
+        "query_length": 508,
+        "ca_pair_lddt": 0.5812045072788354,
+        "residue_ca_lddt": 0.5998509233828746,
+        "tm_score_fixed_full_length": 0.6401,
+        "prediction_sha256": "c5e77413558a7dcf2c12e1b6fb76ba82d4263d5663e0f4dff8d195ff724235ad"
+      },
+      {
+        "target_id": "4g3j_A",
+        "status": "ok",
+        "query_length": 448,
+        "ca_pair_lddt": 0.39258664690870176,
+        "residue_ca_lddt": 0.39793215242505664,
+        "tm_score_fixed_full_length": 0.3117,
+        "prediction_sha256": "28ff6133f68ea91a616b02c2f036ff5af98b8d6adc50876b751bad983366322e"
+      },
+      {
+        "target_id": "6muk_A",
+        "status": "ok",
+        "query_length": 401,
+        "ca_pair_lddt": 0.35,
+        "residue_ca_lddt": 0.3656405061357706,
+        "tm_score_fixed_full_length": 0.226,
+        "prediction_sha256": "75feb565aff426e997a8a05a405c11b39ca9f87dec79ee53dcf6aebc44ca18f3"
+      },
+      {
+        "target_id": "5l91_A",
+        "status": "ok",
+        "query_length": 410,
+        "ca_pair_lddt": 0.36689553702795485,
+        "residue_ca_lddt": 0.3922738540939117,
+        "tm_score_fixed_full_length": 0.2727,
+        "prediction_sha256": "8183155bb2728e099baaff03942d3822e1b24bed5b99b93da21d93af9a9f768c"
+      },
+      {
+        "target_id": "6kjf_A",
+        "status": "ok",
+        "query_length": 400,
+        "ca_pair_lddt": 0.4465635589538622,
+        "residue_ca_lddt": 0.4523918809982217,
+        "tm_score_fixed_full_length": 0.4822,
+        "prediction_sha256": "dcfa214f55eea23053d35d408568dccc0a3ab6d92da7cf72b8ca4f13b30e67ef"
+      },
+      {
+        "target_id": "3pu8_A",
+        "status": "ok",
+        "query_length": 392,
+        "ca_pair_lddt": 0.38827877507919745,
+        "residue_ca_lddt": 0.40954472235317696,
+        "tm_score_fixed_full_length": 0.2776,
+        "prediction_sha256": "7e8b0f8e1831fae16ee3d237e2c41aeddf0c9cf3fd975a562527a2132a4e8e0e"
+      },
+      {
+        "target_id": "5jir_A",
+        "status": "ok",
+        "query_length": 421,
+        "ca_pair_lddt": 0.44096454990873285,
+        "residue_ca_lddt": 0.44936695798948645,
+        "tm_score_fixed_full_length": 0.3441,
+        "prediction_sha256": "a83925fcd2cb95030c57ec49a01df24b485c030361c7c3ead3a15d8244162fa8"
+      },
+      {
+        "target_id": "1h14_A",
+        "status": "ok",
+        "query_length": 405,
+        "ca_pair_lddt": 0.34745222929936304,
+        "residue_ca_lddt": 0.35119102145781533,
+        "tm_score_fixed_full_length": 0.2866,
+        "prediction_sha256": "27ec8f3ffd7c8f54b2b1079d53bc2e44fea3a5be9f060e2d19979ace3d1a836a"
+      },
+      {
+        "target_id": "3b2s_A",
+        "status": "ok",
+        "query_length": 451,
+        "ca_pair_lddt": 0.4817309978600301,
+        "residue_ca_lddt": 0.4966645869542779,
+        "tm_score_fixed_full_length": 0.4426,
+        "prediction_sha256": "61711656b9c8d5169af3ffd7469c68f26c7f5baf90316da6859836732f596057"
+      },
+      {
+        "target_id": "3a21_A",
+        "status": "ok",
+        "query_length": 614,
+        "ca_pair_lddt": 0.41736980706185844,
+        "residue_ca_lddt": 0.43514930275394764,
+        "tm_score_fixed_full_length": 0.3749,
+        "prediction_sha256": "e7d54a0a97146cca70fd2f18b3623f2e3f29645e3d899cfcaa0fce22ea11346b"
+      },
+      {
+        "target_id": "7ryx_A",
+        "status": "ok",
+        "query_length": 536,
+        "ca_pair_lddt": 0.38129992737835877,
+        "residue_ca_lddt": 0.4158650365058338,
+        "tm_score_fixed_full_length": 0.3534,
+        "prediction_sha256": "2685ac62ac2a42e75177e55544a00899b9bd1978efff621c7659dcd6df463fd5"
+      },
+      {
+        "target_id": "7dk8_A",
+        "status": "ok",
+        "query_length": 598,
+        "ca_pair_lddt": 0.369377444589309,
+        "residue_ca_lddt": 0.3814883317697527,
+        "tm_score_fixed_full_length": 0.2782,
+        "prediction_sha256": "4471a54a4619ac81fa8f9f64a135ce01d7d72ae3811bc64ede4f33353ada36e4"
+      },
+      {
+        "target_id": "6o9q_A",
+        "status": "ok",
+        "query_length": 566,
+        "ca_pair_lddt": 0.4260905261654887,
+        "residue_ca_lddt": 0.4477839512960058,
+        "tm_score_fixed_full_length": 0.2944,
+        "prediction_sha256": "7837b50d7ca4c4901ca67a7334c145d6e6ec3ed5d80f5086855fa7e4a0a7e924"
+      },
+      {
+        "target_id": "4kh2_A",
+        "status": "ok",
+        "query_length": 627,
+        "ca_pair_lddt": 0.4253297018348624,
+        "residue_ca_lddt": 0.4403383311526247,
+        "tm_score_fixed_full_length": 0.3911,
+        "prediction_sha256": "08dd5f616a0d5c01d31094b6395a90ce4b48f982c44735347429c7d2651cc04c"
+      },
+      {
+        "target_id": "5bpp_A",
+        "status": "ok",
+        "query_length": 631,
+        "ca_pair_lddt": 0.5265144989951192,
+        "residue_ca_lddt": 0.5561377800107202,
+        "tm_score_fixed_full_length": 0.4285,
+        "prediction_sha256": "7c2507dafc9f759ee1efe77bbf3daeab9d846b7dc91b7baabe4980f63bd8862d"
+      },
+      {
+        "target_id": "1crl_A",
+        "status": "ok",
+        "query_length": 534,
+        "ca_pair_lddt": 0.3839747536945813,
+        "residue_ca_lddt": 0.386961035406567,
+        "tm_score_fixed_full_length": 0.4656,
+        "prediction_sha256": "56b85d100fc3841c43436df9510befb42d8df96ccb8a6a384a2b248264c2c1a5"
+      },
+      {
+        "target_id": "1ho5_A",
+        "status": "ok",
+        "query_length": 525,
+        "ca_pair_lddt": 0.596379091091627,
+        "residue_ca_lddt": 0.5865665730638657,
+        "tm_score_fixed_full_length": 0.6063,
+        "prediction_sha256": "595ccb81d61f12952657daa4e54136aa09365a7163d09fa71d686d73e796c083"
+      },
+      {
+        "target_id": "4h5y_A",
+        "status": "ok",
+        "query_length": 570,
+        "ca_pair_lddt": 0.5097001763668431,
+        "residue_ca_lddt": 0.5361980119570647,
+        "tm_score_fixed_full_length": 0.2494,
+        "prediction_sha256": "abc7fff3c202e96e81100aaa32f2d004483dde7c0b2188a227124dd314fe80dc"
+      },
+      {
+        "target_id": "5uqm_A",
+        "status": "ok",
+        "query_length": 563,
+        "ca_pair_lddt": 0.3399316434064369,
+        "residue_ca_lddt": 0.355357072701524,
+        "tm_score_fixed_full_length": 0.2283,
+        "prediction_sha256": "c3ad5adcfcba3c72c3c11ac7543a288b1dcda09611a9ce1c2b84b958657853a9"
+      },
+      {
+        "target_id": "1q7m_A",
+        "status": "ok",
+        "query_length": 566,
+        "ca_pair_lddt": 0.694476322783281,
+        "residue_ca_lddt": 0.7031138161196719,
+        "tm_score_fixed_full_length": 0.546,
+        "prediction_sha256": "cd2b16fc257c46790c0a394143f5b0ac085d68f17e38f67d546010e2e84395fa"
+      },
+      {
+        "target_id": "1oxy_A",
+        "status": "ok",
+        "query_length": 628,
+        "ca_pair_lddt": 0.2871927554980595,
+        "residue_ca_lddt": 0.292912848874137,
+        "tm_score_fixed_full_length": 0.2452,
+        "prediction_sha256": "8704c0adb05d92004e3c658bb8993c49564bbaa888bb48cda402e5c44331a0ec"
+      },
+      {
+        "target_id": "2j4d_A",
+        "status": "ok",
+        "query_length": 525,
+        "ca_pair_lddt": 0.39332849891225524,
+        "residue_ca_lddt": 0.3945309338896809,
+        "tm_score_fixed_full_length": 0.3571,
+        "prediction_sha256": "11fed9e97e7ee276ec528e3b582485033dfeffa09485efac0c388638484f6e85"
+      },
+      {
+        "target_id": "3i5o_A",
+        "status": "ok",
+        "query_length": 592,
+        "ca_pair_lddt": 0.43481170801356417,
+        "residue_ca_lddt": 0.44775668267277113,
+        "tm_score_fixed_full_length": 0.3695,
+        "prediction_sha256": "3612f3639485bc0fbd5896feb386096377389b463a0e1a1d26c5a3a4af2b041e"
+      },
+      {
+        "target_id": "4lpc_A",
+        "status": "ok",
+        "query_length": 612,
+        "ca_pair_lddt": 0.46135308818279186,
+        "residue_ca_lddt": 0.45761559946576824,
+        "tm_score_fixed_full_length": 0.5196,
+        "prediction_sha256": "da2337597f4d6cee96924a5654ee9facb88c6b5bdea7c2c8bd5312d7e82edbef"
+      },
+      {
+        "target_id": "6jg1_A",
+        "status": "ok",
+        "query_length": 609,
+        "ca_pair_lddt": 0.5059274755927475,
+        "residue_ca_lddt": 0.5188694976888678,
+        "tm_score_fixed_full_length": 0.5375,
+        "prediction_sha256": "5cc4131f1ff9d908d5b7796e128f13d12062baa26f67108307d1a985d024f317"
+      },
+      {
+        "target_id": "4bq2_A",
+        "status": "ok",
+        "query_length": 750,
+        "ca_pair_lddt": 0.3877955461876833,
+        "residue_ca_lddt": 0.40493174065451953,
+        "tm_score_fixed_full_length": 0.3981,
+        "prediction_sha256": "7de502468524225842bfffea570dfb896d976ba29a4eca59fa4e1390298aae32"
+      },
+      {
+        "target_id": "5fr3_A",
+        "status": "ok",
+        "query_length": 722,
+        "ca_pair_lddt": 0.29114988148393145,
+        "residue_ca_lddt": 0.3141309341922502,
+        "tm_score_fixed_full_length": 0.2519,
+        "prediction_sha256": "071bbac25b87157d248dec75adf2a3f63eae242646c8ecfb85fc3905056c6ee5"
+      },
+      {
+        "target_id": "4aef_A",
+        "status": "ok",
+        "query_length": 645,
+        "ca_pair_lddt": 0.465006993006993,
+        "residue_ca_lddt": 0.46668199526198423,
+        "tm_score_fixed_full_length": 0.5222,
+        "prediction_sha256": "16af32ab4b79e20ae1ad00bfe1117744d2ebb3d1e97c047e5a320b6e1da9bcdd"
+      },
+      {
+        "target_id": "1ms1_A",
+        "status": "ok",
+        "query_length": 648,
+        "ca_pair_lddt": 0.5755086702099104,
+        "residue_ca_lddt": 0.5685344159989009,
+        "tm_score_fixed_full_length": 0.512,
+        "prediction_sha256": "0d67719fac2f8400384ecd283062387a5eab904992692010a525f4087b6e980d"
+      },
+      {
+        "target_id": "1n7o_A",
+        "status": "ok",
+        "query_length": 721,
+        "ca_pair_lddt": 0.36324966110409945,
+        "residue_ca_lddt": 0.3704283084502509,
+        "tm_score_fixed_full_length": 0.3968,
+        "prediction_sha256": "5707bbf2cec1769f576cb3b7486c6cd9d4cfe4ed150386bcde238ac17dc6fdf6"
+      },
+      {
+        "target_id": "2zxo_A",
+        "status": "ok",
+        "query_length": 666,
+        "ca_pair_lddt": 0.5414216385954895,
+        "residue_ca_lddt": 0.5308828387620774,
+        "tm_score_fixed_full_length": 0.506,
+        "prediction_sha256": "2abd098130dd968701817536dc06d94fbf567ace123165ca47d338cd6105be91"
+      },
+      {
+        "target_id": "1eo7_A",
+        "status": "ok",
+        "query_length": 686,
+        "ca_pair_lddt": 0.5084461850611051,
+        "residue_ca_lddt": 0.5160087923492208,
+        "tm_score_fixed_full_length": 0.5375,
+        "prediction_sha256": "11e036a47ae30e7c97bb3df1faf38f324b48e4282b6d25b62b34834bc02df581"
+      },
+      {
+        "target_id": "6p2m_A",
+        "status": "ok",
+        "query_length": 696,
+        "ca_pair_lddt": 0.731837117744003,
+        "residue_ca_lddt": 0.7263298463804791,
+        "tm_score_fixed_full_length": 0.6348,
+        "prediction_sha256": "6efab7a74e02e5d8f0a66147a188595dfb33b344d4dfbf2b336f3fb322d76712"
+      },
+      {
+        "target_id": "3zr5_A",
+        "status": "ok",
+        "query_length": 656,
+        "ca_pair_lddt": 0.4746705524581855,
+        "residue_ca_lddt": 0.48008395612188476,
+        "tm_score_fixed_full_length": 0.4272,
+        "prediction_sha256": "da885a4c3d92696e2c98ab318bcede263f25c34f26eb6832df9b854ae09745a2"
+      },
+      {
+        "target_id": "6ezs_A",
+        "status": "ok",
+        "query_length": 652,
+        "ca_pair_lddt": 0.5123868841470227,
+        "residue_ca_lddt": 0.5119512536577785,
+        "tm_score_fixed_full_length": 0.5166,
+        "prediction_sha256": "dd47f4fc9d4cfdc898734b3c384d4389ace95208573eceffd451c401ee573507"
+      },
+      {
+        "target_id": "4e55_A",
+        "status": "ok",
+        "query_length": 694,
+        "ca_pair_lddt": 0.29976260515043607,
+        "residue_ca_lddt": 0.3120860904754223,
+        "tm_score_fixed_full_length": 0.279,
+        "prediction_sha256": "55de4612b0d39f11f84cfc899f863c827e39aa843e92ff3ef29f8e1650c5ed44"
+      },
+      {
+        "target_id": "6b3b_A",
+        "status": "ok",
+        "query_length": 652,
+        "ca_pair_lddt": 0.4110044098874318,
+        "residue_ca_lddt": 0.4343741352484592,
+        "tm_score_fixed_full_length": 0.2759,
+        "prediction_sha256": "e134092d28d386f4e4518479e9a268bcb6f50f7f8b42794c025c3b07ec66f379"
+      },
+      {
+        "target_id": "2ya0_A",
+        "status": "ok",
+        "query_length": 714,
+        "ca_pair_lddt": 0.47199871258448667,
+        "residue_ca_lddt": 0.47759594420097123,
+        "tm_score_fixed_full_length": 0.5738,
+        "prediction_sha256": "2ff5afaa4b0b9a6f2832317ae1dce75ade5b653be3a0233bc2c2918e4d797a3d"
+      },
+      {
+        "target_id": "2zwa_A",
+        "status": "ok",
+        "query_length": 695,
+        "ca_pair_lddt": 0.6362127528176625,
+        "residue_ca_lddt": 0.6305292292052483,
+        "tm_score_fixed_full_length": 0.6341,
+        "prediction_sha256": "cec80114f0c962827583cc2cff2c5c83320ad3689db8776221f656c2f8b60547"
+      },
+      {
+        "target_id": "3fvy_A",
+        "status": "ok",
+        "query_length": 728,
+        "ca_pair_lddt": 0.29428889990089196,
+        "residue_ca_lddt": 0.31141281597367093,
+        "tm_score_fixed_full_length": 0.2191,
+        "prediction_sha256": "581d345adf5868110b77790c98b8b5192093f5f9f647184c745d05b492dbda73"
+      },
+      {
+        "target_id": "3amk_A",
+        "status": "ok",
+        "query_length": 702,
+        "ca_pair_lddt": 0.3724159210120333,
+        "residue_ca_lddt": 0.36519796156036244,
+        "tm_score_fixed_full_length": 0.3776,
+        "prediction_sha256": "1b823cb3b7cffa4d42834534fc2d945c832af1628d5fd9ba303dea3be0484c7a"
+      }
+    ],
+    "gplus_s20260924": [
+      {
+        "target_id": "2qri_A",
+        "status": "ok",
+        "query_length": 422,
+        "ca_pair_lddt": 0.5114394172565918,
+        "residue_ca_lddt": 0.5271897394897029,
+        "tm_score_fixed_full_length": 0.2819,
+        "prediction_sha256": "33d6932c540e1ac6dd7539485cf0bdc4714bb61fbe7d51722558e92ca2ef9175"
+      },
+      {
+        "target_id": "7b60_A",
+        "status": "ok",
+        "query_length": 496,
+        "ca_pair_lddt": 0.6757157691737131,
+        "residue_ca_lddt": 0.6696851344013822,
+        "tm_score_fixed_full_length": 0.5878,
+        "prediction_sha256": "91a60feff120ca2166a80a7d08e554d6db1b1e5c959768c5bcad91611e22d23c"
+      },
+      {
+        "target_id": "2x1i_A",
+        "status": "ok",
+        "query_length": 500,
+        "ca_pair_lddt": 0.36861259655377304,
+        "residue_ca_lddt": 0.38163375050330745,
+        "tm_score_fixed_full_length": 0.3556,
+        "prediction_sha256": "fcd8fd09e62806fccdb2ee0748835edd48e0480e0bc1d214c6d319b5c94dbde9"
+      },
+      {
+        "target_id": "4ego_A",
+        "status": "ok",
+        "query_length": 410,
+        "ca_pair_lddt": 0.3360183601836018,
+        "residue_ca_lddt": 0.34266186889019185,
+        "tm_score_fixed_full_length": 0.2817,
+        "prediction_sha256": "bd68493dd0f8755242db9d0862a8ea182914cadafdfa14fecc22deffdf5135db"
+      },
+      {
+        "target_id": "3re2_A",
+        "status": "ok",
+        "query_length": 472,
+        "ca_pair_lddt": 0.494543439338392,
+        "residue_ca_lddt": 0.4919263142692713,
+        "tm_score_fixed_full_length": 0.4846,
+        "prediction_sha256": "aaf66f3d6b078228dd15b74284142b49c0a5e84315fe376487697345d55d6e8e"
+      },
+      {
+        "target_id": "2v3d_A",
+        "status": "ok",
+        "query_length": 505,
+        "ca_pair_lddt": 0.4483223285271527,
+        "residue_ca_lddt": 0.4513607002713345,
+        "tm_score_fixed_full_length": 0.5189,
+        "prediction_sha256": "b0e29a4cda02f3aa72a3bf431cf16fcbf07d1088ab7960eb91756fc07c72484c"
+      },
+      {
+        "target_id": "1u3d_A",
+        "status": "ok",
+        "query_length": 509,
+        "ca_pair_lddt": 0.4013866294833062,
+        "residue_ca_lddt": 0.40887676021777264,
+        "tm_score_fixed_full_length": 0.3852,
+        "prediction_sha256": "07ed914571b117497c613e6b530c0e6b766526745f915c2bb0b867db527b3db2"
+      },
+      {
+        "target_id": "6uqj_A",
+        "status": "ok",
+        "query_length": 508,
+        "ca_pair_lddt": 0.5584406494960806,
+        "residue_ca_lddt": 0.57727065993154,
+        "tm_score_fixed_full_length": 0.6217,
+        "prediction_sha256": "b5189ee1152b8ea73e0b58747c2af8db9f7467d81e500c9557aa47572d1c4333"
+      },
+      {
+        "target_id": "4g3j_A",
+        "status": "ok",
+        "query_length": 448,
+        "ca_pair_lddt": 0.3200996130731868,
+        "residue_ca_lddt": 0.32828145748012855,
+        "tm_score_fixed_full_length": 0.2595,
+        "prediction_sha256": "cfa7f308cafbebbe76491f621bcd0ab11c0b8f52ebe93ecb816ee5037c945865"
+      },
+      {
+        "target_id": "6muk_A",
+        "status": "ok",
+        "query_length": 401,
+        "ca_pair_lddt": 0.34235232067510546,
+        "residue_ca_lddt": 0.35439258911033594,
+        "tm_score_fixed_full_length": 0.2097,
+        "prediction_sha256": "a2840878cedcbbc73b770497df65c15c39dcd218b49a6e0eb818e4c82465efdd"
+      },
+      {
+        "target_id": "5l91_A",
+        "status": "ok",
+        "query_length": 410,
+        "ca_pair_lddt": 0.4079941147621383,
+        "residue_ca_lddt": 0.4323167244319021,
+        "tm_score_fixed_full_length": 0.3866,
+        "prediction_sha256": "2e8cc579278e00cee9c1e520e730bf96100ee52f36eac244227f4c8c3077eb8a"
+      },
+      {
+        "target_id": "6kjf_A",
+        "status": "ok",
+        "query_length": 400,
+        "ca_pair_lddt": 0.5340603006342862,
+        "residue_ca_lddt": 0.5348650629219572,
+        "tm_score_fixed_full_length": 0.6399,
+        "prediction_sha256": "dcb789f96031aea6a970c6b0c351f221884eccf1eed1010b0e45e44ed052ca5c"
+      },
+      {
+        "target_id": "3pu8_A",
+        "status": "ok",
+        "query_length": 392,
+        "ca_pair_lddt": 0.3805702217529039,
+        "residue_ca_lddt": 0.40504662503755556,
+        "tm_score_fixed_full_length": 0.3694,
+        "prediction_sha256": "6ce5ec02fdda585dbbf02c7fe06a989c7619548e72150f177677c8dfe140a5e0"
+      },
+      {
+        "target_id": "5jir_A",
+        "status": "ok",
+        "query_length": 421,
+        "ca_pair_lddt": 0.4225189739648381,
+        "residue_ca_lddt": 0.4302691158897419,
+        "tm_score_fixed_full_length": 0.3362,
+        "prediction_sha256": "2cd63e2c80806eef0db9763e89c021923aebec14768913eb269fc593186cd378"
+      },
+      {
+        "target_id": "1h14_A",
+        "status": "ok",
+        "query_length": 405,
+        "ca_pair_lddt": 0.3877707006369427,
+        "residue_ca_lddt": 0.38496175095521895,
+        "tm_score_fixed_full_length": 0.5091,
+        "prediction_sha256": "9ea594752607df590abb701a9aee1e80e5985b10836d51ed2c53c152a29dfaaa"
+      },
+      {
+        "target_id": "3b2s_A",
+        "status": "ok",
+        "query_length": 451,
+        "ca_pair_lddt": 0.5033288420385195,
+        "residue_ca_lddt": 0.5157440359473843,
+        "tm_score_fixed_full_length": 0.5309,
+        "prediction_sha256": "c5fd59eecc6102fc7151c828348d4c5d2d28fa50f67783b257534cf674dee783"
+      },
+      {
+        "target_id": "3a21_A",
+        "status": "ok",
+        "query_length": 614,
+        "ca_pair_lddt": 0.48833772236255174,
+        "residue_ca_lddt": 0.5052980561302325,
+        "tm_score_fixed_full_length": 0.3778,
+        "prediction_sha256": "21a12964babd5dcaed69f60ef25a0c43906e3f358ac5405d2a4fa3af8acdff71"
+      },
+      {
+        "target_id": "7ryx_A",
+        "status": "ok",
+        "query_length": 536,
+        "ca_pair_lddt": 0.36594045025417576,
+        "residue_ca_lddt": 0.38818925288620054,
+        "tm_score_fixed_full_length": 0.3051,
+        "prediction_sha256": "4aca4fbfa5c9f88e5ba8397dc951a113e2f4e1883abc121b680dd729929606ec"
+      },
+      {
+        "target_id": "7dk8_A",
+        "status": "ok",
+        "query_length": 598,
+        "ca_pair_lddt": 0.3791232073011734,
+        "residue_ca_lddt": 0.3935047939776622,
+        "tm_score_fixed_full_length": 0.2764,
+        "prediction_sha256": "c4fee1e10dc678b365c5c7971abf46522de61d35b9610e1db6fefa73252b57fd"
+      },
+      {
+        "target_id": "6o9q_A",
+        "status": "ok",
+        "query_length": 566,
+        "ca_pair_lddt": 0.4746198329406725,
+        "residue_ca_lddt": 0.49627297265564374,
+        "tm_score_fixed_full_length": 0.4541,
+        "prediction_sha256": "c0ebc300329e0f6e9d41e1de04ec042721a007ca0817de5e396d35ea3396356a"
+      },
+      {
+        "target_id": "4kh2_A",
+        "status": "ok",
+        "query_length": 627,
+        "ca_pair_lddt": 0.4235091743119266,
+        "residue_ca_lddt": 0.43712374451329883,
+        "tm_score_fixed_full_length": 0.3699,
+        "prediction_sha256": "a7df2f93ec29df31d6126b15492b776d33e355a857709fc03497925cec722848"
+      },
+      {
+        "target_id": "5bpp_A",
+        "status": "ok",
+        "query_length": 631,
+        "ca_pair_lddt": 0.4354722939994258,
+        "residue_ca_lddt": 0.4643404910813759,
+        "tm_score_fixed_full_length": 0.3533,
+        "prediction_sha256": "dcdbe4edf5fbde62ac07042578d0a9315c5e4be5d27ea752694f336672525416"
+      },
+      {
+        "target_id": "1crl_A",
+        "status": "ok",
+        "query_length": 534,
+        "ca_pair_lddt": 0.30301724137931035,
+        "residue_ca_lddt": 0.31863343394657095,
+        "tm_score_fixed_full_length": 0.3393,
+        "prediction_sha256": "b57513516387431f7e77e94f85721204b597311824233cc1e9b881f28bd3c061"
+      },
+      {
+        "target_id": "1ho5_A",
+        "status": "ok",
+        "query_length": 525,
+        "ca_pair_lddt": 0.5486580550163979,
+        "residue_ca_lddt": 0.5395525693764178,
+        "tm_score_fixed_full_length": 0.5802,
+        "prediction_sha256": "d22e2c15d0bbd2ff5fae187233a993e937e37b5f94583e7939eb5bd7705e4c43"
+      },
+      {
+        "target_id": "4h5y_A",
+        "status": "ok",
+        "query_length": 570,
+        "ca_pair_lddt": 0.5419532627865962,
+        "residue_ca_lddt": 0.5648222584349764,
+        "tm_score_fixed_full_length": 0.3064,
+        "prediction_sha256": "514115100fd9a6e53d5068004c88577a2070750d9c017f8f611eb413d6a7bd31"
+      },
+      {
+        "target_id": "5uqm_A",
+        "status": "ok",
+        "query_length": 563,
+        "ca_pair_lddt": 0.32051053830817433,
+        "residue_ca_lddt": 0.33597821197157723,
+        "tm_score_fixed_full_length": 0.2158,
+        "prediction_sha256": "bda95fcf946338874c037267ca985117b92154f3299c55e973991460b3e81dc0"
+      },
+      {
+        "target_id": "1q7m_A",
+        "status": "ok",
+        "query_length": 566,
+        "ca_pair_lddt": 0.7247523556414593,
+        "residue_ca_lddt": 0.7261063789579133,
+        "tm_score_fixed_full_length": 0.5701,
+        "prediction_sha256": "b672b6884bfbd636c5b6f23f42fa128924864315ec6506e90471b2df88f0ff40"
+      },
+      {
+        "target_id": "1oxy_A",
+        "status": "ok",
+        "query_length": 628,
+        "ca_pair_lddt": 0.2771822830037578,
+        "residue_ca_lddt": 0.2814703727762961,
+        "tm_score_fixed_full_length": 0.2308,
+        "prediction_sha256": "261102ed2eca3f640c2a77cf2d58d1d6cd79a0bef0e953c8dbd398434b0c2ca6"
+      },
+      {
+        "target_id": "2j4d_A",
+        "status": "ok",
+        "query_length": 525,
+        "ca_pair_lddt": 0.3306925308194344,
+        "residue_ca_lddt": 0.33638021918659844,
+        "tm_score_fixed_full_length": 0.2467,
+        "prediction_sha256": "8f6786b6c4e23bd5ce29600c5924f6829692fd2411290282ee450eae93c9378a"
+      },
+      {
+        "target_id": "3i5o_A",
+        "status": "ok",
+        "query_length": 592,
+        "ca_pair_lddt": 0.43223868165863527,
+        "residue_ca_lddt": 0.44735184601272643,
+        "tm_score_fixed_full_length": 0.3655,
+        "prediction_sha256": "3864d72c94801c918b8b2d051fb3ed75ba3b2068652beed5c130f2002c46281c"
+      },
+      {
+        "target_id": "4lpc_A",
+        "status": "ok",
+        "query_length": 612,
+        "ca_pair_lddt": 0.4212334880399857,
+        "residue_ca_lddt": 0.42165490399588423,
+        "tm_score_fixed_full_length": 0.3585,
+        "prediction_sha256": "dd6debf9b27a25c63a5fd9d0171aa7a979ada1f04b02a539628991dd546771f8"
+      },
+      {
+        "target_id": "6jg1_A",
+        "status": "ok",
+        "query_length": 609,
+        "ca_pair_lddt": 0.49365927992148356,
+        "residue_ca_lddt": 0.49742096573600697,
+        "tm_score_fixed_full_length": 0.654,
+        "prediction_sha256": "ae5a1818867cc2ca5cedfcaa6882905a5d28e25f494add5bd2349e7acf506d8b"
+      },
+      {
+        "target_id": "4bq2_A",
+        "status": "ok",
+        "query_length": 750,
+        "ca_pair_lddt": 0.39934246700879766,
+        "residue_ca_lddt": 0.41383791117147045,
+        "tm_score_fixed_full_length": 0.3532,
+        "prediction_sha256": "14d3ad3563cdb1c14afdd91f5e62e6c4ed19989c844be8d8ceb12532b2afaefd"
+      },
+      {
+        "target_id": "5fr3_A",
+        "status": "ok",
+        "query_length": 722,
+        "ca_pair_lddt": 0.30342869742572076,
+        "residue_ca_lddt": 0.32659277170812917,
+        "tm_score_fixed_full_length": 0.2568,
+        "prediction_sha256": "c46a417fdcb869b78e38f61449e49ef975d014a9e3bcdce120ad16fef464c7ad"
+      },
+      {
+        "target_id": "4aef_A",
+        "status": "ok",
+        "query_length": 645,
+        "ca_pair_lddt": 0.4622097902097902,
+        "residue_ca_lddt": 0.46335490964330783,
+        "tm_score_fixed_full_length": 0.5617,
+        "prediction_sha256": "daeac00210cd4dc873c10b1f915d2c4e3168147597b912e93b08853e32f48e99"
+      },
+      {
+        "target_id": "1ms1_A",
+        "status": "ok",
+        "query_length": 648,
+        "ca_pair_lddt": 0.5649460460621678,
+        "residue_ca_lddt": 0.5551456345671896,
+        "tm_score_fixed_full_length": 0.5108,
+        "prediction_sha256": "2c8b499763fed6ff4465c1af09c281e6d5735a52edb9fde628358573c87321b5"
+      },
+      {
+        "target_id": "1n7o_A",
+        "status": "ok",
+        "query_length": 721,
+        "ca_pair_lddt": 0.37736642827092975,
+        "residue_ca_lddt": 0.38358917577827173,
+        "tm_score_fixed_full_length": 0.3913,
+        "prediction_sha256": "4b407b5d75f19acf2a65f814e84212734454707a4d3519763370ecfcc3dff20e"
+      },
+      {
+        "target_id": "2zxo_A",
+        "status": "ok",
+        "query_length": 666,
+        "ca_pair_lddt": 0.5671709962888952,
+        "residue_ca_lddt": 0.5561456665189157,
+        "tm_score_fixed_full_length": 0.5135,
+        "prediction_sha256": "4ee0891bfc504812283a88dbf04fcc953de7e7a1c7d4b263de13fb4ebe404f9d"
+      },
+      {
+        "target_id": "1eo7_A",
+        "status": "ok",
+        "query_length": 686,
+        "ca_pair_lddt": 0.47282121455197473,
+        "residue_ca_lddt": 0.47463650706806987,
+        "tm_score_fixed_full_length": 0.4839,
+        "prediction_sha256": "09fd0cb9fa6b219ca3694a20374d66dda137d7feb72ee16b91aa161228b9f9da"
+      },
+      {
+        "target_id": "6p2m_A",
+        "status": "ok",
+        "query_length": 696,
+        "ca_pair_lddt": 0.7299372825489837,
+        "residue_ca_lddt": 0.7264138111408386,
+        "tm_score_fixed_full_length": 0.6266,
+        "prediction_sha256": "1f99acf4cb445b2083d5318fddc82d40e623597f05e2c0f612f178309e5cf88c"
+      },
+      {
+        "target_id": "3zr5_A",
+        "status": "ok",
+        "query_length": 656,
+        "ca_pair_lddt": 0.4401165737455651,
+        "residue_ca_lddt": 0.4468733482241447,
+        "tm_score_fixed_full_length": 0.4201,
+        "prediction_sha256": "63aa1bc28566139f75ecf4c8a5a165df54399e8b801e56d6e75946df247c5e15"
+      },
+      {
+        "target_id": "6ezs_A",
+        "status": "ok",
+        "query_length": 652,
+        "ca_pair_lddt": 0.499064350351916,
+        "residue_ca_lddt": 0.4969617994631115,
+        "tm_score_fixed_full_length": 0.5525,
+        "prediction_sha256": "b6b0aa49fec4d009cfb5b84b6b8069e6d81fe7a88bad947ebcc1e78fdba137b4"
+      },
+      {
+        "target_id": "4e55_A",
+        "status": "ok",
+        "query_length": 694,
+        "ca_pair_lddt": 0.29049904525984416,
+        "residue_ca_lddt": 0.30162651147417563,
+        "tm_score_fixed_full_length": 0.2222,
+        "prediction_sha256": "86ae42b44572da9308b8199ab33900f2cb010b61eb9c20d17441223026fb5112"
+      },
+      {
+        "target_id": "6b3b_A",
+        "status": "ok",
+        "query_length": 652,
+        "ca_pair_lddt": 0.41083033538354413,
+        "residue_ca_lddt": 0.4348667297815992,
+        "tm_score_fixed_full_length": 0.2927,
+        "prediction_sha256": "dd06dccc2fbfe05baadc8daf726080a70eddcb7d7dd81aa9c0f008d97d8b270d"
+      },
+      {
+        "target_id": "2ya0_A",
+        "status": "ok",
+        "query_length": 714,
+        "ca_pair_lddt": 0.4279277208147501,
+        "residue_ca_lddt": 0.4357437918347794,
+        "tm_score_fixed_full_length": 0.4739,
+        "prediction_sha256": "b3bc59e8d23ac902c909fa7fd6d5afd50819704caf22db842ee034f092de4a62"
+      },
+      {
+        "target_id": "2zwa_A",
+        "status": "ok",
+        "query_length": 695,
+        "ca_pair_lddt": 0.6295738767948124,
+        "residue_ca_lddt": 0.6263557688815949,
+        "tm_score_fixed_full_length": 0.5904,
+        "prediction_sha256": "0e6b37bde3d5c7b8cef6afdedd48ffb779afb68c9ee5dfec6fedffabc0372fd2"
+      },
+      {
+        "target_id": "3fvy_A",
+        "status": "ok",
+        "query_length": 728,
+        "ca_pair_lddt": 0.3126486620416254,
+        "residue_ca_lddt": 0.3298786216690448,
+        "tm_score_fixed_full_length": 0.2293,
+        "prediction_sha256": "77d27b294e6c56bf4186e34c1e1915b32dccafd562d4ec1bb94fae1be5588694"
+      },
+      {
+        "target_id": "3amk_A",
+        "status": "ok",
+        "query_length": 702,
+        "ca_pair_lddt": 0.4197264218862491,
+        "residue_ca_lddt": 0.4102204407543052,
+        "tm_score_fixed_full_length": 0.3977,
+        "prediction_sha256": "eb4376cea36d180c792830c9d96a68adc6d211934d86b6ff85f3b73ad00ae96b"
+      }
+    ],
+    "gplus_s20260925": [
+      {
+        "target_id": "2qri_A",
+        "status": "ok",
+        "query_length": 422,
+        "ca_pair_lddt": 0.5415255976197805,
+        "residue_ca_lddt": 0.5539414527752037,
+        "tm_score_fixed_full_length": 0.2908,
+        "prediction_sha256": "ca0a900d4e74633b0f970671f27fc28cef5639dcb355988c1fea61f711c6bb82"
+      },
+      {
+        "target_id": "7b60_A",
+        "status": "ok",
+        "query_length": 496,
+        "ca_pair_lddt": 0.7499443702714731,
+        "residue_ca_lddt": 0.7413147264415941,
+        "tm_score_fixed_full_length": 0.6889,
+        "prediction_sha256": "d5b07073f65d30c1c7411322909b5b860bdcdcf4e09aa50a18f09067dabc30b2"
+      },
+      {
+        "target_id": "2x1i_A",
+        "status": "ok",
+        "query_length": 500,
+        "ca_pair_lddt": 0.5052918894830659,
+        "residue_ca_lddt": 0.5184037473243833,
+        "tm_score_fixed_full_length": 0.5501,
+        "prediction_sha256": "cd173f2feb72e1812fd0f418d6fe91fed8884ba921fc1df8f939460fdace1487"
+      },
+      {
+        "target_id": "4ego_A",
+        "status": "ok",
+        "query_length": 410,
+        "ca_pair_lddt": 0.34789847898478987,
+        "residue_ca_lddt": 0.3527267560509355,
+        "tm_score_fixed_full_length": 0.2742,
+        "prediction_sha256": "36991f4da3818a76556f8dae04b54abd32c0ee2340947f17df10bacfb1b45a97"
+      },
+      {
+        "target_id": "3re2_A",
+        "status": "ok",
+        "query_length": 472,
+        "ca_pair_lddt": 0.5172862136584534,
+        "residue_ca_lddt": 0.5181046921775098,
+        "tm_score_fixed_full_length": 0.4954,
+        "prediction_sha256": "beed98ae906d772ef9fec9e9114b74496bb478a69f2622ff3900d1f93a24e981"
+      },
+      {
+        "target_id": "2v3d_A",
+        "status": "ok",
+        "query_length": 505,
+        "ca_pair_lddt": 0.5880609082333917,
+        "residue_ca_lddt": 0.579203696052231,
+        "tm_score_fixed_full_length": 0.7097,
+        "prediction_sha256": "4cf9bfc2013cd1f085281ed378d5fb5a1bb4b05d9868fb11653dc1fca2c1df41"
+      },
+      {
+        "target_id": "1u3d_A",
+        "status": "ok",
+        "query_length": 509,
+        "ca_pair_lddt": 0.39797815477573784,
+        "residue_ca_lddt": 0.4092724364792769,
+        "tm_score_fixed_full_length": 0.3684,
+        "prediction_sha256": "2d27ff0d7d49e15aa4cba04b0ff75cf15dafb9a2827670e8a5411bc4ec99cb32"
+      },
+      {
+        "target_id": "6uqj_A",
+        "status": "ok",
+        "query_length": 508,
+        "ca_pair_lddt": 0.5563584826427772,
+        "residue_ca_lddt": 0.5759696996859605,
+        "tm_score_fixed_full_length": 0.6424,
+        "prediction_sha256": "627e5243e68c3622f57b0c5f78cff5289ea33e306e553cf978754770734d0519"
+      },
+      {
+        "target_id": "4g3j_A",
+        "status": "ok",
+        "query_length": 448,
+        "ca_pair_lddt": 0.3531324606898823,
+        "residue_ca_lddt": 0.3571833802270774,
+        "tm_score_fixed_full_length": 0.2785,
+        "prediction_sha256": "e82d2fd5474d20228414303af062936ec32b05b536fdfbcd5e3804df390df5a0"
+      },
+      {
+        "target_id": "6muk_A",
+        "status": "ok",
+        "query_length": 401,
+        "ca_pair_lddt": 0.34699367088607597,
+        "residue_ca_lddt": 0.3606747438389918,
+        "tm_score_fixed_full_length": 0.2483,
+        "prediction_sha256": "3fbfcd85c6fefc01078c7339e8746f913241469a4b0bcc84d874f7a005eaf221"
+      },
+      {
+        "target_id": "5l91_A",
+        "status": "ok",
+        "query_length": 410,
+        "ca_pair_lddt": 0.5255272192251104,
+        "residue_ca_lddt": 0.5315651157803306,
+        "tm_score_fixed_full_length": 0.5415,
+        "prediction_sha256": "5fa60f851f3f90fb3794afadcd12b5576a18a1e50d83fea9966ef5dab07b294b"
+      },
+      {
+        "target_id": "6kjf_A",
+        "status": "ok",
+        "query_length": 400,
+        "ca_pair_lddt": 0.43064123729255366,
+        "residue_ca_lddt": 0.43657446597960836,
+        "tm_score_fixed_full_length": 0.5497,
+        "prediction_sha256": "bb1fe1b260241f7dfc5c09879bded7d8e0a10f7fece03c6eba7e6f6f87c2cc16"
+      },
+      {
+        "target_id": "3pu8_A",
+        "status": "ok",
+        "query_length": 392,
+        "ca_pair_lddt": 0.334688489968321,
+        "residue_ca_lddt": 0.3551860784923748,
+        "tm_score_fixed_full_length": 0.2732,
+        "prediction_sha256": "c3eff93256c9770cd3ba02c69f9ca3f96069d23564c01281202a50e046938a3a"
+      },
+      {
+        "target_id": "5jir_A",
+        "status": "ok",
+        "query_length": 421,
+        "ca_pair_lddt": 0.38111249879911613,
+        "residue_ca_lddt": 0.3900279408623784,
+        "tm_score_fixed_full_length": 0.3028,
+        "prediction_sha256": "5548fd093400dc9b0a37f31a9836ed5bc54a06a14cc595ebbe64e0fd2ea174bd"
+      },
+      {
+        "target_id": "1h14_A",
+        "status": "ok",
+        "query_length": 405,
+        "ca_pair_lddt": 0.3838004246284501,
+        "residue_ca_lddt": 0.3860562136439188,
+        "tm_score_fixed_full_length": 0.4544,
+        "prediction_sha256": "62daaebb232578af2aec3da5e8da281f68ae3ffb7ee6f7463ed170912969db2c"
+      },
+      {
+        "target_id": "3b2s_A",
+        "status": "ok",
+        "query_length": 451,
+        "ca_pair_lddt": 0.4056629943726718,
+        "residue_ca_lddt": 0.41656914777351683,
+        "tm_score_fixed_full_length": 0.4085,
+        "prediction_sha256": "18dd4d49e0cf88d0b76828482026d8cde6ee60d1d98211fa7ee20c06fb9582a8"
+      },
+      {
+        "target_id": "3a21_A",
+        "status": "ok",
+        "query_length": 614,
+        "ca_pair_lddt": 0.4189686677057022,
+        "residue_ca_lddt": 0.4335774493846818,
+        "tm_score_fixed_full_length": 0.3588,
+        "prediction_sha256": "9f43c813459724cd0fef358614937d53f727f8a85818cc27ab446229cdcb8e0d"
+      },
+      {
+        "target_id": "7ryx_A",
+        "status": "ok",
+        "query_length": 536,
+        "ca_pair_lddt": 0.3747276688453159,
+        "residue_ca_lddt": 0.3992884719308256,
+        "tm_score_fixed_full_length": 0.2842,
+        "prediction_sha256": "827cde9d41bbb6902792e25631cadf3f851073ff87a8fadd1e8eed41f52ad96d"
+      },
+      {
+        "target_id": "7dk8_A",
+        "status": "ok",
+        "query_length": 598,
+        "ca_pair_lddt": 0.32178943937418514,
+        "residue_ca_lddt": 0.33815765246707596,
+        "tm_score_fixed_full_length": 0.2116,
+        "prediction_sha256": "37c0947fcb9b6f429e7b9046eb75e7013433cf59ebac99ba7213c64a7b1d04bd"
+      },
+      {
+        "target_id": "6o9q_A",
+        "status": "ok",
+        "query_length": 566,
+        "ca_pair_lddt": 0.38835939173270506,
+        "residue_ca_lddt": 0.4013917057321205,
+        "tm_score_fixed_full_length": 0.2672,
+        "prediction_sha256": "a8f00185be911113327479c31d0fc5c96cb9872a595b5739cd09698adb47cccb"
+      },
+      {
+        "target_id": "4kh2_A",
+        "status": "ok",
+        "query_length": 627,
+        "ca_pair_lddt": 0.3489965596330275,
+        "residue_ca_lddt": 0.3608976570747511,
+        "tm_score_fixed_full_length": 0.329,
+        "prediction_sha256": "1cda1398c80fe01cd635c579e09b751e1934d047aae4b6f0b9236db412e22453"
+      },
+      {
+        "target_id": "5bpp_A",
+        "status": "ok",
+        "query_length": 631,
+        "ca_pair_lddt": 0.4964542061441286,
+        "residue_ca_lddt": 0.5282334913426744,
+        "tm_score_fixed_full_length": 0.4114,
+        "prediction_sha256": "a0f4ea8566ab0b5c757fafd13525c37e3cc6ad05f36830c77e55b93dcfb7fdb7"
+      },
+      {
+        "target_id": "1crl_A",
+        "status": "ok",
+        "query_length": 534,
+        "ca_pair_lddt": 0.3205665024630542,
+        "residue_ca_lddt": 0.3290408462972705,
+        "tm_score_fixed_full_length": 0.3702,
+        "prediction_sha256": "6e7620dd868c7e5732b4a4569ea7fb76ca9e48bf63ec3b1e99549d7f577559c9"
+      },
+      {
+        "target_id": "1ho5_A",
+        "status": "ok",
+        "query_length": 525,
+        "ca_pair_lddt": 0.5528244428083796,
+        "residue_ca_lddt": 0.552495475760098,
+        "tm_score_fixed_full_length": 0.5551,
+        "prediction_sha256": "895732cdb576c3c4e2e6180c1ff2a11d00d306d92778a6c901bdc53d32a4e837"
+      },
+      {
+        "target_id": "4h5y_A",
+        "status": "ok",
+        "query_length": 570,
+        "ca_pair_lddt": 0.5318783068783068,
+        "residue_ca_lddt": 0.5625703910701371,
+        "tm_score_fixed_full_length": 0.2655,
+        "prediction_sha256": "9ef5b61f0154e467997713b530f3e8e47a4fd9415ff03b7d078f611ce25b7535"
+      },
+      {
+        "target_id": "5uqm_A",
+        "status": "ok",
+        "query_length": 563,
+        "ca_pair_lddt": 0.3126068071774423,
+        "residue_ca_lddt": 0.3271835053916291,
+        "tm_score_fixed_full_length": 0.2434,
+        "prediction_sha256": "e8d9a8785730aabb03c6946028df646d98f9ed52e80cf46e39b596f7889d44e6"
+      },
+      {
+        "target_id": "1q7m_A",
+        "status": "ok",
+        "query_length": 566,
+        "ca_pair_lddt": 0.7038988886204397,
+        "residue_ca_lddt": 0.7109211575714778,
+        "tm_score_fixed_full_length": 0.5531,
+        "prediction_sha256": "f4a9d4cbf5783dd65be2ed7436f3fa955fcb5d6a1d7600f8cfc37335f9197e9a"
+      },
+      {
+        "target_id": "1oxy_A",
+        "status": "ok",
+        "query_length": 628,
+        "ca_pair_lddt": 0.27194603585289223,
+        "residue_ca_lddt": 0.27832085419607133,
+        "tm_score_fixed_full_length": 0.2444,
+        "prediction_sha256": "135aec317b99ad2fc1185faf0ae52c516a383021e2214c8a4631cc029e3e4d6f"
+      },
+      {
+        "target_id": "2j4d_A",
+        "status": "ok",
+        "query_length": 525,
+        "ca_pair_lddt": 0.3815083393763597,
+        "residue_ca_lddt": 0.38310347242004694,
+        "tm_score_fixed_full_length": 0.351,
+        "prediction_sha256": "47b4f31c6366964576afcede0682071e14e4835029d54304c85c7c8cc88bc961"
+      },
+      {
+        "target_id": "3i5o_A",
+        "status": "ok",
+        "query_length": 592,
+        "ca_pair_lddt": 0.4664019275388185,
+        "residue_ca_lddt": 0.4810135401761128,
+        "tm_score_fixed_full_length": 0.3973,
+        "prediction_sha256": "23d853b365651543bc55bfd0af4f3286c4cf96b7a55022833372ede2197d47ef"
+      },
+      {
+        "target_id": "4lpc_A",
+        "status": "ok",
+        "query_length": 612,
+        "ca_pair_lddt": 0.4500327264072355,
+        "residue_ca_lddt": 0.44660581714767955,
+        "tm_score_fixed_full_length": 0.5249,
+        "prediction_sha256": "7cc5d42aeba0546a8a6ca468be2c4c92fee9ddaf885926ed3c0337129cda568d"
+      },
+      {
+        "target_id": "6jg1_A",
+        "status": "ok",
+        "query_length": 609,
+        "ca_pair_lddt": 0.4224391755772509,
+        "residue_ca_lddt": 0.4421386293189565,
+        "tm_score_fixed_full_length": 0.4077,
+        "prediction_sha256": "75fa59b0ceea380ed7b10042f37d25376fa63ffb5397164025bb26073756c79a"
+      },
+      {
+        "target_id": "4bq2_A",
+        "status": "ok",
+        "query_length": 750,
+        "ca_pair_lddt": 0.3849431818181818,
+        "residue_ca_lddt": 0.3986386961941476,
+        "tm_score_fixed_full_length": 0.408,
+        "prediction_sha256": "d6bb395f0672dba18ada0acc5b79bdc4a3809ac522336a4366308dc1a95caff6"
+      },
+      {
+        "target_id": "5fr3_A",
+        "status": "ok",
+        "query_length": 722,
+        "ca_pair_lddt": 0.2823852047847418,
+        "residue_ca_lddt": 0.3083338164759718,
+        "tm_score_fixed_full_length": 0.2325,
+        "prediction_sha256": "279105802b82d5adccf1e12041dbcab828427f9c83bece30f34b1262ccc80608"
+      },
+      {
+        "target_id": "4aef_A",
+        "status": "ok",
+        "query_length": 645,
+        "ca_pair_lddt": 0.4342937062937063,
+        "residue_ca_lddt": 0.43291508818851665,
+        "tm_score_fixed_full_length": 0.5089,
+        "prediction_sha256": "10e3dfcd306c3ebd8e841b57817009c2ab14c003578d5e3a264ce6414ddc970e"
+      },
+      {
+        "target_id": "1ms1_A",
+        "status": "ok",
+        "query_length": 648,
+        "ca_pair_lddt": 0.5939630643689269,
+        "residue_ca_lddt": 0.5863019979822667,
+        "tm_score_fixed_full_length": 0.5193,
+        "prediction_sha256": "247c6df8d2da19d26b299deebdaa56bb5cafb2fbf69c38f3c8fe5d18ca8cee6f"
+      },
+      {
+        "target_id": "1n7o_A",
+        "status": "ok",
+        "query_length": 721,
+        "ca_pair_lddt": 0.32370401533211796,
+        "residue_ca_lddt": 0.33339213321007516,
+        "tm_score_fixed_full_length": 0.3357,
+        "prediction_sha256": "3226ea58efdb64ffc9d2fe104da6ee9d71d68b7c6f6d62fea29620e439fc2bcc"
+      },
+      {
+        "target_id": "2zxo_A",
+        "status": "ok",
+        "query_length": 666,
+        "ca_pair_lddt": 0.5603482729089352,
+        "residue_ca_lddt": 0.5478566178973856,
+        "tm_score_fixed_full_length": 0.4828,
+        "prediction_sha256": "28d72bcbe5a46f0c5b435ce1c8af1f548065540145ec4c820b69dfe30485a109"
+      },
+      {
+        "target_id": "1eo7_A",
+        "status": "ok",
+        "query_length": 686,
+        "ca_pair_lddt": 0.4969683386023687,
+        "residue_ca_lddt": 0.5001647836503453,
+        "tm_score_fixed_full_length": 0.4951,
+        "prediction_sha256": "fba9aace570360d1168ba9883edeb6961619fc4e5253f053ef6de632541add0a"
+      },
+      {
+        "target_id": "6p2m_A",
+        "status": "ok",
+        "query_length": 696,
+        "ca_pair_lddt": 0.7397454678630287,
+        "residue_ca_lddt": 0.7405269040227663,
+        "tm_score_fixed_full_length": 0.6576,
+        "prediction_sha256": "dcc876a3eb023193503759798f0d8a9d967b4606710d047fbb62ddf2687dd7d9"
+      },
+      {
+        "target_id": "3zr5_A",
+        "status": "ok",
+        "query_length": 656,
+        "ca_pair_lddt": 0.4368094272681196,
+        "residue_ca_lddt": 0.44127360902186363,
+        "tm_score_fixed_full_length": 0.4001,
+        "prediction_sha256": "0af64a2460d486bd1cc678da95a5c5a61b8f2e5b72b6043834c214577986feed"
+      },
+      {
+        "target_id": "6ezs_A",
+        "status": "ok",
+        "query_length": 652,
+        "ca_pair_lddt": 0.49664841917104235,
+        "residue_ca_lddt": 0.4944608825964709,
+        "tm_score_fixed_full_length": 0.5293,
+        "prediction_sha256": "1970a09fc189fe3dc45c665cc7371c6ae8c8bac2f56d421d7851ba00f57390dc"
+      },
+      {
+        "target_id": "4e55_A",
+        "status": "ok",
+        "query_length": 694,
+        "ca_pair_lddt": 0.267572379625329,
+        "residue_ca_lddt": 0.2838986521201327,
+        "tm_score_fixed_full_length": 0.2069,
+        "prediction_sha256": "c4fa12c285411f6e6d281b0af9d6578b89e29e361002bd107dedbb0e6b800cf0"
+      },
+      {
+        "target_id": "6b3b_A",
+        "status": "ok",
+        "query_length": 652,
+        "ca_pair_lddt": 0.39667227573401415,
+        "residue_ca_lddt": 0.41719686114291893,
+        "tm_score_fixed_full_length": 0.3167,
+        "prediction_sha256": "778727aac92faac6cc37f5434b201b0c212ec2af04d68b791365b59c5299de00"
+      },
+      {
+        "target_id": "2ya0_A",
+        "status": "ok",
+        "query_length": 714,
+        "ca_pair_lddt": 0.49065474274679294,
+        "residue_ca_lddt": 0.4902867315637046,
+        "tm_score_fixed_full_length": 0.6034,
+        "prediction_sha256": "420f3fb3468e20f32d09069f9d72822b7c7d67bd336cbf4826a9e10ac844ef6c"
+      },
+      {
+        "target_id": "2zwa_A",
+        "status": "ok",
+        "query_length": 695,
+        "ca_pair_lddt": 0.5687175132520199,
+        "residue_ca_lddt": 0.5675248755401437,
+        "tm_score_fixed_full_length": 0.4886,
+        "prediction_sha256": "96164d6ae7fd08d6a7b8cb33c0947a9880837533ff054de8a6cd785aa69c3834"
+      },
+      {
+        "target_id": "3fvy_A",
+        "status": "ok",
+        "query_length": 728,
+        "ca_pair_lddt": 0.29664271555996036,
+        "residue_ca_lddt": 0.313807404671628,
+        "tm_score_fixed_full_length": 0.2211,
+        "prediction_sha256": "97847fb1a080fa1696eb66ba1f15e50e7febebab47e8e60bb8690f3011954012"
+      },
+      {
+        "target_id": "3amk_A",
+        "status": "ok",
+        "query_length": 702,
+        "ca_pair_lddt": 0.39747248791525247,
+        "residue_ca_lddt": 0.3929142073387908,
+        "tm_score_fixed_full_length": 0.347,
+        "prediction_sha256": "8e89cfadf6bd4fec73b1f46452a11124d3c327f01c8bd46a1f515ad2f6888dcf"
+      }
+    ]
+  }
+}

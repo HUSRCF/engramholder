@@ -2,7 +2,9 @@
 
 On 2026-09-22 the user explicitly resumed writing in a separate writing branch,
 approved the central claim and contribution order, and authorized replacing the
-ICLR example text with section scaffolding and placeholders. The prior writing
+ICLR example text with section scaffolding and placeholders. A subsequent review
+authorized filling the manuscript, generating figures/tables from verified JSON,
+and preparing a bounded anonymous artifact. The prior writing
 pause is superseded for this authorized scope.
 
 Start with README.md, notes/workflow.md, and reports/evidence_review.md; use
@@ -19,3 +21,7 @@ The writing branch does not alter experiment contracts, running jobs, or result
 artifacts. Do not commit or push without a request. The original template is
 backed up under notes/writing_branch_20260922/iclr2027_original_template.tex.
 notes/unreviewed_writing_20260921 remains archival, not the active manuscript.
+
+Current manuscript status: reports/manuscript_fill_20260922.md. Generated numbers
+come from scripts/build_paper_assets.py with a locked input hash manifest; do not
+manually edit numeric outputs or silently update the evidence lock.
