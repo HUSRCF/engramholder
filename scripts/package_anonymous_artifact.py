@@ -26,7 +26,7 @@ for name in ['iclr2027_conference.tex','iclr2027_conference.sty','iclr2027_confe
 for directory in ['sections','appendices','figures','generated','reproducibility']:
     for p in (ROOT/directory).rglob('*'):
         if p.is_file() and '__pycache__' not in p.parts:write(p,DEST/p.relative_to(ROOT))
-lockpath=Path('notes/writing_branch_20260922/paper_sources.v2.lock.json')
+lockpath=Path('notes/writing_branch_20260922/paper_sources.v3.lock.json')
 inputs=json.loads((ROOT/lockpath).read_text())
 for name in inputs:write(ROOT/name,DEST/name)
 # Only non-scientific identifying strings are redacted; revalidate numerics below.

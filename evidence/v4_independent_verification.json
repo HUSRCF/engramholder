@@ -1,0 +1,199 @@
+{
+  "passed": true,
+  "core_conditions": 864,
+  "student_cases": 10368,
+  "e3_conditions": 864,
+  "raw_scalar_reconstruction_error_max": 0.0,
+  "absolute_tolerance": 1e-12,
+  "bootstrap_seed": 20261204,
+  "bootstrap_draws": 20000,
+  "core_metrics": {
+    "dynamic_equal_decrease_native": {
+      "mean": 0.0007060022815300958,
+      "ci95": [
+        0.0005986303148851798,
+        0.0008147606848391767
+      ],
+      "positive": 86
+    },
+    "dynamic_equal_decrease_rotated": {
+      "mean": 0.0006842311585317926,
+      "ci95": [
+        0.0006018357929396927,
+        0.0007660389722872829
+      ],
+      "positive": 92
+    },
+    "dynamic_equal_decrease_difference": {
+      "mean": 2.1771122998303202e-05,
+      "ci95": [
+        -3.4905640955106135e-05,
+        7.774110459133841e-05
+      ],
+      "positive": 53
+    },
+    "fixed_equal_decrease_native": {
+      "mean": 0.0007076539891572235,
+      "ci95": [
+        0.0006001014119834858,
+        0.000816109986329422
+      ],
+      "positive": 86
+    },
+    "fixed_equal_decrease_rotated": {
+      "mean": 0.0006862861708130646,
+      "ci95": [
+        0.0006030711173135888,
+        0.0007689354675798872
+      ],
+      "positive": 92
+    },
+    "fixed_equal_decrease_difference": {
+      "mean": 2.1367818344158822e-05,
+      "ci95": [
+        -3.50020372869726e-05,
+        7.692483264128765e-05
+      ],
+      "positive": 54
+    },
+    "dynamic_actual_loss_decrease_native": {
+      "mean": 0.07780197368543824,
+      "ci95": [
+        0.06611528427075641,
+        0.08968306541971768
+      ],
+      "positive": 91
+    },
+    "dynamic_actual_loss_decrease_rotated": {
+      "mean": 0.03626783688863119,
+      "ci95": [
+        0.03094657034049799,
+        0.041796366896464966
+      ],
+      "positive": 91
+    },
+    "dynamic_actual_loss_decrease_difference": {
+      "mean": 0.04153413679680707,
+      "ci95": [
+        0.03465552351594646,
+        0.048578310181835185
+      ],
+      "positive": 82
+    },
+    "q_learned_native": {
+      "mean": 0.0007142416782584114,
+      "ci95": [
+        0.0006123139523915796,
+        0.000818147044319462
+      ],
+      "positive": 87
+    },
+    "q_learned_rotated": {
+      "mean": 0.0006818487471898248,
+      "ci95": [
+        0.0006065114659429701,
+        0.0007573827461957519
+      ],
+      "positive": 94
+    },
+    "q_learned_difference": {
+      "mean": 3.239293106858666e-05,
+      "ci95": [
+        -2.4139984156510627e-05,
+        8.785068188659532e-05
+      ],
+      "positive": 56
+    },
+    "norm_ratio_native": {
+      "mean": 0.48283292950024165,
+      "ci95": [
+        0.47029494662367577,
+        0.49537389158023526
+      ],
+      "positive": 96
+    },
+    "norm_ratio_rotated": {
+      "mean": 0.6864207346960814,
+      "ci95": [
+        0.6797471901361977,
+        0.6929255256351289
+      ],
+      "positive": 96
+    },
+    "norm_ratio_difference": {
+      "mean": -0.20358780519583974,
+      "ci95": [
+        -0.21062732292596445,
+        -0.196386564088876
+      ],
+      "positive": 0
+    },
+    "a_difference": {
+      "mean": 0.00012535671654581346,
+      "ci95": [
+        0.00010636262350089934,
+        0.00014451708553630938
+      ],
+      "positive": 86
+    },
+    "oracle_D_difference": {
+      "mean": 0.0013425098575781523,
+      "ci95": [
+        0.0011434914371782482,
+        0.0015423322300651225
+      ],
+      "positive": 86
+    }
+  },
+  "e3_metrics": {
+    "retaining_effect_native": {
+      "mean": 0.0026272706411502983,
+      "ci95": [
+        -0.0020200010940984443,
+        0.007914162096050047
+      ],
+      "positive": 13
+    },
+    "retaining_effect_rotated": {
+      "mean": 0.0058727435491703174,
+      "ci95": [
+        0.0018119850874315072,
+        0.010299223357880551
+      ],
+      "positive": 18
+    },
+    "retaining_effect_difference": {
+      "mean": -0.0032454729080200195,
+      "ci95": [
+        -0.006898216972196543,
+        0.0004946833959332183
+      ],
+      "positive": 9
+    },
+    "norm_ratio_native": {
+      "mean": 0.9491614126388973,
+      "ci95": [
+        0.9128566739735673,
+        0.9825339272081373
+      ],
+      "positive": 24
+    },
+    "norm_ratio_rotated": {
+      "mean": 0.995022991399107,
+      "ci95": [
+        0.9606016295554759,
+        1.028704482883027
+      ],
+      "positive": 24
+    },
+    "norm_ratio_difference": {
+      "mean": -0.04586157876020965,
+      "ci95": [
+        -0.06630852065468842,
+        -0.026300192813730527
+      ],
+      "positive": 5
+    }
+  },
+  "scope": "Archived scalar arithmetic and target-bootstrap reconstruction only; no GPU execution, checkpoint-file rehash, or CIF scoring; correlation intervals not recomputed."
+}

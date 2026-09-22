@@ -1,12 +1,14 @@
 # EngramFold 证据整理仓库
 
-**2026-09-22：已根据审阅意见形成带真实数据和图表的正文初稿。** 写作主分支是 `main`；本地未提交改动不代表远端已同步。当前状态以[填稿进度](reports/manuscript_fill_20260922.md)为准，历史报告保留各自日期。
+**2026-09-23：完整推理四格与v4机制边界已整合，新增近邻定位与复现范围说明；本地编译成功，排版由作者在Overleaf检查。** 写作主分支是 `main`；本地未提交改动不代表远端已同步。当前状态以[填稿进度](reports/manuscript_fill_20260922.md)为准，历史报告保留各自日期。
 
+- [9月23日稿件更新](reports/full_inference_manuscript_update_20260923.md)与[剩余交付优先级](reports/submission_priorities_20260923.md)。
 - [最新PDF](build/iclr2027_conference.pdf)（本机构建产物，不随Git上传）；[表图生成脚本](scripts/build_paper_assets.py)与[数值来源映射](generated/cell_sources.json)。
 - [当前章节与写作任务](notes/writing_branch_20260922/skeleton_files.md)：入口 `iclr2027_conference.tex`，正文在 `sections/`，附录在 `appendices/`。
 - [已确认主线与Introduction候选](notes/writing_branch_20260922/structure_and_opening.md)：参数化×方向交互 → 方法构造 → 迁移与边界。
 
-- [机制证据归档：v4](reports/mechanism_evidence/gradient_hpc3_v4_20260920/README.md)：正式协议、逐目标与精简逐条件数据、独立复算，以及完整推理干预的未启动候选；保留源码哈希差异和数值边界。
+- [完整推理机制干预](reports/mechanism_evidence/full_inference_cross_20260922/README.md)：720次同后端四格预测，匹配整体范数后原生来源优势仍在。
+- [机制证据归档：v4](reports/mechanism_evidence/gradient_hpc3_v4_20260920/README.md)：正式协议、逐目标与精简逐条件数据、独立复算，以及后来完成的完整推理干预之历史候选；保留源码哈希差异和数值边界。
 - [Protenix匹配G+最终结果](reports/protenix_gplus384_results_20260922.md)：3组训练与432次预测全部完成，补齐Train384两个面板的G+；[三项审阅意见](reports/reviewer_priorities_20260922.md)保留决策过程。
 - [9月22日完成结果更新](reports/results_update_20260922.md)：OpenFold旋转G+交互、AtlasFold完整边界与ESMFold2最终评分。
 - [证据审阅报告](reports/evidence_review.md)：核心问题、直接核对的数字、可支持与不可支持的解释，以及仍待补齐的记录。

@@ -25,7 +25,8 @@ SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','lengt
  'openfold_gplus_rotation_records','openfold_train384_records','atlasfold_adapters_records',
  'protenix_gplus384_summary','protenix_gplus384_records','protenix_gplus384_verification',
  'protenix_gplus384_historical_confirm96_records','length48_records',
- 'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock']
+ 'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock',
+ 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit']
 CELLS = {}
 DATA = {}
 
@@ -34,13 +35,13 @@ def read(file, path):
     for key in path: x = x[key]
     return x
 
-def number(key, file, path, operation='identity', signed=False):
+def number(key, file, path, operation='identity', signed=False, scientific=False):
     value = read(file, path)
     if operation == 'mean': value = float(np.mean(value))
     value = float(value)
     assert np.isfinite(value)
     CELLS[key] = dict(source=f'evidence/{file}.json', field_path=path,
-                      operation=operation, value=value, formatted=f'{value:+.5f}' if signed else f'{value:.5f}')
+                      operation=operation, value=value, formatted=(f'{value:+.5e}' if signed else f'{value:.5e}') if scientific else (f'{value:+.5f}' if signed else f'{value:.5f}'))
     return value
 
 def mean_systems(key, file, prefix, names):
@@ -51,11 +52,11 @@ def mean_systems(key, file, prefix, names):
                      operation='arithmetic mean of complete system means',value=value,formatted=f'{value:.5f}')
     return value
 
-def contrast(key, file, path):
+def contrast(key, file, path, scientific=False):
     obj=read(file,path)
-    m=number(key,file,path+['mean'],signed=True)
-    lo=number(key+'Lo',file,path+['ci95',0],signed=True)
-    hi=number(key+'Hi',file,path+['ci95',1],signed=True)
+    m=number(key,file,path+['mean'],signed=True,scientific=scientific)
+    lo=number(key+'Lo',file,path+['ci95',0],signed=True,scientific=scientific)
+    hi=number(key+'Hi',file,path+['ci95',1],signed=True,scientific=scientific)
     assert lo<=m<=hi
     if 'per_target' in obj: assert abs(np.mean(obj['per_target'])-m)<1e-12
     return (m,lo,hi)
@@ -67,11 +68,38 @@ def names_matching(file,path,pattern,expected):
     assert len(names)==expected,(file,pattern,len(names))
     return names
 
+def verify_full_cross():
+    rows=DATA['full_cross_records'];summary=DATA['full_cross_summary']
+    lock=DATA['full_cross_execution_lock'];targets=DATA['full_cross_panel']['targets']
+    assert len(rows)==720 and all(x['status']=='ok' for x in rows)
+    assert len(targets)==24 and len(lock['seeds'])==len(lock['rotations'])==3
+    assert DATA['full_cross_completion']['passed'] and DATA['full_cross_verification']['passed']
+    ids=[x['target_id'] for x in targets];rng=np.random.default_rng(lock['bootstrap_seed'])
+    draw=np.concatenate([rng.choice([i for i,t in enumerate(targets) if t['length_bin']==b],size=(lock['bootstrap_samples'],6)) for b in ['128-191','192-255','256-319','320-384']],axis=1)
+    checked=0
+    for metric in ['ca_lddt','residue_ca_lddt','tm_score']:
+        by={(x['system'],x['target_id']):x[metric] for x in rows};assert len(by)==720
+        arrays={k:np.empty((3,3,24)) for k in ['NN','NR','RN','RR','D_mN','D_mR','A_dN','A_dR','Edir','Eamp','I','NN_minus_RR']}
+        for si,seed in enumerate(lock['seeds']):
+            for ri,rot in enumerate(lock['rotations']):
+                for ti,target in enumerate(ids):
+                    nn=by[f'NN_s{seed}',target];nr=by[f'NR_r{rot}_s{seed}',target]
+                    rn=by[f'RN_r{rot}_s{seed}',target];rr=by[f'RR_r{rot}_s{seed}',target]
+                    values=dict(NN=nn,NR=nr,RN=rn,RR=rr,D_mN=nn-rn,D_mR=nr-rr,A_dN=nn-nr,A_dR=rn-rr,Edir=(nn-rn+nr-rr)/2,Eamp=(nn-nr+rn-rr)/2,I=nn-rn-nr+rr,NN_minus_RR=nn-rr)
+                    for k,v in values.items():arrays[k][si,ri,ti]=v
+        for k,v in arrays.items():
+            reported=summary['metrics'][metric]['cells' if k in ['NN','NR','RN','RR'] else 'contrasts'][k]
+            target=v.mean((0,1));calc=dict(mean=target.mean(),per_target=target,per_seed=v.mean((1,2)),per_rotation=v.mean((0,2)),ci95=np.quantile(target[draw].mean(1),[.025,.975]))
+            for name,value in calc.items():assert np.max(abs(np.asarray(value)-reported[name]))<1e-12,(metric,k,name)
+            assert int((target>0).sum())==reported['positive_targets'];checked+=1
+        assert np.max(abs(arrays['Edir']+arrays['Eamp']-arrays['NN_minus_RR']))<1e-12
+    return checked
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v2.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v3.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -186,6 +214,29 @@ def main():
     contrast('pt_length','length48',['metrics','ca_pair_lddt','primary'])
     contrast('pt_scale','protenix_data_interaction',['direction_difference_in_differences'])
     contrast('pt_scale_native','protenix_data_interaction',['native_train384_minus96'])
+    cross_checks=verify_full_cross()
+    for cell in ['NN','NR','RN','RR']:
+        number('cross_'+cell,'full_cross_summary',['metrics','ca_lddt','cells',cell,'mean'])
+    for metric,short in [('ca_lddt','ca'),('residue_ca_lddt','res'),('tm_score','tm')]:
+        for key in ['D_mN','D_mR','Edir','Eamp','I','A_dN','A_dR','NN_minus_RR']:
+            contrast(f'cross_{short}_{key}','full_cross_summary',['metrics',metric,'contrasts',key])
+    for name,field,sci in [('oracle','oracle_D_difference',False),('equal','dynamic_equal_decrease_difference',True),('actual','dynamic_actual_loss_decrease_difference',False),('norm_diff','norm_ratio_difference',False)]:
+        contrast('v4_'+name,'v4_analysis',['metrics',field],scientific=sci)
+    for key in ['norm_ratio_native','norm_ratio_rotated']:
+        number('v4_'+key,'v4_analysis',['metrics',key,'mean'])
+    contrast('v4_retain','v4_e3_analysis',['metrics','retaining_effect_difference'])
+    assert DATA['v4_independent_verification']['passed']
+    for file in ['v4_analysis','v4_e3_analysis']:
+        d=DATA[file]
+        for key,m in d['metrics'].items():
+            assert abs(np.mean([row[key] for row in d['chains']])-m['mean'])<1e-12
+    def interval_cell(k):return r'$['+tex(k+'Lo')+', '+tex(k+'Hi')+']$'
+    def save_rows(name,rows):
+        (OUT/name).write_text('\n'.join(' & '.join(row)+r' \\' for row in rows)+'\n'+r'\bottomrule'+'\n')
+    save_rows('cross_cells.tex', [['Native source',tex('cross_NN'),tex('cross_NR')],['Rotated source',tex('cross_RN'),tex('cross_RR')]])
+    save_rows('cross_effects.tex',[[label,tex('cross_ca_'+key),interval_cell('cross_ca_'+key)] for label,key in [('At native norm','D_mN'),('At rotated norm','D_mR'),('Average source effect','Edir')]])
+    save_rows('cross_supplement.tex',[[label,key.replace('_',r'\_'),tex('cross_'+short+'_'+key),interval_cell('cross_'+short+'_'+key)] for label,short in [('Pair-lDDT','ca'),('Residue-lDDT','res'),('TM-score','tm')] for key in ['Edir','Eamp','I','A_dN','A_dR']])
+    save_rows('v4_mechanism_rows.tex',[[label,tex('v4_'+key),interval_cell('v4_'+key)] for label,key in [('E1 oracle (normalized)','oracle'),('E2 learned, small equal norm (normalized)','equal'),('E2 learned, actual norm (raw loss)','actual'),('E3 final-residual retention (raw loss)','retain')]])
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -196,7 +247,7 @@ def main():
     for table in ["main_table_rows", "paired_table_rows", "scope_table_rows"]:
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

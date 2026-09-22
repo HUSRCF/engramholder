@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-09-22T17:12:14.813052+00:00",
+  "compile_exit_code": 0,
+  "compiler": "Tectonic 0.17.0, local XeTeX",
+  "template_font_encoding": "T1 explicitly selected in entry point; official style unchanged",
+  "official_files_unchanged": {
+    "iclr2027_conference.sty": true,
+    "iclr2027_conference.bst": true,
+    "math_commands.tex": true
+  },
+  "main_text_ends_page": 9,
+  "total_pdf_pages": 17,
+  "page_count_source": "previous completed aux/pdfinfo check; no further PDF inspection requested",
+  "visual_inspection": "Not completed for final version; user will inspect in Overleaf. No further visual review performed after request.",
+  "generated_numeric_fields": 246,
+  "verified_raw_system_metric_means": 348,
+  "verified_target_interactions": 144,
+  "verified_new_protenix_contrasts": 6,
+  "verified_full_cross_cells_and_contrasts": 36,
+  "active_lock": "paper_sources.v3.lock.json",
+  "pdf_sha256": "889e159bb53e00c3c315e3e0be76313775a0e6b8c498d3058aa9109e9d1ad165",
+  "anonymous_artifact": "build/anonymous_artifact_v6.zip",
+  "anonymous_artifact_sha256": "7d28cd49e0030f560e4a3f54a16b062180930a36f766a2d49f909b8a9328b36e",
+  "scope": "analysis/operator reproduction, not a validated clean-environment full prediction or retraining package",
+  "new_training_or_gpu_inference": false
+}

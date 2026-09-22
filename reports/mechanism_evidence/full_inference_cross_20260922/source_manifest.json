@@ -1,0 +1,14 @@
+{
+  "results_review.md": "7ca37459631503f6f02f429ca51c8fd2d71502ad01612f4813de3a030fd0a52e",
+  "execution_review.md": "cf5afd85d67080bdfcaa4523441407ae2ee6f7c3535c8dcde9c13d5ea0aca1fe",
+  "independent_verification.json": "3cc8a7f017d12d7d8cbcac7789bbc09062ebc9143f0339d120929445f3b81c79",
+  "verify_results.py": "3c5325d6b91f1012cd46dc237c4f50cdfa8a5ab751713ef38ea7e0bf77c660e9",
+  "analysis/analysis.json": "a85df37f8d66a7141a4b4546828f0b8efb881f2ffdf881b232d3f3a3581f8076",
+  "analysis/metric_records.json": "ba2ff61d3e1c849f1c7db8108ab5ab8bfa7cd3b6d4068a0d529726010fe70532",
+  "remote_v3/execution_lock.json": "89e9b8dbdf7f3d9f9af3f4c4acc496b772e86d971e53dc3bd16b083b6b68eb9c",
+  "remote_v3/scoring_prelock.json": "a898d1df93889ea8f4f68e8b0b2c8791ec5c71acbfe1cca5c5802b8e4e267b3c",
+  "remote_v3/completion_review.json": "c6c0ff7d7c3b7290563c71a5d8b388c8a196e2a0c7eb9f67f014a310fab97729",
+  "remote_v3/norm_audit.json": "9d582a33bf20dd4689407c3b5c83cdb3d4922f273788a65245ac0991347b69ee",
+  "panels/scoring24.json": "ff53cd10c6e9edece6e31994b249dd6761a23d76412d2dc47155bbbc0e9b3a6f",
+  "staging/protocol.md": "05c05ba20d9efd4abc6b8d49bbf2a47aa10e97c6971565e5ae5eb8e5e8163a3a"
+}

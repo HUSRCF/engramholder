@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-09-23",
+  "sources": [
+    {
+      "key": "meng2024pissa",
+      "url": "https://arxiv.org/abs/2404.02948",
+      "supports": "PiSSA uses principal components of pretrained weight matrices for trainable factors while freezing residual components; first submission 2024-04-03."
+    },
+    {
+      "key": "wu2024reft",
+      "url": "https://arxiv.org/abs/2404.03592",
+      "supports": "ReFT trains interventions on hidden representations of a frozen base model."
+    }
+  ],
+  "scope": "Primary-source positioning check; not a comprehensive novelty search."
+}

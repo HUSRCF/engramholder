@@ -1,0 +1,9 @@
+{
+  "scorer_sha256": "352464f63910d6a2afdfd5b643c5740ece49666755e311b7c115786db9f28d24",
+  "files": {
+    "/media/PM982/engramfold/audits/post_validation_20260918/vendor/alphafold_lddt.py": "2a3bb36fed58cff0beb92da0af40ca74c5b9892947f01ab825e7547691d99d96",
+    "/media/PM982/engramfold/audits/post_validation_20260918/USalign/TMscore": "c8849339b34ebafda1fd976557eef4f5a54a54d8bd1d2bb70a712c337ab7d317",
+    "/media/PM982/engramfold/runs/full_inference_cross_20260922/panels/scoring24.json": "ff53cd10c6e9edece6e31994b249dd6761a23d76412d2dc47155bbbc0e9b3a6f"
+  },
+  "execution_lock_sha256": "89e9b8dbdf7f3d9f9af3f4c4acc496b772e86d971e53dc3bd16b083b6b68eb9c"
+}

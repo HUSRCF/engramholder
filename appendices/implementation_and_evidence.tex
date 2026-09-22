@@ -240,6 +240,98 @@ measurable responses but did not establish mean positive transfer or a native
 advantage. These distinct outcomes are retained rather than merged into one
 successful mechanism claim.
 
+\subsection{Reachable versus learned updates: v4 diagnostics}
+The v4 study uses nine paired noise conditions on Observed96. E1 constructs
+oracle directions at the common query-only state. E2 evaluates 12 archived
+Train24/tangent/384 adapters, keeping the first three recycles query-only and
+changing only the fourth update. For learned residual $\delta$, it compares
+$\ell(U_q)-\ell(U_q+\eta\delta/\|\delta\|)$, normalized by
+$\eta\|g\|$, at $\eta=10^{-3}\|U_q\|$, with the unnormalized actual-scale
+change $\ell(U_q)-\ell(U_q+\delta)$. These quantities have different units and
+scales; their difference is not an amplitude attribution.
+
+\begin{table}[h]
+\caption{v4 task-loss diagnostics: native-minus-rotation effects. E2 small
+matched-norm response is the new primary comparison; other rows are secondary.
+All intervals condition on fitted models. E3 uses different models and states.}
+\label{tab:v4}\centering\footnotesize
+\begin{tabular}{lrr}\toprule
+Diagnostic & Difference & 95\% interval \\\midrule
+\input{generated/v4_mechanism_rows}
+\end{tabular}
+\end{table}
+
+The mean norm ratios $\|\delta\|/\|U_q\|$ are
+\result{v4_norm_ratio_native} for Native and
+\result{v4_norm_ratio_rotated} for Rotated. Actual-scale response favors Native
+although its residuals are smaller; this is not evidence that the smaller norm
+causes the improvement. Relative to the small common amplitude, these average
+ratios correspond to roughly 483- and 686-fold larger interventions. E3 instead
+uses Train96/Full/1536 on 24 fixed targets with three noises, retaining or removing
+only the final residual after each model's own preceding adapted states.
+It finds no established native advantage in that marginal task response, and
+does not generate free-sampling structures. Neither E2 nor E3 identifies an
+explanation of the Train384 structural gains.
+
+All 864 core conditions and 864 E3 conditions were completed. At the primary
+oracle step, 3398/3456 dynamic finite differences meet the 5\% relative criterion;
+58 exceptions remain included. These checks concern E1 oracle directions, not
+every E2 learned direction. Independent scalar reconstruction reproduces the
+archived target means and intervals. Five of six current v4 source files match
+the historical hashes; the main analysis script differs, so the reconstruction
+uses a separate verifier. Conflicting historical start-time fields are preserved,
+not treated as independently certified chronology.
+
+\section{Full-inference source--norm intervention}
+\label{app:norm_cross}
+The 24 observed Confirm96-B targets are chosen by the fixed hash order, six in
+each historical length stratum 128--191, 192--255, 256--319 and 320--384.
+All 288 nonzero, finite residuals pass the preaudit. The model is fixed
+Protenix-Mini Train384/Full/1536; no target supervision enters residual formation,
+norms or input masks. The completed pair residual is globally scaled before
+adding it to the unchanged query baseline. Scaling factor increments would
+change Full's linear and quadratic terms differently and is not used.
+The static update is replayed on each of four cycles; the subsequent pair states
+still evolve. Each rotation is paired separately with the same-seed native model.
+
+Besides Eq.~\ref{eq:norm_source}, define
+\begin{align}
+ E_{\rm amp}&=\tfrac12[(Y_{NN}-Y_{NR})+(Y_{RN}-Y_{RR})],\\
+ I&=Y_{NN}-Y_{RN}-Y_{NR}+Y_{RR}.
+\end{align}
+The identity $E_{\rm dir}+E_{\rm amp}=Y_{NN}-Y_{RR}$ is a symmetric allocation
+under this intervention, not a natural causal percentage. Conditional norm
+contrasts are $A_{d_N}=Y_{NN}-Y_{NR}$ and $A_{d_R}=Y_{RN}-Y_{RR}$.
+Table~\ref{tab:cross_extra} retains both and the supplementary score variants.
+
+\begin{table}[h]
+\caption{Full-inference intervention: primary direction-source effect and
+secondary norm/interaction contrasts. Supplementary intervals are unadjusted.}
+\label{tab:cross_extra}\centering\small
+\begin{tabular}{llrr}\toprule
+Metric & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/cross_supplement}
+\end{tabular}
+\end{table}
+
+All 720 predictions (288 pure, 432 mixed) are computed on MI250 with c4/s5,
+seed101 and a single sample; pure baselines are not reused from another backend.
+The completion audit records all CIF hashes and frozen parameters, paired query
+hashes and RNG states, and 432 mixed-norm/direction checks. Actual random-tensor
+hash pairing is checked on the two engineering targets only. There are no formal
+failures or HIP retries. Initial preflight failures, their repaired fields and
+CPU/device comparison issue, and their superseded locks remain separately
+recorded. The formal protocol is frozen after these repairs and before scoring.
+
+All 720 score records reconstruct the 36 metric-by-cell/contrast summaries,
+target arrays, seed and rotation marginals to within $10^{-12}$. The primary
+bootstrap has 20,000 draws, seed20260926, with six targets resampled in each
+stratum. Inference noise, seed and rotation pairing are retained within a target;
+the repeated native baseline in three rotation pairs is not three independent
+observations. The intervals remain conditional on these models and observed
+proteins. Full-predictor computations and CIF scoring are not rerun by the
+paper's numerical reconstruction script.
+
 \section{Engineering audits and recovery records}
 \label{app:engineering}
 Zero-residual replay, input/parameter gradients, frozen hashes, pairing, and

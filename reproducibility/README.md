@@ -3,7 +3,10 @@
 This directory contains actual adapter/operator source snapshots, a CPU-only
 operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
-score JSON and verifies 348 system-by-metric means against target records.
+score JSON and verifies 348 system-by-metric means against target records,
+144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
+full-inference source/norm cells and contrasts. The v3 input lock contains
+246 generated numerical fields and retains the v4 diagnostic boundaries.
 
 ```sh
 python -m pip install numpy matplotlib torch
@@ -30,6 +33,9 @@ source snapshot. These are different provenance claims.
 
 The compact archive deliberately does not contain model weights, all experimental
 structures, ESM caches, all checkpoints, or a tested turnkey retraining launcher.
+A clean-environment full prediction from an input sequence and distributed adapter
+checkpoint has not yet been validated by this compact package. Score reconstruction
+and operator checks do not establish that stronger reproduction level.
 Those remain requirements for a complete training reproduction release. Do not
 present this package as satisfying them. The original personal repository and
 its Git history must not be included as an anonymous supplement.

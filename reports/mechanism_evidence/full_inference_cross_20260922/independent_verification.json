@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "rows": 720,
+  "contrasts_and_cells_checked": 36,
+  "max_absolute_error": 2.220446049250313e-16,
+  "bootstrap": "20000 draws, 4 strata x6 targets",
+  "conditions": "3seeds and3rotations aggregated within24 targets, not independent replicates",
+  "remote_completion_audit_passed": true
+}

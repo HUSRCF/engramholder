@@ -20,7 +20,7 @@
 | [source_manifest.json](source_manifest.json) | 原报告和当前源码快照的来源与 SHA-256 |
 | [raw_record_hashes.json](raw_record_hashes.json) | 精简数据所对应的 1,728 个原始条件文件哈希 |
 | [code/](code/) | v4 与正式推理 hook 的当前源码快照；不是完整可运行模型包 |
-| [candidate_full_inference.md](candidate_full_inference.md) | 方向×幅度完整推理候选；未锁定、未启动 |
+| [candidate_full_inference.md](candidate_full_inference.md) | 历史候选；随后已完成，见文件顶部的正式结果链接 |
 
 在此目录执行：
 

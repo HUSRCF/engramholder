@@ -31,7 +31,7 @@ changing G+'s function class. This gives a discriminating control, although
 coordinate-wise AdamW updates do not generally preserve an arbitrary orthogonal
 parameter correspondence \citep{loshchilov2019adamw}.
 
-The empirical evidence has two complementary roles. The original Protenix
+The empirical evidence separates controlled effects from their scope. The original Protenix
 comparisons and a separately locked length study establish native-direction
 effects and their tested scope. A subsequent four-cell OpenFold experiment
 \citep{ahdritz2024openfold} directly tests whether rotation sensitivity differs
@@ -41,6 +41,15 @@ follow-up on already observed panels. A matched Protenix Train384 comparison
 also favors Native over G+, whereas OpenFold's generic head can outperform
 Native. OpenFold does not establish the direction advantage in every setting,
 and the tested non-OPM AtlasFold interface yields no established benefit.
+A further complete-inference intervention exchanges the global norms of trained
+residuals: native-source updates retain an advantage at both norm donors. This
+connects a controlled residual property to final structures without identifying
+the training dynamics or downstream modules responsible.
+
+Together, these controls provide an evaluation strategy: matching parameter
+counts, operator spectra and initial functions need not ensure comparable
+adaptation behavior. They do not establish a rule for choosing the best head
+for an unseen predictor.
 
 Our contributions are an empirical parameterization-by-orientation interaction
 under a matched training recipe; a concrete query-anchored residual construction

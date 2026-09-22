@@ -20,7 +20,17 @@
     "evidence/protenix_gplus384_historical_confirm96_records.json": "f50bbd0f1c6d3ad076cc96306ef0469c45e3284a4b2da9a2f0efbd1cccfad8e3",
     "evidence/length48_records.json": "03c9b8823d7e024dcd54cdf565e82966a2c0571257d81d78488fa2620b7fce96",
     "evidence/protenix_gplus384_collection_audit.json": "743e8a976203bbfad42b6a263c078b5d8f70e4a05872b7548e8939756119f0f8",
-    "evidence/protenix_gplus384_execution_lock.json": "453cb7040aceca4af3180b19e1d574fca3088e820ab194671530d114d9217e1b"
+    "evidence/protenix_gplus384_execution_lock.json": "453cb7040aceca4af3180b19e1d574fca3088e820ab194671530d114d9217e1b",
+    "evidence/full_cross_summary.json": "a85df37f8d66a7141a4b4546828f0b8efb881f2ffdf881b232d3f3a3581f8076",
+    "evidence/full_cross_records.json": "ba2ff61d3e1c849f1c7db8108ab5ab8bfa7cd3b6d4068a0d529726010fe70532",
+    "evidence/full_cross_execution_lock.json": "89e9b8dbdf7f3d9f9af3f4c4acc496b772e86d971e53dc3bd16b083b6b68eb9c",
+    "evidence/full_cross_panel.json": "ff53cd10c6e9edece6e31994b249dd6761a23d76412d2dc47155bbbc0e9b3a6f",
+    "evidence/full_cross_completion.json": "c6c0ff7d7c3b7290563c71a5d8b388c8a196e2a0c7eb9f67f014a310fab97729",
+    "evidence/full_cross_verification.json": "3cc8a7f017d12d7d8cbcac7789bbc09062ebc9143f0339d120929445f3b81c79",
+    "evidence/v4_analysis.json": "06dd7c7a22ef3218e7f8e66afc6ef85e44324bc1757baae7e147651efe6a8128",
+    "evidence/v4_e3_analysis.json": "576aaa763e287c8b02087095011ec66e2666835888460bcda5a3246283ba9292",
+    "evidence/v4_independent_verification.json": "8a9e930688ba749b0ff58b1482bced9570eccb5f535c7b49965718d92a08a5df",
+    "evidence/v4_source_hash_audit.json": "3a4ce4b0111c784e0aafae5b159fbfcb0fcc9eca8dedb7fa0516c83dc09e8ac5"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -2529,11 +2539,1245 @@
       "operation": "identity",
       "value": 0.017408847700324907,
       "formatted": "+0.01741"
+    },
+    "cross_NN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "cells",
+        "NN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.6373395256040874,
+      "formatted": "0.63734"
+    },
+    "cross_NR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "cells",
+        "NR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.6320931571843343,
+      "formatted": "0.63209"
+    },
+    "cross_RN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "cells",
+        "RN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.590648194136547,
+      "formatted": "0.59065"
+    },
+    "cross_RR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "cells",
+        "RR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.5924250157218015,
+      "formatted": "0.59243"
+    },
+    "cross_ca_D_mN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "D_mN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04669133146754031,
+      "formatted": "+0.04669"
+    },
+    "cross_ca_D_mNLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "D_mN",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.026783046921942052,
+      "formatted": "+0.02678"
+    },
+    "cross_ca_D_mNHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "D_mN",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06748112266033847,
+      "formatted": "+0.06748"
+    },
+    "cross_ca_D_mR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "D_mR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.039668141462532884,
+      "formatted": "+0.03967"
+    },
+    "cross_ca_D_mRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "D_mR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.019481254918031404,
+      "formatted": "+0.01948"
+    },
+    "cross_ca_D_mRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "D_mR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.059777283639207514,
+      "formatted": "+0.05978"
+    },
+    "cross_ca_Edir": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "Edir",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04317973646503659,
+      "formatted": "+0.04318"
+    },
+    "cross_ca_EdirLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "Edir",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02377798364847675,
+      "formatted": "+0.02378"
+    },
+    "cross_ca_EdirHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "Edir",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06320035367141778,
+      "formatted": "+0.06320"
+    },
+    "cross_ca_Eamp": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "Eamp",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0017347734172492321,
+      "formatted": "+0.00173"
+    },
+    "cross_ca_EampLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "Eamp",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0029923403918169366,
+      "formatted": "-0.00299"
+    },
+    "cross_ca_EampHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "Eamp",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.007325434085652844,
+      "formatted": "+0.00733"
+    },
+    "cross_ca_I": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "I",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007023190005007413,
+      "formatted": "+0.00702"
+    },
+    "cross_ca_ILo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "I",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0029373947013837556,
+      "formatted": "-0.00294"
+    },
+    "cross_ca_IHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "I",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017210324646889475,
+      "formatted": "+0.01721"
+    },
+    "cross_ca_A_dN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "A_dN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.005246368419752939,
+      "formatted": "+0.00525"
+    },
+    "cross_ca_A_dNLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "A_dN",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.003159949476623887,
+      "formatted": "-0.00316"
+    },
+    "cross_ca_A_dNHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "A_dN",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014703282470059663,
+      "formatted": "+0.01470"
+    },
+    "cross_ca_A_dR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "A_dR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0017768215852544745,
+      "formatted": "-0.00178"
+    },
+    "cross_ca_A_dRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "A_dR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0067330564700199425,
+      "formatted": "-0.00673"
+    },
+    "cross_ca_A_dRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "A_dR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0031159167291340984,
+      "formatted": "+0.00312"
+    },
+    "cross_ca_NN_minus_RR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "NN_minus_RR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.044914509882285826,
+      "formatted": "+0.04491"
+    },
+    "cross_ca_NN_minus_RRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "NN_minus_RR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.024518374654733832,
+      "formatted": "+0.02452"
+    },
+    "cross_ca_NN_minus_RRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "contrasts",
+        "NN_minus_RR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06622656734007874,
+      "formatted": "+0.06623"
+    },
+    "cross_res_D_mN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "D_mN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04438381551622805,
+      "formatted": "+0.04438"
+    },
+    "cross_res_D_mNLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "D_mN",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.025583644820918666,
+      "formatted": "+0.02558"
+    },
+    "cross_res_D_mNHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "D_mN",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06410423801545904,
+      "formatted": "+0.06410"
+    },
+    "cross_res_D_mR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "D_mR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03728557094622502,
+      "formatted": "+0.03729"
+    },
+    "cross_res_D_mRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "D_mR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.017865020893118668,
+      "formatted": "+0.01787"
+    },
+    "cross_res_D_mRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "D_mR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05672387123229465,
+      "formatted": "+0.05672"
+    },
+    "cross_res_Edir": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "Edir",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.040834693231226536,
+      "formatted": "+0.04083"
+    },
+    "cross_res_EdirLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "Edir",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02220559944754572,
+      "formatted": "+0.02221"
+    },
+    "cross_res_EdirHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "Edir",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.059909399830205275,
+      "formatted": "+0.05991"
+    },
+    "cross_res_Eamp": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "Eamp",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0013393361108020357,
+      "formatted": "+0.00134"
+    },
+    "cross_res_EampLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "Eamp",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0031998153037286034,
+      "formatted": "-0.00320"
+    },
+    "cross_res_EampHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "Eamp",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.006815704680638918,
+      "formatted": "+0.00682"
+    },
+    "cross_res_I": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "I",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007098244570003045,
+      "formatted": "+0.00710"
+    },
+    "cross_res_ILo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "I",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0025680871605934285,
+      "formatted": "-0.00257"
+    },
+    "cross_res_IHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "I",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01705337150801651,
+      "formatted": "+0.01705"
+    },
+    "cross_res_A_dN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "A_dN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.004888458395803558,
+      "formatted": "+0.00489"
+    },
+    "cross_res_A_dNLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "A_dN",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0032460680655140603,
+      "formatted": "-0.00325"
+    },
+    "cross_res_A_dNHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "A_dN",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014234189425216967,
+      "formatted": "+0.01423"
+    },
+    "cross_res_A_dR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "A_dR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0022097861741994865,
+      "formatted": "-0.00221"
+    },
+    "cross_res_A_dRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "A_dR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006911964228577361,
+      "formatted": "-0.00691"
+    },
+    "cross_res_A_dRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "A_dR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.002411864594167071,
+      "formatted": "+0.00241"
+    },
+    "cross_res_NN_minus_RR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "NN_minus_RR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.042174029342028574,
+      "formatted": "+0.04217"
+    },
+    "cross_res_NN_minus_RRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "NN_minus_RR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02279170916070355,
+      "formatted": "+0.02279"
+    },
+    "cross_res_NN_minus_RRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "contrasts",
+        "NN_minus_RR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06236880134072565,
+      "formatted": "+0.06237"
+    },
+    "cross_tm_D_mN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "D_mN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.05766018518518518,
+      "formatted": "+0.05766"
+    },
+    "cross_tm_D_mNLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "D_mN",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.03252675925925925,
+      "formatted": "+0.03253"
+    },
+    "cross_tm_D_mNHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "D_mN",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.08446124999999995,
+      "formatted": "+0.08446"
+    },
+    "cross_tm_D_mR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "D_mR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.047260185185185176,
+      "formatted": "+0.04726"
+    },
+    "cross_tm_D_mRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "D_mR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.023167083333333328,
+      "formatted": "+0.02317"
+    },
+    "cross_tm_D_mRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "D_mR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.07206270833333331,
+      "formatted": "+0.07206"
+    },
+    "cross_tm_Edir": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "Edir",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.052460185185185186,
+      "formatted": "+0.05246"
+    },
+    "cross_tm_EdirLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "Edir",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02837915509259259,
+      "formatted": "+0.02838"
+    },
+    "cross_tm_EdirHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "Edir",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.07773671296296293,
+      "formatted": "+0.07774"
+    },
+    "cross_tm_Eamp": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "Eamp",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.002278240740740741,
+      "formatted": "+0.00228"
+    },
+    "cross_tm_EampLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "Eamp",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.003485451388888892,
+      "formatted": "-0.00349"
+    },
+    "cross_tm_EampHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "Eamp",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00863427083333333,
+      "formatted": "+0.00863"
+    },
+    "cross_tm_I": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "I",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010400000000000003,
+      "formatted": "+0.01040"
+    },
+    "cross_tm_ILo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "I",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0017023958333333346,
+      "formatted": "-0.00170"
+    },
+    "cross_tm_IHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "I",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02230462962962963,
+      "formatted": "+0.02230"
+    },
+    "cross_tm_A_dN": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "A_dN",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.00747824074074074,
+      "formatted": "+0.00748"
+    },
+    "cross_tm_A_dNLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "A_dN",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.001902337962962963,
+      "formatted": "-0.00190"
+    },
+    "cross_tm_A_dNHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "A_dN",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017576921296296292,
+      "formatted": "+0.01758"
+    },
+    "cross_tm_A_dR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "A_dR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0029217592592592615,
+      "formatted": "-0.00292"
+    },
+    "cross_tm_A_dRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "A_dR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00997225694444445,
+      "formatted": "-0.00997"
+    },
+    "cross_tm_A_dRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "A_dR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.004466736111111103,
+      "formatted": "+0.00447"
+    },
+    "cross_tm_NN_minus_RR": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "NN_minus_RR",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.054738425925925926,
+      "formatted": "+0.05474"
+    },
+    "cross_tm_NN_minus_RRLo": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "NN_minus_RR",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.028849930555555545,
+      "formatted": "+0.02885"
+    },
+    "cross_tm_NN_minus_RRHi": {
+      "source": "evidence/full_cross_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score",
+        "contrasts",
+        "NN_minus_RR",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.08222094907407407,
+      "formatted": "+0.08222"
+    },
+    "v4_oracle": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "oracle_D_difference",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0013425098575781523,
+      "formatted": "+0.00134"
+    },
+    "v4_oracleLo": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "oracle_D_difference",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0011434914371782482,
+      "formatted": "+0.00114"
+    },
+    "v4_oracleHi": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "oracle_D_difference",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0015423322300651225,
+      "formatted": "+0.00154"
+    },
+    "v4_equal": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "dynamic_equal_decrease_difference",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 2.1771122998303202e-05,
+      "formatted": "+2.17711e-05"
+    },
+    "v4_equalLo": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "dynamic_equal_decrease_difference",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -3.4905640955106135e-05,
+      "formatted": "-3.49056e-05"
+    },
+    "v4_equalHi": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "dynamic_equal_decrease_difference",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 7.774110459133841e-05,
+      "formatted": "+7.77411e-05"
+    },
+    "v4_actual": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "dynamic_actual_loss_decrease_difference",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04153413679680707,
+      "formatted": "+0.04153"
+    },
+    "v4_actualLo": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "dynamic_actual_loss_decrease_difference",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.03465552351594646,
+      "formatted": "+0.03466"
+    },
+    "v4_actualHi": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "dynamic_actual_loss_decrease_difference",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.048578310181835185,
+      "formatted": "+0.04858"
+    },
+    "v4_norm_diff": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "norm_ratio_difference",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.20358780519583974,
+      "formatted": "-0.20359"
+    },
+    "v4_norm_diffLo": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "norm_ratio_difference",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.21062732292596445,
+      "formatted": "-0.21063"
+    },
+    "v4_norm_diffHi": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "norm_ratio_difference",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.196386564088876,
+      "formatted": "-0.19639"
+    },
+    "v4_norm_ratio_native": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "norm_ratio_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.48283292950024165,
+      "formatted": "0.48283"
+    },
+    "v4_norm_ratio_rotated": {
+      "source": "evidence/v4_analysis.json",
+      "field_path": [
+        "metrics",
+        "norm_ratio_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.6864207346960814,
+      "formatted": "0.68642"
+    },
+    "v4_retain": {
+      "source": "evidence/v4_e3_analysis.json",
+      "field_path": [
+        "metrics",
+        "retaining_effect_difference",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0032454729080200195,
+      "formatted": "-0.00325"
+    },
+    "v4_retainLo": {
+      "source": "evidence/v4_e3_analysis.json",
+      "field_path": [
+        "metrics",
+        "retaining_effect_difference",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006898216972196543,
+      "formatted": "-0.00690"
+    },
+    "v4_retainHi": {
+      "source": "evidence/v4_e3_analysis.json",
+      "field_path": [
+        "metrics",
+        "retaining_effect_difference",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0004946833959332183,
+      "formatted": "+0.00049"
     }
   },
   "verified_raw_system_metric_means": 348,
   "verified_target_interactions": 144,
   "verified_new_protenix_contrasts": 6,
+  "verified_full_cross_cells_and_contrasts": 36,
   "pending": [],
   "unrun": [
     "pt96_c96_gplus"

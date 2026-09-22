@@ -19,16 +19,26 @@ established adaptation gain in this setting. Its high baseline is descriptive;
 we have not isolated a ceiling effect, nor identified an architectural component
 that explains the difference between predictors.
 
-Local task diagnostics provide a narrower supplementary observation. At a
-shared query-only state, native factor spaces show a modest average advantage in
-ridge-gradient compatibility and equal-norm task response, but those diagnostics
-do not establish a positive target-level association with trained folding gains.
-A bounded Train8-to-Dev8 finite-update study likewise does not establish mean
-positive transfer or a native advantage. These results leave shared learning and
-complete inference dynamics unresolved (Appendix~\ref{app:mechanisms}).
+The full-inference intervention directly tests an alternative explanation:
+that the learned residual's global norm accounts for its structural advantage.
+Native-source updates remain better at both actual norm donors. Thus the
+structural difference depends on properties beyond overall scale, including
+information retained in the normalized tensor. This identifies a limit of a
+norm-only explanation; it does not separate learned content, local magnitude
+patterns and channel organization, or locate a specific downstream computation.
+
+Local diagnostics retain their narrower conclusions. Oracle compatibility did
+not establish a positive association with target-level folding gains; learned
+directions at a small common amplitude did not establish a native advantage.
+The bounded Train8-to-Dev8 study also did not establish mean positive transfer.
+These results coexist with the full-inference finding because the model recipe,
+state, scale and endpoint differ. How training produces the beneficial residual
+organization remains unresolved (Appendix~\ref{app:mechanisms}).
 
 Our intervals quantify target variation conditional on the fitted models, not
-all uncertainty from retraining or research selection. Three rotations and seeds
+all uncertainty from retraining or research selection. One fixed inference sample
+per system does not characterize sampling variability; paired RNG controls
+comparison noise rather than estimate that variability. Three rotations and seeds
 sample a limited family; several studies reuse observed panels. Sequence
 screening does not ensure target-family independence, and cumulative historical
 exposure and foundation pretraining overlap remain incompletely characterized.

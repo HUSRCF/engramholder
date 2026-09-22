@@ -1,17 +1,17 @@
 \section{Related work}
 \label{sec:related}
-Low-rank weight adaptation \citep{hu2021lora} and learned interventions on hidden
-representations \citep{wu2024reft} both exploit a frozen model while restricting
-the trainable component. Our construction instead composes residue-level changes
-through a pretrained internal pair-generating operator. The contribution is the
-controlled comparison of its orientation sensitivity with an absorbable generic
-head, not the introduction of activation adaptation or orthogonal
-reparameterization itself. Orthogonal finetuning, including butterfly
-parameterizations \citep{liu2023boft}, learns transformations for adaptation;
-our fixed rotations instead act as trained control conditions for native
-operator residuals. Adaptive coordinate-wise optimization
-\citep{loshchilov2019adamw} motivates separating function-class equivalence from
-training behavior.
+LoRA constrains weight updates \citep{hu2021lora}, while ReFT learns interventions
+on frozen hidden representations \citep{wu2024reft}. PiSSA initializes trainable
+factors from principal components of pretrained weights and freezes the residual
+components \citep{meng2024pissa}. Thus neither representation adaptation nor the
+usefulness of pretrained directions is new in itself. We compose residue-level
+changes through native pair-generating operators and test their orientation
+sensitivity using training-time spectral controls, an absorbable generic head,
+and complete-inference norm exchange. Orthogonal finetuning learns transforms,
+including butterfly parameterizations \citep{liu2023boft}; our fixed rotations
+serve as independently trained controls. AdamW's coordinate-wise optimization
+\citep{loshchilov2019adamw} separates function-class equivalence from training
+behavior.
 
 AlphaFold2 and its trainable OpenFold implementation couple MSA and pair
 representations with structural prediction
