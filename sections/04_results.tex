@@ -184,7 +184,7 @@ The differences are positive for 78/96 and 43/48 targets and all three paired
 seed means. G+ itself improves over query-only by \result{pt384_c96_gquery}
 and \result{pt384_l48_gquery} in mean score. Thus Native's advantage holds
 against a functioning explicit-factor generic comparator under this common
-learning rate and budget, not against a separately optimized G+ upper bound.
+learning rate and budget; neither optimal G+ performance nor an upper bound is established.
 The long-chain comparison combines historical H100 predictions with new MI250
 G+ predictions; replay checks are limited engineering evidence, not a
 panel-wide numerical error bound (Appendix~\ref{app:engineering}).
@@ -225,16 +225,18 @@ recipe, not evidence that only weak systems can benefit from adaptation.
 
 
 
-The fixed-budget data interaction also differs by predictor. Using Full and
-1536 updates on both sides, $(N-R)_{384}-(N-R)_{96}$ is
+The fixed-budget Factor contrast, $(N-R)_{384}-(N-R)_{96}$, uses Full and
+1536 updates throughout. It is
 \result{pt_scale} [\result{pt_scaleLo}, \result{pt_scaleHi}] for Protenix on
 Confirm96-B, versus \result{of_scale_c96}
 [\result{of_scale_c96Lo}, \result{of_scale_c96Hi}] for OpenFold.
 The corresponding OpenFold Length48 estimate is
 \result{of_scale_l48} [\result{of_scale_l48Lo}, \result{of_scale_l48Hi}].
-These direct interactions concern changes in training-set composition and
-repetition at fixed update count (16 versus 4 average passes). The short-chain factor gap shrinks in OpenFold but grows in Protenix;
-OpenFold Length48 establishes no change. A general rule that more data
-compensates for rotation is unsupported. Broader data coverage, the degree
-of optimization at fixed updates, and training-set composition remain
-unseparated candidate explanations, not interchangeable explanations of either sign.
+On Confirm96-B, all four OpenFold/ESM2 configurations improve in mean score
+from Train96 to Train384; rotated Factor improves more than native Factor,
+reducing their gap rather than causing an absolute performance decline.
+These contrasts change training-set composition and repetition at fixed update
+count (16 versus 4 average passes). The short-chain gap shrinks in OpenFold but
+grows in Protenix; OpenFold Length48 establishes no change. A general compensation
+rule remains unsupported. Data coverage, optimization at fixed updates,
+and training-set composition remain unseparated candidate explanations.

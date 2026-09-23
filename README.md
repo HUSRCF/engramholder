@@ -1,12 +1,16 @@
 # EngramFold 证据整理仓库
 
+**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v5**，共 **449** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+
+[本轮收尾](reports/fixed_budget_status_followup_20260923.md)：在训练规模差值旁补充四格绝对均值均提高的事实；保留固定预算解释及未建立收敛的限制。
+
 [7c701ed盲审落实](reports/blind_review_7c701ed_response_20260923.md)：补短链数据定义、两层控制边界及核心补充指标；活跃来源锁v5，449字段，主文9页。
 
 [A组审阅落实](reports/esmc_review_response_20260923.md)：三套OpenFold交互并列主文，补齐模型引用及ESMC范围图；443数值不变，本轮实测主文9页。
 
-**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。该次整合来源锁为v4（当前v5）；B组及DiamondHill未完成结果不计入。
+**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。该次整合来源锁为v4（当前v5）；B组及DiamondHill后续矩阵未纳入本稿，此处不判断其实时进度。
 
-**2026-09-23：完整推理四格与v4机制边界已整合，新增近邻定位与复现范围说明；本地编译成功，排版由作者在Overleaf检查。** 写作主分支是 `main`；本地未提交改动不代表远端已同步。当前状态以[填稿进度](reports/manuscript_fill_20260922.md)为准，历史报告保留各自日期。
+**历史整合记录（2026-09-23）：** 完整推理四格与v4机制边界、近邻定位及复现范围说明已整合；该轮编译记录及视觉检查范围见相应报告。当前版本以顶部状态入口为准。
 
 - [正式审读修改与数值键保护](reports/editorial_review_response_20260923.md)；[作者提交清单](notes/writing_branch_20260922/author_submission_checklist.md)。
 - [9月23日稿件更新](reports/full_inference_manuscript_update_20260923.md)与[剩余交付优先级](reports/submission_priorities_20260923.md)。
@@ -28,4 +32,4 @@
 
 仓库根目录为当前ICLR稿件入口，原模板另行备份。现有 source_*.md 是此前助手草稿的快照，不代表用户已认可其文字或论证。
 
-此处整理不会改变实验配置、统计终点或训练队列。公开写作快照位于 `main`；旧本地分支 `writing/native-update-alignment` 仅为历史。旧草案仅供归档，最终Protenix G+已在MD报告、论文主表与配对比较中完成整合；本次采用独立v2证据锁，保留旧锁。见[整合记录](reports/protenix_gplus384_manuscript_integration_20260922.md)。
+此处整理不会改变实验配置、统计终点或训练队列。公开写作快照位于 `main`；旧本地分支 `writing/native-update-alignment` 仅为历史。旧草案仅供归档，最终Protenix G+已在MD报告、论文主表与配对比较中完成整合；该次历史整合使用v2来源锁，当前为v5。见[整合记录](reports/protenix_gplus384_manuscript_integration_20260922.md)。

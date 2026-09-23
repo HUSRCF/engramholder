@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-09-23T15:41:37.096464+00:00",
+  "based_on_commit": "0b9938939ab7783cc1e0bc978575ed12ae480c56",
+  "source_lock": "notes/writing_branch_20260922/paper_sources.v5.lock.json",
+  "source_lock_unchanged": true,
+  "absolute_score_check": {
+    "based_on_commit": "0b9938939ab7783cc1e0bc978575ed12ae480c56",
+    "panel": "Confirm96-B",
+    "metric": "ca_lddt",
+    "aggregation": "Average paired models within target, then targets; no new bootstrap or endpoint.",
+    "groups": [
+      {
+        "head": "F",
+        "train96": 0.5019025118487536,
+        "train384": 0.5068443393728,
+        "mean_change": 0.004941827524046483,
+        "models_per_training_set": 3,
+        "targets": 96
+      },
+      {
+        "head": "RF",
+        "train96": 0.482093762079111,
+        "train384": 0.5038130028423794,
+        "mean_change": 0.02171924076326842,
+        "models_per_training_set": 9,
+        "targets": 96
+      },
+      {
+        "head": "G+",
+        "train96": 0.4953386632334904,
+        "train384": 0.5133273534331355,
+        "mean_change": 0.017988690199645108,
+        "models_per_training_set": 3,
+        "targets": 96
+      },
+      {
+        "head": "RG+",
+        "train96": 0.49434912958995003,
+        "train384": 0.5099798770737709,
+        "mean_change": 0.015630747483820873,
+        "models_per_training_set": 9,
+        "targets": 96
+      }
+    ],
+    "inputs": {
+      "evidence/openfold_gplus_rotation_records.json": "8b9b72d610ff99f068dfee3d8f956d0f8f48bfd82ef4fdd097cb9b343aea9f7a",
+      "evidence/openfold_esmc_A_records.json": "a9447e4a2457127a03b977d10eadc835634ace453b26da239bc62fec7f7d6ae1"
+    },
+    "same_target_ids": true,
+    "all_four_means_increase": true,
+    "scope": "Read existing score arrays; no CIF rescoring, training-log replay or remote job inspection."
+  },
+  "numeric_fields": 449,
+  "all_prior_generated_fields_and_provenance_unchanged": true,
+  "numeric_key_tests_passed": 3,
+  "asset_generator_passed": true,
+  "compile_exit_code": 0,
+  "main_text_final_page": 9,
+  "undefined_references_or_citations": false,
+  "overfull_boxes": false,
+  "underfull_warnings_retained": true,
+  "style_files_unchanged": true,
+  "visual_check": "Pages 8 and 9 inspected after typesetting compression; final short wording edit recompiled. Not an all-page PDF audit.",
+  "pdf_sha256": "2ed36a2a9e95d9562eb32f8d5a58ff69eb08ef9a97053171c09f13eac1545ece",
+  "anonymous_artifact_repackaged": false,
+  "latest_preexisting_artifact": "build/anonymous_artifact_v12.zip",
+  "remote_jobs_queried": false,
+  "experimental_jobs_changed": false,
+  "new_scientific_endpoints": false,
+  "clean_environment_e2e_verified": false
+}

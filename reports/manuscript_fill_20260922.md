@@ -1,12 +1,31 @@
-> 2026-09-23后续更新：OpenFold ESMC A组完整证据已整合，活跃来源锁v4；见 [A组整合报告](openfold_esmc_A_integration_20260923.md)。以下历史完成记录保留。
+# 当前稿件状态（2026-09-23）
 
-> **2026-09-23 正式审读更新：** 贡献与摘要已压缩，混合干预范围已补充，数值缺失键保护通过测试；正式稿编译成功，不做最终PDF视觉检查。见[修改记录](editorial_review_response_20260923.md)。
+此处是写作仓库的唯一当前状态入口，记录**已纳入稿件的证据**，不报告远端队列实时进度。
 
-> **2026-09-23 最新状态：完整推理来源×范数干预及 v4 边界已进入正文/附录。** 活跃证据锁 v3，匿名材料候选 v6；编译成功，PDF 排版由作者在 Overleaf 检查。见[本轮更新](full_inference_manuscript_update_20260923.md)。以下保留此前填稿记录。
+| 项目 | 当前状态 |
+|---|---|
+| 稿件版本 | `main`；本轮修订基线 `0b99389`，包含本状态更新的提交是本轮稿件版本。可用 `git log -1 --format=%H -- reports/manuscript_fill_20260922.md` 查询精确提交。 |
+| 活跃来源锁 | [paper_sources.v5.lock.json](../notes/writing_branch_20260922/paper_sources.v5.lock.json)；449 个生成数值字段。旧锁保留，不覆盖历史记录。 |
+| 已纳入的核心与范围结果 | Protenix 原始 Factor/Generic、原生/旋转、Tiny、Train96/384、Length48、匹配 Train384 G+；OpenFold Train96 与 Train384/ESM2、Train384/ESMC 完整四格；已完成的 AtlasFold 原始适配矩阵与系统参照。 |
+| 已纳入的边界与审计 | 完整推理范数交换及局部/共享迁移阴性结果；嵌套数据与成员定义核验；训练预算报告的“1536 步收敛未建立”限制；头内同谱与跨头匹配边界。 |
+| 尚未纳入的独立工作 | B 组、Fresh96、SGDM、DiamondHill 后续新矩阵。此列表表示未进入本稿的证据范围，**不表示这些队列此刻仍未完成**；本轮未查询其实时状态或导入结果。 |
+| 本轮修改与检查 | [固定预算表述及状态入口收尾](fixed_budget_status_followup_20260923.md)；[机器可读验证](../notes/writing_branch_20260922/draft_validation.fixed_budget_status.json)。 |
+| 匿名材料范围 | 最近已核验候选为本地 `build/anonymous_artifact_v12.zip`，属于分数分析/算子复现材料；本轮文字修订尚未重新打包。 |
+| 未完成的复现交付 | 尚未在干净环境完成单目标“序列→PLM 特征→完整 CIF→评分”；已有编译、数值和算子检查不替代它，也不构成全稿视觉验收。 |
 
-> **最新更新：匹配 Protenix G+ 已完成论文整合。** 两个 Pending 已填入；当前证据锁为 v2、匿名候选包为 v4，正文仍 8 页、全文 13 页。详见[整合记录](protenix_gplus384_manuscript_integration_20260922.md)。以下保留初次填稿时的历史状态与验证结果。
+本轮只补固定预算下的绝对均值解释及文档状态，不续训、不改统计终点、不推断未纳入结果。
 
-# 2026-09-22：从章节骨架到有证据支撑的正文初稿
+## 历史快照（以下不代表当前状态）
+
+- **2026-09-23，v5：** [7c701ed 盲审落实](blind_review_7c701ed_response_20260923.md)：短链数据定义、控制范围、六个既有补充统计字段；共449字段，验证记录主文9页，局部检查附录数据表。
+- **2026-09-23，v4：** [OpenFold ESMC A组整合](openfold_esmc_A_integration_20260923.md)及[呈现修订](esmc_review_response_20260923.md)，共443字段。
+- **2026-09-23，正式审读：** [贡献压缩、数值键保护与混合干预边界](editorial_review_response_20260923.md)，当轮未做最终PDF视觉检查。
+- **2026-09-23，v3：** [完整推理来源×范数及局部机制v4边界](full_inference_manuscript_update_20260923.md)，匿名候选v6；“机制v4”与“来源锁v3”是不同版本对象。
+- **2026-09-22，v2：** [匹配 Protenix G+整合](protenix_gplus384_manuscript_integration_20260922.md)，匿名候选v4，当轮主文8页、全文13页。
+
+## 历史快照：2026-09-22 初次填稿（原始记录）
+
+以下包括当时的 Pending、页数和“尚未推送”等表述，仅描述该次初稿；当前状态以上表为准。
 
 本次用户要求不再增加占位或实验，按现有证据正式填稿。工作在写作仓库main本地完成；
 尚未commit/push。主线训练与实验锁未修改，未重新评分CIF或改变统计终点。
