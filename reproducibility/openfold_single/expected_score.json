@@ -1,0 +1,9 @@
+{
+  "ca_pair_lddt": 0.5682062298603652,
+  "reference_ca_count": 177,
+  "prediction_reference_coverage": 1.0,
+  "reference_pair_count": 4655,
+  "prediction_sha256": "560aeccc74926922e3bb68d98ec8da8c301c43d64d45627fe2502a36d723f987",
+  "reference_sha256": "32bdefb0d6d76df44602720293333744e814a0c6f9c94f2e300e6176566a1513",
+  "metric_scope": "Primary fixed-reference C-alpha pair-lDDT; no TM-score claim"
+}

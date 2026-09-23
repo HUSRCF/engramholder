@@ -26,7 +26,7 @@ SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','lengt
  'protenix_gplus384_summary','protenix_gplus384_records','protenix_gplus384_verification',
  'protenix_gplus384_historical_confirm96_records','length48_records',
  'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock',
- 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit','openfold_esmc_A_summary','openfold_esmc_A_records','openfold_esmc_A_execution_lock','openfold_esmc_A_scoring_lock','openfold_esmc_A_verification','data_composition_audit']
+ 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit','openfold_esmc_A_summary','openfold_esmc_A_records','openfold_esmc_A_execution_lock','openfold_esmc_A_scoring_lock','openfold_esmc_A_verification','data_composition_audit','openfold_fresh96_summary','openfold_fresh96_records','openfold_fresh96_complete','openfold_fresh96_execution_lock','openfold_fresh96_model_lock','openfold_fresh96_scoring_lock','openfold_fresh96_reference_manifest','openfold_training_psi_protocol','openfold_followup_analysis']
 CELLS = {}
 DATA = {}
 
@@ -115,7 +115,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v5.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v6.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -123,6 +123,9 @@ def main():
     DATA.update({f:json.loads((ROOT/'evidence'/f'{f}.json').read_text()) for f in SOURCES})
     from verify_openfold_esmc_A import verify
     esmc_audit=verify(ROOT)
+    from analyze_openfold_followups import calculate
+    followup_audit=calculate(ROOT)
+    assert followup_audit==DATA['openfold_followup_analysis']
     # Recheck completed raw-score system means without folding or changing statistics.
     checks=0
     for file, records_file in [('openfold_gplus_rotation_final','openfold_gplus_rotation_records'),('openfold_train384','openfold_train384_records'),('atlasfold_adapters_final','atlasfold_adapters_records')]:
@@ -276,6 +279,30 @@ def main():
         scope_interactions.append([label,*[tex(k)+' '+interval_cell(k) for k in keys]])
     save_rows('interaction_scope_rows.tex',scope_interactions)
 
+    fresh_rows=[]; training_rows=[]
+    for metric,label in [('ca_lddt','Pair-lDDT'),('residue_ca_lddt','Residue-lDDT'),('tm_score_fixed_full_length','TM-score')]:
+        for k in ['factor_rotation','gplus_rotation','interaction','native_minus_gplus','factor_minus_query','generic_plus_minus_query']:
+            key=f'fresh_{metric}_{k}'
+            contrast(key,'openfold_fresh96_summary',['metrics',metric,k])
+            fresh_rows.append([label,k.replace('_',r'\_'),tex(key),interval_cell(key)])
+        for panel,short,label_panel in [('confirm96','c96','C96-B'),('length48','l48','L48')]:
+            key=f'psi_train_{short}_{metric}'
+            contrast(key,'openfold_followup_analysis',['training_setting_change','panels',panel,metric])
+            training_rows.append([label_panel,label,tex(key),interval_cell(key)])
+    for k in ['factor_native','factor_rotated','generic_plus_native','generic_plus_rotated','query_native']:
+        number('fresh_'+k,'openfold_fresh96_summary',['metrics','ca_lddt','group_means',k])
+    marginal_rows=[]
+    for kind in ['seed','rotation']:
+        keys=[]
+        for i in range(3):
+            key=f'fresh_{kind}_{i}'
+            number(key,'openfold_fresh96_summary',['metrics','ca_lddt','interaction_by_'+kind,i],signed=True)
+            keys.append(tex(key))
+        marginal_rows.append([kind.capitalize(),*keys])
+    save_rows('fresh96_marginals.tex',marginal_rows)
+    save_rows('fresh96_contrasts.tex',fresh_rows)
+    save_rows('training_psi_change.tex',training_rows)
+
     # One compact supplemental table per metric avoids an unbreakable 48-row float.
     for metric,label in [('pair','Pair-lDDT'),('residue','Residue-lDDT'),('tm','TM-score')]:
         save_rows('esmc_A_'+metric+'_contrasts.tex',[[*x[:2],*x[3:]] for x in a_contrasts if x[2]==label])
@@ -302,6 +329,11 @@ def main():
         d=groups[name];counts=list(d['bins'].values());assert len(set(counts))==1
         lo,hi=d['actual_length'];comp=f"{len(counts)} x {counts[0]}; {lo}--{hi}"
         table.append([label,str(d['count']),source,comp,exclusions,use])
+    fresh_targets=DATA['openfold_fresh96_reference_manifest']['targets']
+    assert len(fresh_targets)==96 and len({t['target_id'] for t in fresh_targets})==96
+    table.append(['Fresh96','96','Short-chain eligibility (Q); BLAST v2',
+                  '4 x 24; 129--384','Excludes recorded exposure and accepted neighbors',
+                  'New for fixed OpenFold Train96 interaction'])
     save_rows('data_composition_rows.tex',table)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))

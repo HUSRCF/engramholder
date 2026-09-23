@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "full_length": 184,
+  "coordinate_relative_l2": 0.000137269372042106,
+  "coordinate_rms": 0.0006848532581215131,
+  "feature_relative_l2": 3.097769877058454e-06,
+  "mask_identical": true,
+  "isolated_site_packages": true,
+  "openfold_python_files_identical": 81,
+  "writer_files_identical_to_fresh96_runtime": [
+    "models/interface_heads.py",
+    "models/live_opm.py",
+    "models/native_geometry.py",
+    "models/residue_predictors.py",
+    "experiments/openfold_adapter_runtime.py"
+  ],
+  "historical_training_source_difference": "live_opm.py later gained rotated-G+ support; native Factor computation unchanged. Initial byte-equality check against the older source failed and is retained.",
+  "tolerances": {
+    "coordinate_relative_l2": 0.001,
+    "coordinate_rms": 0.02,
+    "feature_relative_l2": 0.0001,
+    "pair_lddt_absolute": 0.0001
+  },
+  "scope": "Recomputed PLM features and full model prediction, with CIF scored separately; one target and one fitted model.",
+  "checked_utc": "2026-09-23T17:26:13.185836+00:00",
+  "historical_pair_lddt": 0.5682599355531687,
+  "reproduced_pair_lddt": 0.5682062298603652,
+  "pair_lddt_absolute_error": 5.370569280349624e-05,
+  "scored_from_cif": true,
+  "independent_local_cif_rescore_identical": true,
+  "reference_is_regular_file": true,
+  "files": {
+    "adapter.pt": "1961474756ba55571cab163e6fb1ab860d5721a8c79751149731f522f71744e7",
+    "expected_prediction.cif": "560aeccc74926922e3bb68d98ec8da8c301c43d64d45627fe2502a36d723f987",
+    "README.md": "5af2839b5e9d1df18acedeeb3cc5a67e4a98879918c8f0fb4815a68195ef9eef",
+    "expected_score.json": "ac466d0795f773c20facbf0abf381b6ca6dae27fb415efc67c31eacab4b34ca5",
+    "asset_manifest.json": "7fc3324044643df7ab3fa65e9b9d07b0c509ebfd2131609bc710633da540c565",
+    "environment.freeze.txt": "438d8221cbef97fff21c2018d9bb5c007d5076bf5c4a9200d3957e049cb6a29e",
+    "example.fasta": "8d3d24029790b021b7305e64ed443f846de7f340429e29beb89c937d734b4280",
+    "predict.py": "46d0541fb06d414a65820d7270c2a12a97168720de60c5b3777e4c7e58bcff84",
+    "example_reference.json": "dcee15c7092722b078697ad7e61970a051fe5bf696b0020410381f798e8d028a",
+    "requirements.txt": "8c008df52809973ba5091a98dd2e0513746b390150db828000620787fbe21c4d",
+    "example_reference.cif.gz": "32bdefb0d6d76df44602720293333744e814a0c6f9c94f2e300e6176566a1513",
+    "setup_env.sh": "ac8bdd4a8428bb12d0163db72657364d3b947ebd919ea53c5d45c83fa505954f",
+    "score.py": "93251cf9a1929130c615a739c51e3632d81c4461a46631b5855885689e5f2353"
+  }
+}

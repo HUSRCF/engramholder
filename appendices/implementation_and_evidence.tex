@@ -556,3 +556,135 @@ Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
 \input{generated/paired_table_rows}
 \end{tabular}
 \end{table}
+
+\section{Fresh96: fixed-model validation on new targets}
+\label{app:fresh96}
+This study reused the 24 OpenFold Train96/ESM2-35M adapters and query-only
+baseline without further training. The model lock preceded target selection;
+execution and scoring locks preceded the first new prediction. All 2,400
+model--target predictions completed before scoring, with zero failures. Fifty
+engineering predictions on two previously observed targets were separate from
+the formal panel. Their coordinates and three scores replayed the historical
+outputs exactly. The collection audit checked all 24 checkpoint hashes, 2,400
+prediction hashes and 328 source/lock bindings; score-array reconstruction
+independently recovered the reported contrasts and marginals. These checks do
+not reproduce the CIF scoring or certify every historical access event.
+
+\paragraph{Selection and its revision.}
+Fresh96 contains four prespecified short-chain length strata with 24 targets
+each, with actual lengths 129--384. It uses the short-chain eligibility criteria
+(Q) in Table~\ref{tab:data_composition}, one target per PDB, and deterministic
+hash ordering independent of model scores. Recorded training, development,
+evaluation and engineering exposures were excluded, including query/PDB
+identities and sequences. The historical teacher exclusion library was retained.
+An initial global-alignment rule failed to fill the first stratum and rejected
+all eight fixed shuffled negative controls. A separate exposure-inventory bug
+had first mislabeled 256 synthetic controls as real queries; correcting that
+bug did not resolve the alignment failure. Both failed attempts are archived.
+
+Before any new folding prediction, selection v2 adopted the previously
+calibrated BLASTP 2.17.0 rule used for Length48, without changing the models,
+96-target quota, deterministic order or primary endpoint. Searches use BLOSUM62,
+gap-open 11/extend 1, word size 3, SEG and soft masking, composition adjustment
+2, search E-value $10^{-3}$ and no HSP-count truncation. Exclusion requires one
+HSP with E-value $\leq10^{-5}$, identity $\geq0.30$ over alignment columns
+including internal gaps, at least 50 paired residues and coverage $\geq0.70$.
+Coverage uses the shorter sequence for real queries/panel neighbors and the
+candidate length for historical teacher rows; HSPs are not merged. The archived
+selection audit checked 474 searches and reported no known ID/PDB/full-sequence
+overlap. This is sequence-screened new-target validation relative to auditable
+project exposure, not the identical Confirm96-B screening implementation,
+strict family isolation or exclusion from foundation-model pretraining.
+
+\paragraph{Endpoint and complete reporting.}
+The sole primary endpoint was pair-lDDT $\Psi$, using 20,000 whole-target
+paired bootstrap draws with seed 20260921. It is not established: the point
+estimate is positive but its interval includes zero. For the primary metric,
+54/96 target interactions and 8/9 seed--rotation cells are positive; one seed
+marginal is negative (Table~\ref{tab:fresh_marginals}). The row-wise Factor
+contrast is positive, but cannot replace the primary endpoint. The other
+metrics, lengths and row-wise comparisons are secondary and unadjusted.
+The new panel is not pooled with the observed panels, and no targets are added
+in response to its result. Observed-panel target interactions remain positive
+for 61/96 and 34/48 targets; their narrower positive intervals do not establish
+a difference between panels.
+
+\begin{table}[htbp]
+\caption{Fresh96 primary-interaction marginals in locked seed/rotation order.
+The three training seeds are 20260923/24/25; rotation seeds are 20261001/02/03.}
+\label{tab:fresh_marginals}\centering\small
+\begin{tabular}{lrrr}\toprule
+Marginal & First & Second & Third \\\midrule
+\input{generated/fresh96_marginals}
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Fresh96 contrasts from complete saved scores. Only pair-lDDT interaction
+is primary. All other intervals are unadjusted secondary summaries, conditional
+on the fixed fitted models.}
+\centering\footnotesize
+\begin{tabular}{llll}\toprule
+Metric & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/fresh96_contrasts}
+\end{tabular}
+\end{table}
+
+\clearpage
+\section{Post-hoc training-setting change of the complete interaction}
+\label{app:training_psi}
+After the ESM2 Train384 four-cell control was complete, a subsequent analysis
+computed $q_i=\Psi_{384,i}-\Psi_{96,i}$ for every shared target. Model identities,
+three seeds, three rotations and complete target coverage were checked before
+aggregation. The analysis uses 20,000 paired whole-target bootstrap draws
+(seed 20260924), retaining all model cells for each sampled target. These are
+exploratory, unadjusted intervals, not differences between two marginal
+confidence intervals or new confirmatory endpoints.
+
+\begin{table}[htbp]
+\caption{Direct ESM2 interaction change, Train384 minus Train96, under the
+same 1536-update budget. All six metric/panel combinations are retained.}
+\centering\small
+\begin{tabular}{llll}\toprule
+Panel & Metric & $\Delta\Psi_{\mathrm{train}}$ & 95\% interval \\\midrule
+\input{generated/training_psi_change}
+\end{tabular}
+\end{table}
+
+This estimand differs from the previously reported training change in the
+Factor-only contrast $\Delta_F$. The pair-lDDT interaction decreases on
+Confirm96-B under this analysis; the Length48 interval includes zero. Neither
+result isolates dataset size: coverage, membership and repetition counts change
+together, and convergence at 1536 updates has not been established.
+
+\section{A portable one-target complete-prediction entry}
+\label{app:single_repro}
+The accompanying \texttt{reproducibility/openfold\_single} entry includes a
+public FASTA, the fixed Native adapter exported without changing writer tensors,
+a pinned environment/source setup script, a label-free predictor and a separate
+CIF scorer. It was executed on an H100 using a newly created Python 3.12 venv
+with system site-packages disabled, Torch 2.7.1+cu128 and a newly compiled,
+revision-pinned OpenFold extension. Host Python, CUDA 12.8 and GCC 12.5 remain
+explicit prerequisites; this is not an operating-system/container reproduction.
+
+The first previously observed engineering target, 3gxb\_A, and the first Native
+training seed were fixed for this check. ESM2 layer-12 features were recomputed
+from its 184-residue FASTA, without historical feature caches. All 184 residues
+were predicted through four trunk and selected OPM calls, with backbone and
+adapter frozen. All predicted heavy atoms were exported to mmCIF; only the
+separate scorer read experimental coordinates. The published output was also
+rescored from CIF on the local machine with the same result. The verification
+record reports the preset feature/coordinate tolerances, the score difference,
+file hashes and actual import paths. This validates one model, target and
+primary metric, not the complete experimental matrix, all supplementary metrics
+or end-to-end adapter retraining.
+
+The archived engineering history includes two missing-dependency starts before
+prediction, followed by a successful run. A copied reference symlink was replaced
+by a hash-identical ordinary file and independently rescored. The current writer
+source matches the verified Fresh96 inference snapshot; its later rotated-G+
+branch differs from the initial Train96 training snapshot, without changing this
+Native Factor computation. These provenance distinctions are retained rather
+than describing all historical sources as byte-identical. Pretrained AF2/ESM2
+weights are obtained separately from upstream under their original terms and
+verified by hash; they are not bundled in the compact artifact.

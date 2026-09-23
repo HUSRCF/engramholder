@@ -1,0 +1,21 @@
+{
+  "previous_lock": "paper_sources.v5.lock.json",
+  "current_lock": "paper_sources.v6.lock.json",
+  "old_sources_unchanged": true,
+  "added_sources": [
+    "evidence/openfold_followup_analysis.json",
+    "evidence/openfold_fresh96_complete.json",
+    "evidence/openfold_fresh96_execution_lock.json",
+    "evidence/openfold_fresh96_model_lock.json",
+    "evidence/openfold_fresh96_records.json",
+    "evidence/openfold_fresh96_reference_manifest.json",
+    "evidence/openfold_fresh96_scoring_lock.json",
+    "evidence/openfold_fresh96_summary.json",
+    "evidence/openfold_training_psi_protocol.json"
+  ],
+  "scope": "Fresh96 fixed-model target validation plus post-hoc ESM2 training-setting Psi change; no rewriting old numerical fields.",
+  "old_numeric_fields": 449,
+  "new_numeric_fields": 83,
+  "total_numeric_fields": 532,
+  "old_cells_and_provenance_unchanged": true
+}

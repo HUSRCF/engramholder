@@ -1,0 +1,69 @@
+{
+  "collected_utc": "2026-09-23T16:03:48.488182+00:00",
+  "files": {
+    "evidence/openfold_fresh96_summary.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/analysis/analysis.json",
+      "sha256": "af42f0549643d54fe36e5976869574863b67a9bf0ecfc6ccfa698f904d2e0533"
+    },
+    "evidence/openfold_fresh96_records.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/analysis/metric_records.json",
+      "sha256": "7c9373966b95de3bf337a3ec425a15572c5f5d5c1ec65eead5f19d9872f4f45e"
+    },
+    "evidence/openfold_fresh96_complete.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/analysis/complete.json",
+      "sha256": "2c8f4752b080834265ac93cd5a7d717d0aefd17eb71e92556fd481da511d04fa"
+    },
+    "evidence/openfold_fresh96_execution_lock.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/execution_lock.json",
+      "sha256": "d5e07f455fda97367b66db2f59fdc014d26d4b47a28957f4fac283fab9c80bca"
+    },
+    "evidence/openfold_fresh96_model_lock.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/model_lock.json",
+      "sha256": "8b58603afb1da2a1de8dd870ef2e1c5030d743ce63830bb99e861f20547f452a"
+    },
+    "evidence/openfold_fresh96_scoring_lock.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/scoring_lock.json",
+      "sha256": "39e9b18da5426221b01248d54d66827c9639c798293544bbb4d9ae708c34ed49"
+    },
+    "evidence/openfold_fresh96_reference_manifest.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/panel/reference_manifest.json",
+      "sha256": "15f6f973dae5766001d3750ac7ca3f0e6a1d7ef504e86f63c276c44349d85a0c"
+    },
+    "reports/fresh96_20260924/inference_manifest.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/panel/inference_manifest.json",
+      "sha256": "1882d9067a32a2f01dafbf0873092b9739bbd67cc58cf8c60d98afe8a43b74d5"
+    },
+    "reports/fresh96_20260924/selection_v2.md": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/selection_v2.md",
+      "sha256": "adb525e47b06ad863b55d4bfc998b51ae6ed7f49cd5831903ebc4ef4f9a440d8"
+    },
+    "reports/fresh96_20260924/protocol_original.md": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/protocol.md",
+      "sha256": "bad677986a7d43fd8149d81f083792c78bc4a9cf0049a5e11e404037d04a9943"
+    },
+    "reports/fresh96_20260924/source_score.py": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/score.py",
+      "sha256": "34b5aff9cb10f779e24af1cec0aa39554edd4c1519cd74ae1557351f7eadfcbb"
+    },
+    "reports/fresh96_20260924/source_predict.py": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/predict.py",
+      "sha256": "e93628850d7a685cafaae6384800aa0169a49423cb2a4f932ccc03d897731759"
+    },
+    "reports/fresh96_20260924/selection_audit.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/selection_audit.json",
+      "sha256": "0d702a9cb369dd3d25b77cd85d27a5973f5fef61a83369f0812648f25bcc9bd0"
+    },
+    "reports/fresh96_20260924/preflight_complete.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/preflight_complete.json",
+      "sha256": "766f55d2ea0c3a5acb17b7dd923153eb76d210b35dbaf6470449cc2e658a1d48"
+    },
+    "reports/fresh96_20260924/engineering_complete.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/engineering/complete.json",
+      "sha256": "9ca1cb3be7145bc97f205f381c644b8972f14f38416f21adec9da5db82287e74"
+    },
+    "reports/fresh96_20260924/engineering_scoring_complete.json": {
+      "source": "/data/user/shuang886/Folding/engramfold/openfold_fresh96_20260923/engineering/scoring/complete.json",
+      "sha256": "abc342d5c1a3d29401739d632c8227319ee894acea959044c79318923975e092"
+    }
+  }
+}

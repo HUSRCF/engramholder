@@ -1,0 +1,8 @@
+{
+  "job_id": "646494",
+  "failed_job": "646482",
+  "cause": "Missing modelcif import dependency before model/feature execution",
+  "change": "Add pinned modelcif 1.7 and ihm 2.11 to portable requirements; retained isolated environment and compiled OpenFold",
+  "scientific_configuration_changed": false,
+  "submitted_utc": "2026-09-23T16:35:57.532815+00:00"
+}

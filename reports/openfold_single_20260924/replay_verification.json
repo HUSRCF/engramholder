@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "full_length": 184,
+  "coordinate_relative_l2": 0.000137269372042106,
+  "coordinate_rms": 0.0006848532581215131,
+  "feature_relative_l2": 3.097769877058454e-06,
+  "mask_identical": true,
+  "isolated_site_packages": true,
+  "openfold_python_files_identical": 81,
+  "writer_files_identical_to_fresh96_runtime": [
+    "models/interface_heads.py",
+    "models/live_opm.py",
+    "models/native_geometry.py",
+    "models/residue_predictors.py",
+    "experiments/openfold_adapter_runtime.py"
+  ],
+  "historical_training_source_difference": "live_opm.py later gained rotated-G+ support; native Factor computation unchanged. Initial byte-equality check against the older source failed and is retained.",
+  "tolerances": {
+    "coordinate_relative_l2": 0.001,
+    "coordinate_rms": 0.02,
+    "feature_relative_l2": 0.0001,
+    "pair_lddt_absolute": 0.0001
+  },
+  "scope": "Recomputed PLM features and full model prediction, with CIF scored separately; one target and one fitted model."
+}

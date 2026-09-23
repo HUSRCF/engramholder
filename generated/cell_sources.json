@@ -36,7 +36,16 @@
     "evidence/openfold_esmc_A_execution_lock.json": "76c3420fb8f221a7054910a9e626db4ee983b98b60b9aaf69bbfe16c9eec4525",
     "evidence/openfold_esmc_A_scoring_lock.json": "2df9ebf33bff8d6409c478ac2288ef5a2e1bd6d883bcac9fbddf0abe3bca0c3a",
     "evidence/openfold_esmc_A_verification.json": "7f41d31d9ec824850b89d9219cb1f2fbac86022e2f214b837e7a4280aa5044ec",
-    "evidence/data_composition_audit.json": "abbf5896ae924343fef18a0770ec9fbeda9f8e772695d8a840c87a7d80db5180"
+    "evidence/data_composition_audit.json": "abbf5896ae924343fef18a0770ec9fbeda9f8e772695d8a840c87a7d80db5180",
+    "evidence/openfold_fresh96_summary.json": "af42f0549643d54fe36e5976869574863b67a9bf0ecfc6ccfa698f904d2e0533",
+    "evidence/openfold_fresh96_records.json": "7c9373966b95de3bf337a3ec425a15572c5f5d5c1ec65eead5f19d9872f4f45e",
+    "evidence/openfold_fresh96_complete.json": "2c8f4752b080834265ac93cd5a7d717d0aefd17eb71e92556fd481da511d04fa",
+    "evidence/openfold_fresh96_execution_lock.json": "d5e07f455fda97367b66db2f59fdc014d26d4b47a28957f4fac283fab9c80bca",
+    "evidence/openfold_fresh96_model_lock.json": "8b58603afb1da2a1de8dd870ef2e1c5030d743ce63830bb99e861f20547f452a",
+    "evidence/openfold_fresh96_scoring_lock.json": "39e9b18da5426221b01248d54d66827c9639c798293544bbb4d9ae708c34ed49",
+    "evidence/openfold_fresh96_reference_manifest.json": "15f6f973dae5766001d3750ac7ca3f0e6a1d7ef504e86f63c276c44349d85a0c",
+    "evidence/openfold_training_psi_protocol.json": "3d43fb68507a22015804f04da1911d0c996c043ba48755d45c7a40948e0c502a",
+    "evidence/openfold_followup_analysis.json": "596d5883730c173649c2d4702cb4d47bb18635a78f25595fc941283edfbabd80"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -6805,6 +6814,1068 @@
       "value": 0.7378631068446577,
       "formatted": "0.73786"
     },
+    "fresh_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01240200918991601,
+      "formatted": "+0.01240"
+    },
+    "fresh_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0027809122537353296,
+      "formatted": "+0.00278"
+    },
+    "fresh_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02217529023929834,
+      "formatted": "+0.02218"
+    },
+    "fresh_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0022593734159573327,
+      "formatted": "+0.00226"
+    },
+    "fresh_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00606251527391575,
+      "formatted": "-0.00606"
+    },
+    "fresh_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.010182914840318824,
+      "formatted": "+0.01018"
+    },
+    "fresh_ca_lddt_interaction": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010142635773958674,
+      "formatted": "+0.01014"
+    },
+    "fresh_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0031773246285237366,
+      "formatted": "-0.00318"
+    },
+    "fresh_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02346688756524414,
+      "formatted": "+0.02347"
+    },
+    "fresh_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.001464858388861297,
+      "formatted": "-0.00146"
+    },
+    "fresh_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.012345097376018696,
+      "formatted": "-0.01235"
+    },
+    "fresh_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009412146150236828,
+      "formatted": "+0.00941"
+    },
+    "fresh_ca_lddt_factor_minus_query": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.19816528974167322,
+      "formatted": "+0.19817"
+    },
+    "fresh_ca_lddt_factor_minus_queryLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.1686353770560598,
+      "formatted": "+0.16864"
+    },
+    "fresh_ca_lddt_factor_minus_queryHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.22779284856018228,
+      "formatted": "+0.22779"
+    },
+    "fresh_ca_lddt_generic_plus_minus_query": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "generic_plus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.1996301481305345,
+      "formatted": "+0.19963"
+    },
+    "fresh_ca_lddt_generic_plus_minus_queryLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "generic_plus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.1696440476790631,
+      "formatted": "+0.16964"
+    },
+    "fresh_ca_lddt_generic_plus_minus_queryHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "generic_plus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.22962060212704327,
+      "formatted": "+0.22962"
+    },
+    "psi_train_c96_ca_lddt": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.01913535595504624,
+      "formatted": "-0.01914"
+    },
+    "psi_train_c96_ca_lddtLo": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03759452977159147,
+      "formatted": "-0.03759"
+    },
+    "psi_train_c96_ca_lddtHi": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0016798080864000478,
+      "formatted": "-0.00168"
+    },
+    "psi_train_l48_ca_lddt": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "ca_lddt",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0069818025591276076,
+      "formatted": "-0.00698"
+    },
+    "psi_train_l48_ca_lddtLo": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "ca_lddt",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.016732750624557934,
+      "formatted": "-0.01673"
+    },
+    "psi_train_l48_ca_lddtHi": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "ca_lddt",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0025908337504091847,
+      "formatted": "+0.00259"
+    },
+    "fresh_residue_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011481223757418705,
+      "formatted": "+0.01148"
+    },
+    "fresh_residue_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0023666856129519773,
+      "formatted": "+0.00237"
+    },
+    "fresh_residue_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02075223878738104,
+      "formatted": "+0.02075"
+    },
+    "fresh_residue_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0017685647706518783,
+      "formatted": "+0.00177"
+    },
+    "fresh_residue_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006353517074874806,
+      "formatted": "-0.00635"
+    },
+    "fresh_residue_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009497179275021216,
+      "formatted": "+0.00950"
+    },
+    "fresh_residue_ca_lddt_interaction": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.009712658986766824,
+      "formatted": "+0.00971"
+    },
+    "fresh_residue_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0031241604134835984,
+      "formatted": "-0.00312"
+    },
+    "fresh_residue_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.022520966455886568,
+      "formatted": "+0.02252"
+    },
+    "fresh_residue_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0015353123751406126,
+      "formatted": "-0.00154"
+    },
+    "fresh_residue_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.012078876470594515,
+      "formatted": "-0.01208"
+    },
+    "fresh_residue_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008946463096168047,
+      "formatted": "+0.00895"
+    },
+    "fresh_residue_ca_lddt_factor_minus_query": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.18763631643259682,
+      "formatted": "+0.18764"
+    },
+    "fresh_residue_ca_lddt_factor_minus_queryLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.1594913812801968,
+      "formatted": "+0.15949"
+    },
+    "fresh_residue_ca_lddt_factor_minus_queryHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.21602948976038455,
+      "formatted": "+0.21603"
+    },
+    "fresh_residue_ca_lddt_generic_plus_minus_query": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "generic_plus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.1891716288077374,
+      "formatted": "+0.18917"
+    },
+    "fresh_residue_ca_lddt_generic_plus_minus_queryLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "generic_plus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.16045816698583684,
+      "formatted": "+0.16046"
+    },
+    "fresh_residue_ca_lddt_generic_plus_minus_queryHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "generic_plus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.2179750165325906,
+      "formatted": "+0.21798"
+    },
+    "psi_train_c96_residue_ca_lddt": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.017115082366298193,
+      "formatted": "-0.01712"
+    },
+    "psi_train_c96_residue_ca_lddtLo": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03448268692843346,
+      "formatted": "-0.03448"
+    },
+    "psi_train_c96_residue_ca_lddtHi": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0006090479268211616,
+      "formatted": "-0.00061"
+    },
+    "psi_train_l48_residue_ca_lddt": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.006603901952503738,
+      "formatted": "-0.00660"
+    },
+    "psi_train_l48_residue_ca_lddtLo": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.016113478957703584,
+      "formatted": "-0.01611"
+    },
+    "psi_train_l48_residue_ca_lddtHi": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0026261413829443934,
+      "formatted": "+0.00263"
+    },
+    "fresh_tm_score_fixed_full_length_factor_rotation": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012888194444444445,
+      "formatted": "+0.01289"
+    },
+    "fresh_tm_score_fixed_full_length_factor_rotationLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.00016250578703703617,
+      "formatted": "+0.00016"
+    },
+    "fresh_tm_score_fixed_full_length_factor_rotationHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.025622488425925925,
+      "formatted": "+0.02562"
+    },
+    "fresh_tm_score_fixed_full_length_gplus_rotation": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.004115393518518518,
+      "formatted": "+0.00412"
+    },
+    "fresh_tm_score_fixed_full_length_gplus_rotationLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.005623394097222222,
+      "formatted": "-0.00562"
+    },
+    "fresh_tm_score_fixed_full_length_gplus_rotationHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.013607948495370363,
+      "formatted": "+0.01361"
+    },
+    "fresh_tm_score_fixed_full_length_interaction": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008772800925925925,
+      "formatted": "+0.00877"
+    },
+    "fresh_tm_score_fixed_full_length_interactionLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.008284004629629629,
+      "formatted": "-0.00828"
+    },
+    "fresh_tm_score_fixed_full_length_interactionHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02585442708333333,
+      "formatted": "+0.02585"
+    },
+    "fresh_tm_score_fixed_full_length_native_minus_gplus": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.004718750000000001,
+      "formatted": "-0.00472"
+    },
+    "fresh_tm_score_fixed_full_length_native_minus_gplusLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.018587161458333328,
+      "formatted": "-0.01859"
+    },
+    "fresh_tm_score_fixed_full_length_native_minus_gplusHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008960876736111104,
+      "formatted": "+0.00896"
+    },
+    "fresh_tm_score_fixed_full_length_factor_minus_query": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.219040625,
+      "formatted": "+0.21904"
+    },
+    "fresh_tm_score_fixed_full_length_factor_minus_queryLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.1831172395833333,
+      "formatted": "+0.18312"
+    },
+    "fresh_tm_score_fixed_full_length_factor_minus_queryHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.2546516145833333,
+      "formatted": "+0.25465"
+    },
+    "fresh_tm_score_fixed_full_length_generic_plus_minus_query": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "generic_plus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.22375937499999998,
+      "formatted": "+0.22376"
+    },
+    "fresh_tm_score_fixed_full_length_generic_plus_minus_queryLo": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "generic_plus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.18781777777777778,
+      "formatted": "+0.18782"
+    },
+    "fresh_tm_score_fixed_full_length_generic_plus_minus_queryHi": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "generic_plus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.2596782118055555,
+      "formatted": "+0.25968"
+    },
+    "psi_train_c96_tm_score_fixed_full_length": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.025645717592592588,
+      "formatted": "-0.02565"
+    },
+    "psi_train_c96_tm_score_fixed_full_lengthLo": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.05176321469907407,
+      "formatted": "-0.05176"
+    },
+    "psi_train_c96_tm_score_fixed_full_lengthHi": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.00015577256944449648,
+      "formatted": "-0.00016"
+    },
+    "psi_train_l48_tm_score_fixed_full_length": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.009901620370370368,
+      "formatted": "-0.00990"
+    },
+    "psi_train_l48_tm_score_fixed_full_lengthLo": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.026813807870370368,
+      "formatted": "-0.02681"
+    },
+    "psi_train_l48_tm_score_fixed_full_lengthHi": {
+      "source": "evidence/openfold_followup_analysis.json",
+      "field_path": [
+        "training_setting_change",
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.007345567129629619,
+      "formatted": "+0.00735"
+    },
+    "fresh_factor_native": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "group_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.5312050292466008,
+      "formatted": "0.53121"
+    },
+    "fresh_factor_rotated": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "group_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5188030200566849,
+      "formatted": "0.51880"
+    },
+    "fresh_generic_plus_native": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "group_means",
+        "generic_plus_native"
+      ],
+      "operation": "identity",
+      "value": 0.5326698876354622,
+      "formatted": "0.53267"
+    },
+    "fresh_generic_plus_rotated": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "group_means",
+        "generic_plus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5304105142195049,
+      "formatted": "0.53041"
+    },
+    "fresh_query_native": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "group_means",
+        "query_native"
+      ],
+      "operation": "identity",
+      "value": 0.33303973950492766,
+      "formatted": "0.33304"
+    },
+    "fresh_seed_0": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction_by_seed",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0013903544773552707,
+      "formatted": "-0.00139"
+    },
+    "fresh_seed_1": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction_by_seed",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.019785750730576868,
+      "formatted": "+0.01979"
+    },
+    "fresh_seed_2": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction_by_seed",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.012032511068654436,
+      "formatted": "+0.01203"
+    },
+    "fresh_rotation_0": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction_by_rotation",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0033284670979735406,
+      "formatted": "+0.00333"
+    },
+    "fresh_rotation_1": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction_by_rotation",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014164834272724244,
+      "formatted": "+0.01416"
+    },
+    "fresh_rotation_2": {
+      "source": "evidence/openfold_fresh96_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction_by_rotation",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.012934605951178244,
+      "formatted": "+0.01293"
+    },
     "inter_c96_interaction_residue": {
       "source": "evidence/openfold_gplus_rotation_final.json",
       "field_path": [
@@ -6894,8 +7965,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 490,
-    "distinct_keys": 391,
+    "literal_references": 588,
+    "distinct_keys": 474,
     "missing": []
   },
   "pending": [],

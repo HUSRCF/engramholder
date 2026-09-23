@@ -1,21 +1,23 @@
-# 当前稿件状态（2026-09-23）
+# 当前稿件状态（2026-09-24）
 
 此处是写作仓库的唯一当前状态入口，记录**已纳入稿件的证据**，不报告远端队列实时进度。
 
 | 项目 | 当前状态 |
 |---|---|
-| 稿件版本 | `main`；本轮修订基线 `0b99389`，包含本状态更新的提交是本轮稿件版本。可用 `git log -1 --format=%H -- reports/manuscript_fill_20260922.md` 查询精确提交。 |
-| 活跃来源锁 | [paper_sources.v5.lock.json](../notes/writing_branch_20260922/paper_sources.v5.lock.json)；449 个生成数值字段。旧锁保留，不覆盖历史记录。 |
-| 已纳入的核心与范围结果 | Protenix 原始 Factor/Generic、原生/旋转、Tiny、Train96/384、Length48、匹配 Train384 G+；OpenFold Train96 与 Train384/ESM2、Train384/ESMC 完整四格；已完成的 AtlasFold 原始适配矩阵与系统参照。 |
-| 已纳入的边界与审计 | 完整推理范数交换及局部/共享迁移阴性结果；嵌套数据与成员定义核验；训练预算报告的“1536 步收敛未建立”限制；头内同谱与跨头匹配边界。 |
-| 尚未纳入的独立工作 | B 组、Fresh96、SGDM、DiamondHill 后续新矩阵。此列表表示未进入本稿的证据范围，**不表示这些队列此刻仍未完成**；本轮未查询其实时状态或导入结果。 |
-| 本轮修改与检查 | [固定预算表述及状态入口收尾](fixed_budget_status_followup_20260923.md)；[机器可读验证](../notes/writing_branch_20260922/draft_validation.fixed_budget_status.json)。 |
-| 匿名材料范围 | 最近已核验候选为本地 `build/anonymous_artifact_v12.zip`，属于分数分析/算子复现材料；本轮文字修订尚未重新打包。 |
-| 未完成的复现交付 | 尚未在干净环境完成单目标“序列→PLM 特征→完整 CIF→评分”；已有编译、数值和算子检查不替代它，也不构成全稿视觉验收。 |
+| 稿件版本 | `main`；本轮修订基线 `11a1e3b`，包含本状态更新的提交是本轮稿件版本。可用 `git log -1 --format=%H -- reports/manuscript_fill_20260922.md` 查询精确提交。 |
+| 活跃来源锁 | [paper_sources.v6.lock.json](../notes/writing_branch_20260922/paper_sources.v6.lock.json)；532 个生成数值字段（旧449项及来源映射未变）。旧锁保留，不覆盖历史记录。 |
+| 已纳入的核心与范围结果 | Protenix 原始 Factor/Generic、原生/旋转、Tiny、Train96/384、Length48、匹配 Train384 G+；OpenFold Train96 与 Train384/ESM2、Train384/ESMC 完整四格；已完成的 AtlasFold 原始适配矩阵与系统参照；Fresh96完整2,400预测及主交互未建立的结果。 |
+| 已纳入的边界与审计 | 完整推理范数交换及局部/共享迁移阴性结果；嵌套数据与成员定义核验；训练预算报告的“1536 步收敛未建立”限制；头内同谱与跨头匹配边界；ESM2 Train384−Train96 的完整交互变化后续分析。 |
+| 尚未纳入的独立工作 | B 组、SGDM、DiamondHill 后续新矩阵。此列表表示未进入本稿的证据范围，**不表示这些队列此刻仍未完成**；本轮未查询其实时状态或导入结果。 |
+| 本轮修改与检查 | [Fresh96与训练交互整合](fresh96_training_psi_integration_20260924.md)、[单目标预测复现](openfold_single_reproduction_20260924.md)；[机器检查记录](../notes/writing_branch_20260922/draft_validation.fresh96_repro.json)。 |
+| 匿名材料范围 | 本轮候选为本地 `build/anonymous_artifact_v14.zip`，包含分析、算子检查及单目标OpenFold预测入口；具体检查结果见本轮验证。 |
+| 复现交付范围 | 一个固定OpenFold模型、一个184残基目标，在新隔离Python环境完成“序列→重算PLM特征→完整CIF→主指标评分”。全矩阵重生成、完整重新训练及跨硬件保证仍未建立；本轮不是全稿视觉验收。 |
 
-本轮只补固定预算下的绝对均值解释及文档状态，不续训、不改统计终点、不推断未纳入结果。
+本轮导入已锁定Fresh96完整结果，计算明确标注的后续交互变化，并完成单目标工程复现；无新增训练、无修改原确认终点、无推断其他队列结果。
 
 ## 历史快照（以下不代表当前状态）
+
+- **2026-09-23，11a1e3b：** [固定预算与状态入口收尾](fixed_budget_status_followup_20260923.md)，v5、449字段；当时Fresh96尚未导入，单目标完整预测尚未执行。
 
 - **2026-09-23，v5：** [7c701ed 盲审落实](blind_review_7c701ed_response_20260923.md)：短链数据定义、控制范围、六个既有补充统计字段；共449字段，验证记录主文9页，局部检查附录数据表。
 - **2026-09-23，v4：** [OpenFold ESMC A组整合](openfold_esmc_A_integration_20260923.md)及[呈现修订](esmc_review_response_20260923.md)，共443字段。

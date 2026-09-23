@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-09-23T16:09:59.321692+00:00",
+  "predictions_verified": 2400,
+  "failed_predictions": 0,
+  "checkpoint_hashes_verified": 24,
+  "source_and_lock_checks": 328,
+  "all_source_hashes_match": true,
+  "problems": [],
+  "files": {
+    "model_lock.json": {
+      "sha256": "8b58603afb1da2a1de8dd870ef2e1c5030d743ce63830bb99e861f20547f452a",
+      "mtime_utc": "2026-09-22T18:54:13.824324+00:00"
+    },
+    "panel/inference_manifest.json": {
+      "sha256": "1882d9067a32a2f01dafbf0873092b9739bbd67cc58cf8c60d98afe8a43b74d5",
+      "mtime_utc": "2026-09-22T19:17:10.672894+00:00"
+    },
+    "execution_lock.json": {
+      "sha256": "d5e07f455fda97367b66db2f59fdc014d26d4b47a28957f4fac283fab9c80bca",
+      "mtime_utc": "2026-09-23T01:26:06.333605+00:00"
+    },
+    "scoring_lock.json": {
+      "sha256": "39e9b18da5426221b01248d54d66827c9639c798293544bbb4d9ae708c34ed49",
+      "mtime_utc": "2026-09-23T01:26:06.420198+00:00"
+    },
+    "analysis/complete.json": {
+      "sha256": "2c8f4752b080834265ac93cd5a7d717d0aefd17eb71e92556fd481da511d04fa",
+      "mtime_utc": "2026-09-23T01:56:49.707449+00:00"
+    }
+  },
+  "first_prediction_mtime_utc": "2026-09-23T01:26:47.551261+00:00",
+  "last_prediction_mtime_utc": "2026-09-23T01:55:32.074156+00:00",
+  "chronology_scope": "Saved locks, outputs and filesystem timestamps; not a proof of all historical access.",
+  "passed": true
+}

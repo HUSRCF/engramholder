@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-23T16:08:15.565045+00:00",
+  "identity": "Post-hoc training-setting change of the complete OpenFold four-cell interaction",
+  "authorisation": "User approved 2026-09-24; this is not a new confirmatory endpoint",
+  "panels": [
+    "confirm96",
+    "length48"
+  ],
+  "metrics": [
+    "ca_lddt",
+    "residue_ca_lddt",
+    "tm_score_fixed_full_length"
+  ],
+  "direction": "Psi_Train384_ESM2 minus Psi_Train96_ESM2",
+  "aggregation": "Three seeds and three rotations within each target, then equally weighted targets",
+  "bootstrap": {
+    "unit": "whole target with all configurations paired",
+    "draws": 20000,
+    "seed": 20260924,
+    "interval": "percentile 2.5/97.5, unadjusted exploratory"
+  },
+  "constraints": [
+    "No target or seed filtering",
+    "No pooling with Fresh96",
+    "No new training",
+    "Does not isolate sample count from composition and repetitions"
+  ],
+  "sources": {
+    "evidence/openfold_gplus_rotation_records.json": "8b9b72d610ff99f068dfee3d8f956d0f8f48bfd82ef4fdd097cb9b343aea9f7a",
+    "evidence/openfold_esmc_A_records.json": "a9447e4a2457127a03b977d10eadc835634ace453b26da239bc62fec7f7d6ae1"
+  }
+}

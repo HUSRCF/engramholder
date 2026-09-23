@@ -5,15 +5,21 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The v3 input lock contains
-246 generated numerical fields and retains the v4 diagnostic boundaries.
+full-inference source/norm cells and contrasts. The active v6 input lock contains
+532 generated numerical fields, retaining the old 449 fields unchanged. It also
+verifies all 2,400 Fresh96 score records and three-metric contrasts, plus the
+post-hoc Train384-minus-Train96 change of the full interaction on both panels.
+Fresh96 does not establish its sole primary interaction; its positive Factor
+contrast is not substituted for that endpoint.
 Literal numerical references in the manuscript and generated tables are checked
 against the generated keys; an unknown key also raises a LaTeX PackageError.
 
 ```sh
-python -m pip install numpy matplotlib torch
+python -m pip install numpy matplotlib torch gemmi
 python scripts/build_paper_assets.py
 python tests/test_numeric_keys.py
+python tests/test_openfold_followups.py
+python tests/test_single_prediction_score.py
 python reproducibility/operator_smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex
 ```
@@ -34,11 +40,18 @@ or cluster-launch configuration. Historical execution locks identify the sources
 used in the runs; `source_manifest.json` identifies the accompanying working
 source snapshot. These are different provenance claims.
 
-The compact archive deliberately does not contain model weights, all experimental
-structures, ESM caches, all checkpoints, or a tested turnkey retraining launcher.
-A clean-environment full prediction from an input sequence and distributed adapter
-checkpoint has not yet been validated by this compact package. Score reconstruction
-and operator checks do not establish that stronger reproduction level.
-Those remain requirements for a complete training reproduction release. Do not
-present this package as satisfying them. The original personal repository and
-its Git history must not be included as an anonymous supplement.
+The compact archive includes one Native adapter and a tested complete-prediction
+entry in [`openfold_single/`](openfold_single/README.md). On one already observed
+target, a fresh isolated Python environment recomputed PLM features from FASTA,
+generated a full-atom CIF, and scored it in a separate process. The preset replay
+tolerances passed; the validation record and complete engineering history state
+its limits. The example does not rely on an author-specific feature cache.
+
+Pretrained AF2/ESM2 weights, all experimental structures, the remaining adapter
+checkpoints and a full retraining environment are not bundled. Obtain the
+pretrained weights from the pinned upstream sources under their terms. This
+one-target entry does not reproduce the full matrix or establish portability to
+all devices. `fixed_configs.json` remains a historical recipe summary, while the
+single-target directory contains its own executable setup/configuration.
+The personal repository and its Git history must not be included in an anonymous
+supplement. Binary/metadata anonymization still requires author review.

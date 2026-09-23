@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "sequence_length": 184,
+  "sequence_sha256": "64bc12b25f2b78a9233455bf567ac114259f586592aa9a42e075537cc9263963",
+  "input_fasta_sha256": "8d3d24029790b021b7305e64ed443f846de7f340429e29beb89c937d734b4280",
+  "af2_sha256": "b53a724294cdd46a45d530b306bced8e429ffee74a4f9a2a897551b30966c415",
+  "esm_sha256": "7f21e80e61d16a71735163ef555d3009afb0c98da74c48e29df08606973cc55e",
+  "adapter_sha256": "1961474756ba55571cab163e6fb1ab860d5721a8c79751149731f522f71744e7",
+  "trunk_calls": 4,
+  "opm_calls": [
+    {
+      "length": 184,
+      "factor_dim": 32,
+      "grad_enabled": false,
+      "pair_channels": 128
+    },
+    {
+      "length": 184,
+      "factor_dim": 32,
+      "grad_enabled": false,
+      "pair_channels": 128
+    },
+    {
+      "length": 184,
+      "factor_dim": 32,
+      "grad_enabled": false,
+      "pair_channels": 128
+    },
+    {
+      "length": 184,
+      "factor_dim": 32,
+      "grad_enabled": false,
+      "pair_channels": 128
+    }
+  ],
+  "frozen_backbone_sha256": "8132845302dbd9ee5ec814ecbc61d87c9e33443424e0898e747a1e9b11e5af53",
+  "features_recomputed": true,
+  "reference_read": false,
+  "cif_sha256": "560aeccc74926922e3bb68d98ec8da8c301c43d64d45627fe2502a36d723f987",
+  "seconds": 18.726304854266346,
+  "torch": "2.7.1+cu128",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "python": "3.12.11 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:09:17) [GCC 11.2.0]",
+  "interpreter": "/data/user/shuang886/Folding/engramholder_repro_20260924/clean_env/venv/bin/python",
+  "environment_prefix": "/data/user/shuang886/Folding/engramholder_repro_20260924/clean_env/venv",
+  "base_prefix": "/data/user/shuang886/.conda/envs/fold",
+  "openfold_path": "/data/user/shuang886/Folding/engramholder_repro_20260924/clean_env/openfold/openfold/__init__.py",
+  "torch_path": "/data/user/shuang886/Folding/engramholder_repro_20260924/clean_env/venv/lib/python3.12/site-packages/torch/__init__.py",
+  "esm_path": "/data/user/shuang886/Folding/engramholder_repro_20260924/clean_env/venv/lib/python3.12/site-packages/esm/__init__.py",
+  "pythonpath": "/data/user/shuang886/Folding/engramholder_repro_20260924/clean_env/openfold"
+}

@@ -1,0 +1,12 @@
+{
+  "count": 50,
+  "lddt_sha256": "2a3bb36fed58cff0beb92da0af40ca74c5b9892947f01ab825e7547691d99d96",
+  "max_error": {
+    "ca_lddt": 0.0,
+    "residue_ca_lddt": 0.0,
+    "tm_score_fixed_full_length": 0.0
+  },
+  "passed": true,
+  "scorer_sha256": "34b5aff9cb10f779e24af1cec0aa39554edd4c1519cd74ae1557351f7eadfcbb",
+  "tm_sha256": "d56abb1ea8a3f22c4e0814bed8678b836959fe22f12d057eeb2b462e08f5ce88"
+}

@@ -1,10 +1,8 @@
 \section{Conclusion}
 \label{sec:conclusion}
-Query-anchored native residuals enable controlled tests of update orientation.
-OpenFold Train96/ESM2-35M establishes a head-by-rotation interaction, whereas
-Train384 establishes it with neither ESM2 nor ESMC despite higher ESMC scores.
-Protenix supports direction effects, length transfer and an advantage over
-matched G+; OpenFold's G+ can be better, and AtlasFold bounds the tested scope.
-Norm exchanges limit a global-scale explanation without identifying training
-origins. Preserving native orientation can help constrained adaptation, but
-neither guarantees gains nor determines the best adapter.
+OpenFold Train96/ESM2-35M establishes a head-by-rotation interaction on observed
+panels, but Fresh96 does not establish it. Train384 establishes it with neither
+ESM2 nor ESMC. Protenix supports direction effects, length transfer and gains
+over matched G+; OpenFold's G+ can be better, and AtlasFold bounds the scope.
+Adapter evaluation should measure gains and rotation sensitivity separately,
+including a rotation-closed control.

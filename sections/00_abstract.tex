@@ -6,16 +6,19 @@ operators. Fixed orthogonal controls rotate residual channels; all adapters
 are trained from the same zero-residual function under paired conditions.
 A generic head with explicit factor access and a free output layer provides
 a control whose function class can absorb the rotation. In the OpenFold
-Train96/ESM2-35M follow-up on observed targets, rotation sensitivity interacts with head
+Train96/ESM2-35M follow-up under 1536 AdamW updates on observed targets, rotation sensitivity interacts with head
 parameterization: the difference-in-differences is
 \result{inter_c96_interaction} in C$\alpha$ pair-lDDT on Confirm96-B
 (95\% target-bootstrap interval
 [\result{inter_c96_interactionLo}, \result{inter_c96_interactionHi}]).
+Reusing the fixed models on 96 prospectively locked, sequence-screened targets
+gives \result{fresh_ca_lddt_interaction}
+[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}];
+the central interaction is not established on this new panel.
 Separately locked Protenix studies establish native-direction effects, including
 an advantage of \result{pt_length} beyond the adapters' training-length range.
-Full-inference interventions on 24 observed proteins retain a native-source
-advantage at both matched residual norms, showing that global Frobenius norm
-alone does not explain the observed gap under this intervention.
+Matched-norm interventions retain a learned-source gap without isolating its
+training origin.
 At Train384, neither ESM2-35M nor ESMC-600M establishes this interaction,
 although the ESMC configuration improves structural quality.
 Effects depend on the predictor and training setting, and native factor heads

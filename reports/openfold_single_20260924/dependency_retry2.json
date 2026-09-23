@@ -1,0 +1,9 @@
+{
+  "job_id": "646570",
+  "failed_job": "646494",
+  "cause": "Offline wheelhouse lacked transitive ihm dependency msgpack",
+  "change": "Pinned msgpack 1.2.2; installed dependencies and verified complete model imports/sequence features on CPU before submission",
+  "preflight": "AlphaFold, assign, esm, modelcif, gemmi imports and sequence_features shape[20,4] passed in new venv",
+  "scientific_configuration_changed": false,
+  "submitted_utc": "2026-09-23T17:18:15.794447+00:00"
+}

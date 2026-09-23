@@ -1,8 +1,8 @@
 \section{Results}
 \label{sec:results}
-\subsection{Rotation sensitivity interacts with adapter parameterization}
+\subsection{An observed-panel interaction is not established on new targets}
 \label{sec:interaction_result}
-Under the matched OpenFold Train96/ESM2-35M recipe, output rotation affects the factor
+Under the matched OpenFold Train96/ESM2-35M recipe with 1536 AdamW updates, output rotation affects the factor
 head more than G+ (Figure~\ref{fig:interaction}). On Confirm96-B, the factor
 contrast is \result{inter_c96_factor_rotation}, while G+'s contrast is
 \result{inter_c96_gplus_rotation}. The directly estimated interaction is
@@ -16,18 +16,14 @@ percentage improvements. The completed Train384 four-cell controls do not
 establish the interaction with either ESM2 or ESMC
 (Table~\ref{tab:interaction_scope}); the positive finding is recipe-specific.
 
-The main-metric interaction is positive in all three seed marginals and all
-three rotation marginals on both panels, but in 8/9 and 7/9 individual
-seed-by-rotation cells, respectively. Target-level interactions are positive
-for 61/96 and 34/48 proteins. On Confirm96-B, the residue-average lDDT interaction is
+On both observed panels, all seed and rotation marginals are positive, but only
+8/9 and 7/9 individual seed-by-rotation cells are positive, respectively.
+On Confirm96-B, the residue-average lDDT interaction is
 \result{inter_c96_interaction_residue}
 [\result{inter_c96_interaction_residueLo}, \result{inter_c96_interaction_residueHi}],
 and the TM-score interaction is \result{inter_c96_interaction_tm}
 [\result{inter_c96_interaction_tmLo}, \result{inter_c96_interaction_tmHi}].
-These supplementary metrics score the same structures, not independent samples.
-The Length48 supplementary intervals are positive, although one TM-score seed
-marginal is negative. The effect is therefore not confined to a single marginal instance,
-and it is not positive for every fitted combination.
+These metrics score the same structures, not independent samples.
 
 G+'s direction intervals include zero on both panels; its Length48 rotated mean
 is slightly higher. This does not establish equivalence of trained G+ systems.
@@ -36,6 +32,18 @@ tested parameterizations and optimizer. The function-class control rules out a
 loss of representable functions as a necessary effect of rotating G+, while
 leaving optimization dynamics as part of the empirical comparison.
 
+We then evaluated these same 24 adapters and query-only baseline on Fresh96,
+locked before prediction under the sequence-screening protocol in
+Appendix~\ref{app:fresh96}. All 2,400 predictions completed successfully, with
+no new training. Mean scores for F/RF/G+/RG+/query are
+\result{fresh_factor_native}/\result{fresh_factor_rotated}/\result{fresh_generic_plus_native}/\result{fresh_generic_plus_rotated}/\result{fresh_query_native}.
+Factor retains a direction effect of \result{fresh_ca_lddt_factor_rotation}
+[\result{fresh_ca_lddt_factor_rotationLo}, \result{fresh_ca_lddt_factor_rotationHi}],
+but the sole primary interaction is \result{fresh_ca_lddt_interaction}
+[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}].
+It is not established on new targets; the positive Factor contrast cannot
+replace this endpoint. Supplementary interaction intervals also include zero.
+
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
 \caption{OpenFold Train96/ESM2-35M four-cell experiment. Left: absolute mean scores
@@ -43,7 +51,8 @@ leaving optimization dynamics as part of the empirical comparison.
 direction effects and their direct interaction $\Psi$, with 95\% target-bootstrap
 intervals conditional on fitted models. Both panels were previously observed;
 Confirm96-B is the primary endpoint of this follow-up. Completed Train384
-interactions for both PLMs are reported in Table~\ref{tab:interaction_scope}.}
+interactions for both PLMs are reported in Table~\ref{tab:interaction_scope};
+the separate Fresh96 evaluation is reported in the text.}
 \label{fig:interaction}
 \end{figure}
 
@@ -52,20 +61,16 @@ interactions for both PLMs are reported in Table~\ref{tab:interaction_scope}.}
 The original Protenix-Mini tangent comparison on Confirm96-B gives a native
 advantage of \result{pt_tangent} [\result{pt_tangentLo}, \result{pt_tangentHi}],
 with 78/96 positive targets. Full gives \result{pt_full24}
-[\result{pt_full24Lo}, \result{pt_full24Hi}]. The tangent construction serves to
-isolate first-order updates; it is not a uniformly better adapter than Full.
+[\result{pt_full24Lo}, \result{pt_full24Hi}]. The tangent construction isolates first-order updates, not a uniformly better adapter.
 Using Tiny's own factors and decoder retains an advantage of
 \result{pt_tiny} [\result{pt_tinyLo}, \result{pt_tinyHi}], extending the evidence
 to a second checkpoint within the same family.
 
 A mean-preserving orthogonal control, $Ru=u$ for the all-ones unit vector $u$,
 also underperforms native updates: \result{pt_mean}
-[\result{pt_meanLo}, \result{pt_meanHi}]. Preserving this special channel
-direction therefore does not remove the effect in the tested setting. It does
-not isolate all downstream normalization behavior. These follow-ups, together
-with the Full training-scale comparisons, are shown in
-Figure~\ref{fig:scope}. They establish a scope for the factor direction effect;
-they do not constitute additional factor-versus-G+ rotation interactions.
+[\result{pt_meanLo}, \result{pt_meanHi}]. Preserving this channel direction does not remove the effect or isolate
+all downstream normalization. Figure~\ref{fig:scope} summarizes these Factor
+contrasts; they are not additional Factor--G+ rotation interactions.
 
 \subsection{Fixed adapters transfer beyond their adaptation-training lengths}
 \label{sec:length}
@@ -74,18 +79,13 @@ on Length48 of \result{pt_length} [\result{pt_lengthLo}, \result{pt_lengthHi}],
 with 41/48 positive targets. Native and rotated means are
 \result{pt384_l48_native} and \result{pt384_l48_rotated}, both above the
 unadapted mean of \result{pt384_l48_query} (Table~\ref{tab:coverage}).
-Thus the contrast is accompanied by useful adaptation in mean score, rather
-than only less damage from one update family. Baseline comparisons here remain
-descriptive secondary results. Supplementary residue-average lDDT and TM-score
-support the same direction.
+Both adapted families improve in mean score; baseline comparisons are
+descriptive. Supplementary residue-average lDDT and TM-score are concordant.
 
-This study tests complete sequences beyond the adapters' training-length
-range, not arbitrary-length prediction or family novelty. The pretrained
-folding model and PLM may already have encountered long or related proteins.
+This complete-sequence study tests adapter length transfer, not family novelty
+or exclusion from backbone/PLM pretraining.
 Official Mini-ESM scores \result{pt384_l48_official} on the same panel, leaving
-a substantial quality gap. Length transfer strengthens the tested applicability
-of the adapter but does not establish a competitive replacement for the full
-native system.
+a substantial quality gap rather than establishing a competitive replacement.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/scope.pdf}
@@ -123,27 +123,24 @@ Panel & Features & Query & F & RF & G+ & RG+ \\\midrule
 \end{tabular}
 \end{table}
 
-Higher quality does not establish stronger direction dependence. The ESMC
+The ESMC
 Native--Rotated primary contrast is \result{a_c96_c_ca_lddt_factor_rotation}
 [\result{a_c96_c_ca_lddt_factor_rotationLo}, \result{a_c96_c_ca_lddt_factor_rotationHi}]
 on Confirm96-B, and the secondary Length48 contrast is
 \result{a_l48_c_ca_lddt_factor_rotation}
 [\result{a_l48_c_ca_lddt_factor_rotationLo}, \result{a_l48_c_ca_lddt_factor_rotationHi}].
-Both intervals include zero, as do the ESMC head-by-rotation interactions
-and the direct changes in direction effect and interaction relative to ESM2
-(Appendix~\ref{app:esmc}). G+ retains the higher mean on both panels.
-Thus the stronger feature source improves this adaptation recipe without
-establishing preservation or removal of the rotation effect. This substitution
+Both intervals include zero, as do the ESMC interactions and their direct
+changes relative to ESM2 (Appendix~\ref{app:esmc}); G+ has the higher mean.
+This substitution
 changes PLM family, feature width, cache precision and trainable input-projection
 size together; it neither isolates a
 model-size effect nor tests intermediate-layer or multilayer features.
 
-The completed ESM2 Train384 control also does not establish an interaction on
-either panel (Table~\ref{tab:interaction_scope}). The earlier positive result
-concerns Train96; neither this comparison nor the direct PLM interaction
-change identifies ESMC as the reason for the lack of an established interaction.
-The training-scale contrast reported below concerns $\Delta_F$, not $\Psi$;
-it cannot establish a change in the full head-by-rotation interaction.
+Train384/ESM2 also does not establish an interaction
+(Table~\ref{tab:interaction_scope}); the positive observed-panel result concerns
+Train96. These comparisons cannot attribute the unestablished interaction to ESMC.
+The training-scale contrasts below distinguish changes in $\Delta_F$ from
+the subsequent direct analysis of $\Psi$.
 
 \begin{table}[t]
 \caption{Completed OpenFold head-by-rotation interactions $\Psi$, with 95\%
@@ -237,6 +234,12 @@ from Train96 to Train384; rotated Factor improves more than native Factor,
 reducing their gap rather than causing an absolute performance decline.
 These contrasts change training-set composition and repetition at fixed update
 count (16 versus 4 average passes). The short-chain gap shrinks in OpenFold but
-grows in Protenix; OpenFold Length48 establishes no change. A general compensation
-rule remains unsupported. Data coverage, optimization at fixed updates,
-and training-set composition remain unseparated candidate explanations.
+grows in Protenix; OpenFold Length48 establishes no change. Separately, the
+post-hoc paired change $\Psi_{384}-\Psi_{96}$ under ESM2 is
+\result{psi_train_c96_ca_lddt}
+[\result{psi_train_c96_ca_lddtLo}, \result{psi_train_c96_ca_lddtHi}] on Confirm96-B,
+and \result{psi_train_l48_ca_lddt}
+[\result{psi_train_l48_ca_lddtLo}, \result{psi_train_l48_ca_lddtHi}] on Length48.
+Only the short-panel interaction change is established by these unadjusted
+intervals (Appendix~\ref{app:training_psi}). Data coverage, optimization at fixed
+updates and training-set composition remain unseparated explanations.

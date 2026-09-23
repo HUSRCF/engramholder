@@ -35,7 +35,8 @@ Protenix studies establish native-direction effects and transfer beyond adapter
 training lengths. The OpenFold Train96 four-cell follow-up
 \citep{ahdritz2024openfold} establishes parameterization-dependent rotation
 sensitivity on observed panels, but neither ESM2 nor ESMC establishes the
-interaction at Train384. Matched G+ comparisons favor Native in Protenix and G+
+interaction at Train384. A prospectively locked Fresh96 evaluation of the fixed
+Train96 models also does not establish the interaction. Matched G+ comparisons favor Native in Protenix and G+
 in some OpenFold settings; the tested AtlasFold interface yields no established
 benefit. A separate norm exchange limits an overall-scale explanation of one
 Protenix gap without isolating channel orientation from learned content.
@@ -45,7 +46,10 @@ writer spectra at a common state. Across Factor and G+, we match the initial
 function and training recipe, with approximate parameter counts; we do not
 match Jacobians or effective learning scales. The interaction compares these
 two parameterizations as wholes, not an isolated decoder change or a guaranteed
-expressivity hierarchy. It supplies no rule for choosing an unseen predictor's best head.
+expressivity hierarchy. For interface evaluation, adaptation gains, within-head
+rotation sensitivity and the direct cross-head interaction should therefore be
+measured separately, using a rotation-closed function class as a control.
+This evaluation principle does not select an unseen predictor's best head.
 
 Our contributions are an empirical parameterization-by-orientation interaction
 under a matched training recipe; a concrete query-anchored residual construction

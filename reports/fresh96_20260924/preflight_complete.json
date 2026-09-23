@@ -1,0 +1,16 @@
+{
+  "adapters": 24,
+  "checkpoints_final1536": 24,
+  "execution_lock_sha256": "d5e07f455fda97367b66db2f59fdc014d26d4b47a28957f4fac283fab9c80bca",
+  "feature_replays": 2,
+  "fresh_features": 96,
+  "fresh_reference_files": 96,
+  "fresh_sequences": 96,
+  "models": 25,
+  "no_new_training": true,
+  "old_coordinate_replays": 50,
+  "old_three_metric_replays": 50,
+  "passed": true,
+  "selection_version": 2,
+  "source_hashes_pass": true
+}

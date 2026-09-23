@@ -1,0 +1,16 @@
+torch==2.7.1+cu128
+numpy==2.1.2
+scipy==1.18.1
+biopython==1.88
+ml-collections==1.1.0
+dm-tree==0.1.9
+einops==0.8.2
+fair-esm==2.0.0
+gemmi==0.7.5
+modelcif==1.7
+ihm==2.11
+msgpack==1.2.2
+tqdm==4.67.1
+ninja==1.13.0
+setuptools==78.1.1
+wheel==0.45.1
