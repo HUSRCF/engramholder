@@ -90,64 +90,55 @@ independent replications. Null and negative conditions are retained.}
 \label{fig:scope}
 \end{figure}
 
-\subsection{Native-source updates retain structural advantages at matched global norms}
-\label{sec:norm_cross}
-On 24 observed Confirm96-B targets, we cross learned residual source and global
-Frobenius norm for fixed Protenix Train384/Full/1536 models. Write
-$\delta_a=m_ad_a$, where $m_a=\|\delta_a\|_F$, $\|d_a\|_F=1$, and
-$a\in\{N,R\}$. Each trained rotation is paired with the same-seed native model.
-We inject $m_Nd_N$, $m_Rd_N$, $m_Nd_R$, or $m_Rd_R$ throughout c4/s5 inference,
-scaling completed pair residuals rather than factor increments. Norms use no
-reference-structure mask. All 720 pure and mixed predictions are rerun on the
-same backend; none fails. The mixed residuals are inference-time interventions
-and need not correspond to outputs of the trained factor head or states
-encountered during training.
-
-Here, \emph{direction source} includes learned content and relative pair/channel
-magnitudes after global normalization, unlike the original channel-rotation
-control. For score $Y_{ab}$ with direction source $a$ and norm source $b$, the
-primary effect is
-\begin{equation}
- E_{\rm dir}=\tfrac12[(Y_{NN}-Y_{RN})+(Y_{NR}-Y_{RR})].
- \label{eq:norm_source}
-\end{equation}
-Whole targets are resampled within four fixed length strata, after averaging
-paired seeds and rotations; intervals condition on these fitted models.
+\subsection{Stronger sequence features improve quality without establishing a rotation interaction}
+\label{sec:esmc}
+Stage A completes the OpenFold Train384 four-cell comparison for ESM2-35M
+and repeats it with frozen ESMC-600M final-layer features. It adds 33 fits and
+4,752 predictions, all successful, while retaining the final 1536-update rule
+and common AdamW recipe. Both panels are observed follow-ups.
+ESMC raises Native's mean score by \result{a_c96_native_gain} on Confirm96-B
+and \result{a_l48_native_gain} on Length48; G+ improves by
+\result{a_c96_gplus_gain} and \result{a_l48_gplus_gain}, respectively.
+Table~\ref{tab:esmc} reports the complete four cells and the unchanged baseline.
 
 \begin{table}[t]
-\caption{Complete-inference source--norm intervention on 24 observed targets.
-Top: absolute C$\alpha$ pair-lDDT. Bottom: native-minus-rotated source effects
-at each actual learned norm, and the primary symmetric average, with 95\%
-stratified target-bootstrap intervals. The norm labels identify donors, not
-universally smaller/larger amplitudes.}
-\label{tab:norm_cross}\centering\small
-\begin{tabular}{lrr}\toprule
-Direction source & Native norm $m_N$ & Rotated norm $m_R$ \\\midrule
-\input{generated/cross_cells}
-\end{tabular}
-\par\smallskip
-\begin{tabular}{lrr}\toprule
-Source contrast & Difference & 95\% interval \\\midrule
-\input{generated/cross_effects}
+\caption{OpenFold Train384/1536 Stage A: absolute pair-lDDT means under each
+adapter feature source. F/FR are Native/Rotated Factor; G/GR are G+/Rotated G+.
+The query-only baseline has no added adapter PLM. Historical ESM2 F/FR/G and
+query predictions are reused; the other cells are newly trained and evaluated.}
+\label{tab:esmc}\centering\footnotesize
+\begin{tabular}{llrrrrr}\toprule
+Panel & Features & Query & F & FR & G & GR \\\midrule
+\input{generated/esmc_A_means}
 \end{tabular}
 \end{table}
 
-Native-source updates remain better at both matched norms
-(Table~\ref{tab:norm_cross}). The average effect is positive for 18/24 targets
-and all three seed and rotation marginals; residue-average lDDT and TM-score
-agree in direction. Global norm alone is therefore insufficient to explain
-this structural gap. The norm-source effect is \result{cross_ca_Eamp}
-[\result{cross_ca_EampLo}, \result{cross_ca_EampHi}], and the interaction is
-\result{cross_ca_I} [\result{cross_ca_ILo}, \result{cross_ca_IHi}]; neither
-establishes a stable effect. This does not establish norm irrelevance or
-additivity (Appendix~\ref{app:norm_cross}).
+Higher quality does not establish stronger direction dependence. The ESMC
+Native--Rotated primary contrast is \result{a_c96_c_ca_lddt_factor_rotation}
+[\result{a_c96_c_ca_lddt_factor_rotationLo}, \result{a_c96_c_ca_lddt_factor_rotationHi}]
+on Confirm96-B, and the secondary Length48 contrast is
+\result{a_l48_c_ca_lddt_factor_rotation}
+[\result{a_l48_c_ca_lddt_factor_rotationLo}, \result{a_l48_c_ca_lddt_factor_rotationHi}].
+Both intervals include zero, as do the ESMC head-by-rotation interactions
+and the direct changes in direction effect and interaction relative to ESM2
+(Appendix~\ref{app:esmc}). G+ retains the higher mean on both panels.
+Thus the stronger feature source improves this adaptation recipe without
+establishing preservation or removal of the rotation effect. This substitution
+changes PLM family, width and cache precision together; it neither isolates a
+model-size effect nor tests intermediate-layer or multilayer features.
 
-Earlier Train24/tangent diagnostics found an oracle-space advantage but no
-established learned-direction advantage at $10^{-3}\|U_q\|_F$; actual-scale
-task response favored Native despite smaller mean norms
-(Appendix~\ref{app:mechanisms}). The model recipe, preceding state, amplitude and
-endpoint differ here. These results therefore do not form a same-model mechanism
-chain or identify how training produced the residuals.
+\subsection{Global residual norm does not explain the learned-source gap}
+\label{sec:norm_cross}
+A full-inference robustness analysis crosses learned residual source and global
+Frobenius norm on 24 observed Confirm96-B targets, using fixed Protenix
+Train384/Full/1536 models. All 720 pure and mixed predictions are rerun on the
+same backend. Native-source updates remain better at both learned norm donors;
+the symmetric source effect is \result{cross_ca_Edir}
+[\result{cross_ca_EdirLo}, \result{cross_ca_EdirHi}]. Thus global norm alone is
+insufficient to explain this gap. The normalized residuals still differ in
+learned content, local magnitudes and channel organization: this is not a
+second pure channel-rotation experiment. The complete four cells, conditional
+effects and scope are retained in Appendix~\ref{app:norm_cross}.
 
 \subsection{Competitiveness and limits across predictors}
 \label{sec:limits_results}

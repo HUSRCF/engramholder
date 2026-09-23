@@ -1,6 +1,6 @@
 \section{Native operators and residual derivations}
 \label{app:operators}
-The predictor maps 480-dimensional frozen ESM2 features through a shared
+The default predictor maps 480-dimensional frozen ESM2 features through a shared
 128-dimensional sequence encoder to residue-level increments. For Protenix and
 OpenFold each of the two factor increments has width 32, and the pair residual
 has 128 channels. The Protenix residual is computed by the bilinear expansion
@@ -284,6 +284,64 @@ not treated as independently certified chronology.
 
 \section{Full-inference source--norm intervention}
 \label{app:norm_cross}
+On 24 observed Confirm96-B targets, we cross learned residual source and global
+Frobenius norm for fixed Protenix Train384/Full/1536 models. Write
+$\delta_a=m_ad_a$, where $m_a=\|\delta_a\|_F$, $\|d_a\|_F=1$, and
+$a\in\{N,R\}$. Each trained rotation is paired with the same-seed native model.
+We inject $m_Nd_N$, $m_Rd_N$, $m_Nd_R$, or $m_Rd_R$ throughout c4/s5 inference,
+scaling completed pair residuals rather than factor increments. Norms use no
+reference-structure mask. All 720 pure and mixed predictions are rerun on the
+same backend; none fails. The mixed residuals are inference-time interventions
+and need not correspond to outputs of the trained factor head or states
+encountered during training.
+
+Here, \emph{direction source} includes learned content and relative pair/channel
+magnitudes after global normalization, unlike the original channel-rotation
+control. For score $Y_{ab}$ with direction source $a$ and norm source $b$, the
+primary effect is
+\begin{equation}
+ E_{\rm dir}=\tfrac12[(Y_{NN}-Y_{RN})+(Y_{NR}-Y_{RR})].
+ \label{eq:norm_source}
+\end{equation}
+Whole targets are resampled within four fixed length strata, after averaging
+paired seeds and rotations; intervals condition on these fitted models.
+
+\begin{table}[t]
+\caption{Complete-inference source--norm intervention on 24 observed targets.
+Top: absolute C$\alpha$ pair-lDDT. Bottom: native-minus-rotated source effects
+at each actual learned norm, and the primary symmetric average, with 95\%
+stratified target-bootstrap intervals. The norm labels identify donors, not
+universally smaller/larger amplitudes.}
+\label{tab:norm_cross}\centering\small
+\begin{tabular}{lrr}\toprule
+Direction source & Native norm $m_N$ & Rotated norm $m_R$ \\\midrule
+\input{generated/cross_cells}
+\end{tabular}
+\par\smallskip
+\begin{tabular}{lrr}\toprule
+Source contrast & Difference & 95\% interval \\\midrule
+\input{generated/cross_effects}
+\end{tabular}
+\end{table}
+
+Native-source updates remain better at both matched norms
+(Table~\ref{tab:norm_cross}). The average effect is positive for 18/24 targets
+and all three seed and rotation marginals; residue-average lDDT and TM-score
+agree in direction. Global norm alone is therefore insufficient to explain
+this structural gap. The norm-source effect is \result{cross_ca_Eamp}
+[\result{cross_ca_EampLo}, \result{cross_ca_EampHi}], and the interaction is
+\result{cross_ca_I} [\result{cross_ca_ILo}, \result{cross_ca_IHi}]; neither
+establishes a stable effect. This does not establish norm irrelevance or
+additivity (the conditional contrasts below).
+
+Earlier Train24/tangent diagnostics found an oracle-space advantage but no
+established learned-direction advantage at $10^{-3}\|U_q\|_F$; actual-scale
+task response favored Native despite smaller mean norms
+(Appendix~\ref{app:mechanisms}). The model recipe, preceding state, amplitude and
+endpoint differ here. These results therefore do not form a same-model mechanism
+chain or identify how training produced the residuals.
+
+
 The 24 observed Confirm96-B targets are chosen by the fixed hash order, six in
 each historical length stratum 128--191, 192--255, 256--319 and 320--384.
 All 288 nonzero, finite residuals pass the preaudit. The model is fixed
@@ -364,3 +422,72 @@ Factor--Generic study predates explicit-factor G+, and local oracle work is
 separate from trained folding outcomes. These historical studies are retained
 in the evidence archive with their original roles; they are not additional
 successful replications of the head-by-rotation interaction.
+
+
+\section{OpenFold Stage A: frozen ESMC feature substitution}
+\label{app:esmc}
+Stage A fixes Train384, Full, 1536 updates, three paired training seeds and
+three rotations. It reuses the 15 historical ESM2 Factor/Rotated Factor/G+
+fits and adds nine ESM2 rotated G+ fits plus the complete 24-fit ESMC matrix.
+The same observed Confirm96-B and Length48 targets supply 144 scores per new
+fit: 4,752 new predictions with no failures. The combined score archive contains
+7,200 records, including historical systems and baselines. This is distinct
+from the original Train96 four-cell study; its primary endpoint is ESMC
+Native--Rotated on Confirm96-B, not a newly selected interaction endpoint.
+
+ESMC-600M uses final post-layer-normalization representations from layer 36,
+width 1152, cached in BF16. The old ESM2 layer-12 cache has width 480 in FP32.
+The input projection changes from $480\!\to\!128$ to $1152\!\to\!128$;
+all other adapter initial weights are preserved using a separate initialization
+stream. The added projection weights number $(1152-480)128=86{,}016$ per
+head. Final output weights and biases remain zero-initialized. The PLM and AF2
+weights stay frozen; the first live OPM interface, four trunk passes, native
+loss, AdamW learning rate $10^{-4}$, decay 0.01, clipping at 1 and final-step
+selection remain fixed. No new quality-based learning-rate search is performed.
+Consequently, this is a feature-source comparison under a common recipe, not
+an equal-parameter or pure PLM-size intervention. It does not resolve which
+ESM2 layer is preferable or whether multilayer concatenation helps.
+
+Intervals use 20,000 target-paired bootstrap draws with seed 20260926.
+Recomputed historical intervals may differ slightly from earlier tables that
+used another bootstrap stream; point estimates and target scores are unchanged.
+The three prespecified key secondary tests on Confirm96-B are ESMC's $\Psi$,
+$K=\Delta_{F,C}-\Delta_{F,E}$, and $J=\Psi_C-\Psi_E$. Their Holm-adjusted
+centered-bootstrap $p$ values are \result{a_holm_Psi_C},
+\result{a_holm_K}, and \result{a_holm_J}, respectively. None establishes the
+corresponding effect. These are conditional bootstrap tests, not randomization
+inference; supplementary intervals below are unadjusted.
+
+For pair-lDDT, $K$ is \result{a_c96_direction_change}
+[\result{a_c96_direction_changeLo}, \result{a_c96_direction_changeHi}] on
+Confirm96-B and \result{a_l48_direction_change}
+[\result{a_l48_direction_changeLo}, \result{a_l48_direction_changeHi}] on
+Length48. The corresponding $J$ values are \result{a_c96_psi_change}
+[\result{a_c96_psi_changeLo}, \result{a_c96_psi_changeHi}] and
+\result{a_l48_psi_change}
+[\result{a_l48_psi_changeLo}, \result{a_l48_psi_changeHi}].
+These direct estimates do not support claiming that feature substitution
+strengthens or eliminates the rotation effect. ESMC Factor's seed-marginal
+Native--Rotated differences are negative for one of three seeds on each panel;
+positive targets number 50/96 and 30/48. The full target arrays and all seed
+and rotation marginals are retained in the accompanying evidence.
+
+\begin{table}[htbp]\centering\footnotesize
+\caption{Stage A pair-lDDT contrasts. $\Delta_F=F-FR$, $\Delta_{G+}=G-GR$,
+and $\Psi=\Delta_F-\Delta_{G+}$. Negative Native--G+ favors the generic head.}
+\begin{tabular}{lllrr}\toprule
+Panel & Features & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/esmc_A_pair_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{Stage A supplementary residue-average C$\alpha$-lDDT contrasts.}
+\begin{tabular}{lllrr}\toprule
+Panel & Features & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/esmc_A_residue_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{Stage A supplementary fixed-correspondence TM-score contrasts.}
+\begin{tabular}{lllrr}\toprule
+Panel & Features & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/esmc_A_tm_contrasts}
+\end{tabular}\end{table}

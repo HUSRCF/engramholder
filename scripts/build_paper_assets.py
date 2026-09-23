@@ -26,7 +26,7 @@ SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','lengt
  'protenix_gplus384_summary','protenix_gplus384_records','protenix_gplus384_verification',
  'protenix_gplus384_historical_confirm96_records','length48_records',
  'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock',
- 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit']
+ 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit','openfold_esmc_A_summary','openfold_esmc_A_records','openfold_esmc_A_execution_lock','openfold_esmc_A_scoring_lock','openfold_esmc_A_verification']
 CELLS = {}
 DATA = {}
 
@@ -115,12 +115,14 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v3.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v4.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
     assert json.loads(lock.read_text())==hashes,'Evidence changed; review it before creating a new versioned lock'
     DATA.update({f:json.loads((ROOT/'evidence'/f'{f}.json').read_text()) for f in SOURCES})
+    from verify_openfold_esmc_A import verify
+    esmc_audit=verify(ROOT)
     # Recheck completed raw-score system means without folding or changing statistics.
     checks=0
     for file, records_file in [('openfold_gplus_rotation_final','openfold_gplus_rotation_records'),('openfold_train384','openfold_train384_records'),('atlasfold_adapters_final','atlasfold_adapters_records')]:
@@ -253,6 +255,25 @@ def main():
     save_rows('cross_effects.tex',[[label,tex('cross_ca_'+key),interval_cell('cross_ca_'+key)] for label,key in [('At native norm','D_mN'),('At rotated norm','D_mR'),('Average source effect','Edir')]])
     save_rows('cross_supplement.tex',[[label,key.replace('_',r'\_'),tex('cross_'+short+'_'+key),interval_cell('cross_'+short+'_'+key)] for label,short in [('Pair-lDDT','ca'),('Residue-lDDT','res'),('TM-score','tm')] for key in ['Edir','Eamp','I','A_dN','A_dR']])
     save_rows('v4_mechanism_rows.tex',[[label,tex('v4_'+key),interval_cell('v4_'+key)] for label,key in [('E1 oracle (normalized)','oracle'),('E2 learned, small equal norm (normalized)','equal'),('E2 learned, actual norm (raw loss)','actual'),('E3 final-residual retention (raw loss)','retain')]])
+    a_rows=[];a_contrasts=[]
+    for panel,short,label in [('confirm96','c96','C96-B'),('length48','l48','L48')]:
+        for feat,tag,flabel in [('E_last','e','ESM2-35M'),('C_last','c','ESMC-600M')]:
+            pre=['panels',panel,'ca_lddt','cells',feat];prefix=f'a_{short}_{tag}_'
+            keys=['query','native','rotated_factor','gplus','rotated_gplus']
+            for key in keys:number(prefix+key,'openfold_esmc_A_summary',pre+['means',key])
+            a_rows.append([label,flabel,*[tex(prefix+k) for k in keys]])
+            for metric,mlabel in [('ca_lddt','Pair-lDDT'),('residue_ca_lddt','Residue-lDDT'),('tm_score_fixed_full_length','TM-score')]:
+                for k,kl in [('factor_rotation',r'$\Delta_F$'),('gplus_rotation',r'$\Delta_{G+}$'),('interaction',r'$\Psi$'),('native_minus_gplus','Native--G+')]:
+                    key=prefix+metric+'_'+k
+                    contrast(key,'openfold_esmc_A_summary',['panels',panel,metric,'cells',feat,k])
+                    a_contrasts.append([label,flabel,mlabel,kl,tex(key),interval_cell(key)])
+        for k in ['direction_change','psi_change','native_gain','gplus_gain','native_gplus_gap_change']:
+            contrast(f'a_{short}_{k}','openfold_esmc_A_summary',['panels',panel,'ca_lddt','plm_interactions',k])
+    for k in ['K','Psi_C','J']:number('a_holm_'+k,'openfold_esmc_A_summary',['key_secondary_holm_p',k])
+    save_rows('esmc_A_means.tex',a_rows)
+    # One compact supplemental table per metric avoids an unbreakable 48-row float.
+    for metric,label in [('pair','Pair-lDDT'),('residue','Residue-lDDT'),('tm','TM-score')]:
+        save_rows('esmc_A_'+metric+'_contrasts.tex',[[*x[:2],*x[3:]] for x in a_contrasts if x[2]==label])
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -264,7 +285,7 @@ def main():
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

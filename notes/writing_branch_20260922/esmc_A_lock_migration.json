@@ -1,0 +1,13 @@
+{
+  "reason": "User authorized integration of completed OpenFold Stage A; no pending runs or Fresh96 scores imported.",
+  "previous": "paper_sources.v3.lock.json",
+  "current": "paper_sources.v4.lock.json",
+  "existing_inputs_unchanged": true,
+  "added_inputs": {
+    "evidence/openfold_esmc_A_execution_lock.json": "76c3420fb8f221a7054910a9e626db4ee983b98b60b9aaf69bbfe16c9eec4525",
+    "evidence/openfold_esmc_A_scoring_lock.json": "2df9ebf33bff8d6409c478ac2288ef5a2e1bd6d883bcac9fbddf0abe3bca0c3a",
+    "evidence/openfold_esmc_A_verification.json": "7f41d31d9ec824850b89d9219cb1f2fbac86022e2f214b837e7a4280aa5044ec",
+    "evidence/openfold_esmc_A_records.json": "a9447e4a2457127a03b977d10eadc835634ace453b26da239bc62fec7f7d6ae1",
+    "evidence/openfold_esmc_A_summary.json": "adbefbd4d6b95764afc0399ce1ea24960ac6cf36c9d041b933a222e54c9a57cf"
+  }
+}

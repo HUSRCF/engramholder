@@ -41,10 +41,11 @@ study identities. A matched Protenix Train384 comparison
 also favors Native over G+, whereas OpenFold's generic head can outperform
 Native. OpenFold does not establish the direction advantage in every setting,
 and the tested non-OPM AtlasFold interface yields no established benefit.
-A further complete-inference intervention exchanges the global norms of trained
-residuals: native-source updates retain an advantage at both norm donors. This
-connects a controlled residual property to final structures without identifying
-the training dynamics or downstream modules responsible.
+A Train384 follow-up with ESMC-600M improves OpenFold
+quality but does not establish the head-by-rotation interaction. A separate
+full-inference norm exchange rules out overall residual magnitude as a sufficient
+explanation of one Protenix gap; it does not isolate channel orientation from
+the content learned by independently trained heads.
 
 Together, these controls provide an evaluation strategy: matching parameter
 counts, operator spectra and initial functions need not ensure comparable
@@ -54,8 +55,8 @@ for an unseen predictor.
 Our contributions are an empirical parameterization-by-orientation interaction
 under a matched training recipe; a concrete query-anchored residual construction
 with explicit zero-initialization and local spectral controls; and a
-norm-controlled full-inference test together with an assessment of transfer
-and limits across predictors, training-set sizes, and adaptation lengths. Together they support the following claim: \emph{native update
+assessment of transfer and limits across predictors, sequence feature sources,
+training-set sizes, and adaptation lengths, with a norm-exchange robustness check. Together they support the following claim: \emph{native update
 orientation can matter for constrained adaptation, but its effect depends on
 the parameterization and frozen predictor; preserving native directions neither
 guarantees adaptation gains nor makes native factor heads uniformly superior

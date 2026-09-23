@@ -81,7 +81,9 @@ guarantee. Equation~\ref{eq:absorb} concerns representable functions: coordinate
 second moments can still make AdamW sensitive to the reparameterization.
 We therefore measure both heads' rotation effects rather than require G+'s
 effect to be zero. Factor and G+ have similar, not identical, sizes: 373,824
-versus 378,144 trainable parameters for Protenix and OpenFold.
+versus 378,144 trainable parameters for Protenix and OpenFold with ESM2 inputs.
+The ESMC follow-up changes only the input projection width within each head
+(Appendix~\ref{app:esmc}).
 
 \begin{figure}[t]
 \centering

@@ -30,7 +30,12 @@
     "evidence/v4_analysis.json": "06dd7c7a22ef3218e7f8e66afc6ef85e44324bc1757baae7e147651efe6a8128",
     "evidence/v4_e3_analysis.json": "576aaa763e287c8b02087095011ec66e2666835888460bcda5a3246283ba9292",
     "evidence/v4_independent_verification.json": "8a9e930688ba749b0ff58b1482bced9570eccb5f535c7b49965718d92a08a5df",
-    "evidence/v4_source_hash_audit.json": "3a4ce4b0111c784e0aafae5b159fbfcb0fcc9eca8dedb7fa0516c83dc09e8ac5"
+    "evidence/v4_source_hash_audit.json": "3a4ce4b0111c784e0aafae5b159fbfcb0fcc9eca8dedb7fa0516c83dc09e8ac5",
+    "evidence/openfold_esmc_A_summary.json": "adbefbd4d6b95764afc0399ce1ea24960ac6cf36c9d041b933a222e54c9a57cf",
+    "evidence/openfold_esmc_A_records.json": "a9447e4a2457127a03b977d10eadc835634ace453b26da239bc62fec7f7d6ae1",
+    "evidence/openfold_esmc_A_execution_lock.json": "76c3420fb8f221a7054910a9e626db4ee983b98b60b9aaf69bbfe16c9eec4525",
+    "evidence/openfold_esmc_A_scoring_lock.json": "2df9ebf33bff8d6409c478ac2288ef5a2e1bd6d883bcac9fbddf0abe3bca0c3a",
+    "evidence/openfold_esmc_A_verification.json": "7f41d31d9ec824850b89d9219cb1f2fbac86022e2f214b837e7a4280aa5044ec"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -3772,15 +3777,3042 @@
       "operation": "identity",
       "value": 0.0004946833959332183,
       "formatted": "+0.00049"
+    },
+    "a_c96_e_query": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.30191"
+    },
+    "a_c96_e_native": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.5068443393727999,
+      "formatted": "0.50684"
+    },
+    "a_c96_e_rotated_factor": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "rotated_factor"
+      ],
+      "operation": "identity",
+      "value": 0.5038130028423794,
+      "formatted": "0.50381"
+    },
+    "a_c96_e_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "gplus"
+      ],
+      "operation": "identity",
+      "value": 0.5133273534331355,
+      "formatted": "0.51333"
+    },
+    "a_c96_e_rotated_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "rotated_gplus"
+      ],
+      "operation": "identity",
+      "value": 0.5099798770737709,
+      "formatted": "0.50998"
+    },
+    "a_c96_e_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.003031336530420588,
+      "formatted": "+0.00303"
+    },
+    "a_c96_e_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006559749704932189,
+      "formatted": "-0.00656"
+    },
+    "a_c96_e_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012176579637556762,
+      "formatted": "+0.01218"
+    },
+    "a_c96_e_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0033474763593645505,
+      "formatted": "+0.00335"
+    },
+    "a_c96_e_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.004804777277482397,
+      "formatted": "-0.00480"
+    },
+    "a_c96_e_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.011117851238194346,
+      "formatted": "+0.01112"
+    },
+    "a_c96_e_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0003161398289439618,
+      "formatted": "-0.00032"
+    },
+    "a_c96_e_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.011941737073149081,
+      "formatted": "-0.01194"
+    },
+    "a_c96_e_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.011573765402434263,
+      "formatted": "+0.01157"
+    },
+    "a_c96_e_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.006483014060335523,
+      "formatted": "-0.00648"
+    },
+    "a_c96_e_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.017717868682909022,
+      "formatted": "-0.01772"
+    },
+    "a_c96_e_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.005476161207737374,
+      "formatted": "+0.00548"
+    },
+    "a_c96_e_residue_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0034203740717264953,
+      "formatted": "+0.00342"
+    },
+    "a_c96_e_residue_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.005749965225241731,
+      "formatted": "-0.00575"
+    },
+    "a_c96_e_residue_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012147399335192963,
+      "formatted": "+0.01215"
+    },
+    "a_c96_e_residue_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0031660076311317855,
+      "formatted": "+0.00317"
+    },
+    "a_c96_e_residue_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.004529414819301551,
+      "formatted": "-0.00453"
+    },
+    "a_c96_e_residue_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01057967115545652,
+      "formatted": "+0.01058"
+    },
+    "a_c96_e_residue_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0002543664405947098,
+      "formatted": "+0.00025"
+    },
+    "a_c96_e_residue_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01084694078750113,
+      "formatted": "-0.01085"
+    },
+    "a_c96_e_residue_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.011708024121423554,
+      "formatted": "+0.01171"
+    },
+    "a_c96_e_residue_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.005867615984794766,
+      "formatted": "-0.00587"
+    },
+    "a_c96_e_residue_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.016641380284427045,
+      "formatted": "-0.01664"
+    },
+    "a_c96_e_residue_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0056478486881249195,
+      "formatted": "+0.00565"
+    },
+    "a_c96_e_tm_score_fixed_full_length_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0005605324074074042,
+      "formatted": "+0.00056"
+    },
+    "a_c96_e_tm_score_fixed_full_length_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.012181519097222223,
+      "formatted": "-0.01218"
+    },
+    "a_c96_e_tm_score_fixed_full_length_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012986649305555516,
+      "formatted": "+0.01299"
+    },
+    "a_c96_e_tm_score_fixed_full_length_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007736226851851849,
+      "formatted": "+0.00774"
+    },
+    "a_c96_e_tm_score_fixed_full_length_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0037232986111111126,
+      "formatted": "-0.00372"
+    },
+    "a_c96_e_tm_score_fixed_full_length_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01874011863425925,
+      "formatted": "+0.01874"
+    },
+    "a_c96_e_tm_score_fixed_full_length_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.007175694444444443,
+      "formatted": "-0.00718"
+    },
+    "a_c96_e_tm_score_fixed_full_length_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.024081414930555562,
+      "formatted": "-0.02408"
+    },
+    "a_c96_e_tm_score_fixed_full_length_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.010310575810185171,
+      "formatted": "+0.01031"
+    },
+    "a_c96_e_tm_score_fixed_full_length_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.011554861111111111,
+      "formatted": "-0.01155"
+    },
+    "a_c96_e_tm_score_fixed_full_length_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02717594618055556,
+      "formatted": "-0.02718"
+    },
+    "a_c96_e_tm_score_fixed_full_length_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.005129218749999992,
+      "formatted": "+0.00513"
+    },
+    "a_c96_c_query": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.30191"
+    },
+    "a_c96_c_native": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.6703067319183789,
+      "formatted": "0.67031"
+    },
+    "a_c96_c_rotated_factor": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "rotated_factor"
+      ],
+      "operation": "identity",
+      "value": 0.6577964082508851,
+      "formatted": "0.65780"
+    },
+    "a_c96_c_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "gplus"
+      ],
+      "operation": "identity",
+      "value": 0.6761855588675834,
+      "formatted": "0.67619"
+    },
+    "a_c96_c_rotated_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "rotated_gplus"
+      ],
+      "operation": "identity",
+      "value": 0.6711670042116203,
+      "formatted": "0.67117"
+    },
+    "a_c96_c_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012510323667493614,
+      "formatted": "+0.01251"
+    },
+    "a_c96_c_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00018752193485116955,
+      "formatted": "-0.00019"
+    },
+    "a_c96_c_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.025775359016408577,
+      "formatted": "+0.02578"
+    },
+    "a_c96_c_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.005018554655962998,
+      "formatted": "+0.00502"
+    },
+    "a_c96_c_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006162309764896449,
+      "formatted": "-0.00616"
+    },
+    "a_c96_c_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01555229481916707,
+      "formatted": "+0.01555"
+    },
+    "a_c96_c_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007491769011530613,
+      "formatted": "+0.00749"
+    },
+    "a_c96_c_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.008489515064467679,
+      "formatted": "-0.00849"
+    },
+    "a_c96_c_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.023880916793154634,
+      "formatted": "+0.02388"
+    },
+    "a_c96_c_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.005878826949204542,
+      "formatted": "-0.00588"
+    },
+    "a_c96_c_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.019970547259631547,
+      "formatted": "-0.01997"
+    },
+    "a_c96_c_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009051488755657597,
+      "formatted": "+0.00905"
+    },
+    "a_c96_c_residue_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012347737052124748,
+      "formatted": "+0.01235"
+    },
+    "a_c96_c_residue_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 4.396400423999365e-05,
+      "formatted": "+0.00004"
+    },
+    "a_c96_c_residue_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.025208991731920198,
+      "formatted": "+0.02521"
+    },
+    "a_c96_c_residue_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0048682694009289035,
+      "formatted": "+0.00487"
+    },
+    "a_c96_c_residue_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.005806166903153027,
+      "formatted": "-0.00581"
+    },
+    "a_c96_c_residue_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01495808153713036,
+      "formatted": "+0.01496"
+    },
+    "a_c96_c_residue_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.00747946765119584,
+      "formatted": "+0.00748"
+    },
+    "a_c96_c_residue_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.007967973439233339,
+      "formatted": "-0.00797"
+    },
+    "a_c96_c_residue_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.023301968866858994,
+      "formatted": "+0.02330"
+    },
+    "a_c96_c_residue_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.005765847834736038,
+      "formatted": "-0.00577"
+    },
+    "a_c96_c_residue_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.019249701313478952,
+      "formatted": "-0.01925"
+    },
+    "a_c96_c_residue_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008584598892986045,
+      "formatted": "+0.00858"
+    },
+    "a_c96_c_tm_score_fixed_full_length_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014567824074074073,
+      "formatted": "+0.01457"
+    },
+    "a_c96_c_tm_score_fixed_full_length_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0022594936342592614,
+      "formatted": "-0.00226"
+    },
+    "a_c96_c_tm_score_fixed_full_length_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03179388020833333,
+      "formatted": "+0.03179"
+    },
+    "a_c96_c_tm_score_fixed_full_length_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.005262384259259262,
+      "formatted": "+0.00526"
+    },
+    "a_c96_c_tm_score_fixed_full_length_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0074447453703703655,
+      "formatted": "-0.00744"
+    },
+    "a_c96_c_tm_score_fixed_full_length_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017421195023148144,
+      "formatted": "+0.01742"
+    },
+    "a_c96_c_tm_score_fixed_full_length_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.009305439814814813,
+      "formatted": "+0.00931"
+    },
+    "a_c96_c_tm_score_fixed_full_length_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01077969907407408,
+      "formatted": "-0.01078"
+    },
+    "a_c96_c_tm_score_fixed_full_length_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02957220196759257,
+      "formatted": "+0.02957"
+    },
+    "a_c96_c_tm_score_fixed_full_length_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00785729166666667,
+      "formatted": "-0.00786"
+    },
+    "a_c96_c_tm_score_fixed_full_length_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.025377361111111114,
+      "formatted": "-0.02538"
+    },
+    "a_c96_c_tm_score_fixed_full_length_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.010361362847222198,
+      "formatted": "+0.01036"
+    },
+    "a_c96_direction_change": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "direction_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.009478987137073028,
+      "formatted": "+0.00948"
+    },
+    "a_c96_direction_changeLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "direction_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.004989478743066198,
+      "formatted": "-0.00499"
+    },
+    "a_c96_direction_changeHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "direction_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.024800209505849668,
+      "formatted": "+0.02480"
+    },
+    "a_c96_psi_change": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "psi_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007807908840474581,
+      "formatted": "+0.00781"
+    },
+    "a_c96_psi_changeLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "psi_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01050154189239983,
+      "formatted": "-0.01050"
+    },
+    "a_c96_psi_changeHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "psi_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.026541849103051695,
+      "formatted": "+0.02654"
+    },
+    "a_c96_native_gain": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gain",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.16346239254557884,
+      "formatted": "+0.16346"
+    },
+    "a_c96_native_gainLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gain",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.13860754919128868,
+      "formatted": "+0.13861"
+    },
+    "a_c96_native_gainHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gain",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.18891353841504654,
+      "formatted": "+0.18891"
+    },
+    "a_c96_gplus_gain": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "gplus_gain",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.16285820543444787,
+      "formatted": "+0.16286"
+    },
+    "a_c96_gplus_gainLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "gplus_gain",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.13694781728808028,
+      "formatted": "+0.13695"
+    },
+    "a_c96_gplus_gainHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "gplus_gain",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.18911378999309608,
+      "formatted": "+0.18911"
+    },
+    "a_c96_native_gplus_gap_change": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gplus_gap_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0006041871111309814,
+      "formatted": "+0.00060"
+    },
+    "a_c96_native_gplus_gap_changeLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gplus_gap_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01579154819990963,
+      "formatted": "-0.01579"
+    },
+    "a_c96_native_gplus_gap_changeHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gplus_gap_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017955747340593724,
+      "formatted": "+0.01796"
+    },
+    "a_l48_e_query": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.2607893500665757,
+      "formatted": "0.26079"
+    },
+    "a_l48_e_native": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.40165206821200905,
+      "formatted": "0.40165"
+    },
+    "a_l48_e_rotated_factor": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "rotated_factor"
+      ],
+      "operation": "identity",
+      "value": 0.3903951181305761,
+      "formatted": "0.39040"
+    },
+    "a_l48_e_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "gplus"
+      ],
+      "operation": "identity",
+      "value": 0.408683082860721,
+      "formatted": "0.40868"
+    },
+    "a_l48_e_rotated_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "means",
+        "rotated_gplus"
+      ],
+      "operation": "identity",
+      "value": 0.404447070133963,
+      "formatted": "0.40445"
+    },
+    "a_l48_e_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011256950081433015,
+      "formatted": "+0.01126"
+    },
+    "a_l48_e_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.005314565623561755,
+      "formatted": "+0.00531"
+    },
+    "a_l48_e_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01733649112760793,
+      "formatted": "+0.01734"
+    },
+    "a_l48_e_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.004236012726757977,
+      "formatted": "+0.00424"
+    },
+    "a_l48_e_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0006906592434722901,
+      "formatted": "-0.00069"
+    },
+    "a_l48_e_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009289209600534382,
+      "formatted": "+0.00929"
+    },
+    "a_l48_e_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007020937354675038,
+      "formatted": "+0.00702"
+    },
+    "a_l48_e_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00021193768635893002,
+      "formatted": "-0.00021"
+    },
+    "a_l48_e_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014508347923381968,
+      "formatted": "+0.01451"
+    },
+    "a_l48_e_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0070310146487119335,
+      "formatted": "-0.00703"
+    },
+    "a_l48_e_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.013572795431191541,
+      "formatted": "-0.01357"
+    },
+    "a_l48_e_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0005229059765953845,
+      "formatted": "-0.00052"
+    },
+    "a_l48_e_residue_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010895394302747436,
+      "formatted": "+0.01090"
+    },
+    "a_l48_e_residue_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.005070936435312135,
+      "formatted": "+0.00507"
+    },
+    "a_l48_e_residue_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01681104374211285,
+      "formatted": "+0.01681"
+    },
+    "a_l48_e_residue_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.004180109243297925,
+      "formatted": "+0.00418"
+    },
+    "a_l48_e_residue_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0005980990280924157,
+      "formatted": "-0.00060"
+    },
+    "a_l48_e_residue_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009056785539620407,
+      "formatted": "+0.00906"
+    },
+    "a_l48_e_residue_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.006715285059449509,
+      "formatted": "+0.00672"
+    },
+    "a_l48_e_residue_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00034701126516464034,
+      "formatted": "-0.00035"
+    },
+    "a_l48_e_residue_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014048142623939521,
+      "formatted": "+0.01405"
+    },
+    "a_l48_e_residue_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.007566425628852461,
+      "formatted": "-0.00757"
+    },
+    "a_l48_e_residue_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.014080380491026553,
+      "formatted": "-0.01408"
+    },
+    "a_l48_e_residue_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0011204227573353928,
+      "formatted": "-0.00112"
+    },
+    "a_l48_e_tm_score_fixed_full_length_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01012013888888889,
+      "formatted": "+0.01012"
+    },
+    "a_l48_e_tm_score_fixed_full_length_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0006849537037037067,
+      "formatted": "+0.00068"
+    },
+    "a_l48_e_tm_score_fixed_full_length_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.019968969907407395,
+      "formatted": "+0.01997"
+    },
+    "a_l48_e_tm_score_fixed_full_length_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 9.374999999999943e-05,
+      "formatted": "+0.00009"
+    },
+    "a_l48_e_tm_score_fixed_full_length_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006949230324074073,
+      "formatted": "-0.00695"
+    },
+    "a_l48_e_tm_score_fixed_full_length_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00744814236111109,
+      "formatted": "+0.00745"
+    },
+    "a_l48_e_tm_score_fixed_full_length_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010026388888888895,
+      "formatted": "+0.01003"
+    },
+    "a_l48_e_tm_score_fixed_full_length_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0002894097222222248,
+      "formatted": "-0.00029"
+    },
+    "a_l48_e_tm_score_fixed_full_length_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02090420138888889,
+      "formatted": "+0.02090"
+    },
+    "a_l48_e_tm_score_fixed_full_length_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0013506944444444426,
+      "formatted": "-0.00135"
+    },
+    "a_l48_e_tm_score_fixed_full_length_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.010498663194444443,
+      "formatted": "-0.01050"
+    },
+    "a_l48_e_tm_score_fixed_full_length_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "E_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.007529982638888884,
+      "formatted": "+0.00753"
+    },
+    "a_l48_c_query": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.2607893500665757,
+      "formatted": "0.26079"
+    },
+    "a_l48_c_native": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.48880065245952525,
+      "formatted": "0.48880"
+    },
+    "a_l48_c_rotated_factor": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "rotated_factor"
+      ],
+      "operation": "identity",
+      "value": 0.4815791523498629,
+      "formatted": "0.48158"
+    },
+    "a_l48_c_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "gplus"
+      ],
+      "operation": "identity",
+      "value": 0.5052707635104912,
+      "formatted": "0.50527"
+    },
+    "a_l48_c_rotated_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "means",
+        "rotated_gplus"
+      ],
+      "operation": "identity",
+      "value": 0.5012809978457976,
+      "formatted": "0.50128"
+    },
+    "a_l48_c_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007221500109662285,
+      "formatted": "+0.00722"
+    },
+    "a_l48_c_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.003184985632662103,
+      "formatted": "-0.00318"
+    },
+    "a_l48_c_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017660003675958966,
+      "formatted": "+0.01766"
+    },
+    "a_l48_c_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.003989765664693606,
+      "formatted": "+0.00399"
+    },
+    "a_l48_c_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.003532825867700402,
+      "formatted": "-0.00353"
+    },
+    "a_l48_c_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012257482652383923,
+      "formatted": "+0.01226"
+    },
+    "a_l48_c_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0032317344449686813,
+      "formatted": "+0.00323"
+    },
+    "a_l48_c_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.009650352999938362,
+      "formatted": "-0.00965"
+    },
+    "a_l48_c_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016178948891750904,
+      "formatted": "+0.01618"
+    },
+    "a_l48_c_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.016470111050965963,
+      "formatted": "-0.01647"
+    },
+    "a_l48_c_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.029186811648174483,
+      "formatted": "-0.02919"
+    },
+    "a_l48_c_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.004507250226847061,
+      "formatted": "-0.00451"
+    },
+    "a_l48_c_residue_ca_lddt_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007420527008844696,
+      "formatted": "+0.00742"
+    },
+    "a_l48_c_residue_ca_lddt_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0022004292247485404,
+      "formatted": "-0.00220"
+    },
+    "a_l48_c_residue_ca_lddt_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017036331733288033,
+      "formatted": "+0.01704"
+    },
+    "a_l48_c_residue_ca_lddt_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.004057543939806673,
+      "formatted": "+0.00406"
+    },
+    "a_l48_c_residue_ca_lddt_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0031734680474731066,
+      "formatted": "-0.00317"
+    },
+    "a_l48_c_residue_ca_lddt_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.011945596460765968,
+      "formatted": "+0.01195"
+    },
+    "a_l48_c_residue_ca_lddt_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.003362983069038024,
+      "formatted": "+0.00336"
+    },
+    "a_l48_c_residue_ca_lddt_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00872731580644038,
+      "formatted": "-0.00873"
+    },
+    "a_l48_c_residue_ca_lddt_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.015377073454716755,
+      "formatted": "+0.01538"
+    },
+    "a_l48_c_residue_ca_lddt_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.015555134480418462,
+      "formatted": "-0.01556"
+    },
+    "a_l48_c_residue_ca_lddt_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.027533924428963293,
+      "formatted": "-0.02753"
+    },
+    "a_l48_c_residue_ca_lddt_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.004163765879537236,
+      "formatted": "-0.00416"
+    },
+    "a_l48_c_tm_score_fixed_full_length_factor_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.006279629629629628,
+      "formatted": "+0.00628"
+    },
+    "a_l48_c_tm_score_fixed_full_length_factor_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.011375572916666667,
+      "formatted": "-0.01138"
+    },
+    "a_l48_c_tm_score_fixed_full_length_factor_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02306206018518518,
+      "formatted": "+0.02306"
+    },
+    "a_l48_c_tm_score_fixed_full_length_gplus_rotation": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0023453703703703705,
+      "formatted": "+0.00235"
+    },
+    "a_l48_c_tm_score_fixed_full_length_gplus_rotationLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.011340208333333329,
+      "formatted": "-0.01134"
+    },
+    "a_l48_c_tm_score_fixed_full_length_gplus_rotationHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016850781249999947,
+      "formatted": "+0.01685"
+    },
+    "a_l48_c_tm_score_fixed_full_length_interaction": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.003934259259259262,
+      "formatted": "+0.00393"
+    },
+    "a_l48_c_tm_score_fixed_full_length_interactionLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.019094293981481474,
+      "formatted": "-0.01909"
+    },
+    "a_l48_c_tm_score_fixed_full_length_interactionHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02599169560185185,
+      "formatted": "+0.02599"
+    },
+    "a_l48_c_tm_score_fixed_full_length_native_minus_gplus": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.017007638888888888,
+      "formatted": "-0.01701"
+    },
+    "a_l48_c_tm_score_fixed_full_length_native_minus_gplusLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03915296875,
+      "formatted": "-0.03915"
+    },
+    "a_l48_c_tm_score_fixed_full_length_native_minus_gplusHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "cells",
+        "C_last",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0035306597222222133,
+      "formatted": "+0.00353"
+    },
+    "a_l48_direction_change": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "direction_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0040354499717707255,
+      "formatted": "-0.00404"
+    },
+    "a_l48_direction_changeLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "direction_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01699633201011932,
+      "formatted": "-0.01700"
+    },
+    "a_l48_direction_changeHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "direction_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0087975991830972,
+      "formatted": "+0.00880"
+    },
+    "a_l48_psi_change": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "psi_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.003789202909706356,
+      "formatted": "-0.00379"
+    },
+    "a_l48_psi_changeLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "psi_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01936224774172002,
+      "formatted": "-0.01936"
+    },
+    "a_l48_psi_changeHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "psi_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012246739357146189,
+      "formatted": "+0.01225"
+    },
+    "a_l48_native_gain": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gain",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.08714858424751619,
+      "formatted": "+0.08715"
+    },
+    "a_l48_native_gainLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gain",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.06865948961389037,
+      "formatted": "+0.06866"
+    },
+    "a_l48_native_gainHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gain",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.10633917768705775,
+      "formatted": "+0.10634"
+    },
+    "a_l48_gplus_gain": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "gplus_gain",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.09658768064977019,
+      "formatted": "+0.09659"
+    },
+    "a_l48_gplus_gainLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "gplus_gain",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.07819535566867543,
+      "formatted": "+0.07820"
+    },
+    "a_l48_gplus_gainHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "gplus_gain",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.11549645768038107,
+      "formatted": "+0.11550"
+    },
+    "a_l48_native_gplus_gap_change": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gplus_gap_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00943909640225403,
+      "formatted": "-0.00944"
+    },
+    "a_l48_native_gplus_gap_changeLo": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gplus_gap_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02259557420473809,
+      "formatted": "-0.02260"
+    },
+    "a_l48_native_gplus_gap_changeHi": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "plm_interactions",
+        "native_gplus_gap_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.003375692976944142,
+      "formatted": "+0.00338"
+    },
+    "a_holm_K": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "key_secondary_holm_p",
+        "K"
+      ],
+      "operation": "identity",
+      "value": 0.6254687265636718,
+      "formatted": "0.62547"
+    },
+    "a_holm_Psi_C": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "key_secondary_holm_p",
+        "Psi_C"
+      ],
+      "operation": "identity",
+      "value": 0.7378631068446577,
+      "formatted": "0.73786"
+    },
+    "a_holm_J": {
+      "source": "evidence/openfold_esmc_A_summary.json",
+      "field_path": [
+        "key_secondary_holm_p",
+        "J"
+      ],
+      "operation": "identity",
+      "value": 0.7378631068446577,
+      "formatted": "0.73786"
     }
   },
+  "verified_esmc_A_contrasts": 78,
   "verified_raw_system_metric_means": 348,
   "verified_target_interactions": 144,
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 264,
-    "distinct_keys": 202,
+    "literal_references": 456,
+    "distinct_keys": 385,
     "missing": []
   },
   "pending": [],

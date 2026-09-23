@@ -1,5 +1,7 @@
 # EngramFold 证据整理仓库
 
+**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。当前来源锁为v4；B组及DiamondHill未完成结果不计入。
+
 **2026-09-23：完整推理四格与v4机制边界已整合，新增近邻定位与复现范围说明；本地编译成功，排版由作者在Overleaf检查。** 写作主分支是 `main`；本地未提交改动不代表远端已同步。当前状态以[填稿进度](reports/manuscript_fill_20260922.md)为准，历史报告保留各自日期。
 
 - [正式审读修改与数值键保护](reports/editorial_review_response_20260923.md)；[作者提交清单](notes/writing_branch_20260922/author_submission_checklist.md)。

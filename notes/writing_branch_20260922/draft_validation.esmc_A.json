@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-09-23T09:43:52.555954+00:00",
+  "compile_exit_code": 0,
+  "source_protocol_and_scorer_hashes_verified": true,
+  "independently_verified_A_contrasts": 78,
+  "existing_numerical_fields_unchanged": 246,
+  "new_fields": 197,
+  "numeric_keys": {
+    "literal_references": 456,
+    "distinct_keys": 385,
+    "missing": []
+  },
+  "tests_passed": 3,
+  "anonymous_operator_checks_passed": 5,
+  "anonymous_artifact": "build/anonymous_artifact_v8.zip",
+  "pdf_sha256": "770485b197df52ede6d93f1c412fb047345b58b8ff4e3869b02656e607bdba99",
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "pdf_visual_or_page_check": "Not performed; author checks Overleaf layout.",
+  "experimental_jobs_modified": false,
+  "pending_results_included": false,
+  "committed_or_pushed": false
+}

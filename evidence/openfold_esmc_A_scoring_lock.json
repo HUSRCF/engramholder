@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-22T14:56:53.660977+00:00",
+  "scorer_sha256": "0ca797914ed220128f24ef936bbd2a59d370ae5f511cee6be60ae0ca46e9ccc1",
+  "execution_lock_sha256": "76c3420fb8f221a7054910a9e626db4ee983b98b60b9aaf69bbfe16c9eec4525",
+  "historical_metrics_sha256": "a13cb2d7557b8aa3d3fca2808bc59a7e6a8f7d725a2ee391a8de7e5d8d183de4",
+  "tm_sha256": "d56abb1ea8a3f22c4e0814bed8678b836959fe22f12d057eeb2b462e08f5ce88",
+  "lddt_sha256": "2a3bb36fed58cff0beb92da0af40ca74c5b9892947f01ab825e7547691d99d96",
+  "n_new": 4752,
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 20260926
+  },
+  "primary": "C-last Factor direction on confirm96",
+  "secondary_p": "centered bootstrap two-sided, Holm Psi_C/K/J"
+}
