@@ -8,6 +8,8 @@
 
 **补充实验设计：** [既有曲线／置换与共享旋转重建候选](reports/architecture_followup_plan_20260924.md)。已批准工作沿原线程顺序；新增候选是6次小头重建拟合，尚未启动，不新增结构监督矩阵或重复提交既有任务。
 
+[执行前评审已落实](reports/architecture_followup_review_response_20260924.md)：384→1536归因区间统一，补零输出参照和幅度／夹角分解，固定完整序列编码与单次旋转约定；不增加拟合任务，不改变既有执行锁。
+
 [本轮收尾](reports/fixed_budget_status_followup_20260923.md)：在训练规模差值旁补充四格绝对均值均提高的事实；保留固定预算解释及未建立收敛的限制。
 
 [历史：7c701ed盲审落实](reports/blind_review_7c701ed_response_20260923.md)：补短链数据定义、两层控制边界及核心补充指标；该轮来源锁v5，449字段，主文9页。
