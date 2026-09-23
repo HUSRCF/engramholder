@@ -220,6 +220,6 @@ c_t=\frac{\|L_t+Q\|}{\|L_t\|+\|Q\|}.
 
 - **Protenix**：锁定完整推理执行文件与[执行锁](../evidence/full_cross_execution_lock.json)逐项匹配；上游protenix.py、pairformer.py、diffusion.py、triangular/layers.py与官方固定commit `d3b4db6a121dd4584edd85e93744239325a2b72e`及当前安装文件三方hash一致。Mini配置另由历史[cache index](../evidence/protenix_cache_index.json)核对；不声称未列入锁的配置文件有同样历史绑定。
 - **OpenFold**：审阅归档commit `be2ec1841f16c966c65ae0e7599ebbadc725757d`、论文包的[运行入口](../reproducibility/src/engramfold/experiments/openfold_adapter_runtime.py)与live_opm/interface_heads。历史实现字节对照范围见[单目标复现审计](openfold_single_reproduction_20260924.md)，不把后增旋转G+代码冒称原始Train96全部源码。
-- **AtlasFold**：核对DiamondHill固定checkout `8ab3aca0e18c8b814d5ca6756b2617a07d72c68d`的6个核心文件与git HEAD一致，结合正式adapter入口和已归档配置重建调用关系。当前checkout一致性不等于所有历史执行文件均有逐文件绑定；本轮没有重放完整Atlas预测。
+- **AtlasFold**：历史`atlas_execution_lock.json`绑定上游commit `8ab3aca0e18c8b814d5ca6756b2617a07d72c68d`；本轮核对DiamondHill该checkout的6个核心文件与git HEAD一致，结合正式adapter入口和已归档配置重建调用关系。历史锁没有给这6个上游文件逐文件hash，当前checkout一致性不等于所有历史执行文件均有逐文件绑定；本轮没有重放完整Atlas预测。
 - 局部秩结论为本轮代数推导，已按实际算子维数与顺序核对；实际权重谱、样本anchor、传播响应与其预测价值尚未测量。
 - 只使用已纳入论文的结果判断效果；未查其他线程的新矩阵完成数，不将其算作支持或反证。
