@@ -4,6 +4,8 @@
 
 **2026-09-24 已完成：** [Fresh96与训练交互变化](reports/fresh96_training_psi_integration_20260924.md)及[单目标OpenFold完整预测](reports/openfold_single_reproduction_20260924.md)。Fresh96的核心交互未建立；结果已进入摘要与主文。旧449数值不变，新增83项；[可执行预测入口](reproducibility/openfold_single/README.md)包含发布适配器、FASTA、CIF评分与环境说明。
 
+**架构分析：** [条件依赖能解释到哪一步](reports/architecture_dependence_analysis_20260924.md)。核对三底座实际路径，纠正Atlas首接口的历史反馈归类，区分局部可达性、下游读取与有限预算学习；新增分析建议尚未运行，未改论文数值或启动训练。
+
 [本轮收尾](reports/fixed_budget_status_followup_20260923.md)：在训练规模差值旁补充四格绝对均值均提高的事实；保留固定预算解释及未建立收敛的限制。
 
 [历史：7c701ed盲审落实](reports/blind_review_7c701ed_response_20260923.md)：补短链数据定义、两层控制边界及核心补充指标；该轮来源锁v5，449字段，主文9页。

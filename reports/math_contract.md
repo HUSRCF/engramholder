@@ -2,6 +2,8 @@
 
 本文件是方法核对笔记，不是论文正文。核对版本：2026-09-21；只读取已完成实验的代码与锁，不更改科学配置。数字来源及文件 SHA256 见[审计 JSON](coverage_robustness_audit.json)。
 
+**2026-09-24源码纠正：** [架构与条件依赖审计](architecture_dependence_analysis_20260924.md)确认，Atlas首个LM接口的现场anchor由当轮masked LM特征决定，并不读取适配后的recycle历史；已纠正下文两处归类。其余实验进度语句保留为2026-09-21历史快照，当前完成状态见[唯一入口](manuscript_fill_20260922.md)。
+
 ## 1. 输入相同到什么程度？
 
 所有这里讨论的内部对照在推理时只取同一条 query 序列，不搜索 homolog，不读取评测结构作为输入。**这不等于四种系统获得完全相同的表征。**
@@ -106,7 +108,7 @@ G+最后自由输出层使 \(W_R=R^TW,b_R=R^Tb\) 能吸收输出旋转，故函�
 
 在相同因子增量、相同 anchor 和预测器参数处，正交 \(R\) 保持残差Frobenius范数、decoder奇异值，以及局部writer Jacobian的 \(J^TJ\)。它不保持固定下游的 \(J_{\rm down}RJ\)，不保持AdamW优化轨迹；训练后不同模型的实际残差范数也不必相同。
 
-尤其现场anchor依赖历史状态的AF2/Atlas路径，只能在匹配现场状态谈局部算子等距，不能推出整个recurrent系统参数Jacobian同谱。完整Factor也没有对任意输出旋转保持函数集合不变的通用保证；这不是“所有旋转都必然有害”的定理。
+尤其现场anchor依赖历史状态的AF2路径，只能在匹配现场状态谈局部算子等距，不能推出整个recurrent系统参数Jacobian同谱。Atlas当前首LM接口的anchor随当轮MLM mask变化，但不读取适配后的历史pair；下游仍有回收状态。两者不能统称为历史反馈。完整Factor也没有对任意输出旋转保持函数集合不变的通用保证；这不是“所有旋转都必然有害”的定理。
 
 ## 7. 同构造的数据规模交互必须单列
 
@@ -126,7 +128,7 @@ G+最后自由输出层使 \(W_R=R^TW,b_R=R^Tb\) 能吸收输出旋转，故函�
 | 项目 | Protenix Mini / Tiny方向研究 | AF2 / OpenFold正式研究 | AtlasFold正式矩阵（结果待收齐） |
 |---|---|---|---|
 | 实际注入 | 单个MSA block的OPM边界，保留其pair stack及后续主干 | 48个Evoformer中第一个block的OPM，每轮recycle | 首个LM stack的SequenceToPair式difference/product边界，每轮recycle |
-| anchor | 缓存query因子/更新；不随着各模型现场状态重算 | 当前OPM调用现场因子，依赖上游更新与recycle历史 | 当前sequence/pair过程的现场因子；不是OPM缓存 |
+| anchor | 缓存query因子/更新；不随着各模型现场状态重算 | 当前OPM调用现场因子，依赖上游更新与recycle历史 | 当前masked LM单点特征的现场因子；首接口不读取适配后的recycle历史（2026-09-24纠正） |
 | 归一化 | 残差固定D=508.5，独立保留depth=1 query baseline | 原生逐位置mask及pair有效行数+epsilon，保留输出affine | 原生归一化/投影，无MSA深度D；组合顺序为difference再product |
 | 训练结构损失 | 4MSE+4bond+4smooth-lDDT+0.03distogram；protein-only现有bond mask为空时该项为0；confidence关闭 | 原生FAPE×1+distogram×0.3+supervised-chi×1；关闭confidence与masked-MSA辅助训练 | 0.4distogram+2(weighted MSE+smooth-lDDT)；关闭confidence训练 |
 | 训练recycle梯度 | 4轮，只有最后轮保留任务反传 | 3次recycling迭代加初始共4次trunk，最后轮反传 | forward_train(num_recycles=3)，实际4次trunk；按锁定训练入口 |
