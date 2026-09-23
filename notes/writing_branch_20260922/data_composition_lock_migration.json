@@ -1,0 +1,9 @@
+{
+  "previous": "paper_sources.v4.lock.json",
+  "current": "paper_sources.v5.lock.json",
+  "reason": "Add audited historical dataset membership and composition; no new predictions or revised scientific scores.",
+  "existing_inputs_unchanged": true,
+  "added": {
+    "evidence/data_composition_audit.json": "abbf5896ae924343fef18a0770ec9fbeda9f8e772695d8a840c87a7d80db5180"
+  }
+}

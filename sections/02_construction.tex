@@ -56,7 +56,7 @@ A single fixed matrix acts across all residue pairs; the baseline, labels and
 protein coordinates are unchanged. Native uses $R=I$. Each rotated adapter
 starts from zero residual and receives task training, so the experiment does
 not perturb an already trained native adapter at inference time.
-At matched factors and parameters, orthogonality preserves residual norms,
+Within the same head at matched factors and parameters, orthogonality preserves residual norms,
 decoder singular values and the local writer's $J^\top J$. It need not preserve
 its composition with the frozen downstream Jacobian, AdamW dynamics, or norms
 of the different updates learned after training. For state-dependent anchors,
@@ -76,8 +76,11 @@ $\Delta U_{G,R}=R(W_Rh_\phi+b_R)$, the choice
  \quad\Longrightarrow\quad \mathcal F_G^R=\mathcal F_G
  \label{eq:absorb}
 \end{equation}
-absorbs the rotation. The fixed factor decoder has no corresponding general
-guarantee. Equation~\ref{eq:absorb} concerns representable functions: coordinate-wise
+absorbs the rotation. This proves rotation invariance of G+'s own function
+class, not $\mathcal F_{\rm Factor}\subseteq\mathcal F_{G+}$. G+ is not
+a proven performance or expressivity upper bound. The heads also differ in
+residue-versus-pair organization, nonlinearities and anchor entry points. The
+fixed factor decoder has no corresponding general absorption guarantee. Equation~\ref{eq:absorb} concerns representable functions: coordinate-wise
 second moments can still make AdamW sensitive to the reparameterization.
 We therefore measure both heads' rotation effects rather than require G+'s
 effect to be zero. Factor and G+ have similar, not identical, sizes: 373,824

@@ -19,9 +19,14 @@ establish the interaction with either ESM2 or ESMC
 The main-metric interaction is positive in all three seed marginals and all
 three rotation marginals on both panels, but in 8/9 and 7/9 individual
 seed-by-rotation cells, respectively. Target-level interactions are positive
-for 61/96 and 34/48 proteins. Supplementary lDDT and TM-score interaction
-intervals agree in direction, although a Length48 TM-score seed marginal is
-negative. The effect is therefore not confined to a single marginal instance,
+for 61/96 and 34/48 proteins. On Confirm96-B, the residue-average lDDT interaction is
+\result{inter_c96_interaction_residue}
+[\result{inter_c96_interaction_residueLo}, \result{inter_c96_interaction_residueHi}],
+and the TM-score interaction is \result{inter_c96_interaction_tm}
+[\result{inter_c96_interaction_tmLo}, \result{inter_c96_interaction_tmHi}].
+These supplementary metrics score the same structures, not independent samples.
+The Length48 supplementary intervals are positive, although one TM-score seed
+marginal is negative. The effect is therefore not confined to a single marginal instance,
 and it is not positive for every fitted combination.
 
 G+'s direction intervals include zero on both panels; its Length48 rotated mean
@@ -228,5 +233,8 @@ Confirm96-B, versus \result{of_scale_c96}
 The corresponding OpenFold Length48 estimate is
 \result{of_scale_l48} [\result{of_scale_l48Lo}, \result{of_scale_l48Hi}].
 These direct interactions concern changes in training-set composition and
-repetition at fixed update count (16 versus 4 average passes). They neither
-establish a general sample-efficiency law nor identify why the predictors differ.
+repetition at fixed update count (16 versus 4 average passes). The short-chain factor gap shrinks in OpenFold but grows in Protenix;
+OpenFold Length48 establishes no change. A general rule that more data
+compensates for rotation is unsupported. Broader data coverage, the degree
+of optimization at fixed updates, and training-set composition remain
+unseparated candidate explanations, not interchangeable explanations of either sign.

@@ -87,6 +87,51 @@ output-head gradients and subsequent encoder gradients are checked.
 
 \section{Data, study chronology, and cumulative exposure}
 \label{app:chronology}
+
+\begin{table}[htbp]
+\caption{Data composition, separating inherited sets from additions. Quotas
+use four short-chain strata (128--191, 192--255, 256--319, 320--384) or three
+long-chain strata (385--512, 513--640, 641--768); the range column gives realized
+lengths. Q: existing monomer-clean catalog, release by 2021-09-30, single-model
+X-ray, resolution $\le2.5$\,\AA, standard amino acids and mapped C$\alpha$
+coverage $\ge90\%$. Q is not imposed on inherited Train24/Dev8. ``New'' refers
+to first scoring in the original study; all confirmation panels are later reused.}
+\label{tab:data_composition}\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{.13\linewidth}rp{.16\linewidth}p{.14\linewidth}p{.23\linewidth}p{.19\linewidth}}\toprule
+Set / origin & $N$ & Source / conditions & Quota; actual range & Nesting / exclusions & Use / first scoring \\\midrule
+\input{generated/data_composition_rows}
+\end{tabular}
+\end{table}
+
+The inherited Train24 and Dev8 are the original interface-cache queries,
+including later releases; the 2021-09-30 cutoff applies to newly selected
+candidates, not retrospectively to these sets. Train96 retains Train24 and adds
+18 chains per short stratum; Train384 retains Train96 and adds another 72 per
+stratum. Realized lengths and target identities are retained in the data audit.
+
+Confirm96-A uses the existing \texttt{monomer\_clean} candidate catalog and
+experimental CIFs. Within each stratum, candidates are ordered by SHA256 of
+\texttt{engramfold-independent96-v1|target\_id}, without model scores.
+One PDB is retained per panel; old Train24/Dev8 PDBs and qualifying sequence
+matches are excluded. Confirm96-B uses the same candidate quality criteria,
+with ordering \texttt{native-direction96-v1|confirmation|target\_id}; it also
+excludes the previously observed Confirm96-A. Confirmation B is selected
+before the Train96 additions, which are then excluded against it. Train384
+additions exclude the recorded Train96/Dev8 and both confirmation panels,
+plus previously selected additions and documented old MSA rows.
+
+For these short-chain protocols, global affine alignment uses match 2,
+mismatch $-1$, gap-open $-8$ and gap-extend $-1$, taking the first optimal
+alignment. A sequence is excluded when it has at least 50 paired positions,
+identity at least 0.30 among paired positions, and coverage at least 0.70 of
+the shorter sequence for query/within-panel comparisons. For old MSA rows,
+coverage instead uses the candidate length; query duplicates retain the
+stricter rule. Confirm96-A's initial shorter-sequence rule for all MSA rows
+failed to fill its shortest stratum. Its v2 changed only that MSA denominator
+before any new prediction or score, retaining the ranking and quotas. These
+are operational sequence exclusions, not family labels. This audit verifies
+stored membership, lengths and metadata; it does not rerun sequence searches.
+
 The original Confirm96-A study compared Factor with Generic, which did not
 explicitly receive query factors. The later Confirm96-B direction study fixed
 its primary tangent comparison and prespecified Full as secondary. Subsequent

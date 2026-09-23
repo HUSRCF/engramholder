@@ -17,8 +17,8 @@ interface: \emph{does the effect of changing an update's output orientation
 depend on how that update is parameterized?} A rotation can preserve local
 spectral properties yet alter the representations received by a fixed
 predictor. Observing a performance drop alone would leave open whether the
-sensitivity concerns a particular constrained head or affects a more flexible
-head to a similar degree.
+sensitivity differs between a factor head and a head with a free pair-output
+layer.
 
 We address this question with query-anchored residuals and trained rotation
 controls. The adapters begin at the same unadapted function; orthogonal matrices
@@ -31,26 +31,21 @@ changing G+'s function class. This gives a discriminating control, although
 coordinate-wise AdamW updates do not generally preserve an arbitrary orthogonal
 parameter correspondence \citep{loshchilov2019adamw}.
 
-The empirical evidence separates controlled effects from their scope. The original Protenix
-comparisons and a separately locked length study establish native-direction
-effects and their tested scope. A subsequent four-cell OpenFold experiment
-\citep{ahdritz2024openfold} directly tests whether rotation sensitivity differs
-between factor and generic parameterizations. This is an observed-panel
-follow-up; the original Protenix and length studies retain their prospective
-study identities. A matched Protenix Train384 comparison
-also favors Native over G+, whereas OpenFold's generic head can outperform
-Native. OpenFold does not establish the direction advantage in every setting,
-and the tested non-OPM AtlasFold interface yields no established benefit.
-The completed Train384 four-cell controls establish the interaction under
-neither ESM2 nor ESMC, although the ESMC configuration improves OpenFold quality. A separate
-full-inference norm exchange rules out overall residual magnitude as a sufficient
-explanation of one Protenix gap; it does not isolate channel orientation from
-the content learned by independently trained heads.
+Protenix studies establish native-direction effects and transfer beyond adapter
+training lengths. The OpenFold Train96 four-cell follow-up
+\citep{ahdritz2024openfold} establishes parameterization-dependent rotation
+sensitivity on observed panels, but neither ESM2 nor ESMC establishes the
+interaction at Train384. Matched G+ comparisons favor Native in Protenix and G+
+in some OpenFold settings; the tested AtlasFold interface yields no established
+benefit. A separate norm exchange limits an overall-scale explanation of one
+Protenix gap without isolating channel orientation from learned content.
 
-Together, these controls provide an evaluation strategy: matching parameter
-counts, operator spectra and initial functions need not ensure comparable
-adaptation behavior. They do not establish a rule for choosing the best head
-for an unseen predictor.
+The controls operate at two levels. Within a head, rotation preserves local
+writer spectra at a common state. Across Factor and G+, we match the initial
+function and training recipe, with approximate parameter counts; we do not
+match Jacobians or effective learning scales. The interaction compares these
+two parameterizations as wholes, not an isolated decoder change or a guaranteed
+expressivity hierarchy. It supplies no rule for choosing an unseen predictor's best head.
 
 Our contributions are an empirical parameterization-by-orientation interaction
 under a matched training recipe; a concrete query-anchored residual construction

@@ -50,7 +50,11 @@ the final recycle under the native task losses.
 \label{sec:panels}
 Confirm96-A supports the historical Factor--Generic comparison; Confirm96-B
 supports the original Protenix direction comparison. Both contain 96 short-chain
-targets. Length48 comprises 16 targets in each prespecified range 385--512,
+targets selected from the existing experimental-structure catalog: single-model
+X-ray entries released by 2021-09-30, resolution at most 2.5\,\AA, standard
+amino acids and at least 90\% mapped C$\alpha$ coverage. Four length strata
+(128--191, 192--255, 256--319, 320--384) contribute 24 targets each.
+Table~\ref{tab:data_composition} distinguishes their construction and first use. Length48 comprises 16 targets in each prespecified range 385--512,
 513--640 and 641--768; actual lengths are 392--750, beyond the Train384 adapter
 training range of 152--383. The original length study locked targets and
 configurations before new structure scores. Later OpenFold, AtlasFold and G+
@@ -60,8 +64,10 @@ The matched Protenix Train384 G+ follow-up fixes Confirm96-B Native--G+ as
 primary and Length48 as secondary; it adds no rotated G+ fits. A separate
 24-target observed-panel study fixes the full-inference direction-source effect
 as primary (Section~\ref{sec:norm_cross}); it adds no training.
-Sequence screening, complete-chain mappings and study-specific exclusions are
-recorded in Appendix~\ref{app:chronology}; they do not establish family or
+Train24 $\subset$ Train96 $\subset$ Train384; Train384 has no target-ID
+overlap with Dev8 or either confirmation panel. The inherited Train24/Dev8
+are not restricted by the new-candidate release cutoff. Sequence screening and
+study-specific exclusions are recorded in Appendix~\ref{app:chronology}; they do not establish family or
 foundation-model pretraining isolation.
 
 \paragraph{Scores and uncertainty.}

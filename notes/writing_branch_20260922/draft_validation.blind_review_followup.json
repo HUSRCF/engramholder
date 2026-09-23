@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-09-23T12:24:26.146125+00:00",
+  "based_on_commit": "7c701ed",
+  "review_file_found": true,
+  "review_input": "Both user-supplied reports now read in reports/: blind_review_7c701ed_20260923.md and openfold_training_budget_review_20260923.md",
+  "data_audit": "evidence/data_composition_audit.json",
+  "old_443_cells_unchanged": true,
+  "new_numeric_fields": 6,
+  "numeric_key_tests": 3,
+  "operator_tests": 5,
+  "anonymous_artifact": "build/anonymous_artifact_v12.zip",
+  "compile_exit_code": 0,
+  "main_text_final_page": 9,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "visual_check": "Six-column dataset table on appendix page13 inspected; no visible overlap. Not an all-page audit.",
+  "pdf_sha256": "86145229747728747df06914eed0dae1e7bd620ecafcb8adfdbccda8f8839002",
+  "experimental_jobs_changed": false,
+  "new_scientific_endpoints": false
+}

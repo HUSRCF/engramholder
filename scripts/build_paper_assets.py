@@ -26,7 +26,7 @@ SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','lengt
  'protenix_gplus384_summary','protenix_gplus384_records','protenix_gplus384_verification',
  'protenix_gplus384_historical_confirm96_records','length48_records',
  'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock',
- 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit','openfold_esmc_A_summary','openfold_esmc_A_records','openfold_esmc_A_execution_lock','openfold_esmc_A_scoring_lock','openfold_esmc_A_verification']
+ 'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit','openfold_esmc_A_summary','openfold_esmc_A_records','openfold_esmc_A_execution_lock','openfold_esmc_A_scoring_lock','openfold_esmc_A_verification','data_composition_audit']
 CELLS = {}
 DATA = {}
 
@@ -115,7 +115,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v4.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v5.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -279,6 +279,30 @@ def main():
     # One compact supplemental table per metric avoids an unbreakable 48-row float.
     for metric,label in [('pair','Pair-lDDT'),('residue','Residue-lDDT'),('tm','TM-score')]:
         save_rows('esmc_A_'+metric+'_contrasts.tex',[[*x[:2],*x[3:]] for x in a_contrasts if x[2]==label])
+    for metric,suffix in [('residue_ca_lddt','residue'),('tm_score_fixed_full_length','tm')]:
+        contrast('inter_c96_interaction_'+suffix,'openfold_gplus_rotation_final',['panels','confirm96',metric,'interaction'])
+    data_audit=DATA['data_composition_audit'];assert data_audit['passed'] and data_audit['nested']
+    groups=data_audit['datasets']
+    for name,d in groups.items():
+        assert d['count']==len(d['records'])==len({x['target_id'] for x in d['records']})
+        assert d['actual_length']==[min(x['length'] for x in d['records']),max(x['length'] for x in d['records'])]
+    sets={k:{x['target_id'] for x in v['records']} for k,v in groups.items()}
+    assert sets['Train24']<sets['Train96']<sets['Train384']
+    assert all(not sets['Train384']&sets[k] for k in ['Dev8','Confirm96-A','Confirm96-B','Length48'])
+    data_specs=[
+        ('Train24','Inherited Train24','Original cache; no new cutoff','Subset of Train96','Adaptation training'),
+        ('Dev8','Inherited Dev8','Original cache; no new cutoff','Disjoint from training','Development; already observed'),
+        ('Train96-additions','Train96 additions','Short-chain catalog (Q)','18/stratum added to Train24; excludes B','Adaptation training; B selected first'),
+        ('Train384-additions','Train384 additions','Short-chain catalog (Q)','72/stratum added to Train96; excludes Dev8/A/B','Adaptation training'),
+        ('Confirm96-A','Confirm96-A','Short-chain catalog (Q)','Hash order; excludes old queries/MSA and accepted neighbors','New for Factor--Generic'),
+        ('Confirm96-B','Confirm96-B','Short-chain catalog (Q)','Hash order; excludes A, old queries/MSA and accepted neighbors','New for direction study'),
+        ('Length48','Length48','Long-chain catalog; v2 rules below','Excludes recorded training/development and A/B','New for Protenix length transfer')]
+    table=[]
+    for name,label,source,exclusions,use in data_specs:
+        d=groups[name];counts=list(d['bins'].values());assert len(set(counts))==1
+        lo,hi=d['actual_length'];comp=f"{len(counts)} x {counts[0]}; {lo}--{hi}"
+        table.append([label,str(d['count']),source,comp,exclusions,use])
+    save_rows('data_composition_rows.tex',table)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
