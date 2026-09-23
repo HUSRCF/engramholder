@@ -18,7 +18,10 @@ checked artifacts, historical summaries, and interpretations. Preserve negative
 results and pending status. Do not infer a pending experiment's outcome.
 
 The writing branch does not alter experiment contracts, running jobs, or result
-artifacts. Do not commit or push without a request. The original template is
+artifacts. Standing user authorization (2026-09-23): after each completed manuscript revision,
+run the relevant checks, commit the scoped changes, and push to origin/main without
+waiting for another request. Report push failures honestly; never force-push or
+include unrelated changes. This supersedes the earlier per-revision push requirement. The original template is
 backed up under notes/writing_branch_20260922/iclr2027_original_template.tex.
 notes/unreviewed_writing_20260921 remains archival, not the active manuscript.
 
