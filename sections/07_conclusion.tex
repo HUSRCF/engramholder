@@ -1,15 +1,10 @@
 \section{Conclusion}
 \label{sec:conclusion}
-Query-anchored native residuals enable controlled tests of update orientation
-in frozen structure predictors. The OpenFold four-cell experiment establishes
-an interaction between head parameterization and rotation sensitivity under its
-matched recipe; Protenix studies support direction effects and transfer beyond
-adapter training lengths. Matched generic-head comparisons favor Native in
-Protenix but G+ in some OpenFold settings. Non-supporting OpenFold and AtlasFold
-conditions further delimit this result. Stronger ESMC features improve OpenFold
-adaptation quality without establishing the interaction at Train384. Full-inference norm exchanges show that
-the learned-source structural gap cannot be reduced to global residual scale;
-its training origins and detailed downstream pathway remain unresolved.
-Preserving native orientation can
-help constrained adaptation, but is neither sufficient for gains nor a guarantee
-of the best adapter.
+Query-anchored native residuals enable controlled tests of update orientation.
+OpenFold Train96/ESM2-35M establishes a head-by-rotation interaction, whereas
+Train384 establishes it with neither ESM2 nor ESMC despite higher ESMC scores.
+Protenix supports direction effects, length transfer and an advantage over
+matched G+; OpenFold's G+ can be better, and AtlasFold bounds the tested scope.
+Norm exchanges limit a global-scale explanation without identifying training
+origins. Preserving native orientation can help constrained adaptation, but
+neither guarantees gains nor determines the best adapter.

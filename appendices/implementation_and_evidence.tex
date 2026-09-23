@@ -466,28 +466,48 @@ Length48. The corresponding $J$ values are \result{a_c96_psi_change}
 [\result{a_c96_psi_changeLo}, \result{a_c96_psi_changeHi}] and
 \result{a_l48_psi_change}
 [\result{a_l48_psi_changeLo}, \result{a_l48_psi_changeHi}].
-These direct estimates do not support claiming that feature substitution
+The supplementary Confirm96-B residue-average lDDT Native--Rotated interval
+for ESMC is [\result{a_c96_c_residue_ca_lddt_factor_rotationLo},
+\result{a_c96_c_residue_ca_lddt_factor_rotationHi}], narrowly above zero
+without multiplicity correction. It does not replace the primary pair-lDDT
+endpoint. These direct estimates do not support claiming that feature substitution
 strengthens or eliminates the rotation effect. ESMC Factor's seed-marginal
 Native--Rotated differences are negative for one of three seeds on each panel;
 positive targets number 50/96 and 30/48. The full target arrays and all seed
 and rotation marginals are retained in the accompanying evidence.
 
 \begin{table}[htbp]\centering\footnotesize
-\caption{Stage A pair-lDDT contrasts. $\Delta_F=F-FR$, $\Delta_{G+}=G-GR$,
-and $\Psi=\Delta_F-\Delta_{G+}$. Negative Native--G+ favors the generic head.}
+\caption{Feature-substitution pair-lDDT contrasts. $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$,
+and $\Psi=\Delta_F-\Delta_{G+}$. Negative Native--G+ favors the generic head. Historical point estimates are
+unchanged; these intervals use the Stage A bootstrap stream.}
 \begin{tabular}{lllrr}\toprule
 Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/esmc_A_pair_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{Stage A supplementary residue-average C$\alpha$-lDDT contrasts.}
+\caption{Feature-substitution supplementary residue-average C$\alpha$-lDDT contrasts.}
 \begin{tabular}{lllrr}\toprule
 Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/esmc_A_residue_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{Stage A supplementary fixed-correspondence TM-score contrasts.}
+\caption{Feature-substitution supplementary fixed-correspondence TM-score contrasts.}
 \begin{tabular}{lllrr}\toprule
 Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/esmc_A_tm_contrasts}
 \end{tabular}\end{table}
+
+\section{Paired competitiveness comparisons}
+\begin{table}[t]
+\caption{Native minus G+: paired follow-up comparisons. Negative values favor
+G+. Intervals condition on fitted models. Protenix Confirm96-B is the primary
+endpoint of its matched-G+ follow-up; Length48 is secondary. Other rows are
+supplementary comparisons; intervals are not jointly multiplicity-adjusted.
+All panels were already observed for these studies. These estimates address
+method competitiveness, separately from Native--Rotated direction effects.}
+\label{tab:gplus}\centering\footnotesize
+\begin{tabular}{llrr}\toprule
+Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
+\input{generated/paired_table_rows}
+\end{tabular}
+\end{table}

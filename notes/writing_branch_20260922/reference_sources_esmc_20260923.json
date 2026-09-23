@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-09-23T09:58:52.623331+00:00",
+  "source": "Official model repositories; ESMC blog recommends linked preprint. bioRxiv HTML returned403.",
+  "references": [
+    {
+      "key": "lin2023evolutionary",
+      "url": "https://raw.githubusercontent.com/facebookresearch/esm/main/README.md",
+      "sha256": "8b273c21a322fc9473d1b68d0dd40c8166ab2f89e4a190aa26ca87251b97cba9",
+      "bibtex": "@article{lin2023evolutionary,\ntitle = {Evolutionary-scale prediction of atomic-level protein structure with a language model},\nauthor = {Zeming Lin  and Halil Akin  and Roshan Rao  and Brian Hie  and Zhongkai Zhu  and Wenting Lu  and Nikita Smetanin  and Robert Verkuil  and Ori Kabeli  and Yaniv Shmueli  and Allan dos Santos Costa  and Maryam Fazel-Zarandi  and Tom Sercu  and Salvatore Candido  and Alexander Rives },\njournal = {Science},\nvolume = {379},\nnumber = {6637},\npages = {1123-1130},\nyear = {2023},\ndoi = {10.1126/science.ade2574},\nURL = {https://www.science.org/doi/abs/10.1126/science.ade2574},\nnote={Earlier versions as preprint: bioRxiv 2022.07.20.500902},\n}"
+    },
+    {
+      "key": "candido2026language",
+      "url": "https://raw.githubusercontent.com/evolutionaryscale/esm/main/README.md",
+      "sha256": "57ea7f51b5e9ec3a334beab4ebf024f445cf557da0602986e7e5087a4a194a81",
+      "bibtex": "@misc{candido2026language,\n  title  = {Language Modeling Materializes a World Model of Protein Biology},\n  author = {Candido, Salvatore and Hayes, Thomas and Derry, Alexander and Rao, Roshan\n            and Lin, Zeming and Verkuil, Robert and Wu, Bryan and Lee, Jin Sub\n            and Bruguera, Elise S. and Keval, Jehan A. and Kopylov, Mykhailo\n            and Pak, John E. and Wu, Wesley and Thomas, Neil and Mataraso, Samson\n            and Hsu, Alvin and Trotman-Grant, Ashton C. and Fatras, Kilian\n            and dos Santos Costa, Allan and Badkundri, Rohil and Ak{\\i}n, Halil\n            and Oktay, Deniz and Deaton, Jonathan and Montabana, Elizabeth\n            and Sitwala, Hrishita and Yu, Yue and Wiggert, Marius\n            and Carlin, Dylan Alexander and Goering, Anthony W. and Blazejewski, Tomasz\n            and Sandora, McCullen and Hla, Michael and Jia, Tina Z.\n            and Kloker, Leon H. and Sofroniew, Nicholas J. and Uehara, Masatoshi\n            and Pannu, Jassi and Bachas, Sharrol and Liu, Daniel S.\n            and Sercu, Tom and Rives, Alexander},\n  year   = {2026},\n  url    = {https://www.biorxiv.org/content/10.64898/2026.06.03.729735},\n  note   = {Preprint}\n}"
+    }
+  ]
+}

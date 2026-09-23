@@ -2,7 +2,7 @@
 \label{sec:results}
 \subsection{Rotation sensitivity interacts with adapter parameterization}
 \label{sec:interaction_result}
-Under the matched OpenFold Train96 recipe, output rotation affects the factor
+Under the matched OpenFold Train96/ESM2-35M recipe, output rotation affects the factor
 head more than G+ (Figure~\ref{fig:interaction}). On Confirm96-B, the factor
 contrast is \result{inter_c96_factor_rotation}, while G+'s contrast is
 \result{inter_c96_gplus_rotation}. The directly estimated interaction is
@@ -12,7 +12,9 @@ The Length48 secondary comparison is also positive:
 \result{inter_l48_interaction}
 [\result{inter_l48_interactionLo}, \result{inter_l48_interactionHi}].
 These are differences-in-differences on a 0--1 score scale, not relative
-percentage improvements.
+percentage improvements. The completed Train384 four-cell controls do not
+establish the interaction with either ESM2 or ESMC
+(Table~\ref{tab:interaction_scope}); the positive finding is recipe-specific.
 
 The main-metric interaction is positive in all three seed marginals and all
 three rotation marginals on both panels, but in 8/9 and 7/9 individual
@@ -31,11 +33,12 @@ leaving optimization dynamics as part of the empirical comparison.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
-\caption{OpenFold Train96 four-cell experiment. Left: absolute mean scores
+\caption{OpenFold Train96/ESM2-35M four-cell experiment. Left: absolute mean scores
 (F: factor, RF: rotated factor, RG+: rotated G+). Right: paired factor and G+
 direction effects and their direct interaction $\Psi$, with 95\% target-bootstrap
 intervals conditional on fitted models. Both panels were previously observed;
-Confirm96-B is the primary endpoint of this follow-up.}
+Confirm96-B is the primary endpoint of this follow-up. Completed Train384
+interactions for both PLMs are reported in Table~\ref{tab:interaction_scope}.}
 \label{fig:interaction}
 \end{figure}
 
@@ -86,13 +89,15 @@ locked panel at the time of that study; S: prespecified secondary comparison in
 the original Protenix direction study; F: subsequent observed-panel study or
 extension. The mean-preserving row uses Train24/tangent/384. All intervals are
 conditional target-bootstrap intervals; rows share targets and are not
-independent replications. Null and negative conditions are retained.}
+independent replications. Null and negative conditions are retained. OpenFold labels distinguish ESM2
+from ESMC features; this figure shows $\Delta_F$, not $\Psi$.}
 \label{fig:scope}
 \end{figure}
 
-\subsection{Stronger sequence features improve quality without establishing a rotation interaction}
+\subsection{Feature substitution improves scores without establishing an interaction}
 \label{sec:esmc}
-Stage A completes the OpenFold Train384 four-cell comparison for ESM2-35M
+The OpenFold ESMC feature-substitution study (Stage A) completes the Train384
+four-cell comparison for ESM2-35M
 and repeats it with frozen ESMC-600M final-layer features. It adds 33 fits and
 4,752 predictions, all successful, while retaining the final 1536-update rule
 and common AdamW recipe. Both panels are observed follow-ups.
@@ -102,13 +107,13 @@ and \result{a_l48_native_gain} on Length48; G+ improves by
 Table~\ref{tab:esmc} reports the complete four cells and the unchanged baseline.
 
 \begin{table}[t]
-\caption{OpenFold Train384/1536 Stage A: absolute pair-lDDT means under each
-adapter feature source. F/FR are Native/Rotated Factor; G/GR are G+/Rotated G+.
-The query-only baseline has no added adapter PLM. Historical ESM2 F/FR/G and
+\caption{OpenFold Train384/1536 feature-substitution study: absolute pair-lDDT means under each
+adapter feature source. F/RF are Native/Rotated Factor; G+/RG+ are G+/Rotated G+.
+The query-only baseline has no added adapter PLM. Historical ESM2 F/RF/G+ and
 query predictions are reused; the other cells are newly trained and evaluated.}
 \label{tab:esmc}\centering\footnotesize
 \begin{tabular}{llrrrrr}\toprule
-Panel & Features & Query & F & FR & G & GR \\\midrule
+Panel & Features & Query & F & RF & G+ & RG+ \\\midrule
 \input{generated/esmc_A_means}
 \end{tabular}
 \end{table}
@@ -124,16 +129,38 @@ and the direct changes in direction effect and interaction relative to ESM2
 (Appendix~\ref{app:esmc}). G+ retains the higher mean on both panels.
 Thus the stronger feature source improves this adaptation recipe without
 establishing preservation or removal of the rotation effect. This substitution
-changes PLM family, width and cache precision together; it neither isolates a
+changes PLM family, feature width, cache precision and trainable input-projection
+size together; it neither isolates a
 model-size effect nor tests intermediate-layer or multilayer features.
 
-\subsection{Global residual norm does not explain the learned-source gap}
+The completed ESM2 Train384 control also does not establish an interaction on
+either panel (Table~\ref{tab:interaction_scope}). The earlier positive result
+concerns Train96; neither this comparison nor the direct PLM interaction
+change identifies ESMC as the reason for the lack of an established interaction.
+The training-scale contrast reported below concerns $\Delta_F$, not $\Psi$;
+it cannot establish a change in the full head-by-rotation interaction.
+
+\begin{table}[t]
+\caption{Completed OpenFold head-by-rotation interactions $\Psi$, with 95\%
+target-bootstrap intervals conditional on fitted models. All rows use 1536
+updates on observed panels. Train96 retains its original intervals; Train384
+uses the feature-substitution study's bootstrap stream. These are not direct
+tests of differences between rows.}
+\label{tab:interaction_scope}\centering\footnotesize
+\begin{tabular}{lll}\toprule
+Training set / features & Confirm96-B & Length48 \\\midrule
+\input{generated/interaction_scope_rows}
+\end{tabular}
+\end{table}
+
+\subsection{The learned-source gap persists at matched global residual norms}
 \label{sec:norm_cross}
 A full-inference robustness analysis crosses learned residual source and global
 Frobenius norm on 24 observed Confirm96-B targets, using fixed Protenix
 Train384/Full/1536 models. All 720 pure and mixed predictions are rerun on the
-same backend. Native-source updates remain better at both learned norm donors;
-the symmetric source effect is \result{cross_ca_Edir}
+same backend. Native-source advantages are \result{cross_ca_D_mN} at the
+native norm and \result{cross_ca_D_mR} at the rotated norm; the symmetric
+source effect is \result{cross_ca_Edir}
 [\result{cross_ca_EdirLo}, \result{cross_ca_EdirHi}]. Thus global norm alone is
 insufficient to explain this gap. The normalized residuals still differ in
 learned content, local magnitudes and channel organization: this is not a
@@ -164,7 +191,7 @@ without an established advantage. On Length48 it gives
 \result{of384_l48_direction}
 [\result{of384_l48_directionLo}, \result{of384_l48_directionHi}].
 G+ exceeds the native factor head on the two OpenFold long-chain comparisons;
-Table~\ref{tab:gplus} gives the paired estimates. A direction benefit within
+Appendix Table~\ref{tab:gplus} gives all paired competitiveness estimates. A direction benefit within
 one constrained family can coexist with a better generic adapter.
 
 \begin{table}[t]
@@ -191,19 +218,7 @@ The configurations establish neither a native-direction benefit nor improved
 adaptation over that baseline. This is a boundary of the tested interface and
 recipe, not evidence that only weak systems can benefit from adaptation.
 
-\begin{table}[t]
-\caption{Native minus G+: paired follow-up comparisons. Negative values favor
-G+. Intervals condition on fitted models. Protenix Confirm96-B is the primary
-endpoint of its matched-G+ follow-up; Length48 is secondary. Other rows are
-supplementary comparisons; intervals are not jointly multiplicity-adjusted.
-All panels were already observed for these studies. These estimates address
-method competitiveness, separately from Native--Rotated direction effects.}
-\label{tab:gplus}\centering\footnotesize
-\begin{tabular}{llrr}\toprule
-Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
-\input{generated/paired_table_rows}
-\end{tabular}
-\end{table}
+
 
 The fixed-budget data interaction also differs by predictor. Using Full and
 1536 updates on both sides, $(N-R)_{384}-(N-R)_{96}$ is

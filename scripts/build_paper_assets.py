@@ -271,6 +271,11 @@ def main():
             contrast(f'a_{short}_{k}','openfold_esmc_A_summary',['panels',panel,'ca_lddt','plm_interactions',k])
     for k in ['K','Psi_C','J']:number('a_holm_'+k,'openfold_esmc_A_summary',['key_secondary_holm_p',k])
     save_rows('esmc_A_means.tex',a_rows)
+    scope_interactions=[]
+    for label,keys in [('Train96 / ESM2',['inter_c96_interaction','inter_l48_interaction']),('Train384 / ESM2',['a_c96_e_ca_lddt_interaction','a_l48_e_ca_lddt_interaction']),('Train384 / ESMC',['a_c96_c_ca_lddt_interaction','a_l48_c_ca_lddt_interaction'])]:
+        scope_interactions.append([label,*[tex(k)+' '+interval_cell(k) for k in keys]])
+    save_rows('interaction_scope_rows.tex',scope_interactions)
+
     # One compact supplemental table per metric avoids an unbreakable 48-row float.
     for metric,label in [('pair','Pair-lDDT'),('residue','Residue-lDDT'),('tm','TM-score')]:
         save_rows('esmc_A_'+metric+'_contrasts.tex',[[*x[:2],*x[3:]] for x in a_contrasts if x[2]==label])
@@ -279,7 +284,8 @@ def main():
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
     (OUT/'paired_table_rows.tex').write_text('\n'.join(' & '.join([model,panel,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for model,panel,key in [('Protenix, Train384','C96-B','pt384_c96_gdiff'),('Protenix, Train384','L48','pt384_l48_gdiff'),('OpenFold, Train96','C96-B','of96_c96_gdiff'),('OpenFold, Train96','L48','of96_l48_gdiff'),('OpenFold, Train384','C96-B','of384_c96_gdiff'),('OpenFold, Train384','L48','of384_l48_gdiff'),('AtlasFold, Train96','C96-B','atlas_c96_gdiff'),('AtlasFold, Train96','L48','atlas_l48_gdiff')])+'\n')
     (OUT/'protenix_gplus_supplement_rows.tex').write_text('\n'.join(' & '.join([panel,label,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for panel,short in [('C96-B','c96'),('L48','l48')] for label,suffix in [('Pair-lDDT','gdiff'),('Residue-lDDT','gdiff_residue'),('TM-score','gdiff_tm')] for key in [f'pt384_{short}_{suffix}'])+'\n'+r'\bottomrule'+'\n')
-    scope=[('Protenix Mini: Train24, tangent, 384 / C96-B','pt_tangent','P'),('Protenix Mini: Train24, Full, 384 / C96-B','pt_full24','S'),('Protenix Tiny: Train24, tangent, 384 / C96-B','pt_tiny','F'),('Protenix Mini: mean-preserving R / C96-B','pt_mean','F'),('Protenix Mini: Train96, Full, 1536 / C96-B','pt_full96','F'),('Protenix Mini: Train384, Full, 1536 / C96-B','pt_full384','F'),('Protenix Mini: Train384, Full, 1536 / L48','pt_length','P'),('OpenFold: Train96, Full, 1536 / C96-B','of96_c96_direction','F'),('OpenFold: Train96, Full, 1536 / L48','of96_l48_direction','F'),('OpenFold: Train384, Full, 1536 / C96-B','of384_c96_direction','F'),('OpenFold: Train384, Full, 1536 / L48','of384_l48_direction','F'),('AtlasFold: Train96, 1536 / C96-B','atlas_c96_direction','F'),('AtlasFold: Train96, 1536 / L48','atlas_l48_direction','F')]
+    scope=[('Protenix Mini: Train24, tangent, 384 / C96-B','pt_tangent','P'),('Protenix Mini: Train24, Full, 384 / C96-B','pt_full24','S'),('Protenix Tiny: Train24, tangent, 384 / C96-B','pt_tiny','F'),('Protenix Mini: mean-preserving R / C96-B','pt_mean','F'),('Protenix Mini: Train96, Full, 1536 / C96-B','pt_full96','F'),('Protenix Mini: Train384, Full, 1536 / C96-B','pt_full384','F'),('Protenix Mini: Train384, Full, 1536 / L48','pt_length','P'),('OpenFold ESM2: Train96, Full, 1536 / C96-B','of96_c96_direction','F'),('OpenFold ESM2: Train96, Full, 1536 / L48','of96_l48_direction','F'),('OpenFold ESM2: Train384, Full, 1536 / C96-B','of384_c96_direction','F'),('OpenFold ESM2: Train384, Full, 1536 / L48','of384_l48_direction','F'),('AtlasFold: Train96, 1536 / C96-B','atlas_c96_direction','F'),('AtlasFold: Train96, 1536 / L48','atlas_l48_direction','F')]
+    scope[11:11]=[('OpenFold ESMC: Train384, Full, 1536 / C96-B','a_c96_c_ca_lddt_factor_rotation','F'),('OpenFold ESMC: Train384, Full, 1536 / L48','a_l48_c_ca_lddt_factor_rotation','F')]
     (OUT/'scope_table_rows.tex').write_text('\n'.join(' & '.join([label.replace('_',r'\_'),status,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for label,key,status in scope)+'\n')
     for table in ["main_table_rows", "paired_table_rows", "scope_table_rows"]:
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
@@ -294,7 +300,7 @@ def draw_figures(scope):
     # Figure 2: absolute means are descriptive, paired intervals are separate.
     fig,ax=plt.subplots(2,2,figsize=(6.6,3.35),gridspec_kw={'width_ratios':[1,1.25]},layout='constrained')
     cols=['#245a81','#799cb5','#9b5d16','#d4af7b']
-    for j,(s,title) in enumerate([('c96','Confirm96-B: primary interaction'),('l48','Length48: secondary interaction')]):
+    for j,(s,title) in enumerate([('c96','Train96 / ESM2: Confirm96-B'),('l48','Train96 / ESM2: Length48')]):
         groups=['factor_native','factor_rotated','gplus_native','gplus_rotated']
         vs=[val(f'inter_{s}_{g}') for g in groups]
         ax[j,0].bar(range(4),vs,color=cols,width=.65)
@@ -309,7 +315,7 @@ def draw_figures(scope):
         ax[j,1].axvline(0,color='.6',lw=.7);ax[j,1].set(yticks=[2,1,0],yticklabels=[r'$\Delta_F$',r'$\Delta_{G+}$',r'$\Psi$'],ylim=(-.65,2.65),xlim=(-.014,.057),xticks=[-.01,0,.01,.02,.03],xlabel='Paired difference (95% CI)')
         ax[j,1].tick_params(labelsize=9)
     fig.savefig(FIG/'interaction.pdf');fig.savefig(FIG/'interaction.png',dpi=200);plt.close(fig)
-    fig,ax=plt.subplots(figsize=(6.6,4.3));fig.subplots_adjust(left=.52,right=.98,top=.98,bottom=.12)
+    fig,ax=plt.subplots(figsize=(6.6,4.65));fig.subplots_adjust(left=.52,right=.98,top=.98,bottom=.12)
     for i,(label,k,status) in enumerate(scope):
         y=len(scope)-1-i;m,lo,hi=val(k),val(k+'Lo'),val(k+'Hi')
         color='#245a81' if label.startswith('Protenix') else '#9b5d16' if label.startswith('OpenFold') else '#587b46'

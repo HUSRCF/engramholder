@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-09-23T10:02:44.085252+00:00",
+  "all_443_numeric_cells_and_sources_unchanged": true,
+  "evidence_lock": "v4 unchanged",
+  "contrast_reconstruction_count": 78,
+  "numeric_key_tests": 3,
+  "compile_exit_code": 0,
+  "main_text_final_page": 9,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "visual_checks": [
+    "New main-text four-cell and interaction tables on page7",
+    "Conclusion on page9",
+    "Updated 15-row scope figure"
+  ],
+  "full_document_visual_audit": false,
+  "end_to_end_single_target_entry": "Not implemented in this writing-only revision; existing limitation retained.",
+  "experimental_jobs_changed": false,
+  "pdf_sha256": "b12c04d3fdbcfb722d8ea3cec374b2f4f9599f0940669178cf9a0d842bf6e48d",
+  "anonymous_artifact": "build/anonymous_artifact_v10.zip",
+  "anonymous_artifact_sha256": "7cb2c9a58fcedc6722e4b8c35d35b1d2028c2c0e044a23b514547d73ab4d501c",
+  "anonymous_numeric_fields_verified": 443,
+  "anonymous_operator_checks_passed": 5
+}

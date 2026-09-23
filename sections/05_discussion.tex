@@ -1,55 +1,38 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-The OpenFold interaction is the clearest evidence that a rotation intervention
-must be interpreted together with the adapter parameterization. Under a common
-recipe, a head built through a fixed native operator is more sensitive than a
-head whose free output layer can absorb the same transformation. This sharpens
-the original direction observation while leaving two sources of sensitivity
-entangled: the constraints on representable updates and the optimization geometry
-of their parameters. Establishing their separate contributions would require a
-different experiment, not a reinterpretation of the present contrast.
+Under the OpenFold Train96/ESM2-35M recipe, a head built through a fixed native
+operator is more rotation-sensitive than a head whose free output layer can
+absorb the transformation. The interaction identifies a parameterization-dependent
+effect, but does not separate constraints on representable updates from the
+optimization geometry of their parameters. Nor does it imply that the factor
+head is best: matched comparisons favor Native in Protenix and G+ in some
+OpenFold settings. AtlasFold establishes no adaptation gain; its high baseline
+has not been isolated as the cause.
 
-The structural results also distinguish three questions: whether adaptation
-helps an unadapted system, whether native orientation helps within a constrained
-family, and whether that family is preferable to a generic alternative. Protenix
-supports direction and length-transfer effects and outperforms matched G+ at
-Train384, while OpenFold illustrates that G+ can be more effective even when
-direction matters. AtlasFold provides no
-established adaptation gain in this setting. Its high baseline is descriptive;
-we have not isolated a ceiling effect, nor identified an architectural component
-that explains the difference between predictors.
+The ESMC follow-up shows that substantially higher structural scores can occur
+without an established head-by-rotation interaction. Train384/ESM2 also does not
+establish that interaction, and direct ESMC--ESM2 changes in $\Delta_F$ and
+$\Psi$ remain uncertain. These results cannot identify ESMC substitution as the
+cause of the lack of an established interaction. The substitution changes PLM
+family, feature width, cache precision and trainable input-projection size
+together; their individual contributions to improved scores remain unknown.
 
-The ESMC follow-up separates feature quality from rotation sensitivity. Both
-Factor and G+ improve substantially, yet neither the ESMC rotation interaction
-nor its change from ESM2 is established. A stronger sequence representation
-therefore does not by itself validate the parameterization-specific explanation
-or resolve the generic head's competitive advantage. This is a Train384
-follow-up, not a repeat of the Train96 interaction under only a PLM change.
+The norm exchange limits an overall-scale explanation of one Protenix gap,
+without separating learned content, local magnitudes and channel organization.
+Local diagnostics retain their negative boundaries: oracle compatibility did
+not establish a positive association with target-level folding gains, small equal-norm learned directions
+showed no established native advantage, and bounded Train8-to-Dev8 updates
+showed no established mean positive transfer. Their recipes, states, scales
+and endpoints differ from complete inference; the origin of beneficial learned
+residuals remains unresolved (Appendix~\ref{app:mechanisms}).
 
-The full-inference intervention directly tests an alternative explanation:
-that the learned residual's global norm accounts for its structural advantage.
-Native-source updates remain better at both actual norm donors. Thus the
-structural difference depends on properties beyond overall scale, including
-information retained in the normalized tensor. This identifies a limit of a
-norm-only explanation; it does not separate learned content, local magnitude
-patterns and channel organization, or locate a specific downstream computation.
-
-Local diagnostics retain their narrower conclusions. Oracle compatibility did
-not establish a positive association with target-level folding gains; learned
-directions at a small common amplitude did not establish a native advantage.
-The bounded Train8-to-Dev8 study also did not establish mean positive transfer.
-These results coexist with the full-inference finding because the model recipe,
-state, scale and endpoint differ. How training produces the beneficial residual
-organization remains unresolved (Appendix~\ref{app:mechanisms}).
-
-Our intervals quantify target variation conditional on the fitted models, not
-all uncertainty from retraining or research selection. One fixed inference sample
-per system does not characterize sampling variability; paired RNG controls
-comparison noise rather than estimate that variability. Three rotations and seeds
-sample a limited family; several studies reuse observed panels. Sequence
-screening does not ensure target-family independence, and cumulative historical
-exposure and foundation pretraining overlap remain incompletely characterized.
-Cross-predictor comparisons change interfaces, representations and training losses
-along with the backbone. Finally, the absolute gap to strong native single-sequence
-systems limits deployment claims. The evidence supports a conditional design
-factor for frozen adaptation rather than a universal adapter prescription.
+Intervals describe target variation conditional on fitted models, not all
+retraining or research-selection uncertainty. Three seeds and rotations cover
+limited instances; several studies reuse observed targets. One inference sample
+per system does not estimate sampling variability. Sequence screening ensures
+neither family independence nor exclusion from foundation-model pretraining,
+and historical exposure remains incompletely characterized. Cross-predictor
+comparisons change interfaces, representations and losses alongside the backbone.
+The substantial gap to strong native single-sequence systems also limits
+deployment claims. These findings delimit a conditional design factor, not a
+universal adapter prescription.

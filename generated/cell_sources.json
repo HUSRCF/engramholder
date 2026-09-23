@@ -6811,7 +6811,7 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 456,
+    "literal_references": 484,
     "distinct_keys": 385,
     "missing": []
   },

@@ -4,10 +4,11 @@
 We adapt frozen Protenix-Mini/Tiny default checkpoints, the official AF2
 \texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with its native
 AtlasLM retained. No evaluation homologs, templates, or target structures are
-provided as folding inputs. Unless stated otherwise, adapters receive frozen ESM2-35M features (480
+provided as folding inputs. Unless stated otherwise, adapters receive frozen ESM2-35M features \citep{lin2023evolutionary} (480
 channels, layer 12), and Native/Rotated/G+ share this added representation.
-The OpenFold Stage A follow-up replaces these with frozen ESMC-600M final-layer
-features (1152 channels; Section~\ref{sec:esmc}).
+The OpenFold feature-substitution study (internally Stage A) replaces these with
+frozen ESMC-600M final-layer features \citep{candido2026language}
+(1152 channels; Section~\ref{sec:esmc}).
 The unadapted baseline does not receive the added adapter features; AtlasFold
 already has AtlasLM-3B. Thus improvements over the baseline combine feature
 access and adaptation, whereas Native--Rotated is the tighter direction control.

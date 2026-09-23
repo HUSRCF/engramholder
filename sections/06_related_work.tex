@@ -13,13 +13,7 @@ serve as independently trained controls. AdamW's coordinate-wise optimization
 \citep{loshchilov2019adamw} separates function-class equivalence from training
 behavior.
 
-AlphaFold2 and its trainable OpenFold implementation couple MSA and pair
-representations with structural prediction
-\citep{jumper2021alphafold,ahdritz2024openfold}. Protenix-Mini provides compact
-folding models with a switchable PLM path \citep{gong2025protenix}; AtlasFold
-uses metagenomic-scale language-model representations \citep{seo2026atlasfold}.
-These systems provide distinct tested computational contexts. We preserve each
-context's native operator and loss rather than equate all sequence-to-pair
-interfaces with OPM. Their native system scores locate our adapters' practical
-quality, but baseline-only evaluations do not constitute direction-effect
-replications.
+AlphaFold2/OpenFold, Protenix-Mini and AtlasFold provide distinct tested
+computational contexts \citep{jumper2021alphafold,ahdritz2024openfold,gong2025protenix,seo2026atlasfold}.
+We preserve their native operators and losses; neither a shared sequence-to-pair
+role nor additional baseline scores alone establish a replicated direction effect.
