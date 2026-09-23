@@ -4,9 +4,11 @@
 
 **2026-09-24 已完成：** [Fresh96与训练交互变化](reports/fresh96_training_psi_integration_20260924.md)及[单目标OpenFold完整预测](reports/openfold_single_reproduction_20260924.md)。Fresh96的核心交互未建立；结果已进入摘要与主文。旧449数值不变，新增83项；[可执行预测入口](reproducibility/openfold_single/README.md)包含发布适配器、FASTA、CIF评分与环境说明。
 
-**架构分析：** [条件依赖能解释到哪一步](reports/architecture_dependence_analysis_20260924.md)。核对三底座实际路径，纠正Atlas首接口的历史反馈归类，区分局部可达性、下游读取与有限预算学习；新增分析建议尚未运行，未改论文数值或启动训练。
+**机制小试首轮审阅：** [共享重建与OpenFold几何／传播](reports/shared_reconstruction_openfold_review_20260924.md)。六组共享重建已完成，留出相对平方误差约0.82–0.84，属于优于零输出的部分重建；OpenFold两链六次完整推理的几何与传播记录已复核。Protenix、AtlasFold本轮观测仍按作者消息记为进行中。新结果仅进入MD审阅，未写入正文或v6数值锁。
 
-**补充实验设计：** [既有曲线／置换与共享旋转重建候选](reports/architecture_followup_plan_20260924.md)。已批准工作沿原线程顺序；新增候选是6次小头重建拟合，尚未启动，不新增结构监督矩阵或重复提交既有任务。
+**架构分析：** [条件依赖能解释到哪一步](reports/architecture_dependence_analysis_20260924.md)。核对三底座实际路径，纠正Atlas首接口的历史反馈归类，区分局部可达性、下游读取与有限预算学习；该文件保留设计时点，执行结果见上方首轮审阅。
+
+**补充实验设计：** [既有曲线／置换与共享旋转重建计划](reports/architecture_followup_plan_20260924.md)。共享重建已由原线程完成；原设计保留并追加状态，不重复提交既有任务或修改执行锁。
 
 [执行前评审已落实](reports/architecture_followup_review_response_20260924.md)：384→1536归因区间统一，补零输出参照和幅度／夹角分解，固定完整序列编码与单次旋转约定；不增加拟合任务，不改变既有执行锁。
 
