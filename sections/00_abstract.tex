@@ -1,24 +1,21 @@
 \begin{abstract}
-Small adapters modify a frozen protein structure predictor, but comparable
-update forms need not yield comparable adaptation. We study query-anchored
-factor residuals composed through pretrained native operators. Fixed orthogonal
-controls rotate residual channels; all adapters are trained from the same
-zero-residual function under paired conditions. A generic head with explicit
-factor access and a free output layer provides a rotation-closed function-class
-control. Under fixed 1536-update recipes, observed-panel follow-ups establish
-head-by-rotation interactions in OpenFold Train96/ESM2-35M and Protenix
-Train96/ESM2-35M: \result{inter_c96_interaction} and
-\result{p96_pair_interaction} C$\alpha$ pair-lDDT, respectively.
-The fixed OpenFold models give \result{fresh_ca_lddt_interaction}
+Does changing the orientation of an adapter update affect learning differently
+across parameterizations? We study query-anchored factor residuals composed
+through frozen protein structure predictors' native pair-generating operators.
+Fixed orthogonal controls rotate residual channels, and each condition receives
+full task training from the same zero-residual initial function. A generic head
+with explicit factor access and a free output layer provides a rotation-closed
+function-class control. Under fixed 1536-update recipes, observed-panel studies
+find greater rotation sensitivity for Factor than G+ in OpenFold and Protenix
+Train96/ESM2, with direct interactions of \result{inter_c96_interaction} and
+\result{p96_pair_interaction} C$\alpha$ pair-lDDT. The fixed OpenFold models give
+\result{fresh_ca_lddt_interaction}
 [\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}]
-on 96 prospectively locked targets, leaving that primary interaction
-unestablished. Protenix Train384 retains direction effects and positive
-follow-up interaction intervals with ESMC-600M; OpenFold Train384 and the tested
-AtlasFold configurations do not establish an interaction. ESMC improves
-Protenix and OpenFold structural scores without establishing a change in their
-direction effects. Separately locked Protenix length transfer and matched-norm
-checks extend the evidence without identifying a training mechanism. These
-controls distinguish adaptation gains, rotation sensitivity and head
-competitiveness: native orientation can matter, but neither guarantees useful
-adaptation nor makes factor heads uniformly superior to generic alternatives.
+on 96 prospectively locked targets, leaving the new-target primary interaction
+unestablished. Further settings retain both positive effects and clear boundaries:
+head competitiveness and higher structural quality need not track rotation
+sensitivity. The resulting evaluation distinguishes useful adaptation,
+within-head direction effects and cross-head interactions. It establishes a
+conditional role for orientation in these native interfaces, without identifying
+a unique mechanism or a universal best adapter.
 \end{abstract}

@@ -1,0 +1,83 @@
+# OpenFold Train96：带符号通道置换四格
+
+2026-09-24，用户已批准，当前为科学选择先固定、工程后封存的独立后续研究。
+执行顺序：已有矩阵完成统一评分 → 既有节点结构曲线完成 → 本支线工程 → 18正式fits。
+上游完成文件只作执行门槛，任何曲线数值都不用于改变以下选择。
+
+## 问题与范围
+
+在AdamW具有理想坐标对应关系的带符号置换族中，Factor/G+的旋转敏感性是否仍不同？
+不是稠密旋转的严格重复；不替换Fresh96的已完成阴性主要交互，不承诺Factor必胜G+。
+
+固定OpenFold AF2 model_3_ptm、原Train96、完整Factor、1536更新、ESM2-35M第12层480维。
+首个Evoformer OPM，每次recycle现场anchor；全48block、四次trunk、仅末次开图。
+loss沿原FAPE + .3 distogram + supervised_chi，损失/原生归一化不改。
+仅适配器可训练；冻结原ESM及AF2；TF32关闭、原FP32与checkpoint方式保留。
+
+AdamW lr=1e-4、weight_decay=.01、betas=(.9,.999)、eps=1e-8、amsgrad=False；
+全局L2 clip=1，原每步seed(seed+zero_based_step)、相同目标顺序、无scheduler/early stop。
+初始化seed=20260923/20260924/20260925；全部仍为零输出最终仿射。
+不做新LR开发，不读取新面板，不换样本、不加步数。零梯度仍是零张量，不转None、不跳step。
+
+## 干预与配对
+
+T的约定：(Tx)[j]=sign[j]*x[permutation[j]]。用gather+sign，不做dense GEMM。
+在原生完整残差（含Full二次项、原mask与分母）形成后才施加T，原baseline不变。
+旧Factor稠密R在decoder权重上融合；此处不沿用该实现位置，这是明确的工程差异。
+
+固定变换seed=20261201/20261202/20261203；按SHA256键排序生成置换及独立符号位。
+具体128维数组与hash保存在candidate_lock.json，数组是权威记录；不消耗训练RNG，
+不依效果挑选/重抽变换，也不额外约束行列式为+1。
+
+| 头 | 原生 | 置换 |
+|---|---|---|
+| Factor | 复用既有3seed，须通过同契约审核 | 3seed×3T=9新fits |
+| G+ | 复用既有3seed，须通过同契约审核 | 3seed×3T=9新fits |
+
+对G+，W_T=T^T W、b_T=T^T b；一阶矩同带符号映射，二阶矩只做无符号置换。
+该映射仅用于非零工程正对照；正式优化不在canonical坐标代更新，不强制共享forward。
+全局clip/同标量eps/各向同性decay保持理想对应，深层FP32不保证逐位轨迹相同。
+Factor一般没有同样的自由输出仿射吸收保证。
+
+## 基线复用与工程门槛
+
+6原生checkpoint均来自cross_backbone_20260921/openfold/formal/{native,gplus}_s*/checkpoint_1536.pt。
+historical_audit.json锁实际路径/hash、Train/Dev/eval清单、source及optimizer状态。
+新源副本从该历史目录建立，旧sealed目录只读。独立新增模块和新入口可被明确审查。
+
+1. 非零小头FP64：完整残差gather、bias、VJP、AdamW非零状态、epsilon、moment、
+   AMSGrad测试路径、decay、真实生效全局clip、零梯度更新及保存重载。formal AMSGrad仍关闭。
+2. 固定Train96首条7hln_A和最长6uqt_A：两头×三T零输出与query完整forward逐元素一致；
+   loss/gradient/parameter有限；四次hook且梯度标志FFF T；冻结主干hash不变。
+3. 六个既有原生checkpoint在两链上独立旧类与新identity类pair/coordinate逐元素回放。
+   失败即停止本18组释放，不静默新增6次基线重训，也不放宽门槛迎合结果。
+4. GPU小头测试与固定真实蛋白单步+保存重载验证。完整FP32短轨迹对应作为诊断记录，
+   不作为强行逐位相等门槛；不以共享forward代替正常正式路径。
+
+工程不在Dev/Test上择优，临时更新只存在工程副本。失败与修订创建新版本，不覆盖旧记录。
+
+## 统计与评测
+
+唯一主要读数为Confirm96-B Cα pair-lDDT：
+Psi_T=(F_N−F_T)−(G_N−G_T)。目标内先等权平均3seed×3T，再目标配对bootstrap20,000次，
+seed20260921。Length48、两行效应、三指标、种子和变换边际均为次要未校正读数。
+完整四格、query参考、逐目标差分全部保留；不以不显著宣称等效，不用两行各自显著性替代交互。
+区间条件于当前拟合模型；目标是已观察面板，不称独立新确认。
+
+18×1536=27648新更新，18×144=2592新预测。只用最终1536；384/768保存不作选择。
+已有原生6×144与query仅在hash/同契约通过后复用。所有正式尝试结束后统一评分。
+训练异常保留并阻止评分；单个预测失败记录为零分、保留全分母，不裁短或删除目标。
+资源hpc3/acd_u/H100，默认4并发，不影响未完成旧任务；不把其他硬件混入配对。
+
+## 解释边界
+
+阳性交互支持：该较窄变换族中参数化相关的通道敏感性仍可观察。
+不证明原稠密旋转效应完全与Adam无关，不唯一识别表达能力，不建立普遍最优适配器。
+阴性结果保留，不追加T/seed/目标或改LR寻求阳性。
+
+## 执行凭证
+
+candidate_lock.json现在固定科学选择；preparation_lock.json绑定历史源码副本与新增源。
+upstream_gate.json通过后才提交GPU工程。两链smoke和baseline复用通过后形成
+formal_execution_lock.json，再按同一科学候选提交18；不借工程结果重新选择科学配置。
+analysis/complete.json是该支线最终统一评分凭证，单个Slurm完成不是科学评分完成。

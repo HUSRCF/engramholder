@@ -1,6 +1,8 @@
 # EngramFold 证据整理仓库
 
-**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v7**，共 **1,135** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v7**，共 **1,136** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+
+**最新评审与图示修订：** [对71370ad评审的回应及已完成控制核对](reports/review_71370ad_response_20260924.md)。新增[适配器双支结构图](figures/construction.pdf)与[统一交互主图](figures/interaction.pdf)，主文保留Fresh96边界。带符号置换及Dev8学习曲线已收齐，先进入MD，尚未纳入正文；新Protenix面板仅为候选。
 
 **本轮已正式纳入：** [Protenix／AtlasFold完整四格v7整合](reports/diamondhill_fourcell_integration_20260924.md)。主表统一15行，Fresh96进入交互主图；A66主要终点与未校正后续交互分开。旧532字段及v6锁保持不变。
 

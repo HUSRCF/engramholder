@@ -17684,6 +17684,34 @@
       "operation": "identity",
       "value": 0.0016196853606855312,
       "formatted": "+0.00162"
+    },
+    "dh_protenix_c96_c_rotated_head_gap": {
+      "source": "evidence/dh_A66_summary.json",
+      "field_paths": [
+        [
+          "panels",
+          "protenix",
+          "confirm96",
+          "ca_lddt",
+          "cells",
+          "C",
+          "means",
+          "rotated_factor"
+        ],
+        [
+          "panels",
+          "protenix",
+          "confirm96",
+          "ca_lddt",
+          "cells",
+          "C",
+          "means",
+          "rotated_gplus"
+        ]
+      ],
+      "operation": "first mean minus second mean; descriptive, no new interval",
+      "value": 0.08431067027366201,
+      "formatted": "+0.08431"
     }
   },
   "verified_esmc_A_contrasts": 78,
@@ -17692,8 +17720,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1127,
-    "distinct_keys": 923,
+    "literal_references": 1130,
+    "distinct_keys": 924,
     "missing": []
   },
   "pending": [],

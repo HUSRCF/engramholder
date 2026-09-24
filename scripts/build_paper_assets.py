@@ -340,6 +340,11 @@ def main():
     save_rows('data_composition_rows.tex',table)
     from diamondhill_paper_assets import build as build_dh
     build_dh(DATA, number, contrast, tex, save_rows, interval_cell)
+    # Descriptive mean identity: no new hypothesis test or confidence interval.
+    gap = CELLS['dh_protenix_c96_c_rotated_factor']['value'] - CELLS['dh_protenix_c96_c_rotated_gplus']['value']
+    assert abs(gap - (CELLS['dh_protenix_c96_c_pair_native_minus_gplus']['value'] - CELLS['dh_protenix_c96_c_pair_interaction']['value'])) < 1e-12
+    pre=['panels','protenix','confirm96','ca_lddt','cells','C','means']
+    CELLS['dh_protenix_c96_c_rotated_head_gap']=dict(source='evidence/dh_A66_summary.json',field_paths=[pre+['rotated_factor'],pre+['rotated_gplus']],operation='first mean minus second mean; descriptive, no new interval',value=gap,formatted=f'{gap:+.5f}')
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -359,24 +364,9 @@ def main():
 def draw_figures(scope):
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'ps.fonttype':42})
     def val(k):return CELLS[k]['value']
-    # Figure 2: absolute means are descriptive, paired intervals are separate.
-    fig,ax=plt.subplots(3,2,figsize=(6.6,4.4),gridspec_kw={'width_ratios':[1,1.25]},layout='constrained')
-    cols=['#245a81','#799cb5','#9b5d16','#d4af7b']
-    for j,(s,title) in enumerate([('c96','Observed: Confirm96-B'),('l48','Observed: Length48'),('fresh','New targets: Fresh96')]):
-        groups=['factor_native','factor_rotated','gplus_native','gplus_rotated']
-        vs=([val('fresh_'+g.replace('gplus','generic_plus')) for g in groups] if s=='fresh' else [val(f'inter_{s}_{g}') for g in groups])
-        ax[j,0].bar(range(4),vs,color=cols,width=.65)
-        for i,v in enumerate(vs):ax[j,0].text(i,v+.009,f'{v:.3f}',ha='center',fontsize=9)
-        ax[j,0].tick_params(labelsize=9)
-        ax[j,0].set_title(title,fontsize=9)
-        ax[j,0].set(xticks=range(4),xticklabels=['F','RF','G+','RG+'],ylim=(0,.57),ylabel='Mean pair-lDDT')
-        for i,(k,label) in enumerate([('factor_rotation',r'$\Delta_F$'),('gplus_rotation',r'$\Delta_{G+}$'),('interaction',r'$\Psi$')]):
-            key=f'fresh_ca_lddt_{k}' if s=='fresh' else f'inter_{s}_{k}';m,lo,hi=val(key),val(key+'Lo'),val(key+'Hi')
-            ax[j,1].errorbar(m,2-i,xerr=[[m-lo],[hi-m]],fmt='o' if i<2 else 'D',color='#333333' if i<2 else '#245a81',capsize=3)
-            ax[j,1].text(.041,2-i,f'{m:+.5f}',va='center',fontsize=9)
-        ax[j,1].axvline(0,color='.6',lw=.7);ax[j,1].set(yticks=[2,1,0],yticklabels=[r'$\Delta_F$',r'$\Delta_{G+}$',r'$\Psi$'],ylim=(-.65,2.65),xlim=(-.014,.057),xticks=[-.01,0,.01,.02,.03],xlabel='Paired difference (95% CI)')
-        ax[j,1].tick_params(labelsize=9)
-    fig.savefig(FIG/'interaction.pdf');fig.savefig(FIG/'interaction.png',dpi=200);plt.close(fig)
+    from paper_figure_layouts import draw_adapter, draw_interactions
+    draw_interactions(FIG, CELLS)
+    draw_adapter(FIG)
     fig,ax=plt.subplots(figsize=(6.6,5.6));fig.subplots_adjust(left=.52,right=.98,top=.98,bottom=.12)
     for i,(label,k,status) in enumerate(scope):
         y=len(scope)-1-i;m,lo,hi=val(k),val(k+'Lo'),val(k+'Hi')
@@ -384,17 +374,4 @@ def draw_figures(scope):
         ax.errorbar(m,y,xerr=[[m-lo],[hi-m]],fmt={'P':'o','S':'^','F':'s'}[status],color=color,capsize=2,markersize=4)
     ax.axvline(0,color='.5',lw=.8);ax.set(yticks=range(len(scope)),yticklabels=[f'[{s}] {l.replace("Protenix Mini:","Mini:").replace("Protenix Tiny:","Tiny:").replace("Train","n=")}' for l,k,s in reversed(scope)],xlabel='Native minus rotated (pair-lDDT)',xlim=(-.012,.13));ax.tick_params(axis='y',labelsize=9)
     fig.savefig(FIG/'scope.pdf');fig.savefig(FIG/'scope.png',dpi=200);plt.close(fig)
-    # Figure 1: standard vector drawing of the actual experimental design.
-    fig,ax=plt.subplots(figsize=(6.6,2.65));fig.subplots_adjust(left=.015,right=.985,top=.99,bottom=.01);ax.set(xlim=(0,10),ylim=(0,4.3));ax.axis('off')
-    def box(x,y,w,h,text,color='#f0f3f5'):
-        ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.04',fc=color,ec='.4',lw=.7));ax.text(x+w/2,y+h/2,text,ha='center',va='center',fontsize=9)
-    def arrow(x,y,xx,yy):ax.add_patch(FancyArrowPatch((x,y),(xx,yy),arrowstyle='-|>',mutation_scale=10,lw=.8,color='.3'))
-    box(.1,2.6,1.5,1,'Query\nFrozen PLM');box(2,2.6,1.65,1,'Increment head\nTRAINABLE','#e1edf7');box(4.1,2.6,2.1,1,'Native operator\nresidual\nFROZEN');box(6.65,2.6,1.1,1,r'$R\Delta U$'+'\nR fixed');box(8.2,2.6,1.6,1,'Add baseline\nFrozen folding')
-    for x,xx in [(1.6,2),(3.65,4.1),(6.2,6.65),(7.75,8.2)]:arrow(x,3.1,xx,3.1)
-    ax.text(5,4,'Factor path: final increment layer starts at zero',ha='center',fontsize=8)
-    box(.1,.35,4.1,1.5,'G+: same extra features + query factors\nTrainable pair MLP; free affine output\nZero final layer; fixed residual rotation','#fff3e4')
-    ax.text(7.2,2.05,'All four conditions receive task training',ha='center',fontsize=8)
-    tbl=ax.table(cellText=[['Factor','Native F','Rotated RF'],['G+','Native G+','Rotated RG+']],colLabels=['Head','R = I','Fixed R'],cellLoc='center',bbox=[.48,.09,.49,.33]);tbl.auto_set_font_size(False);tbl.set_fontsize(9)
-    fig.savefig(FIG/'construction.pdf',bbox_inches='tight');fig.savefig(FIG/'construction.png',dpi=200,bbox_inches='tight');plt.close(fig)
-
 if __name__=='__main__':main()

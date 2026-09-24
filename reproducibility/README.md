@@ -6,7 +6,8 @@ operator check, and fixed configuration records. The paper asset generator at
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
 full-inference source/norm cells and contrasts. The active v7 input lock contains
-1,135 generated numerical fields, retaining all 532 v6 fields unchanged.
+1,136 generated numerical fields: all 1,135 prior fields are unchanged, with
+one added descriptive difference of already locked rotated-head means.
 It additionally reconstructs 216 A66 and 18 Protenix Train96 contrasts from
 14,112 and 2,400 score records, including target bootstrap and model marginals.
 A66 prespecifies ESMC Factor-minus-Rotated on Confirm96-B per backbone; its

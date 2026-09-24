@@ -38,7 +38,7 @@ lock={name:hashlib.sha256((DEST/name).read_bytes()).hexdigest() for name in inpu
 (DEST/lockpath.parent/'bundled_source_provenance.json').write_text(json.dumps({name:dict(original_sha256=inputs[name],bundled_sha256=lock[name]) for name in inputs},indent=2)+'\n')
 write(ROOT/'scripts/build_paper_assets.py',DEST/'scripts/build_paper_assets.py')
 write(ROOT/'scripts/verify_openfold_esmc_A.py',DEST/'scripts/verify_openfold_esmc_A.py')
-for name in ['verify_diamondhill_fourcells.py','diamondhill_paper_assets.py']:
+for name in ['verify_diamondhill_fourcells.py','diamondhill_paper_assets.py','paper_figure_layouts.py']:
     write(ROOT/'scripts'/name,DEST/'scripts'/name)
 write(ROOT/'scripts/analyze_openfold_followups.py',DEST/'scripts/analyze_openfold_followups.py')
 write(ROOT/'tests/test_numeric_keys.py',DEST/'tests/test_numeric_keys.py')

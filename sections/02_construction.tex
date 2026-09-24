@@ -66,7 +66,7 @@ this is a local control, not a spectral equivalence of the whole recycled model.
 
 \subsection{A generic head that can absorb the rotation}
 \label{sec:generic}
-G+ uses the same sequence encoder and explicitly receives the corresponding
+G+ uses the same sequence-encoder architecture and explicitly receives the corresponding
 query factors. Its pair input concatenates projected node features $z_i,z_j$,
 $a_i,b_j$, and clipped relative sequence position. A pair MLP ends in a free
 affine layer and produces a zero-initialized residual. Unlike the earlier
@@ -93,9 +93,14 @@ The ESMC follow-up changes only the input projection width within each head
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/construction.pdf}
-\caption{Native residual construction and the four-cell control. All cells receive
-task training from zero residual. The baseline is never rotated. G+ receives
-explicit factors and has a free output layer; only its representable function
-class is guaranteed to absorb the output rotation.}
+\caption{Actual adapter paths. Blue modules are trainable; grey modules have
+frozen parameters but transmit gradients. Factor's full-sequence predictor
+outputs residue increments; anchors enter only the frozen composition. G+
+combines encoded residue features, explicit anchors and clipped relative
+position in a pair MLP with a free output affine. Only final output layers are
+zero-initialized. Fixed $R$ (or $I$) acts on the complete residual before adding
+the separate original update $U_0$; $G(a,b)$ need not equal $U_0$.
+The two head families use separate fitted encoders. Factor is shown in Full
+form; the bilinear tangent version omits the quadratic increment term.}
 \label{fig:construction}
 \end{figure}

@@ -52,16 +52,10 @@ amino acids and at least 90\% mapped C$\alpha$ coverage. Four length strata
 (128--191, 192--255, 256--319, 320--384) contribute 24 targets each.
 Table~\ref{tab:data_composition} distinguishes their construction and first use. Length48 comprises 16 targets in each prespecified range 385--512,
 513--640 and 641--768; actual lengths are 392--750, beyond the Train384 adapter
-training range of 152--383. The original length study locked targets and
-configurations before new structure scores. Later OpenFold, AtlasFold and G+
-studies reuse observed panels. The original OpenFold Train96/ESM2 four-cell
-follow-up fixes the Confirm96-B interaction as primary, not the project's initial endpoint.
-The later Protenix Train96 four-cell study also fixes Confirm96-B $\Psi$ as
-primary. The Protenix/AtlasFold feature study (A66) instead prespecifies ESMC
-Factor--Rotated on Confirm96-B for each backbone; its $\Psi$, Native--G+ and
-other contrasts are follow-ups, not additional confirmatory primary endpoints.
-The earlier matched-G+ and norm-exchange studies retain their own endpoint roles
-(Appendices~\ref{app:protenix_gplus} and~\ref{app:norm_cross}).
+training range of 152--383. The original direction and length studies locked new targets before scoring;
+later uses of those panels are observed follow-ups. Table~\ref{tab:study_roles}
+separates panel novelty from each four-cell study's endpoint role. Earlier
+matched-G+ and norm-exchange endpoints remain in their respective appendices.
 Train24 $\subset$ Train96 $\subset$ Train384; Train384 has no target-ID
 overlap with Dev8 or either confirmation panel. The inherited Train24/Dev8
 are not restricted by the new-candidate release cutoff. Sequence screening and
@@ -87,3 +81,17 @@ seeds, rotations and supplementary metrics are not additional independent
 proteins. Secondary and follow-up intervals are unadjusted; the OpenFold feature-substitution
 study reports its own predeclared three-test Holm correction (Appendix~\ref{app:esmc}). Protocol-specific
 bootstrap seeds and endpoint roles are preserved in the accompanying records.
+
+\begin{table}[t]\centering\footnotesize
+\caption{Identity of the complete four-cell studies. A study-specific primary
+endpoint on observed targets is not new-target confirmation. C96-B denotes
+Confirm96-B. All intervals condition on fitted models.}
+\label{tab:study_roles}
+\begin{tabular}{p{.22\linewidth}p{.13\linewidth}p{.25\linewidth}p{.27\linewidth}}\toprule
+Study & Panel status & Declared primary & Role of $\Psi$ \\\midrule
+OpenFold Train96 & Observed & C96-B $\Psi$ & Primary; L48 secondary \\
+Protenix Train96 & Observed & C96-B $\Psi$ & Primary; no L48 study \\
+OpenFold Fresh96 & New targets & Fresh96 $\Psi$ & Sole primary; fixed models \\
+OpenFold features & Observed & C96-B ESMC $\Delta_F$ & C96-B ESMC $\Psi$: secondary (Holm); other $\Psi$ unadjusted \\
+Protenix/Atlas features & Observed & C96-B ESMC $\Delta_F$, per backbone & Follow-up; no joint correction \\\bottomrule
+\end{tabular}\end{table}
