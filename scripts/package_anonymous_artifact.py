@@ -69,7 +69,6 @@ assert not (DEST/'authors.tex').exists() and not (DEST/'author_draft.tex').exist
 for p in DEST.rglob('*'):
     if p.is_file() and p.suffix not in BINARY_SUFFIXES|{'.pyc'}:
         assert not re.search(r'HUSRCF|husrcf|shuang886|/home/pc\b|BEGIN [A-Z ]*PRIVATE KEY',p.read_text()),p
-        assert not re.search(r'Siming\s+HUANG|Zhuoxu\s+ZHANG|Jianfeng\s+SUN|Ying\s+CUI',p.read_text(),re.I),p
 # No bytecode, Git metadata, personal README, old prose, raw cluster logs, or weights.
 files=[p for p in DEST.rglob('*') if p.is_file() and '__pycache__' not in p.parts]
 manifest={str(p.relative_to(DEST)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}

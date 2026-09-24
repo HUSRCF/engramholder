@@ -17,6 +17,11 @@ and distinguish drafting placeholders from verified results. Separate directly
 checked artifacts, historical summaries, and interpretations. Preserve negative
 results and pending status. Do not infer a pending experiment's outcome.
 
+Author policy (2026-09-24, latest user instruction): keep `main` anonymous.
+Author names, affiliations, PI relationships and named draft sources stay local,
+outside tracked files. Do not create or push an author branch. Preserve this
+restriction when committing manuscript revisions and packaging source artifacts.
+
 The writing branch does not alter experiment contracts, running jobs, or result
 artifacts. Standing user authorization (2026-09-23): after each completed manuscript revision,
 run the relevant checks, commit the scoped changes, and push to origin/main without

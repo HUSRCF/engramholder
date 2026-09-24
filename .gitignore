@@ -10,3 +10,10 @@ build/
 *.fls
 *.fdb_latexmk
 __pycache__/
+
+# Author metadata and named drafts are local-only.
+/authors.tex
+/author_draft.tex
+/notes/authors.md
+/notes/writing_branch_20260922/draft_validation.authors_*.json
+/local_author/

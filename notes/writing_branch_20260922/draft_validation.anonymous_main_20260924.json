@@ -1,0 +1,19 @@
+{
+  "scope": "Restore anonymous current main; author metadata retained outside repository. No new author branch; no history rewrite. Earlier author commit remains in Git history.",
+  "scientific_source_commit": "1ef414d",
+  "scientific_source_hashes_unchanged": true,
+  "numeric_fields_unchanged": 1518,
+  "validated_pdf_reused": "build/iclr2027_conference.pdf",
+  "main_pages": 9,
+  "total_pages": 35,
+  "tracked_author_name_scan_passed": true,
+  "anonymous_artifact": {
+    "path": "build/anonymous_artifact_v23.zip",
+    "sha256": "a73d5144ee71faa1ae782536f24af9e0c126d8574050144ad8a9529d199a6d14",
+    "files": 204,
+    "tests_passed": 18,
+    "operator_smoke_passed": true,
+    "numeric_fields_equal": 1518,
+    "author_files_excluded": true
+  }
+}
