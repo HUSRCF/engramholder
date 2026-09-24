@@ -1,66 +1,52 @@
 \section{Introduction}
 \label{sec:introduction}
-Protein structure predictors construct and refine pairwise representations
-through learned computations that couple sequence information to geometry
+Protein structure predictors couple sequence information to geometry through
+learned pairwise representations
 \citep{jumper2021alphafold,gong2025protenix,seo2026atlasfold}.
-Adapting a small interface while freezing the predictor makes it possible to
-study how an update is used by an existing downstream computation. A natural
-adapter reuses a pretrained pair-generating operator: it predicts residue-level
-factor increments and combines them in the operator's native coordinates.
-This construction inherits both a restricted form of update and an orientation
-relative to the frozen downstream model. Their roles need not be the same.
+An adapter can reuse a pretrained pair-generating operator, predicting
+residue-level factor increments and combining them in its native coordinates.
+Freezing the predictor lets us study two inherited properties of this
+construction: its restricted update form and its orientation relative to
+downstream computation.
 
-Parameter-efficient adaptation can constrain weight updates, as in
-LoRA \citep{hu2021lora}, or intervene on frozen-model representations, as in
-ReFT \citep{wu2024reft}. Here we ask a more specific question about an internal
-interface: \emph{does the effect of changing an update's output orientation
-depend on how that update is parameterized?} A rotation can preserve local
-spectral properties yet alter the representations received by a fixed
-predictor. Observing a performance drop alone would leave open whether the
-sensitivity differs between a factor head and a head with a free pair-output
-layer.
+Parameter-efficient methods constrain weight updates, as in LoRA
+\citep{hu2021lora}, or intervene on representations, as in ReFT
+\citep{wu2024reft}. We ask: \emph{does changing an update's output orientation
+affect learning differently across parameterizations?} Matching parameter
+counts and local spectra does not specify how a frozen predictor uses an
+update. Conversely, sensitivity to rotation need not imply superiority over
+another adapter.
 
-We address this question with query-anchored residuals and trained rotation
-controls. The adapters begin at the same unadapted function; orthogonal matrices
-act only on residual pair channels, and each condition is trained independently
-under paired settings. The factor head predicts increments that are composed
-through a frozen native operator. A generic head, G+, receives the same extra
-sequence features and explicit query factors, but has a free affine output
-layer. An output rotation can be absorbed by reparameterizing this layer without
-changing G+'s function class. This gives a discriminating control, although
-coordinate-wise AdamW updates do not generally preserve an arbitrary orthogonal
-parameter correspondence \citep{loshchilov2019adamw}.
+Our four-cell design compares native and rotated versions of two heads.
+Factor composes query-anchored increments through a frozen native operator;
+G+ receives the same extra sequence features and explicit factors, with a free
+affine output layer. Orthogonal transforms act only on completed residuals.
+Each arm receives independent task training under paired settings, beginning
+at the same zero-residual function. G+'s output layer can absorb a rotation
+without changing its function class, providing a control for the Factor effect.
+This closure does not guarantee matching AdamW trajectories
+\citep{loshchilov2019adamw}.
 
-Complete four-cell follow-ups establish parameterization-dependent rotation
-sensitivity in specified Protenix and OpenFold recipes
-\citep{ahdritz2024openfold} on observed panels. Protenix retains positive
-interaction intervals at Train96/ESM2 and Train384 with either ESM2 or ESMC;
-OpenFold establishes the interaction at Train96/ESM2 but not Train384.
-A prospectively locked Fresh96 evaluation of the fixed OpenFold Train96 models
-does not establish the interaction. AtlasFold's complete controls with both
-feature sources establish neither the interaction nor useful adaptation.
-Matched G+ comparisons favor Native in Protenix and G+ in some OpenFold settings.
-Length transfer and a norm exchange extend the Protenix evidence without
-isolating the training origin of its advantage.
+Fixed-budget studies find greater Factor rotation sensitivity in several
+Protenix recipes and OpenFold Train96/ESM2 \citep{ahdritz2024openfold} on observed
+panels. OpenFold Train384 and AtlasFold do not establish the interaction;
+neither does the fixed OpenFold Train96 study's new-target primary test on
+Fresh96. Native Factor outperforms G+ in Protenix, whereas G+ wins some OpenFold
+comparisons. Thus direction effects, cross-head interactions and practical head
+competitiveness answer different questions.
 
-The controls operate at two levels. Within a head, rotation preserves local
-writer spectra at a common state. Across Factor and G+, we match the initial
-function and training recipe, with approximate parameter counts; we do not
-match Jacobians or effective learning scales. The interaction compares these
-two parameterizations as wholes, not an isolated decoder change or a guaranteed
-expressivity hierarchy. For interface evaluation, adaptation gains, within-head
-rotation sensitivity and the direct cross-head interaction should therefore be
-measured separately, using a rotation-closed function class as a control.
-This evaluation principle does not select an unseen predictor's best head.
+The controls have distinct scopes: within-head rotations preserve local writer
+spectra at a common state; across heads, the initial function, approximate
+parameter count and training recipe are matched, but Jacobians and effective
+learning scales are not. The interaction therefore compares two complete
+parameterizations, without establishing an expressivity hierarchy. A shared
+orthogonal compensator provides useful average mitigation for two preselected
+OpenFold rotations; separately, teacher-update reconstruction fails to predict
+retraining costs.
 
-Our contributions are a controlled comparison of adaptation gains, rotation
-sensitivity and parameterization-dependent interactions across fixed recipes; a concrete query-anchored residual construction
-with explicit zero-initialization and local spectral controls; and an
-assessment of transfer and limits across predictors, sequence feature sources,
-training-set sizes, and adaptation lengths. A norm-exchange check tests an
-alternative explanation of one learned-source gap. These results support the
-following claim: \emph{native update
-orientation can matter for constrained adaptation, but its effect depends on
-the parameterization and frozen predictor; preserving native directions neither
-guarantees adaptation gains nor makes native factor heads uniformly superior
-to generic alternatives.}
+This controlled empirical study contributes a concrete native-operator
+residual, a trained four-cell evaluation, and evidence separating useful
+adaptation from direction sensitivity and head competitiveness. Its practical
+implication is to evaluate structured interfaces through output freedom and
+task training as well as local spectral controls. The resulting conditional
+design effect is not a universal adapter-selection rule.

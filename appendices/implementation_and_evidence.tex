@@ -918,6 +918,12 @@ reflects partial, finite-budget reconstruction, not a lower bound on
 representational error. The prediction hypothesis was not supported; this was
 not a failure to resolve variation in the diagnostic.
 
+Six of the eight $Y_R$ point estimates are positive and two are negative,
+ranging from \result{e1_r5_cost} to \result{e1_r3_cost}. Neither negative estimate
+has an interval excluding zero. An average advantage over selected rotations
+does not imply superiority to every rotation instance, even within this
+controlled family and fixed training recipe.
+
 \begin{table}[htbp]\centering\small
 \caption{Exact one-sided association tests on pair-lDDT. $X$ is primary;
 $D$ is exploratory, without joint multiplicity correction. Both use the same
@@ -956,3 +962,197 @@ identify which mismatch or optimization limitation matters. It also does not
 validate $D$ as an alternative predictor. A separately locked compensation
 intervention remains a distinct question; it cannot retroactively establish
 this failed predictive link.
+
+
+\clearpage
+\section{Signed-permutation control under the fixed AdamW recipe}
+\label{app:signed_control}
+This observed-panel OpenFold/Train96/ESM2/Full/1536 follow-up trains three
+signed transforms across three seeds in Factor and G+: 18 fits and 2,592
+successful predictions. Reusing six audited Native/G+ fits and query outputs
+gives 3,600 records. Confirm96-B pair-lDDT $\Psi$ is primary; Length48 and other
+metrics are secondary and unadjusted, not new-target confirmation.
+
+Each transform is $(Tx)_j=s_jx_{\pi(j)}$ with $s_j\in\{-1,+1\}$ and fixed
+permutation $\pi$. The three matrices have 63, 63 and 55 negative signs,
+respectively, so $T\mathbf1\ne\mathbf1$: they are not pure permutations or
+mean-preserving controls. The transform is applied to the complete residual
+by gather-and-sign, leaving the baseline unchanged. Historical dense Factor
+rotations were fused into the decoder; numerical implementations are not
+claimed identical across these transformation families.
+
+For G+'s free affine output, $W_T=T^\top W$ and $b_T=T^\top b$ yield the same
+function. In ideal arithmetic, a signed coordinate permutation also maps
+AdamW's first moment with signs and permutation, and its second moment by the
+unsigned permutation. With matched random conditions, parameter groups, scalar
+$\epsilon$, isotropic decay and global L2 clipping, this coordinate mapping is
+compatible with the update. It differs from arbitrary dense rotations.
+Small-head VJP and optimizer checks passed, but a strict correspondence of
+complete FP32 training trajectories was not established. Non-significant G+
+differences are not equivalence tests, nor do they rule out optimization or
+numerical contributions to Factor's behavior.
+
+\begin{table}[htbp]\centering\small
+\caption{Signed-permutation four-cell pair-lDDT means. RF/RG+ here denote the
+signed-transform arms; they are distinct from the historical dense controls.}
+\begin{tabular}{lrrrrr}\toprule
+Panel & Query & F & RF & G+ & RG+ \\\midrule
+\input{generated/signed_means}
+\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\small
+\caption{All signed-transform contrasts, with original 20,000-draw target
+intervals (seed 20260921). These condition on fixed models and transforms.}
+\begin{tabular}{lllll}\toprule
+Panel & Metric & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/signed_contrasts}
+\end{tabular}\end{table}
+
+The Confirm96-B interaction is positive in all seed and transform marginals
+and eight of nine individual cells; Length48's interaction is not established.
+Sensitivity is therefore not restricted to dense mixing, without identifying
+expressivity as its sole cause. The artifact retains every target, system and
+marginal; supplementary metrics need not share all signs.
+
+\clearpage
+\section{Developmental structure curves at saved checkpoints}
+\label{app:checkpoint_curves}
+Without further training, the 48 OpenFold/ESM2 fits from Train96 and Train384
+were evaluated at saved 384, 768 and 1536 updates on the same eight Dev targets.
+The 1,160 successful predictions comprise $48\times3\times8$ adapted predictions
+and eight shared query outputs. These are observed-development diagnostics,
+not a new confirmation panel or a basis for selecting the final checkpoint.
+The final-1536 rule in the structural comparisons is unchanged.
+
+\begin{table}[htbp]\centering\small
+\caption{Dev8 pair-lDDT means at the fixed saved checkpoints. The same targets
+are used at every node; three seeds and three rotations are aggregated within targets.}
+\begin{tabular}{llrrrr}\toprule
+Train size & Updates & F & RF & G+ & RG+ \\\midrule
+\input{generated/checkpoint_curve_means}
+\end{tabular}\end{table}
+
+\begin{table}[htbp]\centering\footnotesize
+\caption{Saved-checkpoint contrasts. All three metrics and all nodes are
+shown. $\Psi$ intervals use the original synchronous target bootstrap and are
+unadjusted, conditional on fitted models; Dev8 does not supply precise convergence evidence.}
+\begin{tabular}{lllrrrr}\toprule
+Metric & Train & Updates & $\Delta_F$ & $\Delta_{G+}$ & $\Psi$ & 95\% interval for $\Psi$ \\\midrule
+\input{generated/checkpoint_curve_contrasts}
+\end{tabular}\end{table}
+
+All four mean scores improve from 384 to 1536 in both training sets.
+The pair-lDDT interaction is nonmonotone, with all six node intervals including
+zero. Neither uniform early rotational delay nor a steadily widening native
+advantage describes both trajectories. Tail-node comparisons (768 to 1536)
+are additional descriptions, not substitutes for the 384-to-1536 window.
+The archived per-node $\Delta_F$ and $\Delta_{G+}$ are retained separately:
+a change in $\Psi$ alone does not show which arm caught up. No new direct
+between-training-size curve-interaction test is inferred by subtracting
+interval endpoints. Train/Dev curves neither establish convergence nor negate
+the final results on the different Confirm96-B population.
+
+\clearpage
+\section{Shared orthogonal channel compensation within Factor}
+\label{app:e2_compensation}
+The separately locked compensation study (internally E2) uses the same
+OpenFold/Train96/ESM2/Full/1536 recipe as the prediction study in
+Appendix~\ref{app:prediction_e1}. It adds a shared channel map to Native and to
+r20270107/r20270104, selected as low/high reconstruction error before the new
+rotations' task training. Selection was not based on their later structure
+scores. There are three paired seeds per condition: nine fits and 864 new
+Confirm96-B predictions, all complete without prediction failures.
+The original Native and rotated models provide the paired no-map controls.
+
+\paragraph{A targeted output freedom.}
+For the all-ones unit vector $u\in\mathbb R^{128}$ and orthonormal complement
+$B\in\mathbb R^{128\times127}$, the map is
+\begin{equation}
+ C=uu^\top+B\exp(A)B^\top,\qquad A^\top=-A.
+\end{equation}
+Its 8,001 free upper-triangular entries parameterize the full skew-symmetric
+matrix. One $C$ is shared across targets, pairs and recycling calls within each
+trained model. Native injects $C\Delta U_\theta$; Rotated injects
+$CR\Delta U_\theta$. The baseline is unchanged. For a fixed residual, $C$
+preserves its pairwise Euclidean norm and channel mean in ideal arithmetic.
+Joint training can still change $\Delta U_\theta$ and its amplitude; the norm
+of baseline plus residual is not controlled by this identity.
+
+The rotation family belongs to
+$\mathcal H=\{C\in SO(128):Cu=u\}\cong SO(127)$ in ideal arithmetic.
+The unrestricted skew exponential covers this group: real orthogonal block
+diagonalization gives planar rotations, each with a real skew logarithm.
+For any $(\theta,C_N)$, choose $C_R=C_NR^\top\in\mathcal H$. Then
+\begin{equation}
+ C_RR\Delta U_\theta=C_N\Delta U_\theta,
+ \qquad \mathcal F_{F+C}^{R}=\mathcal F_{F+C}^{I}.
+\end{equation}
+This is a function-class equality for the stated subgroup, not for arbitrary
+$O(128)$ transforms. With paired initial states and random conditions, equal
+injections imply equal frozen downstream states and hence equal subsequent
+live anchors, extending the argument through recycling. No per-target or
+per-round freedom is added to $C$.
+
+Actual code uses $C=I+B[\exp(A)-I]B^\top$ for an exact identity at zero $A$;
+finite-precision bases and rotations only approximate the ideal group.
+Every model starts at $A=0$, $C=I$ and zero residual, rather than an inverse-$R$
+hot start. The channel parameters receive zero gradient at that zero-residual
+point, then learn jointly with the original head. They use AdamW at $10^{-3}$
+with no decay; head parameters retain $10^{-4}$ and decay 0.01; all use one
+global clipping norm of 1. Function-class equality therefore does not imply
+mapped initial parameters, equivalent optimizer trajectories or equal final
+performance. Orthogonal adaptation itself is not new
+\citep{liu2023boft}; here it is a controlled intervention on rotation cost.
+
+\paragraph{Paired endpoints and their identity.}
+Define
+\begin{equation}
+ B_N=S(N+C)-S(N),\quad B_R=S(R+C)-S(R),\quad
+ T_C=(N-R)-(N_C-R_C)=B_R-B_N,
+\end{equation}
+where the last expression uses scores, with the same target and seed paired
+in each term. The original sealed design explicitly defines equal-weight averages of
+$B_R$ and $T_C$ and the prediction that both are positive, with both rotations
+and Native's own change also reported. The sealed analysis code implements
+these averages before outcomes. These are prespecified mechanism contrasts,
+not a new-target confirmation or a newly declared sole-primary endpoint.
+The 20,000 synchronous whole-target draws (seed 20260924) retain the shared
+Native control; duplicated uses of it are not independent observations.
+Intervals condition on these fitted models and selected rotations and are
+not jointly multiplicity-adjusted. Confirm96-B was already observed.
+
+The three pair-lDDT seed marginals of average $T_C$ are positive, as are the
+six seed-by-rotation marginals. Only r20270107 independently establishes a
+positive $T_C$ interval; both rotated arms improve in absolute score. Average
+residue-lDDT mitigation is supported, while average TM-score mitigation is not.
+This supplies a useful average intervention in the tested setting, without
+establishing equivalence, elimination for every rotation, a learned $R^{-1}$,
+or a predictive rule for unseen settings. It does not validate the failed
+reconstruction predictor. Changes in output freedom, parameterization and
+joint optimization remain coupled.
+
+\clearpage
+\begin{table}[!htbp]\centering\small
+\caption{Pair-lDDT before and after jointly training the shared map. Native
+also improves, so the mean mitigation is not caused by harming its reference.}
+\begin{tabular}{lrrrr}\toprule
+Condition & Without $C$ & With $C$ & Own change & 95\% interval \\\midrule
+\input{generated/e2_means}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{All original compensation contrasts. Native's change, the two-rotation
+average and both individual rotations are retained for every metric.}
+\begin{tabular}{lllll}\toprule
+Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/e2_contrasts}
+\end{tabular}\end{table}
+
+The engineering record preserves the earlier diagnostic dtype failure at the
+96th update and the authorized restart from checkpoint zero. All nine final
+runs have complete 1--1536 logs and 16 periodic checks below the original
+$10^{-3}$ tolerance; the maximum orthogonality and mean-direction errors are
+approximately $1.67\times10^{-5}$ and $2.18\times10^{-6}$.
+These are constraint diagnostics, not full-model error bounds. Final checkpoint,
+receipt and all 864 prediction hashes were audited. No structure score was
+used to change the chosen rotations, training budget or retry rule.

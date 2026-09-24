@@ -1,10 +1,10 @@
 # EngramFold 证据整理仓库
 
-**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v8**，共 **1,199** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v9**，共 **1,518** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
-**最新E1／E2修订：** [预测边界与补偿函数类](reports/e1_e2_scope_update_20260924.md)。E1阴性预测检验已正式进入Discussion与附录；E2的理想函数类闭包和解释判据已核对，结果尚未纳入。
+**最新完成整合：** [E2结果、统计身份与两份评审落实](reports/e2_completed_review_20260924/interpretation.md)。E2平均旋转收益与差距缩小获支持，只有一个旋转单独建立缩小；E1预测失败保留。已完成的带符号置换及Dev8三节点曲线一并进入正文／附录和v9来源锁。
 
-**适配器图与前轮评审：** [对71370ad评审的回应及已完成控制核对](reports/review_71370ad_response_20260924.md)。新增[适配器双支结构图](figures/construction.pdf)与[统一交互主图](figures/interaction.pdf)，主文保留Fresh96边界。带符号置换及Dev8学习曲线已收齐，先进入MD，尚未纳入正文；新Protenix面板仅为候选。
+**适配器图与前轮评审：** [对71370ad评审的回应及已完成控制核对](reports/review_71370ad_response_20260924.md)。新增[适配器双支结构图](figures/construction.pdf)与[统一交互主图](figures/interaction.pdf)，主文保留Fresh96边界。该报告保留先入MD的历史时点；带符号置换及Dev8学习曲线现已进入v9。新Protenix面板仍仅为候选。
 
 **此前已正式纳入：** [Protenix／AtlasFold完整四格v7整合](reports/diamondhill_fourcell_integration_20260924.md)。主表统一15行，Fresh96进入交互主图；A66主要终点与未校正后续交互分开。旧532字段及v6锁保持不变。
 
@@ -22,7 +22,7 @@
 
 **补充实验设计：** [既有曲线／置换与共享旋转重建计划](reports/architecture_followup_plan_20260924.md)。共享重建已由原线程完成；原设计保留并追加状态，不重复提交既有任务或修改执行锁。
 
-**串行研究设计与执行衔接：** [前瞻预测→补偿自由度／状态干预→跨底座验证](reports/prospective_orientation_series_20260924.md)。原线程已按独立协议提交E1，E2保留其阶段门槛；本写作轮没有提交或修改任务。新系列主要研究Factor方向代价，不替代Ψ的新确认，尚不能计作完成结果。
+**串行研究设计与执行衔接：** [前瞻预测→补偿自由度／状态干预→跨底座验证](reports/prospective_orientation_series_20260924.md)。E1／E2现已完成并纳入v9，E3／E4未启动；原设计保留历史身份。本写作轮没有提交或修改任务。该系列的Factor预测／补偿对比不替代Ψ的新目标确认。
 
 [执行前评审已落实](reports/architecture_followup_review_response_20260924.md)：384→1536归因区间统一，补零输出参照和幅度／夹角分解，固定完整序列编码与单次旋转约定；不增加拟合任务，不改变既有执行锁。
 
@@ -32,7 +32,7 @@
 
 [历史：A组审阅落实](reports/esmc_review_response_20260923.md)：三套OpenFold交互并列主文，补齐模型引用及ESMC范围图；443数值不变，本轮实测主文9页。
 
-**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。该次整合来源锁为v4（当前v7）；B组及DiamondHill后续矩阵未纳入本稿，此处不判断其实时进度。
+**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。该次整合来源锁为v4（当前v9）；B组及DiamondHill后续矩阵未纳入本稿，此处不判断其实时进度。
 
 **历史整合记录（2026-09-23）：** 完整推理四格与v4机制边界、近邻定位及复现范围说明已整合；该轮编译记录及视觉检查范围见相应报告。当前版本以顶部状态入口为准。
 
@@ -56,4 +56,4 @@
 
 仓库根目录为当前ICLR稿件入口，原模板另行备份。现有 source_*.md 是此前助手草稿的快照，不代表用户已认可其文字或论证。
 
-此处整理不会改变实验配置、统计终点或训练队列。公开写作快照位于 `main`；旧本地分支 `writing/native-update-alignment` 仅为历史。旧草案仅供归档，最终Protenix G+已在MD报告、论文主表与配对比较中完成整合；该次历史整合使用v2来源锁，当前为v7。见[整合记录](reports/protenix_gplus384_manuscript_integration_20260922.md)。
+此处整理不会改变实验配置、统计终点或训练队列。公开写作快照位于 `main`；旧本地分支 `writing/native-update-alignment` 仅为历史。旧草案仅供归档，最终Protenix G+已在MD报告、论文主表与配对比较中完成整合；该次历史整合使用v2来源锁，当前为v9。见[整合记录](reports/protenix_gplus384_manuscript_integration_20260922.md)。

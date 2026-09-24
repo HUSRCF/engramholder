@@ -1,0 +1,24 @@
+{
+  "schema": "engramfold.e2_periodic_diagnostic_amendment.v1",
+  "utc": "2026-09-24T08:53:41.423563+00:00",
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "e2_release_sha256": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+  "old_array_job": "648009",
+  "old_dependent_score_job": "648010",
+  "gpu_regression_job": "648047",
+  "gpu_regression_sha256": "bb93388bd7b5eb81fe7f05149d124565ed4c1d65024fb0e693e600b3daf23c95",
+  "original_run_sha256": "1cf86109099162a5d3a004fc682129ac07868dc4a1fe48f860712be3ffc5433f",
+  "files": {
+    "run.py": "6fa5d9024fc2fe1075cd00d6759a6f585a05c512784f8e187d55ee30d7774aaa",
+    "job.sh": "745dfdc31b77fe0b448144bd61311e429f9d54dedf557e69af8e95d51465325f",
+    "test_diagnostic.py": "8ffbba4d9db0ec7cfd1538782623fab832c6e7314465ee45c1380b07f4c538e6"
+  },
+  "fix": "Match diagnostic identity/ones tensor dtype to the FP64 diagnostic copy of C; live model and optimizer retain original precision.",
+  "failure_point": "After optimizer update96, before diagnostic row96 and first nonzero atomic checkpoint",
+  "resume_step": 0,
+  "resume_policy": "Each failed instance restores its own atomic checkpoint0, optimizer/RNG/data order/lr; preserve original95 log rows and replay identical run/seed/order. Do not claim resume at96 or bitwise full-trajectory identity.",
+  "orthogonality_and_mean_threshold": 0.001,
+  "scientific_changes": false,
+  "formal_engineering_retry_number": 1,
+  "new_scientific_runs": 0
+}

@@ -8,8 +8,10 @@ usefulness of pretrained directions is new in itself. We compose residue-level
 changes through native pair-generating operators and test their orientation
 sensitivity using training-time spectral controls, an absorbable generic head,
 and complete-inference norm exchange. Orthogonal finetuning learns transforms,
-including butterfly parameterizations \citep{liu2023boft}; our fixed rotations
-serve as independently trained controls. AdamW's coordinate-wise optimization
+including butterfly parameterizations \citep{liu2023boft}; a learnable orthogonal
+matrix is not itself our novelty. Our fixed transforms are trained controls,
+and the added channel map tests whether their cost can be mitigated within
+Factor. AdamW's coordinate-wise optimization
 \citep{loshchilov2019adamw} separates function-class equivalence from training
 behavior. LoRA-RITE studies optimizer invariance across equivalent low-rank
 factorizations of the same weight update \citep{yen2025lorarite}. Our control

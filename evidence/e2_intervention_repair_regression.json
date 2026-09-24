@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "device": "NVIDIA H100 80GB HBM3",
+  "torch_version": "2.7.1+cu128",
+  "diagnostic_code_sha256": "6fa5d9024fc2fe1075cd00d6759a6f585a05c512784f8e187d55ee30d7774aaa",
+  "checks": [
+    {
+      "scale": 0.0,
+      "original_bug_reproduced": true,
+      "parameters_and_rng_unchanged": true,
+      "metrics": {
+        "channel_orthogonality": 0.0,
+        "channel_mean_error": 0.0,
+        "channel_displacement": 0.0,
+        "channel_parameter_norm": 0.0
+      }
+    },
+    {
+      "scale": 0.02,
+      "original_bug_reproduced": true,
+      "parameters_and_rng_unchanged": true,
+      "metrics": {
+        "channel_orthogonality": 3.584739389404818e-06,
+        "channel_mean_error": 8.735673662489287e-07,
+        "channel_displacement": 2.5336048931203665,
+        "channel_parameter_norm": 1.7992185348320378
+      }
+    },
+    {
+      "scale": 0.2,
+      "original_bug_reproduced": true,
+      "parameters_and_rng_unchanged": true,
+      "metrics": {
+        "channel_orthogonality": 4.898348562981477e-05,
+        "channel_mean_error": 3.765015180732185e-06,
+        "channel_displacement": 16.69658453551555,
+        "channel_parameter_norm": 17.99218606439612
+      }
+    }
+  ],
+  "recovery": [
+    {
+      "run": "I_C_s20260923",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "71dd7689b91340d20e9f448e3e95cb0c0b4e8ce7c1bbcb6849be357d33512847",
+      "logged_steps": 95,
+      "training_log_sha256": "bd8987cb48758850d34f3ec860c739e59ff62da81f48263bdc3177d54706388f"
+    },
+    {
+      "run": "I_C_s20260924",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "6b08220d4ee475796dd1ae97025cdd738b46834789fe008e24a47f71b11bf751",
+      "logged_steps": 95,
+      "training_log_sha256": "1d6303b52cc0c5b51b6f5105b0327155f2b5dc729458d45cbcca52683a0fcf20"
+    },
+    {
+      "run": "I_C_s20260925",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "60708810d09465ddad72c1b22a58b72d7e6562d59592d253899fe05c62ded94a",
+      "logged_steps": 95,
+      "training_log_sha256": "ab8d5a7a38a3abb4ba6e401b4a4c2ac22fe1f4d774c3ffb66b684a3f3e853eca"
+    },
+    {
+      "run": "r20270107_C_s20260923",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "c0ea473826f0c78e8219804c36e0edb457ead6c0442c36561618d1f06777971d",
+      "logged_steps": 95,
+      "training_log_sha256": "9b850d895983d9a8013e107dcc217b337cc593975c538906e06bfffd8ee9b391"
+    },
+    {
+      "run": "r20270107_C_s20260924",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "d37f1c97a8a44b521ba8ec6c38d3abecd45248a22747faca3713cf9a9e2e1a2a",
+      "logged_steps": 95,
+      "training_log_sha256": "a6cc6f0f3f421951f820d1234464a9e3c4d66860873b3ad83d3e8ecadcc564b1"
+    },
+    {
+      "run": "r20270107_C_s20260925",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "c25620b3a93eaaa5c2996e60346a69b59383a9e142ee85751fab5ede9b67d079",
+      "logged_steps": 95,
+      "training_log_sha256": "f808322bb70757e508d6d1be2fc46772a7617166b3b1277adb0199f7cef813e4"
+    },
+    {
+      "run": "r20270104_C_s20260923",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "5bce8b844a6e625a361d8688f4b6f7d4dc4d10aecc8a66e8bf6c4db029ffc6c7",
+      "logged_steps": 95,
+      "training_log_sha256": "1db297bc65f223e0aeeae2373d0d410b80bae5cc693625cfeda5880431d79ff6"
+    },
+    {
+      "run": "r20270104_C_s20260924",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "fcab0d2d67dbb78613293f1f9b08c3e27382b3ef9bd3e75535a1e9f1be7ce55f",
+      "logged_steps": 95,
+      "training_log_sha256": "cbce96ad914eb0a7e3d4ddd681aed2030939dbbbbd9f9bf1040b73aecdb3ab14"
+    },
+    {
+      "run": "r20270104_C_s20260925",
+      "checkpoint_step": 0,
+      "checkpoint_sha256": "d23cad6fac222b17c59bdeb9f13f622ac98cc6788931479d9acfa4e831474934",
+      "logged_steps": 95,
+      "training_log_sha256": "80bc64c9b3a54baa8ed02768fb99c1ba160cdce7f1bffdceb85bc243864a40a0"
+    }
+  ],
+  "scope": "Exact periodic diagnostic only; original model forward/update code unchanged"
+}

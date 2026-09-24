@@ -5,12 +5,21 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v8 input lock contains 70 source files and 1,199 generated numerical
-fields. All 1,136 prior fields are unchanged; 63 fields report the completed
-reconstruction prediction study. Its verifier reconstructs 2,688 score records,
+full-inference source/norm cells and contrasts. The active v9 input lock contains 93 source files and 1,518 generated numerical
+fields. All 1,199 v8 fields and source mappings are unchanged; 319 fields add
+the completed compensation, signed-permutation and developmental checkpoint studies.
+The reconstruction prediction study remains a negative predictive test. Its verifier reconstructs 2,688 score records,
 51 three-metric contrasts and the two exact 40,320-permutation tests (primary X,
 exploratory D). Eight rotations are the prediction units; neither association
 was established. Target bootstrap is conditional sensitivity, not more units.
+The compensation verifier reconstructs 21 original contrasts from 3,552 unique
+E1/E2 records and checks that both rotation averages were specified in the
+sealed written design and analysis code. These are observed-panel mechanism
+contrasts, not a new-target primary confirmation. The signed-permutation and
+checkpoint verifier reconstructs 18 contrasts from 3,600 records and 72 contrasts
+from 1,160 records, respectively, preserving each original bootstrap stream.
+Ideal signed-coordinate AdamW compatibility is not a demonstrated full-model
+FP32 trajectory equivalence; the Dev8 curves do not establish convergence.
 It additionally reconstructs 216 A66 and 18 Protenix Train96 contrasts from
 14,112 and 2,400 score records, including target bootstrap and model marginals.
 A66 prespecifies ESMC Factor-minus-Rotated on Confirm96-B per backbone; its
@@ -30,6 +39,8 @@ python tests/test_numeric_keys.py
 python tests/test_openfold_followups.py
 python tests/test_single_prediction_score.py
 python tests/test_e1_prediction.py
+python tests/test_e2_intervention.py
+python tests/test_signed_and_curves.py
 python reproducibility/operator_smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex
 ```

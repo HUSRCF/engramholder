@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "records": 864,
+  "combined_unique_records": 3552,
+  "failures": 0,
+  "verified_contrasts": 21,
+  "scalar_or_array_checks": 150,
+  "max_abs_error": 1.1102230246251565e-16,
+  "paired_seeds": [
+    20260923,
+    20260924,
+    20260925
+  ],
+  "selected_rotations": [
+    "r20270107",
+    "r20270104"
+  ],
+  "synchronized_target_bootstrap": {
+    "seed": 20260924,
+    "draws": 20000
+  },
+  "results": {
+    "ca_lddt": {
+      "native_change": {
+        "mean": 0.012895544368092829,
+        "ci95": [
+          0.002228544479543511,
+          0.023174406847913952
+        ],
+        "per_seed": [
+          0.01740044513466599,
+          0.008158978024660793,
+          0.013127209944951708
+        ]
+      },
+      "B_R": {
+        "mean": 0.029734761108065545,
+        "ci95": [
+          0.02211646167535344,
+          0.03767678366949647
+        ],
+        "per_seed": [
+          0.04546079909313298,
+          0.022506699400424855,
+          0.0212367848306388
+        ]
+      },
+      "T_C": {
+        "mean": 0.01683921673997271,
+        "ci95": [
+          0.004966827647544351,
+          0.029226998900238874
+        ],
+        "per_seed": [
+          0.028060353958466986,
+          0.014347721375764058,
+          0.008109574885687088
+        ]
+      }
+    },
+    "residue_ca_lddt": {
+      "native_change": {
+        "mean": 0.012680230760227831,
+        "ci95": [
+          0.0025661288609065513,
+          0.022441109363898773
+        ],
+        "per_seed": [
+          0.017500174279056615,
+          0.008206741326964376,
+          0.012333776674662497
+        ]
+      },
+      "B_R": {
+        "mean": 0.027801951429299882,
+        "ci95": [
+          0.020590948814660132,
+          0.0352959017466602
+        ],
+        "per_seed": [
+          0.043362836692676245,
+          0.020403226012702235,
+          0.019639791582521163
+        ]
+      },
+      "T_C": {
+        "mean": 0.015121720669072058,
+        "ci95": [
+          0.0039720875921744475,
+          0.026832596029557242
+        ],
+        "per_seed": [
+          0.025862662413619644,
+          0.012196484685737863,
+          0.007306014907858666
+        ]
+      }
+    },
+    "tm_score_fixed_full_length": {
+      "native_change": {
+        "mean": 0.016827430555555554,
+        "ci95": [
+          0.002135303819444444,
+          0.031339687499999956
+        ],
+        "per_seed": [
+          0.028504166666666664,
+          0.004255208333333332,
+          0.017722916666666668
+        ]
+      },
+      "B_R": {
+        "mean": 0.02839201388888889,
+        "ci95": [
+          0.01864975260416667,
+          0.038562417534722206
+        ],
+        "per_seed": [
+          0.04453177083333334,
+          0.020121354166666664,
+          0.02052291666666667
+        ]
+      },
+      "T_C": {
+        "mean": 0.011564583333333338,
+        "ci95": [
+          -0.0045282204861111066,
+          0.02831368055555554
+        ],
+        "per_seed": [
+          0.01602760416666666,
+          0.015866145833333335,
+          0.002800000000000004
+        ]
+      }
+    }
+  },
+  "diagnostic_repair_hash_link_verified": true,
+  "predefined_rotation_average_verified": true,
+  "statistical_identity": "Cross-rotation averages predeclared in the original written design and sealed analysis. Prespecified mechanistic follow-up on observed targets, not a new sole confirmatory primary endpoint or independent new-target confirmation; both rotations and Native changes retained.",
+  "source_sha256": {
+    "e1_execution_lock": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+    "e1_prediction_lock": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+    "e1_prediction_complete": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+    "e1_prediction_records": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+    "e1_prediction_summary": "58c4bc5e8362c79b9817d769d88ddb7b25fba59eb44cdd9fc2ad103b41d1d233",
+    "e2_intervention_summary": "ab484a919f095298ae970e23efcdd51c0bcce91d880a3b4f0c58773b685cf1cc",
+    "e2_intervention_records": "4da8ca6a18e98b298acde8d451c67b19f0ea5cdc040539c9c85bfb6fe70b1472",
+    "e1_scoring_amendment": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3",
+    "e2_intervention_prespecified_analysis": "ab068234919c8d25c3f0cba333ffd96a14a3ec481bb2321596ca2ca79edf2e0e",
+    "e2_intervention_prespecified_design": "235ea39d7f4d00b440c0443c27d7a98c9a2bea1017efc5dc9e0987319d0e7aa8",
+    "e2_intervention_execution_lock": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+    "e2_intervention_runtime_audit": "da88d7378d7c4befe9b014949e9df2f7d3dd5aef30be37675338fa0c0be07133",
+    "e2_intervention_review_audit": "f5dd699c46881432522e85df849a770e16c6fc5bc3c93ed4ec0d6b21b842d089",
+    "e2_intervention_repair_amendment": "1a94990c3168674e965fee648be80a8a0754d6cade6eab6f6cc37e9ee615cd1e",
+    "e2_intervention_repair_regression": "bb93388bd7b5eb81fe7f05149d124565ed4c1d65024fb0e693e600b3daf23c95",
+    "e2_intervention_series_complete": "bd78b8b7af49037b726fe3af196db81800416eb2153fcf38bbc03d7b0be606f1",
+    "e2_intervention_complete": "c9f192d7a1b05a23f12d5b424dcb901954b81e87e18ce4ad8d8907416206dfc2"
+  },
+  "scope": "Original 21 paired score-array contrasts and sealed runtime-audit consistency; no new remaining-gap or equivalence test, no training or structure-scoring replay. Observed Confirm96-B; intervals condition on the fitted models and two preselected rotations."
+}

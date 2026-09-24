@@ -69,7 +69,30 @@
     "evidence/e1_scoring_amendment.json": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3",
     "evidence/e1_scoring_diagnosis.json": "f8ec590fd4de08d673e2369ecc85ab0e8452cfa62c9ef5ef5729dc946db61e3e",
     "evidence/e1_scoring_regression.json": "acd3545aabf0a6ea4a2b0dec6a2316185da31294fe838e0e13c8d4d8930edf27",
-    "evidence/e1_prediction_protocol.json": "d97191e6e8b422659b527e9aea66b0535afe35118580e770072aaa7986017acd"
+    "evidence/e1_prediction_protocol.json": "d97191e6e8b422659b527e9aea66b0535afe35118580e770072aaa7986017acd",
+    "evidence/e2_intervention_summary.json": "ab484a919f095298ae970e23efcdd51c0bcce91d880a3b4f0c58773b685cf1cc",
+    "evidence/e2_intervention_records.json": "4da8ca6a18e98b298acde8d451c67b19f0ea5cdc040539c9c85bfb6fe70b1472",
+    "evidence/e2_intervention_complete.json": "c9f192d7a1b05a23f12d5b424dcb901954b81e87e18ce4ad8d8907416206dfc2",
+    "evidence/e2_intervention_execution_lock.json": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+    "evidence/e2_intervention_runtime_audit.json": "da88d7378d7c4befe9b014949e9df2f7d3dd5aef30be37675338fa0c0be07133",
+    "evidence/e2_intervention_review_audit.json": "f5dd699c46881432522e85df849a770e16c6fc5bc3c93ed4ec0d6b21b842d089",
+    "evidence/e2_intervention_repair_amendment.json": "1a94990c3168674e965fee648be80a8a0754d6cade6eab6f6cc37e9ee615cd1e",
+    "evidence/e2_intervention_repair_regression.json": "bb93388bd7b5eb81fe7f05149d124565ed4c1d65024fb0e693e600b3daf23c95",
+    "evidence/e2_intervention_series_complete.json": "bd78b8b7af49037b726fe3af196db81800416eb2153fcf38bbc03d7b0be606f1",
+    "evidence/signed_summary.json": "e9c48b823b9c76b0fa761d02570eda66a851bdb936b06a3d978f32d69cf659d8",
+    "evidence/signed_records.json": "4ec43e4f20e56fa9bfe54583c090571ff785b75e297376633a88e1747b1d82b1",
+    "evidence/signed_complete.json": "c3fc698e49d8644ec6fe6a54d0761b47afb1fde356265d3a18db73bf7e9c6fcc",
+    "evidence/signed_candidate_lock.json": "58a5a3abad341851ab1705298bacce9c7942999cf30bc25c33f78f7c8d8a6be9",
+    "evidence/signed_execution_lock.json": "cc8a41f69245492c5db5d4da5f1d4883dcc17c149597e05f50dabc5befa2a125",
+    "evidence/signed_protocol.json": "a257d01e1114b5714261f19d6bfe289f33d077d9134f651f2ae20f13af391561",
+    "evidence/checkpoint_curves_summary.json": "a9a1f74021aa7ce642371e06a7e7a70d897e3da13fed162429aa68d841bc6aa1",
+    "evidence/checkpoint_curves_records.json": "262e8412809584e74ebccbe5c701ebe32748c59ea6242da221d18b536748c446",
+    "evidence/checkpoint_curves_complete.json": "7f744c78f95f48267e62a191990754143004fccfb4cf17e4c15986b77948f4a7",
+    "evidence/checkpoint_curves_execution_lock.json": "3ff4544fc5d2e473e5b3812b22dfc49b99dd61105d97d0b11a813d89dfe542a1",
+    "evidence/checkpoint_curves_protocol.json": "8e6bfc38b77a351baa7e5912bc60c0afdeb2e8326e267bffab5821d90eca4212",
+    "evidence/e2_intervention_prespecified_analysis.json": "ab068234919c8d25c3f0cba333ffd96a14a3ec481bb2321596ca2ca79edf2e0e",
+    "evidence/e2_intervention_prespecified_design.json": "235ea39d7f4d00b440c0443c27d7a98c9a2bea1017efc5dc9e0987319d0e7aa8",
+    "evidence/openfold_train96_records.json": "d372de6b271dac9ed37a1495ba50419f74f3fbd2c4c3e9ea36b30cd6bcdf8406"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -18485,6 +18508,4530 @@
       "operation": "identity",
       "value": 0.40476190476190477,
       "formatted": "+0.40476"
+    },
+    "signed_c96_pair_factor_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014046650187393499,
+      "formatted": "+0.01405"
+    },
+    "signed_c96_pair_factor_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0046484503157103564,
+      "formatted": "+0.00465"
+    },
+    "signed_c96_pair_factor_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.023724165852666818,
+      "formatted": "+0.02372"
+    },
+    "signed_c96_pair_gplus_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00035393704304409354,
+      "formatted": "-0.00035"
+    },
+    "signed_c96_pair_gplus_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006981029190037287,
+      "formatted": "-0.00698"
+    },
+    "signed_c96_pair_gplus_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.006544321386381916,
+      "formatted": "+0.00654"
+    },
+    "signed_c96_pair_interaction": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014400587230437592,
+      "formatted": "+0.01440"
+    },
+    "signed_c96_pair_interactionLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0037880989117799703,
+      "formatted": "+0.00379"
+    },
+    "signed_c96_pair_interactionHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02520266904439625,
+      "formatted": "+0.02520"
+    },
+    "signed_c96_query": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.30191"
+    },
+    "signed_c96_factor_native": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.5019025118487536,
+      "formatted": "0.50190"
+    },
+    "signed_c96_factor_rotated": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.48785586166136014,
+      "formatted": "0.48786"
+    },
+    "signed_c96_gplus_native": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.49533866323349035,
+      "formatted": "0.49534"
+    },
+    "signed_c96_gplus_rotated": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "ca_lddt",
+        "group_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.4956926002765344,
+      "formatted": "0.49569"
+    },
+    "signed_c96_residue_factor_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.013032033691392234,
+      "formatted": "+0.01303"
+    },
+    "signed_c96_residue_factor_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004095427737197167,
+      "formatted": "+0.00410"
+    },
+    "signed_c96_residue_factor_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.022170547169795437,
+      "formatted": "+0.02217"
+    },
+    "signed_c96_residue_gplus_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 3.598584653439115e-05,
+      "formatted": "+0.00004"
+    },
+    "signed_c96_residue_gplus_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006257171223187288,
+      "formatted": "-0.00626"
+    },
+    "signed_c96_residue_gplus_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0065744375917151775,
+      "formatted": "+0.00657"
+    },
+    "signed_c96_residue_interaction": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012996047844857847,
+      "formatted": "+0.01300"
+    },
+    "signed_c96_residue_interactionLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0029567503758077996,
+      "formatted": "+0.00296"
+    },
+    "signed_c96_residue_interactionHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02311846311194026,
+      "formatted": "+0.02312"
+    },
+    "signed_c96_tm_factor_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014518055555555557,
+      "formatted": "+0.01452"
+    },
+    "signed_c96_tm_factor_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0027349537037037017,
+      "formatted": "+0.00273"
+    },
+    "signed_c96_tm_factor_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02656507523148147,
+      "formatted": "+0.02657"
+    },
+    "signed_c96_tm_gplus_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0003378472222222174,
+      "formatted": "-0.00034"
+    },
+    "signed_c96_tm_gplus_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.008396846064814814,
+      "formatted": "-0.00840"
+    },
+    "signed_c96_tm_gplus_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008226400462962965,
+      "formatted": "+0.00823"
+    },
+    "signed_c96_tm_interaction": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014855902777777772,
+      "formatted": "+0.01486"
+    },
+    "signed_c96_tm_interactionLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0015967361111111087,
+      "formatted": "+0.00160"
+    },
+    "signed_c96_tm_interactionHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "confirm96",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.028263333333333328,
+      "formatted": "+0.02826"
+    },
+    "signed_l48_pair_factor_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008083331125652665,
+      "formatted": "+0.00808"
+    },
+    "signed_l48_pair_factor_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.002040250666013996,
+      "formatted": "+0.00204"
+    },
+    "signed_l48_pair_factor_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014094998964480354,
+      "formatted": "+0.01409"
+    },
+    "signed_l48_pair_gplus_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.005161833875562356,
+      "formatted": "+0.00516"
+    },
+    "signed_l48_pair_gplus_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0021070227816034665,
+      "formatted": "-0.00211"
+    },
+    "signed_l48_pair_gplus_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012678801501535627,
+      "formatted": "+0.01268"
+    },
+    "signed_l48_pair_interaction": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0029214972500903064,
+      "formatted": "+0.00292"
+    },
+    "signed_l48_pair_interactionLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0062187080546815795,
+      "formatted": "-0.00622"
+    },
+    "signed_l48_pair_interactionHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012059476796968883,
+      "formatted": "+0.01206"
+    },
+    "signed_l48_query": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.2607893500665757,
+      "formatted": "0.26079"
+    },
+    "signed_l48_factor_native": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.38872027633214035,
+      "formatted": "0.38872"
+    },
+    "signed_l48_factor_rotated": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.3806369452064877,
+      "formatted": "0.38064"
+    },
+    "signed_l48_gplus_native": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.3984943054818127,
+      "formatted": "0.39849"
+    },
+    "signed_l48_gplus_rotated": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "ca_lddt",
+        "group_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.39333247160625034,
+      "formatted": "0.39333"
+    },
+    "signed_l48_residue_factor_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008048460715644691,
+      "formatted": "+0.00805"
+    },
+    "signed_l48_residue_factor_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.002311802721897641,
+      "formatted": "+0.00231"
+    },
+    "signed_l48_residue_factor_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01383271816840695,
+      "formatted": "+0.01383"
+    },
+    "signed_l48_residue_gplus_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0043643668748333505,
+      "formatted": "+0.00436"
+    },
+    "signed_l48_residue_gplus_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0025549380255212393,
+      "formatted": "-0.00255"
+    },
+    "signed_l48_residue_gplus_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.011475290653652274,
+      "formatted": "+0.01148"
+    },
+    "signed_l48_residue_interaction": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0036840938408113414,
+      "formatted": "+0.00368"
+    },
+    "signed_l48_residue_interactionLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.004954457973876885,
+      "formatted": "-0.00495"
+    },
+    "signed_l48_residue_interactionHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012410271130771148,
+      "formatted": "+0.01241"
+    },
+    "signed_l48_tm_factor_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010594675925925926,
+      "formatted": "+0.01059"
+    },
+    "signed_l48_tm_factor_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0001740740740740764,
+      "formatted": "+0.00017"
+    },
+    "signed_l48_tm_factor_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.021002604166666657,
+      "formatted": "+0.02100"
+    },
+    "signed_l48_tm_gplus_rotation": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007156944444444442,
+      "formatted": "+0.00716"
+    },
+    "signed_l48_tm_gplus_rotationLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0025588946759259267,
+      "formatted": "-0.00256"
+    },
+    "signed_l48_tm_gplus_rotationHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01688849537037036,
+      "formatted": "+0.01689"
+    },
+    "signed_l48_tm_interaction": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.003437731481481484,
+      "formatted": "+0.00344"
+    },
+    "signed_l48_tm_interactionLo": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.009423796296296293,
+      "formatted": "-0.00942"
+    },
+    "signed_l48_tm_interactionHi": {
+      "source": "evidence/signed_summary.json",
+      "field_path": [
+        "panels",
+        "length48",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016325925925925928,
+      "formatted": "+0.01633"
+    },
+    "e2_pair_native_change": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012895544368092829,
+      "formatted": "+0.01290"
+    },
+    "e2_pair_native_changeLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.002228544479543511,
+      "formatted": "+0.00223"
+    },
+    "e2_pair_native_changeHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.023174406847913952,
+      "formatted": "+0.02317"
+    },
+    "e2_pair_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.029734761108065545,
+      "formatted": "+0.02973"
+    },
+    "e2_pair_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02211646167535344,
+      "formatted": "+0.02212"
+    },
+    "e2_pair_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03767678366949647,
+      "formatted": "+0.03768"
+    },
+    "e2_pair_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01683921673997271,
+      "formatted": "+0.01684"
+    },
+    "e2_pair_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004966827647544351,
+      "formatted": "+0.00497"
+    },
+    "e2_pair_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029226998900238874,
+      "formatted": "+0.02923"
+    },
+    "e2_pair_r1_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03826447950207483,
+      "formatted": "+0.03826"
+    },
+    "e2_pair_r1_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02569778325974128,
+      "formatted": "+0.02570"
+    },
+    "e2_pair_r1_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05150427114730058,
+      "formatted": "+0.05150"
+    },
+    "e2_pair_r1_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.025368935133982,
+      "formatted": "+0.02537"
+    },
+    "e2_pair_r1_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.010096494297377172,
+      "formatted": "+0.01010"
+    },
+    "e2_pair_r1_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04158732380367981,
+      "formatted": "+0.04159"
+    },
+    "e2_pair_r2_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.021205042714056252,
+      "formatted": "+0.02121"
+    },
+    "e2_pair_r2_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.011664183095896938,
+      "formatted": "+0.01166"
+    },
+    "e2_pair_r2_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.031051500761308026,
+      "formatted": "+0.03105"
+    },
+    "e2_pair_r2_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008309498345963423,
+      "formatted": "+0.00831"
+    },
+    "e2_pair_r2_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0052984667296881015,
+      "formatted": "-0.00530"
+    },
+    "e2_pair_r2_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02189550603582038,
+      "formatted": "+0.02190"
+    },
+    "e2_native_fixed": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_fixed"
+      ],
+      "operation": "identity",
+      "value": 0.5019026983268536,
+      "formatted": "0.50190"
+    },
+    "e2_native_learned": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_learned"
+      ],
+      "operation": "identity",
+      "value": 0.5147982426949463,
+      "formatted": "0.51480"
+    },
+    "e2_r1_fixed_mean": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "fixed_mean"
+      ],
+      "operation": "identity",
+      "value": 0.48310318268565783,
+      "formatted": "0.48310"
+    },
+    "e2_r1_learned_mean": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5213676621877328,
+      "formatted": "0.52137"
+    },
+    "e2_r2_fixed_mean": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "fixed_mean"
+      ],
+      "operation": "identity",
+      "value": 0.49379149175618475,
+      "formatted": "0.49379"
+    },
+    "e2_r2_learned_mean": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.514996534470241,
+      "formatted": "0.51500"
+    },
+    "e2_residue_native_change": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012680230760227831,
+      "formatted": "+0.01268"
+    },
+    "e2_residue_native_changeLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0025661288609065513,
+      "formatted": "+0.00257"
+    },
+    "e2_residue_native_changeHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.022441109363898773,
+      "formatted": "+0.02244"
+    },
+    "e2_residue_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.027801951429299882,
+      "formatted": "+0.02780"
+    },
+    "e2_residue_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.020590948814660132,
+      "formatted": "+0.02059"
+    },
+    "e2_residue_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0352959017466602,
+      "formatted": "+0.03530"
+    },
+    "e2_residue_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.015121720669072058,
+      "formatted": "+0.01512"
+    },
+    "e2_residue_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0039720875921744475,
+      "formatted": "+0.00397"
+    },
+    "e2_residue_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.026832596029557242,
+      "formatted": "+0.02683"
+    },
+    "e2_residue_r1_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03579805439169768,
+      "formatted": "+0.03580"
+    },
+    "e2_residue_r1_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0238035003855357,
+      "formatted": "+0.02380"
+    },
+    "e2_residue_r1_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04848152026459764,
+      "formatted": "+0.04848"
+    },
+    "e2_residue_r1_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.023117823631469855,
+      "formatted": "+0.02312"
+    },
+    "e2_residue_r1_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.008683984037221384,
+      "formatted": "+0.00868"
+    },
+    "e2_residue_r1_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.038402008218310316,
+      "formatted": "+0.03840"
+    },
+    "e2_residue_r2_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019805848466902087,
+      "formatted": "+0.01981"
+    },
+    "e2_residue_r2_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01075682058695338,
+      "formatted": "+0.01076"
+    },
+    "e2_residue_r2_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029025639147813614,
+      "formatted": "+0.02903"
+    },
+    "e2_residue_r2_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007125617706674262,
+      "formatted": "+0.00713"
+    },
+    "e2_residue_r2_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.005769022821701696,
+      "formatted": "-0.00577"
+    },
+    "e2_residue_r2_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.019990398197896813,
+      "formatted": "+0.01999"
+    },
+    "e2_tm_native_change": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.016827430555555554,
+      "formatted": "+0.01683"
+    },
+    "e2_tm_native_changeLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.002135303819444444,
+      "formatted": "+0.00214"
+    },
+    "e2_tm_native_changeHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.031339687499999956,
+      "formatted": "+0.03134"
+    },
+    "e2_tm_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02839201388888889,
+      "formatted": "+0.02839"
+    },
+    "e2_tm_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01864975260416667,
+      "formatted": "+0.01865"
+    },
+    "e2_tm_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.038562417534722206,
+      "formatted": "+0.03856"
+    },
+    "e2_tm_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011564583333333338,
+      "formatted": "+0.01156"
+    },
+    "e2_tm_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0045282204861111066,
+      "formatted": "-0.00453"
+    },
+    "e2_tm_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02831368055555554,
+      "formatted": "+0.02831"
+    },
+    "e2_tm_r1_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04152187500000001,
+      "formatted": "+0.04152"
+    },
+    "e2_tm_r1_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02487837673611111,
+      "formatted": "+0.02488"
+    },
+    "e2_tm_r1_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05919549479166666,
+      "formatted": "+0.05920"
+    },
+    "e2_tm_r1_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.024694444444444446,
+      "formatted": "+0.02469"
+    },
+    "e2_tm_r1_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0044299565972222245,
+      "formatted": "+0.00443"
+    },
+    "e2_tm_r1_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.045687560763888885,
+      "formatted": "+0.04569"
+    },
+    "e2_tm_r2_B_R": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.015262152777777779,
+      "formatted": "+0.01526"
+    },
+    "e2_tm_r2_B_RLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.003505026041666668,
+      "formatted": "+0.00351"
+    },
+    "e2_tm_r2_B_RHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02727296006944444,
+      "formatted": "+0.02727"
+    },
+    "e2_tm_r2_T_C": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.001565277777777781,
+      "formatted": "-0.00157"
+    },
+    "e2_tm_r2_T_CLo": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02005190972222223,
+      "formatted": "-0.02005"
+    },
+    "e2_tm_r2_T_CHi": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01706129340277776,
+      "formatted": "+0.01706"
+    },
+    "curve_pair_n96_s384_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008859773315656435,
+      "formatted": "+0.00886"
+    },
+    "curve_pair_n96_s384_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.015414604066410818,
+      "formatted": "-0.01541"
+    },
+    "curve_pair_n96_s384_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.033616755611861164,
+      "formatted": "+0.03362"
+    },
+    "curve_pair_n96_s384_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019843030739193166,
+      "formatted": "+0.01984"
+    },
+    "curve_pair_n96_s384_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0009688755242130304,
+      "formatted": "+0.00097"
+    },
+    "curve_pair_n96_s384_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04288008796095828,
+      "formatted": "+0.04288"
+    },
+    "curve_pair_n96_s384_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.01098325742353673,
+      "formatted": "-0.01098"
+    },
+    "curve_pair_n96_s384_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03369665161726749,
+      "formatted": "-0.03370"
+    },
+    "curve_pair_n96_s384_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012792573699072033,
+      "formatted": "+0.01279"
+    },
+    "curve_pair_n96_s384_factor_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.4891228920508755,
+      "formatted": "0.48912"
+    },
+    "curve_pair_n96_s384_factor_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.4802631187352191,
+      "formatted": "0.48026"
+    },
+    "curve_pair_n96_s384_gplus_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.4615479967722496,
+      "formatted": "0.46155"
+    },
+    "curve_pair_n96_s384_gplus_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "384",
+        "means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.44170496603305653,
+      "formatted": "0.44170"
+    },
+    "curve_pair_n96_s768_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02881335497677931,
+      "formatted": "+0.02881"
+    },
+    "curve_pair_n96_s768_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.007968289595738568,
+      "formatted": "+0.00797"
+    },
+    "curve_pair_n96_s768_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.057713537206477226,
+      "formatted": "+0.05771"
+    },
+    "curve_pair_n96_s768_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007351873453890397,
+      "formatted": "+0.00735"
+    },
+    "curve_pair_n96_s768_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.017833289364910944,
+      "formatted": "-0.01783"
+    },
+    "curve_pair_n96_s768_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03207937152639511,
+      "formatted": "+0.03208"
+    },
+    "curve_pair_n96_s768_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02146148152288891,
+      "formatted": "+0.02146"
+    },
+    "curve_pair_n96_s768_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.010184159999695677,
+      "formatted": "-0.01018"
+    },
+    "curve_pair_n96_s768_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05223348921903974,
+      "formatted": "+0.05223"
+    },
+    "curve_pair_n96_s768_factor_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.538956815967217,
+      "formatted": "0.53896"
+    },
+    "curve_pair_n96_s768_factor_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5101434609904376,
+      "formatted": "0.51014"
+    },
+    "curve_pair_n96_s768_gplus_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.5507493172617632,
+      "formatted": "0.55075"
+    },
+    "curve_pair_n96_s768_gplus_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "768",
+        "means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5433974438078729,
+      "formatted": "0.54340"
+    },
+    "curve_pair_n96_s1536_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.008737325522917071,
+      "formatted": "-0.00874"
+    },
+    "curve_pair_n96_s1536_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.027697285508041583,
+      "formatted": "-0.02770"
+    },
+    "curve_pair_n96_s1536_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0108501201380733,
+      "formatted": "+0.01085"
+    },
+    "curve_pair_n96_s1536_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.004492567834772259,
+      "formatted": "-0.00449"
+    },
+    "curve_pair_n96_s1536_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.030574302507133985,
+      "formatted": "-0.03057"
+    },
+    "curve_pair_n96_s1536_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.019027524274253086,
+      "formatted": "+0.01903"
+    },
+    "curve_pair_n96_s1536_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.004244757688144811,
+      "formatted": "-0.00424"
+    },
+    "curve_pair_n96_s1536_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01727501212596163,
+      "formatted": "-0.01728"
+    },
+    "curve_pair_n96_s1536_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009515063244223555,
+      "formatted": "+0.00952"
+    },
+    "curve_pair_n96_s1536_factor_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.5412806771651334,
+      "formatted": "0.54128"
+    },
+    "curve_pair_n96_s1536_factor_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5500180026880505,
+      "formatted": "0.55002"
+    },
+    "curve_pair_n96_s1536_gplus_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.5527438287908506,
+      "formatted": "0.55274"
+    },
+    "curve_pair_n96_s1536_gplus_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "96",
+        "1536",
+        "means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5572363966256229,
+      "formatted": "0.55724"
+    },
+    "curve_pair_n384_s384_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0027657402273273558,
+      "formatted": "+0.00277"
+    },
+    "curve_pair_n384_s384_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.019517399345325984,
+      "formatted": "-0.01952"
+    },
+    "curve_pair_n384_s384_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02341480200686897,
+      "formatted": "+0.02341"
+    },
+    "curve_pair_n384_s384_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019291819522452784,
+      "formatted": "+0.01929"
+    },
+    "curve_pair_n384_s384_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0009739863239239311,
+      "formatted": "-0.00097"
+    },
+    "curve_pair_n384_s384_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.047768823705426774,
+      "formatted": "+0.04777"
+    },
+    "curve_pair_n384_s384_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.016526079295125423,
+      "formatted": "-0.01653"
+    },
+    "curve_pair_n384_s384_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0372789301005663,
+      "formatted": "-0.03728"
+    },
+    "curve_pair_n384_s384_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0028549126018821546,
+      "formatted": "+0.00285"
+    },
+    "curve_pair_n384_s384_factor_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.4915059057681117,
+      "formatted": "0.49151"
+    },
+    "curve_pair_n384_s384_factor_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.48874016554078437,
+      "formatted": "0.48874"
+    },
+    "curve_pair_n384_s384_gplus_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.48648879447442334,
+      "formatted": "0.48649"
+    },
+    "curve_pair_n384_s384_gplus_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "384",
+        "means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.4671969749519705,
+      "formatted": "0.46720"
+    },
+    "curve_pair_n384_s768_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02900156401288653,
+      "formatted": "+0.02900"
+    },
+    "curve_pair_n384_s768_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0010818977845998092,
+      "formatted": "-0.00108"
+    },
+    "curve_pair_n384_s768_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05824628712545087,
+      "formatted": "+0.05825"
+    },
+    "curve_pair_n384_s768_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.002383575418220732,
+      "formatted": "+0.00238"
+    },
+    "curve_pair_n384_s768_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02133938417852308,
+      "formatted": "-0.02134"
+    },
+    "curve_pair_n384_s768_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029950305075447103,
+      "formatted": "+0.02995"
+    },
+    "curve_pair_n384_s768_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.026617988594665798,
+      "formatted": "+0.02662"
+    },
+    "curve_pair_n384_s768_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.018937055550445572,
+      "formatted": "-0.01894"
+    },
+    "curve_pair_n384_s768_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06324980590488971,
+      "formatted": "+0.06325"
+    },
+    "curve_pair_n384_s768_factor_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.5444683193971304,
+      "formatted": "0.54447"
+    },
+    "curve_pair_n384_s768_factor_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5154667553842438,
+      "formatted": "0.51547"
+    },
+    "curve_pair_n384_s768_gplus_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.5282243168413078,
+      "formatted": "0.52822"
+    },
+    "curve_pair_n384_s768_gplus_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "768",
+        "means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.525840741423087,
+      "formatted": "0.52584"
+    },
+    "curve_pair_n384_s1536_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008342108907701307,
+      "formatted": "+0.00834"
+    },
+    "curve_pair_n384_s1536_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.011471839985609942,
+      "formatted": "-0.01147"
+    },
+    "curve_pair_n384_s1536_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.032690802813596744,
+      "formatted": "+0.03269"
+    },
+    "curve_pair_n384_s1536_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.002642231093576081,
+      "formatted": "+0.00264"
+    },
+    "curve_pair_n384_s1536_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.034761581525448254,
+      "formatted": "-0.03476"
+    },
+    "curve_pair_n384_s1536_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.042768741638605653,
+      "formatted": "+0.04277"
+    },
+    "curve_pair_n384_s1536_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.005699877814125227,
+      "formatted": "+0.00570"
+    },
+    "curve_pair_n384_s1536_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.032587416496263504,
+      "formatted": "-0.03259"
+    },
+    "curve_pair_n384_s1536_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.033842988272143576,
+      "formatted": "+0.03384"
+    },
+    "curve_pair_n384_s1536_factor_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.5660379101992689,
+      "formatted": "0.56604"
+    },
+    "curve_pair_n384_s1536_factor_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5576958012915676,
+      "formatted": "0.55770"
+    },
+    "curve_pair_n384_s1536_gplus_native": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.5598666575219561,
+      "formatted": "0.55987"
+    },
+    "curve_pair_n384_s1536_gplus_rotated": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "ca_lddt",
+        "384",
+        "1536",
+        "means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.5572244264283799,
+      "formatted": "0.55722"
+    },
+    "curve_residue_n96_s384_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.008869328678107462,
+      "formatted": "+0.00887"
+    },
+    "curve_residue_n96_s384_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.013886951096507725,
+      "formatted": "-0.01389"
+    },
+    "curve_residue_n96_s384_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03224909129456551,
+      "formatted": "+0.03225"
+    },
+    "curve_residue_n96_s384_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018329274298577884,
+      "formatted": "+0.01833"
+    },
+    "curve_residue_n96_s384_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0006066964719658478,
+      "formatted": "+0.00061"
+    },
+    "curve_residue_n96_s384_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.040269900466311244,
+      "formatted": "+0.04027"
+    },
+    "curve_residue_n96_s384_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00945994562047042,
+      "formatted": "-0.00946"
+    },
+    "curve_residue_n96_s384_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.031279973877108055,
+      "formatted": "-0.03128"
+    },
+    "curve_residue_n96_s384_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "384",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012794856458963158,
+      "formatted": "+0.01279"
+    },
+    "curve_residue_n96_s768_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.026420941205024497,
+      "formatted": "+0.02642"
+    },
+    "curve_residue_n96_s768_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.006907960051593942,
+      "formatted": "+0.00691"
+    },
+    "curve_residue_n96_s768_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05222037505392914,
+      "formatted": "+0.05222"
+    },
+    "curve_residue_n96_s768_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.006241678803279559,
+      "formatted": "+0.00624"
+    },
+    "curve_residue_n96_s768_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.017995329721047733,
+      "formatted": "-0.01800"
+    },
+    "curve_residue_n96_s768_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03007674822969144,
+      "formatted": "+0.03008"
+    },
+    "curve_residue_n96_s768_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02017926240174494,
+      "formatted": "+0.02018"
+    },
+    "curve_residue_n96_s768_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00879380191853333,
+      "formatted": "-0.00879"
+    },
+    "curve_residue_n96_s768_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "768",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04767097932313417,
+      "formatted": "+0.04767"
+    },
+    "curve_residue_n96_s1536_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00838893944051848,
+      "formatted": "-0.00839"
+    },
+    "curve_residue_n96_s1536_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02610990851546401,
+      "formatted": "-0.02611"
+    },
+    "curve_residue_n96_s1536_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00978872780490279,
+      "formatted": "+0.00979"
+    },
+    "curve_residue_n96_s1536_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0035891324249714644,
+      "formatted": "-0.00359"
+    },
+    "curve_residue_n96_s1536_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02857557858583149,
+      "formatted": "-0.02858"
+    },
+    "curve_residue_n96_s1536_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.018348943133000555,
+      "formatted": "+0.01835"
+    },
+    "curve_residue_n96_s1536_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.004799807015547016,
+      "formatted": "-0.00480"
+    },
+    "curve_residue_n96_s1536_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.017654017377240563,
+      "formatted": "-0.01765"
+    },
+    "curve_residue_n96_s1536_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "96",
+        "1536",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008155592223785176,
+      "formatted": "+0.00816"
+    },
+    "curve_residue_n384_s384_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0026495917576403647,
+      "formatted": "+0.00265"
+    },
+    "curve_residue_n384_s384_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01794890913465136,
+      "formatted": "-0.01795"
+    },
+    "curve_residue_n384_s384_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0219342776733589,
+      "formatted": "+0.02193"
+    },
+    "curve_residue_n384_s384_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01901293758353201,
+      "formatted": "+0.01901"
+    },
+    "curve_residue_n384_s384_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0006087978997125335,
+      "formatted": "-0.00061"
+    },
+    "curve_residue_n384_s384_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04646444275182443,
+      "formatted": "+0.04646"
+    },
+    "curve_residue_n384_s384_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.016363345825891648,
+      "formatted": "-0.01636"
+    },
+    "curve_residue_n384_s384_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03655723040037758,
+      "formatted": "-0.03656"
+    },
+    "curve_residue_n384_s384_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "384",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0026304934191954754,
+      "formatted": "+0.00263"
+    },
+    "curve_residue_n384_s768_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02812014645837975,
+      "formatted": "+0.02812"
+    },
+    "curve_residue_n384_s768_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0003199123102490403,
+      "formatted": "+0.00032"
+    },
+    "curve_residue_n384_s768_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05547882552545556,
+      "formatted": "+0.05548"
+    },
+    "curve_residue_n384_s768_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0024132476256569857,
+      "formatted": "+0.00241"
+    },
+    "curve_residue_n384_s768_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.020751000612402596,
+      "formatted": "-0.02075"
+    },
+    "curve_residue_n384_s768_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029047836125074993,
+      "formatted": "+0.02905"
+    },
+    "curve_residue_n384_s768_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.025706898832722765,
+      "formatted": "+0.02571"
+    },
+    "curve_residue_n384_s768_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01750039493104158,
+      "formatted": "-0.01750"
+    },
+    "curve_residue_n384_s768_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "768",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06061098193978676,
+      "formatted": "+0.06061"
+    },
+    "curve_residue_n384_s1536_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.00776160766194119,
+      "formatted": "+0.00776"
+    },
+    "curve_residue_n384_s1536_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01128518555432864,
+      "formatted": "-0.01129"
+    },
+    "curve_residue_n384_s1536_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0309120477518164,
+      "formatted": "+0.03091"
+    },
+    "curve_residue_n384_s1536_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.002797642118117694,
+      "formatted": "+0.00280"
+    },
+    "curve_residue_n384_s1536_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03143841796999053,
+      "formatted": "-0.03144"
+    },
+    "curve_residue_n384_s1536_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.039009060382666695,
+      "formatted": "+0.03901"
+    },
+    "curve_residue_n384_s1536_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0049639655438234965,
+      "formatted": "+0.00496"
+    },
+    "curve_residue_n384_s1536_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03009134186460554,
+      "formatted": "-0.03009"
+    },
+    "curve_residue_n384_s1536_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "residue_ca_lddt",
+        "384",
+        "1536",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.030639537196029826,
+      "formatted": "+0.03064"
+    },
+    "curve_tm_n96_s384_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.015569444444444431,
+      "formatted": "+0.01557"
+    },
+    "curve_tm_n96_s384_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02754583333333335,
+      "formatted": "-0.02755"
+    },
+    "curve_tm_n96_s384_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05203888888888887,
+      "formatted": "+0.05204"
+    },
+    "curve_tm_n96_s384_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03093194444444444,
+      "formatted": "+0.03093"
+    },
+    "curve_tm_n96_s384_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0040486111111111105,
+      "formatted": "+0.00405"
+    },
+    "curve_tm_n96_s384_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06339305555555554,
+      "formatted": "+0.06339"
+    },
+    "curve_tm_n96_s384_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.015362500000000008,
+      "formatted": "-0.01536"
+    },
+    "curve_tm_n96_s384_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.04795302083333333,
+      "formatted": "-0.04795"
+    },
+    "curve_tm_n96_s384_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "384",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.017213888888888883,
+      "formatted": "+0.01721"
+    },
+    "curve_tm_n96_s768_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01868194444444444,
+      "formatted": "+0.01868"
+    },
+    "curve_tm_n96_s768_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.001013541666666671,
+      "formatted": "-0.00101"
+    },
+    "curve_tm_n96_s768_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03722565972222216,
+      "formatted": "+0.03723"
+    },
+    "curve_tm_n96_s768_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00014722222222222567,
+      "formatted": "-0.00015"
+    },
+    "curve_tm_n96_s768_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.031456944444444454,
+      "formatted": "-0.03146"
+    },
+    "curve_tm_n96_s768_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.030850000000000006,
+      "formatted": "+0.03085"
+    },
+    "curve_tm_n96_s768_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018829166666666668,
+      "formatted": "+0.01883"
+    },
+    "curve_tm_n96_s768_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.022429166666666674,
+      "formatted": "-0.02243"
+    },
+    "curve_tm_n96_s768_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "768",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05618666666666664,
+      "formatted": "+0.05619"
+    },
+    "curve_tm_n96_s1536_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.014647222222222226,
+      "formatted": "-0.01465"
+    },
+    "curve_tm_n96_s1536_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03937371527777779,
+      "formatted": "-0.03937"
+    },
+    "curve_tm_n96_s1536_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.009451388888888882,
+      "formatted": "+0.00945"
+    },
+    "curve_tm_n96_s1536_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0028458333333333317,
+      "formatted": "-0.00285"
+    },
+    "curve_tm_n96_s1536_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.021916666666666668,
+      "formatted": "-0.02192"
+    },
+    "curve_tm_n96_s1536_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.015366666666666678,
+      "formatted": "+0.01537"
+    },
+    "curve_tm_n96_s1536_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.011801388888888896,
+      "formatted": "-0.01180"
+    },
+    "curve_tm_n96_s1536_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.030840520833333336,
+      "formatted": "-0.03084"
+    },
+    "curve_tm_n96_s1536_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "96",
+        "1536",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0053708333333333325,
+      "formatted": "+0.00537"
+    },
+    "curve_tm_n384_s384_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0005902777777777798,
+      "formatted": "+0.00059"
+    },
+    "curve_tm_n384_s384_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02191388888888888,
+      "formatted": "-0.02191"
+    },
+    "curve_tm_n384_s384_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.026720937499999983,
+      "formatted": "+0.02672"
+    },
+    "curve_tm_n384_s384_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.021454166666666667,
+      "formatted": "+0.02145"
+    },
+    "curve_tm_n384_s384_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0021805555555555467,
+      "formatted": "-0.00218"
+    },
+    "curve_tm_n384_s384_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.055405555555555555,
+      "formatted": "+0.05541"
+    },
+    "curve_tm_n384_s384_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.02086388888888889,
+      "formatted": "-0.02086"
+    },
+    "curve_tm_n384_s384_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.04322083333333333,
+      "formatted": "-0.04322"
+    },
+    "curve_tm_n384_s384_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "384",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0010861111111111089,
+      "formatted": "+0.00109"
+    },
+    "curve_tm_n384_s768_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04484305555555555,
+      "formatted": "+0.04484"
+    },
+    "curve_tm_n384_s768_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.008047222222222226,
+      "formatted": "+0.00805"
+    },
+    "curve_tm_n384_s768_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.08504444444444444,
+      "formatted": "+0.08504"
+    },
+    "curve_tm_n384_s768_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0035527777777777754,
+      "formatted": "+0.00355"
+    },
+    "curve_tm_n384_s768_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01787163194444445,
+      "formatted": "-0.01787"
+    },
+    "curve_tm_n384_s768_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02798888888888889,
+      "formatted": "+0.02799"
+    },
+    "curve_tm_n384_s768_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04129027777777779,
+      "formatted": "+0.04129"
+    },
+    "curve_tm_n384_s768_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.008219444444444439,
+      "formatted": "-0.00822"
+    },
+    "curve_tm_n384_s768_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "768",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.08517222222222223,
+      "formatted": "+0.08517"
+    },
+    "curve_tm_n384_s1536_factor_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.007580555555555563,
+      "formatted": "+0.00758"
+    },
+    "curve_tm_n384_s1536_factor_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01651666666666665,
+      "formatted": "-0.01652"
+    },
+    "curve_tm_n384_s1536_factor_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03619583333333334,
+      "formatted": "+0.03620"
+    },
+    "curve_tm_n384_s1536_gplus_rotation": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.013300000000000006,
+      "formatted": "-0.01330"
+    },
+    "curve_tm_n384_s1536_gplus_rotationLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.04618888888888889,
+      "formatted": "-0.04619"
+    },
+    "curve_tm_n384_s1536_gplus_rotationHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016666909722222206,
+      "formatted": "+0.01667"
+    },
+    "curve_tm_n384_s1536_interaction": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02088055555555557,
+      "formatted": "+0.02088"
+    },
+    "curve_tm_n384_s1536_interactionLo": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.004987499999999973,
+      "formatted": "-0.00499"
+    },
+    "curve_tm_n384_s1536_interactionHi": {
+      "source": "evidence/checkpoint_curves_summary.json",
+      "field_path": [
+        "curves",
+        "tm_score_fixed_full_length",
+        "384",
+        "1536",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04783611111111111,
+      "formatted": "+0.04784"
     }
   },
   "verified_esmc_A_contrasts": 78,
@@ -18493,8 +23040,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1197,
-    "distinct_keys": 985,
+    "literal_references": 1457,
+    "distinct_keys": 1227,
     "missing": []
   },
   "pending": [],
@@ -18538,5 +23085,261 @@
     "X_span": 0.03767375022746111,
     "auxiliary_dtype_mismatches": 4,
     "scope": "Score-array, sealed diagnostic-summary, exact rotation-permutation and conditional target-bootstrap reconstruction; no CIF scoring, training rerun or proof of optimal reconstruction. E1 uses observed Confirm96-B and is not new-target confirmation."
+  },
+  "verified_e2_intervention": {
+    "passed": true,
+    "records": 864,
+    "combined_unique_records": 3552,
+    "failures": 0,
+    "verified_contrasts": 21,
+    "scalar_or_array_checks": 150,
+    "max_abs_error": 1.1102230246251565e-16,
+    "paired_seeds": [
+      20260923,
+      20260924,
+      20260925
+    ],
+    "selected_rotations": [
+      "r20270107",
+      "r20270104"
+    ],
+    "synchronized_target_bootstrap": {
+      "seed": 20260924,
+      "draws": 20000
+    },
+    "results": {
+      "ca_lddt": {
+        "native_change": {
+          "mean": 0.012895544368092829,
+          "ci95": [
+            0.002228544479543511,
+            0.023174406847913952
+          ],
+          "per_seed": [
+            0.01740044513466599,
+            0.008158978024660793,
+            0.013127209944951708
+          ]
+        },
+        "B_R": {
+          "mean": 0.029734761108065545,
+          "ci95": [
+            0.02211646167535344,
+            0.03767678366949647
+          ],
+          "per_seed": [
+            0.04546079909313298,
+            0.022506699400424855,
+            0.0212367848306388
+          ]
+        },
+        "T_C": {
+          "mean": 0.01683921673997271,
+          "ci95": [
+            0.004966827647544351,
+            0.029226998900238874
+          ],
+          "per_seed": [
+            0.028060353958466986,
+            0.014347721375764058,
+            0.008109574885687088
+          ]
+        }
+      },
+      "residue_ca_lddt": {
+        "native_change": {
+          "mean": 0.012680230760227831,
+          "ci95": [
+            0.0025661288609065513,
+            0.022441109363898773
+          ],
+          "per_seed": [
+            0.017500174279056615,
+            0.008206741326964376,
+            0.012333776674662497
+          ]
+        },
+        "B_R": {
+          "mean": 0.027801951429299882,
+          "ci95": [
+            0.020590948814660132,
+            0.0352959017466602
+          ],
+          "per_seed": [
+            0.043362836692676245,
+            0.020403226012702235,
+            0.019639791582521163
+          ]
+        },
+        "T_C": {
+          "mean": 0.015121720669072058,
+          "ci95": [
+            0.0039720875921744475,
+            0.026832596029557242
+          ],
+          "per_seed": [
+            0.025862662413619644,
+            0.012196484685737863,
+            0.007306014907858666
+          ]
+        }
+      },
+      "tm_score_fixed_full_length": {
+        "native_change": {
+          "mean": 0.016827430555555554,
+          "ci95": [
+            0.002135303819444444,
+            0.031339687499999956
+          ],
+          "per_seed": [
+            0.028504166666666664,
+            0.004255208333333332,
+            0.017722916666666668
+          ]
+        },
+        "B_R": {
+          "mean": 0.02839201388888889,
+          "ci95": [
+            0.01864975260416667,
+            0.038562417534722206
+          ],
+          "per_seed": [
+            0.04453177083333334,
+            0.020121354166666664,
+            0.02052291666666667
+          ]
+        },
+        "T_C": {
+          "mean": 0.011564583333333338,
+          "ci95": [
+            -0.0045282204861111066,
+            0.02831368055555554
+          ],
+          "per_seed": [
+            0.01602760416666666,
+            0.015866145833333335,
+            0.002800000000000004
+          ]
+        }
+      }
+    },
+    "diagnostic_repair_hash_link_verified": true,
+    "predefined_rotation_average_verified": true,
+    "statistical_identity": "Cross-rotation averages predeclared in the original written design and sealed analysis. Prespecified mechanistic follow-up on observed targets, not a new sole confirmatory primary endpoint or independent new-target confirmation; both rotations and Native changes retained.",
+    "source_sha256": {
+      "e1_execution_lock": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+      "e1_prediction_lock": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+      "e1_prediction_complete": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+      "e1_prediction_records": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+      "e1_prediction_summary": "58c4bc5e8362c79b9817d769d88ddb7b25fba59eb44cdd9fc2ad103b41d1d233",
+      "e2_intervention_summary": "ab484a919f095298ae970e23efcdd51c0bcce91d880a3b4f0c58773b685cf1cc",
+      "e2_intervention_records": "4da8ca6a18e98b298acde8d451c67b19f0ea5cdc040539c9c85bfb6fe70b1472",
+      "e1_scoring_amendment": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3",
+      "e2_intervention_prespecified_analysis": "ab068234919c8d25c3f0cba333ffd96a14a3ec481bb2321596ca2ca79edf2e0e",
+      "e2_intervention_prespecified_design": "235ea39d7f4d00b440c0443c27d7a98c9a2bea1017efc5dc9e0987319d0e7aa8",
+      "e2_intervention_execution_lock": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+      "e2_intervention_runtime_audit": "da88d7378d7c4befe9b014949e9df2f7d3dd5aef30be37675338fa0c0be07133",
+      "e2_intervention_review_audit": "f5dd699c46881432522e85df849a770e16c6fc5bc3c93ed4ec0d6b21b842d089",
+      "e2_intervention_repair_amendment": "1a94990c3168674e965fee648be80a8a0754d6cade6eab6f6cc37e9ee615cd1e",
+      "e2_intervention_repair_regression": "bb93388bd7b5eb81fe7f05149d124565ed4c1d65024fb0e693e600b3daf23c95",
+      "e2_intervention_series_complete": "bd78b8b7af49037b726fe3af196db81800416eb2153fcf38bbc03d7b0be606f1",
+      "e2_intervention_complete": "c9f192d7a1b05a23f12d5b424dcb901954b81e87e18ce4ad8d8907416206dfc2"
+    },
+    "scope": "Original 21 paired score-array contrasts and sealed runtime-audit consistency; no new remaining-gap or equivalence test, no training or structure-scoring replay. Observed Confirm96-B; intervals condition on the fitted models and two preselected rotations."
+  },
+  "verified_signed_and_curves": {
+    "passed": true,
+    "signed_records": 3600,
+    "signed_new_predictions": 2592,
+    "signed_historical_reused_predictions": 1008,
+    "signed_verified_contrasts": 18,
+    "signed_transform_properties": {
+      "20261201": {
+        "dimension": 128,
+        "negative_signs": 63,
+        "preserves_all_ones": false
+      },
+      "20261202": {
+        "dimension": 128,
+        "negative_signs": 63,
+        "preserves_all_ones": false
+      },
+      "20261203": {
+        "dimension": 128,
+        "negative_signs": 55,
+        "preserves_all_ones": false
+      }
+    },
+    "signed_pair_lddt": {
+      "confirm96": {
+        "interaction_mean": 0.014400587230437592,
+        "interaction_ci95": [
+          0.0037880989117799703,
+          0.02520266904439625
+        ],
+        "positive_seed_transform_cells": 8
+      },
+      "length48": {
+        "interaction_mean": 0.0029214972500903064,
+        "interaction_ci95": [
+          -0.0062187080546815795,
+          0.012059476796968883
+        ],
+        "positive_seed_transform_cells": 7
+      }
+    },
+    "curve_records": 1160,
+    "curve_shared_query_records": 8,
+    "curve_metric_nodes": 18,
+    "curve_verified_contrasts": 72,
+    "descriptive_pair_lddt_changes": {
+      "96": {
+        "384_to_1536": {
+          "means": {
+            "factor_native": 0.05215778511425789,
+            "factor_rotated": 0.06975488395283136,
+            "gplus_native": 0.09119583201860099,
+            "gplus_rotated": 0.11553143059256632
+          },
+          "factor_rotation_change": -0.017597098838573508,
+          "gplus_rotation_change": -0.024335598573965424
+        },
+        "768_to_1536": {
+          "means": {
+            "factor_native": 0.002323861197916388,
+            "factor_rotated": 0.03987454169761284,
+            "gplus_native": 0.0019945115290873616,
+            "gplus_rotated": 0.013838952817749939
+          },
+          "factor_rotation_change": -0.037550680499696384,
+          "gplus_rotation_change": -0.011844441288662657
+        }
+      },
+      "384": {
+        "384_to_1536": {
+          "means": {
+            "factor_native": 0.07453200443115715,
+            "factor_rotated": 0.06895563575078323,
+            "gplus_native": 0.07337786304753274,
+            "gplus_rotated": 0.09002745147640939
+          },
+          "factor_rotation_change": 0.005576368680373952,
+          "gplus_rotation_change": -0.016649588428876705
+        },
+        "768_to_1536": {
+          "means": {
+            "factor_native": 0.021569590802138494,
+            "factor_rotated": 0.04222904590732379,
+            "gplus_native": 0.031642340680648307,
+            "gplus_rotated": 0.03138368500529287
+          },
+          "factor_rotation_change": -0.020659455105185222,
+          "gplus_rotation_change": 0.0002586556753553489
+        }
+      }
+    },
+    "scalar_or_array_checks": 810,
+    "max_abs_error": 0.0,
+    "scope": "Locked score-array reconstruction and original pointwise target bootstraps; no CIF scoring, new fit, full-model trajectory equivalence, convergence, new K test or new-target confirmation. Signed transformations do not preserve the all-ones direction. Dev8 nodes do not select checkpoints."
   }
 }

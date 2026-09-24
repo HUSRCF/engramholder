@@ -1,0 +1,7 @@
+{
+  "complete": true,
+  "receipt_checkpoint_hashes": 27,
+  "prediction_hashes": 864,
+  "remote_E2_complete_sha256": "c9f192d7a1b05a23f12d5b424dcb901954b81e87e18ce4ad8d8907416206dfc2",
+  "remote_series_complete_sha256": "bd78b8b7af49037b726fe3af196db81800416eb2153fcf38bbc03d7b0be606f1"
+}

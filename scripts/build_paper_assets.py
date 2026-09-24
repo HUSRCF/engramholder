@@ -33,6 +33,14 @@ DATA = {}
 SOURCES += ['e1_prediction_summary', 'e1_prediction_lock', 'e1_prediction_records',
             'e1_execution_lock', 'e1_prediction_complete', 'e1_scoring_amendment',
             'e1_scoring_diagnosis', 'e1_scoring_regression', 'e1_prediction_protocol']
+SOURCES += ['e2_intervention_summary', 'e2_intervention_records', 'e2_intervention_complete',
+            'e2_intervention_execution_lock', 'e2_intervention_runtime_audit', 'e2_intervention_review_audit',
+            'e2_intervention_repair_amendment', 'e2_intervention_repair_regression', 'e2_intervention_series_complete',
+            'signed_summary', 'signed_records', 'signed_complete', 'signed_candidate_lock', 'signed_execution_lock',
+            'signed_protocol', 'checkpoint_curves_summary', 'checkpoint_curves_records',
+            'checkpoint_curves_complete', 'checkpoint_curves_execution_lock', 'checkpoint_curves_protocol']
+SOURCES += ['e2_intervention_prespecified_analysis', 'e2_intervention_prespecified_design',
+            'openfold_train96_records']
 
 def read(file, path):
     x = DATA[file]
@@ -119,7 +127,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v8.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v9.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -131,6 +139,10 @@ def main():
     dh_audit=verify_dh(ROOT)
     from verify_e1_prediction import verify as verify_e1
     e1_audit=verify_e1(ROOT)
+    from verify_e2_intervention import verify as verify_e2
+    from verify_signed_and_curves import verify as verify_sc
+    e2_audit=verify_e2(ROOT)
+    sc_audit=verify_sc(ROOT)
     from analyze_openfold_followups import calculate
     followup_audit=calculate(ROOT)
     assert followup_audit==DATA['openfold_followup_analysis']
@@ -377,6 +389,8 @@ def main():
         number(f'e1_leave_teacher{i+1}_rho','e1_prediction_summary',['metrics','ca_lddt','leave_one_teacher_X_rho',i],signed=True)
     for i,name in enumerate(['Lo','Hi']):
         number('e1_target_rho'+name,'e1_prediction_summary',['metrics','ca_lddt','target_bootstrap_X_rho','ci95',i],signed=True)
+    from completed_controls_assets import build as build_controls
+    build_controls(DATA, number, contrast, tex, save_rows, interval_cell)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -390,7 +404,7 @@ def main():
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

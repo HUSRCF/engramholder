@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "source_execution_lock": "/home/husrcf/Code/onestepfold/engramfold/reports/prospective_orientation_series_20260924/execution_lock.json",
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "original_analysis_path": "/home/husrcf/Code/onestepfold/engramfold/reports/prospective_orientation_series_20260924/staging/analyze.py",
+  "original_analysis_sha256": "c4341fc12d69677a43b58f4035385209251275b8ee616b05f5a26fed8271352c",
+  "original_analysis_lines": [
+    135,
+    136,
+    145,
+    150
+  ],
+  "repair_analysis_sha256": "9b8cae09229404b0caea7de419fd311ba087dbc2105ae3b81900ffb8519a2f67",
+  "repair_E2_statistics_block_byte_identical": true,
+  "execution_lock_time_utc": "2026-09-23T20:15:19.827276+00:00",
+  "last_pre_gpu_resource_review_utc": "2026-09-23T20:31:39.558504+00:00",
+  "prediction_lock_utc": "2026-09-24T04:04:08.547671+00:00",
+  "e2_release_utc": "2026-09-24T08:32:24.095998+00:00",
+  "e2_result_utc": "2026-09-24T10:53:02.616015+00:00",
+  "design_git_commit": "9d87049ae63570b9f5d03a488691ba72263fb1b0",
+  "design_git_path": "reports/prospective_orientation_series_20260924.md",
+  "design_git_commit_time": "2026-09-24T03:56:26+08:00",
+  "design_sha256": "6873c1ae2354cf15cd2ad8e91f49035a62f8645381fafe28e41a45c477b1a194",
+  "design_mean_formulas_lines": [
+    125,
+    135
+  ],
+  "design_identity_lines": [
+    168,
+    170
+  ],
+  "design_excerpt": "\u9884\u8bbe\u91cf\u4e3a\n\n\\[\nT_C=\\tfrac12\\sum_{r\\in\\{X_{low},X_{high}\\}}\n[\\Delta_F^{fixed}(r)-\\Delta_F^{learned\\ C}(r)],\n\\]\n\\[\nB_R=\\tfrac12\\sum_r[S_R^{learned\\ C}(r)-S_R^{fixed}(r)].\n\\]\n\n\u9884\u6d4b\u4e3aT_C>0\uff0c\u540c\u65f6B_R>0\u3002\u62a5\u544a\u4e24R\u5206\u522b\u7684\u76f4\u63a5\u5dee\u5206\u548cNative\u7edd\u5bf9\u53d8\u5316\u3002**\u53ea\u6709Native\u9000\u5316\u5bfc\u81f4\u5dee\u8ddd\u7f29\u5c0f\uff0c\u4e0d\u53eb\u6709\u6548\u8865\u507f\u3002**\u5373\u4f7f\u4e24\u91cf\u5747\u83b7\u652f\u6301\uff0c\u4e5f\u53ea\u8bc1\u660e\u8fd9\u4e2a\u589e\u5bb9\uff0f\u4f18\u5316\u5e72\u9884\u5728\u56fa\u5b9a\u9884\u7b97\u4e0b\u51cf\u5c11\u4e86\u65cb\u8f6c\u4ee3\u4ef7\uff0c\u4e0d\u8bc1\u660eX\u662f\u552f\u4e00\u539f\u56e0\u6216decoder\u662f\u552f\u4e00\u56e0\u679c\u56e0\u7d20\uff1b\u82e5\u5dee\u8ddd\u672a\u7f29\u5c0f\uff0c\u4e0d\u80fd\u8bf4\u6570\u5b66\u4e0a\u65e0\u6cd5\u5438\u6536R\u3002",
+  "protocol_sha256": "9867fb24b35fc2ff5afe42ee5f1a20240e482df600497b4311800f54e1fc5c9d",
+  "protocol_report_scope_line": 27,
+  "statistical_identity": "The cross-rotation averages T_C and B_R were predefined in the sealed written design and analysis implementation. They are not an additional preregistered sole confirmatory primary endpoint. Per-rotation and Native changes remain required; E2 is a prespecified mechanistic follow-up on observed targets."
+}
