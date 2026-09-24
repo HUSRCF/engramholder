@@ -12,9 +12,10 @@
 
 % Working title; subject to author review and the submitted-title constraints.
 \title{Native Update Orientation in Frozen Protein Structure Predictors}
-\author{Anonymous authors}
-% Do not enable camera-ready mode for an anonymous submission.
-%\iclrfinalcopy
+% Author metadata is excluded from the anonymous source artifact.
+\IfFileExists{authors.tex}{\input{authors}}{\author{Anonymous authors}}
+% author_draft.tex enables names for the internal draft only.
+\ifdefined\AuthorPreview\iclrfinalcopy\fi
 
 % Only genuinely unfinished results retain a visible marker.
 \newcommand{\pending}{\textit{Pending}}
@@ -31,6 +32,7 @@
 
 \begin{document}
 \maketitle
+\ifdefined\AuthorPreview\lhead{Working draft}\fi
 \input{sections/00_abstract}
 \input{sections/01_introduction}
 \input{sections/02_construction}

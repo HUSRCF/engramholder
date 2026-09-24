@@ -4,15 +4,17 @@
 
 | 项目 | 当前状态 |
 |---|---|
-| 稿件版本 | `main`；本轮基于 `afb55f5`，完成E2、带符号置换与Dev8曲线整合。 |
+| 稿件版本 | `main`；E2、带符号置换与Dev8曲线整合为 `1ef414d`；本轮另加入用户提供的作者顺序和PI关系。 |
 | 活跃来源锁 | [paper_sources.v9.lock.json](../notes/writing_branch_20260922/paper_sources.v9.lock.json)，93份输入、1,518字段；v8的70份输入及1,199字段／映射全部不变，新增319字段。旧锁保留。 |
 | 已纳入结果 | Protenix方向／长度／G+及两规模完整四格；OpenFold两规模／两PLM四格；AtlasFold两PLM四格；Fresh96；范数干预；E1阴性预测；E2共享补偿；带符号置换；Dev8三节点曲线。 |
 | 统计身份 | E2平均BR、TC在原书面设计与代码中预设，属于已观察面板机制对比。置换C96-B Ψ为该后续研究主要量。A66各底座主要量仍为C96-B ESMC Factor−Rotated，其Ψ等未统一校正；这些均不替代Fresh96。 |
 | 已完成但独立保留 | 六组共享重建和三底座18次几何／传播数值仍为独立报告；接口反馈分类已进入方法。 |
 | 其他独立工作 | B组、SGDM未纳入本稿，本入口不推断其队列进度。E3/E4尚未启动，新Protenix目标面板仍为候选。 |
 | 本轮检查 | [E2及评审落实](e2_completed_review_20260924/interpretation.md)；[验证JSON](../notes/writing_branch_20260922/draft_validation.completed_controls_v9.json)。数值复算与18项CPU测试通过；主文9页、全文35页，无未定义引用／overfull。修改正文与新增附录已视觉检查，非全页人工验收。 |
-| 匿名材料 | 本地 `build/anonymous_artifact_v21.zip`，204文件；脱敏后1,518数值一致，18项测试和算子检查通过。v20为排版修订前历史包。 |
+| 匿名材料 | 本地 `build/anonymous_artifact_v22.zip`，204文件；排除作者资料，脱敏后1,518数值一致，18项测试和算子检查通过。旧包保留历史身份。 |
 | 复现范围 | 一个固定OpenFold模型／目标已完成隔离环境FASTA→特征→完整CIF→主指标评分；本轮新增验证从保存的分数开始，全矩阵重预测／重训练复现未建立。 |
+
+**作者信息：** [作者资料](../notes/authors.md)已录入；[姓名版PDF](../build/author_draft.pdf)与[匿名版PDF](../build/iclr2027_conference.pdf)均编译通过，主文仍为9页；[作者版核验](../notes/writing_branch_20260922/draft_validation.authors_20260924.json)。
 
 主文围绕“方向效应是否存在、是否因参数化而异、是否等于更好的适配器”组织。适配器双支图保留输入、冻结与训练边界、旋转位置及独立基线；主图并列Protenix、OpenFold、AtlasFold与Fresh96，未用Factor阳性替换Fresh96主要交互。
 

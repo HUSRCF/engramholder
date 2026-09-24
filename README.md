@@ -2,6 +2,8 @@
 
 **当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v9**，共 **1,518** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
+**作者资料：** [作者与PI对应关系](notes/authors.md)。[作者版入口](author_draft.tex)显示姓名；[匿名投稿入口](iclr2027_conference.tex)保留双盲模式。
+
 **最新完成整合：** [E2结果、统计身份与两份评审落实](reports/e2_completed_review_20260924/interpretation.md)。E2平均旋转收益与差距缩小获支持，只有一个旋转单独建立缩小；E1预测失败保留。已完成的带符号置换及Dev8三节点曲线一并进入正文／附录和v9来源锁。
 
 **适配器图与前轮评审：** [对71370ad评审的回应及已完成控制核对](reports/review_71370ad_response_20260924.md)。新增[适配器双支结构图](figures/construction.pdf)与[统一交互主图](figures/interaction.pdf)，主文保留Fresh96边界。该报告保留先入MD的历史时点；带符号置换及Dev8学习曲线现已进入v9。新Protenix面板仍仅为候选。
