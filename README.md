@@ -4,13 +4,15 @@
 
 **2026-09-24 已完成：** [Fresh96与训练交互变化](reports/fresh96_training_psi_integration_20260924.md)及[单目标OpenFold完整预测](reports/openfold_single_reproduction_20260924.md)。Fresh96的核心交互未建立；结果已进入摘要与主文。旧449数值不变，新增83项；[可执行预测入口](reproducibility/openfold_single/README.md)包含发布适配器、FASTA、CIF评分与环境说明。
 
-**机制小试首轮审阅：** [共享重建与OpenFold几何／传播](reports/shared_reconstruction_openfold_review_20260924.md)。六组共享重建已完成，留出相对平方误差约0.82–0.84，属于优于零输出的部分重建；OpenFold两链六次完整推理的几何与传播记录已复核。Protenix、AtlasFold本轮观测仍按作者消息记为进行中。新结果仅进入MD审阅，未写入正文或v6数值锁。
+**2026-09-24收尾证据：** [DiamondHill A66、Protenix Train96四格及三底座观测](reports/diamondhill_final_evidence_review_20260924.md)。A66与G12均完成统一评分；Protenix Train96及Train384／ESM2、ESMC的完整交互有正向区间，Atlas边界保留；几何／传播18/18已齐。新结果先进入MD，尚未纳入正文和v6数值锁。
+
+**机制小试首轮审阅：** [共享重建与OpenFold几何／传播](reports/shared_reconstruction_openfold_review_20260924.md)。六组共享重建留出误差约0.82–0.84，属于优于零输出的部分重建。该文保留当时OpenFold先完成的历史时点，完整三底座更新见上方收尾报告。
 
 **架构分析：** [条件依赖能解释到哪一步](reports/architecture_dependence_analysis_20260924.md)。核对三底座实际路径，纠正Atlas首接口的历史反馈归类，区分局部可达性、下游读取与有限预算学习；该文件保留设计时点，执行结果见上方首轮审阅。
 
 **补充实验设计：** [既有曲线／置换与共享旋转重建计划](reports/architecture_followup_plan_20260924.md)。共享重建已由原线程完成；原设计保留并追加状态，不重复提交既有任务或修改执行锁。
 
-**串行研究候选：** [前瞻预测→补偿自由度／状态干预→跨底座验证](reports/prospective_orientation_series_20260924.md)。首阶段拟用八个全新旋转检验诊断量的预测价值；后续分阶段锁定。设计未提交GPU任务，不能计作已完成结果；本系列主要研究Factor方向代价，不替代Ψ的新确认。
+**串行研究设计与执行衔接：** [前瞻预测→补偿自由度／状态干预→跨底座验证](reports/prospective_orientation_series_20260924.md)。原线程已按独立协议提交E1，E2保留其阶段门槛；本写作轮没有提交或修改任务。新系列主要研究Factor方向代价，不替代Ψ的新确认，尚不能计作完成结果。
 
 [执行前评审已落实](reports/architecture_followup_review_response_20260924.md)：384→1536归因区间统一，补零输出参照和幅度／夹角分解，固定完整序列编码与单次旋转约定；不增加拟合任务，不改变既有执行锁。
 
