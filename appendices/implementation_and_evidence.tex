@@ -208,6 +208,18 @@ remain in the historical records; later comparisons do not replace them.
 Unadjusted secondary intervals and limited training-seed coverage should not be
 interpreted as a universal simultaneous confidence guarantee.
 
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{figures/scope.pdf}
+\caption{Scope of native-minus-rotation effects. P: primary comparison on a newly
+locked panel at the time of that study; S: prespecified secondary comparison in
+the original Protenix direction study; F: subsequent observed-panel study or
+extension. The mean-preserving row uses Train24/tangent/384. All intervals are
+conditional target-bootstrap intervals; rows share targets and are not
+independent replications. Null and negative conditions are retained. OpenFold labels distinguish ESM2
+from ESMC features, including subsequent Protenix/AtlasFold comparisons; this figure shows $\Delta_F$, not $\Psi$.}
+\label{fig:scope}
+\end{figure}
+
 \section{Complete direction and comparator results}
 \label{app:complete_results}
 Table~\ref{tab:scope_full} provides the exact direction contrasts underlying
@@ -235,8 +247,8 @@ Their paired interaction is \result{pt_scale}; the native training-set gain is
 only \result{pt_scale_native} and is not positive for all training seeds.
 The tangent Train24 result does not enter this interaction.
 
-The main-metric OpenFold four-cell interaction has positive seed and rotation
-marginals on both panels, with 8/9 and 7/9 positive crossed cells. AtlasFold's
+The original OpenFold Train96/ESM2 interaction has positive seed and rotation
+marginals on both panels, with 8/9 and 7/9 positive crossed cells. AtlasFold's original ESM2
 native--rotation crossed cells are positive in only 3/9 and 1/9 cases. These
 summaries and target distributions test dependence on individual instances;
 they neither remove selection bias nor establish family independence.
@@ -270,6 +282,7 @@ These results establish competitive performance under the shared recipe;
 they do not estimate a separately tuned generic head's performance limit.
 This matched-G+ follow-up did not include rotated-G+ fits, so these comparisons
 alone do not estimate the Protenix parameterization-by-rotation interaction $\Psi$.
+The subsequent complete controls are reported in Appendix~\ref{app:dh_fourcells}.
 
 \section{Local compatibility and shared-transfer diagnostics}
 \label{app:mechanisms}
@@ -550,6 +563,137 @@ Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \begin{tabular}{lllrr}\toprule
 Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/esmc_A_tm_contrasts}
+\end{tabular}\end{table}
+
+\section{Completed Protenix and AtlasFold four-cell follow-ups}
+\label{app:dh_fourcells}
+The Protenix Train96 follow-up adds three Native G+ and nine rotated G+ fits,
+reusing the 12 fixed Full Factor models. All 12 new fits use 1536 updates,
+learning rate $5\times10^{-5}$, weight decay $10^{-4}$, global clipping at 1,
+the original seeds and rotations, and frozen ESM2 layer-12 features.
+Train96 and Dev8 manifest hashes match the OpenFold experiment. This matches
+training membership and update count, not backbone loss or computation cost.
+The 1,152 new Confirm96-B predictions complete the 2,400-record factorial plus
+query baseline; no Train96 Length48 factorial is added. Its primary is the
+direct pair-lDDT interaction on the already observed Confirm96-B panel.
+
+The separate Protenix/AtlasFold feature study (A66) adds 33 fits per backbone:
+nine ESM2 rotated-G+ fits and the complete 24-fit ESMC factorial. Protenix
+uses Train384 and AtlasFold Train96, both at 1536 updates under the retained
+backbone-specific recipe. Atlas uses learning rate $10^{-4}$ and decay 0.01;
+Protenix retains $5\times10^{-5}$ and $10^{-4}$. All 9,504 new predictions
+complete, combined with 4,608 historical score records. No new quality-based
+hyperparameter search is introduced. Atlas's native AtlasLM-3B is retained;
+ESMC replaces only the added adapter features. As in OpenFold, this changes
+480-dimensional FP32 ESM2 features to 1152-dimensional BF16 ESMC features and
+adds 86,016 input-projection weights per head. These are not pure PLM-size or
+equal-parameter comparisons.
+
+\paragraph{Endpoint identity and uncertainty.}
+For each A66 backbone, the prespecified primary is ESMC Factor--Rotated on
+Confirm96-B. The new $\Psi$, G+ rotation effects, Native--G+, cross-feature
+contrasts, Length48 and supplementary metrics retain follow-up roles.
+Completing four cells does not give all contrasts a new confirmatory identity.
+A66 did not prespecify OpenFold's three-test Holm family; that correction is
+not transferred here. All reported A66 intervals are unadjusted for joint
+multiplicity. Both studies resample whole target records 20,000 times with
+seed 20260926. A66 Length48 resamples 16 targets within each of its three fixed
+length strata. Historical point estimates are unchanged; re-estimated
+intervals can differ from older tables using another seed or resampling rule.
+Neither study replaces Fresh96's unestablished primary interaction.
+
+\paragraph{Instance consistency.}
+Protenix Train96 pair-lDDT $\Psi$ is positive for all three seed and rotation
+marginals, all nine crossed cells and 61/96 targets. Its residue-lDDT and
+TM-score interaction intervals are also positive; the third TM-score seed
+marginal is negative, so main-metric consistency is not generalized to every
+metric. Protenix Train384 has positive pair-lDDT interaction marginals for
+both feature sources and panels. Atlas's complete matrices do not establish
+the interaction. A tiny unadjusted positive Atlas ESMC Confirm96-B G+ rotation
+interval is retained; this is not a Factor benefit or an interaction.
+Supplementary metrics reuse the same structures, not independent samples.
+
+\paragraph{Backend and engineering provenance.}
+Protenix's ESMC four cells run on MI250. Historical ESM2 Length48 Factor/query
+predictions run on H100, while its G+ cells run on MI250. Atlas's ESMC seed
+20260925 has all eight models on H100; the other two ESMC seeds and all ESM2
+models run on MI250. Backend is therefore confounded with that seed, and its
+ESMC--ESM2 comparison changes backend too. This is not an independent hardware
+replication. The execution archive retains Atlas gradient-assertion failures,
+checkpoint recovery, hidden-layer saturation events, the amended diagnostic
+policy and H100 Torch API compatibility edits. Final matrix completion is not
+claimed to mean an absence of engineering failures. No targets, model arms,
+final checkpoints, activations or learning rates were selected by these scores.
+
+The paper verifier reconstructs all 216 A66 and 18 Train96 metric/contrast
+combinations from 14,112 and 2,400 score records respectively, including
+pairing, bootstrap intervals and seed/rotation marginals. It neither reruns
+folding nor rescores CIFs. Source hashes, original locks and the scoring
+amendment are retained; this verification does not certify an end-to-end
+retraining reproduction.
+
+\begin{table}[htbp]\centering\scriptsize
+\caption{Pair-lDDT interaction marginals. Each entry averages whole targets and
+the other model index; marginal signs are descriptive, not independent tests.
+Seeds and rotations retain their fixed order.}
+\begin{tabular}{lllll}\toprule
+Predictor/Train & Panel & Features & Three seed means & Three rotation means \\\midrule
+\input{generated/dh_interaction_marginals}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{Protenix completed factorials: pair-lDDT contrasts.
+$\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
+Endpoint roles and unadjusted intervals are as specified above.}
+\begin{tabular}{lllrr}\toprule
+Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_protenix_pair_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{Protenix completed factorials: residue-average C$\alpha$-lDDT contrasts.
+$\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
+Endpoint roles and unadjusted intervals are as specified above.}
+\begin{tabular}{lllrr}\toprule
+Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_protenix_residue_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{Protenix completed factorials: fixed-correspondence TM-score contrasts.
+$\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
+Endpoint roles and unadjusted intervals are as specified above.}
+\begin{tabular}{lllrr}\toprule
+Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_protenix_tm_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{AtlasFold completed factorials: pair-lDDT contrasts.
+$\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
+Endpoint roles and unadjusted intervals are as specified above.}
+\begin{tabular}{lllrr}\toprule
+Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_atlasfold_pair_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{AtlasFold completed factorials: residue-average C$\alpha$-lDDT contrasts.
+$\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
+Endpoint roles and unadjusted intervals are as specified above.}
+\begin{tabular}{lllrr}\toprule
+Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_atlasfold_residue_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{AtlasFold completed factorials: fixed-correspondence TM-score contrasts.
+$\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
+Endpoint roles and unadjusted intervals are as specified above.}
+\begin{tabular}{lllrr}\toprule
+Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_atlasfold_tm_contrasts}
+\end{tabular}\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{A66 direct ESMC-minus-ESM2 changes, pair-lDDT. These paired follow-up
+intervals are unadjusted; backend qualifications above also apply.}
+\begin{tabular}{lllrr}\toprule
+Predictor & Panel & Contrast & Difference & 95\% interval \\\midrule
+\input{generated/dh_feature_changes}
 \end{tabular}\end{table}
 
 \section{Paired competitiveness comparisons}

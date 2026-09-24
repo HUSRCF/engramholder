@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "new_predictions": 9504,
+  "total_records": 14112,
+  "new_failures": 0,
+  "analysis_sha256": "4c799349fd051b098d50f7d445fd6ab5a7bd7727d4af4b122f62ffc550ca6a6d",
+  "verification_sha256": "03b4cf377c3c7ee4daf02ffe2d0a92213f89f72f939df805d3d0711b18109d7a",
+  "deployment_diagnostic_sha256": "58d4c35392989a8952b2dec2bcf6fbc7157798e61a4facce59a976e515db2ee8",
+  "records_sha256": "046deb04998370da208a2c553047f37be3074b77fb08dd99d49d7ca753c34585",
+  "report_sha256": "86e55c52e2bf39d1047a9cf222eedca24cc41e9bc1c5c5c33de1c5a9413fcab3",
+  "completed_utc": "2026-09-23T18:03:13.425992+00:00"
+}

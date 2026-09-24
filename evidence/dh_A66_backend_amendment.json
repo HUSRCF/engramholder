@@ -1,0 +1,24 @@
+{
+  "time": 1790161503.4522474,
+  "parent_deployment_lock_sha256": "b8706c0d1eee5ac1498781b3d4a4b2612eac3339e9e188389213719f52d4055b",
+  "final_ownership_sha256": "80233d500f8ea4d59584e5c4b08db4422f8cbe3991875bed816919a2ef18d0aa",
+  "formal_job": "645571_[3-10]",
+  "excluded_attempts": [
+    {
+      "name": "E_generic_plus_r20261001_s20260925",
+      "last_step": 0,
+      "reason": "backend pairing correction; abandoned partial CUDA attempt, official fit remains DH"
+    },
+    {
+      "name": "E_generic_plus_r20261002_s20260925",
+      "last_step": 0,
+      "reason": "backend pairing correction; abandoned partial CUDA attempt, official fit remains DH"
+    },
+    {
+      "name": "E_generic_plus_r20261003_s20260925",
+      "last_step": 0,
+      "reason": "backend pairing correction; abandoned partial CUDA attempt, official fit remains DH"
+    }
+  ],
+  "not_scientific_selection": true
+}

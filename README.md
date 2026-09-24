@@ -1,12 +1,14 @@
 # EngramFold 证据整理仓库
 
-**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v6**，共 **532** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v7**，共 **1,135** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
-**方法与统计范围修订：** [Atlas anchor分类与A66统计身份](reports/atlas_anchor_statistical_scope_revision_20260924.md)。方法表已区分静态写入、适配历史反馈、当轮LM条件；A66的主要量与未校正后续交互分别记录。主文编译仍为9页；本轮没有导入A66新数值。
+**本轮已正式纳入：** [Protenix／AtlasFold完整四格v7整合](reports/diamondhill_fourcell_integration_20260924.md)。主表统一15行，Fresh96进入交互主图；A66主要终点与未校正后续交互分开。旧532字段及v6锁保持不变。
+
+**历史方法与统计范围修订：** [Atlas anchor分类与A66统计身份](reports/atlas_anchor_statistical_scope_revision_20260924.md)。方法表已区分静态写入、适配历史反馈、当轮LM条件；A66的主要量与未校正后续交互分别记录。主文编译仍为9页；本轮没有导入A66新数值。
 
 **2026-09-24 已完成：** [Fresh96与训练交互变化](reports/fresh96_training_psi_integration_20260924.md)及[单目标OpenFold完整预测](reports/openfold_single_reproduction_20260924.md)。Fresh96的核心交互未建立；结果已进入摘要与主文。旧449数值不变，新增83项；[可执行预测入口](reproducibility/openfold_single/README.md)包含发布适配器、FASTA、CIF评分与环境说明。
 
-**2026-09-24收尾证据：** [DiamondHill A66、Protenix Train96四格及三底座观测](reports/diamondhill_final_evidence_review_20260924.md)。A66与G12均完成统一评分；Protenix Train96及Train384／ESM2、ESMC的完整交互有正向区间，Atlas边界保留；几何／传播18/18已齐。新结果先进入MD，尚未纳入正文和v6数值锁。
+**2026-09-24收尾证据：** [DiamondHill A66、Protenix Train96四格及三底座观测](reports/diamondhill_final_evidence_review_20260924.md)。A66与G12均完成统一评分；Protenix Train96及Train384／ESM2、ESMC的完整交互有正向区间，Atlas边界保留；几何／传播18/18已齐。当时先进入MD；现已将A66及Train96四格纳入v7。几何／传播数字仍是独立报告。
 
 **机制小试首轮审阅：** [共享重建与OpenFold几何／传播](reports/shared_reconstruction_openfold_review_20260924.md)。六组共享重建留出误差约0.82–0.84，属于优于零输出的部分重建。该文保留当时OpenFold先完成的历史时点，完整三底座更新见上方收尾报告。
 
@@ -24,7 +26,7 @@
 
 [历史：A组审阅落实](reports/esmc_review_response_20260923.md)：三套OpenFold交互并列主文，补齐模型引用及ESMC范围图；443数值不变，本轮实测主文9页。
 
-**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。该次整合来源锁为v4（当前v6）；B组及DiamondHill后续矩阵未纳入本稿，此处不判断其实时进度。
+**9月23日 OpenFold A组更新：** [ESMC完整四格及核验报告](reports/openfold_esmc_A_integration_20260923.md)。33组新训练与4,752次预测已完成；绝对质量提高，但ESMC下方向效应与头类型×旋转交互未建立。该次整合来源锁为v4（当前v7）；B组及DiamondHill后续矩阵未纳入本稿，此处不判断其实时进度。
 
 **历史整合记录（2026-09-23）：** 完整推理四格与v4机制边界、近邻定位及复现范围说明已整合；该轮编译记录及视觉检查范围见相应报告。当前版本以顶部状态入口为准。
 
@@ -32,7 +34,7 @@
 - [9月23日稿件更新](reports/full_inference_manuscript_update_20260923.md)与[当前交付边界](reports/submission_priorities_20260924.md)。
 - [最新PDF](build/iclr2027_conference.pdf)（本机构建产物，不随Git上传）；[表图生成脚本](scripts/build_paper_assets.py)与[数值来源映射](generated/cell_sources.json)。
 - [当前章节与写作任务](notes/writing_branch_20260922/skeleton_files.md)：入口 `iclr2027_conference.tex`，正文在 `sections/`，附录在 `appendices/`。
-- [已确认主线与Introduction候选](notes/writing_branch_20260922/structure_and_opening.md)：参数化×方向交互 → 方法构造 → 迁移与边界。
+- [历史主线与Introduction候选](notes/writing_branch_20260922/structure_and_opening.md)：参数化×方向交互 → 方法构造 → 迁移与边界。
 
 - [完整推理机制干预](reports/mechanism_evidence/full_inference_cross_20260922/README.md)：720次同后端四格预测，匹配整体范数后原生来源优势仍在。
 - [机制证据归档：v4](reports/mechanism_evidence/gradient_hpc3_v4_20260920/README.md)：正式协议、逐目标与精简逐条件数据、独立复算，以及后来完成的完整推理干预之历史候选；保留源码哈希差异和数值边界。
@@ -48,4 +50,4 @@
 
 仓库根目录为当前ICLR稿件入口，原模板另行备份。现有 source_*.md 是此前助手草稿的快照，不代表用户已认可其文字或论证。
 
-此处整理不会改变实验配置、统计终点或训练队列。公开写作快照位于 `main`；旧本地分支 `writing/native-update-alignment` 仅为历史。旧草案仅供归档，最终Protenix G+已在MD报告、论文主表与配对比较中完成整合；该次历史整合使用v2来源锁，当前为v6。见[整合记录](reports/protenix_gplus384_manuscript_integration_20260922.md)。
+此处整理不会改变实验配置、统计终点或训练队列。公开写作快照位于 `main`；旧本地分支 `writing/native-update-alignment` 仅为历史。旧草案仅供归档，最终Protenix G+已在MD报告、论文主表与配对比较中完成整合；该次历史整合使用v2来源锁，当前为v7。见[整合记录](reports/protenix_gplus384_manuscript_integration_20260922.md)。

@@ -1,28 +1,24 @@
 \begin{abstract}
-Small adapters modify the representations of a frozen protein structure
-predictor, but comparable update forms need not yield comparable adaptation.
-We study query-anchored factor residuals composed through pretrained native
-operators. Fixed orthogonal controls rotate residual channels; all adapters
-are trained from the same zero-residual function under paired conditions.
-A generic head with explicit factor access and a free output layer provides
-a control whose function class can absorb the rotation. In the OpenFold
-Train96/ESM2-35M follow-up under 1536 AdamW updates on observed targets, rotation sensitivity interacts with head
-parameterization: the difference-in-differences is
-\result{inter_c96_interaction} in C$\alpha$ pair-lDDT on Confirm96-B
-(95\% target-bootstrap interval
-[\result{inter_c96_interactionLo}, \result{inter_c96_interactionHi}]).
-Reusing the fixed models on 96 prospectively locked, sequence-screened targets
-gives \result{fresh_ca_lddt_interaction}
-[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}];
-the central interaction is not established on this new panel.
-Separately locked Protenix studies establish native-direction effects, including
-an advantage of \result{pt_length} beyond the adapters' training-length range.
-Matched-norm interventions retain a learned-source gap without isolating its
-training origin.
-At Train384, neither ESM2-35M nor ESMC-600M establishes this interaction,
-although the ESMC configuration improves structural quality.
-Effects depend on the predictor and training setting, and native factor heads
-are not uniformly superior to generic alternatives. Together, these controls
-identify orientation as a consequential aspect of constrained adaptation,
-without uniquely attributing its effects to expressivity or training dynamics.
+Small adapters modify a frozen protein structure predictor, but comparable
+update forms need not yield comparable adaptation. We study query-anchored
+factor residuals composed through pretrained native operators. Fixed orthogonal
+controls rotate residual channels; all adapters are trained from the same
+zero-residual function under paired conditions. A generic head with explicit
+factor access and a free output layer provides a rotation-closed function-class
+control. Under fixed 1536-update recipes, observed-panel follow-ups establish
+head-by-rotation interactions in OpenFold Train96/ESM2-35M and Protenix
+Train96/ESM2-35M: \result{inter_c96_interaction} and
+\result{p96_pair_interaction} C$\alpha$ pair-lDDT, respectively.
+The fixed OpenFold models give \result{fresh_ca_lddt_interaction}
+[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}]
+on 96 prospectively locked targets, leaving that primary interaction
+unestablished. Protenix Train384 retains direction effects and positive
+follow-up interaction intervals with ESMC-600M; OpenFold Train384 and the tested
+AtlasFold configurations do not establish an interaction. ESMC improves
+Protenix and OpenFold structural scores without establishing a change in their
+direction effects. Separately locked Protenix length transfer and matched-norm
+checks extend the evidence without identifying a training mechanism. These
+controls distinguish adaptation gains, rotation sensitivity and head
+competitiveness: native orientation can matter, but neither guarantees useful
+adaptation nor makes factor heads uniformly superior to generic alternatives.
 \end{abstract}

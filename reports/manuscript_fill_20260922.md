@@ -1,18 +1,22 @@
 # 当前稿件状态（2026-09-24）
 
-此处是写作仓库的唯一当前状态入口，记录**已纳入稿件的证据**，不报告远端队列实时进度。
+此处是写作仓库的唯一当前状态入口，记录已纳入稿件的证据，不报告远端队列实时进度。
 
 | 项目 | 当前状态 |
 |---|---|
-| 稿件版本 | `main`；最新方法文字修订基线 `6744fd7`，见下方Atlas／统计范围修订。包含本状态更新的提交是当前稿件版本；可用 `git log -1 --format=%H -- reports/manuscript_fill_20260922.md` 查询精确提交。 |
-| 活跃来源锁 | [paper_sources.v6.lock.json](../notes/writing_branch_20260922/paper_sources.v6.lock.json)；532 个生成数值字段（旧449项及来源映射未变）。旧锁保留，不覆盖历史记录。 |
-| 已纳入的核心与范围结果 | Protenix 原始 Factor/Generic、原生/旋转、Tiny、Train96/384、Length48、匹配 Train384 G+；OpenFold Train96 与 Train384/ESM2、Train384/ESMC 完整四格；已完成的 AtlasFold 原始适配矩阵与系统参照；Fresh96完整2,400预测及主交互未建立的结果。 |
-| 已纳入的边界与审计 | 完整推理范数交换及局部/共享迁移阴性结果；嵌套数据与成员定义核验；训练预算报告的“1536 步收敛未建立”限制；头内同谱与跨头匹配边界；ESM2 Train384−Train96 的完整交互变化后续分析。 |
-| 已完成、已审阅但尚未纳入正文 | DiamondHill A66、Protenix Train96 G12完整四格、六组共享重建、三底座18次几何／传播；见下方新MD。正式数值锁和表图尚未加入这些新增结果。 |
-| 其他尚未纳入的独立工作 | B 组、SGDM、曲线／置换与E1–E4前瞻系列。本轮不据任务名称推断其实时完成度；E1提交身份仅按原线程执行凭证记录。 |
-| 最新修改与检查 | [方法／统计范围修订](atlas_anchor_statistical_scope_revision_20260924.md)及[本轮验证](../notes/writing_branch_20260922/draft_validation.anchor_scope.json)。此前v6数值整合与单目标复现见[Fresh96整合](fresh96_training_psi_integration_20260924.md)、[预测复现](openfold_single_reproduction_20260924.md)。 |
-| 匿名材料范围 | 本地 `build/anonymous_artifact_v14.zip`为前次构建，包含分析、算子检查及单目标OpenFold预测入口。本轮方法文字修订未重打包；该旧包不是当前源稿的逐字副本。 |
-| 复现交付范围 | 一个固定OpenFold模型、一个184残基目标，在新隔离Python环境完成“序列→重算PLM特征→完整CIF→主指标评分”。全矩阵重生成、完整重新训练及跨硬件保证仍未建立；本轮不是全稿视觉验收。 |
+| 稿件版本 | `main`；本轮整合基线 `ff1ff64`。包含本入口的最新提交即当前稿件版本。 |
+| 活跃来源锁 | [paper_sources.v7.lock.json](../notes/writing_branch_20260922/paper_sources.v7.lock.json)，61份输入、1,135字段。v6的46份输入及532字段和来源映射不变；旧锁保留。 |
+| 已纳入结果 | 原Protenix方向／长度／匹配G+；新增Train96完整四格和Train384 ESM2/ESMC完整四格；OpenFold Train96、Train384两PLM完整四格；AtlasFold两PLM完整四格；Fresh96主要交互未建立；范数干预与既有机制边界。 |
+| 统计身份 | A66每底座主要量为Confirm96-B ESMC Factor−Rotated；其Ψ等为未统一校正的后续比较。Protenix Train96另以Ψ为主要量，仍是旧面板后续研究。不能替代Fresh96。 |
+| 已完成但独立保留 | 六组共享重建、三底座18次几何／传播；数字尚未纳入正文。接口反馈分类已进入方法。 |
+| 其他独立工作 | B组、SGDM、曲线／置换、E1–E4。本轮未读取其新科学结果、改动协议或查询任务实时进度。 |
+| 本轮检查 | [正式整合报告](diamondhill_fourcell_integration_20260924.md)；[验证JSON](../notes/writing_branch_20260922/draft_validation.diamondhill_v7.json)。主文9页、全文29页，无未定义引用／overfull；修改页面视觉核查，非全稿人工验收。 |
+| 匿名材料 | 本地 `build/anonymous_artifact_v16.zip`；保留v14/v15历史包。数值重建、匿名字符串检查、CPU测试及算子检查通过。 |
+| 复现范围 | 一个固定OpenFold模型／目标已完成隔离环境FASTA→特征→完整CIF→主指标评分；本次新增验证从保存的分数开始，全矩阵重预测／训练复现未建立。 |
+
+当前主表15行明确列Query/F/RF/G+/RG+；交互表同时展示8种配置，Protenix Train96 Length48未运行。Fresh96与旧面板一起进入交互主图，未把其Factor阳性替代主要Ψ。
+
+## 同日较早历史记录（其“尚未导入／v6”描述已被上述v7取代）
 
 v6结果整合已导入锁定Fresh96完整结果、明确标注的后续交互变化，并完成单目标工程复现；后续方法文字修订不改变这套数值来源。
 

@@ -1,0 +1,58 @@
+{
+  "evidence/dh_A66_summary.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/analysis.json",
+    "sha256": "4c799349fd051b098d50f7d445fd6ab5a7bd7727d4af4b122f62ffc550ca6a6d"
+  },
+  "evidence/dh_A66_records.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/combined_metric_records.json",
+    "sha256": "046deb04998370da208a2c553047f37be3074b77fb08dd99d49d7ca753c34585"
+  },
+  "evidence/dh_A66_scoring_lock.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/scoring_lock.json",
+    "sha256": "5ad40825d04961f640b8989534bf6d4e617a6858ff0da5622cf8e5253b22d7ea"
+  },
+  "evidence/dh_A66_execution_lock.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/remote_v3/execution_lock.json",
+    "sha256": "dff9f9da14da39100e45d65b1449910c25370e563556bedf8f82e343ea974913"
+  },
+  "evidence/dh_A66_completion.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/complete.json",
+    "sha256": "1ba6f6c9a3e2d789adcbbff0de4bb05e47725774360cd778dc3f3ed2560e2bed"
+  },
+  "evidence/dh_A66_source_verification.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/independent_verification.json",
+    "sha256": "03b4cf377c3c7ee4daf02ffe2d0a92213f89f72f939df805d3d0711b18109d7a"
+  },
+  "evidence/dh_A66_backend_amendment.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/hpc_assignment_amendment.json",
+    "sha256": "27332168905fe3d315fb9f97b73df57a8a33655d0638ccdecdd6aa59c0561041"
+  },
+  "evidence/dh_A66_deployment_audit.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/analysis_20260924/deployment_diagnostic_audit.json",
+    "sha256": "58d4c35392989a8952b2dec2bcf6fbc7157798e61a4facce59a976e515db2ee8"
+  },
+  "evidence/pt96_fourcell_summary.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_train96_gplus_20260923/analysis_20260924/analysis.json",
+    "sha256": "88484b347c64cf2d46060bce0c7623d42680d4bc2d6ad66799d53a88a28b9e5a"
+  },
+  "evidence/pt96_fourcell_records.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_train96_gplus_20260923/analysis_20260924/metric_records.json",
+    "sha256": "c67857a675f0c108a1c895cb8d98c77ab9167fb75cbc778914380b97b52584e3"
+  },
+  "evidence/pt96_fourcell_scoring_lock.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_train96_gplus_20260923/analysis_20260924/prelock.json",
+    "sha256": "68fd4f845e6190783ccea2f1425affaaf28f455350a5a865c987f6652679f3ad"
+  },
+  "evidence/pt96_fourcell_execution_lock.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_train96_gplus_20260923/runtime_archive/execution_lock.json",
+    "sha256": "c8b5a964f30dc16ce8346e29f209cf19790ef2354095adc4252653d5d4453ea0"
+  },
+  "evidence/pt96_fourcell_completion.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_train96_gplus_20260923/analysis_20260924/complete.json",
+    "sha256": "f9bdf1f98cb3f5a12331eb21d9f1072dafb8e0db0d597fce4dbaa38aa3a80e08"
+  },
+  "evidence/pt96_fourcell_scoring_amendment.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_train96_gplus_20260923/analysis_20260924/scoring_amendment.json",
+    "sha256": "8fc00a10061a23f03b9e976828feeea47e2eec19fb2ce46a26a526fe14dbce3a"
+  }
+}

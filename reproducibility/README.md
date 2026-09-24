@@ -5,8 +5,13 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v6 input lock contains
-532 generated numerical fields, retaining the old 449 fields unchanged. It also
+full-inference source/norm cells and contrasts. The active v7 input lock contains
+1,135 generated numerical fields, retaining all 532 v6 fields unchanged.
+It additionally reconstructs 216 A66 and 18 Protenix Train96 contrasts from
+14,112 and 2,400 score records, including target bootstrap and model marginals.
+A66 prespecifies ESMC Factor-minus-Rotated on Confirm96-B per backbone; its
+interactions and other follow-ups have unadjusted intervals. These old-panel
+results do not replace Fresh96. It also
 verifies all 2,400 Fresh96 score records and three-metric contrasts, plus the
 post-hoc Train384-minus-Train96 change of the full interaction on both panels.
 Fresh96 does not establish its sole primary interaction; its positive Factor

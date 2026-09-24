@@ -1,0 +1,6 @@
+{
+  "time": 1790186859.7741892,
+  "reason": "Require checkpoint lock entry for every non-query arm; no metric/target/statistical change",
+  "predecessor_prelock_sha256": "10467dc2a8eab60558b74dcc89ab86dfb8f36c22c1f2fad642721ac0f3fa6a1c",
+  "scoring_started": false
+}

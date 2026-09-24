@@ -5,8 +5,7 @@ We freeze Protenix-Mini/Tiny default checkpoints, official AF2
 \texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with native
 AtlasLM-3B retained. Folding inputs exclude evaluation homologs, templates and
 target structures. Native/Rotated/G+ share frozen ESM2-35M features
-\citep{lin2023evolutionary} (480 channels, layer 12), except in the OpenFold
-feature-substitution study, which uses frozen ESMC-600M final-layer features
+\citep{lin2023evolutionary} (480 channels, layer 12), or frozen ESMC-600M final-layer features
 \citep{candido2026language} (1152 channels; Section~\ref{sec:esmc}).
 Unadapted baselines lack these added features: gains over baseline combine
 feature access and adaptation; Native--Rotated isolates direction more closely.
@@ -38,7 +37,7 @@ and Train384/1536 test larger sets at a fixed update budget. OpenFold uses Full
 Train96 and Train384, each for 1536 updates; AtlasFold uses Train96/1536.
 Within each recipe, heads share data order, three training seeds, random-condition
 rules and optimizer settings. Each of three fixed rotations uses all three seeds;
-G+ has three seeds, with nine rotated fits added in the OpenFold Train96 extension.
+G+ also has three native and nine rotated fits in each completed four-cell setting.
 We evaluate the fixed final checkpoint and one inference sample, without
 target-label selection or cropping. Native task losses backpropagate through
 the final recycle.
@@ -57,10 +56,12 @@ training range of 152--383. The original length study locked targets and
 configurations before new structure scores. Later OpenFold, AtlasFold and G+
 studies reuse observed panels. The original OpenFold Train96/ESM2 four-cell
 follow-up fixes the Confirm96-B interaction as primary, not the project's initial endpoint.
-The matched Protenix Train384 G+ follow-up fixes Confirm96-B Native--G+ as
-primary and Length48 as secondary; it adds no rotated G+ fits. A separate
-24-target observed-panel study fixes the full-inference direction-source effect
-as primary (Section~\ref{sec:norm_cross}); it adds no training.
+The later Protenix Train96 four-cell study also fixes Confirm96-B $\Psi$ as
+primary. The Protenix/AtlasFold feature study (A66) instead prespecifies ESMC
+Factor--Rotated on Confirm96-B for each backbone; its $\Psi$, Native--G+ and
+other contrasts are follow-ups, not additional confirmatory primary endpoints.
+The earlier matched-G+ and norm-exchange studies retain their own endpoint roles
+(Appendices~\ref{app:protenix_gplus} and~\ref{app:norm_cross}).
 Train24 $\subset$ Train96 $\subset$ Train384; Train384 has no target-ID
 overlap with Dev8 or either confirmation panel. The inherited Train24/Dev8
 are not restricted by the new-candidate release cutoff. Sequence screening and

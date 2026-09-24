@@ -1,5 +1,7 @@
 # ICLR写作分支：结构建议与开篇候选
 
+> 后续状态：A66及Protenix Train96完整四格现已进入正式稿与v7来源锁，见[当前稿件状态](../../reports/manuscript_fill_20260922.md)。下文保留原审阅／设计时点的缺项说明，不是当前完成清单。
+
 2026-09-22，v2。用户已确认贡献优先级：参数化×方向交互 → query-anchored方法构造 → 迁移范围与未成立条件。中心主张采用用户原句；以下组织和英文文字仍是待审阅草案。v1已归档为structure_and_opening_v1_before_claim_alignment.md。本分支只修改写作文件，不修改主线训练、历史报告、README工作状态或根LaTeX模板，不提交/推送。
 
 已读取：AGENTS.md、notes/workflow.md、reports/evidence_review.md、math_contract.md、results_update_20260922.md、reviewer_priorities_20260922.md、protenix_gplus384_status_20260922.md。数值来自这些已有核验报告，本分支没有重新评分CIF或查询远端训练。旧数学笔记中的Atlas“待完成”已被9月22日结果更新取代。匹配Protenix Train384 G+正在训练，无最终分数，不预填。

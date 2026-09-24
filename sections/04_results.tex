@@ -12,7 +12,7 @@ The Length48 secondary comparison is also positive:
 \result{inter_l48_interaction}
 [\result{inter_l48_interactionLo}, \result{inter_l48_interactionHi}].
 These are differences-in-differences on a 0--1 score scale, not relative
-percentage improvements. The completed Train384 four-cell controls do not
+percentage improvements. The completed OpenFold Train384 four-cell controls do not
 establish the interaction with either ESM2 or ESMC
 (Table~\ref{tab:interaction_scope}); the positive finding is recipe-specific.
 
@@ -46,13 +46,11 @@ replace this endpoint. Supplementary interaction intervals also include zero.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
-\caption{OpenFold Train96/ESM2-35M four-cell experiment. Left: absolute mean scores
-(F: factor, RF: rotated factor, RG+: rotated G+). Right: paired factor and G+
-direction effects and their direct interaction $\Psi$, with 95\% target-bootstrap
-intervals conditional on fitted models. Both panels were previously observed;
-Confirm96-B is the primary endpoint of this follow-up. Completed Train384
-interactions for both PLMs are reported in Table~\ref{tab:interaction_scope};
-the separate Fresh96 evaluation is reported in the text.}
+\caption{OpenFold Train96/ESM2 four-cell experiment: absolute means and paired
+Factor/G+ direction effects and interaction $\Psi$. Confirm96-B and Length48
+were already observed; Fresh96 is the subsequent fixed-model new-target test,
+whose primary $\Psi$ interval includes zero. Intervals condition on fitted
+models. F/RF: Native/Rotated Factor; G+/RG+: Native/Rotated G+.}
 \label{fig:interaction}
 \end{figure}
 
@@ -69,12 +67,36 @@ to a second checkpoint within the same family.
 A mean-preserving orthogonal control, $Ru=u$ for the all-ones unit vector $u$,
 also underperforms native updates: \result{pt_mean}
 [\result{pt_meanLo}, \result{pt_meanHi}]. Preserving this channel direction does not remove the effect or isolate
-all downstream normalization. Figure~\ref{fig:scope} summarizes these Factor
-contrasts; they are not additional Factor--G+ rotation interactions.
+all downstream normalization. The original scope comparisons are retained in
+Appendix Figure~\ref{fig:scope}.
+
+The completed Train96/Full follow-up adds three G+ and nine rotated-G+ fits,
+matching the training/development manifests and 1536-update budget of the
+OpenFold comparison, with Protenix's own fixed recipe. On Confirm96-B,
+$\Delta_F=\result{p96_pair_factor_rotation}$ and
+$\Delta_{G+}=\result{p96_pair_gplus_rotation}$ give
+$\Psi=\result{p96_pair_interaction}$
+[\result{p96_pair_interactionLo}, \result{p96_pair_interactionHi}].
+All three seed and rotation marginals are positive; 61/96 target interactions
+are positive. This extends observed-panel interaction support to a second
+predictor, without providing a new-target confirmation.
+
+The Train384 feature study completes both ESM2 and ESMC four cells
+(Tables~\ref{tab:coverage}--\ref{tab:interaction_scope}). Its prespecified
+Confirm96-B ESMC Factor contrast is \result{dh_protenix_c96_c_pair_factor_rotation}
+[\result{dh_protenix_c96_c_pair_factor_rotationLo}, \result{dh_protenix_c96_c_pair_factor_rotationHi}].
+The follow-up $\Psi$ is \result{dh_protenix_c96_c_pair_interaction}
+[\result{dh_protenix_c96_c_pair_interactionLo}, \result{dh_protenix_c96_c_pair_interactionHi}];
+Length48 gives \result{dh_protenix_l48_c_pair_interaction}
+[\result{dh_protenix_l48_c_pair_interactionLo}, \result{dh_protenix_l48_c_pair_interactionHi}].
+ESM2 interactions also have positive intervals. ESMC G+ itself has positive
+rotation contrasts (\result{dh_protenix_c96_c_pair_gplus_rotation}/\result{dh_protenix_l48_c_pair_gplus_rotation});
+function-class closure does not ensure equivalent finite-budget training.
+The direct interactions establish that Factor's differences are larger here.
 
 \subsection{Fixed adapters transfer beyond their adaptation-training lengths}
 \label{sec:length}
-Without further training, the fixed Train384 Full adapters retain an advantage
+Without further training, the original ESM2 Train384 Full adapters retain an advantage
 on Length48 of \result{pt_length} [\result{pt_lengthLo}, \result{pt_lengthHi}],
 with 41/48 positive targets. Native and rotated means are
 \result{pt384_l48_native} and \result{pt384_l48_rotated}, both above the
@@ -87,71 +109,54 @@ or exclusion from backbone/PLM pretraining.
 Official Mini-ESM scores \result{pt384_l48_official} on the same panel, leaving
 a substantial quality gap rather than establishing a competitive replacement.
 
-\begin{figure}[t]
-\centering\includegraphics[width=\linewidth]{figures/scope.pdf}
-\caption{Scope of native-minus-rotation effects. P: primary comparison on a newly
-locked panel at the time of that study; S: prespecified secondary comparison in
-the original Protenix direction study; F: subsequent observed-panel study or
-extension. The mean-preserving row uses Train24/tangent/384. All intervals are
-conditional target-bootstrap intervals; rows share targets and are not
-independent replications. Null and negative conditions are retained. OpenFold labels distinguish ESM2
-from ESMC features; this figure shows $\Delta_F$, not $\Psi$.}
-\label{fig:scope}
-\end{figure}
-
-\subsection{Feature substitution improves scores without establishing an interaction}
+\subsection{Feature substitution improves quality without a resolved change in sensitivity}
 \label{sec:esmc}
-The OpenFold ESMC feature-substitution study (Stage A) completes the Train384
-four-cell comparison for ESM2-35M
-and repeats it with frozen ESMC-600M final-layer features. It adds 33 fits and
-4,752 predictions, all successful, while retaining the final 1536-update rule
-and common AdamW recipe. Both panels are observed follow-ups.
-ESMC raises Native's mean score by \result{a_c96_native_gain} on Confirm96-B
-and \result{a_l48_native_gain} on Length48; G+ improves by
-\result{a_c96_gplus_gain} and \result{a_l48_gplus_gain}, respectively.
-Table~\ref{tab:esmc} reports the complete four cells and the unchanged baseline.
+OpenFold's feature study adds 33 fits and 4,752 predictions; the Protenix/AtlasFold
+study adds 66 fits and 9,504 predictions. All predictions complete successfully.
+Each retains its original final-1536-update rule, common optimizer recipe and
+observed panels. Table~\ref{tab:coverage} reports all completed four cells and
+baselines; the studies' endpoint identities remain separate.
+
+ESMC raises Protenix Native scores from
+\result{dh_protenix_c96_e_native}/\result{dh_protenix_l48_e_native} to
+\result{dh_protenix_c96_c_native}/\result{dh_protenix_l48_c_native}
+on Confirm96-B/Length48. G+ also improves. OpenFold Native improves by
+\result{a_c96_native_gain}/\result{a_l48_native_gain}, and G+ by
+\result{a_c96_gplus_gain}/\result{a_l48_gplus_gain}.
+Yet direct ESMC--ESM2 changes in $\Delta_F$ and $\Psi$ have intervals including
+zero for both predictors. Protenix retains positive interaction intervals;
+OpenFold establishes them with neither Train384 feature source. Higher
+structural quality therefore need not coincide with an established change in
+rotation sensitivity. The substitution changes PLM family, feature width,
+cache precision and input-projection size together; it does not isolate model
+size or test intermediate-layer or multilayer features.
 
 \begin{table}[t]
-\caption{OpenFold Train384/1536 feature-substitution study: absolute pair-lDDT means under each
-adapter feature source. F/RF are Native/Rotated Factor; G+/RG+ are G+/Rotated G+.
-The query-only baseline has no added adapter PLM. Historical ESM2 F/RF/G+ and
-query predictions are reused; the other cells are newly trained and evaluated.}
-\label{tab:esmc}\centering\footnotesize
-\begin{tabular}{llrrrrr}\toprule
-Panel & Features & Query & F & RF & G+ & RG+ \\\midrule
-\input{generated/esmc_A_means}
+\caption{Complete same-feature four cells and unadapted baselines: C$\alpha$
+pair-lDDT means, all at 1536 updates. The recipe includes training-set size.
+F/G+ average three seeds; RF/RG+ average three seeds and three rotations.
+Query lacks the added adapter PLM; Atlas retains its native AtlasLM-3B.
+ESM2/ESMC denote the added features. Historical cells are reused; all displayed
+cells are complete. Protenix Train96 Length48 was not run.}
+\label{tab:coverage}\label{tab:esmc}\centering\footnotesize
+\begin{tabular}{lllrrrrr}\toprule
+Predictor/Train & Panel & Features & Query & F & RF & G+ & RG+ \\\midrule
+\input{generated/complete_fourcell_means}
 \end{tabular}
 \end{table}
 
-The ESMC
-Native--Rotated primary contrast is \result{a_c96_c_ca_lddt_factor_rotation}
-[\result{a_c96_c_ca_lddt_factor_rotationLo}, \result{a_c96_c_ca_lddt_factor_rotationHi}]
-on Confirm96-B, and the secondary Length48 contrast is
-\result{a_l48_c_ca_lddt_factor_rotation}
-[\result{a_l48_c_ca_lddt_factor_rotationLo}, \result{a_l48_c_ca_lddt_factor_rotationHi}].
-Both intervals include zero, as do the ESMC interactions and their direct
-changes relative to ESM2 (Appendix~\ref{app:esmc}); G+ has the higher mean.
-This substitution
-changes PLM family, feature width, cache precision and trainable input-projection
-size together; it neither isolates a
-model-size effect nor tests intermediate-layer or multilayer features.
-
-Train384/ESM2 also does not establish an interaction
-(Table~\ref{tab:interaction_scope}); the positive observed-panel result concerns
-Train96. These comparisons cannot attribute the unestablished interaction to ESMC.
-The training-scale contrasts below distinguish changes in $\Delta_F$ from
-the subsequent direct analysis of $\Psi$.
-
 \begin{table}[t]
-\caption{Completed OpenFold head-by-rotation interactions $\Psi$, with 95\%
-target-bootstrap intervals conditional on fitted models. All rows use 1536
-updates on observed panels. Train96 retains its original intervals; Train384
-uses the feature-substitution study's bootstrap stream. These are not direct
-tests of differences between rows.}
+\caption{Complete head-by-rotation interactions $\Psi$ on observed panels;
+95\% target-bootstrap intervals condition on fitted models. Confirm96-B $\Psi$
+is primary only in the original OpenFold Train96 and Protenix Train96
+four-cell follow-ups. A66's primary is instead ESMC $\Delta_F$ on Confirm96-B
+per backbone; its $\Psi$ entries are follow-up intervals without joint
+multiplicity correction. Length48 is not new confirmation here. ---: not run.
+These are not direct tests of differences between rows.}
 \label{tab:interaction_scope}\centering\footnotesize
 \begin{tabular}{lll}\toprule
-Training set / features & Confirm96-B & Length48 \\\midrule
-\input{generated/interaction_scope_rows}
+Predictor / training set / features & Confirm96-B & Length48 \\\midrule
+\input{generated/complete_interaction_scope}
 \end{tabular}
 \end{table}
 
@@ -172,7 +177,7 @@ effects and scope are retained in Appendix~\ref{app:norm_cross}.
 \subsection{Competitiveness and limits across predictors}
 \label{sec:limits_results}
 Table~\ref{tab:coverage} places direction effects next to absolute performance
-and the generic comparator. In the matched Protenix Train384 follow-up, Native
+and the generic comparator. In the matched Protenix Train384/ESM2 follow-up, Native
 exceeds G+ by \result{pt384_c96_gdiff}
 [\result{pt384_c96_gdiffLo}, \result{pt384_c96_gdiffHi}] on Confirm96-B and
 \result{pt384_l48_gdiff}
@@ -196,31 +201,19 @@ G+ exceeds the native factor head on the two OpenFold long-chain comparisons;
 Appendix Table~\ref{tab:gplus} gives all paired competitiveness estimates. A direction benefit within
 one constrained family can coexist with a better generic adapter.
 
-\begin{table}[t]
-\caption{Absolute C$\alpha$ pair-lDDT means. All rows use 1536 task updates;
-Protenix/OpenFold use Full. Native and G+ average three seeds; Rotated averages
-three seeds and three rotations. C96-B: Confirm96-B; L48: Length48.
-Unadapted is the query-only baseline for Protenix/OpenFold and retains native
-AtlasLM for AtlasFold; it does not receive the added adapter ESM2 features.
---- indicates no matched experiment.}
-\label{tab:coverage}\centering\footnotesize
-\begin{tabular}{llrrrr}\toprule
-Backbone / recipe & Panel & Unadapted & Native & Rotated & G+ \\\midrule
-\input{generated/main_table_rows}
-\end{tabular}
-\end{table}
-
-AtlasFold's unadapted means are \result{atlas_c96_query_native_plm} and
-\result{atlas_l48_query_native_plm}. Its tested adapters yield little
-native--rotation separation: \result{atlas_c96_direction}
-[\result{atlas_c96_directionLo}, \result{atlas_c96_directionHi}] and
-\result{atlas_l48_direction}
-[\result{atlas_l48_directionLo}, \result{atlas_l48_directionHi}], respectively.
-The configurations establish neither a native-direction benefit nor improved
-adaptation over that baseline. This is a boundary of the tested interface and
-recipe, not evidence that only weak systems can benefit from adaptation.
-
-
+AtlasFold's complete ESM2 and ESMC matrices establish neither useful added
+adaptation nor a Factor direction advantage or interaction. Under ESMC,
+Confirm96-B $\Delta_F=\result{dh_atlas_c96_c_pair_factor_rotation}$
+[\result{dh_atlas_c96_c_pair_factor_rotationLo}, \result{dh_atlas_c96_c_pair_factor_rotationHi}],
+with $\Psi=\result{dh_atlas_c96_c_pair_interaction}$
+[\result{dh_atlas_c96_c_pair_interactionLo}, \result{dh_atlas_c96_c_pair_interactionHi}].
+Length48's $\Psi$ interval also includes zero. Retaining the native AtlasLM
+while adding ESMC does not establish a remedy for this interface. This boundary
+cannot be uniquely attributed to baseline quality or feature redundancy.
+Atlas's ESMC third seed runs on H100 and the other seeds on MI250; the
+cross-feature comparison for that seed changes backend too. Protenix ESMC's
+complete four cells run on MI250, while historical ESM2 Length48 comparisons
+retain their mixed-backend limitation (Appendix~\ref{app:dh_fourcells}).
 
 The fixed-budget Factor contrast, $(N-R)_{384}-(N-R)_{96}$, uses Full and
 1536 updates throughout. It is

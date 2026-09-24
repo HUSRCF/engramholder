@@ -1,0 +1,11 @@
+{
+  "science_execution_lock_sha256": "dff9f9da14da39100e45d65b1449910c25370e563556bedf8f82e343ea974913",
+  "scorer_sha256": "508274844a0e56949801ada71a4253bf0554abe39139a0e322f3d5944898b6fc",
+  "input_audit_sha256": "22cda28c775932cb177b43bbe4b52654a05e63788a12f8997966d07931250f25",
+  "protocol_sha256": "ce44605be63cb753adc132331f14d2f13bcd96c26c49787e865229260a176725",
+  "bootstrap_seed": 20260926,
+  "bootstrap_replicates": 20000,
+  "length48_stratified": true,
+  "multiple_testing_adjusted": false,
+  "scope": "observed follow-up; fixed-fit conditional target intervals; mixed backend provenance retained"
+}

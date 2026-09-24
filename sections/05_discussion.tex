@@ -1,37 +1,41 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-Under the OpenFold Train96/ESM2-35M recipe, a head built through a fixed native
-operator is more rotation-sensitive than a head whose free output layer can
-absorb the transformation. The interaction identifies a parameterization-dependent
-effect on observed panels. The fixed-model Fresh96 evaluation does not establish
-that interaction, limiting its independent target support. It compares two head
-architectures without isolating the fixed decoder,
-function-class constraints or optimization geometry. No inclusion of Factor's
-function class within G+ has been proved. Nor does it imply that the factor
-head is best: matched comparisons favor Native in Protenix and G+ in some
-OpenFold settings. AtlasFold establishes no adaptation gain; its high baseline
-has not been isolated as the cause.
+The complete controls distinguish adaptation gains, within-head direction
+effects and cross-head interactions. Protenix's Train96 follow-up extends
+positive interaction evidence beyond OpenFold, and Train384 retains it with
+both feature sources. These are observed-panel studies: they do not replace
+OpenFold's unestablished Fresh96 primary interaction. OpenFold Train384 and
+AtlasFold further limit generality. The interaction compares whole head
+architectures, without isolating the fixed decoder, function-class constraints
+or optimization geometry. No inclusion of Factor's function class within G+
+has been proved. Matched comparisons favor Native in Protenix and G+ in some
+OpenFold settings; rotation closure alone does not make a head preferable.
 
-In OpenFold, neither Train384 feature condition establishes the interaction, despite higher
-ESMC scores. Direct ESMC--ESM2 changes in $\Delta_F$ and $\Psi$ remain uncertain.
-PLM family, feature width, cache precision and trainable input-projection size
-change together. Neither the score gains nor the lack of an established
-interaction can be attributed to an individual changed component.
+ESMC raises Protenix and OpenFold structural scores, but direct ESMC--ESM2
+changes in $\Delta_F$ and $\Psi$ remain uncertain. PLM family, width, cache
+precision and input-projection size change together, with backend differences
+in specified comparisons. AtlasFold retains its native AtlasLM and establishes
+no useful added adaptation with either feature source. High baseline quality,
+redundant information and downstream use are candidate explanations, not
+isolated causes. Input complementarity, shared rotation-compensation capacity
+and propagation through the frozen predictor are testable moderators; these
+results do not yet validate a rule for predicting an unseen setting.
 
 The norm exchange limits an overall-scale explanation of one Protenix gap,
 without separating learned content, local magnitudes and channel organization.
 Local diagnostics retain their negative boundaries: oracle compatibility did
-not establish a positive association with target-level folding gains, small equal-norm learned directions
-showed no established native advantage, and bounded Train8-to-Dev8 updates
-showed no established mean positive transfer. Their recipes, states, scales
-and endpoints differ from complete inference; the origin of beneficial learned
-residuals remains unresolved (Appendix~\ref{app:mechanisms}).
+not establish a positive association with folding gains, small equal-norm
+learned directions showed no established native advantage, and bounded
+Train8-to-Dev8 updates showed no established mean positive transfer. These
+recipes and endpoints differ from complete inference; beneficial residuals'
+training origin remains unresolved (Appendix~\ref{app:mechanisms}).
 
-Intervals condition on fitted models, excluding full retraining and research-selection
-uncertainty. Convergence at 1536 updates is unestablished. Three seeds and rotations
-cover limited instances; several studies reuse observed targets, and one inference
-sample does not estimate sampling variability. Sequence screening guarantees
-neither family nor pretraining isolation; historical exposure remains incomplete.
-Cross-predictor comparisons also change interfaces, representations and losses.
-Gaps to strong native single-sequence systems limit deployment claims. These
-findings delimit a conditional design factor, not a universal adapter prescription.
+Intervals condition on fitted models, excluding full retraining and
+research-selection uncertainty. Follow-up intervals are not jointly adjusted.
+Convergence at 1536 updates is unestablished. Three seeds and rotations cover
+limited instances; panels are reused and one inference sample does not estimate
+sampling variability. Sequence screening guarantees neither family nor
+pretraining isolation; historical exposure remains incomplete. Cross-predictor
+comparisons also change interfaces, representations and losses. Gaps to strong
+native single-sequence systems limit deployment claims. These findings delimit
+a conditional design factor, not a universal adapter prescription.

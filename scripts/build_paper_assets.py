@@ -27,6 +27,7 @@ SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','lengt
  'protenix_gplus384_historical_confirm96_records','length48_records',
  'protenix_gplus384_collection_audit','protenix_gplus384_execution_lock',
  'full_cross_summary','full_cross_records','full_cross_execution_lock','full_cross_panel','full_cross_completion','full_cross_verification','v4_analysis','v4_e3_analysis','v4_independent_verification','v4_source_hash_audit','openfold_esmc_A_summary','openfold_esmc_A_records','openfold_esmc_A_execution_lock','openfold_esmc_A_scoring_lock','openfold_esmc_A_verification','data_composition_audit','openfold_fresh96_summary','openfold_fresh96_records','openfold_fresh96_complete','openfold_fresh96_execution_lock','openfold_fresh96_model_lock','openfold_fresh96_scoring_lock','openfold_fresh96_reference_manifest','openfold_training_psi_protocol','openfold_followup_analysis']
+SOURCES += ['dh_A66_summary', 'dh_A66_records', 'dh_A66_scoring_lock', 'dh_A66_execution_lock', 'dh_A66_completion', 'dh_A66_source_verification', 'dh_A66_backend_amendment', 'dh_A66_deployment_audit', 'pt96_fourcell_summary', 'pt96_fourcell_records', 'pt96_fourcell_scoring_lock', 'pt96_fourcell_execution_lock', 'pt96_fourcell_completion', 'pt96_fourcell_scoring_amendment', 'length48_manifest']
 CELLS = {}
 DATA = {}
 
@@ -115,7 +116,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v6.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v7.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -123,6 +124,8 @@ def main():
     DATA.update({f:json.loads((ROOT/'evidence'/f'{f}.json').read_text()) for f in SOURCES})
     from verify_openfold_esmc_A import verify
     esmc_audit=verify(ROOT)
+    from verify_diamondhill_fourcells import verify as verify_dh
+    dh_audit=verify_dh(ROOT)
     from analyze_openfold_followups import calculate
     followup_audit=calculate(ROOT)
     assert followup_audit==DATA['openfold_followup_analysis']
@@ -199,7 +202,7 @@ def main():
             ns=[n for n in group_means if re.fullmatch(pattern,n)];assert len(ns)==num,(source_file,pattern,len(ns))
             key=f'pt{size}_c96_{group}';value=np.mean([group_means[n] for n in ns]);CELLS[key]=dict(source=f'evidence/{source_file}.json',field_paths=[['systems',n,'mean_ca_lddt'] for n in ns],operation='mean',value=float(value),formatted=f'{value:.5f}');keys.append(key)
         number(f'pt{size}_c96_query','protenix_direction',['systems','query','mean_ca_lddt'])
-        rows.append((f'Protenix, Train{size}', 'C96-B', [f'pt{size}_c96_query',*keys], r'---' if size==96 else tex('pt384_c96_gplus')))
+        rows.append((f'Protenix, Train{size}', 'C96-B', [f'pt{size}_c96_query',*keys], tex('p96_gplus') if size==96 else tex('pt384_c96_gplus')))
     for group,pattern,n in [('native','n384_full_native_s[0-9]+_u1536',3),('rotated','n384_full_r[0-9]+_s[0-9]+_u1536',9)]:
         pre=['metrics','ca_pair_lddt','absolute_means'];ns=names_matching('length48',pre,pattern,n);mean_systems('pt384_l48_'+group,'length48',pre,ns)
     number('pt384_l48_query','length48',['metrics','ca_pair_lddt','absolute_means','query'])
@@ -335,43 +338,46 @@ def main():
                   '4 x 24; 129--384','Excludes recorded exposure and accepted neighbors',
                   'New for fixed OpenFold Train96 interaction'])
     save_rows('data_composition_rows.tex',table)
+    from diamondhill_paper_assets import build as build_dh
+    build_dh(DATA, number, contrast, tex, save_rows, interval_cell)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
     (OUT/'paired_table_rows.tex').write_text('\n'.join(' & '.join([model,panel,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for model,panel,key in [('Protenix, Train384','C96-B','pt384_c96_gdiff'),('Protenix, Train384','L48','pt384_l48_gdiff'),('OpenFold, Train96','C96-B','of96_c96_gdiff'),('OpenFold, Train96','L48','of96_l48_gdiff'),('OpenFold, Train384','C96-B','of384_c96_gdiff'),('OpenFold, Train384','L48','of384_l48_gdiff'),('AtlasFold, Train96','C96-B','atlas_c96_gdiff'),('AtlasFold, Train96','L48','atlas_l48_gdiff')])+'\n')
     (OUT/'protenix_gplus_supplement_rows.tex').write_text('\n'.join(' & '.join([panel,label,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for panel,short in [('C96-B','c96'),('L48','l48')] for label,suffix in [('Pair-lDDT','gdiff'),('Residue-lDDT','gdiff_residue'),('TM-score','gdiff_tm')] for key in [f'pt384_{short}_{suffix}'])+'\n'+r'\bottomrule'+'\n')
-    scope=[('Protenix Mini: Train24, tangent, 384 / C96-B','pt_tangent','P'),('Protenix Mini: Train24, Full, 384 / C96-B','pt_full24','S'),('Protenix Tiny: Train24, tangent, 384 / C96-B','pt_tiny','F'),('Protenix Mini: mean-preserving R / C96-B','pt_mean','F'),('Protenix Mini: Train96, Full, 1536 / C96-B','pt_full96','F'),('Protenix Mini: Train384, Full, 1536 / C96-B','pt_full384','F'),('Protenix Mini: Train384, Full, 1536 / L48','pt_length','P'),('OpenFold ESM2: Train96, Full, 1536 / C96-B','of96_c96_direction','F'),('OpenFold ESM2: Train96, Full, 1536 / L48','of96_l48_direction','F'),('OpenFold ESM2: Train384, Full, 1536 / C96-B','of384_c96_direction','F'),('OpenFold ESM2: Train384, Full, 1536 / L48','of384_l48_direction','F'),('AtlasFold: Train96, 1536 / C96-B','atlas_c96_direction','F'),('AtlasFold: Train96, 1536 / L48','atlas_l48_direction','F')]
+    scope=[('Protenix Mini: Train24, tangent, 384 / C96-B','pt_tangent','P'),('Protenix Mini: Train24, Full, 384 / C96-B','pt_full24','S'),('Protenix Tiny: Train24, tangent, 384 / C96-B','pt_tiny','F'),('Protenix Mini: mean-preserving R / C96-B','pt_mean','F'),('Protenix Mini: Train96, Full, 1536 / C96-B','pt_full96','F'),('Protenix Mini: Train384, Full, 1536 / C96-B','pt_full384','F'),('Protenix Mini: Train384, Full, 1536 / L48','pt_length','P'),('OpenFold ESM2: Train96, Full, 1536 / C96-B','of96_c96_direction','F'),('OpenFold ESM2: Train96, Full, 1536 / L48','of96_l48_direction','F'),('OpenFold ESM2: Train384, Full, 1536 / C96-B','of384_c96_direction','F'),('OpenFold ESM2: Train384, Full, 1536 / L48','of384_l48_direction','F'),('AtlasFold ESM2: Train96, 1536 / C96-B','atlas_c96_direction','F'),('AtlasFold ESM2: Train96, 1536 / L48','atlas_l48_direction','F')]
     scope[11:11]=[('OpenFold ESMC: Train384, Full, 1536 / C96-B','a_c96_c_ca_lddt_factor_rotation','F'),('OpenFold ESMC: Train384, Full, 1536 / L48','a_l48_c_ca_lddt_factor_rotation','F')]
+    scope += [(f'{label} ESMC: Train{n}, 1536 / {panel}',f'dh_{b}_{sh}_c_pair_factor_rotation','F') for b,label,n in [('protenix','Protenix Mini',384),('atlas','AtlasFold',96)] for sh,panel in [('c96','C96-B'),('l48','L48')]]
     (OUT/'scope_table_rows.tex').write_text('\n'.join(' & '.join([label.replace('_',r'\_'),status,tex(key),r'$['+tex(key+'Lo')+', '+tex(key+'Hi')+']$'])+r' \\' for label,key,status in scope)+'\n')
     for table in ["main_table_rows", "paired_table_rows", "scope_table_rows"]:
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':['pt96_c96_gplus']},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'ps.fonttype':42})
     def val(k):return CELLS[k]['value']
     # Figure 2: absolute means are descriptive, paired intervals are separate.
-    fig,ax=plt.subplots(2,2,figsize=(6.6,3.35),gridspec_kw={'width_ratios':[1,1.25]},layout='constrained')
+    fig,ax=plt.subplots(3,2,figsize=(6.6,4.4),gridspec_kw={'width_ratios':[1,1.25]},layout='constrained')
     cols=['#245a81','#799cb5','#9b5d16','#d4af7b']
-    for j,(s,title) in enumerate([('c96','Train96 / ESM2: Confirm96-B'),('l48','Train96 / ESM2: Length48')]):
+    for j,(s,title) in enumerate([('c96','Observed: Confirm96-B'),('l48','Observed: Length48'),('fresh','New targets: Fresh96')]):
         groups=['factor_native','factor_rotated','gplus_native','gplus_rotated']
-        vs=[val(f'inter_{s}_{g}') for g in groups]
+        vs=([val('fresh_'+g.replace('gplus','generic_plus')) for g in groups] if s=='fresh' else [val(f'inter_{s}_{g}') for g in groups])
         ax[j,0].bar(range(4),vs,color=cols,width=.65)
         for i,v in enumerate(vs):ax[j,0].text(i,v+.009,f'{v:.3f}',ha='center',fontsize=9)
         ax[j,0].tick_params(labelsize=9)
         ax[j,0].set_title(title,fontsize=9)
         ax[j,0].set(xticks=range(4),xticklabels=['F','RF','G+','RG+'],ylim=(0,.57),ylabel='Mean pair-lDDT')
         for i,(k,label) in enumerate([('factor_rotation',r'$\Delta_F$'),('gplus_rotation',r'$\Delta_{G+}$'),('interaction',r'$\Psi$')]):
-            key=f'inter_{s}_{k}';m,lo,hi=val(key),val(key+'Lo'),val(key+'Hi')
+            key=f'fresh_ca_lddt_{k}' if s=='fresh' else f'inter_{s}_{k}';m,lo,hi=val(key),val(key+'Lo'),val(key+'Hi')
             ax[j,1].errorbar(m,2-i,xerr=[[m-lo],[hi-m]],fmt='o' if i<2 else 'D',color='#333333' if i<2 else '#245a81',capsize=3)
             ax[j,1].text(.041,2-i,f'{m:+.5f}',va='center',fontsize=9)
         ax[j,1].axvline(0,color='.6',lw=.7);ax[j,1].set(yticks=[2,1,0],yticklabels=[r'$\Delta_F$',r'$\Delta_{G+}$',r'$\Psi$'],ylim=(-.65,2.65),xlim=(-.014,.057),xticks=[-.01,0,.01,.02,.03],xlabel='Paired difference (95% CI)')
         ax[j,1].tick_params(labelsize=9)
     fig.savefig(FIG/'interaction.pdf');fig.savefig(FIG/'interaction.png',dpi=200);plt.close(fig)
-    fig,ax=plt.subplots(figsize=(6.6,4.65));fig.subplots_adjust(left=.52,right=.98,top=.98,bottom=.12)
+    fig,ax=plt.subplots(figsize=(6.6,5.6));fig.subplots_adjust(left=.52,right=.98,top=.98,bottom=.12)
     for i,(label,k,status) in enumerate(scope):
         y=len(scope)-1-i;m,lo,hi=val(k),val(k+'Lo'),val(k+'Hi')
         color='#245a81' if label.startswith('Protenix') else '#9b5d16' if label.startswith('OpenFold') else '#587b46'
