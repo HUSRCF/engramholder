@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "protocol.md": "9867fb24b35fc2ff5afe42ee5f1a20240e482df600497b4311800f54e1fc5c9d",
+    "execution_lock.json": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+    "prediction_lock.json": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+    "results/e1/results.md": "f28c46689712695c3804239dec0f5440418b0ef36151c57c3bf5d6fa87b6dc03",
+    "results/e1/analysis.json": "58c4bc5e8362c79b9817d769d88ddb7b25fba59eb44cdd9fc2ad103b41d1d233",
+    "results/e1/metric_records.json": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+    "results/e1/complete.json": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+    "operations/scoring_repair_20260924/amendment.json": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3",
+    "operations/scoring_repair_20260924/diagnosis.json": "f8ec590fd4de08d673e2369ecc85ab0e8452cfa62c9ef5ef5729dc946db61e3e",
+    "operations/scoring_repair_20260924/regression.json": "acd3545aabf0a6ea4a2b0dec6a2316185da31294fe838e0e13c8d4d8930edf27",
+    "e2_execution_lock.json": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d"
+  },
+  "records": 2688,
+  "main_rotation_tests": {
+    "X": {
+      "rho": 0.023809523809523808,
+      "p_one_sided": 0.48839285714285713,
+      "permutations": 40320
+    },
+    "D": {
+      "rho": 0.19047619047619047,
+      "p_one_sided": 0.33229166666666665,
+      "permutations": 40320
+    }
+  },
+  "max_three_metric_Y_error": 0.0,
+  "scope": "Local score-array means and exact rank-permutation reconstruction only; no CIF scoring, no target-bootstrap rerun or live queue check."
+}

@@ -1,0 +1,74 @@
+{
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "released": true,
+  "utc": "2026-09-24T08:32:24.095998+00:00",
+  "runs": [
+    {
+      "name": "I_C_s20260923",
+      "rotation_id": "I",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "I_C_s20260924",
+      "rotation_id": "I",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "I_C_s20260925",
+      "rotation_id": "I",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270107_C_s20260923",
+      "rotation_id": "r20270107",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270107_C_s20260924",
+      "rotation_id": "r20270107",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270107_C_s20260925",
+      "rotation_id": "r20270107",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270104_C_s20260923",
+      "rotation_id": "r20270104",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270104_C_s20260924",
+      "rotation_id": "r20270104",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270104_C_s20260925",
+      "rotation_id": "r20270104",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    }
+  ],
+  "prediction_lock_sha256": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+  "e1_completion_sha256": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+  "independent_intervention_authorized": true,
+  "outcome_positive_not_required": true
+}

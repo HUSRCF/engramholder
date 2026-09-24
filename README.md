@@ -4,6 +4,8 @@
 
 **本轮已正式纳入：** [Protenix／AtlasFold完整四格v7整合](reports/diamondhill_fourcell_integration_20260924.md)。主表统一15行，Fresh96进入交互主图；A66主要终点与未校正后续交互分开。旧532字段及v6锁保持不变。
 
+**E1另行审阅：** [共享重建未预测重训方向代价](reports/e1_prediction_review_20260924.md)。主要ρ=0.02381、精确单侧p=0.48839；E2按独立协议继续。此结果先进入MD，未纳入v7正文／数值锁。
+
 **历史方法与统计范围修订：** [Atlas anchor分类与A66统计身份](reports/atlas_anchor_statistical_scope_revision_20260924.md)。方法表已区分静态写入、适配历史反馈、当轮LM条件；A66的主要量与未校正后续交互分别记录。主文编译仍为9页；本轮没有导入A66新数值。
 
 **2026-09-24 已完成：** [Fresh96与训练交互变化](reports/fresh96_training_psi_integration_20260924.md)及[单目标OpenFold完整预测](reports/openfold_single_reproduction_20260924.md)。Fresh96的核心交互未建立；结果已进入摘要与主文。旧449数值不变，新增83项；[可执行预测入口](reproducibility/openfold_single/README.md)包含发布适配器、FASTA、CIF评分与环境说明。

@@ -4,17 +4,19 @@
 
 | 项目 | 当前状态 |
 |---|---|
-| 稿件版本 | `main`；本轮整合基线 `ff1ff64`。包含本入口的最新提交即当前稿件版本。 |
+| 稿件版本 | `main`；正式稿v7整合提交 `06b790f`（基线 `ff1ff64`）。其后E1追加仅更新MD审阅与状态，不改变正文。 |
 | 活跃来源锁 | [paper_sources.v7.lock.json](../notes/writing_branch_20260922/paper_sources.v7.lock.json)，61份输入、1,135字段。v6的46份输入及532字段和来源映射不变；旧锁保留。 |
 | 已纳入结果 | 原Protenix方向／长度／匹配G+；新增Train96完整四格和Train384 ESM2/ESMC完整四格；OpenFold Train96、Train384两PLM完整四格；AtlasFold两PLM完整四格；Fresh96主要交互未建立；范数干预与既有机制边界。 |
 | 统计身份 | A66每底座主要量为Confirm96-B ESMC Factor−Rotated；其Ψ等为未统一校正的后续比较。Protenix Train96另以Ψ为主要量，仍是旧面板后续研究。不能替代Fresh96。 |
-| 已完成但独立保留 | 六组共享重建、三底座18次几何／传播；数字尚未纳入正文。接口反馈分类已进入方法。 |
-| 其他独立工作 | B组、SGDM、曲线／置换、E1–E4。本轮未读取其新科学结果、改动协议或查询任务实时进度。 |
+| 已完成但独立保留 | 六组共享重建、三底座18次几何／传播、E1阴性预测检验；数字尚未纳入正文。接口反馈分类已进入方法。 |
+| 其他独立工作 | B组、SGDM、曲线／置换、E2–E4。E1已单独审阅，未入正文；没有改动实验协议或查询任务实时进度。 |
 | 本轮检查 | [正式整合报告](diamondhill_fourcell_integration_20260924.md)；[验证JSON](../notes/writing_branch_20260922/draft_validation.diamondhill_v7.json)。主文9页、全文29页，无未定义引用／overfull；修改页面视觉核查，非全稿人工验收。 |
 | 匿名材料 | 本地 `build/anonymous_artifact_v16.zip`；保留v14/v15历史包。数值重建、匿名字符串检查、CPU测试及算子检查通过。 |
 | 复现范围 | 一个固定OpenFold模型／目标已完成隔离环境FASTA→特征→完整CIF→主指标评分；本次新增验证从保存的分数开始，全矩阵重预测／训练复现未建立。 |
 
 当前主表15行明确列Query/F/RF/G+/RG+；交互表同时展示8种配置，Protenix Train96 Length48未运行。Fresh96与旧面板一起进入交互主图，未把其Factor阳性替代主要Ψ。
+
+**E1追加审阅：** [主要预测假说未建立](e1_prediction_review_20260924.md)，八旋转ρ=0.02381、p=0.48839；E2按独立锁继续。正文、61份v7来源和1,135字段不变。
 
 ## 同日较早历史记录（其“尚未导入／v6”描述已被上述v7取代）
 

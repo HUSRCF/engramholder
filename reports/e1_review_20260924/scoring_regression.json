@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "all_reported_failures": 4,
+  "no_threshold_relaxation": true,
+  "primary_unchanged": true,
+  "secondary_dtype_unchanged": true,
+  "rows": [
+    {
+      "system": "r20270103_s20260925",
+      "target_id": "5kdi_A",
+      "primary_unchanged": true,
+      "same_dtype_difference": 6.38378239159465e-15,
+      "fp64_difference": 5.1387461465768336e-05,
+      "threshold_crossings": 1
+    },
+    {
+      "system": "r20270106_s20260924",
+      "target_id": "6fpc_A",
+      "primary_unchanged": true,
+      "same_dtype_difference": 4.884981308350689e-15,
+      "fp64_difference": 5.736576411685679e-05,
+      "threshold_crossings": 1
+    },
+    {
+      "system": "r20270108_s20260923",
+      "target_id": "2ocg_A",
+      "primary_unchanged": true,
+      "same_dtype_difference": 1.3322676295501878e-15,
+      "fp64_difference": 3.601267646080597e-05,
+      "threshold_crossings": 1
+    },
+    {
+      "system": "native_s20260925",
+      "target_id": "3gxb_A",
+      "primary_unchanged": true,
+      "same_dtype_difference": 3.4416913763379853e-15,
+      "fp64_difference": 5.370569279994353e-05,
+      "threshold_crossings": 1
+    }
+  ]
+}

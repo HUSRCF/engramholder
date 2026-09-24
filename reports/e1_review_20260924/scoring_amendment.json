@@ -1,0 +1,26 @@
+{
+  "schema": "engramfold.scoring_consistency_amendment.v1",
+  "utc": "2026-09-24T08:30:34.335712+00:00",
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "prediction_lock_sha256": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+  "original_failed_job": "647383",
+  "original_analyze_sha256": "c4341fc12d69677a43b58f4035385209251275b8ee616b05f5a26fed8271352c",
+  "original_dispatch_sha256": "f31837603741e61eaaa7f2c122c86a6545709a3fefb45946f37aec8c90b75d1d",
+  "diagnosis_sha256": "f8ec590fd4de08d673e2369ecc85ab0e8452cfa62c9ef5ef5729dc946db61e3e",
+  "regression_sha256": "acd3545aabf0a6ea4a2b0dec6a2316185da31294fe838e0e13c8d4d8930edf27",
+  "failed_log_sha256": "7455072262ef8fb97cc86b46cb13a66a7fdebf9e351338fa7fa78d1c0e65d237",
+  "files": {
+    "analyze.py": "9b8cae09229404b0caea7de419fd311ba087dbc2105ae3b81900ffb8519a2f67",
+    "dispatch.py": "da7ceee0bc6d2e48fc1c11eb1b27e0990b905420b1762e83f1dbdf02d61d63bf",
+    "cpu_score.sh": "9f426e07a80ca1d87566342d40b4ffcd10c3c5863a65a0d6f671b9b1fbf4de69"
+  },
+  "fix": "Use original prediction/reference dtypes in independent global lDDT consistency check; preserve primary fixed_mask_metrics scores and FP64 per-residue secondary scoring. Record both consistency values.",
+  "threshold_unchanged": 1e-06,
+  "scientific_changes": false,
+  "coverage": 2688,
+  "precision_mismatches": 4,
+  "new_training_or_prediction": false,
+  "scope": "CPU E1/E2 score checks and operational dispatcher only. Original sealed staging remains unmodified.",
+  "resource_override": "E1/E2 array limit16 per explicit user instruction",
+  "retry_policy": "One confirmed-failed scoring attempt replacement, original receipt and log archived; no outcome-based action."
+}

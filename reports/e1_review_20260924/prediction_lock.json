@@ -1,0 +1,424 @@
+{
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "released": true,
+  "utc": "2026-09-24T04:04:08.547671+00:00",
+  "X": [
+    0.8413702513247853,
+    0.8271283318595882,
+    0.8416434903818922,
+    0.8482557472129407,
+    0.8229486699752924,
+    0.8186663589306598,
+    0.8105819969854796,
+    0.821448523468484
+  ],
+  "D": [
+    0.24556740896022658,
+    0.20338453299844617,
+    0.21774434156208558,
+    0.1875776693382587,
+    0.1719099050167527,
+    0.16704778138699616,
+    0.16572837353733386,
+    0.19381733437429652
+  ],
+  "X_by_teacher": [
+    [
+      0.8263029784461138,
+      0.8648435881914198,
+      0.8329641873368221
+    ],
+    [
+      0.8113612682656596,
+      0.8445247639977398,
+      0.8254989633153653
+    ],
+    [
+      0.8304825536153942,
+      0.8659757207065293,
+      0.828472196823753
+    ],
+    [
+      0.8357405825699228,
+      0.8792224636959097,
+      0.8298041953729896
+    ],
+    [
+      0.8173434193488167,
+      0.8406615682772559,
+      0.8108410222998045
+    ],
+    [
+      0.8060794971713184,
+      0.8283340565543375,
+      0.8215855230663233
+    ],
+    [
+      0.791152725008735,
+      0.8475392489423448,
+      0.7930540170053588
+    ],
+    [
+      0.7843624869306941,
+      0.8550667950864205,
+      0.8249162883883375
+    ]
+  ],
+  "D_by_teacher": [
+    [
+      0.254799388006579,
+      0.20317030399037844,
+      0.2787325348837224
+    ],
+    [
+      0.1928806648916608,
+      0.1971794130991868,
+      0.2200935210044909
+    ],
+    [
+      0.19347835596577898,
+      0.18523154536277617,
+      0.2745231233577016
+    ],
+    [
+      0.18558903715483782,
+      0.16577675861390911,
+      0.21136721224602914
+    ],
+    [
+      0.16094491345735895,
+      0.1733538519516015,
+      0.18143094964129772
+    ],
+    [
+      0.15848248447027066,
+      0.16864415438798616,
+      0.17401670530273167
+    ],
+    [
+      0.1880953091602321,
+      0.12689935675241423,
+      0.18219045469935527
+    ],
+    [
+      0.20477504131380803,
+      0.17063297953863982,
+      0.20604398227044168
+    ]
+  ],
+  "rotation_ids": [
+    "r20270101",
+    "r20270102",
+    "r20270103",
+    "r20270104",
+    "r20270105",
+    "r20270106",
+    "r20270107",
+    "r20270108"
+  ],
+  "X_ascending": [
+    "r20270107",
+    "r20270106",
+    "r20270108",
+    "r20270105",
+    "r20270102",
+    "r20270101",
+    "r20270103",
+    "r20270104"
+  ],
+  "D_ascending": [
+    "r20270107",
+    "r20270106",
+    "r20270105",
+    "r20270104",
+    "r20270108",
+    "r20270102",
+    "r20270103",
+    "r20270101"
+  ],
+  "selected_low": "r20270107",
+  "selected_high": "r20270104",
+  "X_span": 0.03767375022746111,
+  "X_min_span": 1e-05,
+  "leave_one_teacher_X": [
+    [
+      0.848903887764121,
+      0.8350118636565526,
+      0.8472239587651411,
+      0.8545133295344496,
+      0.8257512952885302,
+      0.8249597898103304,
+      0.8202966329738518,
+      0.839991541737379
+    ],
+    [
+      0.8296335828914679,
+      0.8184301157905125,
+      0.8294773752195737,
+      0.8327723889714562,
+      0.8140922208243107,
+      0.8138325101188209,
+      0.7921033710070469,
+      0.8046393876595158
+    ],
+    [
+      0.8455732833187668,
+      0.8279430161316996,
+      0.8482291371609618,
+      0.8574815231329163,
+      0.8290024938130363,
+      0.8172067768628279,
+      0.81934598697554,
+      0.8197146410085573
+    ]
+  ],
+  "inputs": {
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270101_s20260923/complete.json": "c1607b2b89d6740fa726b386f4d0e1ebcc670fde64814d82668d1261cd7d8734",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270101_s20260924/complete.json": "e64670d2bf0637aa117a31fa99bfb68f1eda1ccaafd00b96c583192fbb8bf0b1",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270101_s20260925/complete.json": "24b1bcaa47462ea657c5caa14128911d8257fddb0e56670bdcf3f77fe3ab2b37",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270102_s20260923/complete.json": "77b5808448c297974cf6b8a82eeb80e874d927af59a75fdf6049c1d2a918b1db",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270102_s20260924/complete.json": "c2bf9741c02f9cf0dcbd155ee29ea964c9c1b539da3f31783e09a26553a9df31",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270102_s20260925/complete.json": "d0019f778b6f8a879eaf26106da9aaf67087923c50d4205a8cc1573e09b31548",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270103_s20260923/complete.json": "3ab704b4f71b307fcde466bdbfac14c9e5bac17a5539a88fa236ee4191c0bccd",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270103_s20260924/complete.json": "bea74242c737cf88f2f945695bdd1f3b1b0320fcf2de42e836735ee5233e5f51",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270103_s20260925/complete.json": "38fa12881089845772f362bebd704242bac279e4798173e788a8e72e2b04dfc3",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270104_s20260923/complete.json": "8b765a73b4b165ef3b8813f75a4e4534a2ffa1ec5134bf159f8e1383e3f29155",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270104_s20260924/complete.json": "43e98719fb99ccadc4787a4a704c4573e9cc616fd6449f07e786c2a54b8a870b",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270104_s20260925/complete.json": "bd19e10f8a646baf8f8a7772ae4a7955790d4889b8d72c7148784a28bfa06488",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270105_s20260923/complete.json": "e6e9cc0e732bd38fb6e061cfcd30010194029dc9a0f355c8ec7ebe85fbcb5916",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270105_s20260924/complete.json": "284052d5de372bb361c19072693581cb994d085e94b191bfe7cbeb669ff65ca4",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270105_s20260925/complete.json": "59913033b807d01e853936c01396586cdf7eb5b1ade3a69b148abedad95da46d",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270106_s20260923/complete.json": "c890ce6d3ef0a98193458e192aa8d23d552f448ecf19cdb72b179900e3110c82",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270106_s20260924/complete.json": "49ca520db922cfe26f282671ea3da3fc9dfbd3ff8b45540220c553da63918128",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270106_s20260925/complete.json": "abda689a6d4d1ea8589b424711f6fb9c5b37976fe2fbeb4ec593938fee7df3b9",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270107_s20260923/complete.json": "b2889aa249b85fea3324ea2eaf8a8715038e523a421af4cfa1688cf1ecd90284",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270107_s20260924/complete.json": "522cdf2004777f5a293b56b61ecb77eb1da7d2fcae8f041cd41248721742ad4c",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270107_s20260925/complete.json": "32f74b080b55912ea7d38ce0202dfcd33daf94f08e26c789a68580a3f8177e93",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270108_s20260923/complete.json": "9ac37d5a9e11904459107d38e4c53711ff26e1836e4060f8f68246bbbcf0a482",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270108_s20260924/complete.json": "0c42181e9da0e562578dbe81a907aa819fdf43f9124784ad421e63d80ad763f6",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/e1/probes/r20270108_s20260925/complete.json": "7be2d21de7779bc5e32c907520dfce7ee77e1a042d22c5d0afb7507da5a01467",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/I_s20260923/complete.json": "9f7725962839d07aa655473ff233ad7eee804dd24735d67b4f201355e1ed5901",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/I_s20260924/complete.json": "22d7a994e60a5ff0d19c34f31e1acf10483a5028d8f69a422ca461f53672df55",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/I_s20260925/complete.json": "6a04389fed026cf8197f210c968d911fd4ecc9fe65ba87e1dc12660bfe4f4125",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270101_s20260923/complete.json": "978960a854983236b51c8030364d809bd428e18cb8aa77e0989211bff3331345",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270101_s20260924/complete.json": "36f976ea89b6cd49e22929bc3b8d67cad552ff22bedfd74693c038a12124c174",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270101_s20260925/complete.json": "57e551941a4cc57dee5d83de1972a650051f230b87d87da9a89cf06fa0aad40a",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270102_s20260923/complete.json": "ffc9d6651cbebbbe6e533adf9b80bc5a2de2990a1b419846b4ea482295b5568e",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270102_s20260924/complete.json": "37355afe93cfa40db003fcebc24925891816d9bae848cad186edc70e6199836e",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270102_s20260925/complete.json": "1c8589b49f71e75e3ccf445e425e9825c7b812cf67969cea4517aa96e252517a",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270103_s20260923/complete.json": "642177436b4b1622e0b2f04c63330b35fc47a1e7dcb2705d025c88a22c530b35",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270103_s20260924/complete.json": "8f376bfd749e5347ec0d14168d1b28119d4d20178e5f9b33212f4d6c43177011",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270103_s20260925/complete.json": "a1f98b450aeb99193b6aa73c3e38ffeac439a0e5c8d2972211bbc13d82863b7a",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270104_s20260923/complete.json": "13ee9aa65dd8924bbca271fd0876122e2b777103baff8f0eed2bd7f328058795",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270104_s20260924/complete.json": "c83c780122db89289d95e5c8d1ab8ccfba88dde784c7bce1b3478d96473e3692",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270104_s20260925/complete.json": "0492a5c6ea4614483bc0864fb299c43d860e8ead892641bed3b404f7419ab497",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270105_s20260923/complete.json": "adf542b6fda3bf3da18a5f761cee039949153b849095ecd87293b7979f5825f9",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270105_s20260924/complete.json": "628d6db7a3b43ede5f9a298cbc1ca266ea4f21ccc177e0679221dcef5603a8dc",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270105_s20260925/complete.json": "90eda9359d62698d15a28a5dc11af9479f4aaefd7c27570e3735220236bdee60",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270106_s20260923/complete.json": "e5e8ce6c6da3f0b8b65613149c94acb84078943e2194864eb56f9c17f94edc55",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270106_s20260924/complete.json": "1c7193e5999ca6f25f06bb83428ae42d86593c948ef811787b65c0817a2f014d",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270106_s20260925/complete.json": "31a3fbc48e72bbd5ab8b28d871db8d5fa097a65a144094dcf02958c492a8a6f6",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270107_s20260923/complete.json": "0f3048481c2765e44b458f5c6a257c3424f279ed714c664d3b587c4a11219da6",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270107_s20260924/complete.json": "50c9bee1d3829a3c6b565b8d9981b3245467e7cc2d56d6d55491d7f561c581d0",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270107_s20260925/complete.json": "eb286c821772e7f5b65f509458cba2252b99da7fac57d1bd7e6803f8840d675f",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270108_s20260923/complete.json": "46fdb5d0c838f2daf15521ff312390a5ab32fa28bbe20ddbca2409c0a79d3b39",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270108_s20260924/complete.json": "766c1e4fd6bd314417f90058e3ea8697cbbc0ed72cd1d52a0cf6b06553fa9e2d",
+    "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924/diagnostics/dev/r20270108_s20260925/complete.json": "97a4fa5fd48b6ececf8f4a67d1b88d09449d9f65d793b964760c0335d4c904a1"
+  },
+  "probe_summaries": [
+    {
+      "rotation": "r20270101",
+      "teacher_seed": 20260923,
+      "mean_error": 0.8263029784461138,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.4759278274356497,
+      "cosine": 0.4181818431539109
+    },
+    {
+      "rotation": "r20270101",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8648435881914198,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.4492818679695326,
+      "cosine": 0.3748734092817652
+    },
+    {
+      "rotation": "r20270101",
+      "teacher_seed": 20260925,
+      "mean_error": 0.8329641873368221,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5587036407213601,
+      "cosine": 0.42617594140704823
+    },
+    {
+      "rotation": "r20270102",
+      "teacher_seed": 20260923,
+      "mean_error": 0.8113612682656596,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.5310989956950146,
+      "cosine": 0.4418598914602085
+    },
+    {
+      "rotation": "r20270102",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8445247639977398,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.4626520018910256,
+      "cosine": 0.39866978260577235
+    },
+    {
+      "rotation": "r20270102",
+      "teacher_seed": 20260925,
+      "mean_error": 0.8254989633153653,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5433984253764801,
+      "cosine": 0.4305257320844341
+    },
+    {
+      "rotation": "r20270103",
+      "teacher_seed": 20260923,
+      "mean_error": 0.8304825536153942,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.5232146526986389,
+      "cosine": 0.42371687119953866
+    },
+    {
+      "rotation": "r20270103",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8659757207065293,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.5357477885690941,
+      "cosine": 0.3940020885705702
+    },
+    {
+      "rotation": "r20270103",
+      "teacher_seed": 20260925,
+      "mean_error": 0.828472196823753,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5151508649595933,
+      "cosine": 0.4231228204850168
+    },
+    {
+      "rotation": "r20270104",
+      "teacher_seed": 20260923,
+      "mean_error": 0.8357405825699228,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.5547938867139341,
+      "cosine": 0.4242197630836371
+    },
+    {
+      "rotation": "r20270104",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8792224636959097,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.46035034152339793,
+      "cosine": 0.3612062089309805
+    },
+    {
+      "rotation": "r20270104",
+      "teacher_seed": 20260925,
+      "mean_error": 0.8298041953729896,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5483939194370308,
+      "cosine": 0.4274627354027334
+    },
+    {
+      "rotation": "r20270105",
+      "teacher_seed": 20260923,
+      "mean_error": 0.8173434193488167,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.5183610804796479,
+      "cosine": 0.43507220953933246
+    },
+    {
+      "rotation": "r20270105",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8406615682772559,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.5165376816159392,
+      "cosine": 0.4125586739948022
+    },
+    {
+      "rotation": "r20270105",
+      "teacher_seed": 20260925,
+      "mean_error": 0.8108410222998045,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.597143073010894,
+      "cosine": 0.45479430523313713
+    },
+    {
+      "rotation": "r20270106",
+      "teacher_seed": 20260923,
+      "mean_error": 0.8060794971713184,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.535320370215823,
+      "cosine": 0.4486375007900111
+    },
+    {
+      "rotation": "r20270106",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8283340565543375,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.5184002738727647,
+      "cosine": 0.42556282427203906
+    },
+    {
+      "rotation": "r20270106",
+      "teacher_seed": 20260925,
+      "mean_error": 0.8215855230663233,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5102903863526961,
+      "cosine": 0.42858052337792757
+    },
+    {
+      "rotation": "r20270107",
+      "teacher_seed": 20260923,
+      "mean_error": 0.791152725008735,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.5459355185656055,
+      "cosine": 0.4618232928339652
+    },
+    {
+      "rotation": "r20270107",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8475392489423448,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.4994813357846755,
+      "cosine": 0.4019164245806261
+    },
+    {
+      "rotation": "r20270107",
+      "teacher_seed": 20260925,
+      "mean_error": 0.7930540170053588,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5434995462730376,
+      "cosine": 0.45952183337006214
+    },
+    {
+      "rotation": "r20270108",
+      "teacher_seed": 20260923,
+      "mean_error": 0.7843624869306941,
+      "zero_reference": 0.9999989647080061,
+      "norm_ratio": 0.644381985239914,
+      "cosine": 0.48784272971199905
+    },
+    {
+      "rotation": "r20270108",
+      "teacher_seed": 20260924,
+      "mean_error": 0.8550667950864205,
+      "zero_reference": 0.9999989296880302,
+      "norm_ratio": 0.544219590051402,
+      "cosine": 0.40521200449689254
+    },
+    {
+      "rotation": "r20270108",
+      "teacher_seed": 20260925,
+      "mean_error": 0.8249162883883375,
+      "zero_reference": 0.9999989517820824,
+      "norm_ratio": 0.5644462573492249,
+      "cosine": 0.43469655556525816
+    }
+  ],
+  "structure_training_started": false,
+  "scope": "Prospective configuration diagnosis on observed Train/Dev; no new target confirmation"
+}
