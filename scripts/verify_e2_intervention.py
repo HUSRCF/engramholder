@@ -252,6 +252,12 @@ def verify(root):
                 contrast(effects['rotation_' + name][j], arm[name], metric + '/' + rotation + '/' + name)
         compact[metric] = {name: {key: recorded[name][key] for key in ['mean', 'ci95', 'per_seed']}
                            for name in ['native_change', 'B_R', 'T_C']}
+        if metric == 'ca_lddt':
+            descriptive = {
+                name: dict(target_count=len(ids),
+                           positive_targets=int((effects[name].mean(0) > 0).sum()),
+                           median=float(np.median(effects[name].mean(0))))
+                for name in ['B_R', 'T_C']}
     assert contrasts == 21
     return dict(passed=True, records=864, combined_unique_records=3552, failures=0,
                 verified_contrasts=contrasts, scalar_or_array_checks=checks,
@@ -259,6 +265,7 @@ def verify(root):
                 synchronized_target_bootstrap=execution['bootstrap'], results=compact,
                 diagnostic_repair_hash_link_verified=True,
                 predefined_rotation_average_verified=True,
+                posthoc_target_descriptions=descriptive,
                 statistical_identity=('Cross-rotation averages predeclared in the original '
                                       'written design and sealed analysis. Prespecified '
                                       'mechanistic follow-up on observed targets, not a new '

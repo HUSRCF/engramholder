@@ -1,51 +1,40 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-The complete controls distinguish adaptation gains, within-head direction
-effects and cross-head interactions. Protenix's Train96 follow-up extends
-positive interaction evidence beyond OpenFold, and Train384 retains it with
-both feature sources. These are observed-panel studies: they do not replace
-OpenFold's unestablished Fresh96 primary interaction. OpenFold Train384 and
-AtlasFold further limit generality. The interaction compares whole head
-architectures, without isolating the fixed decoder, function-class constraints
-or optimization geometry. No inclusion of Factor's function class within G+
-has been proved. Matched comparisons favor Native in Protenix and G+ in some
-OpenFold settings; rotation closure alone does not make a head preferable.
+The findings separate three questions. Trained four-cell controls establish
+parameterization-dependent sensitivity in specified Protenix and OpenFold
+recipes. Within Factor, shared orthogonal compensation provides a useful
+average intervention. Neither finding supplies a reliable predictor of direction
+cost or implies that Factor is the better head: Protenix favors Native over G+,
+while some OpenFold comparisons favor G+. Protenix's observed-panel support
+does not replace OpenFold's unestablished Fresh96 primary interaction.
 
-ESMC raises Protenix and OpenFold structural scores, but direct ESMC--ESM2
-changes in $\Delta_F$ and $\Psi$ remain uncertain. PLM family, width, cache
-precision and input-projection size change together, with backend differences
-in specified comparisons. AtlasFold retains its native AtlasLM and establishes
-no useful added adaptation with either feature source. High baseline quality,
-redundant information and downstream use are candidate explanations, not
-isolated causes. A prospective diagnostic across eight locked OpenFold rotations
-did not find that finite-budget shared teacher-update reconstruction error
-predicts retrained direction cost ($\rho=\result{e1_ca_lddt_x_rho}$,
-exact one-sided $p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}).
-This limits that diagnostic as a selection rule; input complementarity and
-downstream propagation remain unvalidated candidates.
+These controls narrow different explanations. Dense rotations, signed
+permutations and the mean-preserving E1/E2 family are distinct transformations.
+Signed-permutation compatibility with ideal AdamW does not establish strict
+FP32 trajectory correspondence. E2 tests Factor's direction cost, not elimination
+of the original Factor/G+ interaction. Its output freedom and joint optimization
+change together; the result identifies neither a learned inverse nor expressivity
+as the unique cause. Across-head controls additionally change nonlinearities and
+residue/pair organization; no function-class inclusion has been proved.
 
-Shared orthogonal compensation supplies a different kind of evidence: a
-specific design intervention reduces mean direction cost within Factor under
-the tested OpenFold recipe. Its targeted output freedom is trainable, rather
-than an assumed property of the original interface. It neither validates the
-failed reconstruction ranking nor identifies a learned inverse rotation;
-jointly retrained factors and their optimization remain part of the effect.
+The eight-rotation teacher-reconstruction predictor failed
+($\rho=\result{e1_ca_lddt_x_rho}$, exact one-sided
+$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). E2 does not rescue
+that ranking. Norm exchange limits a global-scale explanation without separating
+learned content and local magnitudes. Local compatibility, small equal-norm
+learned directions and bounded shared-transfer diagnostics retain their
+negative boundaries (Appendix~\ref{app:mechanisms}).
 
-The norm exchange limits an overall-scale explanation of one Protenix gap,
-without separating learned content, local magnitudes and channel organization.
-Local diagnostics retain their negative boundaries: oracle compatibility did
-not establish a positive association with folding gains, small equal-norm
-learned directions showed no established native advantage, and bounded
-Train8-to-Dev8 updates showed no established mean positive transfer. These
-recipes and endpoints differ from complete inference; beneficial residuals'
-training origin remains unresolved (Appendix~\ref{app:mechanisms}).
+ESMC improves quality without establishing a change in direction sensitivity;
+family, width, precision and projection size change together. AtlasFold adds no
+established adaptation benefit. Input complementarity and downstream use remain
+candidate explanations, not selection rules.
 
-Intervals condition on fitted models, excluding full retraining and
-research-selection uncertainty. Follow-up intervals are not jointly adjusted.
-Convergence at 1536 updates is unestablished. Three seeds and rotations cover
-limited instances; panels are reused and one inference sample does not estimate
-sampling variability. Sequence screening guarantees neither family nor
-pretraining isolation; historical exposure remains incomplete. Cross-predictor
-comparisons also change interfaces, representations and losses. Gaps to strong
-native single-sequence systems limit deployment claims. These findings delimit
-a conditional design factor, not a universal adapter prescription.
+Intervals condition on fitted models and limited rotations, excluding full
+retraining and research-selection uncertainty; follow-ups lack joint correction.
+The Dev8 curves do not establish convergence. Reused panels, one inference sample,
+specified backend differences and incomplete historical exposure limit scope.
+Sequence screening guarantees neither family nor foundation-model isolation.
+Cross-predictor comparisons also change losses and interfaces, and gaps to native
+single-sequence systems limit deployment claims. These results motivate evaluating
+output freedom and task training alongside local spectra, within explicit budgets.

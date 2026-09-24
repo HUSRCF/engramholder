@@ -14,7 +14,9 @@ access remain subject to their respective source terms.
 \subsection*{Reproducibility statement}
 The accompanying analysis artifact reconstructs manuscript tables and figures
 from fixed score records and includes numerical source mappings and operator
-checks. A one-target OpenFold entry has been executed in a fresh isolated Python
+checks. A CPU example executes the sealed compensation writer and optimizer on
+synthetic OPM inputs, including zero initialization and joint gradients
+(Appendix~\ref{app:e2_compensation}). A one-target OpenFold entry has been executed in a fresh isolated Python
 environment: FASTA to recomputed ESM2 features, released adapter, full-atom CIF
 and separate fixed-correspondence pair-lDDT scoring (Appendix~\ref{app:single_repro}).
 This is a bounded prediction replay, not full retraining. Appendix~\ref{app:recipes}

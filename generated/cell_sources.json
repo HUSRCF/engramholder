@@ -20321,6 +20321,54 @@
       "value": 0.01706129340277776,
       "formatted": "+0.01706"
     },
+    "e2_pair_B_R_median": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "per_target"
+      ],
+      "operation": "median",
+      "value": 0.021997741804901317,
+      "formatted": "+0.02200"
+    },
+    "e2_pair_B_R_count_positive": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 77.0,
+      "formatted": "77"
+    },
+    "e2_pair_T_C_median": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "per_target"
+      ],
+      "operation": "median",
+      "value": 0.004292629697679097,
+      "formatted": "+0.00429"
+    },
+    "e2_pair_T_C_count_positive": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 53.0,
+      "formatted": "53"
+    },
     "curve_pair_n96_s384_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",
       "field_path": [
@@ -23040,8 +23088,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1457,
-    "distinct_keys": 1227,
+    "literal_references": 1464,
+    "distinct_keys": 1231,
     "missing": []
   },
   "pending": [],
@@ -23225,6 +23273,18 @@
     },
     "diagnostic_repair_hash_link_verified": true,
     "predefined_rotation_average_verified": true,
+    "posthoc_target_descriptions": {
+      "B_R": {
+        "target_count": 96,
+        "positive_targets": 77,
+        "median": 0.021997741804901317
+      },
+      "T_C": {
+        "target_count": 96,
+        "positive_targets": 53,
+        "median": 0.004292629697679097
+      }
+    },
     "statistical_identity": "Cross-rotation averages predeclared in the original written design and sealed analysis. Prespecified mechanistic follow-up on observed targets, not a new sole confirmatory primary endpoint or independent new-target confirmation; both rotations and Native changes retained.",
     "source_sha256": {
       "e1_execution_lock": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",

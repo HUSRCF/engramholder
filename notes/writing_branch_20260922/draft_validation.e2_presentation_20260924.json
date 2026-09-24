@@ -1,0 +1,204 @@
+{
+  "revision_base": "903989fcbd7e0bdd470be5fc2ae5868b5b71ec12",
+  "source_lock": "notes/writing_branch_20260922/paper_sources.v9.lock.json",
+  "input_lock_unchanged": true,
+  "locked_inputs": 93,
+  "old_fields_and_mappings_unchanged": 1518,
+  "total_fields": 1522,
+  "new_posthoc_descriptive_fields": {
+    "e2_pair_B_R_median": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "per_target"
+      ],
+      "operation": "median",
+      "value": 0.021997741804901317,
+      "formatted": "+0.02200"
+    },
+    "e2_pair_B_R_count_positive": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 77.0,
+      "formatted": "77"
+    },
+    "e2_pair_T_C_median": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "per_target"
+      ],
+      "operation": "median",
+      "value": 0.004292629697679097,
+      "formatted": "+0.00429"
+    },
+    "e2_pair_T_C_count_positive": {
+      "source": "evidence/e2_intervention_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 53.0,
+      "formatted": "53"
+    }
+  },
+  "target_descriptions": {
+    "B_R": {
+      "target_count": 96,
+      "positive_targets": 77,
+      "median": 0.021997741804901317
+    },
+    "T_C": {
+      "target_count": 96,
+      "positive_targets": 53,
+      "median": 0.004292629697679097
+    }
+  },
+  "original_e2_contrasts_unchanged": 21,
+  "scope": "E2 presentation and descriptive heterogeneity; no new scientific endpoint, target, training or full inference. Shared C synthetic operator execution is engineering verification, not protein-quality evidence.",
+  "latex": {
+    "scientific_main_end_page": 9,
+    "total_pages": 35,
+    "overfull_boxes": 0,
+    "undefined_refs_or_citations": 0,
+    "oversize_floats": 0,
+    "multiply_defined_labels": 0,
+    "underfull_warnings": 41,
+    "official_styles_unchanged": true
+  },
+  "pdf_sha256": "69ec02ab1e12fd69fc9cf237035313f6611c5ef8727343e3854a43bfcc5409ca",
+  "compiled_source_sha256": {
+    "iclr2027_conference.tex": "e193791116c8f5e8c51c051c22ca9d6df00f02751404af025d9cadfc04ce1b8a",
+    "iclr2027_conference.sty": "797deef41724e93761426ac0cbcca46279a91cc650dd1f0ce76a4f08d2098ea6",
+    "iclr2027_conference.bst": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5",
+    "math_commands.tex": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9",
+    "natbib.sty": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d",
+    "fancyhdr.sty": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea",
+    "paper_references.bib": "ba7bae5f86c4778b4559d9597ab496ae6207e15e3336801c5728a55b3eab13b5",
+    "sections/00_abstract.tex": "372cffa04b7446d712b21c88a41c4dad717ba2747c2ed9ea7d5f39705147495b",
+    "sections/01_introduction.tex": "4c3e59fc54a1779c5e8430e1c4d987b74bab8944c43a69b5ae9af8c48ef263aa",
+    "sections/02_construction.tex": "8669496b775d6b3a775e5f526511d4aea1eb0d699d809de6e0839b1cb726e2cc",
+    "sections/03_design.tex": "394b1aa83924d0e1de509466b7f7e18e6786213091b66c775c2502e1b7ff457b",
+    "sections/04_results.tex": "631a0ed8bacb747cfbb9cdd770e5078c383167fc82a47fe252c032fa45931eb1",
+    "sections/05_discussion.tex": "d539f58945301882e6e2a7cca301011d8bbcfa857465a360dbaaaa9a3e12cec1",
+    "sections/06_related_work.tex": "dcf768baae9336184cfe4ac56d83a1d88f8d7b7e49112d9be197bea3281161a2",
+    "sections/07_conclusion.tex": "4d3f075955435098d889c1f693fde2dfe86283c2bce97dca2aeb7ab1a8ddbf70",
+    "sections/08_statements.tex": "8d81de19541b6bcd92a54fa446664bb8717b63823091906861c8da71ebb137e9",
+    "appendices/implementation_and_evidence.tex": "1e38d73425def645549d637e3640974bebd3c7dcb292d50c26baa9469cff293d",
+    "generated/checkpoint_curve_contrasts.tex": "3dcd59ec050ee28290053e5886c861edd36d51af97fabddece2b3e449e9f2404",
+    "generated/checkpoint_curve_means.tex": "ab4ce55b032ece6462b6d20ab5c5461baf06b0482a295013c7f855f5814230c1",
+    "generated/complete_fourcell_means.tex": "cd11c1f944c5b1216f02085ebb613857ffc909c826f5a41f5b90f93dfc9c2567",
+    "generated/complete_interaction_scope.tex": "feb73ea0b4abf5189d6cd2d46c324a71c72c39177e7ed7bafe929a1336251eb6",
+    "generated/cross_cells.tex": "2581d75d5f1ce4fbb4fa463ec88bc2220372b9a0baf514f9827c2d99bb940565",
+    "generated/cross_effects.tex": "70d17aeb88fe4d20754bd325168868e83d47676cede965ede52fc2bce2387bde",
+    "generated/cross_supplement.tex": "37e4266f2e19eabbd16c8a6d8a55758715be475a253559a0edba602c500c663e",
+    "generated/data_composition_rows.tex": "7bb635863d652e0071fbc30c3b9147018da1894beb3c8897a53484df2065c226",
+    "generated/dh_atlasfold_pair_contrasts.tex": "cdf6f5c335295aa6dbd4d19b09ee8f1e290e4a6a38dc47b3060fe9904ba24e7d",
+    "generated/dh_atlasfold_residue_contrasts.tex": "0fabbb29f2cd3ae75b03498a5f6e0b177d51527cd3d5608664ac3c845a2103cf",
+    "generated/dh_atlasfold_tm_contrasts.tex": "dc6c21d397ff1942b7bd36e9d59c9ce9b818e491033a0e1dcc1cd2abaa687528",
+    "generated/dh_feature_changes.tex": "43de93829badbea67adff0b09c6b9e2df8cc2e9a8b5e0275bb234a3fa0fddecf",
+    "generated/dh_interaction_marginals.tex": "b89c9e86d7007ab7d068ff07058cdf3b48403bee70baefb5ea322d1d85a04264",
+    "generated/dh_protenix_pair_contrasts.tex": "5e6a81d55f9eaa7bdc0b3ec954ab3f55a8757765b9aa2bee81b473cab8ab334f",
+    "generated/dh_protenix_residue_contrasts.tex": "d0a49029dd4026edf61c33893f438e6883d2b21f5aee11b70f21a6462383d300",
+    "generated/dh_protenix_tm_contrasts.tex": "cde1599177db4bb88740f917d4d4e5456f77f314986371592e00602d1305f2c7",
+    "generated/e1_prediction_rotations.tex": "264a22ed7bf28b9cd44c9d6e8d067945b70460291dcadc9105a16b34043d4ded",
+    "generated/e1_prediction_tests.tex": "43aed311abc1008952721d85ede523797a9d2fa2ac0b6e841c42beda1f3e7ea0",
+    "generated/e2_contrasts.tex": "03567346ea985970268071bcdeb327248089001b93e84d0926727291d3c424a0",
+    "generated/e2_means.tex": "c4e9be9778438ac06ecbd6f0ae6ff6b1a82959c7e8717178beaf6550aa2a2624",
+    "generated/esmc_A_means.tex": "34df80ec7405f189920c0c12a5a217d7d25c4af4fbb2b8ff86fd95b8d24b4a37",
+    "generated/esmc_A_pair_contrasts.tex": "3b1e5ba266f071ce0e1589a56abf7e117999ee5ad8f32bc4e10a15d875ec7409",
+    "generated/esmc_A_residue_contrasts.tex": "dfd8bc375e04885c5575d6794f897a183c92d6691b3c66f79863d459e1fabc66",
+    "generated/esmc_A_tm_contrasts.tex": "486daabc5ace535047e787a07411090df54f21f49b92212773b077e3113d3eaa",
+    "generated/fresh96_contrasts.tex": "e09b68ab684c42918f2d384b65d27fd7870283074f8cdd5845ed9adc3bb6a587",
+    "generated/fresh96_marginals.tex": "923945d6d72e0ce2483a9d380eccf4f466ac69766c977960d2aae81919147a7c",
+    "generated/interaction_scope_rows.tex": "f3e5a4285a1e4a1aef216a9d98c6f670f2348ac5ba3c56a47664a94c7029e10f",
+    "generated/main_table_rows.tex": "65e8587ac4f387347fe0271a8c627442e5dde8f18cbf3757caa2806bbcbb984e",
+    "generated/numbers.tex": "556f59fa61fe0ae735e6cacc107b8a6c9fe878fc8c4c6777959079b107dbef45",
+    "generated/paired_table_rows.tex": "4855d89eb4897dbd4cec75e4d3e7580a6900c01a789ada40492411c948ef14e7",
+    "generated/protenix_gplus_supplement_rows.tex": "6981aef33c651a96eecf72e00565cfc041592a6fc3f400ddb0701b8e45926f13",
+    "generated/scope_table_rows.tex": "a043df3df43303d6725187bfbfbae5fd102590811393737889204c20237dd99f",
+    "generated/signed_contrasts.tex": "c4de239dc44bf17cc4b9be7d67e1fce145fc6e6ce9a16689ecd55aac09dd99ef",
+    "generated/signed_means.tex": "5e921f293f63a06f53d8a5cbdc650dd33bea8072f6ed6b5bc48f4ca62bdcfbf0",
+    "generated/training_psi_change.tex": "1dba70a48aeac4bf7dc3db9ddacf0bd903064ce57b63efeb988100e03c6ab9b6",
+    "generated/v4_mechanism_rows.tex": "c43ea384d54e6a7abccf22960489dc8408c12536a43e0e7fb2c916e55012da94",
+    "figures/construction.pdf": "54ce2cc57d63331c3c87df7d73719e942f77a997b873f89ee588751cffd7a47d",
+    "figures/interaction.pdf": "57c1bb5fd967694b3420024b5df5c6ee0a35bbdb82c5048573a617300849030e",
+    "figures/scope.pdf": "bc4d8f9d72e7e7f7ebe123f7dab39e35281e3ff68beba1c7a1ff0e31f01ad83e"
+  },
+  "visual_review_pages": [
+    7,
+    8,
+    9,
+    15,
+    29,
+    35
+  ],
+  "visual_scope": "Changed main E2 table/section and discussion plus changed appendix text; not full-page-by-page audit.",
+  "tests_passed": 18,
+  "compensation_smoke": {
+    "passed": true,
+    "conditions": {
+      "I": {
+        "channel_gradient_norms": [
+          0.0,
+          1.7873167962534353e-05,
+          3.653444582596421e-05,
+          5.630586383631453e-05
+        ],
+        "orthogonality_error": 1.8104487935488578e-06,
+        "mean_direction_error": 1.3825193718730588e-06
+      },
+      "r20270107": {
+        "channel_gradient_norms": [
+          0.0,
+          1.7571355783729814e-05,
+          3.590563574107364e-05,
+          5.5357275414280593e-05
+        ],
+        "orthogonality_error": 1.5097409686859464e-06,
+        "mean_direction_error": 1.137184199251351e-06
+      },
+      "r20270104": {
+        "channel_gradient_norms": [
+          0.0,
+          1.8511784219299443e-05,
+          3.7942492781439796e-05,
+          5.8611753047443926e-05
+        ],
+        "orthogonality_error": 1.7552378039908945e-06,
+        "mean_direction_error": 1.3113021850585938e-06
+      }
+    },
+    "exact_source_hash_checks": true,
+    "scope": "CPU execution of sealed E2 writer, optimizer, zero initialization, injection, gradients and mask/constraint checks on synthetic inputs; not whole-protein prediction or quality reproduction."
+  },
+  "anonymous_package": {
+    "path": "build/anonymous_artifact_v27.zip",
+    "sha256": "7c9005e124bfb344df3e906ca6173d1e8d733da0a6b7e1198250acbca5d866d4",
+    "files": 212,
+    "numerical_fields_equal": 1522,
+    "old_operator_smoke_passed": true,
+    "compensation_smoke_passed": true,
+    "tests_passed": 18,
+    "name_scan_passed": true
+  },
+  "packaging_repair": "v24 correctly stopped because anonymous host-name redaction changed a source-comment hash. The verifier now checks bundled bytes plus the explicit original-source hash mapping. The sole dependency change was a comment; code and calculations unchanged. v25 passed, and v26 includes final layout. v27 includes the final signed-change wording correction; scientific numeric values unchanged.",
+  "whitespace_audit": {
+    "exception": "reproducibility/compensation/archived/live_opm.py: original trailing blank line preserved for byte-identical execution-source provenance.",
+    "all_other_paths": "git diff --cached --check passed",
+    "archived_file": "Passed with only blank-at-eof warning disabled."
+  }
+}

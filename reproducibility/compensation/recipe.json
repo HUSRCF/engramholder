@@ -1,0 +1,37 @@
+{
+  "backbone": "OpenFold AF2 model_3_ptm",
+  "train_size": 96,
+  "features": "Frozen ESM2-35M layer12, width480",
+  "steps": 1536,
+  "channels": 128,
+  "channel_parameters": 8001,
+  "channel_initialization": "A=0, C=I; no inverse-rotation warm start",
+  "writer_initialization": "Paired random encoder and zero output layer; all arms train independently",
+  "optimizer": {
+    "name": "AdamW",
+    "theta_lr": 0.0001,
+    "theta_weight_decay": 0.01,
+    "channel_lr": 0.001,
+    "channel_weight_decay": 0.0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08
+  },
+  "global_clip_norm": 1.0,
+  "trunk_passes": 4,
+  "gradient_trunk_passes": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "selected_rotations": [
+    "r20270107",
+    "r20270104"
+  ],
+  "injection": "U0 + C R delta; R applied once in the frozen residual decoder, then C on the completed residual",
+  "loss": "FAPE + 0.3 distogram + supervised-chi",
+  "scope": "Historical configuration with executable operator/optimizer example; not a complete label-preparation or whole-trunk training launcher."
+}

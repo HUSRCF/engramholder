@@ -50,10 +50,13 @@ def read(file, path):
 def number(key, file, path, operation='identity', signed=False, scientific=False):
     value = read(file, path)
     if operation == 'mean': value = float(np.mean(value))
+    elif operation == 'median': value = float(np.median(value))
+    elif operation == 'count_positive': value = int(np.count_nonzero(np.asarray(value) > 0))
     value = float(value)
     assert np.isfinite(value)
     CELLS[key] = dict(source=f'evidence/{file}.json', field_path=path,
                       operation=operation, value=value, formatted=(f'{value:+.5e}' if signed else f'{value:.5e}') if scientific else (f'{value:+.5f}' if signed else f'{value:.5f}'))
+    if operation == 'count_positive': CELLS[key]['formatted'] = str(int(value))
     return value
 
 def mean_systems(key, file, prefix, names):

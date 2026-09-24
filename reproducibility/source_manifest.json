@@ -30,5 +30,21 @@
   "src/engramfold/experiments/atlas_adapter_runtime.py": {
     "sha256": "599ab0295db8e949250089aaf41051406d3487349e31aae4cd2648e4c8727825",
     "provenance": "audited working source snapshot; recorded experiment locks separately identify executed source versions"
+  },
+  "compensation/archived/prospective_orientation.py": {
+    "sha256": "8473932ea10461169a2f6991ffa47cb4b09b84a44c497d2889901c28169f1147",
+    "provenance": "Byte-identical sealed E1/E2 executed-source snapshot; hash checked against the immutable E1 execution lock. Used only by the separate compensation example."
+  },
+  "compensation/archived/common.py": {
+    "sha256": "c1db4ccf80b4a5ce995807cc104b68ba0383a43f679c5856e6ddfac41c315141",
+    "provenance": "Byte-identical sealed E1/E2 executed-source snapshot; hash checked against the immutable E1 execution lock. Used only by the separate compensation example."
+  },
+  "compensation/archived/live_opm.py": {
+    "sha256": "9d3130cf6db896da6fa3aa1932651d10060a8845156e5c389e4c7e7d9cad38c0",
+    "provenance": "Byte-identical sealed E1/E2 executed-source snapshot; hash checked against the immutable E1 execution lock. Used only by the separate compensation example."
+  },
+  "compensation/rotations.npz": {
+    "sha256": "8966393013a2a6cdde4e97eb22b63f7045e63789ae4675130b310dd5ff0cc0fc",
+    "provenance": "Exact sealed rotation arrays; the example uses the two rotations selected in the E1 prediction lock, without regeneration."
   }
 }

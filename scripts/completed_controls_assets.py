@@ -51,6 +51,12 @@ def build(data, number, contrast, tex, save_rows, interval):
                                 tex(f'e2_pair_r{i}_B_R'), interval(f'e2_pair_r{i}_B_R')])
     save_rows('e2_contrasts.tex', e2_rows)
     save_rows('e2_means.tex', e2_arms)
+    # Descriptions of the already paired target effects, not new hypothesis tests.
+    for name in ['B_R', 'T_C']:
+        path = ['metrics', 'ca_lddt', name, 'per_target']
+        for operation in ['median', 'count_positive']:
+            number(f'e2_pair_{name}_{operation}', 'e2_intervention_summary', path,
+                   operation=operation, signed=(operation == 'median'))
 
     curve_rows, curve_means = [], []
     for metric, ms, ml in METRICS:

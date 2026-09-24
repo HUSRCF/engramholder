@@ -243,7 +243,8 @@ Setting & Status & Difference & 95\% interval \\\midrule
 The two Protenix scaling terms are Full Train96/1536
 (\result{pt96_c96_native} versus \result{pt96_c96_rotated}) and Full
 Train384/1536 (\result{pt384_c96_native} versus \result{pt384_c96_rotated}).
-Their paired interaction is \result{pt_scale}; the native training-set gain is
+Their paired interaction is \result{pt_scale}
+[\result{pt_scaleLo}, \result{pt_scaleHi}]; the native training-set gain is
 only \result{pt_scale_native} and is not positive for all training seeds.
 The tangent Train24 result does not enter this interaction.
 
@@ -802,6 +803,12 @@ Metric & Contrast & Mean & 95\% interval \\\midrule
 \clearpage
 \section{Post-hoc training-setting change of the complete interaction}
 \label{app:training_psi}
+For the separate Factor-only contrast, the fixed-budget change
+$(N-R)_{384}-(N-R)_{96}$ is \result{of_scale_c96}
+[\result{of_scale_c96Lo}, \result{of_scale_c96Hi}] on Confirm96-B and
+\result{of_scale_l48} [\result{of_scale_l48Lo}, \result{of_scale_l48Hi}] on
+Length48. These quantities do not equal the change of the full interaction below.
+
 After the ESM2 Train384 four-cell control was complete, a subsequent analysis
 computed $q_i=\Psi_{384,i}-\Psi_{96,i}$ for every shared target. Model identities,
 three seeds, three rotations and complete target coverage were checked before
@@ -1148,6 +1155,17 @@ Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
 \input{generated/e2_contrasts}
 \end{tabular}\end{table}
 
+The target distribution also limits a uniform-benefit interpretation. Averaging
+paired seeds and rotations within each target, $B_R$ is positive on
+\result{e2_pair_B_R_count_positive}/96 targets with median
+\result{e2_pair_B_R_median}; $T_C$ is positive on
+\result{e2_pair_T_C_count_positive}/96 with median \result{e2_pair_T_C_median},
+below its mean of \result{e2_pair_T_C}. These medians and sign counts are
+post-hoc descriptive summaries of the saved arrays, not additional
+prespecified tests. Mean mitigation need not imply equal or positive mitigation
+for each target. A remaining gap whose interval includes zero establishes
+neither equivalence nor complete recovery; no recovery percentage is reported.
+
 The engineering record preserves the earlier diagnostic dtype failure at the
 96th update and the authorized restart from checkpoint zero. All nine final
 runs have complete 1--1536 logs and 16 periodic checks below the original
@@ -1156,3 +1174,10 @@ approximately $1.67\times10^{-5}$ and $2.18\times10^{-6}$.
 These are constraint diagnostics, not full-model error bounds. Final checkpoint,
 receipt and all 864 prediction hashes were audited. No structure score was
 used to change the chosen rotations, training budget or retry rule.
+
+The artifact includes the sealed channel module, original live OPM writer,
+optimizer construction and exact rotation arrays. A CPU example executes their
+zero initialization, shared-map injection and joint gradients on a synthetic
+frozen OPM fixture; it checks masks, the unchanged baseline and parameter groups.
+This makes the intervention executable at the operator level, without claiming
+a replay of full OpenFold structure training or its quality gains.

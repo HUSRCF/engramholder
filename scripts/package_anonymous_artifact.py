@@ -62,6 +62,7 @@ subprocess.run([sys.executable,str(DEST/'tests/test_e1_prediction.py')],check=Tr
 for name in ['test_e2_intervention.py','test_signed_and_curves.py']:
     subprocess.run([sys.executable,str(DEST/'tests'/name)],check=True,cwd=DEST)
 subprocess.run([sys.executable,str(DEST/'reproducibility/operator_smoke.py')],check=True,cwd=DEST)
+subprocess.run([sys.executable,str(DEST/'reproducibility/compensation/smoke.py')],check=True,cwd=DEST)
 a=json.loads((ROOT/'generated/cell_sources.json').read_text())['cells']
 b=json.loads((DEST/'generated/cell_sources.json').read_text())['cells']
 assert {k:v['value'] for k,v in a.items()}=={k:v['value'] for k,v in b.items()}

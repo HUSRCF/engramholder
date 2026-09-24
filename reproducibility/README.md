@@ -5,8 +5,10 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v9 input lock contains 93 source files and 1,518 generated numerical
-fields. All 1,199 v8 fields and source mappings are unchanged; 319 fields add
+full-inference source/norm cells and contrasts. The active v9 input lock contains 93 source files and 1,522 generated numerical
+fields. All 1,518 previously integrated fields and source mappings are unchanged; four
+post-hoc target-distribution fields add medians and positive counts for E2. The
+319 fields added in the preceding revision cover
 the completed compensation, signed-permutation and developmental checkpoint studies.
 The reconstruction prediction study remains a negative predictive test. Its verifier reconstructs 2,688 score records,
 51 three-metric contrasts and the two exact 40,320-permutation tests (primary X,
@@ -42,6 +44,7 @@ python tests/test_e1_prediction.py
 python tests/test_e2_intervention.py
 python tests/test_signed_and_curves.py
 python reproducibility/operator_smoke.py
+python reproducibility/compensation/smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex
 ```
 
@@ -76,3 +79,9 @@ all devices. `fixed_configs.json` remains a historical recipe summary, while the
 single-target directory contains its own executable setup/configuration.
 The personal repository and its Git history must not be included in an anonymous
 supplement. Binary/metadata anonymization still requires author review.
+
+The [shared-channel compensation example](compensation/README.md) executes the
+sealed E2 writer and optimizer on synthetic CPU OPM inputs, verifies initialization,
+parameter groups, mask/rotation placement and joint gradients, and explains the
+full-model integration boundary. This is a runnable operator-level intervention,
+not an additional complete-protein training reproduction.
