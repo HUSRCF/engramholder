@@ -857,3 +857,102 @@ Native Factor computation. These provenance distinctions are retained rather
 than describing all historical sources as byte-identical. Pretrained AF2/ESM2
 weights are obtained separately from upstream under their original terms and
 verified by hash; they are not bundled in the compact artifact.
+
+\clearpage
+\section{A prospective reconstruction-based prediction test}
+\label{app:prediction_e1}
+This subsequent study (internally E1) tests a candidate predictor of rotation
+cost, distinct from the earlier v4 oracle diagnostic also called E1. It fixes
+OpenFold/Train96/ESM2/Full, 1536 task updates and Confirm96-B, an already
+observed panel. Eight new rotations were locked before diagnostic measurements;
+all preserve the all-ones channel direction and are conjugates of one fixed
+matrix in $SO(127)$ on its orthogonal complement. Thus their spectra and distance
+from identity are matched. They are not the three historical rotations used
+in the main four-cell comparison.
+
+The primary predictor $X_R$ is the held-out relative squared error when a shared
+rotated Factor student reconstructs a trained Native teacher's updates.
+Three historical Native teachers generate reconstruction targets on the same
+fixed query-only anchor trajectories. For each teacher and rotation, one student
+starts from that teacher's adapter weights with the added rotation and is fitted
+on Train24 for 768 Adam updates (learning rate $10^{-3}$, no decay, global clip 1), with
+2048 sampled pairs per target. The full sequence is encoded before pair
+sampling, and the same residue increments are used in all four rounds; only
+the supplied anchors vary. The locked final-node error averages equally over
+Holdout72 targets, rounds and teachers, using full-pair teacher energy and a
+training-side stabilizer. Holdout72 is the remainder of Train96, held out from
+reconstruction fitting, not from the original teacher's task training.
+Zero-output errors, student/teacher norm ratios, angles and absolute RMS were
+recorded; reduced error alone does not establish useful compensation.
+
+The exploratory predictor $D_R$ instead measures the Dev8 score loss when an
+extra $R$ is applied to a fixed trained Native residual during full inference.
+All $X_R$, $D_R$, rankings and the low/high-$X$ selections were locked before
+the new structure-training runs. Each of the eight rotated configurations was
+then trained from the paired historical encoder initialization and zero output
+layer for three seeds; reconstruction students were not used as initializers.
+All 24 trainings and 2,304 new predictions completed with no prediction failures.
+The outcome $Y_R$ is the mean Native-minus-retrained-Rotated pair-lDDT over the
+96 targets and three seeds. With 384 audited historical Native/query outputs,
+the complete score array contains 2,688 records. None is an additional
+independent rotation for the prediction test.
+
+\begin{table}[htbp]\centering\small
+\caption{All eight locked rotations in the reconstruction prediction study.
+The sole primary association is between $X$ and $Y$ for pair-lDDT. The
+target intervals for $Y$ condition on each fitted rotation and models.}
+\begin{tabular}{lrrrrl}\toprule
+Rotation & $X$ & $D$ & Rotated score & $Y$ & 95\% target interval \\\midrule
+\input{generated/e1_prediction_rotations}
+\end{tabular}
+\end{table}
+
+The sole primary test is a positive Spearman association between $X_R$ and
+$Y_R$, with eight rotations as units and all $8!=40{,}320$ permutations.
+It gives $\rho=\result{e1_ca_lddt_x_rho}$ and one-sided
+$p=\result{e1_ca_lddt_x_p}$. The exploratory $D$ test gives
+$\rho=\result{e1_ca_lddt_d_rho}$, $p=\result{e1_ca_lddt_d_p}$ and cannot replace
+the primary predictor. The $X$ span is \result{e1_x_span}, exceeding the
+predeclared $10^{-5}$ engineering resolution gate. Its large absolute error
+reflects partial, finite-budget reconstruction, not a lower bound on
+representational error. The prediction hypothesis was not supported; this was
+not a failure to resolve variation in the diagnostic.
+
+\begin{table}[htbp]\centering\small
+\caption{Exact one-sided association tests on pair-lDDT. $X$ is primary;
+$D$ is exploratory, without joint multiplicity correction. Both use the same
+eight rotations. Supplementary structure-score arrays are retained in the artifact.}
+\begin{tabular}{llll}\toprule
+Outcome & Predictor & Spearman $\rho$ & Exact $p$ \\\midrule
+\input{generated/e1_prediction_tests}
+\end{tabular}
+\end{table}
+
+For the primary outcome, the three seed-specific $X$ correlations are
+\result{e1_seed1_rho}, \result{e1_seed2_rho} and \result{e1_seed3_rho};
+leaving one teacher out gives \result{e1_leave_teacher1_rho},
+\result{e1_leave_teacher2_rho} and \result{e1_leave_teacher3_rho}.
+Synchronous whole-target resampling (20,000 draws, seed 20260924) gives a
+conditional correlation interval of
+[\result{e1_target_rhoLo}, \result{e1_target_rhoHi}]. This sensitivity analysis
+does not turn the 96 proteins or 24 fits into independent prediction units.
+The eight rotations limit power, but neither the near-zero main estimate nor
+these sensitivities provide a stable positive ranking. No new diagnostic,
+rotation or training budget was selected to rescue the prediction.
+
+The scoring audit retained an auxiliary-check precision failure: casting
+prediction coordinates from FP32 to FP64 changed a thresholded pair credit in
+four records, without changing the fixed reference pair set. The repaired
+auxiliary check uses the main scorer's original input precision and separately
+records the FP64 comparison. Main scores, their inputs and the statistical
+rules were unchanged. The bundled verifier reconstructs outcomes and exact
+tests from score arrays; it does not rerun CIF scoring or training.
+
+The result constrains this specific reconstruction diagnostic, not the
+observed direction effects or all possible measures of compensation.
+Reproducing one teacher's residual is a different objective from finding any
+residual that produces a useful structure; the null association does not
+identify which mismatch or optimization limitation matters. It also does not
+validate $D$ as an alternative predictor. A separately locked compensation
+intervention remains a distinct question; it cannot retroactively establish
+this failed predictive link.

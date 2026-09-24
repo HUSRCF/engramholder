@@ -1,0 +1,3041 @@
+{
+  "schema": "engramfold.prospective.E1E2.v1",
+  "time_utc": "2026-09-23T20:15:19.827276+00:00",
+  "design_commit": "9d87049",
+  "design_sha256": "6873c1ae2354cf15cd2ad8e91f49035a62f8645381fafe28e41a45c477b1a194",
+  "protocol_sha256": "9867fb24b35fc2ff5afe42ee5f1a20240e482df600497b4311800f54e1fc5c9d",
+  "old_root": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921",
+  "historical_lock_sha256": "426d9f2db5ccc1bb0abd4b68277bb709548f8e34c9a4a17ab5b693676057740d",
+  "reconstruction_root": "/data/user/shuang886/Folding/engramfold/shared_rotation_reconstruction_20260924",
+  "reconstruction_lock_sha256": "c051305c82d1188277643540281497c2ec24cb5ddf333f11e9cff561db293858",
+  "anchor_receipt_sha256": "a7ebe7160ebe01628d994b6ace6b9ab9d7e963d0acc52be43bbf597b1a8c3b54",
+  "teachers": [
+    {
+      "name": "train96_s20260923",
+      "train_size": 96,
+      "seed": 20260923,
+      "checkpoint": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/checkpoint_1536.pt",
+      "checkpoint_sha256": "c8a392c56583d03aa31c9561f16d88672b33f8630a5c5ec2ca6ad164952877c6"
+    },
+    {
+      "name": "train96_s20260924",
+      "train_size": 96,
+      "seed": 20260924,
+      "checkpoint": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/checkpoint_1536.pt",
+      "checkpoint_sha256": "ef49a2d746c0d13c644f84439c488fdd4c6af1364c003d4183b5ccf347df12e4"
+    },
+    {
+      "name": "train96_s20260925",
+      "train_size": 96,
+      "seed": 20260925,
+      "checkpoint": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/checkpoint_1536.pt",
+      "checkpoint_sha256": "5b4dff48e2b87b8c95f7fe22850cc78eb381a563b3960a56e5857f0637a38c3b"
+    }
+  ],
+  "rotation_ids": [
+    "r20270101",
+    "r20270102",
+    "r20270103",
+    "r20270104",
+    "r20270105",
+    "r20270106",
+    "r20270107",
+    "r20270108"
+  ],
+  "rotations_sha256": "8966393013a2a6cdde4e97eb22b63f7045e63789ae4675130b310dd5ff0cc0fc",
+  "rotation_audit_sha256": "5b8cbb8a5c5d7e8e1d0a34678fdb75def197334c36be0757d9c983776f9a5341",
+  "formal_seeds": [
+    20260923,
+    20260924,
+    20260925
+  ],
+  "new_runs": [
+    {
+      "name": "r20270101_s20260923",
+      "rotation_id": "r20270101",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270101_s20260924",
+      "rotation_id": "r20270101",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270101_s20260925",
+      "rotation_id": "r20270101",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270102_s20260923",
+      "rotation_id": "r20270102",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270102_s20260924",
+      "rotation_id": "r20270102",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270102_s20260925",
+      "rotation_id": "r20270102",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270103_s20260923",
+      "rotation_id": "r20270103",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270103_s20260924",
+      "rotation_id": "r20270103",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270103_s20260925",
+      "rotation_id": "r20270103",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270104_s20260923",
+      "rotation_id": "r20270104",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270104_s20260924",
+      "rotation_id": "r20270104",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270104_s20260925",
+      "rotation_id": "r20270104",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270105_s20260923",
+      "rotation_id": "r20270105",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270105_s20260924",
+      "rotation_id": "r20270105",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270105_s20260925",
+      "rotation_id": "r20270105",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270106_s20260923",
+      "rotation_id": "r20270106",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270106_s20260924",
+      "rotation_id": "r20270106",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270106_s20260925",
+      "rotation_id": "r20270106",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270107_s20260923",
+      "rotation_id": "r20270107",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270107_s20260924",
+      "rotation_id": "r20270107",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270107_s20260925",
+      "rotation_id": "r20270107",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270108_s20260923",
+      "rotation_id": "r20270108",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270108_s20260924",
+      "rotation_id": "r20270108",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor"
+    },
+    {
+      "name": "r20270108_s20260925",
+      "rotation_id": "r20270108",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor"
+    }
+  ],
+  "train_ids": [
+    "7hln_A",
+    "7thc_A",
+    "7h0m_A",
+    "5ppf_A",
+    "3nxo_A",
+    "5cn6_A",
+    "9uem_A",
+    "7zge_A",
+    "8i52_A",
+    "1h4g_A",
+    "3bk5_A",
+    "5qgt_A",
+    "9zsc_A",
+    "7w44_A",
+    "7mro_A",
+    "3zxy_A",
+    "4g7l_A",
+    "1cnx_A",
+    "8yoa_A",
+    "7qpm_A",
+    "9q8c_A",
+    "3r0t_A",
+    "3snl_A",
+    "5q9h_A",
+    "3k10_A",
+    "1zyo_A",
+    "4oy6_A",
+    "3eye_A",
+    "1ukf_A",
+    "2o6r_A",
+    "6s8z_A",
+    "1iwm_A",
+    "2rj2_A",
+    "2wo1_A",
+    "3c80_A",
+    "3gp6_A",
+    "1dy0_A",
+    "5nua_A",
+    "2vnq_A",
+    "6osx_A",
+    "2r16_A",
+    "4b1l_A",
+    "4zjh_A",
+    "1fjr_A",
+    "4z82_A",
+    "5n9m_A",
+    "4c55_A",
+    "4ado_A",
+    "5k0f_A",
+    "4kdu_A",
+    "4nfa_A",
+    "1w8g_A",
+    "3fri_A",
+    "1qy3_A",
+    "5xeg_A",
+    "3rlk_A",
+    "4nun_A",
+    "4emr_A",
+    "5boi_A",
+    "1uzi_A",
+    "1tkh_A",
+    "4omk_A",
+    "2zy1_A",
+    "3zgc_B",
+    "4g8b_A",
+    "5jgl_A",
+    "6gpa_A",
+    "3lid_A",
+    "3ezo_A",
+    "1wwl_A",
+    "1v93_A",
+    "2nsd_A",
+    "1arb_A",
+    "1gik_A",
+    "5axo_A",
+    "6mrf_A",
+    "6k7z_A",
+    "9abp_A",
+    "6yec_A",
+    "3wwc_A",
+    "3ly0_A",
+    "1xix_A",
+    "6rrm_A",
+    "4nxt_A",
+    "5dtm_A",
+    "3pvk_A",
+    "3wwx_A",
+    "3ud1_A",
+    "2v7k_A",
+    "6uqt_A",
+    "4e2k_A",
+    "5hgr_A",
+    "4b5n_A",
+    "1d3k_A",
+    "3ams_A",
+    "1z7w_A"
+  ],
+  "dev_ids": [
+    "9qdy_A",
+    "1yz7_A",
+    "9f4s_A",
+    "5zyl_A",
+    "8w7p_A",
+    "5me4_A",
+    "7f7m_A",
+    "4anl_A"
+  ],
+  "confirm_ids": [
+    "3gxb_A",
+    "6a89_A",
+    "4xbc_A",
+    "6q3v_A",
+    "7nuw_A",
+    "2obi_A",
+    "3qzq_A",
+    "4woh_A",
+    "6ndw_A",
+    "3hny_A",
+    "1wba_A",
+    "1yn9_A",
+    "1a44_A",
+    "4xje_A",
+    "1ccz_A",
+    "2p3k_A",
+    "6ibj_A",
+    "1j84_A",
+    "3esx_A",
+    "4p27_A",
+    "6fpc_A",
+    "7c82_A",
+    "1bk7_A",
+    "6ht1_A",
+    "5d6p_A",
+    "1lxz_A",
+    "5kdi_A",
+    "7np5_A",
+    "5nl7_A",
+    "3eii_A",
+    "3f95_A",
+    "3zj0_A",
+    "2nlr_A",
+    "1m1u_A",
+    "2a7m_A",
+    "3n36_A",
+    "1xa1_A",
+    "6j5q_A",
+    "2erf_A",
+    "4dr9_A",
+    "1h5y_A",
+    "1g69_A",
+    "4zyx_A",
+    "1pxr_A",
+    "5xrb_A",
+    "4f1j_A",
+    "1dua_A",
+    "2ocg_A",
+    "3voa_A",
+    "1c91_A",
+    "3f99_A",
+    "3ah4_A",
+    "7bwv_A",
+    "4q3c_A",
+    "2vi0_A",
+    "4n13_A",
+    "2c6z_A",
+    "5byl_A",
+    "2cex_A",
+    "3ea3_A",
+    "2iry_A",
+    "5dxn_A",
+    "4jpx_A",
+    "7k27_A",
+    "2bod_A",
+    "5trq_A",
+    "3wib_A",
+    "4i6k_A",
+    "2ioy_A",
+    "6ap7_A",
+    "6w2p_B",
+    "4jin_A",
+    "3ita_A",
+    "5obx_A",
+    "3fjl_A",
+    "1v79_A",
+    "7kk6_A",
+    "3tgh_A",
+    "6xqx_A",
+    "6l1h_A",
+    "7a16_A",
+    "1zze_A",
+    "4pam_A",
+    "3m10_A",
+    "1z2n_A",
+    "4lv8_A",
+    "4ihm_A",
+    "1dvn_A",
+    "6t8d_A",
+    "1jcf_A",
+    "6ijn_A",
+    "4fk9_A",
+    "1woo_A",
+    "6ch1_A",
+    "2d5j_A",
+    "1hb1_A"
+  ],
+  "baselines": {
+    "query": {
+      "evaluation": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/evaluation.json",
+      "evaluation_sha256": "90a971da956553d89757b31857269c22b1e9ccded6eeab069e35b8d23b776e5c",
+      "predictions": [
+        {
+          "target_id": "3gxb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3gxb_A.npz",
+          "sha256": "1767b6960a314a018fd04bc166e80338b4f7d817c5bc89cb5cc5048805b8f5cf"
+        },
+        {
+          "target_id": "6a89_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6a89_A.npz",
+          "sha256": "325929432a91eb3f887dbafc37c277132e56ce9c3ae335422a518ccb7c21464e"
+        },
+        {
+          "target_id": "4xbc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4xbc_A.npz",
+          "sha256": "5b8e7780073b616e850ff7e8e7d91c53fbbc9d7ad732422f5496bc58af98e7b7"
+        },
+        {
+          "target_id": "6q3v_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6q3v_A.npz",
+          "sha256": "1486010249fde4631308477a584f40e747beee492605bfcb9f07fba74695a3a0"
+        },
+        {
+          "target_id": "7nuw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7nuw_A.npz",
+          "sha256": "d9dbd6abd56580065a1c8192733a2d774600b7b1ced52f470d15311822bfcdef"
+        },
+        {
+          "target_id": "2obi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2obi_A.npz",
+          "sha256": "5d0e0ecb89b8949e10e5c831ebc14b0b0313b704ffd9998e61b560321294a86c"
+        },
+        {
+          "target_id": "3qzq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3qzq_A.npz",
+          "sha256": "79e0dba7a7ac0b0003c50f021a8da611304a7453d44fdc1a6aac05441e17846c"
+        },
+        {
+          "target_id": "4woh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4woh_A.npz",
+          "sha256": "75b89cf1dbbdfdec64b13fd52b08486f9e68f08a672426aeb7502860a6a39c06"
+        },
+        {
+          "target_id": "6ndw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6ndw_A.npz",
+          "sha256": "2fc90825976f0cde15a8fc287db885e0111aedd5dfca86469031feb445581b8d"
+        },
+        {
+          "target_id": "3hny_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3hny_A.npz",
+          "sha256": "f382fe7bb0dc7d60fd98d33dab2cfece664eb301b66154f89c0955458ca8dede"
+        },
+        {
+          "target_id": "1wba_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1wba_A.npz",
+          "sha256": "96ad9fbf73d9f5001982084740d6c955962c37449e438825490cbb514bdd5cf0"
+        },
+        {
+          "target_id": "1yn9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1yn9_A.npz",
+          "sha256": "94ac83b7067a3daf89b8c51d0659bbbb8fdbece4e664cce344c61dfd0577a52c"
+        },
+        {
+          "target_id": "1a44_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1a44_A.npz",
+          "sha256": "dbeb967ee7233ed52a6a73687dbcca67df065892958f89afc632ff0404ae484f"
+        },
+        {
+          "target_id": "4xje_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4xje_A.npz",
+          "sha256": "884823c86bbe07c4b8f1b71e8033e64f9ab00881b15fdb7f2b50fe571f5f92e0"
+        },
+        {
+          "target_id": "1ccz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1ccz_A.npz",
+          "sha256": "f62e16363fa8273ee77da07bb1ea6c97066eb73ad1b779e785e74c2afd531dc1"
+        },
+        {
+          "target_id": "2p3k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2p3k_A.npz",
+          "sha256": "f4bd26e93be35ba424308cb1c27f15ed3c5a12e0f2127084ab039332cf7b145f"
+        },
+        {
+          "target_id": "6ibj_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6ibj_A.npz",
+          "sha256": "6bcfb6529828c5087c98c439434c2efc6bf9fdf255f2bf953c1c2cf047d40241"
+        },
+        {
+          "target_id": "1j84_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1j84_A.npz",
+          "sha256": "ce8e12cae837e434e04b406be66506ce7a1cc955ffa4ff3979e6ef33de1eb918"
+        },
+        {
+          "target_id": "3esx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3esx_A.npz",
+          "sha256": "a62beb8e14070e2a3eb9689152370dafb69c438cd320586aa5c38d769d80e6d4"
+        },
+        {
+          "target_id": "4p27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4p27_A.npz",
+          "sha256": "881d4902f6ba7963b40526d71b4b447cfbdbb50d31d0fc86938647f5b345640a"
+        },
+        {
+          "target_id": "6fpc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6fpc_A.npz",
+          "sha256": "ba0774c21245eaea1876188fc8277cb2e3e7ad17426f03a9f496bc8e2d106823"
+        },
+        {
+          "target_id": "7c82_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7c82_A.npz",
+          "sha256": "256e4ed3e9b361a81bff310f2202ffb91dcae84d30fefc9ccb0b5faf4297420f"
+        },
+        {
+          "target_id": "1bk7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1bk7_A.npz",
+          "sha256": "2e224bafaaf9057d18a5cf344409863666b0dc43926c7163cfbcce0c004d8544"
+        },
+        {
+          "target_id": "6ht1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6ht1_A.npz",
+          "sha256": "807ef7698b73b9e4994c413ea399486dbb4ce96870086796f95a81b4c80e09d0"
+        },
+        {
+          "target_id": "5d6p_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5d6p_A.npz",
+          "sha256": "c221200a7560b3ed2374ba8d6de94e61f683211d8cddc17ea89023d5564bbc24"
+        },
+        {
+          "target_id": "1lxz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1lxz_A.npz",
+          "sha256": "b5839f45a86873f3b026c5e586563a198e80bf0d6c3f189f21db9aefce064a97"
+        },
+        {
+          "target_id": "5kdi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5kdi_A.npz",
+          "sha256": "8957eb5aaecf794e046f4943b67652e7fb6d2e707159201314a8a0d9951de53f"
+        },
+        {
+          "target_id": "7np5_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7np5_A.npz",
+          "sha256": "bcbcf70f5f1a7a21690a7e4d1db437dc1bbd1e282ef65505ba291ffc7f3bd9c0"
+        },
+        {
+          "target_id": "5nl7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5nl7_A.npz",
+          "sha256": "7b18473462a47908064e2775d3fc395119974d87c4e2d3c1d4fe4a5cd5116181"
+        },
+        {
+          "target_id": "3eii_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3eii_A.npz",
+          "sha256": "c129a6c1637b165f27b28ccc97280ed351c7d1c1c826079a5d3a817d0bd6aaff"
+        },
+        {
+          "target_id": "3f95_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3f95_A.npz",
+          "sha256": "32a9a3f91168488ab3d515cbb940d2e50008e329c313604aff8b3072ed91366f"
+        },
+        {
+          "target_id": "3zj0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3zj0_A.npz",
+          "sha256": "81d5df94f597899b993ed3545c83871b28c08b1e0e8fd4c4203bee37476368fa"
+        },
+        {
+          "target_id": "2nlr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2nlr_A.npz",
+          "sha256": "fdad842ad15f36b59029e1c5d38d3ae15e29f9419c86ea50f1382526f2c66126"
+        },
+        {
+          "target_id": "1m1u_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1m1u_A.npz",
+          "sha256": "9f60d5171295e257f14360f260bc2ed862af4299a4414303d4521d93a97d4dfc"
+        },
+        {
+          "target_id": "2a7m_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2a7m_A.npz",
+          "sha256": "8526ce9b26689c8ddf76e72969d8fdac772fe29685c5a0c838d450b77c525981"
+        },
+        {
+          "target_id": "3n36_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3n36_A.npz",
+          "sha256": "faa5ce4b383f38f6ba980673ab8ee2e84e2edc680fd4b3fa8425766ba15f1d5e"
+        },
+        {
+          "target_id": "1xa1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1xa1_A.npz",
+          "sha256": "6f4db1c5ada62b4bbe27f859a54bad63aba184a9f056b22070d15e851559b519"
+        },
+        {
+          "target_id": "6j5q_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6j5q_A.npz",
+          "sha256": "a386cc428a6575328499ac6d4eab0e1955867eb465f44fecea298df60d96a3f8"
+        },
+        {
+          "target_id": "2erf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2erf_A.npz",
+          "sha256": "bae0b267779b5083ce1806f4a8764cb46a262637532f720820ecc441bf33016e"
+        },
+        {
+          "target_id": "4dr9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4dr9_A.npz",
+          "sha256": "13b744f6ce495052473a0ac3ef94337cdaadc5e8a41b825c1973d40562046c42"
+        },
+        {
+          "target_id": "1h5y_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1h5y_A.npz",
+          "sha256": "47d8d226acfdc0650198dbcdd4eae3a58f074db11f176499762f7d9d03f3cbf9"
+        },
+        {
+          "target_id": "1g69_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1g69_A.npz",
+          "sha256": "1e33a2041883e29b6b7ad22b0525ff9ac7e28e279fd4a6695062b819da874ff1"
+        },
+        {
+          "target_id": "4zyx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4zyx_A.npz",
+          "sha256": "52303b288b805fcf4d72def5b3d2dfbf0367852fc2bae3307060a94df2f1acd6"
+        },
+        {
+          "target_id": "1pxr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1pxr_A.npz",
+          "sha256": "3e0d1fb21fe0331a3fc7f13ae421c82d5d86f8f8e20dd837ab2730c42e1068c6"
+        },
+        {
+          "target_id": "5xrb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5xrb_A.npz",
+          "sha256": "5243807de3b2aebdf1051e490a203df32f65c8e0b98e8e400242690e8ee61d0b"
+        },
+        {
+          "target_id": "4f1j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4f1j_A.npz",
+          "sha256": "c4fde96ffbba99f165543dc7bc3b8e13f1521eed94fd1add6dd6829d5cfd3da7"
+        },
+        {
+          "target_id": "1dua_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1dua_A.npz",
+          "sha256": "42bdd94aa215ee19050a01eade62bdd3faa57017f16a0fa1c281d09791fa5922"
+        },
+        {
+          "target_id": "2ocg_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2ocg_A.npz",
+          "sha256": "d7660b6378c62a0608ba75077a7ed86ccef59f85b5b37357ba82e337d575bb5a"
+        },
+        {
+          "target_id": "3voa_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3voa_A.npz",
+          "sha256": "508828c705e93d91c813f9824c98233fec86da3f784bbfb3efd79ced68c73c69"
+        },
+        {
+          "target_id": "1c91_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1c91_A.npz",
+          "sha256": "f720b4f422876cb583c2da088f37c7d5c74d58293c3dd0c9c6a42622cfcb2be4"
+        },
+        {
+          "target_id": "3f99_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3f99_A.npz",
+          "sha256": "6c3a4c6e4c0c34c001063dbf37a2dc651ae45a79401129af0ef8cf800d9b0f38"
+        },
+        {
+          "target_id": "3ah4_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3ah4_A.npz",
+          "sha256": "44a58309b5fad49bf37d0f800c2845697adfa9f2a615cc8cc4b489b644c54241"
+        },
+        {
+          "target_id": "7bwv_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7bwv_A.npz",
+          "sha256": "bdf4a4b8de1401faff25d733fe57a1a61abb61531131edb5715b2efd30a459b6"
+        },
+        {
+          "target_id": "4q3c_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4q3c_A.npz",
+          "sha256": "0ef59613e5a90e0bbc231ffc18664e5f578cbee5095a2b1f78be7193a8098387"
+        },
+        {
+          "target_id": "2vi0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2vi0_A.npz",
+          "sha256": "f4fb847f6eeede5f67813165acecf1e0421d052c9d50f8eb143137be28a6e70e"
+        },
+        {
+          "target_id": "4n13_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4n13_A.npz",
+          "sha256": "d09b86a8fc21e5efc15e068b4843f4ea7b3cf522d0b3c0656ef60829df2d4dde"
+        },
+        {
+          "target_id": "2c6z_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2c6z_A.npz",
+          "sha256": "641b0da8c0c25a312e352cee91c13cdd46fef8c05dc0fe977d5ce8ed859d7762"
+        },
+        {
+          "target_id": "5byl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5byl_A.npz",
+          "sha256": "e26c656fa9d3bc06bd0ef4eef55ae7098170d1c9042d33d4ac2a3bf829c973c7"
+        },
+        {
+          "target_id": "2cex_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2cex_A.npz",
+          "sha256": "82ab139d5560da0c664d9da08aeb399b47789e3797c966fb8dd0b12e9c994220"
+        },
+        {
+          "target_id": "3ea3_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3ea3_A.npz",
+          "sha256": "d7795ea1ee6331160738d1486c7c23a36b284386f82612d86114b3788669a388"
+        },
+        {
+          "target_id": "2iry_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2iry_A.npz",
+          "sha256": "e2b6867c2f60e7c4a8dc0d86848942dd99b8a437355bf2d6b3d2c2f9d14d7791"
+        },
+        {
+          "target_id": "5dxn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5dxn_A.npz",
+          "sha256": "944215c59c54660e0490ebbe66bbb4cb8f0396f268ccf0666c8c0187df782429"
+        },
+        {
+          "target_id": "4jpx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4jpx_A.npz",
+          "sha256": "78234c6853c165d9cfebbd1412f45a2502ca3d928cbc70c962920b8d14c94815"
+        },
+        {
+          "target_id": "7k27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7k27_A.npz",
+          "sha256": "4d23b529db14dc910275924d131c6c1cd22d86644f98b5c1e2234ce3c857419a"
+        },
+        {
+          "target_id": "2bod_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2bod_A.npz",
+          "sha256": "e54109370949670b6373def97c839dcbabd4b089ae221b9af48bfb76f9d50ab4"
+        },
+        {
+          "target_id": "5trq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5trq_A.npz",
+          "sha256": "8fb6da9a10a5954ffda8932faac99f6f0064d8b363a7e422971344afe0377e95"
+        },
+        {
+          "target_id": "3wib_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3wib_A.npz",
+          "sha256": "05bb6f290584d7ee32f2542f00ff9123336b0b7abef931ebbd1a438a113c69da"
+        },
+        {
+          "target_id": "4i6k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4i6k_A.npz",
+          "sha256": "6ab43504a19a7fc911f39d7d34ed92b8ff63efed068f4a9fa134a8abf54008ba"
+        },
+        {
+          "target_id": "2ioy_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2ioy_A.npz",
+          "sha256": "b70a5f9db60390d9a32c252dda9ac6e1181e9233d8f270df2e0cb6a5ad1f6a74"
+        },
+        {
+          "target_id": "6ap7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6ap7_A.npz",
+          "sha256": "d8facab996dea728500abdd3b4885f02df876a99b10ae9825b2bf9abf1e1be97"
+        },
+        {
+          "target_id": "6w2p_B",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6w2p_B.npz",
+          "sha256": "81d7aabeb42ae87f957692c61bdb7cc25f6dc3631002c5a920f1bcf0f45b923b"
+        },
+        {
+          "target_id": "4jin_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4jin_A.npz",
+          "sha256": "8282529e6b61f4d74ad7c553f2fb9c70b13daa449b13212e8a7e8a91ea3aacf5"
+        },
+        {
+          "target_id": "3ita_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3ita_A.npz",
+          "sha256": "c151be14da811368014a1d9683ee2007fba37d87e95fa28b5e7d7674895350c2"
+        },
+        {
+          "target_id": "5obx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/5obx_A.npz",
+          "sha256": "841ce42dce6ed8056b6026a02ef746a3a35f436870bfa18be4cce21599e301e4"
+        },
+        {
+          "target_id": "3fjl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3fjl_A.npz",
+          "sha256": "523a2cf2cf6edd96c1549e323ea2ad46a1f1260d3d981262f78326b51f404469"
+        },
+        {
+          "target_id": "1v79_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1v79_A.npz",
+          "sha256": "d47596176efa8538568363e9f63a4a4cfb678c825e23613445614da3261f96a9"
+        },
+        {
+          "target_id": "7kk6_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7kk6_A.npz",
+          "sha256": "c58e332e760fd4a9fbe0a6bbf08d3072baa29c796f4c246d5ad7c929c50f7975"
+        },
+        {
+          "target_id": "3tgh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3tgh_A.npz",
+          "sha256": "9c3c575ac8ebff22707abe820c5e6fa98e640c441efd958ca0622710ad2524ee"
+        },
+        {
+          "target_id": "6xqx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6xqx_A.npz",
+          "sha256": "58dcde32f53410cf10ce217a40363043cb8dd72085a4d8ebbfd4c0d524633c5f"
+        },
+        {
+          "target_id": "6l1h_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6l1h_A.npz",
+          "sha256": "183404b29e6ebbf4b2819a8a249c63bb78db4be6c2a58fd837ac4b525c129bfe"
+        },
+        {
+          "target_id": "7a16_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/7a16_A.npz",
+          "sha256": "7fd10d668b9ce20b48457f5e35ac4de535d5b7667532159ea68fca889ebc6d12"
+        },
+        {
+          "target_id": "1zze_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1zze_A.npz",
+          "sha256": "401b582b9ed76e828066454d9bf3810802a2c8da4645677b0e8b172d18cad9b8"
+        },
+        {
+          "target_id": "4pam_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4pam_A.npz",
+          "sha256": "997f8e5ffd9d537cb818b7d326a5f3d5afb7d3b42f5ea45d0d06849a83d830be"
+        },
+        {
+          "target_id": "3m10_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/3m10_A.npz",
+          "sha256": "2c075563caa218695c026a95b9097a7b1431dd1eabff4a4ce7b3b46b15d6ca32"
+        },
+        {
+          "target_id": "1z2n_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1z2n_A.npz",
+          "sha256": "39ee43da4cdc4e935832c1094f4de00a5d02a539bb86ce1fd95264441ecf7a68"
+        },
+        {
+          "target_id": "4lv8_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4lv8_A.npz",
+          "sha256": "936e054928986f9f6f5c992c00d2af0a902dd1b51fa800f7cc8035e008af7ffb"
+        },
+        {
+          "target_id": "4ihm_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4ihm_A.npz",
+          "sha256": "d215e380b0c82f9988669fd13a86571e8c50589d960f49d6e21adfcecf05fcb9"
+        },
+        {
+          "target_id": "1dvn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1dvn_A.npz",
+          "sha256": "2aae793f22ffc768d05ce60c54d4cf52069cad1412005b30d0e192772e2ab51c"
+        },
+        {
+          "target_id": "6t8d_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6t8d_A.npz",
+          "sha256": "c719801581e38744dbdf254ef24b5f4b90c9ec73ecf45381f2c1a1f39e45526e"
+        },
+        {
+          "target_id": "1jcf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1jcf_A.npz",
+          "sha256": "5c2a0dee439d9ce1db0dc7135f542ff7e7e81ee7e25afd1b9d5538a52371721f"
+        },
+        {
+          "target_id": "6ijn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6ijn_A.npz",
+          "sha256": "1cf4f2cc1f25bff5c187c9bd5b1d873e6829ee7f29a052b4b9d08cb0b5cfee61"
+        },
+        {
+          "target_id": "4fk9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/4fk9_A.npz",
+          "sha256": "dd771ec5b3f08cdce048d0c53c38e7aea85dbdd4d76d80302ebcc21c0b350ade"
+        },
+        {
+          "target_id": "1woo_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1woo_A.npz",
+          "sha256": "0bf445a0c858f6dfd55716f74fa57c81e96ec66941fa86078ad76fbb680e6bab"
+        },
+        {
+          "target_id": "6ch1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/6ch1_A.npz",
+          "sha256": "90bcb6e17c0d2a5d00ccc87527b0f1ac7ee37d0f8ed81e21fffad7ac8d07331a"
+        },
+        {
+          "target_id": "2d5j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/2d5j_A.npz",
+          "sha256": "93880f6bb9d1ccc28fab9d384b2cbe1db7ae7343c6af78701aace391b1558f61"
+        },
+        {
+          "target_id": "1hb1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/query/query/predictions/1hb1_A.npz",
+          "sha256": "15cd461b95506f8f7b89ecf2846a588f2f6ccfffc77d30e6c63e28d8a3acf5ff"
+        }
+      ]
+    },
+    "native_s20260923": {
+      "evaluation": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/evaluation.json",
+      "evaluation_sha256": "51b3faacd1c6d6e04b232d7f02a5ae211beb2585d8004ac4fd7c0fe060bcd9f4",
+      "predictions": [
+        {
+          "target_id": "3gxb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3gxb_A.npz",
+          "sha256": "3d13e5df4d80260d90867fda6926c3531336e6b8967d04b4798bfab66e708e04"
+        },
+        {
+          "target_id": "6a89_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6a89_A.npz",
+          "sha256": "48ae9391823a877be9b419f0f57aa700b1e83af75c3be7c579c9d6c283699354"
+        },
+        {
+          "target_id": "4xbc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4xbc_A.npz",
+          "sha256": "350fe0dd0888fdc5756d03578fe95ff2516479c6424ab05929a1f3be4638829c"
+        },
+        {
+          "target_id": "6q3v_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6q3v_A.npz",
+          "sha256": "0884f003849d72344792ed454fc9e18f1947f8abd4db8408c8a10e08de7a242c"
+        },
+        {
+          "target_id": "7nuw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7nuw_A.npz",
+          "sha256": "2c6eeafb6eacbbcddade4972d08b467d578712cd41e8122e42346634c94d962b"
+        },
+        {
+          "target_id": "2obi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2obi_A.npz",
+          "sha256": "2cb44527131f5ad433e5ad0afd89c42940cc1b0ec1667da2665a88cf5c5406c8"
+        },
+        {
+          "target_id": "3qzq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3qzq_A.npz",
+          "sha256": "3b02b0205b01eca31cd1da9d008c7d396f2902d6f4f0548bf0ae9ee9d720f1d1"
+        },
+        {
+          "target_id": "4woh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4woh_A.npz",
+          "sha256": "844c8c3d63b1f95d8e0fdc273c83eace7df5d2f92f38af6e7c424f9eb65d2472"
+        },
+        {
+          "target_id": "6ndw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6ndw_A.npz",
+          "sha256": "d43728c6347f20eff95f9fc37114217953c24199135a63ef44ba9aab35b6f755"
+        },
+        {
+          "target_id": "3hny_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3hny_A.npz",
+          "sha256": "ca1557eece3471afac547a511e92c4de5eeddafdbcc4d482d937b38eac1a0f2d"
+        },
+        {
+          "target_id": "1wba_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1wba_A.npz",
+          "sha256": "b0584a46f9595d4186b71d209e8eba3a96acecce131ee0295b514374f24c75b6"
+        },
+        {
+          "target_id": "1yn9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1yn9_A.npz",
+          "sha256": "8d03f3c9224f5328bf011dfaaee8ea32b6133c411014ba40d212c3e5076fed3f"
+        },
+        {
+          "target_id": "1a44_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1a44_A.npz",
+          "sha256": "381d615dffbc67d67208c4a1970978361d3641e5a5e37f8685ea184b6823ea5e"
+        },
+        {
+          "target_id": "4xje_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4xje_A.npz",
+          "sha256": "e3c56692e87a479676a8d7ed3b004c827144ae8b07e5a386d1a36ba981cad022"
+        },
+        {
+          "target_id": "1ccz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1ccz_A.npz",
+          "sha256": "c1134435d81fcd90d6a335bd2d2280e83450f2bd03953e371d6ae03d5a7ef596"
+        },
+        {
+          "target_id": "2p3k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2p3k_A.npz",
+          "sha256": "0f9e8fcbf396d97917ca22ee9fc924d93c826d40f6e8ddf38b994a513499f4ac"
+        },
+        {
+          "target_id": "6ibj_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6ibj_A.npz",
+          "sha256": "727298efd21a711498bb46166060038fa95bbf5ecda77c844ad5fcf1573df797"
+        },
+        {
+          "target_id": "1j84_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1j84_A.npz",
+          "sha256": "e74e768258469ee8678918df9aa2c9824388e11c7143cf287e3c84dc4d399407"
+        },
+        {
+          "target_id": "3esx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3esx_A.npz",
+          "sha256": "1b625abc0dd9e8b139c83f02013cf8caf28175673a3b074be00c933b17c948d8"
+        },
+        {
+          "target_id": "4p27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4p27_A.npz",
+          "sha256": "5398d5c3a675e636d77ade425efc2ca934c1b0099d03237e809efdfc688f1c37"
+        },
+        {
+          "target_id": "6fpc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6fpc_A.npz",
+          "sha256": "6d644af52a0ec35f297342c975ba05dfb15503b99df20ef2c2c0dc83441840cf"
+        },
+        {
+          "target_id": "7c82_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7c82_A.npz",
+          "sha256": "80ddbb3f4963027e51eb08b2034cd97f7534cea4d24eeb0c8f5dee67d60e553f"
+        },
+        {
+          "target_id": "1bk7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1bk7_A.npz",
+          "sha256": "b192e4e95aa12a82b22c0d804e8b1573b8ed73158e1b5e45669b7f0c7f116d7b"
+        },
+        {
+          "target_id": "6ht1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6ht1_A.npz",
+          "sha256": "e5ae7d34d59b63dc92037f1f0c73efef14dbe1b1d60ae8aed7075eda9ff75864"
+        },
+        {
+          "target_id": "5d6p_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5d6p_A.npz",
+          "sha256": "4b28f2d2d7d07f9d6f0a9b24a1720e6000780b771c2106f354b7b54320b8ba26"
+        },
+        {
+          "target_id": "1lxz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1lxz_A.npz",
+          "sha256": "369fd652763e2d97b48e8bff31224b4815330f30b7cee2cf5d3c1e0591cecc2b"
+        },
+        {
+          "target_id": "5kdi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5kdi_A.npz",
+          "sha256": "26ba5c62090364136799be327bdcd750cec0e329c164758ac3b085405b1c57b9"
+        },
+        {
+          "target_id": "7np5_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7np5_A.npz",
+          "sha256": "10f6d6dafafcf8446faf8e4e5cb8ba488e0585d783be2ff6a9e48c5f28b1705e"
+        },
+        {
+          "target_id": "5nl7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5nl7_A.npz",
+          "sha256": "3c0ff72ee725c95d5e0093e8e91b9f02ded0414a43e73d25ae037ddf6ea032aa"
+        },
+        {
+          "target_id": "3eii_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3eii_A.npz",
+          "sha256": "c131cd7c584efbf082d110649c9eb56fb8e875f87d5006048b3a2eb750b5a96e"
+        },
+        {
+          "target_id": "3f95_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3f95_A.npz",
+          "sha256": "8963eed77cbedd3fa2ff208f7bc0481d5a6d5660ed1a6a6d33d58ed934087021"
+        },
+        {
+          "target_id": "3zj0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3zj0_A.npz",
+          "sha256": "78aecbdb81af44fac804ff5f1560b1b869c8a246ac8943870bdd7e57fa9388e4"
+        },
+        {
+          "target_id": "2nlr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2nlr_A.npz",
+          "sha256": "2e07eab1526f773ef9bf5094a430a71d9cfedc4475d7ed0c1030003e406c2912"
+        },
+        {
+          "target_id": "1m1u_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1m1u_A.npz",
+          "sha256": "90df759152c8751d43d5b825db704324e48731dc71f481c9d3b3bdeb115f1d87"
+        },
+        {
+          "target_id": "2a7m_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2a7m_A.npz",
+          "sha256": "5b6874f6c6b746ef5a259af682ffef1a52951c3cd83887ed694554e718c70144"
+        },
+        {
+          "target_id": "3n36_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3n36_A.npz",
+          "sha256": "07b4db7293a0d1d95b6aa49774df8e4eb7a8226ea694867252733e5396b4a0bf"
+        },
+        {
+          "target_id": "1xa1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1xa1_A.npz",
+          "sha256": "d04f15a8985c0e305d98ead1cf2d235821129f91f930d7b891c660a11747fa62"
+        },
+        {
+          "target_id": "6j5q_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6j5q_A.npz",
+          "sha256": "bb7284ffaccfaaec494dfe7d7f70eb52b823f910cf155030806e2d0d016966a6"
+        },
+        {
+          "target_id": "2erf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2erf_A.npz",
+          "sha256": "bd29c4acb053bd417793a894789fc33f611f4b285d50b223528fd744a3ab292e"
+        },
+        {
+          "target_id": "4dr9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4dr9_A.npz",
+          "sha256": "cb7429df9a4d537dd6c310d4621c96f4791959d988c7d39c3d0dcedb50444dc5"
+        },
+        {
+          "target_id": "1h5y_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1h5y_A.npz",
+          "sha256": "7164ec1a7eb9d28e8bda14512d7195b2ed57136f6e6dd258e31f1c4d253f62fd"
+        },
+        {
+          "target_id": "1g69_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1g69_A.npz",
+          "sha256": "c6fc1e19e56440de0386d806b61be0a3e3da790086c9cc7334b9dd3094af88d0"
+        },
+        {
+          "target_id": "4zyx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4zyx_A.npz",
+          "sha256": "4dd07a042b51cd325ebad2df55770f1f7eb2667e124042d5f668557fd958b266"
+        },
+        {
+          "target_id": "1pxr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1pxr_A.npz",
+          "sha256": "83d87ea6663dd4b77b1cfd1c455a27c08042bd97060532a8e3d6d9b2c61b9523"
+        },
+        {
+          "target_id": "5xrb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5xrb_A.npz",
+          "sha256": "b7a9bb37c32dac86221c25d56088a66e546658626b9eab82b4ef0368aef0f2ed"
+        },
+        {
+          "target_id": "4f1j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4f1j_A.npz",
+          "sha256": "749a9b0343351fe509b4d48eec29423047b9273eb7735a1f86621d8a05c4222d"
+        },
+        {
+          "target_id": "1dua_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1dua_A.npz",
+          "sha256": "b47fb15e1bc02b88ded07cb0883caabcb923fcddfae1a10446df765fed8bdd8a"
+        },
+        {
+          "target_id": "2ocg_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2ocg_A.npz",
+          "sha256": "5db7c122998ac8ac5b080ecdf309c725ee74aadca01c0102031d43bdbacbe2e2"
+        },
+        {
+          "target_id": "3voa_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3voa_A.npz",
+          "sha256": "5a60fe752c5d8105c297ff39b6b27f1e8728e494c17c6107967e6919633ab478"
+        },
+        {
+          "target_id": "1c91_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1c91_A.npz",
+          "sha256": "e2bda7e1af5d48a4a50e2f77a30a4d088f258bde2b02ae0195646d0c876c591b"
+        },
+        {
+          "target_id": "3f99_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3f99_A.npz",
+          "sha256": "1eea69ec2b2363be61b938c16100c12c26a29789209001dd6575a422b72b4d05"
+        },
+        {
+          "target_id": "3ah4_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3ah4_A.npz",
+          "sha256": "745ac330f7c198354698d09776790e0af643e8db31b70731969cd5fb60c9b1cf"
+        },
+        {
+          "target_id": "7bwv_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7bwv_A.npz",
+          "sha256": "e3bebe7f0a56a7f053b44a2cfcd8aa4717a53213c8ad77fbb31bf91e289da707"
+        },
+        {
+          "target_id": "4q3c_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4q3c_A.npz",
+          "sha256": "50221248d3eadf2b9061bf2e59c88a32203c186f590a0850397de3dc21a3d298"
+        },
+        {
+          "target_id": "2vi0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2vi0_A.npz",
+          "sha256": "d0abb3df59cb1c97397ee24e9ab5fd52f8d9cfbd6fb20c40f5864c4f14ca45d7"
+        },
+        {
+          "target_id": "4n13_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4n13_A.npz",
+          "sha256": "c876a4cb00aeb0706542c8dfd2f90ee94f3fddc0a712027671e0c9b21d786f89"
+        },
+        {
+          "target_id": "2c6z_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2c6z_A.npz",
+          "sha256": "a0224ab03d156b5962f2636693650f3f4c00f289f63b27fc7180a5c097005de8"
+        },
+        {
+          "target_id": "5byl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5byl_A.npz",
+          "sha256": "afe2f4077f36869bf806118a4103bc3b81bcd08e36838d97346be411ec4ad845"
+        },
+        {
+          "target_id": "2cex_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2cex_A.npz",
+          "sha256": "c1bbee34e869757ea670df948324276f5b89242af84bfb06005d8ee70312e1e3"
+        },
+        {
+          "target_id": "3ea3_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3ea3_A.npz",
+          "sha256": "67d2d75fce8862d98a2a0490cdd9a72baef02e26835b6f18b3e02bee9a0561a6"
+        },
+        {
+          "target_id": "2iry_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2iry_A.npz",
+          "sha256": "c7b8b94d59cd48b796c27f09769bebcbc128b0702c1a729975e2d267a8da14e5"
+        },
+        {
+          "target_id": "5dxn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5dxn_A.npz",
+          "sha256": "99b1919f42c9b25fbf55114f44b85b221dbcc0c125d00775ebfbed12e52564fe"
+        },
+        {
+          "target_id": "4jpx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4jpx_A.npz",
+          "sha256": "83a30efadb56eccd7069ea42b935bb0c1dcd71c1aa9ec76c346128e03ebd6e2b"
+        },
+        {
+          "target_id": "7k27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7k27_A.npz",
+          "sha256": "1afb926146cdc6742aa85f0e36ff8da9c5f766c5da9f414cc84c27e8a3f86037"
+        },
+        {
+          "target_id": "2bod_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2bod_A.npz",
+          "sha256": "948b52af37e7de94c313783a7c70a17be8bc520b74e925d92e98bef2cc84a2c7"
+        },
+        {
+          "target_id": "5trq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5trq_A.npz",
+          "sha256": "1963cfb24b0a467b39591f0100f69fefff695b279c0fa23c9765daf89c458d00"
+        },
+        {
+          "target_id": "3wib_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3wib_A.npz",
+          "sha256": "99419038af8dc7436020585688ee0391379bac8f19019bc2147d4b084b2fbc71"
+        },
+        {
+          "target_id": "4i6k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4i6k_A.npz",
+          "sha256": "6dc1ede868d3aa087522000a9853de57c80b28007dc138d26de2cbb5c721c15b"
+        },
+        {
+          "target_id": "2ioy_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2ioy_A.npz",
+          "sha256": "3b3f16143abe17d1515ddaecdf36950cabeae621b234abfcf3493ad7195eba19"
+        },
+        {
+          "target_id": "6ap7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6ap7_A.npz",
+          "sha256": "521ead29442f67a7efb0f1b987d754a0c1359a686c0adbfd981f8a2809c097a5"
+        },
+        {
+          "target_id": "6w2p_B",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6w2p_B.npz",
+          "sha256": "0feaec613adb8031ba3fab5316e0a3c96593b172c793c88503960b485b4b6529"
+        },
+        {
+          "target_id": "4jin_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4jin_A.npz",
+          "sha256": "f8dc20fef5f3ed5749bf0b1efc024c6286eb6133e130ed19a90fbb77497ff8e9"
+        },
+        {
+          "target_id": "3ita_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3ita_A.npz",
+          "sha256": "5deca966786cfb4096711f63c526ccf89b4ca571b6620bc3835abb426f96037c"
+        },
+        {
+          "target_id": "5obx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/5obx_A.npz",
+          "sha256": "1d455c6c896ee047316b795204bfcbe6bd14f086c5e0a8688ffd5cec24a2f90b"
+        },
+        {
+          "target_id": "3fjl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3fjl_A.npz",
+          "sha256": "53639541a10c56797e76fc222594548bf8d16ab9fa17d27a74aa2b3f6a925954"
+        },
+        {
+          "target_id": "1v79_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1v79_A.npz",
+          "sha256": "e3131b2486155d9e612e208f01ac184afb792dafc99ccafcb5f84ce48d2538fe"
+        },
+        {
+          "target_id": "7kk6_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7kk6_A.npz",
+          "sha256": "613751ca96d09cd2830f60dd4454db41ab3579538543579c75626483ac42a99a"
+        },
+        {
+          "target_id": "3tgh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3tgh_A.npz",
+          "sha256": "1e4c9682a538324da2460e9ab31b98fcf08ccb3842e5f6d0980b367f74d6bfbc"
+        },
+        {
+          "target_id": "6xqx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6xqx_A.npz",
+          "sha256": "aed4a90ac7fe13a9d53934fee73cf3078ab4ca6f056ca9675131d429480a7429"
+        },
+        {
+          "target_id": "6l1h_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6l1h_A.npz",
+          "sha256": "dfc25361038d361e496c369ce9ee23a68e7e6f48ef44946b2bc4c054f98b1528"
+        },
+        {
+          "target_id": "7a16_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/7a16_A.npz",
+          "sha256": "164612cc1949d0da3054cd58922533df28fa7043a8b654a1dc70cd9efb532b97"
+        },
+        {
+          "target_id": "1zze_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1zze_A.npz",
+          "sha256": "3b17d8477b7e540de6e3770265b362aefb7e0b7929a87a75486b09d1ff9ea74e"
+        },
+        {
+          "target_id": "4pam_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4pam_A.npz",
+          "sha256": "bd2bf7abdb8c3c057b6dd98b16f0e9ae6a8c409457dd6d304b72f6f32d729667"
+        },
+        {
+          "target_id": "3m10_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/3m10_A.npz",
+          "sha256": "6d71b40390b15c3eabeeb0ae746d0d7c8bbe54089fb3f9c5ab40544397dfff1b"
+        },
+        {
+          "target_id": "1z2n_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1z2n_A.npz",
+          "sha256": "b44b4b7dfd98764536836ed35ae69853d51898daac23caa404592c76245b3137"
+        },
+        {
+          "target_id": "4lv8_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4lv8_A.npz",
+          "sha256": "29662bce4f76036fcbcfebba60d75588febb58dac85794a053b64da07a398560"
+        },
+        {
+          "target_id": "4ihm_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4ihm_A.npz",
+          "sha256": "fa37ede8cff0856c41719148f22309a4f1fd3f4c20e008cdef924e5daec5a048"
+        },
+        {
+          "target_id": "1dvn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1dvn_A.npz",
+          "sha256": "38e7067b6638984140d2443b350cfbbb0d97176bb315a10d49dfdff8af25dd9f"
+        },
+        {
+          "target_id": "6t8d_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6t8d_A.npz",
+          "sha256": "f99cb923dff2d86bfbc1aacac7de8ce215862b24166a10c58ae1264d9c6507a6"
+        },
+        {
+          "target_id": "1jcf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1jcf_A.npz",
+          "sha256": "a3182d7130340a86988a118673967905465ac76badec1ef22879cd21057f986c"
+        },
+        {
+          "target_id": "6ijn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6ijn_A.npz",
+          "sha256": "2da92effbbf144ac7e1f8b6aad29844964c62cac08cf456a9aa4f99fc26d90eb"
+        },
+        {
+          "target_id": "4fk9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/4fk9_A.npz",
+          "sha256": "ce627f7069b5426e5813e98c8b7abbb450b304ef24451a92712a79840716fb59"
+        },
+        {
+          "target_id": "1woo_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1woo_A.npz",
+          "sha256": "451b72c24267cd2ea6899d0ab2b370bf785a14ea2704de0df3b541da4b9765c1"
+        },
+        {
+          "target_id": "6ch1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/6ch1_A.npz",
+          "sha256": "b90a2c9500e2fdc2d1200d8edf116c69f9a77e3d796447e9b9117665257eb71b"
+        },
+        {
+          "target_id": "2d5j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/2d5j_A.npz",
+          "sha256": "c457799744f6db785bd19cac7c886c2790110c84776109866c78fbec7d7de95d"
+        },
+        {
+          "target_id": "1hb1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260923/predictions/1hb1_A.npz",
+          "sha256": "e45e974d212c46964bacea7f2c8ee3f885813c29ca807726366ffe393cd83016"
+        }
+      ]
+    },
+    "native_s20260924": {
+      "evaluation": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/evaluation.json",
+      "evaluation_sha256": "042df38502021a7d0be06f2033b99751b3f89f86052ffe6bec70d50cf16a5ec6",
+      "predictions": [
+        {
+          "target_id": "3gxb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3gxb_A.npz",
+          "sha256": "d58c16104b0b6912a69d97cc148157fdd3cfdb6db50533eab1d896b6787874f3"
+        },
+        {
+          "target_id": "6a89_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6a89_A.npz",
+          "sha256": "6d000bfd0f89b06d2b513897abbc64634b599b51705d9c8cc89c861ba24eb6cd"
+        },
+        {
+          "target_id": "4xbc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4xbc_A.npz",
+          "sha256": "f4cdc665927005b1fe56c7067a1b1416a49fcf85f372b77c3fcc5c10b9e2cda8"
+        },
+        {
+          "target_id": "6q3v_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6q3v_A.npz",
+          "sha256": "9f64e2cd5f72ee34903495a743ca3c43280e5554821a7744129b3d6f63e52c62"
+        },
+        {
+          "target_id": "7nuw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7nuw_A.npz",
+          "sha256": "722c2aeec24ae71762b62c669b4fc3d624322a2fde669986d9dd7abbe8589286"
+        },
+        {
+          "target_id": "2obi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2obi_A.npz",
+          "sha256": "255ad16503c7d3e62eafce13668c14d1e2b9fb1911e029e021f9184705818e28"
+        },
+        {
+          "target_id": "3qzq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3qzq_A.npz",
+          "sha256": "025bf8b6b1ddb11b02f8bb4da660a65d27157def4d5c67df89df38ea2501a755"
+        },
+        {
+          "target_id": "4woh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4woh_A.npz",
+          "sha256": "945ec265d36ab17b4665606e1df0a1731236d3ad3b1f48f28bed7e07c836570f"
+        },
+        {
+          "target_id": "6ndw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6ndw_A.npz",
+          "sha256": "b4f4e5645010f9d27fd96dc066e916ebb2e8248a89e4d3e273722202f73846f5"
+        },
+        {
+          "target_id": "3hny_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3hny_A.npz",
+          "sha256": "6426b83151adba6bc3940b651949bde844fd28617defa225ba3a0a5bd673a245"
+        },
+        {
+          "target_id": "1wba_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1wba_A.npz",
+          "sha256": "b45837c15079a9659e864dbf3e7ed271acef0bc7974605f6452dba19ed3a909b"
+        },
+        {
+          "target_id": "1yn9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1yn9_A.npz",
+          "sha256": "1811a48e5e1badf4892e5360e003ddd48c95be929f43c94f766dd04e2c01f6b7"
+        },
+        {
+          "target_id": "1a44_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1a44_A.npz",
+          "sha256": "f5de189281c9746d9b2ffb78a68d30f709066f52ab80deb91a2cbe276d5facfa"
+        },
+        {
+          "target_id": "4xje_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4xje_A.npz",
+          "sha256": "772b72f03784c05a74091a2a550dd8630007f26302a3a2162852feb32984a481"
+        },
+        {
+          "target_id": "1ccz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1ccz_A.npz",
+          "sha256": "b661618e7789af10fbb40d87bef0b3476ab8ad99001d55f6addb3e9a35feb687"
+        },
+        {
+          "target_id": "2p3k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2p3k_A.npz",
+          "sha256": "7933de8304c4740e47f9fd474fd0588dfa79f626b8b273a3f64c87c8621f6b74"
+        },
+        {
+          "target_id": "6ibj_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6ibj_A.npz",
+          "sha256": "9a6ea0fe4cf09ad9713e67efd8dd1f646ea37ad70f7e44251e925fef77508ab7"
+        },
+        {
+          "target_id": "1j84_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1j84_A.npz",
+          "sha256": "34a96ccf5700f8a0beaa40f23056d4b954a645c50eaaecc44f121effe9474378"
+        },
+        {
+          "target_id": "3esx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3esx_A.npz",
+          "sha256": "7a92e6b61999d9bc180e2f2ec9f2188916854d604ca6c08aef1849ea4ac2eb24"
+        },
+        {
+          "target_id": "4p27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4p27_A.npz",
+          "sha256": "5cdec7fb2b533c03e5ae6f251499af3bd964044e0f5a4e99c08c0236331be123"
+        },
+        {
+          "target_id": "6fpc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6fpc_A.npz",
+          "sha256": "0056b4fa77a38c017d73a94076e6717f3e667e55b8380a62ceee70e3bd3d9dbf"
+        },
+        {
+          "target_id": "7c82_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7c82_A.npz",
+          "sha256": "cf398bcdb0ab2e3f5ddd71c69d5eb480a23b8f027ba1d3f34b5171a4b91b01a7"
+        },
+        {
+          "target_id": "1bk7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1bk7_A.npz",
+          "sha256": "f4984c52d92ec3e5304982c7a54a1af055f560591e6b8acba49c354f9bb401a7"
+        },
+        {
+          "target_id": "6ht1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6ht1_A.npz",
+          "sha256": "96b94ef051ecd095473d44ab67dec1947cf9f0c3cfdc7f7ab3f90c4a57356881"
+        },
+        {
+          "target_id": "5d6p_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5d6p_A.npz",
+          "sha256": "c720f74c884497de55e2e4e9dfab7c9b3685abc3233ac79b353fe6b5e261305f"
+        },
+        {
+          "target_id": "1lxz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1lxz_A.npz",
+          "sha256": "7b56b71dea2cb41c76845f7d483157315a5cd6fd648602f92cbcb433022cd110"
+        },
+        {
+          "target_id": "5kdi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5kdi_A.npz",
+          "sha256": "d031c066f18b6fbb762fadc49906b8d34543e4b76a7d19843b1d1bec2803280f"
+        },
+        {
+          "target_id": "7np5_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7np5_A.npz",
+          "sha256": "d458eb37f199e6c08b57b16ea35907a3e047ee7bd9dc53e4758508ae13f0c680"
+        },
+        {
+          "target_id": "5nl7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5nl7_A.npz",
+          "sha256": "8f883066a4fb91b36ec2ea1497d129a3da34d1d72e58ad2ee3919e9cdcfa76ce"
+        },
+        {
+          "target_id": "3eii_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3eii_A.npz",
+          "sha256": "e459f3b12c2fa62e1605c3f6c4254df1b3a48d512a2d475f73b4d7504c9e97aa"
+        },
+        {
+          "target_id": "3f95_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3f95_A.npz",
+          "sha256": "0f8f7c46cedd2fc466bd95e531f6a48bafc979a8e9720fe937f12ba685cfa835"
+        },
+        {
+          "target_id": "3zj0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3zj0_A.npz",
+          "sha256": "45d4fe06e72939e8faa90514b3b9c709aff2eff4e6d26321dfebb9dc264470f4"
+        },
+        {
+          "target_id": "2nlr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2nlr_A.npz",
+          "sha256": "0bf885922b34bfde2442c170a6ddd1f403e2949f6182c8b6899f183b75458ec2"
+        },
+        {
+          "target_id": "1m1u_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1m1u_A.npz",
+          "sha256": "b0ab4ecd20740d9df2b3e3179567c0c2f4d8758cfad5e134a172c5aa562282ef"
+        },
+        {
+          "target_id": "2a7m_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2a7m_A.npz",
+          "sha256": "b5e32252e6233753a73c8627c3d571eb44e5b8c352d582489ce261dc7eb2178a"
+        },
+        {
+          "target_id": "3n36_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3n36_A.npz",
+          "sha256": "5a0eb716715f28e780dd5f2cc09af98cbf9e1624e11dbd76cb8736c712997053"
+        },
+        {
+          "target_id": "1xa1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1xa1_A.npz",
+          "sha256": "60ccf9ab901ed653d439d6ea2f605b5a3971961ab3b753f73982555d9a3b5ca3"
+        },
+        {
+          "target_id": "6j5q_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6j5q_A.npz",
+          "sha256": "8063f3122efa1d99a983a7825e8bd0773b3df55cc64a89b799c037804018ef77"
+        },
+        {
+          "target_id": "2erf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2erf_A.npz",
+          "sha256": "27aa917190eb7e52bade8fccc23b5b859ef82b5368562ab79fa7ea676203095a"
+        },
+        {
+          "target_id": "4dr9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4dr9_A.npz",
+          "sha256": "aa2ac9cc7cdea50feb20064d0b81931045788408efbe3aac07c2a42e0f7f0d55"
+        },
+        {
+          "target_id": "1h5y_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1h5y_A.npz",
+          "sha256": "3e7bbc7357386f607b6af773b93b0b34ad7acba2baf73b9064dfce07d35128e8"
+        },
+        {
+          "target_id": "1g69_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1g69_A.npz",
+          "sha256": "c13b832fdc5dbed16b6747fff608953819f039a7dcbb230e1bff9ddcec718a4e"
+        },
+        {
+          "target_id": "4zyx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4zyx_A.npz",
+          "sha256": "8c85eac6401dd6d90babefa80a0128004415815ea1361845e751e1db7b9760cb"
+        },
+        {
+          "target_id": "1pxr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1pxr_A.npz",
+          "sha256": "efdd26da447cf6d983d1c1777b274d736a0aa745817309c7a742cbb5a4257e93"
+        },
+        {
+          "target_id": "5xrb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5xrb_A.npz",
+          "sha256": "1dba508614b4ec504f8f568143f8970392c7b92a478886f1055ffad43980d308"
+        },
+        {
+          "target_id": "4f1j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4f1j_A.npz",
+          "sha256": "ef74e0a5324d4a566de24d00f52181dd032acdbe7dcfdec658e8187876134934"
+        },
+        {
+          "target_id": "1dua_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1dua_A.npz",
+          "sha256": "4b5e25dd3abebee92af5739a7e1ec4059d9d439a39d34b05d3d098f8ae9fca80"
+        },
+        {
+          "target_id": "2ocg_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2ocg_A.npz",
+          "sha256": "c61a92cff190313186c02279f1fd387777e5d87078b891c995c6d993b180147e"
+        },
+        {
+          "target_id": "3voa_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3voa_A.npz",
+          "sha256": "eeb59d253b6c9e668f0e0af9737afcff659308bd2dc15c148923d4b0f1352b97"
+        },
+        {
+          "target_id": "1c91_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1c91_A.npz",
+          "sha256": "eeda3d5feae00ace914f400c3fa6432c026262930ca4aa329b668a51c9db18ff"
+        },
+        {
+          "target_id": "3f99_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3f99_A.npz",
+          "sha256": "d72b50ef0db63a7ad6f9b6ae1a9b9422a3fd50edbea973d3f843188c8e6c94f2"
+        },
+        {
+          "target_id": "3ah4_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3ah4_A.npz",
+          "sha256": "a9c7924294e56c14c7fc8b93de72c76df3213841094b72aa2a2b08ac10f38a28"
+        },
+        {
+          "target_id": "7bwv_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7bwv_A.npz",
+          "sha256": "be5d3d206cd1e7dd47fb2706451bb923f04e9dab70365f19da2311ac9597b001"
+        },
+        {
+          "target_id": "4q3c_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4q3c_A.npz",
+          "sha256": "d54bca1283af14e6252c1d064fde2e86c8d081e0b3b213663b7131aea1803d6d"
+        },
+        {
+          "target_id": "2vi0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2vi0_A.npz",
+          "sha256": "183e7968e453e79e06e9c8fa5b83debac3b3c48ee118d93ca9b664ef498ad86f"
+        },
+        {
+          "target_id": "4n13_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4n13_A.npz",
+          "sha256": "b7e7898d29b043ed6d75011ff8af72e723e5fd6491657cdac750797118e70597"
+        },
+        {
+          "target_id": "2c6z_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2c6z_A.npz",
+          "sha256": "d294cd65961066803050ae47971c599aef41efaeed6206835ee31c265ba361c7"
+        },
+        {
+          "target_id": "5byl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5byl_A.npz",
+          "sha256": "da577228be1f580e2d42234f551db955a6da071af277e16c5efbf17d03496098"
+        },
+        {
+          "target_id": "2cex_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2cex_A.npz",
+          "sha256": "9d78dc1f1bdaf0bc8dc43ed9f58db8e0cab9bf1b1a9c49eecb87617144603e3b"
+        },
+        {
+          "target_id": "3ea3_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3ea3_A.npz",
+          "sha256": "8d3515f9ca4864ef035c43941a11a18f9451f8abbbdaded7515cd9bccfa8193c"
+        },
+        {
+          "target_id": "2iry_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2iry_A.npz",
+          "sha256": "02e7fcf9b9ecd5290c1ab07092bb09e657cdf8cb5824f54af97ff2e3f36329b4"
+        },
+        {
+          "target_id": "5dxn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5dxn_A.npz",
+          "sha256": "ff63b6d00195ae1b67b68e5ebbf31a720637442c906d8f08a190ab7bd17dfa01"
+        },
+        {
+          "target_id": "4jpx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4jpx_A.npz",
+          "sha256": "9c63e94be07c21d3d28c6d5c3024f5b24f36a5f036bd5bb8ae92033b68bc01b4"
+        },
+        {
+          "target_id": "7k27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7k27_A.npz",
+          "sha256": "58cf7bbc5a5c75fa2ba466d62590ef5fcc7c2b7ce102aefe01245b628b8aeaa4"
+        },
+        {
+          "target_id": "2bod_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2bod_A.npz",
+          "sha256": "d524ed4ecef7bb1b5df8ceb7ddfa368ad9c394603d20d8efeac60f793ed67164"
+        },
+        {
+          "target_id": "5trq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5trq_A.npz",
+          "sha256": "c146226e8c0b40a93c6d8b9c2efe40f52262165ae60e69e0f8edc17cda675ccd"
+        },
+        {
+          "target_id": "3wib_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3wib_A.npz",
+          "sha256": "58406089addd3ea05b16d647db9163dbe25255b64b68ab3d5e2d8faa5b970787"
+        },
+        {
+          "target_id": "4i6k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4i6k_A.npz",
+          "sha256": "b344a8135ed1413225c43ede7729d6a75a37b2eccc4399e25ecab10dd8b6b2de"
+        },
+        {
+          "target_id": "2ioy_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2ioy_A.npz",
+          "sha256": "707648d23116d83d34b647eaabc832011e79d96dfb3e17ec5f8d7960a9a0f6c1"
+        },
+        {
+          "target_id": "6ap7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6ap7_A.npz",
+          "sha256": "4f5609e25865fea7b65324e244daf68f3d08771ffa8718730a14e432d995cf1d"
+        },
+        {
+          "target_id": "6w2p_B",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6w2p_B.npz",
+          "sha256": "02e529938eaaa757c1a5402f4636393146ae002b4526211d8caf64049a08aad4"
+        },
+        {
+          "target_id": "4jin_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4jin_A.npz",
+          "sha256": "fbb3069c5e6f62b282c3d00ff8dae6516753ca06a0aebb1d40d6e92071aa0d2e"
+        },
+        {
+          "target_id": "3ita_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3ita_A.npz",
+          "sha256": "c87ec5749b42be8602d4dcf84561498cc6e509eabb32bec71fb22905c1ca5902"
+        },
+        {
+          "target_id": "5obx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/5obx_A.npz",
+          "sha256": "85a7b85adcd79984161b1c5ad2cca2bd23ac820d059fa218c78c9c984ea39c61"
+        },
+        {
+          "target_id": "3fjl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3fjl_A.npz",
+          "sha256": "e7bf6e4befff346959ee2117888290a4b6fa82da7d0fe682d7ee8e3b7bfbd7a2"
+        },
+        {
+          "target_id": "1v79_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1v79_A.npz",
+          "sha256": "15e06dacfd83c9913c0a012a8cf679279810e9fd0ed343b7decf68478cfed38c"
+        },
+        {
+          "target_id": "7kk6_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7kk6_A.npz",
+          "sha256": "daa2f937c181f8f2019be80112b00110c0a49ee02afead77c88ffcb4e3ad8e00"
+        },
+        {
+          "target_id": "3tgh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3tgh_A.npz",
+          "sha256": "8c52103b549784af938beb942465396730d4090043cf1397312025561b534ea1"
+        },
+        {
+          "target_id": "6xqx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6xqx_A.npz",
+          "sha256": "9e80c09c734a47d4cd47d2cdf25988f29a8d00e73a3b6d56f2a30c36b64b7447"
+        },
+        {
+          "target_id": "6l1h_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6l1h_A.npz",
+          "sha256": "94a4e3295aa56a061fc9b5fa2f50bbb7c38049a0218e2c0c8ccb0518575b5e45"
+        },
+        {
+          "target_id": "7a16_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/7a16_A.npz",
+          "sha256": "57faee7c46b7f16a640d18010c215bfad8c2a9792afe51e483fe1f0c63024811"
+        },
+        {
+          "target_id": "1zze_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1zze_A.npz",
+          "sha256": "ea651011cf55834e252e542452cbf8b8e8a94380aa88a6df4a6b074d2e2c178f"
+        },
+        {
+          "target_id": "4pam_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4pam_A.npz",
+          "sha256": "48f528b43ac4346ef6bc2d2e28c240db1fc7a79f509949c92e35ccb16933ed0d"
+        },
+        {
+          "target_id": "3m10_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/3m10_A.npz",
+          "sha256": "dbdc2d0be6d8b60c9d6515d425b1914b06b1e60749211c7b1a195dca8e922c03"
+        },
+        {
+          "target_id": "1z2n_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1z2n_A.npz",
+          "sha256": "8a99243e48398561d9bda8c9539b5490ddc52438ea0fee39ebda980b6d55fc6c"
+        },
+        {
+          "target_id": "4lv8_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4lv8_A.npz",
+          "sha256": "b118e85dc161f1b37e9246b17ebd3168d31e4886e10f9c10ba2d705edf4e2075"
+        },
+        {
+          "target_id": "4ihm_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4ihm_A.npz",
+          "sha256": "405e2b05fe6cf6b1af88ad0ff334327a9ac73f5ba722d85f1735c49171c7b0a1"
+        },
+        {
+          "target_id": "1dvn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1dvn_A.npz",
+          "sha256": "5e8cb03e3b0f578c9b594984bbb85d8540f5bfb7e6693ba25ae1f1fa6ef571f8"
+        },
+        {
+          "target_id": "6t8d_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6t8d_A.npz",
+          "sha256": "afad05c04cc35be180607a8f5af3840f3dfbce7681e7e3315bb2b71d11e8923b"
+        },
+        {
+          "target_id": "1jcf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1jcf_A.npz",
+          "sha256": "33969972f5ed3bb0d4f3d5170474941db8af4c37cdcc9eefdf7e0f0e9cc731f5"
+        },
+        {
+          "target_id": "6ijn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6ijn_A.npz",
+          "sha256": "27c7e10fede7f351a230365589d797cedb297a59a36369dafc49a5b7e7fb4d52"
+        },
+        {
+          "target_id": "4fk9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/4fk9_A.npz",
+          "sha256": "5e646f5260583bedd71f9fde5a96d5b4e2d8f8425c1962d10747b824f4f081c2"
+        },
+        {
+          "target_id": "1woo_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1woo_A.npz",
+          "sha256": "263ece928435dbd3b0cffd300d959f981be3201796367fd6b4553e92e24ae147"
+        },
+        {
+          "target_id": "6ch1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/6ch1_A.npz",
+          "sha256": "744aa77aa216fed3a5be8695a9689e4afbdb0bf8c1f94cd57b9e58da6516ceaf"
+        },
+        {
+          "target_id": "2d5j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/2d5j_A.npz",
+          "sha256": "26d1d740edcca5e38e56054a8f27f740dbbc5b8f80bbc5cfeebacb603db9c4cb"
+        },
+        {
+          "target_id": "1hb1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260924/predictions/1hb1_A.npz",
+          "sha256": "f8ee2221d68781755820f7122e97991d7428118bcf79223d667913cb77e47fe1"
+        }
+      ]
+    },
+    "native_s20260925": {
+      "evaluation": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/evaluation.json",
+      "evaluation_sha256": "1091ec3569cdbb208fcec9061d7573b8561b58e4f76ed71882079db00970de8e",
+      "predictions": [
+        {
+          "target_id": "3gxb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3gxb_A.npz",
+          "sha256": "8c886732f947c78dcb69ad43b2787442d7f2fd25640941f8b03151737940193d"
+        },
+        {
+          "target_id": "6a89_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6a89_A.npz",
+          "sha256": "9a4d3668092b83a4c864ca182a3e93518ba764e8d8a31604ddd69d854f4aba29"
+        },
+        {
+          "target_id": "4xbc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4xbc_A.npz",
+          "sha256": "6bb85f84ff869359a1882cab506b05c1178300049f6cd217746ea887b42e855d"
+        },
+        {
+          "target_id": "6q3v_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6q3v_A.npz",
+          "sha256": "03367bb6be5a279d23240cf4a29e4879d32689d1e72e95dacd9590fac8d83ad0"
+        },
+        {
+          "target_id": "7nuw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7nuw_A.npz",
+          "sha256": "ff4869f846ef91a73afb53820fa20c2e18ecdaf44db560505423b1012ffee897"
+        },
+        {
+          "target_id": "2obi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2obi_A.npz",
+          "sha256": "963ac3d96552c3026b6765cea8add928fe382aa63dce6e29ad1afa979858481b"
+        },
+        {
+          "target_id": "3qzq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3qzq_A.npz",
+          "sha256": "285377a8bc6312bccccc843de447d9c5baa71b5cb4e3754d7c9e215c9fa8ceff"
+        },
+        {
+          "target_id": "4woh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4woh_A.npz",
+          "sha256": "4187be06a90acdf7aff64c66541028e7cdace44c10c7379fb3b30a40bed02875"
+        },
+        {
+          "target_id": "6ndw_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6ndw_A.npz",
+          "sha256": "b865f3a5799532977bee1191a40e37f07c23c16137205de24d270993ff7af1b4"
+        },
+        {
+          "target_id": "3hny_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3hny_A.npz",
+          "sha256": "e07a32f1e6e254052a046605c3ff609c79aa99e939256b3c1f7a3bdc13367803"
+        },
+        {
+          "target_id": "1wba_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1wba_A.npz",
+          "sha256": "9c5c307c07651e4a4f6731f8ae22ebcc8a6e46b47d272a935687ec0243d3fc6e"
+        },
+        {
+          "target_id": "1yn9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1yn9_A.npz",
+          "sha256": "e1b8ca74e6d0d260d5f6400dadd63de1272c067fa4de29af683294146d9f8211"
+        },
+        {
+          "target_id": "1a44_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1a44_A.npz",
+          "sha256": "b4eb1f6c29a80d33317d1c9096559283deb4bd09857028f45aaf8c3f5212e724"
+        },
+        {
+          "target_id": "4xje_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4xje_A.npz",
+          "sha256": "b12c8b724e5d29639a0d8228920600189dead8deb2a78844c5f57cd99ce7ca86"
+        },
+        {
+          "target_id": "1ccz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1ccz_A.npz",
+          "sha256": "cd345de3f2a73fc09977e7003477cd4b29f8cc307dd6793415881af3d369eae3"
+        },
+        {
+          "target_id": "2p3k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2p3k_A.npz",
+          "sha256": "37bb9693d6fd9fd8418ac523da98fa62b6640cbeb1664fb6367ccebcd145d80e"
+        },
+        {
+          "target_id": "6ibj_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6ibj_A.npz",
+          "sha256": "366fcf927f45dae6cbd6ad2181235f9a8c35b1fedc0c30ad6668a4db77aab866"
+        },
+        {
+          "target_id": "1j84_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1j84_A.npz",
+          "sha256": "8692101b57b79ef6bd5aafadf34ff1eafa17bcf148153c020da5dd407fc0ab77"
+        },
+        {
+          "target_id": "3esx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3esx_A.npz",
+          "sha256": "a61bf3fcab87ded32619b18a70f039f2d0c349a54e9213f6dc2c7f657dab9881"
+        },
+        {
+          "target_id": "4p27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4p27_A.npz",
+          "sha256": "6849b651acd6090e483aad6ee84dd133d222c7a2ef82c96948ff127242b232b8"
+        },
+        {
+          "target_id": "6fpc_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6fpc_A.npz",
+          "sha256": "f68fe20b2b73b86aa698fe94dcbcdc082aa7f7b1bce4f05679c3baf59fdfc7ac"
+        },
+        {
+          "target_id": "7c82_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7c82_A.npz",
+          "sha256": "e45b0e1313986eb021725bdc37ace2d397649ad1df9f9d115827b11627182690"
+        },
+        {
+          "target_id": "1bk7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1bk7_A.npz",
+          "sha256": "d91c2c9e0e64c56d5fc8c054e710d171e2ba1b177da3b2c2bb5d978912c8a368"
+        },
+        {
+          "target_id": "6ht1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6ht1_A.npz",
+          "sha256": "1f9efe41ea07cfe03a6594ec7e7b35251d5929d36239e4a8a40834d4dbc04766"
+        },
+        {
+          "target_id": "5d6p_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5d6p_A.npz",
+          "sha256": "0224bf2e2a91c85f05fd2770990c3d13cef489cce32762b95cb78f4289a2dcad"
+        },
+        {
+          "target_id": "1lxz_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1lxz_A.npz",
+          "sha256": "a72fd18bf7ca3d9d484b82e7ec11051b66c70ee30e9093b06e943e9ca7ec761e"
+        },
+        {
+          "target_id": "5kdi_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5kdi_A.npz",
+          "sha256": "c579d68fd3facbda0e82c1a42a0db8545404617ff5eb89d2bda8ba9a4864c903"
+        },
+        {
+          "target_id": "7np5_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7np5_A.npz",
+          "sha256": "656d14900c93fb4e6058576bae1a6c1f4908a1dabd9d999360294885cc033fc9"
+        },
+        {
+          "target_id": "5nl7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5nl7_A.npz",
+          "sha256": "4bc9e42ed62130db2f20a786a8a713fb2b0e6642eb65598536bec8d2bdc97bf5"
+        },
+        {
+          "target_id": "3eii_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3eii_A.npz",
+          "sha256": "29980602e6e1b064ce2fab4094404361b745c70a18a648a4226bc235f65b653b"
+        },
+        {
+          "target_id": "3f95_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3f95_A.npz",
+          "sha256": "fdcf3d7bebdcbc693793a47aa8b340bee9d2fa8ddf4f49333c3ce963e6451bfc"
+        },
+        {
+          "target_id": "3zj0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3zj0_A.npz",
+          "sha256": "a3333e53c5d8f5e443809a432e790095c113200051385e98c9cb4a975d62bdcf"
+        },
+        {
+          "target_id": "2nlr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2nlr_A.npz",
+          "sha256": "1dd02c66c9e4824cda779d04f87aa637ee598b3b94ae11685d9c192978461e2f"
+        },
+        {
+          "target_id": "1m1u_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1m1u_A.npz",
+          "sha256": "0e91055c412e139025ed257051e99577bf00ff2e8e52c8687cc61a98541be99c"
+        },
+        {
+          "target_id": "2a7m_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2a7m_A.npz",
+          "sha256": "2c089b1decd0419ed03df642c86b2b6eb641003be0f78d35f1262e8bc0920ed0"
+        },
+        {
+          "target_id": "3n36_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3n36_A.npz",
+          "sha256": "c8975128bb1d2531a32280527386a2dd58101609cc565302f5c1c59ff4320129"
+        },
+        {
+          "target_id": "1xa1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1xa1_A.npz",
+          "sha256": "4330979aeb6126e23028731ee4671ef356b9df7db27de18413a0ed2c0f91bba1"
+        },
+        {
+          "target_id": "6j5q_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6j5q_A.npz",
+          "sha256": "d6aaee28dd76162c9c54484b77c6fbe69ea0e543c97fcab84da7339012acbf65"
+        },
+        {
+          "target_id": "2erf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2erf_A.npz",
+          "sha256": "a3c3897dd60d0a80b3a73233d72f0ec59da7c9d613636e352557a124a84cbe10"
+        },
+        {
+          "target_id": "4dr9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4dr9_A.npz",
+          "sha256": "a8c978fdf3b0f8bb8ea32c10190b77508a4c8fc033b8014f5daa4fb697657f45"
+        },
+        {
+          "target_id": "1h5y_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1h5y_A.npz",
+          "sha256": "b28f8d48783e8bf45250fd339e83b514f5de1edae00d8e99e51e233642ff501c"
+        },
+        {
+          "target_id": "1g69_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1g69_A.npz",
+          "sha256": "7ca40f5f7388b42eb85e7e3897585ea12bbbf38efe6cb473b205196948470ff5"
+        },
+        {
+          "target_id": "4zyx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4zyx_A.npz",
+          "sha256": "0481dc857a87c4f5631040fb18d02aebe837592b8aba105031ce70247f50cba8"
+        },
+        {
+          "target_id": "1pxr_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1pxr_A.npz",
+          "sha256": "774467a35a2781c577323ba4afc20a73bf79089d85410a5e220125683b082cf7"
+        },
+        {
+          "target_id": "5xrb_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5xrb_A.npz",
+          "sha256": "d7f73cacec6837aa240a978e5ad4ed11d286480eb1bd28a8b832d4f1ad056414"
+        },
+        {
+          "target_id": "4f1j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4f1j_A.npz",
+          "sha256": "1c1007e04b2ce50ddb37d4fa4940bfec4db2d69595c3f4137d6490d9e31e4b7b"
+        },
+        {
+          "target_id": "1dua_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1dua_A.npz",
+          "sha256": "78b3ade00fb8b3a6cf8d9a3e9fcdb503fff76a7abeb97be27f469b62c89c2259"
+        },
+        {
+          "target_id": "2ocg_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2ocg_A.npz",
+          "sha256": "539a5186916adb2981ed788098952b5f5fc7d252a4210a0dafd75b1ca689662e"
+        },
+        {
+          "target_id": "3voa_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3voa_A.npz",
+          "sha256": "5bc866a6fd5d1922d2e2c096dc4fc65bfe86cf123e72fb9f5eeeca1a52e39614"
+        },
+        {
+          "target_id": "1c91_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1c91_A.npz",
+          "sha256": "f79cdf7012e437ac47c61f0cdef77d52d6c1b4e64cfa18296acae5ab3b1b275b"
+        },
+        {
+          "target_id": "3f99_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3f99_A.npz",
+          "sha256": "87f09eb4db0a751a89922886fc6afb60912ad816a560b4d588c3b21230824c1f"
+        },
+        {
+          "target_id": "3ah4_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3ah4_A.npz",
+          "sha256": "4665f197f2c55bb80e6e44d45770d3d4e08b3b019f74ef679fa6e223e8b1f3b6"
+        },
+        {
+          "target_id": "7bwv_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7bwv_A.npz",
+          "sha256": "ca705536f1e56fd57e54aba01f94be844f2d17a5d270767dc754490e9847fe92"
+        },
+        {
+          "target_id": "4q3c_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4q3c_A.npz",
+          "sha256": "a4f4bcb7e6e3e8617bc1fc82450ef5927a7822d62e5971d7dabfa0faeccf7cfe"
+        },
+        {
+          "target_id": "2vi0_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2vi0_A.npz",
+          "sha256": "53c92472dd10722c36f00179f03b1a24ee87a1d3acc2b830ff714072697c4cf8"
+        },
+        {
+          "target_id": "4n13_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4n13_A.npz",
+          "sha256": "ce5aa2245f30ff037dc3787e0276d0695c341c6486287dd9bcc42403330778b5"
+        },
+        {
+          "target_id": "2c6z_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2c6z_A.npz",
+          "sha256": "e7edc84aff682e8bd1445e448ad2eca54ac113cdce0d27e9e572755b92dc8d22"
+        },
+        {
+          "target_id": "5byl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5byl_A.npz",
+          "sha256": "0510fe898ce4f1c9af6711dd4049e1168e6ab4c962e395d227813613747c34a5"
+        },
+        {
+          "target_id": "2cex_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2cex_A.npz",
+          "sha256": "cc895e0ba93962cfdcd0ce08c0f558a3f958d7a92bec977d0f249e7d25c54568"
+        },
+        {
+          "target_id": "3ea3_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3ea3_A.npz",
+          "sha256": "4f3b0e20650045b2c805eb6e0bfd857e0f19f668ff25e6175549e66fe88a4d86"
+        },
+        {
+          "target_id": "2iry_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2iry_A.npz",
+          "sha256": "b398fe6ada3c2108be94a4f00db8ea3fcedb61c57924e1cb15b99e8c1cd969da"
+        },
+        {
+          "target_id": "5dxn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5dxn_A.npz",
+          "sha256": "2f773724600ee8ce2c771b2c4aa016a08289047eb917dfa70585844085cd7a47"
+        },
+        {
+          "target_id": "4jpx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4jpx_A.npz",
+          "sha256": "3ad1fc9faa4fc168b65a63f8b2badeabd572b6d71df02a3510851e1ef3fd1e10"
+        },
+        {
+          "target_id": "7k27_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7k27_A.npz",
+          "sha256": "71e0af4b2c94a8d87973728b5a1239174c24503778024d2562eb86fbd47dbde8"
+        },
+        {
+          "target_id": "2bod_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2bod_A.npz",
+          "sha256": "38070f179b440cdfe79d2b8ac29b03141a4940bfb0bf325e23b497dfcae1fba4"
+        },
+        {
+          "target_id": "5trq_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5trq_A.npz",
+          "sha256": "b5fcd86b36bfd24319f91a2290d09ff182f435593506d925152a4d68c4f4f025"
+        },
+        {
+          "target_id": "3wib_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3wib_A.npz",
+          "sha256": "9f21474b070d0ec05a96766592275d7168bffd74684490cf5aa2e72df86ce3a8"
+        },
+        {
+          "target_id": "4i6k_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4i6k_A.npz",
+          "sha256": "fe96a39a6f129a886f9562b5dac18bd33eb380e4476bc1a28b0d04b6a29fc813"
+        },
+        {
+          "target_id": "2ioy_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2ioy_A.npz",
+          "sha256": "7cf529c3cb50986788008d545818f712a3e54ab763c8381a55cc55322a34b281"
+        },
+        {
+          "target_id": "6ap7_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6ap7_A.npz",
+          "sha256": "f7ce134cd1f8c5f0d42f57e7e014290912a068871f371946df4843f3ea189185"
+        },
+        {
+          "target_id": "6w2p_B",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6w2p_B.npz",
+          "sha256": "14195db6e877d72eb77ee7f81664b016a09335b1b2a8958b7da267fe9d3840ab"
+        },
+        {
+          "target_id": "4jin_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4jin_A.npz",
+          "sha256": "c7e9f992bf0c27d7f6f29dbc12b3ee5e575e3a31f0b640da7515cfeb14c7d561"
+        },
+        {
+          "target_id": "3ita_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3ita_A.npz",
+          "sha256": "12e86ef1fc9e9d0ba46f09d983653d76031bb293aefdceaf4f24da118c6301c7"
+        },
+        {
+          "target_id": "5obx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/5obx_A.npz",
+          "sha256": "df9af559b4bc9acfd495d7efbbbbfee471da109dab9a5cac48d074e1fbc6686b"
+        },
+        {
+          "target_id": "3fjl_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3fjl_A.npz",
+          "sha256": "ee2fff77ff558e0575e3597d1c263b30a8c229138113ac8cce8cf89f6f10cff7"
+        },
+        {
+          "target_id": "1v79_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1v79_A.npz",
+          "sha256": "93eb6dc8682ced2c6eaae92900822579ba046ebb9afb874483ae4e1987256990"
+        },
+        {
+          "target_id": "7kk6_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7kk6_A.npz",
+          "sha256": "d10e6aef2d8d2d5966031d09cd6ef19e6b219431438291e25e13b8fc1bc1ad2c"
+        },
+        {
+          "target_id": "3tgh_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3tgh_A.npz",
+          "sha256": "7008cb24de591879d48188e1a2093f90ed942b8583c8876be9d1cfc0b58adc84"
+        },
+        {
+          "target_id": "6xqx_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6xqx_A.npz",
+          "sha256": "5cc580b03997acb6b8c4b63b637565dc2bc99b6ddc91fb7bcaccd9b84b1380a3"
+        },
+        {
+          "target_id": "6l1h_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6l1h_A.npz",
+          "sha256": "3fc16059ad7d6499ef644edb845b8db5170314b7cc04377cd3f4e48b02ec1e40"
+        },
+        {
+          "target_id": "7a16_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/7a16_A.npz",
+          "sha256": "2aaa9eb2cc78f6f149f05000d83daa7ba988f629f356d574a617e175ea933529"
+        },
+        {
+          "target_id": "1zze_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1zze_A.npz",
+          "sha256": "51abda08ec7c26cff725e8aa9fdba9d155e7a377050e56fa6c9ffd6fdd1810a3"
+        },
+        {
+          "target_id": "4pam_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4pam_A.npz",
+          "sha256": "f26b253ff8e7afef06c8024de67419c8e6616a3fc1f048649afb44d3b74fb03a"
+        },
+        {
+          "target_id": "3m10_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/3m10_A.npz",
+          "sha256": "e39c01700a8abf2cea0a77b393dc62e859cdd29a31af72427f7689d5c06a452f"
+        },
+        {
+          "target_id": "1z2n_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1z2n_A.npz",
+          "sha256": "8ffa0e1a1e000162f9d286e8be007ef5a406f530d761321b7ada58f8681bcd3e"
+        },
+        {
+          "target_id": "4lv8_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4lv8_A.npz",
+          "sha256": "db2c4abe5f4d4650a53fa99e913cdd8695f42fad6cb458465f0f6ec49beb0e6b"
+        },
+        {
+          "target_id": "4ihm_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4ihm_A.npz",
+          "sha256": "1c32bc21c745df28e9203f7102c4dba30549d6f248d0b1f05121fbd5aeb3343b"
+        },
+        {
+          "target_id": "1dvn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1dvn_A.npz",
+          "sha256": "1ba4dcad069c00144ffb9059920a843822700d634cca06b59b6502ae1c771789"
+        },
+        {
+          "target_id": "6t8d_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6t8d_A.npz",
+          "sha256": "35a2e0cc7852e4a3af7e7af6cc12b4bcd754192913bc9525115d62571da2acb9"
+        },
+        {
+          "target_id": "1jcf_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1jcf_A.npz",
+          "sha256": "ec652fd2f8c914087c08ca5ba91dacc308d210f660c902ebc00730ad69fb768d"
+        },
+        {
+          "target_id": "6ijn_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6ijn_A.npz",
+          "sha256": "b9fae60f4c91814d4c1977872589602608c61bbea8c1651f412daa39a937a583"
+        },
+        {
+          "target_id": "4fk9_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/4fk9_A.npz",
+          "sha256": "0cef63dbb7180a31b126d99d654a481733e4869f16175d23b9107d01d3cbecd9"
+        },
+        {
+          "target_id": "1woo_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1woo_A.npz",
+          "sha256": "f04b36fbd683b86fb1b42125b1b5239793385b6f997c635e1a1b086b451f7bcc"
+        },
+        {
+          "target_id": "6ch1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/6ch1_A.npz",
+          "sha256": "28ec7a9846c983edc34edfac0255efb601ed6475ac9ab4863e8fea55b53cc315"
+        },
+        {
+          "target_id": "2d5j_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/2d5j_A.npz",
+          "sha256": "ef8816f6784959dc5e51c1b7ec82db87252270d0d7efa8375273169ee478614c"
+        },
+        {
+          "target_id": "1hb1_A",
+          "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/openfold/formal/native_s20260925/predictions/1hb1_A.npz",
+          "sha256": "b98a5d114766eaf3be5e4a1241ddf9c2d703ae542e64258a5cefb526d0cc0e9a"
+        }
+      ]
+    }
+  },
+  "data_hashes": {
+    "1a44_A.cif.gz": "0b407f1cb8c46cccde9edc20ab9a01ce7bb0c96ebea4aa44f5b7bc5e57ec5c15",
+    "1a44_A.pt": "152aaf7760fa4b50210d6a04607c822b8669a3a70f1ccdd7278ea23500777110",
+    "1arb_A.cif.gz": "5b23d5fac9167a559cd94987b0ff9e6a1eb2a660072bc62b8535f32cb83814f9",
+    "1arb_A.pt": "19239c8a7800f36c6a176e693affe56d249fb057d32e1368b2c1ec29505dd70a",
+    "1bk7_A.cif.gz": "46645e323bae7d6ef39899997eb297a955d8216a4f60434ea7fc9ab8bdfad237",
+    "1bk7_A.pt": "0cd1ff945f4561e06238b5d03f697c85a4aa7b880966ecf0f3c8211c761e6f6f",
+    "1c91_A.cif.gz": "7e051c1b90ac887853491e71ce56383d7bdd1fe8586070b255259c7ca53cfbea",
+    "1c91_A.pt": "c1ea62995d287224f8fc061e9b363ce5025d85e8348bdafcb12d6811a19f7d35",
+    "1ccz_A.cif.gz": "7ece6540f441511fd02821fe7c4b28a53805a68be273c3a379f8d44096045a0e",
+    "1ccz_A.pt": "69a5823b066cea042895c33f521f539f91b0318b8e9f072729d89d51f6ed5e14",
+    "1cnx_A.cif.gz": "a896214714b46a5615bc1960312975bbe51ee1449cab5873f34a92346cf01d3f",
+    "1cnx_A.pt": "e1507a09e40649292bfc51a0406b1d56f5b0c0b082954eed49aae315989e101e",
+    "1crl_A.cif.gz": "c47cf3562fb546a5d8a209dae3fbb389f4f20d3893bf90918f79f13e45bf0c14",
+    "1crl_A.pt": "395d09aff49e02449190dd407a8fae09174eec86de7ae13f817c8365e149a215",
+    "1d3k_A.cif.gz": "9da202fb7604590e872fb837f3d98d2cc79bf439eada5c3c81a7d77c7f3ab703",
+    "1d3k_A.pt": "c67c6a71e2c8f8d33ff822f007dee737019766de5496528dc10fd56629ad556d",
+    "1dua_A.cif.gz": "8c3a45db6f102addab27260f22da5112512e530bfa4913abb41ea6280a6f5923",
+    "1dua_A.pt": "f6cbceb5f3c56b56b14ad1d5c95432b73c52b58df7388e3c9887031cefa1eebd",
+    "1dvn_A.cif.gz": "36b5122e8583ec34be5bc71e36db7e3925f2542a9bed80d02d1a0cff36bb586e",
+    "1dvn_A.pt": "ad5c21e62b34b4ad4f77fac56514a02b53fc5a778e3df99bde418cd7ede116cb",
+    "1dy0_A.cif.gz": "a9466effd92487d197a50b9a64c4ff32fe723407e88c21f47e274e88f4e531d9",
+    "1dy0_A.pt": "fcc7328e6c8e9c0b7fcd4b3f67bc7d56ec2e36335eb0cdc398f8cbe7e31659e3",
+    "1eo7_A.cif.gz": "a855b1982671415ebcd586109182893b6191d36299569e1e2d2c5d4288bb8f21",
+    "1eo7_A.pt": "a81be79d1887017eab35ae906ee36457ff29db92718a9579c181fe5c4a02d99d",
+    "1fjr_A.cif.gz": "3a49bd34eba906eda46fc181e1479f694e7a0a52c1cf375d9fa0393844f66bce",
+    "1fjr_A.pt": "1ee1862b0ca9b9e2a0e5fff9c405e2318a0cbe55e1f6d34dbeae60727350b944",
+    "1g69_A.cif.gz": "eff228c2a8c91795f2c5dfd5b2ad4034e1020ab8561ba86fdd534998d797ca8a",
+    "1g69_A.pt": "2f9bd778552fdfb87301145a5c74632ecc6d1030d1d88f5d26ee2be579af8101",
+    "1gik_A.cif.gz": "1a233596f2463130f914b4394aaabdbb31c139b58eb64980e269be72620bd839",
+    "1gik_A.pt": "371513422a328d0efe8e77320b988fe05ab3f519d2bbb45c9cb6c469abe03cf8",
+    "1h14_A.cif.gz": "65260b5e2415d545b5013ddc91c9dcd2a14db25c4db7b8ab93b7ae736067f5dd",
+    "1h14_A.pt": "156a02835aefae67f8c8a182531e0c27d584554f3636a7046c1dfb75f31d9e25",
+    "1h4g_A.cif.gz": "8983ddecea082654a77eb958ee90daae7f064745d6f878fc3604c78b8423b639",
+    "1h4g_A.pt": "607c2640ec812eaebbc76dcb11c5caa73fa834d51b79c13052ed164ce4497b18",
+    "1h5y_A.cif.gz": "0b77b22fe091601748368c031c846c8a2ecd7af340bbfb7a1bf663e20e3da207",
+    "1h5y_A.pt": "dfb6d0a5526200399fceace2ce5fa513c798619a37f3c83739c25c3eeea74c0f",
+    "1hb1_A.cif.gz": "68ffb3e57a4dd6e3317730eb1b2236a8266f6d9c6250ff01c13b320c01df23a9",
+    "1hb1_A.pt": "36315c146310a2384974335f35cd5ba712c1b86508997117be7a656e7cb7ba4c",
+    "1ho5_A.cif.gz": "674aa021bce2e29d24ccb8981bc5acc044cf78121d0fbd969a34bbf59d219e7c",
+    "1ho5_A.pt": "6b47385ac33efccc97c39d866c66e84e49f6c536e1cf3b0033b22890eeb0cfc4",
+    "1iwm_A.cif.gz": "0a6a877a6d510613fa7231eb82561abdd652daaf7fc25618a5e1a4df04c623b7",
+    "1iwm_A.pt": "87507c23856ce1e6d0131f95d9f6c8a0a93cb163c925d37c6fff2d902751f32a",
+    "1j84_A.cif.gz": "80e34499debddb99d43a82d00875115d28e2812d147cd31a1297def6776c0c24",
+    "1j84_A.pt": "f298aac660f2e7f8109f14945d0972dd97f42417374dc1c9b251ababd8d62adb",
+    "1jcf_A.cif.gz": "1a65527211bdfad416a54a7a926d0941fde9ae317a8a7fa4e1837b7fdea9716f",
+    "1jcf_A.pt": "1cc02bd801fd7debe170f969b30836f68382101fe24a6ca01342a56d74e1094a",
+    "1lxz_A.cif.gz": "6e2006041ac5fa4531547160969e74a2914a168d754db20218c79025100bbebd",
+    "1lxz_A.pt": "d0651b1ae49a60c6515cbdcb69e0d719a825f8d01579bf92febb665bf98a8370",
+    "1m1u_A.cif.gz": "acb5a9bfca1be47a3a22fb26601a89d70c549262c54cb67c3049d212ed02d974",
+    "1m1u_A.pt": "4aed9d8597477fd2d88e27e6942064b457bb0d1f69d88cfc0facc07789e3689c",
+    "1ms1_A.cif.gz": "bbec141bdf32219722a311a6cc6f0ca64658f2c24268ab80548061acaccc9be2",
+    "1ms1_A.pt": "0e24264fc86e54f006eaeb6af48d29071f6b183dfee081c7b65aa4c94fe683a1",
+    "1n7o_A.cif.gz": "02edd0dda2f1c1c37a6a03e3a18b565fa9622daec5d320e0774825ae7d0677c4",
+    "1n7o_A.pt": "b1702ac9020015e3a5ed81d2031f38022d5b3664e8b1ed16c38032002a860bef",
+    "1oxy_A.cif.gz": "0a328b7d3ee6f5a3345cb73df88965e9ea74eee5e9296e41f59c206601f4bf2e",
+    "1oxy_A.pt": "52ee950b60cbc6edb725fe6bd5f531f7df0b6b85777fc9d0bf797d27cbb2e96a",
+    "1pxr_A.cif.gz": "8093f829118f6c1229c2ea251a9fe40ca9fb975f117494c5c3d0f295a281b5ca",
+    "1pxr_A.pt": "3a5ac0064624da943c5aeb00993e44118e158123bb81096b50aea3a7119cd8e6",
+    "1q7m_A.cif.gz": "15f530fb14df5758b079ec77656b0b9699dc5441fbfab27283d1412c6174073c",
+    "1q7m_A.pt": "428efe033c13459f4ea8bbe79ef08b85e11bfa8a32be8edc92a44e3ecaf81fae",
+    "1qy3_A.cif.gz": "72ba32d3e3281d13e32c0656302f7d9e4cb642f1c281785e316a322b985fc007",
+    "1qy3_A.pt": "592c8e8a663e7ead27b91ece8132a092923be1eef62c2e83c42dd286c3beae86",
+    "1tkh_A.cif.gz": "414d202e26f3ade2d2e1158a9fd7e391ea401ee0b192e7e7b91229a978eee2d5",
+    "1tkh_A.pt": "19c45a62c1d2975a135fc3599e0adbd69c9dc5a6f44793b636af5f3f3a3df04a",
+    "1u3d_A.cif.gz": "4384e0e08a676a04169f96ec25be5e8197fd21bf20f733f09366874bf50ea68e",
+    "1u3d_A.pt": "587c3568101ae8f6ba11849d17bf3e75acd588a2edc6fcd6520e2f2e6ac81072",
+    "1ukf_A.cif.gz": "e542466f7e2d4c341b76fa4729d83af13f52dea343d6389ab2a11a4fae6a63ea",
+    "1ukf_A.pt": "54c83ca6f09251f4905d50aa31500c0b21e79eade68fa76774a211ac22b0eab7",
+    "1uzi_A.cif.gz": "0072221a55fc6e59971a87d3e5d37954006d872bc5a2d2176d547033ab3158d6",
+    "1uzi_A.pt": "c7b476606533489ae046699ba4fd04487dd5f5cc1e34229cd05ed4a1e5efd62f",
+    "1v79_A.cif.gz": "5944802813ea219981fb6719f74906bad310d69885d58014729255df3855d808",
+    "1v79_A.pt": "6d81e6d59c214f7c79d7ef08347eb9dd8d9dbd8a12e1b6b82509be176fca74ff",
+    "1v93_A.cif.gz": "70dc9dcbb321aa8f38759b5ff4ad2b44c00b498192f2922f74d80564156deaf4",
+    "1v93_A.pt": "04c96e88941ac684e7076551e58db328683f421c8ccfe4eb6ab2452ce2ec0c30",
+    "1w8g_A.cif.gz": "b07a7cc49f0443c189a78a9311e281a39e848b020591eac66e6576b682cff67b",
+    "1w8g_A.pt": "bc9fc4dd35fbdb4adfc1873cc80be29e2599249d2d897181e450abf8f7e027bb",
+    "1wba_A.cif.gz": "0fe72909ed7eb0cbe0c1f1a5ee7eec606cbaf97fd20dd6dbc3f39d854b4336f9",
+    "1wba_A.pt": "7ea969f0da5cf36310b67d6f4fb2aca22759c9ae5d2484543d0fa6ebf94c114b",
+    "1woo_A.cif.gz": "600c512a6452abaf9bcfc09debb59fad32a51867d1ea4087968db3ae06f25ada",
+    "1woo_A.pt": "24c041cea3c86be5398c4a76b370375622239bd77f310cd1b184920973a66327",
+    "1wwl_A.cif.gz": "ebf758bdff8bbe5cf08bc9d5c35e79696ec6feae2d01424af6ca5b1216dc3c0b",
+    "1wwl_A.pt": "049d7a487d78784306b8ae4b84bcf9b96f8f235ab1a1f30585d8cc0fdaa22b82",
+    "1xa1_A.cif.gz": "943272838b8830f528dd8e3e38ac292bb9a8378537fa0fa9702b6500065462f9",
+    "1xa1_A.pt": "939ba6a1b137f3f11939e369ad3752c6c3188d1f225f84ff64933a3c9dfc4a78",
+    "1xix_A.cif.gz": "e36695c69bdd30faabbcee3ffc205d956c9f96467b511b9cf83cb784f587bcc2",
+    "1xix_A.pt": "d1f784db4c4a3cbc05c347907128d83cf0bdd5877d51d31d8c9df953b72d11c8",
+    "1yn9_A.cif.gz": "723059038d1c79452b297f89a222387894d11aa46cd6b5db1d721057bf6cf131",
+    "1yn9_A.pt": "8a2e84dca83a38a106047330067fda56774a860b7174e7a80ad3ef9901bb2fd7",
+    "1yz7_A.cif.gz": "a6b8a827c430d8867b4dd293aa892d255f8487bd961083030f8392fa645abd93",
+    "1yz7_A.pt": "90e3382717a232befc054e9676e2f420dc1c8b081791c0fcf8454440615f560d",
+    "1z2n_A.cif.gz": "8df4ee6aacff093ba7a51c740d4c6de9f9e6d97a27ccd9796fbafdb478b6703e",
+    "1z2n_A.pt": "20b3bbe877000d420bb49430ded4847e0ad643cb90d851ca6c789aa608bd0036",
+    "1z7w_A.cif.gz": "77e7a1a3a0aef62e8a9686c1f367d91ab0b0f82c9b86422e373064d3c12e0ffc",
+    "1z7w_A.pt": "6182dc91e3344b94066da5a93cf1f347edf37701f5629ceab639566413519ec6",
+    "1zyo_A.cif.gz": "8c94af4b25d0b303c5427888d0712b0d813681108ab6efffbfa179659e78c1b5",
+    "1zyo_A.pt": "8925016c1523be493d1b7560e3343794c8731151b7247283858b150792c9fae3",
+    "1zze_A.cif.gz": "d24a74a367bfe8a1122a388874da125c9bb0f77e7b805fcc619b0ea6d79fcbc3",
+    "1zze_A.pt": "320e1d06a6f3a7a852af643a2f5dff9e742e5afc264544730167f34ffeaffb4f",
+    "2a7m_A.cif.gz": "d199be88df0a2310dc777d0f584e792addfd659cd6f9168088bd03f96e2ad559",
+    "2a7m_A.pt": "2ad9122d39d668c215d5343d7ab86b582095e3faa7168d3879fadde750ce666f",
+    "2bod_A.cif.gz": "63a1dd77ec337e1a640b4e53a164e73f6be2f3ce4b7132b9976af507e5095d4f",
+    "2bod_A.pt": "ec7621ff23fc3c8ce971a28138f8648f29c976e1c58eddf145323a10af2b5b73",
+    "2c6z_A.cif.gz": "187f29220b94fdf96ec016b398bd59e34c2865f8c77660e78e78a738e6c7a908",
+    "2c6z_A.pt": "43ef85be7d9e53695966f96f189c03f6c0284e4c3b12be1b4e8cbc1446f57c9e",
+    "2cex_A.cif.gz": "45efe6d9de88c6e2cb3089f435e65933898ae9252792f5f2a3bd8c1b098ab997",
+    "2cex_A.pt": "24a227f8f26d97172dedc6c531de1f30bbb5e8cffd988b4265e49e32477eb505",
+    "2d5j_A.cif.gz": "421736d9d61c5b141d1fb627f2a2b5eb6e4c838dce55ef04a074d9679c455e5c",
+    "2d5j_A.pt": "7d4043bb70351c93dd372caf3879615b5deff806ee6a5fc38cb4e03c323999de",
+    "2erf_A.cif.gz": "5a9a60ca1ca7c2767953adb8b39d47337cc3978dd71de6cbb1c57ed5c76307f6",
+    "2erf_A.pt": "1381df0abd1c65239edf01ffb06f615fb83e88a8c0d5c6ac3a1a5c9b050efdf3",
+    "2ioy_A.cif.gz": "f296c76015ba8a536e840d91e8afcf3b875a0493888925c9aff3ccfe84891e37",
+    "2ioy_A.pt": "667618c63da207d1627d4a40e6a2ad96fdc5f4eabb3cd3d49db9cae617ea8eb0",
+    "2iry_A.cif.gz": "25ef37d1cb04ea7fc6d70910b5bb7d7e3338c318cb12d6608c68943c88abbee5",
+    "2iry_A.pt": "993c61a99bd0617024f9eb8383b0fa808c57051ae3d1fe756c1d30d9f8999abe",
+    "2j4d_A.cif.gz": "c47aa7d0f9487e5c97a1d8fde77c3380ca0a76aec9f9a3944291b0085aec2f5c",
+    "2j4d_A.pt": "60aabf16a0a113c8e2d6842bd7a85788655b93a32bee54de36e78635d8b982a2",
+    "2nlr_A.cif.gz": "43d2f7973a7ffe42d42634b7956758314c62a5c5371d1bbb812bea1f706a0959",
+    "2nlr_A.pt": "17dfd92284e6db29206d1124eb5130ed7b82622758a67c5d74e16d49bb104b7c",
+    "2nsd_A.cif.gz": "2949eb6fa8f28f87ec634132eab38146ad5b19786b51ade38c419a97aae27a98",
+    "2nsd_A.pt": "3459ef16f0ed5ef9371c6a79b791ff807a970ff67fe6eaa7b59e529024545221",
+    "2o6r_A.cif.gz": "462570ab1dc0f63bb8588b1cf378bb5f4c7f2ee49b0a9a53565d7ec725f91f94",
+    "2o6r_A.pt": "8ece1b50977f48917908c9083e5e1d4789de7f5150f30f5ab1d157f3d00683c3",
+    "2obi_A.cif.gz": "a0f63d337f6f5837e4b507a387c7c56ef035cd0c129252cc2311003f3c1369ab",
+    "2obi_A.pt": "41b1658a2699651ad5a76963c2d50093e4e4f0e2a555d32418064f5046585aac",
+    "2ocg_A.cif.gz": "68e5ed70101dc669ea04d27b2c89a6c9946aab8faf7cf1c04decf4b6a585c6a9",
+    "2ocg_A.pt": "20d4c13f23f740e958957b997c4b07bc42ed38819f2bc8a11abd1a3859ddbd4b",
+    "2p3k_A.cif.gz": "b02551c127b58d39d70f5e36f1e1c2826534fea46a405237eb6f8f448400aa25",
+    "2p3k_A.pt": "3c1de524eec18ae2e3086ddde14afcd38cc46369064e47a3e5b3e2eea5f6f974",
+    "2qri_A.cif.gz": "daeea1c0de02a70a6f42efe8245530b3e4da7dea93b6e6f51ee05f0f63094b02",
+    "2qri_A.pt": "b3db64bee2e42ffc4076f35ea55c79aa41cdc47ee7dae741038f4906dda9ba7d",
+    "2r16_A.cif.gz": "1e3a9233bbff9cf2c8a82b99fc2c454a57ad923a007ff192732a92e182db7dd4",
+    "2r16_A.pt": "7e7726eca4731a89cd43f0f4226fa769bdff42aaab9a0a4524aca51789803e56",
+    "2rj2_A.cif.gz": "4d29347e25c48bb2d032f4a468e32a7a52e5f8b18e46ac987129075f3e2d8008",
+    "2rj2_A.pt": "2ae79330a6f61d2ddc4c10c62ed5071c240dd0b06aec7413a428bb1df85d1559",
+    "2v3d_A.cif.gz": "6bf2504897be9b60535da6f8ce66c487811b5266a8711c704d307ebc95fe6b3c",
+    "2v3d_A.pt": "1bfa78b54affffa625ae2a323409fe6a1ea7481e96f13486c66c6eb18e38adb9",
+    "2v7k_A.cif.gz": "bad78d9f92c6936ac08f8ceeb2ffa97d5b9350156d78a2fcaccfbd7f22a1a874",
+    "2v7k_A.pt": "6d44a39344b0d0b38da34cfbca15509e68fe3d0d15fc667ca4f2c2175ca5f879",
+    "2vi0_A.cif.gz": "cb2a8506b67b9fc175d002f826a956b01ed0be8c908f65b0f0af9f83aec45269",
+    "2vi0_A.pt": "ccf4107aba895fac2ee5cd1a698e620689efd9d14dd83a42034725368ba18425",
+    "2vnq_A.cif.gz": "60a2c19b477b41e92f13e72930bd2092adf5cc6e244b96407f4e94a16959809e",
+    "2vnq_A.pt": "dea900936953323f359a482276bfaf1c25c5c321372fcb33e5bc4605ad145623",
+    "2wo1_A.cif.gz": "d0e502b09aeed857aedde0d27d80d383529f9ddf4902203a76d2ddd588058a21",
+    "2wo1_A.pt": "2ddbab1beff45b9b73543efc5fd9c8625d12e6b550a2b91ca1b995c956ff4c8f",
+    "2x1i_A.cif.gz": "58e2c0d43134f7081a4cebfa8a73cacdf2075b4249db818acc29153d5b27041a",
+    "2x1i_A.pt": "0cfac648c0d9bdde22052d27886f2ab1350b567c95772ee1a26edea022991a7d",
+    "2ya0_A.cif.gz": "21bd1b8491d1e7fff48be3a339fb1244dad503b70fb2709c3df873b36ed750a5",
+    "2ya0_A.pt": "af82c1b8f61afc0eb0619e1c5c1f1290f04e73477e4f30a7765728d24489ace9",
+    "2zwa_A.cif.gz": "a2c3b9b0407f114de67a64a26f092f3988ed4a25d112ab79281a0684e72d0f47",
+    "2zwa_A.pt": "8772e1a418c5581cf36231c14d8203d64c7c73e4150f0cf2391f0e1dadecb4b3",
+    "2zxo_A.cif.gz": "449fd4303460cbe80473ee1486951663de3211a44b7866e33af92f69144e3481",
+    "2zxo_A.pt": "8b99c364231a700e06e47c609ab01d19656a61ce046343ab3748054acd34e2f7",
+    "2zy1_A.cif.gz": "a1082343527905eda168934e5d1dc3825f9a2575dbe55a115050d6a082c4ee97",
+    "2zy1_A.pt": "3f7b422ff75afcf823e506e03fb75df47aed68ef8e8bee23252ad92dcdbe2bc6",
+    "3a21_A.cif.gz": "3a1d150ed39e443a1b3077723634d073029cd2a90e84112eed7c7f582113d59f",
+    "3a21_A.pt": "f07c4bb80af236d45b5ece0575e8d29022116011811e783675c93847ebdfa8c9",
+    "3ah4_A.cif.gz": "1c714467ec88223e936c23783caf083f940778543437527feebbe44dd1d45e23",
+    "3ah4_A.pt": "8c7afcd18e86be73307d8d58ad4291e2a289c8887f90a7bdbe8b68c9d4b55f13",
+    "3amk_A.cif.gz": "de7470f14c5a86f19dd8c17f1665b9114d7c73f0137b6b045e188ac2e47a4411",
+    "3amk_A.pt": "6e505b037c233bbff15592703deb7f0f7dba6bdf7fee8a2eae001481c0186fe9",
+    "3ams_A.cif.gz": "bb4e2f9bfe0670f6f5b33429b2fc6b7647b4197eb9a0b74454495d0bafa542d9",
+    "3ams_A.pt": "618ffc101da68c104af9532e2a525ba81f1548bcfd980df83efb92ce20f7fd78",
+    "3b2s_A.cif.gz": "87aede974c796d32a83d8bbece7094cc68156608e4fcb4d21bc8bfc5b12b56e0",
+    "3b2s_A.pt": "d21b40466f54d09cd24c4a4280574db4970651bae15ee0c27dbf540808c1e0ba",
+    "3bk5_A.cif.gz": "c1d312aa2a29e782dcc076053197abcf24072cf77baccd0fd874c2d99014eefc",
+    "3bk5_A.pt": "b7b0f80c7656440bcc3f5f07b00649e0f2bcec44cddb858858afccc6289e06af",
+    "3c80_A.cif.gz": "9dc9ed022059983f18b1c9eaf33bf7d62aeb1ecd13d430ed83854af5668aba60",
+    "3c80_A.pt": "f53506be79d1884a8754bb46eedc2abae54c5fce34b45ecb9df06503af1107a3",
+    "3ea3_A.cif.gz": "876c9193eea2c9c83e337860e73010d7e92500639193dbe2752c8231de87b914",
+    "3ea3_A.pt": "7ce6706264ccf2346bc020a3eb5d1d9f7543fe3f41d3e730e1b65c35abf2cc78",
+    "3eii_A.cif.gz": "39d7af0abcb169562b964ed31cb818299036c56efa21ba670afd7df0b461938b",
+    "3eii_A.pt": "9651f6c80cd42174ae80c92b21e09f029bd38bd17d72b31ce6ad77713a069658",
+    "3esx_A.cif.gz": "cb4f5b83401ce831f767e090cf4e291660be77b96523a9e59b195c2b46d24adb",
+    "3esx_A.pt": "858cba2f657f9065fc1ec2b44ba475e6520650448bd3067615bf57189df1e26d",
+    "3eye_A.cif.gz": "e3486fbdcff98b59a5f051d54b98e1e16d542df354139135657cb97e19d77dd6",
+    "3eye_A.pt": "b3e6eaf50291cf00032cc93905930ce6cda48d65c3feac0330ea4c71414545f2",
+    "3ezo_A.cif.gz": "78997c6e04a30ed5895f40bb741f9c584547254d63a4702d06d702fc67263347",
+    "3ezo_A.pt": "b05038a231e5cebe27847f303d7256198825e979e0ca59d5bd5bec094e90c23b",
+    "3f95_A.cif.gz": "471e941fbd64cd7894da175891198e4effe4aa566cdf3cc476e988b1a5d94ce2",
+    "3f95_A.pt": "1901b07b354c2816d71ff7e32ff9c2c069f06a460addc992bd53b40ea5e323bc",
+    "3f99_A.cif.gz": "1f7e721de97a4f5fe2ba114677eab7f4225caa65b4d9c26eeeabdf389eb9a928",
+    "3f99_A.pt": "daa1ac1f4358fe12c934a1b2dc7e65f513bf61b4206fd679e3351bba76b0c73c",
+    "3fjl_A.cif.gz": "04c708e33eb5e617622c47eb9e64c31bbc7c806af9827328db68a19d84d7d300",
+    "3fjl_A.pt": "1b8c1041cd1296823e7086a9864a475e87e6b5ed81d54e6bc9e67824f5e95a96",
+    "3fri_A.cif.gz": "89e77da2a681bab03936b1d37d51b5b0f17f2ef817e7ddbd3793337ebbb165ec",
+    "3fri_A.pt": "45eadde499985199b11c718c3c0785680d4ca44aef8bc75e752e3e1c357ce5a2",
+    "3fvy_A.cif.gz": "eae2b1d0382ff4b9b89644e94affbc6bcd6349dd8d41c3829d4ac2636db2dac5",
+    "3fvy_A.pt": "4721ff537a0c8e50b4e0fe8ff6db2f267506c8112b2a78788259209ade717589",
+    "3gp6_A.cif.gz": "117247c3ecbacf0cd239cee644f67e308fd944491d8193a0081e7aea321e8827",
+    "3gp6_A.pt": "229dc2e05092b980312b802e6783b06c32c2a9fdbf3f85092c8ebca5675345f7",
+    "3gxb_A.cif.gz": "32bdefb0d6d76df44602720293333744e814a0c6f9c94f2e300e6176566a1513",
+    "3gxb_A.pt": "397df418fc5309f5df6f8a6d0183d4d086a83915dbb19d8e159ab70155bd3870",
+    "3hny_A.cif.gz": "f2ad02f8a7d0546d0304b6a1869d5f96176fd17ceb1b509dd0fd9b2a0d9a9b50",
+    "3hny_A.pt": "a35eda6f25bce23e61a6d9059c91bd0933671e5cdc04f83f1226e36984b84301",
+    "3i5o_A.cif.gz": "c755d46ff03a251a0437f0c8f3236be274010deb59c0b187481c38045bb8a449",
+    "3i5o_A.pt": "55321e3d93c4753df69bfd5fd5c5cae58e560b5c5ddf1e288d59da65dfc4ca11",
+    "3ita_A.cif.gz": "0afded86217e37d1e821a02aa9cb016971c6bf82d95bd554362880c4fb35cbdf",
+    "3ita_A.pt": "4fea62da5df031f5e85693ff12b406ea61bb6aaebfdb1c788b276ec9dca2bdbd",
+    "3k10_A.cif.gz": "75aea8c03b7077460b4bd9daab2b5ba5a3b209792dd9c9c96bcd56473590b712",
+    "3k10_A.pt": "93a627072ebf0bba627012513ea9be1a77b7b8cb974e1a20d345ad43e227998c",
+    "3lid_A.cif.gz": "c2c2010a2a7c15cf3705b7a9dde787467df1d01992c3715e7b90805d73ca70ab",
+    "3lid_A.pt": "1b595a0ef20ff9cd7357d75cfb4aa9a2acb2f6e52b5d16963687a472b10c58f5",
+    "3ly0_A.cif.gz": "bd4fa6bcc0c569847d52e9504d42778d351e3bf8514d01d2f16837e2711cc1cb",
+    "3ly0_A.pt": "a70c8b012d4c7a93d2e567e7583915f567b9c9304f1246745d9579e703a67f73",
+    "3m10_A.cif.gz": "b2248b28e45356d61697e9c931ab6579d1f94fc67794e3ee62dfccdf25e4fc17",
+    "3m10_A.pt": "d418ff378a12cd48311507fd244be5d4308e2c8ddc5e33f7c9fe4c1365b20071",
+    "3n36_A.cif.gz": "9ea0d1d2d71fe0b4a765911edfe6da09ebb58548d8e6a4379018de6a4e79cfe4",
+    "3n36_A.pt": "fc999079a7733e38a587536476e8c4d1af7e8dc05b8eae566ead2b8d4f8cde09",
+    "3nxo_A.cif.gz": "fd7e3920d4af2d62e53b1e92217689d555c981717cb972f19c43194dd80fce7a",
+    "3nxo_A.pt": "24496ec8ff9a8ced6efb1b2294ac3ec38059bcac8240825364fc9c7f6b77771f",
+    "3pu8_A.cif.gz": "9476dd00e756d2e561a256510a570df66bd59c398e387eea52299f3877cb7002",
+    "3pu8_A.pt": "291594422c70dd3e2a9f7511c3752c613e7695d0cb75cf3089e4a5236c6c8b20",
+    "3pvk_A.cif.gz": "3c56230ea04970a756464ce360af70c06dd68094942a419c9b5a5fd104764402",
+    "3pvk_A.pt": "e0da117ce38a3bdc0cea401b73049bb057e22e19515b2b00bb4809887e5c1b74",
+    "3qzq_A.cif.gz": "e34b2577b615b0a0b4d830c7b4c7db35a0957f81dbe28fa7276ab11f23186be8",
+    "3qzq_A.pt": "2f3b14875739309e2cc92626cb042978321cfce8e7443d3d523af4046e6e911e",
+    "3r0t_A.cif.gz": "44c906e15bf7b544bb643875f5b29727ac08a9fb6709177f5554419813a66410",
+    "3r0t_A.pt": "c94555fccd47ba040e3d7e59e16338883ffc9b15c2a9f774b13f542532d390f8",
+    "3re2_A.cif.gz": "7f33893acad02a1dd8b289cfd5f41491d89a0cea9de6bb2d9abf1df75805b227",
+    "3re2_A.pt": "cb31f16809e095abd9c1f65b758fd04e7b12fc91f833887032ce4664cea501fc",
+    "3rlk_A.cif.gz": "912b1ee72bea43290f173b97af87b4c839022db73bfbe5f7cea1d0c3cc0e3716",
+    "3rlk_A.pt": "1d386cbb3e0c06bb512e5692dc3b10ee1275799ae2f86d6adad1772071a5ca82",
+    "3snl_A.cif.gz": "fac3466ff960fa8c65aa562d6ef0dfb2ebe398d3248f638aa166fceff27d9026",
+    "3snl_A.pt": "0e66fcf4e0544bedf19b92fedbe18e0951da49d8fa81abc897e0fb3f2c143c2c",
+    "3tgh_A.cif.gz": "c39b6bffa435728c2702bd9c5f138ce594b653884490785eddd62b83180897f4",
+    "3tgh_A.pt": "3ae83ccb100506ce59dff049bfbd4eabf3dbee81a875f354e6dbf863090a26d5",
+    "3ud1_A.cif.gz": "c3b3fa1baabdec2272d38c3693e6bbfda61bb92d7a7a3aade805b74f1c55c86c",
+    "3ud1_A.pt": "8c1f6829d52ee49a177058b0a571334f5f7e9eae84d5272f967a274b75f86633",
+    "3voa_A.cif.gz": "87c16adcbee3fa75f6e9e619703f1e8889074d53953db7e9807f6d512f4e7cdc",
+    "3voa_A.pt": "84a0e729c6c505fdced8c8fb1a83d05ae7dc4cf859e32176a3a077464667c7a7",
+    "3wib_A.cif.gz": "d87982b7575357d449f137ee8b7eb2a56801caa992c649f802373a8a74f45287",
+    "3wib_A.pt": "81a8e4c2ee14671a8c0484fb8b3191e1e3152b36d06749363cf2d044553f7e7a",
+    "3wwc_A.cif.gz": "109157c4691e2bf0833861d9cf4701373a53720ff0ae12598e7bcc1a2df9af48",
+    "3wwc_A.pt": "210149b199cee400d6616b8f71b90de09c47538f85d5f086ba29ed45fed20338",
+    "3wwx_A.cif.gz": "392add32373bd7d4f276ef6a5606e9085f9fb3f31fd8c801c7d66ba80495a3f1",
+    "3wwx_A.pt": "05bca05b042da17eec95a3639214b14189400156d35f92ebb0060771e22b1542",
+    "3zgc_B.cif.gz": "08b3b7c682a275794f965368e5840a4a61882c68c2ad6c33be8be23389eb69e9",
+    "3zgc_B.pt": "347261e20ec219cef7e3ea0132e6d25d659c5a6565702fbf309d34787ddf95b4",
+    "3zj0_A.cif.gz": "a19e46f732a7c60c1acd5e6480762f84470aa71c3083e8d3a8a8fad788868abd",
+    "3zj0_A.pt": "bd07155338331b0bdd01bb23c891d5b32c29c67964f5d8604025a92aa70d1270",
+    "3zr5_A.cif.gz": "59d3144cff63561879c68040faf809fe1646361e60938ca30763b48366f6f499",
+    "3zr5_A.pt": "833f86fafb3d7c3c8e29849c514c9137d62854d19df789bd7622c6553c488ae2",
+    "3zxy_A.cif.gz": "dfed86efa98344467b1d7fba94db2e9a85117f7f814dabfd472dd68c93d55e82",
+    "3zxy_A.pt": "2aa4ff01214de02472611fa693bd3c5c6574ef1461e3429fff34e524555322ab",
+    "4ado_A.cif.gz": "b5a3cf3bd675176c6bcb024a2396d95b79c063548006c8c896cf2f0b16f1de23",
+    "4ado_A.pt": "53637a901885384fb45229099adadfd6ed0b482aa0a9900a1a36b0e02d524e35",
+    "4aef_A.cif.gz": "21fcdd3f59968c4247f49e013c69e4819867cd8c6b522dccfa758a9bbb82fbe2",
+    "4aef_A.pt": "7527a3de1468160cc1c22fa01d70023a8b0c7783d650c662c6ee4e5f67cc1b84",
+    "4anl_A.cif.gz": "ef8c2c58107e4e64056f92a7fe7a226001a48594521537ecc37fb183774b8062",
+    "4anl_A.pt": "758a3effa0fc5699e8dbe4794c104d6376b8c23da08891e189560d3842f28fe7",
+    "4b1l_A.cif.gz": "4458d5a437eb6291aaee8f95b867c9cf24283b33b336c169a9da0d9b40b09519",
+    "4b1l_A.pt": "cce86eb26149f6dcb5a5aa7efe44a5c5f785cd8f9e4bc8d0764b48d49c11fc77",
+    "4b5n_A.cif.gz": "11c4ad0ce57dc842d47ecb88e7df19c9d1e6827a457a1bab9914f6b053f5df41",
+    "4b5n_A.pt": "c443415c3b98550eb8ae3d440b9bdcefa396454b0a06c1bb4365ebae92fbae32",
+    "4bq2_A.cif.gz": "ac85971975089b45d5b2fda4f267345769be2be7f12cc043800376c1d1ed4028",
+    "4bq2_A.pt": "40584554d6f305c8c165fd783d630ec7f8c1670e41d78eb7789091be0c65f99f",
+    "4c55_A.cif.gz": "6d596a3887624b84cc1276169e140b6c9712d4efc3a16c4415d746a4ca32815a",
+    "4c55_A.pt": "4c657d92ac1ffe62bc656561b753f9561167a234576472779019bd7cee9a7666",
+    "4dr9_A.cif.gz": "7eac779a536d220ae5b836ecda2b434479c60a00954c01f08a7187e0738caff7",
+    "4dr9_A.pt": "65c7e36c17edf77b125ef5685145f754973ce182a9ae9e8fd7430ef009ad6aa6",
+    "4e2k_A.cif.gz": "e40bce77c8bd5e50de04a8c6a85f1d03668452df0e5ae1ef780f105c23bd5870",
+    "4e2k_A.pt": "702edb9fb196821367eb6b835d0dd21018d40a5c7a0e11072ed4117f3e23bd44",
+    "4e55_A.cif.gz": "5c192f1d3c9826973aae2d6d242950b3b36eda2aa2e6927b4e5f2a83f1e4d11d",
+    "4e55_A.pt": "af5f7c8521a48be6bff8705b3ad259be0a0c8da597e51b264ea569f7411c4e36",
+    "4ego_A.cif.gz": "8827933ca275062a108b63ed78acf923a155c133930dfb91baf90a783550206e",
+    "4ego_A.pt": "181b01ed70c4e7e676ca1d4ece0b7554a06c3e06cfbae2ac315a12a3b2f1db46",
+    "4emr_A.cif.gz": "037f9d9c1da3de132f8e3219004c44ef87e58262c28900aeef34bfb1ae6a5a79",
+    "4emr_A.pt": "f3b28307d9c2bd344404e819284b1139bba7a23a1f41df1b8496b6c41cf5c0dc",
+    "4f1j_A.cif.gz": "74c347647d8c5414db7bf0b5ec18a631c15f109258d218998ffd7f152b2adfbc",
+    "4f1j_A.pt": "b66c54f020e6d0c6088c0b42b845613fb9ac118e615cc9684a996fdf86ae9e48",
+    "4fk9_A.cif.gz": "cf0dca16adcea750105b1b8a3e9bce3959e5bdfc1d642cedd7a0a805f3873287",
+    "4fk9_A.pt": "e9953fc20f10123c219bb1d8d05dc50482623b332e5d29dca7e975568a72a274",
+    "4g3j_A.cif.gz": "54859c822d50d0fb448d80949ad02f20b8c6961a2e63abfe6d6c5a09cd4e0082",
+    "4g3j_A.pt": "5517abbc186097c6fa1d9e4775e5ebc3d965cab5320d851c4de6aa45910e7308",
+    "4g7l_A.cif.gz": "646d7aa7abf2e63fe495597806236f59860e653feb4508fcbb3149fa220e87ac",
+    "4g7l_A.pt": "4ac47013edee6b533661fbf0c33370e78c6ecbf4e4334983065d0e2e9ac1732c",
+    "4g8b_A.cif.gz": "9ff72e4feee7d3aa9bdb5310f0a552e71d29def37912978a67186cef781fdcb0",
+    "4g8b_A.pt": "237ab71e06faaa01b7ef9b0bbe9d0561ee37cc18e6735b8b1a1b06ccbf786645",
+    "4h5y_A.cif.gz": "31e57f006dbad84207f816b9dee3d29d5f15bf18cbbb0223c7f32f844a7ffd09",
+    "4h5y_A.pt": "b0aac3108e377656b3c97f6f5c0e00f3414d785910678f316a42444748303fa4",
+    "4i6k_A.cif.gz": "7a3a2fe509f9ebb1f0361c7b3223112fd257b7bf74d1b1a5cd0041d21583d475",
+    "4i6k_A.pt": "189244dc161886bf8c0f37c793402bf8a45e08c8de490947742a8ff6b02b2169",
+    "4ihm_A.cif.gz": "88f97abd1b683b035ead6861cdf104fd37d2e09c88c8e625b5bf19ef4cb48f0e",
+    "4ihm_A.pt": "e0fa7e53c1d69cca997591a47128ca8f2ab22d040c11acc570788e778935b8bc",
+    "4jin_A.cif.gz": "00ba41364a43da8ab7ca7f397fc6abc1768d9b9f6b90cbd990232af214895585",
+    "4jin_A.pt": "74aea19dc052a2e4248ab5770268802189e36b4399f1d18642c651b1150747df",
+    "4jpx_A.cif.gz": "d941077a1aeb44ec274899a65b99c3c8a1dbebb452581669eb439d8ec598d7ef",
+    "4jpx_A.pt": "ae119788732d621be400bd7c528c8855b16628bde394e881d940504ed102871d",
+    "4kdu_A.cif.gz": "f5b1082faf816e895a08e202158bc8fe1a9d99c60728148e24feea794e6ab841",
+    "4kdu_A.pt": "29b279eead5301ea8a0e418fc77d557d0bb1cf7ef01bf3b23a5c5e9e1d7c9a7f",
+    "4kh2_A.cif.gz": "b4016472205b22a5744b3d77295cc2c197919b07ed25b2efa61ac5c2091117f3",
+    "4kh2_A.pt": "a92fb25c35e04e76e9238a9f1a9d47385586965da051aaeae3aa0cd13dcaba58",
+    "4lpc_A.cif.gz": "847a06988c1bd265e46821bb493cefe5d771744b72a172a891f83b307fd93693",
+    "4lpc_A.pt": "fb281e6a0ac73117c84b6eb35aecc4cc5f5e4efd8ea4c0bad89aed5d4e7c56e8",
+    "4lv8_A.cif.gz": "bc86de1c97dd0f59f69a992cec58d66de36590c72697fab9961e9773da55a2c4",
+    "4lv8_A.pt": "ffc286265bd0a689cee7ab40bb42edb49e5d8668e0c7d5dde3fbb15dc5b9a052",
+    "4n13_A.cif.gz": "e9dee297bfedc641669a9b70d9f8d85a98c3b822d19d8f9e8a755834da644709",
+    "4n13_A.pt": "7fefacbdcad8ba7cda8dfbafaa93d9575198c0a40f011f19ea671785085e519e",
+    "4nfa_A.cif.gz": "213b338b5d9189e27720526791600b1231194a7fdc665a4f1ec5a4aebfc19307",
+    "4nfa_A.pt": "b01239294a8b00a609941532dc9fa23cf24d8bbb93696666d633871f44b1a685",
+    "4nun_A.cif.gz": "049a311c0fc96c8b60c287545d161b76f0db2dd79b5f7d0888f19e3b926d0585",
+    "4nun_A.pt": "2caaf3914f6664fd304b8f06bef75344a86a0c9392775c67e5cd0133a8acc4df",
+    "4nxt_A.cif.gz": "e0806bba815d2b3f9404858a4b8ee506b164e30fc6715c1ae6e3eea527aeb230",
+    "4nxt_A.pt": "be57d85789e180f76ae3d8a103ba85c8299baa514516c8af2ff07561dcb4bd2d",
+    "4omk_A.cif.gz": "60fb2f531731f9d852442c395011284f3f85a24924401ab2b1a95b3668f8b9c2",
+    "4omk_A.pt": "94dee7db6c50e6c53362fffed63e887ead2d058b21e213eec575495a03a0ddfe",
+    "4oy6_A.cif.gz": "3d7334735ef9e2781aac05b190d5599041f0a397d0ee48681be4421e5baf98d7",
+    "4oy6_A.pt": "b24d1240d39051d71d1a8d03b74bfbe4fc8de3b773fcd9a57258fce9fd59d564",
+    "4p27_A.cif.gz": "5ef0c15a89954c7e45b3384316c6de27a1ad843afb14202554f2554f9271d6ab",
+    "4p27_A.pt": "380e002d2a27ebd76e3a63a123fe2a0eedc8e4a3ea6c0e7e8073b0e724a8c159",
+    "4pam_A.cif.gz": "d593f984cad881e085e9f17e2e85402584bba1ed0fd590c330888636dc7c44aa",
+    "4pam_A.pt": "220e6fe87efa0a0991aa3e5db332377267988933ef11652f96da16c4f39adb68",
+    "4q3c_A.cif.gz": "3e75c4e84b3f086d3a946cc524f8e873f5778dc5c54dfb6fb6f900bd72e49fc5",
+    "4q3c_A.pt": "deab9ac2e8c2a89b02e9ec9cba035026a658cb0db4e986670cf993e896c5c391",
+    "4woh_A.cif.gz": "f7a6f98ecacee3e559ab350d856f8450ce1af6f0f10049cda8bf6afb081f2936",
+    "4woh_A.pt": "5066e5c718b920c92273189984553d31f4599dd4a9460eb760522095d41acec4",
+    "4xbc_A.cif.gz": "3dbf5a51124e9b439ad98d5568ec721999c7eab6e37390117db37b90c2683816",
+    "4xbc_A.pt": "c1cd2c2721e919d03aedff8c086f4dabdf1685190f2fa780db81f261b9afefb5",
+    "4xje_A.cif.gz": "b1e6cac08bb4751929d22c1ab876988c0122b3c261bbc1ff7f737a27a33f3797",
+    "4xje_A.pt": "ef8804958d6803400f21133cfeaf10abf7f652e83ee0d0b45c2f3399ba385b93",
+    "4z82_A.cif.gz": "108fc9fb2ff6174a14488289a7fe6ff4af42f34eab10888011890fe1a8396d1e",
+    "4z82_A.pt": "ff3003e073b591585052d5ba41dadacbb78fd851af6b9214cd5305a9690f4910",
+    "4zjh_A.cif.gz": "5ebeea84d98bf4a18fabe9117d2bae42e184aa538de83c4890b4ff1cf4e88cfa",
+    "4zjh_A.pt": "6104ed0637b3daa2471a72114b2c71096330b15ce3aa7dd77401751c16c544b3",
+    "4zyx_A.cif.gz": "6513f8fa2d4f41cf0ae9737c8d111404700dea39906c7b5349307b60ab37e3d9",
+    "4zyx_A.pt": "3775823434238bb1a7355120b7a47606decdcf229c5ab627e3f7042c4e72a21c",
+    "5axo_A.cif.gz": "e385a15f7a86a2d432da477a1944fcb507e082a3ccc612d3ee4b8a74afdfa4a7",
+    "5axo_A.pt": "aab65f567aa7fccd99e5985c0f13f46759ea424380ec815a60aa843217798fa2",
+    "5boi_A.cif.gz": "0829905e3cf0a9a249b9bc6a2ae99591b65e8f92226746435b6099bbce43fad7",
+    "5boi_A.pt": "21dbbbeeddc5a3edd383e7ce0aa4aabcea1d3275b16f59dcaa82e5929a40fc80",
+    "5bpp_A.cif.gz": "fe50354c29ec680efa3a96103f3db6d89e4091ef1b1a2d3c79c3e4079f327065",
+    "5bpp_A.pt": "8a7bd3022b3aeacbe594512fee210005494352db31fc769132a25baa62ae06b1",
+    "5byl_A.cif.gz": "54f480f0ffe7bd919e1ab7d7ae69141404c7add3e2159e447787fb853484081f",
+    "5byl_A.pt": "424a720d7220c8b8603e0ec2de82e6e2fff8ca5740ed3f3142e031ff6e2442df",
+    "5cn6_A.cif.gz": "86c6725f9666968bbca6a84b3c80413fddf26837d3322086e2794e6c30c62b47",
+    "5cn6_A.pt": "542d479bb5fb83396831a87fd8a377e8621375315d7bc7fa2036ea8c924607fd",
+    "5d6p_A.cif.gz": "2860ef5bcb82e20c2a10e4e4af188751a76dd1f1b0cb6b955d7f2ac97fcc925c",
+    "5d6p_A.pt": "fbf93a5f9913ce7f98aad25670a6e57f898bf5d831e154ca283b68bee306c573",
+    "5dtm_A.cif.gz": "fa321fc572d02eaba6b65c9acf454e6602fd782c59b895b27feb59a0f7f2e084",
+    "5dtm_A.pt": "4f8351293c691db161ee73e765cc5daff7a3cc2aa09927e2ceaa36053be35511",
+    "5dxn_A.cif.gz": "adfd12930588f483f49fc5d7011b31ccd144595b6f8589117367e93f162f5053",
+    "5dxn_A.pt": "e8cacfc87a96110a9a341d47f271eaf7c16aaefcdf091eed28d821297d2eb384",
+    "5fr3_A.cif.gz": "1af28dd20a45aaa5cae8e045ddb2d92ed33303c04910ece092e8620ff9740ed0",
+    "5fr3_A.pt": "ea6e6964b9fef99943f25982080fd2b7463dfd8c873eb7309c89fbc3223df008",
+    "5hgr_A.cif.gz": "a749840b224240bfa93880fce5ab52cb9d57fffdb9cb92fe8005aaa5abe68526",
+    "5hgr_A.pt": "e6882a48fbea1c37cb9e31add464554b669d949b27af3a76c73536b7f1232234",
+    "5jgl_A.cif.gz": "490e73a504aeeca456d7d1c9a199b1866b36abd1779c0cb544cfd0d345aa6139",
+    "5jgl_A.pt": "36b12e41549e61121784d90a4cc16d70389709e87c2673ca233b44879f92bac6",
+    "5jir_A.cif.gz": "98ebf4d655eeb119226d126e44ff8f7a45935b02ede9a985fa0d29e1c6655cf1",
+    "5jir_A.pt": "a16db18dc6d66c8d4779bfe918f2852f6056f1ef01e8dff4f78ff778e291105f",
+    "5k0f_A.cif.gz": "9fab7eae94658261d5e3c71e32a04dd9cedea1a917c4bffb3ef192ad5840a077",
+    "5k0f_A.pt": "a3109199c1fe3f487cb42682fe670ad9911ea313eabca3dd98d113db803b0602",
+    "5kdi_A.cif.gz": "9958077a1f3f8a861024370bd010aeb8f346ad9de6101506463dd2a31bac0849",
+    "5kdi_A.pt": "e32d88aca16e454dd15f2b002f5a47a5e24eedc35a92c40b407cd6fed7d141ed",
+    "5l91_A.cif.gz": "34db7e34789fcd54d08c69f22c191a46db2619b8140e718f1a44a6cada76b48d",
+    "5l91_A.pt": "987200edc633692e0ed4e2cbf4dd1be96e1887428e31df08b1c4971d49962b3d",
+    "5me4_A.cif.gz": "7ff0f3a154001efb191f89679aeae6067d8b82e5d804b523d764dbd9287f4bbf",
+    "5me4_A.pt": "629bd9c9520a83089927ace02ba17bf63d65c7bb26a8ced1cfcd94107b2bb150",
+    "5n9m_A.cif.gz": "c3fbecfc46cecc3402f3bcfe700a32843d07c696f663370dc060289c3ad913aa",
+    "5n9m_A.pt": "592b24c8134de742fa2d0a48d73b4769ed30aa479b882ad38014d7926b9cea58",
+    "5nl7_A.cif.gz": "f1e1594a052c5510b1cbe7fb11bc41be1ea7aa55cf34f56b69aa2ede8f62d1b0",
+    "5nl7_A.pt": "bd8cef866a9cdeedcd2f7cae63d80ccd63798fed20691de697a8113db2e9618a",
+    "5nua_A.cif.gz": "1f0634d30d82229a34388c3cadf1096697c93e469a316aadf1c4de9a1eaeb63c",
+    "5nua_A.pt": "ba01028ced7b9d5021e50788227f610c2981028aa1f9defa0d069e96f4b4bbe6",
+    "5obx_A.cif.gz": "bae0acc66ad3500292004ab5e886fbe9a5d520ff0a9648f2b329590adf1ebf66",
+    "5obx_A.pt": "c926c5a8c9783b88cf8c7c7a7eb7a3aee2516813dec7ff6dc08095de3ba3a165",
+    "5ppf_A.cif.gz": "fa0b4d7eddfa1fcbcf23e302f593430b3921bb13884ef75683108e15585ea75b",
+    "5ppf_A.pt": "0d516b5275f105ed2e63bd57b3b5158843f958bbb8e232d539311914ef476cd7",
+    "5q9h_A.cif.gz": "2feb445d225cf2180a83f38d471a09a16bc01b69db74cf58b3d533d789c92ef7",
+    "5q9h_A.pt": "ff3406fb04ea5f237c342717963b25baa4e8f923ba53f7621dd77ae25e20cacc",
+    "5qgt_A.cif.gz": "2bd972e05ff80f5b3aab2dfd21ba55e60e500b71831fe49b2058218f245ce37c",
+    "5qgt_A.pt": "a51f29556a2588b698807c2328c784a4745f6aea32c633eb9dc31214c2ba96b5",
+    "5trq_A.cif.gz": "bdf42a4b9eca4e8f80e54efde46a12a88f024a35236353b22395bfa016e92632",
+    "5trq_A.pt": "0461e203c379b6b0aa139454acccb147655206140a4a8a0082323011c9132477",
+    "5uqm_A.cif.gz": "82040dde14f5c6e6ae5df18d693abc930bce41992f4c18496fb70f1cb92d36e8",
+    "5uqm_A.pt": "71600333ace5444642f1d38dfdf9e1ec7b1d3b58efa09c64e43be4b0a2be8675",
+    "5xeg_A.cif.gz": "2615f0faf5d497936ab02059da6e85490cb2e36c1e22093dd37ec00ae7195fde",
+    "5xeg_A.pt": "acb5e3cd468151b1da51f81e1c605a4151a7f584570ce1a34b8988b8fb8044ba",
+    "5xrb_A.cif.gz": "12e75b2135261f8f8a8ae1526e2666296aa83464a3e637c776c767a72db03d39",
+    "5xrb_A.pt": "0e6f601b50281725e1356213323e8f6da947e3a69719407e4b1eee2832833a47",
+    "5zyl_A.cif.gz": "27229d33804b77a02eab9a74d6db25d535924b48a177cbecbb90c31fc605d168",
+    "5zyl_A.pt": "d3c6cb69be6f20945167f4014740b98675dad3fa209982afa8be635f587e1693",
+    "6a89_A.cif.gz": "875b3c47863724fd392a16c835216eaca284ea161aa39b4b1e505bcf1bac567e",
+    "6a89_A.pt": "0563da0b67c24022a2b2f75582d2b4348a6c9ff9fb25adc70999e62eaf344190",
+    "6ap7_A.cif.gz": "f75e8dd9e6c6dccd0c177fea16e8416f6a7bdd26dcdb9662c174c71fb849a145",
+    "6ap7_A.pt": "c3d9ff0de9da7b371fe4f60eb9c6c2e35a495ffc76335516e92d140bd5646d70",
+    "6b3b_A.cif.gz": "dedf5049481fc726bcb7c4b3ca6736f1f646c16f3209a28c177e41e9811526b7",
+    "6b3b_A.pt": "435383998f142a38dd06c1eb9a9883500cd1888fee92f44c41e2fec9b85bbeff",
+    "6ch1_A.cif.gz": "8eac838dbd74e0755e35a076977735076bdd4e47d7a587f83a555b5df7cde073",
+    "6ch1_A.pt": "e1fdff25cc5691a02ed6e33fbb1c5d7c7021514eb258a001a2b0da1bd093e9b7",
+    "6ezs_A.cif.gz": "3b98e18d2cf8eeecf288b14a276028541b9c9653111738b7f48cd35997365d90",
+    "6ezs_A.pt": "78c4b67735561263e854eba51cfdbfc43146bc926a9e0dde61282a0d0fdfd630",
+    "6fpc_A.cif.gz": "31c5c14220332cacc3da7e07d942f15397e5204a82e6b4764e33406cad177c66",
+    "6fpc_A.pt": "84b79511bf69710d4999711b720bdd7b60b61b443f27e89c5fe05c98c6bc6a22",
+    "6gpa_A.cif.gz": "43c2a25268f18e8fb130932d77045f4cf9c4fedb3491acddfbb4233b030a27b7",
+    "6gpa_A.pt": "b8ad171fe371c6fc859eded5404c7d6bb3246b591f1f409bfbb9f01935b3f0b0",
+    "6ht1_A.cif.gz": "ae4aa35ed52585a12519807205d48f9583223b4bff48671924727a3cca46996e",
+    "6ht1_A.pt": "1cb040eab7a9c4ad9c46f2b61b792660f4d695503663180aea0bdd554d65ccac",
+    "6ibj_A.cif.gz": "b6eb84296d56c8764f8c669f3358a2419ffc4f2996345b7250dc96372abb8c06",
+    "6ibj_A.pt": "ffc07154d43ebbc52c955261d3fc8bf84c53d6042293349040cb4632ab26e8e7",
+    "6ijn_A.cif.gz": "d3a71288edf1f5988d2c7fed1465ab0c948ff718cdaa60a83e7627e3e852e164",
+    "6ijn_A.pt": "9586244704a0f188886122917862e0ce9ab83411903317381641be117646e9db",
+    "6j5q_A.cif.gz": "d4c8269da216b598543d204b321a4a54bd7e6dadf7acca6156a8d136e0490411",
+    "6j5q_A.pt": "384970dd0fec8512d9ec5107fe119e821a133cb61393865ceab9c2b7b688409b",
+    "6jg1_A.cif.gz": "0d314777bc659f5b754d42b1dd7dd4f7c2e259bde3c4fae6dcda4ad537cb1913",
+    "6jg1_A.pt": "2c62f730562c1d6ea75a6826de1c6083658b3a3728ba9199465d4b0635dcceca",
+    "6k7z_A.cif.gz": "1c0c802fd72d2680ff559800928ff15f2e8670cde1dd76d15640ef0caf1706de",
+    "6k7z_A.pt": "1a2b347ae37dc6fd4d0da175abc05cc688905dcfa66297f9a7111647af8b3e8a",
+    "6kjf_A.cif.gz": "ea16f3523f069c70efdf76a9307a98ae671c822795b3548c453cb52a318c1a69",
+    "6kjf_A.pt": "a07e934fee290e7d8bbbfe5e8f0fbc0f2610fbb28b12129fb744042ab30a380b",
+    "6l1h_A.cif.gz": "9eedd3cc6494d5fa5f9420dc48b4d5581e61b6f0142a3a221e6b692585fc3593",
+    "6l1h_A.pt": "836090f3c8cd7d70df69e8cbba30718df255982fbcd68da09948a96bf0cec178",
+    "6mrf_A.cif.gz": "78f0f2857492d8abe11db626bb2dbec7466baaeca586c046a4d4fce14cb92134",
+    "6mrf_A.pt": "e8cff9330b17f75c68f27e6b28b01e3d413d4b1d1bdea7dc64c18aac3bd1df6b",
+    "6muk_A.cif.gz": "7c61fdd0b0e55bbac2f59c5da8b4c7b486e87b3f6961e6b23b1dfdb29ae0b9bf",
+    "6muk_A.pt": "b4098a49a5b201976dd9cdaa20fd17209d77b38366471d166813c4de88317477",
+    "6ndw_A.cif.gz": "69926c827d2ea7c31f2d7fcbdbd70f12e6b707c931d22ef7c7426082bf6c5edc",
+    "6ndw_A.pt": "c2b4946d0910516dd61549e705f112f86af5381a2455c615b8b1fa9c8a396b36",
+    "6o9q_A.cif.gz": "349b1c0fe85cf4fce77d491d4547ba9d023e1fccb8e15e993b65a8cd52b09784",
+    "6o9q_A.pt": "0fb835f2a644ea7ed27c49af9d540c7f984df55233a3d762ac070390ac5e079d",
+    "6osx_A.cif.gz": "9952e08f1b0ec5b1a324415f3fe593e4dc03422434c948ffc070a6c7218a5f2c",
+    "6osx_A.pt": "0646ece77fd4b74253f40ee44005be591d598f852aeda73dbce5982ecf38c92f",
+    "6p2m_A.cif.gz": "e86b0907368c7b0bb8ea50736201978236ea911292df73c44fb3b9457a7a622b",
+    "6p2m_A.pt": "8a9be2dfa484173769eea028d97c8ceb294724d0aaa2f1b83ef2b3f2dbf25c9e",
+    "6q3v_A.cif.gz": "982134816df5144de3806a266f32779f2367c78cc3a51faf56f94d443354e9cc",
+    "6q3v_A.pt": "5e34f29fa503034508af1ac1360cc91afede4b508b52c3ae0f60432369c24bbc",
+    "6rrm_A.cif.gz": "b2f4620d44f64499434edad710e664fe3397504d1e10aa85b39f20165b1b4694",
+    "6rrm_A.pt": "d977a0f7098a4a7e6e9a292babc9673a1783ad9065e9126ea86f8a5603fd0a3d",
+    "6s8z_A.cif.gz": "5db5bf7e15ea1653d127a735269ec2a45491ab83001704c5bf81628b2329298e",
+    "6s8z_A.pt": "d1b3fef4ee60431d3ba84993fa7a9b7198fad9fce70295bac8d91058995e4ff2",
+    "6t8d_A.cif.gz": "60661e8516f281c6f58ee61a3ef57532e2844f6edfb01adf2f4dbbc6dcc138e2",
+    "6t8d_A.pt": "a7073e3c6a9240768d6d5f5e4c6d1d622ce867e6f28028fe1f14027bff091b7e",
+    "6uqj_A.cif.gz": "cf5152dce73308b8568085a92b5bc2d8b54eb5e0f5e0dcb12cbf8777fb268038",
+    "6uqj_A.pt": "fc6881119db866d8075e0bf89ecf7daffb5201b013c25ca3aed86a540c50d7c5",
+    "6uqt_A.cif.gz": "ffb83f446082e4951bdaf4c385b1aec88a30026d3387e82524ae94ebe5a53880",
+    "6uqt_A.pt": "8f633dac4bc74ffd326d4b80dc89e6e1c670880aab718aa8de67779cb6716f40",
+    "6w2p_B.cif.gz": "f72bafc02c8e011ad17efc29e243c8aa69ab5f830b5f34722046c87bff5693d3",
+    "6w2p_B.pt": "f8ea75eb7c31f1996753e25dcf63c2d281da65a1fd0d323c84b6e24d9123346b",
+    "6xqx_A.cif.gz": "f413dbe731a5d222e44e10aace957194d10caf7cb0971e139c960d7f935c6308",
+    "6xqx_A.pt": "9e9d1cfa1935b6ff5a3829672e89e941d82c7f6b537d638c4c3630d33a3ee538",
+    "6yec_A.cif.gz": "c57afa29bb16fa20eec3f687d2ea8476b7bbb2aa308f437428cadb5d40b6dc75",
+    "6yec_A.pt": "66745e3356f3a42528e62fb195d6138707c78e0693226ce730408597744080b1",
+    "7a16_A.cif.gz": "f5ac8c733bbb3a7632ce2c0119fbff450ef415e4b11bdf4c2db131625a22ab79",
+    "7a16_A.pt": "19b39240899fbadbb927294541513dfbf850bf3acb31291680614ee7d6eabd6b",
+    "7b60_A.cif.gz": "29537f4abde60cb47414ad8857a53e290dd62180b9a8649d18bd09c2e4bdaa00",
+    "7b60_A.pt": "d92fc2489b30adcbb89aa52da076bb23fef4c04b7167923df18647e6e80e1f51",
+    "7bwv_A.cif.gz": "144ba9beb352a34c9232673169fc88a58b6e9ba9989e4c690cd10bc65fec8945",
+    "7bwv_A.pt": "6672a727d449296d81beaa046ca8fc09bd5a57013cf35d6a323bb721aa098747",
+    "7c82_A.cif.gz": "0536634998d471320c2da2091a418f722b85d19177099f8dbdd52e883f786132",
+    "7c82_A.pt": "241413355ac279d995b61dd8c1fd13c1c16adc1144c88b1d2e87f822eb6a6061",
+    "7dk8_A.cif.gz": "786c2ba9bba77344c02c3725a6d7b436847646e9d917226c3e5b1686139d8c1b",
+    "7dk8_A.pt": "53581be370dc00d12b0fc3cda750a38974aed1bbf036acb3511bb76909453bc5",
+    "7f7m_A.cif.gz": "4fe9b9f3689850916452aa5125f7efcca131305c4e212b1e4da5a9fe3856a96e",
+    "7f7m_A.pt": "29eadbc700244fbc53baf8109a3367c3e07d8fa901058a606d4c16667fa2cf99",
+    "7h0m_A.cif.gz": "685614af782ea2b58a86088dce99927f28a3d98b19dcd896c0fa1337bcc60d0a",
+    "7h0m_A.pt": "1aa178953cb778aba8680ea380bde495eff5b9813b19e6e3027eb74d6ceda21a",
+    "7hln_A.cif.gz": "cfed12ca440e9a1f5118902a726fcddda390a1d51e4877666fe4cd6f71493adb",
+    "7hln_A.pt": "3e6ed605acc851381307521b4849870ecb1eaea6d10baea6828e4989b681db42",
+    "7k27_A.cif.gz": "97e61a09cee453cd061e88113ed3eb781e8eba244a9b7fe7d2aeb79499f6aff0",
+    "7k27_A.pt": "5389f5ddecf661b2a6772cd9d4e9d237fa8c536f893c2f37b25ab4168170445c",
+    "7kk6_A.cif.gz": "1a074a9cec963beb4bbf1e6971d0e0961de8dac0b625b25550330e40b8ea006c",
+    "7kk6_A.pt": "4685bdd0844afce81b3a0f6beac5e37a9800104650147c20f8dca7e8536a8a99",
+    "7mro_A.cif.gz": "47c71fb5c1e57dccdd3b1c4ccb40c22c525307c88cfe47e11c534054fa6f4dc4",
+    "7mro_A.pt": "7568bce9f190222db537f9a51947a297d448c3439f8f2536a8aeb1f4e3d6a457",
+    "7np5_A.cif.gz": "d48ad51ab6cbaf666f7177d4614f9a9c5b3f49c0fef2c4d39e3806572b6ae727",
+    "7np5_A.pt": "3cc0bc9d5254623a0b2c452280925273e62cb3876975a166f1d8497819d7edd0",
+    "7nuw_A.cif.gz": "0e9372c5e69d470f74f401c1376609ae764410d177f0b53fd0a1c369dbb8e6b7",
+    "7nuw_A.pt": "7ff5507bddb9a13039f1393276657e9b098d2fc12a1cb54dff4d4a8957fa43ae",
+    "7qpm_A.cif.gz": "f0b395aecc5fe35a6ae36c5f4171b13d4856e67e4386544c397a4e8ed0010278",
+    "7qpm_A.pt": "a694273424a39fb97b8deb7c0ba53e6c916226f394e9be7c2129c8ab8c213ecf",
+    "7ryx_A.cif.gz": "35d50680657794c0bf4f2d13682231b9a536ae2469b80e157229efc77b72396a",
+    "7ryx_A.pt": "23e7860f55357c55b934a0b33d7523aa3b221945712598c75fed261e678bd97a",
+    "7thc_A.cif.gz": "0a419b77b3c87c68793d103d6d7e7331693000f5c7e30ea909b5e9c0259d281d",
+    "7thc_A.pt": "d4ce19dee01ae9ddff24e8cacbc90e8ca26214c5af21d4fee345fbe2cbcb4f8d",
+    "7w44_A.cif.gz": "2afe7c9710ef1209c4f9be24ae37576da30ab0a0d23f12845d01868510eb58b5",
+    "7w44_A.pt": "583509b9b9cf27031dd2691effa38ab0b38bc798571ed9ddae5af0ecf2c23fdc",
+    "7zge_A.cif.gz": "47de787e8a0d27aade851b8da6240531b70a28da95ba20f363f2c4c9cc826d06",
+    "7zge_A.pt": "312d73ef376741332ed3157f13ea111bc963185f2e669640a603075e899f3e10",
+    "8i52_A.cif.gz": "d898fea541abe2e0e1da4bc3fe8a1dba7430f074b1b838f87a663fb7f0eaed4d",
+    "8i52_A.pt": "482ead7796ddb5fbc104405fd555cabd7dba68a96434f75d321932d2f6b7873e",
+    "8w7p_A.cif.gz": "d1f31e705424eb25f9b2d6e4d78dc5843b64ca1b6f80f7116f5ee1935dfc1ee2",
+    "8w7p_A.pt": "541f4b9e8e2872ddb04bcf24473acd4c26635d5756c9612bd9ca4f498904587a",
+    "8yoa_A.cif.gz": "bfa4fcdf96c59354b2b2497837285f52d009c12a21196b6f64bc9ae161f74952",
+    "8yoa_A.pt": "bfd8693fdb738844d35ea4cb3c09d6f003796774506e8f5c5012ea303cf1dc02",
+    "9abp_A.cif.gz": "721ab987c1630aaa7246960f7dc52e02dff0a721c898285249eb6fc3da2aff74",
+    "9abp_A.pt": "75feef82aaa60d35e484cdab6b9420d5ab3353a1e22a8d7af1b6b8e1920cb19d",
+    "9f4s_A.cif.gz": "135886df5a0cc0774552d25b65a05fa298d55d6404aaa9358d32f57684e270c5",
+    "9f4s_A.pt": "5f0bfde0040596f4d2517ab00bc7bc8fe45680d63be605c18a9c7f95157ef563",
+    "9q8c_A.cif.gz": "aa002394b91db8b80558101618e4e5bb655733c5748a7dde8c74bf0a487b281f",
+    "9q8c_A.pt": "46c0ddb0086629561ebba8883616083bb783e51b03bb130fa7c65b06389baff1",
+    "9qdy_A.cif.gz": "22f402cf909787e74ac29a72a01f79ce53a1dd3cdafc7a565debc8d4fce705ec",
+    "9qdy_A.pt": "3374df50b5b18b083d7a5e950182c591b329bcc8521a51c867964de44bb59b0c",
+    "9uem_A.cif.gz": "20dda04cdaaaa54c6d66f6f881af5e0e1230bc77793b78ce99d827cbcfd43346",
+    "9uem_A.pt": "90714779a917284448ac87cca01d6341d47ace98e2754b3ec04e2dc48803fa47",
+    "9zsc_A.cif.gz": "a18cf818088578543477688a812b955f9b0243fa414e194c351c7261a2bf8f9e",
+    "9zsc_A.pt": "a6aa600965b77710c9a7ce3277e1eab94f6d09eb50bef15d47351f915d2c4839",
+    "dev8.json": "5a6d6de1394d1e329f39be0b385dca1712e7934b980858b4147740baaad28021",
+    "evaluation144.json": "75d951ed43ade8c3dd4e472ae11042220b17e76a2d83311323b9e0c4e6c0a9a2",
+    "msa_inventory.json": "c802348f3e1fc4a21ebcdf2394719040e25b753b3346f47547ee136338033bba",
+    "train96.json": "17aa6ed1922e1f672a68e6733f915ea7b03bc78e3b8da35a649cd32ca347241c"
+  },
+  "weight_sha256": "b53a724294cdd46a45d530b306bced8e429ffee74a4f9a2a897551b30966c415",
+  "frozen_backbone_sha256": "8132845302dbd9ee5ec814ecbc61d87c9e33443424e0898e747a1e9b11e5af53",
+  "source_hashes": {
+    "scripts/smoke_openfold_adapter.py": "71bc491ea623dde57d8be9cda10f5534bb38bbb4e70d10eb1db7ce3ca931b8f4",
+    "scripts/check_colabfold_runtime.py": "856e501c4b8e3f2d0b5018e04462c4daca4391e9139f7a878c7dd81f4db1572a",
+    "scripts/select_openfold_calibration.py": "b1c25d97591e78a55bdeaa6c85a8096b86b84b984e5e43a4209fe963707e46c0",
+    "scripts/check_openfold_updates.py": "a28794cb0006c5075b19ffe0d6968043fee133d00cde9a0514ccac15b824183f",
+    "scripts/score_cross_backbone.py": "9bab92689a26c2fb5e662eddb450a1da311572b2e06353a6c0186512f454451f",
+    "scripts/audit_openfold_inputs.py": "35e8910c0e9369425859e73d9ac3f1b0dceee5887448fb5556cbc19e0bed8f47",
+    "scripts/run_colabfold_panel.py": "74d0729214800a42ff20c6bc7200e32ed87dd2a2309b6e711af1e47dc1dd6bfd",
+    "scripts/status_cross_backbone.py": "e20d6b9d9df709f5cdf7d8e5f495e53238e1a3a1acfde50d06d6e0cc89db588a",
+    "scripts/run_openfold_study.py": "0ba88e3cc821387946d125994d0a0f7d57a35e7861b7b5f4cac094f1eaa6cf2c",
+    "scripts/handoff_openfold_partition.py": "89f8e297ec48426438e844bb2730d5654f644538642b4e6bd0cd75fbc9f8babd",
+    "src/engramfold/__init__.py": "a5a2d03d803db38845274b22c373ba030b413f82b4bc455134bbae0d240a513b",
+    "src/engramfold/protenix/opm.py": "93c96aa82987da57e91ff0692f2e8a92f8db575cb7262ba3c13ae78f11a98c2c",
+    "src/engramfold/protenix/task_adaptation.py": "0e20b6b72c65dc48054315681c63fd7b40728c910ed3764f69feee158d27bcf4",
+    "src/engramfold/protenix/query_only.py": "b601bfc15b61cf984b559a87f3ec6f19f3de7d062ca1c7a5d4ef4eac694e384a",
+    "src/engramfold/protenix/__init__.py": "47f2870d59e2215e049104277c35d896c56d8588358cbb0c8ec640bbeb3f31e9",
+    "src/engramfold/protenix/capture.py": "aad7a6bdb4beb8b7d1fad982466df5896c14a725160a4e0ff030ea7f8b3b4bcf",
+    "src/engramfold/protenix/replay.py": "8ee49eae45f81ed52c33e5661e144f384f1a2baa096dc34bf8c37800774c51c6",
+    "src/engramfold/protenix/query_opm.py": "960ed78b1d782391831012dccde03b5d091bd2b742c42ea85f33476f4a618083",
+    "src/engramfold/data/fixed_msa.py": "4bba608cc8887ce884fd0edaf64202903411d6512872e0a9da12b0251aac756c",
+    "src/engramfold/data/diagnostic_manifest.py": "8b9ffb2ce60ed6f8942a8d6684f93def54a9b98e8220d37611d181a1c81fba33",
+    "src/engramfold/data/expanded_training.py": "4be735ccfcbc211c8ba85df6089ea6e9c450bd84e950f57e99f055659295f2d3",
+    "src/engramfold/data/independent_panel.py": "604a57f678349a57eee0cc30f889d3eae56aab3f53cc82328d4c6388862a0afe",
+    "src/engramfold/data/__init__.py": "22bfd9213f7a6fc1e164cca5232f13d1b9e6437c4d55422549fb47e38b5b3475",
+    "src/engramfold/data/native_direction_panel.py": "ce3eb08afea410ab04702428a80a2dd3245eaaa6bcda4b6586217a9c0aa3b3d4",
+    "src/engramfold/evaluation/paired_panel.py": "692847c311b4e26a84e9d19c97db000e49cc257d8ffdb2e3b5f26a5bc5d98773",
+    "src/engramfold/evaluation/structure.py": "7076157867a14fe83743b2ffa473abf0e616d37ddc3589306e0d4c4e74a429a3",
+    "src/engramfold/evaluation/blast_filter.py": "c2dfc5bea43196c6b1be22bfa3d00ab8e9c1d3ac211231943390ba7b7ea5cc49",
+    "src/engramfold/evaluation/post_validation.py": "68a8400526904f27d3a534db831d9ad8a5a51c7ee2ecf221d1116139e6f70cf5",
+    "src/engramfold/evaluation/sequence_range_lddt.py": "3d795b264ea5ada79e3c2225a0a5d2a9451bd53a07aa9d6a9244177fd564dc4a",
+    "src/engramfold/evaluation/independent.py": "89a51725455e957aa952011091a413f0c95a96c5f67ff02d46524a40d943926e",
+    "src/engramfold/evaluation/tangent_projection.py": "f7ea46feccdb64b67ef0f27251fd49726fca710cb5d9e4c68cace18d29fd1a14",
+    "src/engramfold/evaluation/__init__.py": "765db729dd93d4c7195dd0db5df7732094aec4911e73e5cab9db55a0bbc4f11c",
+    "src/engramfold/evaluation/sequence_filter_audit.py": "4ea955f0d8ced7bc9fdf72657b4ce565981b51cc75553c0cfd24aa7a3beebe75",
+    "src/engramfold/indexer/__init__.py": "d146435e9d516e22944bbb8aac8abee4a29488926df1c4c88c0a2ba93723e222",
+    "src/engramfold/models/interface_heads.py": "f1a2fb0de3bca444c9a5db1ac6bc9648b25824a11ab095a3801ba7ab84b52d9a",
+    "src/engramfold/models/live_opm.py": "9d3130cf6db896da6fa3aa1932651d10060a8845156e5c389e4c7e7d9cad38c0",
+    "src/engramfold/models/plm_memory.py": "f02c771205d5d310518a6462be0dbd5156f127ea621ce90127c7b395b24a338e",
+    "src/engramfold/models/direction_extension.py": "4c29cd878bc3f13bd22961dc0f197337344b17cb9220090fc7a7fd3897fa0ccc",
+    "src/engramfold/models/pair_predictors.py": "e5c49811116c7137902d9540ca70a07e8d0f179b6e33d248ffb3ad515df2d131",
+    "src/engramfold/models/residue_predictors.py": "ce98ec03dfe15c13f42305b78cbc7b9e922a36c3363eef9221b8b6dc474cb5f2",
+    "src/engramfold/models/__init__.py": "f2da674cd0498928163c73920ac33efa0d0e26b305f6d1abc89b5565ad3d879c",
+    "src/engramfold/models/prospective_orientation.py": "8473932ea10461169a2f6991ffa47cb4b09b84a44c497d2889901c28169f1147",
+    "src/engramfold/models/native_geometry.py": "3173f554ed252ffbd3f1d5a261e91155a157cc41bcb24b2536c00f6bace0abfe",
+    "src/engramfold/experiments/analyze_direction_extension.py": "ad3c6c79e098d4b66d59a95d473f08604c8d977d3e84a1e6f8216aa8c6c20c12",
+    "src/engramfold/experiments/analyze_independent.py": "59a4066017f6bcbf044d8e91d50c5249bf9da371768896b43891bb03e0168680",
+    "src/engramfold/experiments/evaluate_independent.py": "26206c5857c46bd8346d5373628e65c24fa0f55dd911a5beececb9cbf584397d",
+    "src/engramfold/experiments/finite_shared_response.py": "f7095e0321e229c214699a21eb753c3fbf88ad90eec4fe2187914bc3559b0f24",
+    "src/engramfold/experiments/extension_runtime.py": "c7ec86ef4b445827c24f6a409a872ba731e9d62cb26fcae4c8efeb3fdfc42f1a",
+    "src/engramfold/experiments/gradient_runtime_v3.py": "72264571ee5508d3601c94e7a2a6cabb5cf9e7e4f571fff49b02db5a879516fd",
+    "src/engramfold/experiments/learned_direction.py": "a65b9bb833a97f755ee520e2f7f8289041c61f28108020e6da4189558726955a",
+    "src/engramfold/experiments/cross_backbone_protocol.py": "620eee78dd54c6f0c7f86ba7450ac080f037023dfec1dedd06c0e9985ec6ef68",
+    "src/engramfold/experiments/train_native_geometry.py": "887d9ae76e41945b571fd2b518934905fea43f158b267cde1e3ad98ab762c842",
+    "src/engramfold/experiments/rotation_reconstruction.py": "bceee02cdd0c133be151102594d8c01b2bafa219cb2f2fc8491ab109851fb4ba",
+    "src/engramfold/experiments/evaluate_interface_control.py": "eedff98100ed3db25004586f2b0f43b369f672c46726a5fbd7aad5a89c9c5adb",
+    "src/engramfold/experiments/evaluate_native_geometry.py": "36088699bc40622fdb5d05365d093ccc58e95ff022f291e7d4f4a57f1051d1a0",
+    "src/engramfold/experiments/finite_response_statistics.py": "ce77b19a0c6b44b2093af47599fd5614c7a82a4515307f4a185c2ea7f27357ed",
+    "src/engramfold/experiments/export_extension_cache.py": "6190df70cee1cb1d74dfc8d638ba6441e07d41777e3813c5e23a836aa1d86687",
+    "src/engramfold/experiments/gradient_runtime.py": "8c4308b39b8c71c947dd108b1483da36d21bf1f48717ca6c17aba48131555172",
+    "src/engramfold/experiments/train_direction_extension.py": "ec09903a5d3b9f68b507ee48c2b303710e0f19bca485c693a6d5aad8b71be2ef",
+    "src/engramfold/experiments/smoke_extension_geometry.py": "d7ddd0e9c12dfad547c95ecd7b34ef6162251f55b2eacb55602b110f7ddb5c78",
+    "src/engramfold/experiments/train_plm_memory_control.py": "207477cdd1552e5a5254c9a7c2eb373d0ce76c5801597fced02e60b85f58d8d1",
+    "src/engramfold/experiments/audit_memory_addresses.py": "e6727673035f2407a95ac0bd70e6b142381ace79d96335e2cb22091e25f1d8bb",
+    "src/engramfold/experiments/analyze_interface_control.py": "4f8516110d1e0d95041b35e7bfcd3d54cd418068318a4590aaade2479e8fcb3f",
+    "src/engramfold/experiments/evaluate_direction_extension.py": "3bbe00545d76f1f528838553a7908ff40ba5b7be77a7c9a68968b326b5c32d99",
+    "src/engramfold/experiments/evaluate_plm_memory_control.py": "41a7e80b9f58635dc9a27b1555527739aa7daf8c774153609880897710b1c95d",
+    "src/engramfold/experiments/train_interface_control.py": "37aef30f7b067a4b2abe48b3e8769ffca8e61e0d9ce0bd1bdbd030dcd11677a6",
+    "src/engramfold/experiments/analyze_representation_control.py": "802333f0b0e0c7cb58c394ba79931331712a22211699c013a824d012965a3a3e",
+    "src/engramfold/experiments/analyze_memory_task_phase.py": "da6bdaf586e3016050014b90864267817f9140bd51827ec7cf375a4d527363fa",
+    "src/engramfold/experiments/interface_runtime.py": "2863ab1cbdc9b3a9bcb746b5a0d34bbe955a05ff896b0f3469b2cfad7082269e",
+    "src/engramfold/experiments/audit_structure_baselines.py": "6e2962425777f5a68002bcf47366e1b0ba7c80a76bf4c2c778470e448d072b6a",
+    "src/engramfold/experiments/export_esm2_features.py": "2f00cb885aa9fbb81ebd5f293585177def1a22584cc66332424db2f6ca2114da",
+    "src/engramfold/experiments/precision_probe.py": "9bac850d9884ead0119242821dd99a946981d3fc0f5c245eef2828b5bb57ac6e",
+    "src/engramfold/experiments/analyze_native_geometry.py": "cf350bbc6373c54445b6affc02cac488b36f65d35cce3ea37c80f7a6e6d84f5a",
+    "src/engramfold/experiments/analyze_residue_structure.py": "4ab1a8fd1733dabe1731b4a41cc1d12e8c313b981ae3fd055c3a35c6e2b4cc3c",
+    "src/engramfold/experiments/inference_read_guard.py": "40c146158269253cbc76d38d1dc41f182c5b3427cdeaf682dda3c6a9569d9453",
+    "src/engramfold/experiments/evaluate_stage_a_v2.py": "e0bcc2d662d218afb98fcb49367f44231ba8eea1f4740439b19a448ac9ecdea1",
+    "src/engramfold/experiments/residue_diagnostics.py": "470ae4e372c7523ce48c081df48a9b9d62959915d1844abc38aa8f21bc9ca3fc",
+    "src/engramfold/experiments/smoke_interface_control.py": "530c8ef93405a1d34cdb01b20c10e5246ce98a343af6dd50d8b3fd7d9fcd9da2",
+    "src/engramfold/experiments/stage_a_replay.py": "74e5e5c52aadaa775d475823c474e719a625731df9e3f2109568d1d0d3d5e382",
+    "src/engramfold/experiments/train_pair_student.py": "cd0132cd7ae867b147276b9abd1142734f89e369a1d7c445095573c6b5e29c94",
+    "src/engramfold/experiments/__init__.py": "79556b168e7ef7d5472016ec0748101475debe46d4c971dc6fe3dd3c0b70ff62",
+    "src/engramfold/experiments/analyze_residual_scan.py": "c49a63d7d440aaf078c4edfa70146e1f9fdc68463afe0d49561523a89e4fd602",
+    "src/engramfold/experiments/analyze_structure_control.py": "b2a79ddd2e11b68a862613cc2a0b2563e89cd88fbe8fbbab11a88fe27990c177",
+    "src/engramfold/experiments/diagnose_residual_structure.py": "ea13e84fa809b0e30655414a09b10009bec4eda906561a68a4e0b560777e38de",
+    "src/engramfold/experiments/audit_native_direction_metrics.py": "685c7d137fe88d394beca3d9ac2727339380a14dc60a0c06e70f64d331708eba",
+    "src/engramfold/experiments/launch_residue_exports.py": "d3a01c58d42f35ae7446dd2bc184e62bfb3448e912542526e3c105f3dbbc8963",
+    "src/engramfold/experiments/export_residue_targets.py": "88c31747ee85df83d8a7dc50d54d987a5c7cff9fe632a6f364490d7c217104f6",
+    "src/engramfold/experiments/sequence_feature_cache.py": "98785b23d77c4efdc79b4f64b2d1e297ba7b4684030eb0ecb3eeb304e12e06ff",
+    "src/engramfold/experiments/shared_transfer.py": "2080db4b73b5bd7a773bb744f7a3c4eea4fd0405e23bfdf99c9042042d3d837d",
+    "src/engramfold/experiments/train_structure_control.py": "eee7cc68b5fde90cb7903b04db88ec81fba618eef18a65fc080245a236fdbd5f",
+    "src/engramfold/experiments/stage_a_oracle.py": "6b6527879eb2587d1fec5e81f89ee03241f4a537b727595044a7ddc6a6b6b71e",
+    "src/engramfold/experiments/analyze_plm_memory_control.py": "8c680182f2fa93b82dafbc6d879e0eefc701eaf31f90e4ab8a16ac1680e18404",
+    "src/engramfold/experiments/audit_post_validation.py": "1dd7376fd93ddb892e2498f1917531ff12794b281ab755c65efc90693757006c",
+    "src/engramfold/experiments/budget_extension.py": "bbffbc4d81c9a2db7b2f26893ee44123d5bcd8e17b0d4173b64b472a5c5dd95f",
+    "src/engramfold/experiments/diagnose_residual_features.py": "9d5162bd24e04f516b711d5c695032ab41faca224dbb4fcf163313c9933ac5a2",
+    "src/engramfold/experiments/evaluate_residue_student_structure.py": "9cb5c829a6022d3893df09a75ce796f29b1d71c2172f8bb74b628f1fbe4d6bc8",
+    "src/engramfold/experiments/evaluate_structure_control.py": "f83ce08b5e2922c8fd9dc5fb1bd996c169c37ae30810a7f7bb5d846f5d3d2e16",
+    "src/engramfold/experiments/export_interface_cache.py": "70d834a24ed0bb9c1f4ad9e0be463bab461981142b33faae1110db6653b2acef",
+    "src/engramfold/experiments/export_native_task_cache.py": "e24bb3eb0b3137c1be99f1b7f19ee83a3e22ae36fce5b1388ddf7e466c15dc2b",
+    "src/engramfold/experiments/launch_stage_a.py": "8eef8961f439527d1997b9a93a4f2443d567c086d3be4c5c2de21fe2c113564d",
+    "src/engramfold/experiments/smoke_native_geometry.py": "f029bbca08c6558618f02fef9f24991ef1f27c8f6075285c3e4b3d0e85159a29",
+    "src/engramfold/experiments/openfold_adapter_runtime.py": "19a97fa53c143e80586a927005e01039d580fa12be68684482f2d7cb27f5737a",
+    "src/engramfold/experiments/train_residue_student.py": "32c91a57c72fab37e8e6677db95b29cc927d63404de9a5a6fe308b33562e6ed5",
+    "src/engramfold/experiments/analyze_pair_student_structure.py": "47d3288b92df072943c1be4d3329e24aee5c398f2e672d2080f387c430e9d1ba",
+    "src/engramfold/experiments/evaluate_pair_student_structure.py": "469d17023d656a433df3f9b138eb879fc12c0d32710e659b8fb23ba33dcb891c",
+    "src/engramfold/experiments/evaluate_stage_a.py": "affa125e645c997508777316cbf04bc8b4be207c223c03c354a6e5696a7afd2b",
+    "src/engramfold/experiments/smoke_sign_equivalence.py": "4db80d1393b9844b44a55d215304daa25370ffa9b46fa51eaec49c30778aa768",
+    "src/engramfold/experiments/stage_a_oracle_v2.py": "5323c136d81b0e39e5db1df52907888e4aeb9ba1f8d775e4cd907d4f87026666",
+    "src/engramfold/experiments/structure_writer.py": "3153b687cf1da49b67aafc8c8d5194c25caeb28abb27cb50d3735fe4767133bc"
+  },
+  "staging_hashes": {
+    "probe.py": "137b5507fcdf998b2e220695e19860e6f83d2effd68e4c731b45d4553ae95cbb",
+    "rotation_reconstruction.py": "bceee02cdd0c133be151102594d8c01b2bafa219cb2f2fc8491ab109851fb4ba",
+    "dispatch.py": "f31837603741e61eaaa7f2c122c86a6545709a3fefb45946f37aec8c90b75d1d",
+    "analyze.py": "c4341fc12d69677a43b58f4035385209251275b8ee616b05f5a26fed8271352c",
+    "common.py": "c1db4ccf80b4a5ce995807cc104b68ba0383a43f679c5856e6ddfac41c315141",
+    "cpu.sh": "f035bce137941712cba0dc618e6487701547ca88632b21cc8a61eafd8ca76f99",
+    "job.sh": "f2708359f37827466f3b7abfb5c4b07644165a98bef40752580cedc5a84b197a",
+    "prepare.py": "a6590daddba0ac915b1d1f2f68db7dc8aab4f55d825d8fe7b10f70012f6949cb",
+    "prospective_orientation.py": "8473932ea10461169a2f6991ffa47cb4b09b84a44c497d2889901c28169f1147",
+    "run.py": "1cf86109099162a5d3a004fc682129ac07868dc4a1fe48f860712be3ffc5433f",
+    "test_prospective_orientation.py": "4b7a61e16b4bfb498abf85f95cda9a2548dc1bc6a1e4fcf2b52318147deff39f",
+    "smoke.py": "3f2d21ac2cc1397791340edc63ba6384103fc5a66bb41a9d13bae1b07c332680"
+  },
+  "torch_version": "2.7.1+cu128",
+  "E2_independent_authorized": true,
+  "X_min_span": 1e-05,
+  "bootstrap": {
+    "seed": 20260924,
+    "draws": 20000
+  },
+  "E0": [
+    "existing_matrices_uniform_scored",
+    "checkpoint_curves_scored_and_plotted",
+    "signed_permutation_scored",
+    "operator_geometry_all_complete"
+  ],
+  "pre_gpu_engineering_revision": {
+    "parent_sha256": "56ee51127931703fc02700fd62e3e9fccd3588f45dd36323de03342596c35aef",
+    "utc": "2026-09-23T20:17:42.387715+00:00",
+    "reason": "Pre-GPU review: immutable scoring/prediction seals on re-entry; actual E2 zero-output replay assertion; clarify hash-only reads versus parsing evaluation labels. Rotation arrays and all scientific settings unchanged."
+  },
+  "final_pre_gpu_review": {
+    "parent_sha256": "7d87623c961a7cdc479b32af7a1ab36bfe8b6a4e621d1d8954004ef40ad5e145",
+    "utc": "2026-09-23T20:21:07.532259+00:00",
+    "reason": "Readable uniform reports, explicit stop for unresolvable X, lightweight scheduler-only asset validation; worker/scorer still verify all assets. No array/model/data/protocol changes; no new diagnostic run."
+  },
+  "coverage_review": {
+    "parent_sha256": "a9cf76c247c6fc95d2c11569d32d6055b8de189a4b24e9edf7a49b085e57a641",
+    "utc": "2026-09-23T20:24:26.133346+00:00",
+    "reason": "Explicit 2688/864 scoring coverage; distinguish new failures from reused comparator failures. No outputs/diagnostics exist."
+  },
+  "checkpoint_hook_review": {
+    "parent_sha256": "941c6f032b35541ea4d9259c0b2788fcc1d900451fe318b9744e941a83b58e46",
+    "utc": "2026-09-23T20:26:49.735744+00:00",
+    "reason": "Save four forward recycle calls before backward; record checkpoint recomputation calls separately. Preserve hook until backward completes. Focused external-gradient nonreentrant test added. No new scientific results or optimizer changes."
+  },
+  "resource_review": {
+    "parent_sha256": "41d0ce9b7994b27a3133abb1719aa6f1858d2fadcfc176ef332afe0d645867c8",
+    "utc": "2026-09-23T20:31:39.558504+00:00",
+    "reason": "Normal nice=0 after E0 has completed; no need to lower priority of already serial-gated jobs. Dry-run allocation hints are not committed start times. No scientific settings changed."
+  }
+}

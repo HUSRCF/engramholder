@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "analysis_sha256": "58c4bc5e8362c79b9817d769d88ddb7b25fba59eb44cdd9fc2ad103b41d1d233",
+  "records_sha256": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+  "stage": "e1",
+  "new_predictions": 2304,
+  "new_failures": 0,
+  "comparison_failures": 0,
+  "scoring_amendment_sha256": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3"
+}

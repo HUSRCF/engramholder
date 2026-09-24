@@ -5,9 +5,12 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v7 input lock contains
-1,136 generated numerical fields: all 1,135 prior fields are unchanged, with
-one added descriptive difference of already locked rotated-head means.
+full-inference source/norm cells and contrasts. The active v8 input lock contains 70 source files and 1,199 generated numerical
+fields. All 1,136 prior fields are unchanged; 63 fields report the completed
+reconstruction prediction study. Its verifier reconstructs 2,688 score records,
+51 three-metric contrasts and the two exact 40,320-permutation tests (primary X,
+exploratory D). Eight rotations are the prediction units; neither association
+was established. Target bootstrap is conditional sensitivity, not more units.
 It additionally reconstructs 216 A66 and 18 Protenix Train96 contrasts from
 14,112 and 2,400 score records, including target bootstrap and model marginals.
 A66 prespecifies ESMC Factor-minus-Rotated on Confirm96-B per backbone; its
@@ -26,6 +29,7 @@ python scripts/build_paper_assets.py
 python tests/test_numeric_keys.py
 python tests/test_openfold_followups.py
 python tests/test_single_prediction_score.py
+python tests/test_e1_prediction.py
 python reproducibility/operator_smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex
 ```

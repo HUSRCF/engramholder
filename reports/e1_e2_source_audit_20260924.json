@@ -1,0 +1,19 @@
+{
+  "source_root": "/home/husrcf/Code/onestepfold/engramfold",
+  "files_sha256": {
+    "src/engramfold/models/prospective_orientation.py": "8473932ea10461169a2f6991ffa47cb4b09b84a44c497d2889901c28169f1147",
+    "src/engramfold/models/live_opm.py": "fd8ca8acaebb5c1bac181d68b97336275a57774a0ab26a0d481c513b7ce6f662",
+    "reports/prospective_orientation_series_20260924/staging/common.py": "c1db4ccf80b4a5ce995807cc104b68ba0383a43f679c5856e6ddfac41c315141",
+    "reports/prospective_orientation_series_20260924/e2_execution_lock.json": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+    "reports/prospective_orientation_series_20260924/prediction_lock.json": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+    "reports/prospective_orientation_series_20260924/monitor_status.json": "a4f0a4e5e1e194ba4f7ccc7dbbee7e0aa21de79bfe2439596f4622906846c877"
+  },
+  "scope": "Read-only local snapshot/source audit, not full inference/optimization replay; no pending E2 quality read.",
+  "local_snapshot": {
+    "time": "2026-09-24T18:28:01.373023+08:00",
+    "phase": "E2_SUBMITTED",
+    "error": null,
+    "E2_score": null
+  },
+  "e2_complete_local": false
+}

@@ -60,7 +60,16 @@
     "evidence/pt96_fourcell_execution_lock.json": "c8b5a964f30dc16ce8346e29f209cf19790ef2354095adc4252653d5d4453ea0",
     "evidence/pt96_fourcell_completion.json": "f9bdf1f98cb3f5a12331eb21d9f1072dafb8e0db0d597fce4dbaa38aa3a80e08",
     "evidence/pt96_fourcell_scoring_amendment.json": "8fc00a10061a23f03b9e976828feeea47e2eec19fb2ce46a26a526fe14dbce3a",
-    "evidence/length48_manifest.json": "4c9224e8b79b077ecd3c9c5301f2d0903eb23815819a3a4e286ce09862620afd"
+    "evidence/length48_manifest.json": "4c9224e8b79b077ecd3c9c5301f2d0903eb23815819a3a4e286ce09862620afd",
+    "evidence/e1_prediction_summary.json": "58c4bc5e8362c79b9817d769d88ddb7b25fba59eb44cdd9fc2ad103b41d1d233",
+    "evidence/e1_prediction_lock.json": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+    "evidence/e1_prediction_records.json": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+    "evidence/e1_execution_lock.json": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+    "evidence/e1_prediction_complete.json": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+    "evidence/e1_scoring_amendment.json": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3",
+    "evidence/e1_scoring_diagnosis.json": "f8ec590fd4de08d673e2369ecc85ab0e8452cfa62c9ef5ef5729dc946db61e3e",
+    "evidence/e1_scoring_regression.json": "acd3545aabf0a6ea4a2b0dec6a2316185da31294fe838e0e13c8d4d8930edf27",
+    "evidence/e1_prediction_protocol.json": "d97191e6e8b422659b527e9aea66b0535afe35118580e770072aaa7986017acd"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -17712,6 +17721,770 @@
       "operation": "first mean minus second mean; descriptive, no new interval",
       "value": 0.08431067027366201,
       "formatted": "+0.08431"
+    },
+    "e1_ca_lddt_x_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "X_test",
+        "rho"
+      ],
+      "operation": "identity",
+      "value": 0.023809523809523808,
+      "formatted": "+0.02381"
+    },
+    "e1_ca_lddt_x_p": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "X_test",
+        "p_one_sided"
+      ],
+      "operation": "identity",
+      "value": 0.48839285714285713,
+      "formatted": "0.48839"
+    },
+    "e1_ca_lddt_d_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "D_exploratory_test",
+        "rho"
+      ],
+      "operation": "identity",
+      "value": 0.19047619047619047,
+      "formatted": "+0.19048"
+    },
+    "e1_ca_lddt_d_p": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "D_exploratory_test",
+        "p_one_sided"
+      ],
+      "operation": "identity",
+      "value": 0.33229166666666665,
+      "formatted": "0.33229"
+    },
+    "e1_r1_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.8413702513247853,
+      "formatted": "0.84137"
+    },
+    "e1_r1_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.24556740896022658,
+      "formatted": "+0.24557"
+    },
+    "e1_r1_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.4857582978956765,
+      "formatted": "0.48576"
+    },
+    "e1_r1_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270101",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.016144400431177045,
+      "formatted": "+0.01614"
+    },
+    "e1_r1_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270101",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0034011543828133114,
+      "formatted": "+0.00340"
+    },
+    "e1_r1_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270101",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02965786015983589,
+      "formatted": "+0.02966"
+    },
+    "e1_r2_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.8271283318595882,
+      "formatted": "0.82713"
+    },
+    "e1_r2_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.20338453299844617,
+      "formatted": "+0.20338"
+    },
+    "e1_r2_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.49164643297147737,
+      "formatted": "0.49165"
+    },
+    "e1_r2_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270102",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.010256265355376206,
+      "formatted": "+0.01026"
+    },
+    "e1_r2_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270102",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.003557738992750965,
+      "formatted": "-0.00356"
+    },
+    "e1_r2_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270102",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02414127753895583,
+      "formatted": "+0.02414"
+    },
+    "e1_r3_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.8416434903818922,
+      "formatted": "0.84164"
+    },
+    "e1_r3_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.21774434156208558,
+      "formatted": "+0.21774"
+    },
+    "e1_r3_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.482641899232879,
+      "formatted": "0.48264"
+    },
+    "e1_r3_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270103",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019260799093974577,
+      "formatted": "+0.01926"
+    },
+    "e1_r3_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270103",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004659797894134466,
+      "formatted": "+0.00466"
+    },
+    "e1_r3_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270103",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03378318981523222,
+      "formatted": "+0.03378"
+    },
+    "e1_r4_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        3
+      ],
+      "operation": "identity",
+      "value": 0.8482557472129407,
+      "formatted": "0.84826"
+    },
+    "e1_r4_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        3
+      ],
+      "operation": "identity",
+      "value": 0.1875776693382587,
+      "formatted": "+0.18758"
+    },
+    "e1_r4_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        3
+      ],
+      "operation": "identity",
+      "value": 0.49379149175618475,
+      "formatted": "0.49379"
+    },
+    "e1_r4_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270104",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.00811120657066883,
+      "formatted": "+0.00811"
+    },
+    "e1_r4_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270104",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.004869649512805116,
+      "formatted": "-0.00487"
+    },
+    "e1_r4_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270104",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02114671539317626,
+      "formatted": "+0.02115"
+    },
+    "e1_r5_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        4
+      ],
+      "operation": "identity",
+      "value": 0.8229486699752924,
+      "formatted": "0.82295"
+    },
+    "e1_r5_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        4
+      ],
+      "operation": "identity",
+      "value": 0.1719099050167527,
+      "formatted": "+0.17191"
+    },
+    "e1_r5_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        4
+      ],
+      "operation": "identity",
+      "value": 0.5122975327424883,
+      "formatted": "0.51230"
+    },
+    "e1_r5_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270105",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.010394834415634721,
+      "formatted": "-0.01039"
+    },
+    "e1_r5_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270105",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02131942751811255,
+      "formatted": "-0.02132"
+    },
+    "e1_r5_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270105",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00020070078685140182,
+      "formatted": "+0.00020"
+    },
+    "e1_r6_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        5
+      ],
+      "operation": "identity",
+      "value": 0.8186663589306598,
+      "formatted": "0.81867"
+    },
+    "e1_r6_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        5
+      ],
+      "operation": "identity",
+      "value": 0.16704778138699616,
+      "formatted": "+0.16705"
+    },
+    "e1_r6_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        5
+      ],
+      "operation": "identity",
+      "value": 0.4870728922958791,
+      "formatted": "0.48707"
+    },
+    "e1_r6_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270106",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014829806030974594,
+      "formatted": "+0.01483"
+    },
+    "e1_r6_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270106",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0019893165028235563,
+      "formatted": "+0.00199"
+    },
+    "e1_r6_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270106",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.028230685063479106,
+      "formatted": "+0.02823"
+    },
+    "e1_r7_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        6
+      ],
+      "operation": "identity",
+      "value": 0.8105819969854796,
+      "formatted": "0.81058"
+    },
+    "e1_r7_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        6
+      ],
+      "operation": "identity",
+      "value": 0.16572837353733386,
+      "formatted": "+0.16573"
+    },
+    "e1_r7_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        6
+      ],
+      "operation": "identity",
+      "value": 0.48310318268565783,
+      "formatted": "0.48310"
+    },
+    "e1_r7_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270107",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018799515641195693,
+      "formatted": "+0.01880"
+    },
+    "e1_r7_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270107",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.00564617603345972,
+      "formatted": "+0.00565"
+    },
+    "e1_r7_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270107",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.033114596526744394,
+      "formatted": "+0.03311"
+    },
+    "e1_r8_x": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X",
+        7
+      ],
+      "operation": "identity",
+      "value": 0.821448523468484,
+      "formatted": "0.82145"
+    },
+    "e1_r8_d": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "D",
+        7
+      ],
+      "operation": "identity",
+      "value": 0.19381733437429652,
+      "formatted": "+0.19382"
+    },
+    "e1_r8_rotated": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_means",
+        7
+      ],
+      "operation": "identity",
+      "value": 0.5026451178538962,
+      "formatted": "0.50265"
+    },
+    "e1_r8_cost": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270108",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0007424195270427115,
+      "formatted": "-0.00074"
+    },
+    "e1_r8_costLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270108",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01424990278510035,
+      "formatted": "-0.01425"
+    },
+    "e1_r8_costHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotation_costs",
+        "r20270108",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01258843732750898,
+      "formatted": "+0.01259"
+    },
+    "e1_native_mean": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5019026983268536,
+      "formatted": "0.50190"
+    },
+    "e1_query_mean": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "query_mean"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.30191"
+    },
+    "e1_x_span": {
+      "source": "evidence/e1_prediction_lock.json",
+      "field_path": [
+        "X_span"
+      ],
+      "operation": "identity",
+      "value": 0.03767375022746111,
+      "formatted": "0.03767"
+    },
+    "e1_seed1_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_training_seed",
+        0,
+        "X_rho"
+      ],
+      "operation": "identity",
+      "value": -0.21428571428571427,
+      "formatted": "-0.21429"
+    },
+    "e1_leave_teacher1_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "leave_one_teacher_X_rho",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.047619047619047616,
+      "formatted": "-0.04762"
+    },
+    "e1_seed2_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_training_seed",
+        1,
+        "X_rho"
+      ],
+      "operation": "identity",
+      "value": 0.42857142857142855,
+      "formatted": "+0.42857"
+    },
+    "e1_leave_teacher2_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "leave_one_teacher_X_rho",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.047619047619047616,
+      "formatted": "+0.04762"
+    },
+    "e1_seed3_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_training_seed",
+        2,
+        "X_rho"
+      ],
+      "operation": "identity",
+      "value": -0.047619047619047616,
+      "formatted": "-0.04762"
+    },
+    "e1_leave_teacher3_rho": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "leave_one_teacher_X_rho",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.0,
+      "formatted": "+0.00000"
+    },
+    "e1_target_rhoLo": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "target_bootstrap_X_rho",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.35714285714285715,
+      "formatted": "-0.35714"
+    },
+    "e1_target_rhoHi": {
+      "source": "evidence/e1_prediction_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "target_bootstrap_X_rho",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.40476190476190477,
+      "formatted": "+0.40476"
     }
   },
   "verified_esmc_A_contrasts": 78,
@@ -17720,8 +18493,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1130,
-    "distinct_keys": 924,
+    "literal_references": 1197,
+    "distinct_keys": 985,
     "missing": []
   },
   "pending": [],
@@ -17735,5 +18508,35 @@
     "scalar_or_array_checks": 1596,
     "max_abs_error": 2.220446049250313e-16,
     "scope": "Score-array/target-bootstrap reconstruction; no inference or CIF rescoring; no multiplicity correction."
+  },
+  "verified_e1_prediction": {
+    "passed": true,
+    "records": 2688,
+    "new_predictions": 2304,
+    "historical_predictions": 384,
+    "failures": 0,
+    "prediction_units": 8,
+    "main_X": {
+      "rho": 0.023809523809523808,
+      "p_one_sided": 0.48839285714285713,
+      "extreme_count": 19692,
+      "permutations": 40320,
+      "n_rotations": 8
+    },
+    "exploratory_D": {
+      "rho": 0.19047619047619047,
+      "p_one_sided": 0.33229166666666665,
+      "extreme_count": 13398,
+      "permutations": 40320,
+      "n_rotations": 8
+    },
+    "verified_contrasts": 51,
+    "scalar_or_array_checks": 233,
+    "max_abs_error": 0.0,
+    "selected_low": "r20270107",
+    "selected_high": "r20270104",
+    "X_span": 0.03767375022746111,
+    "auxiliary_dtype_mismatches": 4,
+    "scope": "Score-array, sealed diagnostic-summary, exact rotation-permutation and conditional target-bootstrap reconstruction; no CIF scoring, training rerun or proof of optimal reconstruction. E1 uses observed Confirm96-B and is not new-target confirmation."
   }
 }

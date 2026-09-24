@@ -17,9 +17,12 @@ precision and input-projection size change together, with backend differences
 in specified comparisons. AtlasFold retains its native AtlasLM and establishes
 no useful added adaptation with either feature source. High baseline quality,
 redundant information and downstream use are candidate explanations, not
-isolated causes. Input complementarity, shared rotation-compensation capacity
-and propagation through the frozen predictor are testable moderators; these
-results do not yet validate a rule for predicting an unseen setting.
+isolated causes. A prospective diagnostic across eight locked OpenFold rotations
+did not find that finite-budget shared teacher-update reconstruction error
+predicts retrained direction cost ($\rho=\result{e1_ca_lddt_x_rho}$,
+exact one-sided $p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}).
+This limits that diagnostic as a selection rule; input complementarity and
+downstream propagation remain unvalidated candidates.
 
 The norm exchange limits an overall-scale explanation of one Protenix gap,
 without separating learned content, local magnitudes and channel organization.

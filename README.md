@@ -1,12 +1,14 @@
 # EngramFold 证据整理仓库
 
-**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v7**，共 **1,136** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v8**，共 **1,199** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
-**最新评审与图示修订：** [对71370ad评审的回应及已完成控制核对](reports/review_71370ad_response_20260924.md)。新增[适配器双支结构图](figures/construction.pdf)与[统一交互主图](figures/interaction.pdf)，主文保留Fresh96边界。带符号置换及Dev8学习曲线已收齐，先进入MD，尚未纳入正文；新Protenix面板仅为候选。
+**最新E1／E2修订：** [预测边界与补偿函数类](reports/e1_e2_scope_update_20260924.md)。E1阴性预测检验已正式进入Discussion与附录；E2的理想函数类闭包和解释判据已核对，结果尚未纳入。
 
-**本轮已正式纳入：** [Protenix／AtlasFold完整四格v7整合](reports/diamondhill_fourcell_integration_20260924.md)。主表统一15行，Fresh96进入交互主图；A66主要终点与未校正后续交互分开。旧532字段及v6锁保持不变。
+**适配器图与前轮评审：** [对71370ad评审的回应及已完成控制核对](reports/review_71370ad_response_20260924.md)。新增[适配器双支结构图](figures/construction.pdf)与[统一交互主图](figures/interaction.pdf)，主文保留Fresh96边界。带符号置换及Dev8学习曲线已收齐，先进入MD，尚未纳入正文；新Protenix面板仅为候选。
 
-**E1另行审阅：** [共享重建未预测重训方向代价](reports/e1_prediction_review_20260924.md)。主要ρ=0.02381、精确单侧p=0.48839；E2按独立协议继续。此结果先进入MD，未纳入v7正文／数值锁。
+**此前已正式纳入：** [Protenix／AtlasFold完整四格v7整合](reports/diamondhill_fourcell_integration_20260924.md)。主表统一15行，Fresh96进入交互主图；A66主要终点与未校正后续交互分开。旧532字段及v6锁保持不变。
+
+**E1历史初次审阅：** [共享重建未预测重训方向代价](reports/e1_prediction_review_20260924.md)。主要ρ=0.02381、精确单侧p=0.48839；E2按独立协议继续。当时先进入MD；现已正式纳入v8正文／数值锁。
 
 **历史方法与统计范围修订：** [Atlas anchor分类与A66统计身份](reports/atlas_anchor_statistical_scope_revision_20260924.md)。方法表已区分静态写入、适配历史反馈、当轮LM条件；A66的主要量与未校正后续交互分别记录。主文编译仍为9页；本轮没有导入A66新数值。
 

@@ -30,6 +30,9 @@ SOURCES = ['protenix_direction','protenix_extensions','protenix_train384','lengt
 SOURCES += ['dh_A66_summary', 'dh_A66_records', 'dh_A66_scoring_lock', 'dh_A66_execution_lock', 'dh_A66_completion', 'dh_A66_source_verification', 'dh_A66_backend_amendment', 'dh_A66_deployment_audit', 'pt96_fourcell_summary', 'pt96_fourcell_records', 'pt96_fourcell_scoring_lock', 'pt96_fourcell_execution_lock', 'pt96_fourcell_completion', 'pt96_fourcell_scoring_amendment', 'length48_manifest']
 CELLS = {}
 DATA = {}
+SOURCES += ['e1_prediction_summary', 'e1_prediction_lock', 'e1_prediction_records',
+            'e1_execution_lock', 'e1_prediction_complete', 'e1_scoring_amendment',
+            'e1_scoring_diagnosis', 'e1_scoring_regression', 'e1_prediction_protocol']
 
 def read(file, path):
     x = DATA[file]
@@ -116,7 +119,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v7.lock.json'
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v8.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -126,6 +129,8 @@ def main():
     esmc_audit=verify(ROOT)
     from verify_diamondhill_fourcells import verify as verify_dh
     dh_audit=verify_dh(ROOT)
+    from verify_e1_prediction import verify as verify_e1
+    e1_audit=verify_e1(ROOT)
     from analyze_openfold_followups import calculate
     followup_audit=calculate(ROOT)
     assert followup_audit==DATA['openfold_followup_analysis']
@@ -345,6 +350,33 @@ def main():
     assert abs(gap - (CELLS['dh_protenix_c96_c_pair_native_minus_gplus']['value'] - CELLS['dh_protenix_c96_c_pair_interaction']['value'])) < 1e-12
     pre=['panels','protenix','confirm96','ca_lddt','cells','C','means']
     CELLS['dh_protenix_c96_c_rotated_head_gap']=dict(source='evidence/dh_A66_summary.json',field_paths=[pre+['rotated_factor'],pre+['rotated_gplus']],operation='first mean minus second mean; descriptive, no new interval',value=gap,formatted=f'{gap:+.5f}')
+    # Completed prospective diagnostic: eight rotations, not proteins, are the
+    # prediction-test units. Keep the exploratory D test distinct from primary X.
+    e1_tests=[]
+    for metric,label in [('ca_lddt','Pair-lDDT')]:
+        for test,source,label_test in [('x','X_test','X (primary diagnostic)'),('d','D_exploratory_test','D (exploratory)')]:
+            key=f'e1_{metric}_{test}'
+            number(key+'_rho','e1_prediction_summary',['metrics',metric,source,'rho'],signed=True)
+            number(key+'_p','e1_prediction_summary',['metrics',metric,source,'p_one_sided'])
+            e1_tests.append([label,label_test,tex(key+'_rho'),tex(key+'_p')])
+    save_rows('e1_prediction_tests.tex',e1_tests)
+    e1_rows=[]
+    for i,rid in enumerate(DATA['e1_prediction_lock']['rotation_ids']):
+        key=f'e1_r{i+1}'
+        number(key+'_x','e1_prediction_lock',['X',i])
+        number(key+'_d','e1_prediction_lock',['D',i],signed=True)
+        number(key+'_rotated','e1_prediction_summary',['metrics','ca_lddt','rotated_means',i])
+        contrast(key+'_cost','e1_prediction_summary',['metrics','ca_lddt','rotation_costs',rid])
+        e1_rows.append([rid,tex(key+'_x'),tex(key+'_d'),tex(key+'_rotated'),tex(key+'_cost'),interval_cell(key+'_cost')])
+    save_rows('e1_prediction_rotations.tex',e1_rows)
+    for name in ['native_mean','query_mean']:
+        number('e1_'+name,'e1_prediction_summary',['metrics','ca_lddt',name])
+    number('e1_x_span','e1_prediction_lock',['X_span'])
+    for i in range(3):
+        number(f'e1_seed{i+1}_rho','e1_prediction_summary',['metrics','ca_lddt','per_training_seed',i,'X_rho'],signed=True)
+        number(f'e1_leave_teacher{i+1}_rho','e1_prediction_summary',['metrics','ca_lddt','leave_one_teacher_X_rho',i],signed=True)
+    for i,name in enumerate(['Lo','Hi']):
+        number('e1_target_rho'+name,'e1_prediction_summary',['metrics','ca_lddt','target_bootstrap_X_rho','ci95',i],signed=True)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -358,7 +390,7 @@ def main():
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):
