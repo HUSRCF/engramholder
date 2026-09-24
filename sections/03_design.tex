@@ -1,18 +1,16 @@
 \section{Experimental design}
 \label{sec:design}
 \paragraph{Predictors and information.}
-We adapt frozen Protenix-Mini/Tiny default checkpoints, the official AF2
-\texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with its native
-AtlasLM retained. No evaluation homologs, templates, or target structures are
-provided as folding inputs. Unless stated otherwise, adapters receive frozen ESM2-35M features \citep{lin2023evolutionary} (480
-channels, layer 12), and Native/Rotated/G+ share this added representation.
-The OpenFold feature-substitution study (internally Stage A) replaces these with
-frozen ESMC-600M final-layer features \citep{candido2026language}
-(1152 channels; Section~\ref{sec:esmc}).
-The unadapted baseline does not receive the added adapter features; AtlasFold
-already has AtlasLM-3B. Thus improvements over the baseline combine feature
-access and adaptation, whereas Native--Rotated is the tighter direction control.
-Table~\ref{tab:recipes} summarizes the backbone-specific paths.
+We freeze Protenix-Mini/Tiny default checkpoints, official AF2
+\texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with native
+AtlasLM-3B retained. Folding inputs exclude evaluation homologs, templates and
+target structures. Native/Rotated/G+ share frozen ESM2-35M features
+\citep{lin2023evolutionary} (480 channels, layer 12), except in the OpenFold
+feature-substitution study, which uses frozen ESMC-600M final-layer features
+\citep{candido2026language} (1152 channels; Section~\ref{sec:esmc}).
+Unadapted baselines lack these added features: gains over baseline combine
+feature access and adaptation; Native--Rotated isolates direction more closely.
+Table~\ref{tab:recipes} summarizes the paths.
 
 \begin{table}[t]
 \caption{Core configurations. We transfer a residual construction, not a universal
@@ -23,9 +21,9 @@ normalization or loss. All folding and PLM weights are frozen.}
 \toprule
 Predictor & Interface / anchor & Task supervision & Structure inference \\
 \midrule
-Protenix & Single MSA-block OPM; cached query & $4$ MSE + $4$ bond + $4$ smooth-lDDT + $0.03$ distogram & 4 recycles; 5 diffusion steps \\
-OpenFold & First of 48 Evoformer OPMs; live & FAPE + $0.3$ distogram + supervised-chi & 4 trunk passes; structure module \\
-AtlasFold & First difference/product update; live & $0.4$ distogram + $2$ (weighted MSE + smooth-lDDT) & 5 trunk passes; 20/30 diffusion steps$^*$ \\
+Protenix & Single MSA-block OPM; cached anchor/update & $4$ MSE + $4$ bond + $4$ smooth-lDDT + $0.03$ distogram & 4 trunk passes; 5 diffusion steps \\
+OpenFold & First of 48 Evoformer OPMs; recycled-state anchor & FAPE + $0.3$ distogram + supervised-chi & 4 trunk passes; structure module \\
+AtlasFold & First LM difference/product; MLM anchor, no adapted history & $0.4$ distogram + $2$ (weighted MSE + smooth-lDDT) & 5 trunk passes; 20/30 diffusion steps$^*$ \\
 \bottomrule
 \end{tabular}
 \par\smallskip\footnotesize $^*$20 steps for $L\le512$ and 30 for $513\le L\le1024$,
@@ -38,13 +36,12 @@ The Protenix direction study uses Train24/384 updates, with tangent as the
 locked main comparison and Full as a secondary comparison. Full Train96/1536
 and Train384/1536 test larger sets at a fixed update budget. OpenFold uses Full
 Train96 and Train384, each for 1536 updates; AtlasFold uses Train96/1536.
-Within each formal recipe, heads share the data order, training seeds,
-random-condition rule, and optimizer settings. Three native seeds are paired
-with three seeds for each of three fixed rotations; G+ has three seeds, and the
-OpenFold Train96 extension adds nine rotated G+ fits. Checkpoint selection is the
-fixed final step, not evaluation quality. One fixed inference sample is scored;
-no target-label selection or cropping is used. Training backpropagates through
-the final recycle under the native task losses.
+Within each recipe, heads share data order, three training seeds, random-condition
+rules and optimizer settings. Each of three fixed rotations uses all three seeds;
+G+ has three seeds, with nine rotated fits added in the OpenFold Train96 extension.
+We evaluate the fixed final checkpoint and one inference sample, without
+target-label selection or cropping. Native task losses backpropagate through
+the final recycle.
 
 \paragraph{Panels and study identity.}
 \label{sec:panels}
@@ -58,8 +55,8 @@ Table~\ref{tab:data_composition} distinguishes their construction and first use.
 513--640 and 641--768; actual lengths are 392--750, beyond the Train384 adapter
 training range of 152--383. The original length study locked targets and
 configurations before new structure scores. Later OpenFold, AtlasFold and G+
-studies reuse observed panels. The OpenFold four-cell Confirm96-B interaction
-is the primary comparison of that follow-up, not the project's initial endpoint.
+studies reuse observed panels. The original OpenFold Train96/ESM2 four-cell
+follow-up fixes the Confirm96-B interaction as primary, not the project's initial endpoint.
 The matched Protenix Train384 G+ follow-up fixes Confirm96-B Native--G+ as
 primary and Length48 as secondary; it adds no rotated G+ fits. A separate
 24-target observed-panel study fixes the full-inference direction-source effect
@@ -86,6 +83,6 @@ For target $i$ define
 We resample whole target records for 20,000 paired bootstrap draws, preserving
 within-target seed/rotation pairing. Intervals condition on the fitted models;
 seeds, rotations and supplementary metrics are not additional independent
-proteins. Secondary and follow-up intervals are unadjusted; Stage A additionally reports
-its predeclared three-test Holm correction (Appendix~\ref{app:esmc}). Protocol-specific
+proteins. Secondary and follow-up intervals are unadjusted; the OpenFold feature-substitution
+study reports its own predeclared three-test Holm correction (Appendix~\ref{app:esmc}). Protocol-specific
 bootstrap seeds and endpoint roles are preserved in the accompanying records.

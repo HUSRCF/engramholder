@@ -19,12 +19,15 @@ or reselected for Train96/384. This historical MSA metadata is disclosed even
 though task-only prediction does not take homologs as input. The residual's
 $D/(D+10^{-3})$ multiplier never replaces the depth-one query baseline.
 
-OpenFold computes masked factor increments at the live first OPM call. The
-mask and pair-specific effective-row denominator follow that OPM; later
-Evoformer blocks and the structure module are unchanged. AtlasFold instead
-uses the live first difference/product sequence-to-pair update, with factor
-width 128 and its native projection order. Native AtlasLM-3B is retained.
-Neither interface inherits Protenix's depth constant.
+OpenFold recomputes its first-OPM anchors after pair-biased MSA updates on
+each pass, so they can depend on previous adapted states. The residual
+retains that OPM's mask and effective-row denominator; later blocks are
+unchanged. AtlasFold uses its first LM difference/product update, with
+factor width 128 and the native projection order. Its anchor depends on the
+current pass's MLM mask, before fusion with recycled states, and does not
+directly read adapted history. Native AtlasLM-3B is retained. Factor increments
+depend on complete sequence features and shared predictor parameters, not on
+the anchor or pass index. Neither interface inherits Protenix's depth constant.
 
 G+ concatenates $[z_i,z_j,a_i,b_j,\operatorname{clip}(i-j,-32,32)/32]$ and
 uses a Linear--GELU--Linear pair head. The final output layer has no activation
@@ -33,9 +36,16 @@ For Protenix/OpenFold its hidden pair width is 192. AtlasFold's Factor/G+
 parameter counts are 423,168/415,008, versus 373,824/378,144 in the OPM studies.
 These are approximate size controls, not exact parameter matches.
 
-For a fixed input and anchor, orthogonal output multiplication gives
-$(RJ)^\top(RJ)=J^\top J$. When the anchor itself depends on previous adapted
-states, this does not assert the same identity for the total recurrent model.
+For identical inputs, anchors and writer parameters, changing only the
+output rotation gives $(RJ)^\top(RJ)=J^\top J$ for the local writer Jacobian.
+A single-pair Jacobian with respect to free factor coordinates is distinct
+from the Jacobian with respect to shared predictor parameters, which couples
+residues and targets. Full single-pair rank would not establish rotation
+closure of the shared update family; a smaller local rank would not establish
+a native task advantage. This local identity neither compares independently
+trained writers nor asserts spectral equivalence of the full recycled model.
+Likewise, a nonzero injected residual, a change between predicted structures,
+and improved accuracy against a reference structure are distinct observations.
 For G+, the free final layer proves Eq.~\ref{eq:absorb}. Ordinary Euclidean
 updates admit an orthogonal parameter correspondence under matched conditions;
 AdamW's coordinate-wise moment accumulation generally does not commute with a
@@ -62,8 +72,8 @@ The selected common learning rate is $10^{-4}$, with AdamW weight decay
 supervised-chi; confidence and masked-MSA auxiliary losses are excluded.
 Three recycling iterations plus the initial pass give four trunk passes,
 with task backpropagation through the last. The added rotated-G+ study reuses
-this recipe, three training seeds, data order and final step without new
-learning-rate selection. Its primary endpoint is the Confirm96-B interaction.
+this Train96/ESM2 recipe, three training seeds, data order and final step without new
+learning-rate selection. That follow-up's primary endpoint is the Confirm96-B interaction.
 
 AtlasFold uses the 260703 structure checkpoint and native AtlasLM-3B,
 adding ESM2-35M only as adapter input. A bounded development calibration
@@ -258,8 +268,8 @@ Panel & Metric & Difference & 95\% interval \\\midrule
 
 These results establish competitive performance under the shared recipe;
 they do not estimate a separately tuned generic head's performance limit.
-No Protenix rotated-G+ models were trained, so these comparisons supply no
-Protenix estimate of the parameterization-by-rotation interaction $\Psi$.
+This matched-G+ follow-up did not include rotated-G+ fits, so these comparisons
+alone do not estimate the Protenix parameterization-by-rotation interaction $\Psi$.
 
 \section{Local compatibility and shared-transfer diagnostics}
 \label{app:mechanisms}

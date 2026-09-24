@@ -18,12 +18,13 @@ nonzero. Only the adapter is optimized; gradients propagate through the frozen
 folding model. Query factors provide the composition anchors, rather than
 structure labels as predictor inputs.
 
-The operator is specific to the backbone. Protenix uses a cached query anchor
-and update, retaining the downstream pair stack. OpenFold uses factors at the
-first main Evoformer OPM call, whose values depend on the current MSA/pair state
-and recycle history. AtlasFold uses its first difference/product sequence-to-pair
-interface. Freezing operator weights does not make these latter anchors
-constant. Figure~\ref{fig:construction} summarizes the intervention.
+The operator is backbone-specific. Protenix reuses cached query anchors and
+the same update across passes within a prediction. OpenFold's first main
+Evoformer OPM reads live MSA/pair states shaped by adapted recycle history.
+AtlasFold's first LM difference/product hook reads the current pass's
+MLM-dependent features before fusion with recycled states; its anchor does
+not directly read adapted history. Figure~\ref{fig:construction} summarizes
+the intervention.
 
 \subsection{Full and first-order factor updates}
 \label{sec:full_tangent}
@@ -52,8 +53,9 @@ effective-row normalization; AtlasFold has no OPM depth constant
 \label{sec:rotation}
 For a pair-channel column vector,
 $(\mathcal R\Delta U)_{ij}=R\Delta U_{ij}$ with $R^\top R=I$.
-A single fixed matrix acts across all residue pairs; the baseline, labels and
-protein coordinates are unchanged. Native uses $R=I$. Each rotated adapter
+A single fixed matrix acts across all residue pairs, rotating only the residual,
+not the baseline update or protein-coordinate axes. Labels are identical across
+arms. Native uses $R=I$. Each rotated adapter
 starts from zero residual and receives task training, so the experiment does
 not perturb an already trained native adapter at inference time.
 Within the same head at matched factors and parameters, orthogonality preserves residual norms,

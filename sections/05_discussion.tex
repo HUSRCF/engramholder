@@ -12,7 +12,7 @@ head is best: matched comparisons favor Native in Protenix and G+ in some
 OpenFold settings. AtlasFold establishes no adaptation gain; its high baseline
 has not been isolated as the cause.
 
-Neither Train384 feature condition establishes the interaction, despite higher
+In OpenFold, neither Train384 feature condition establishes the interaction, despite higher
 ESMC scores. Direct ESMC--ESM2 changes in $\Delta_F$ and $\Psi$ remain uncertain.
 PLM family, feature width, cache precision and trainable input-projection size
 change together. Neither the score gains nor the lack of an established
@@ -27,14 +27,11 @@ showed no established mean positive transfer. Their recipes, states, scales
 and endpoints differ from complete inference; the origin of beneficial learned
 residuals remains unresolved (Appendix~\ref{app:mechanisms}).
 
-Intervals describe target variation conditional on fitted models, not all
-retraining or research-selection uncertainty. Convergence at the fixed
-1536-update budget has not been established. Three seeds and rotations cover
-limited instances; several studies reuse observed targets. One inference sample
-per system does not estimate sampling variability. Sequence screening ensures
-neither family independence nor exclusion from foundation-model pretraining,
-and historical exposure remains incompletely characterized. Cross-predictor
-comparisons change interfaces, representations and losses alongside the backbone.
-The substantial gap to strong native single-sequence systems also limits
-deployment claims. These findings delimit a conditional design factor, not a
-universal adapter prescription.
+Intervals condition on fitted models, excluding full retraining and research-selection
+uncertainty. Convergence at 1536 updates is unestablished. Three seeds and rotations
+cover limited instances; several studies reuse observed targets, and one inference
+sample does not estimate sampling variability. Sequence screening guarantees
+neither family nor pretraining isolation; historical exposure remains incomplete.
+Cross-predictor comparisons also change interfaces, representations and losses.
+Gaps to strong native single-sequence systems limit deployment claims. These
+findings delimit a conditional design factor, not a universal adapter prescription.

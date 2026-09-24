@@ -2,6 +2,8 @@
 
 **当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v6**，共 **532** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
+**方法与统计范围修订：** [Atlas anchor分类与A66统计身份](reports/atlas_anchor_statistical_scope_revision_20260924.md)。方法表已区分静态写入、适配历史反馈、当轮LM条件；A66的主要量与未校正后续交互分别记录。主文编译仍为9页；本轮没有导入A66新数值。
+
 **2026-09-24 已完成：** [Fresh96与训练交互变化](reports/fresh96_training_psi_integration_20260924.md)及[单目标OpenFold完整预测](reports/openfold_single_reproduction_20260924.md)。Fresh96的核心交互未建立；结果已进入摘要与主文。旧449数值不变，新增83项；[可执行预测入口](reproducibility/openfold_single/README.md)包含发布适配器、FASTA、CIF评分与环境说明。
 
 **2026-09-24收尾证据：** [DiamondHill A66、Protenix Train96四格及三底座观测](reports/diamondhill_final_evidence_review_20260924.md)。A66与G12均完成统一评分；Protenix Train96及Train384／ESM2、ESMC的完整交互有正向区间，Atlas边界保留；几何／传播18/18已齐。新结果先进入MD，尚未纳入正文和v6数值锁。

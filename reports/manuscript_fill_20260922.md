@@ -4,17 +4,19 @@
 
 | 项目 | 当前状态 |
 |---|---|
-| 稿件版本 | `main`；本轮修订基线 `11a1e3b`，包含本状态更新的提交是本轮稿件版本。可用 `git log -1 --format=%H -- reports/manuscript_fill_20260922.md` 查询精确提交。 |
+| 稿件版本 | `main`；最新方法文字修订基线 `6744fd7`，见下方Atlas／统计范围修订。包含本状态更新的提交是当前稿件版本；可用 `git log -1 --format=%H -- reports/manuscript_fill_20260922.md` 查询精确提交。 |
 | 活跃来源锁 | [paper_sources.v6.lock.json](../notes/writing_branch_20260922/paper_sources.v6.lock.json)；532 个生成数值字段（旧449项及来源映射未变）。旧锁保留，不覆盖历史记录。 |
 | 已纳入的核心与范围结果 | Protenix 原始 Factor/Generic、原生/旋转、Tiny、Train96/384、Length48、匹配 Train384 G+；OpenFold Train96 与 Train384/ESM2、Train384/ESMC 完整四格；已完成的 AtlasFold 原始适配矩阵与系统参照；Fresh96完整2,400预测及主交互未建立的结果。 |
 | 已纳入的边界与审计 | 完整推理范数交换及局部/共享迁移阴性结果；嵌套数据与成员定义核验；训练预算报告的“1536 步收敛未建立”限制；头内同谱与跨头匹配边界；ESM2 Train384−Train96 的完整交互变化后续分析。 |
 | 已完成、已审阅但尚未纳入正文 | DiamondHill A66、Protenix Train96 G12完整四格、六组共享重建、三底座18次几何／传播；见下方新MD。正式数值锁和表图尚未加入这些新增结果。 |
 | 其他尚未纳入的独立工作 | B 组、SGDM、曲线／置换与E1–E4前瞻系列。本轮不据任务名称推断其实时完成度；E1提交身份仅按原线程执行凭证记录。 |
-| 本轮修改与检查 | [Fresh96与训练交互整合](fresh96_training_psi_integration_20260924.md)、[单目标预测复现](openfold_single_reproduction_20260924.md)；[机器检查记录](../notes/writing_branch_20260922/draft_validation.fresh96_repro.json)。 |
-| 匿名材料范围 | 本轮候选为本地 `build/anonymous_artifact_v14.zip`，包含分析、算子检查及单目标OpenFold预测入口；具体检查结果见本轮验证。 |
+| 最新修改与检查 | [方法／统计范围修订](atlas_anchor_statistical_scope_revision_20260924.md)及[本轮验证](../notes/writing_branch_20260922/draft_validation.anchor_scope.json)。此前v6数值整合与单目标复现见[Fresh96整合](fresh96_training_psi_integration_20260924.md)、[预测复现](openfold_single_reproduction_20260924.md)。 |
+| 匿名材料范围 | 本地 `build/anonymous_artifact_v14.zip`为前次构建，包含分析、算子检查及单目标OpenFold预测入口。本轮方法文字修订未重打包；该旧包不是当前源稿的逐字副本。 |
 | 复现交付范围 | 一个固定OpenFold模型、一个184残基目标，在新隔离Python环境完成“序列→重算PLM特征→完整CIF→主指标评分”。全矩阵重生成、完整重新训练及跨硬件保证仍未建立；本轮不是全稿视觉验收。 |
 
-本轮导入已锁定Fresh96完整结果，计算明确标注的后续交互变化，并完成单目标工程复现；无新增训练、无修改原确认终点、无推断其他队列结果。
+v6结果整合已导入锁定Fresh96完整结果、明确标注的后续交互变化，并完成单目标工程复现；后续方法文字修订不改变这套数值来源。
+
+**2026-09-24方法文字修订：** [Atlas anchor分类与统计身份](atlas_anchor_statistical_scope_revision_20260924.md)。三类接口已进入正式方法表和附录；局部rank／完整共享映射、非零注入／预测变化／质量收益的区别已明确。A66统计角色写入整合约束，数字尚未导入。CPU编译主文9页、全文23页，修改页视觉检查通过，来源锁与532字段不变；[验证记录](../notes/writing_branch_20260922/draft_validation.anchor_scope.json)。
 
 **2026-09-24追加MD审计：** [架构条件依赖分析](architecture_dependence_analysis_20260924.md)区分算子可达性、回收反馈与学习阶段，并纠正旧数学笔记的Atlas归类。该分析未写入论文机制结论、未新增实测字段或计算任务；活跃数值锁仍为v6。
 
