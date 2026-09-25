@@ -4,7 +4,9 @@
 
 **最新记号修订：** [外积表示](reports/outer_product_notation_20260925.md)。decoder和残差展开统一使用列向量外积，并明确与实现一致的行优先展平。实验数值不变；编译及公式视觉检查通过。[当前PDF](build/feedback_v44_outer_product/paper.pdf)。
 
-**新实验提案（未启动）：** [OpenFold注入时序与回收传播](reports/openfold_injection_schedule_plan_20260926.md)。按用户接受重训练、要求16并行和缩小规模的最新意见，推荐单旋转／三种子／三时序完整四格，共36组；纯训练估计7–10小时，含工程与评测约10–16小时，排队另算，跨轮梯度尚待实测。原24固定模型的推理方案另列；尚未提交GPU。
+**注入时序第一阶段已完成：** [完整MD结果与图](reports/openfold_injection_schedule_phase1_20260926.md)、[写作侧复核](reports/openfold_injection_schedule_phase1_review_20260926.md)。7,008轨迹、14,112评分、0失败；261项复算一致。主要All−First交互差+0.00268，区间跨零；First仍有正向交互，四臂绝对质量低于All。当前只归档报告，未纳入正文／v11／匿名包。
+
+**第二阶段执行身份：**按执行侧最新授权恢复72组；第一波36含全部Native与R1，第二波36补R2/R3。本轮只读快照：HPC3公共校准652881运行，正式第一波652882等待校准；HPC2第二波工程12865355_0/1均已RUNNING，正式放行依验收收据。[原设计及36组预算](reports/openfold_injection_schedule_plan_20260926.md)保留此前时点，不作为当前未启动声明，也不按阶段一结果改配方。
 
 **最新独立结果审阅：** [同起点通道校准 A+B](reports/posttraining_calibration_review_20260925/interpretation.md)。33组续训、3,744次预测完成；本轮独立重建69项原比较及30项已有补充汇总。两项主要优势均未建立，OpenFold联合续训相对普通续训有次要平均收益。当前只进入审阅报告，尚未纳入正文、v11数值锁或匿名包；没有新GPU任务。
 

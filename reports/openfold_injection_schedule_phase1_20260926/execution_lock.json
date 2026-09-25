@@ -1,0 +1,25 @@
+{
+  "schema": "openfold_injection_schedule_v1",
+  "locked_utc": "2026-09-25T16:37:59.390950+00:00",
+  "preparation_lock_sha256": "c35dbe4d886045b19d66788c225d83a71bd5204cc71b0df47dde08cc1d1798ac",
+  "smoke_receipts": {
+    "engineering/smoke_0.json": "b17378be8b01fae4ba715914b1fdcf6f22929bea03b13ec3c949e23fe06117bd",
+    "engineering/smoke_1.json": "2c48d157e199de6892a3c072d94150e269a8db38908d71b8cf0506463bc54787"
+  },
+  "additional_files": {
+    "staging/score.py": "cdf9d56e199bd59b5793af06bfca813f70cfb21a1d79f60d8c0781d8dbb2c988",
+    "staging/schedule_stats.py": "e518155c05066d76e971e352bfa46d382c754a8cfc550915a477e425aa2b35cf",
+    "staging/seal_submit.py": "e77a156711c3dbf88d737852b50f01b27aac562e28fff06abd1b1cf99b39c30e",
+    "score.sh": "103f9e61e622ea24f5e96882b025422db605ca62002cf465d92cc02cede9932a",
+    "tests.json": "4e88f2df03601ea162d7d431af2ccaed6bf96ba8d3c499964d1222316af08539"
+  },
+  "primary": "ca_lddt: Psi_all4-Psi_first4",
+  "bootstrap": {
+    "n": 20000,
+    "seed": 20260926,
+    "unit": "paired target"
+  },
+  "trajectories": 7008,
+  "unique_score_rows": 14112,
+  "phase2": "not started / separate research"
+}

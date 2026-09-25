@@ -1,0 +1,25 @@
+{
+  "verified_summaries": 261,
+  "max_absolute_reaggregation_error": 3.3306690738754696e-16,
+  "records": 14112,
+  "trajectories": 7008,
+  "failures": 0,
+  "max_independent_pair_score_error": 1.2739809207573671e-14,
+  "analysis_sha256": "53a019d01c9e06775fac2efc9503cb4a678dc363efa93acd2b4227c23339c949",
+  "score_sha256": "a7624b638a5a8aad16bbe4aff5ec64995ac9d42475f6dd3490baa81f7f98ebfe",
+  "D_write_descriptive": {
+    "median": -0.0008690154272241673,
+    "sd": 0.057522683299351625,
+    "quantiles_0_25_50_75_100": [
+      -0.14763807120829833,
+      -0.021136460886241444,
+      -0.0008690154272241673,
+      0.019877947982261973,
+      0.2164309411559281
+    ],
+    "positive": 46,
+    "negative": 50,
+    "zero": 0
+  },
+  "scope": "Reaggregation of existing CIF-derived scores; not a new CIF rescore or independent target confirmation"
+}
