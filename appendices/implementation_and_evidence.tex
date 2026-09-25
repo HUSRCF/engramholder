@@ -1579,3 +1579,41 @@ marginals and the stratified bootstrap. It also checks identity bindings,
 prediction coverage and the recorded lock/completion chronology. This
 score-level reproduction is distinct from rerunning BLAST searches, generating
 new coordinates or rescoring CIF files.
+
+\section{AtlasFold propagation and post-training calibration}
+\label{app:atlas_propagation}
+On two previously observed diagnostic chains, 7hln\_A and 9qdy\_A, we recorded
+five passes for Query and three Native parents with their C-only/head-only
+continuations (20 instances, no new training). Table~\ref{tab:atlas_propagation}
+summarizes the parents: differences survive the LM stack, projection and fusion.
+Their smaller relative size at the trunk output does not imply deletion of the
+update; absolute difference RMS increases while the Query scale increases more.
+Final structures change little relative to Query; this is not a quality gain.
+These two-chain, Native-only observations identify neither the cause of absent
+adaptation gains nor a rotation interaction. Full per-pass records, coordinates,
+propagation plots and engineering checks are in the supplementary artifact.
+
+\begin{table}[!htbp]\centering\small
+\caption{Atlas parent-model pair-state differences. Each ratio is
+$\mathrm{RMS}(z_{\mathrm{adapted}}-z_Q)/\mathrm{RMS}(z_Q)$ at the same
+target, pass and position. Entries are separate medians over two chains,
+three fitted seeds and five passes, not independent-sample intervals or
+cross-layer signal-retention fractions.}
+\label{tab:atlas_propagation}
+\begin{tabular}{lrrr}\toprule
+Position & Relative difference & Difference RMS & Query RMS \\\midrule
+\input{generated/atlas_propagation_rows}
+\end{tabular}\end{table}
+
+A separate completed Native-only calibration continued each parent for 512
+updates, either learning an identity-initialized shared orthogonal $C$ with
+the original head frozen, or continuing the head with its AdamW state.
+On observed Confirm96-B, the primary C-only minus head-only pair-lDDT contrast
+is \result{atlas_cal_C_only_minus_head_only}
+[\result{atlas_cal_C_only_minus_head_onlyLo}, \result{atlas_cal_C_only_minus_head_onlyHi}];
+C-only minus Query is \result{atlas_cal_C_only_minus_query}
+[\result{atlas_cal_C_only_minus_queryLo}, \result{atlas_cal_C_only_minus_queryHi}].
+Neither establishes a benefit. All 960 predictions completed; intervals use
+20,000 target bootstrap draws after averaging three fitted seeds, with the
+Query comparison descriptive and unadjusted. These results do not establish
+information redundancy or motivate a specific alternative interface.

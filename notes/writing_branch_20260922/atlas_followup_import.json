@@ -1,0 +1,312 @@
+{
+  "base_commit": "9303cd73c1d48f78e3f96e6d3cd007d5e23b9308",
+  "source_lock_predecessor": "paper_sources.v11.lock.json",
+  "copies": [
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/analysis/summary.json",
+      "destination": "evidence/atlas_propagation_summary.json",
+      "sha256": "ec24a80492dc03d4cd64a149661dfdf82194c4a132552ac42d608aff94568b4f"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/lock.json",
+      "destination": "evidence/atlas_propagation_execution_lock.json",
+      "sha256": "9f1fa5380f127943957dc2e57c10f928e8a6331fba4e4d7516d03e3e0ad556c3"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/prior/formal_analysis/analysis.json",
+      "destination": "evidence/atlas_posttraining_summary.json",
+      "sha256": "c9aaaf6363779e495885edf411e0ad124821829cc4ff7b0a19613f5499d67f7b"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/prior/formal_analysis/metric_records.json",
+      "destination": "evidence/atlas_posttraining_records.json",
+      "sha256": "d86ee348a00b883a1581b13603b00e58d9c6aa5431b061f320cd5fcbd2ee201e"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/prior/COMPLETE.json",
+      "destination": "evidence/atlas_posttraining_complete.json",
+      "sha256": "d43980b7312143b9aed0fe4407e0688147d9cbd5a16e7f4847f595020dcd3976"
+    },
+    {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/atlas_posttraining_calibration_20260925/evidence/execution_lock.json",
+      "destination": "evidence/atlas_posttraining_execution_lock.json",
+      "sha256": "d47573f186c285ed4757181423b75f1165920e62d46bd96647656ce261a550b5"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/PROTOCOL.md",
+      "destination": "reproducibility/atlas_followup/propagation_protocol.md",
+      "sha256": "7273facba8017337d52a0a6f6097ede82a7c8f14fd80604d88795ff9390125a8"
+    },
+    {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/reports/atlas_posttraining_calibration_20260925/PROTOCOL.md",
+      "destination": "reproducibility/atlas_followup/calibration_protocol.md",
+      "sha256": "f9769318ce20f47908c24ca46c830245292fad5231d87f773754cd298c4b7b79"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/analysis/propagation.png",
+      "destination": "reproducibility/atlas_followup/propagation.png",
+      "sha256": "fd3be91b90488984262d4742556b1f9ca6cd0008157d86850e37961062418faa"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/analysis/propagation.pdf",
+      "destination": "reproducibility/atlas_followup/propagation.pdf",
+      "sha256": "d74c8f3f8664cc1cbb560066c7a4f96b29441948f9a536eb698899942763ccac"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/analysis/independent_audit.json",
+      "destination": "reproducibility/atlas_followup/independent_audit.json",
+      "sha256": "7ac84932c6b570f669f50e79e8eab8620cf1ac82c3f08090acd66c47afff642b"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/prior/verification.json",
+      "destination": "reproducibility/atlas_followup/prior_verification.json",
+      "sha256": "19f87398f804846aac827a16c030b3927af704f2845c94d30c2fda2ad377c8c8"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/staging/analyze.py",
+      "destination": "reproducibility/atlas_followup/archived/propagation_analyze.py",
+      "sha256": "21cc36d1dec5497eab72737e1143bb05a3ab8e8278e97c6aa05abaf800c7df0a"
+    },
+    {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/atlas_propagation_localization.py",
+      "destination": "reproducibility/atlas_followup/archived/atlas_propagation_localization.py",
+      "sha256": "1080a5ce722a0f3f5e812075dd85ef0da7f2b07624e1036640bbc0091242f6eb"
+    },
+    {
+      "source": "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/atlas_posttraining_calibration/score.py",
+      "destination": "reproducibility/atlas_followup/archived/atlas_posttraining_score.py",
+      "sha256": "b7e3ced218bf0c502d3f88c4a72d3f5d3e83324f1d73907b2339076707277e43"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/complete.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/complete.json",
+      "sha256": "94c2b8a2dab4c50f87e7d681451dafb2b25c30f39dac2df1bc0619cc42259730"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/query_smoke.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/query_smoke.json",
+      "sha256": "d1ba68697a7890569b219575414daa7368b2c21a900e2e5be87129b06eba3fbe"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/adapted_smoke.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/adapted_smoke.json",
+      "sha256": "c2fe9b4a6ba62b6a9c054755c139d105f3765601d4714e14dd7902d4e8477758"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/query.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/query.json",
+      "sha256": "318d6aa8dc48fae514df2c0ce6f9c3ec6c664f57fb9589f789c7d107a381a7a0"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/query_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/query_ca.npy",
+      "sha256": "40757041f9851a91619ece0580a7e36c0234e2b8d2a4ae818215e8bc7be10a23"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/parent_s20260923.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/parent_s20260923.json",
+      "sha256": "f7d723997d28881028ab6c4c0c3ebe26309e891eefd274c5d1504472058b7456"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/parent_s20260923_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/parent_s20260923_ca.npy",
+      "sha256": "ee3427bc13b79cca9383eb243d1c336c5f8e5966ccbd1031162841a099789c65"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/C_only_s20260923.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/C_only_s20260923.json",
+      "sha256": "e86f6b4dff9c19eb11e16cbd447779130acad5abf8d028529e8f7beedd478c9a"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/C_only_s20260923_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/C_only_s20260923_ca.npy",
+      "sha256": "7e84698db966f5a76987b4700995195318dc02f4b4178851d09025dd949667e7"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/head_only_s20260923.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/head_only_s20260923.json",
+      "sha256": "cd86388761290b1afba5711dd962d01fa64a1034c75aff8289facda44af17199"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/head_only_s20260923_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/head_only_s20260923_ca.npy",
+      "sha256": "0549ba065f8d86a17de4a1d3044688a0deb71b0ed069e6844004aab8ff9f0c95"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/parent_s20260924.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/parent_s20260924.json",
+      "sha256": "55bde5a5e63af602a62003fc6abc102ddbaf8924bd62f4012641130699e1b513"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/parent_s20260924_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/parent_s20260924_ca.npy",
+      "sha256": "830c02023ca82da64e4a4e4ff0a41bff5448db7f2d9b7441cd258e488fe752aa"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/C_only_s20260924.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/C_only_s20260924.json",
+      "sha256": "f05ef6076cd40b4a4dd05093f6a9fdc15b14c68b1af950ad9d5273bc1620f318"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/C_only_s20260924_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/C_only_s20260924_ca.npy",
+      "sha256": "0da9beb5d2e617b08cc01c8d0e6496e624e5b805c948cd1121fe8ffc59dadb8f"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/head_only_s20260924.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/head_only_s20260924.json",
+      "sha256": "1a84aa9e834d3488bb7e766bb8999dc9f149db58a8751ccb2c662e18d5e2e7eb"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/head_only_s20260924_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/head_only_s20260924_ca.npy",
+      "sha256": "19ae6601364cc240e65f77fe2f50a68704ca1b752c7435164b392a822e77d0c5"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/parent_s20260925.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/parent_s20260925.json",
+      "sha256": "7d66f4a92b3fe40c4e38feeab34b76f2bc7093d9cfb3112610d299505daec250"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/parent_s20260925_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/parent_s20260925_ca.npy",
+      "sha256": "998874c1706cb58dd979c0732736f2c9ee38fc99948d3dea84a7dca4c85df778"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/C_only_s20260925.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/C_only_s20260925.json",
+      "sha256": "5392ddaca07e8cb9532fc91c8d3b3379576a1ef978725ad91ac3b14bbb1fb928"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/C_only_s20260925_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/C_only_s20260925_ca.npy",
+      "sha256": "2204881d1af90331a8c7ef11c3e782475c1e3143efd16e04aa2d8a9ed3cbc2d2"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/head_only_s20260925.json",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/head_only_s20260925.json",
+      "sha256": "81de52e639df1a4aec995800519b90ca3382dc469c8f55a1c9a49886a91adfe5"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/7hln_A/head_only_s20260925_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/7hln_A/head_only_s20260925_ca.npy",
+      "sha256": "11ed1d3fc8153e6065128f76f75c7f83cfcc134a904d60227aac7b54929c71c2"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/complete.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/complete.json",
+      "sha256": "e73a9830b05f16fe839e7c9ff40e844d640054280037f4aac2c7896407383dd6"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/query_smoke.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/query_smoke.json",
+      "sha256": "440a39aaabaf7433af4451696652246cf0890a6f8492de9d6a57723f7fe1b76a"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/adapted_smoke.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/adapted_smoke.json",
+      "sha256": "c2fe9b4a6ba62b6a9c054755c139d105f3765601d4714e14dd7902d4e8477758"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/query.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/query.json",
+      "sha256": "9213aec9b7b74bf69ac65c8201c77e69f05c152b9c4f0c6e571626e999b1c733"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/query_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/query_ca.npy",
+      "sha256": "7408f732bd1fd4439f04cd9fd84827ce84298c30b6270dba3b07cc7889c24e7b"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/parent_s20260923.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/parent_s20260923.json",
+      "sha256": "1ee4d7a03644d60420699d0f837319c531ed2d2e7650c1acef0b1c71a4acca35"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/parent_s20260923_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/parent_s20260923_ca.npy",
+      "sha256": "534801f9bab71555789b00dbb0a959cc04d501a7f15f6008a78b7cf0f6dba3af"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/C_only_s20260923.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/C_only_s20260923.json",
+      "sha256": "fce739b3eb563ac56c4afd8b7ecd36eafdc9e4d1bb7a70aef7282594c561506b"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/C_only_s20260923_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/C_only_s20260923_ca.npy",
+      "sha256": "a9514a79a72ea9fbc0a53005e06fc469295a3cffa39025c21d28115c9bcfbb93"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/head_only_s20260923.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/head_only_s20260923.json",
+      "sha256": "2f2798c3519e41b1bfa7de26501dafa3b4ecb20ffe21188c3099760d61ee8b35"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/head_only_s20260923_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/head_only_s20260923_ca.npy",
+      "sha256": "e29749e4702507050778f849986d3af59e5c08c6890b392c15e01883f0ae14ab"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/parent_s20260924.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/parent_s20260924.json",
+      "sha256": "6ee3b96f9814266b4c29d52ff9218bbab790b80cad353c7cc2306f5d24de0ed9"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/parent_s20260924_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/parent_s20260924_ca.npy",
+      "sha256": "052e19e86394f467a922521834975d78cf8bbee938b4270bfb663f9cc7b00432"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/C_only_s20260924.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/C_only_s20260924.json",
+      "sha256": "3665019ad810f9c78de780a2581c1bf501d3d5a79e0354ef709e700f9a6959e6"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/C_only_s20260924_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/C_only_s20260924_ca.npy",
+      "sha256": "95df96a1ff837502e8f5cc110d7364fef34e0559a765d44ced398f233a92971a"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/head_only_s20260924.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/head_only_s20260924.json",
+      "sha256": "486d56656c4e083409882b6a4be08fac0283e1d8f00ede4bae8c352e8e435147"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/head_only_s20260924_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/head_only_s20260924_ca.npy",
+      "sha256": "9b5d7108c5e791a1e420ce2310063928e8d63ff67f16378ecc4ec930bf02d551"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/parent_s20260925.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/parent_s20260925.json",
+      "sha256": "2df67fc1174c91e203cf0273d5796d53d406ee4e0ea0d6a7941c6820081aad8c"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/parent_s20260925_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/parent_s20260925_ca.npy",
+      "sha256": "880523c806944a026a7abfdcee1f9f511113f075cbc64afd8dd2a65ac4f5e946"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/C_only_s20260925.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/C_only_s20260925.json",
+      "sha256": "a1745bdc3881369a38421e5ad8c8cd6c749398d1d3e46c3bb61e59f0f654827b"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/C_only_s20260925_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/C_only_s20260925_ca.npy",
+      "sha256": "0bd6caf8f1151ac7e6ed71994adf019dfa15edf5cc8b3241a83943a10856977c"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/head_only_s20260925.json",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/head_only_s20260925.json",
+      "sha256": "f4905ca2e88f8dc29eacc17e1d6b34e5210f80218871b93e47c76d3cc2829fd7"
+    },
+    {
+      "source": "/home/husrcf/Code/engramholder/reports/atlas_propagation_localization_20260926/results/9qdy_A/head_only_s20260925_ca.npy",
+      "destination": "reproducibility/atlas_followup/records/9qdy_A/head_only_s20260925_ca.npy",
+      "sha256": "10480dd8b1d2cdcb861589ecc8655119a7d84f7874543e796e3c0b9f8d26253c"
+    }
+  ],
+  "scope": "Two-chain Native propagation observations and completed Native-only channel calibration; no new training or endpoints."
+}

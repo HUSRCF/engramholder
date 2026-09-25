@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "execution_lock_sha256": "d47573f186c285ed4757181423b75f1165920e62d46bd96647656ce261a550b5",
+  "records_sha256": "d86ee348a00b883a1581b13603b00e58d9c6aa5431b061f320cd5fcbd2ee201e",
+  "analysis_sha256": "c9aaaf6363779e495885edf411e0ad124821829cc4ff7b0a19613f5499d67f7b",
+  "n_predictions": 960,
+  "time": "2026-09-25T16:14:09.769525+00:00"
+}

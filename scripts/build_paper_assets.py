@@ -60,10 +60,16 @@ SOURCES += ['protenix_fresh192_'+name for name in [
 SOURCES += ['e2_retraining_'+name for name in [
     'summary', 'records', 'score_complete', 'lock', 'complete', 'cif_audit',
     'historical_comparison', 'engineering']]
+SOURCES += ['atlas_propagation_summary', 'atlas_propagation_execution_lock',
+            'atlas_posttraining_summary', 'atlas_posttraining_records',
+            'atlas_posttraining_complete', 'atlas_posttraining_execution_lock']
 COMPLETED_SOURCES = [str(p.relative_to(ROOT)) for folder in
                      ['reproducibility/protenix_fresh192', 'reproducibility/e2_retraining']
                      for p in sorted((ROOT/folder).rglob('*'))
                      if p.is_file() and '__pycache__' not in p.parts]
+ATLAS_SOURCES = [str(p.relative_to(ROOT)) for p in
+                 sorted((ROOT/'reproducibility/atlas_followup').rglob('*'))
+                 if p.is_file() and '__pycache__' not in p.parts]
 
 def read(file, path):
     x = DATA[file]
@@ -159,7 +165,8 @@ def main():
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
     hashes.update({name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ANCHOR_SOURCES})
     hashes.update({name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in COMPLETED_SOURCES})
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v11.lock.json'
+    hashes.update({name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ATLAS_SOURCES})
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v12.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -180,6 +187,8 @@ def main():
     from verify_protenix_fresh192 import verify as verify_p192
     from verify_e2_retraining import verify as verify_repeat
     p192_audit, repeat_audit = verify_p192(ROOT), verify_repeat(ROOT)
+    from verify_atlas_followup import verify as verify_atlas
+    atlas_audit = verify_atlas(ROOT)
     from analyze_openfold_followups import calculate
     followup_audit=calculate(ROOT)
     assert followup_audit==DATA['openfold_followup_analysis']
@@ -435,6 +444,8 @@ def main():
     build_anchor(DATA, number, contrast, tex, save_rows, interval_cell)
     from latest_completed_assets import build as build_latest
     build_latest(DATA, number, contrast, tex, save_rows, interval_cell)
+    from atlas_followup_assets import build as build_atlas
+    build_atlas(number, tex, save_rows)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -448,7 +459,7 @@ def main():
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit,'verified_anchor_intervention':anchor_audit,'verified_protenix_fresh192':p192_audit,'verified_e2_retraining':repeat_audit},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit,'verified_anchor_intervention':anchor_audit,'verified_protenix_fresh192':p192_audit,'verified_e2_retraining':repeat_audit,'verified_atlas_followup':atlas_audit},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

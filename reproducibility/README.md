@@ -5,10 +5,11 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v11 input lock contains
-204 source files and 1,830 generated numerical fields. All 1,617 previously
+full-inference source/norm cells and contrasts. The active v12 input lock contains
+266 source files and 1,851 generated numerical fields. All 1,830 previously
 integrated values, display formats and scientific source mappings are unchanged;
-213 fields add Protenix Fresh192 and the same-seed compensation repeat. The earlier additions
+21 fields add the bounded Atlas propagation table and Native-only calibration.
+The v11 additions cover Protenix Fresh192 and the same-seed compensation repeat. The earlier additions
 cover compensation (including explicitly post-hoc target-distribution summaries),
 signed permutations and developmental checkpoint studies.
 Absolute structure scores are displayed to four decimals (168 formatting-only
@@ -53,6 +54,12 @@ pooled as extra seeds. The execution reused the environment and PLM caches, so
 it does not complete the separate fresh-feature full-prediction replay.
 Literal numerical references in the manuscript and generated tables are checked
 against the generated keys; an unknown key also raises a LaTeX PackageError.
+The [Atlas boundary bundle](atlas_followup/README.md) retains all 20 two-chain
+propagation instances, unrounded coordinates and the full propagation figure.
+Its verifier rebuilds recorded state-summary aggregations, prediction-distance
+changes and 18 calibration contrasts from 960 scores. Neither hidden-state
+differences nor Native-only calibration establish a rotation interaction or an
+explanation for absent adaptation gains.
 
 ```sh
 python -m pip install numpy matplotlib torch gemmi
@@ -68,6 +75,7 @@ python tests/test_anchor_intervention.py
 python scripts/verify_protenix_fresh192.py
 python tests/test_protenix_fresh192.py
 python scripts/verify_e2_retraining.py
+python scripts/verify_atlas_followup.py
 python reproducibility/operator_smoke.py
 python reproducibility/compensation/smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex

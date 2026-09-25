@@ -1,0 +1,32 @@
+{
+  "old_lock": "paper_sources.v11.lock.json",
+  "new_lock": "paper_sources.v12.lock.json",
+  "unchanged_inputs": 204,
+  "new_inputs": 62,
+  "unchanged_numeric_cells": 1830,
+  "new_numeric_cells": [
+    "atlas_cal_C_only_minus_head_only",
+    "atlas_cal_C_only_minus_head_onlyHi",
+    "atlas_cal_C_only_minus_head_onlyLo",
+    "atlas_cal_C_only_minus_query",
+    "atlas_cal_C_only_minus_queryHi",
+    "atlas_cal_C_only_minus_queryLo",
+    "atlas_path_after_injection_delta_rms",
+    "atlas_path_after_injection_query_rms",
+    "atlas_path_after_injection_relative_delta_rms",
+    "atlas_path_lm_block4_delta_rms",
+    "atlas_path_lm_block4_query_rms",
+    "atlas_path_lm_block4_relative_delta_rms",
+    "atlas_path_projection_out_delta_rms",
+    "atlas_path_projection_out_query_rms",
+    "atlas_path_projection_out_relative_delta_rms",
+    "atlas_path_trunk_end_delta_rms",
+    "atlas_path_trunk_end_query_rms",
+    "atlas_path_trunk_end_relative_delta_rms",
+    "atlas_path_trunk_input_delta_rms",
+    "atlas_path_trunk_input_query_rms",
+    "atlas_path_trunk_input_relative_delta_rms"
+  ],
+  "main_figures_unchanged": true,
+  "new_training": false
+}
