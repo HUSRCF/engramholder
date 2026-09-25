@@ -57,8 +57,14 @@ def build(data, number, contrast, tex, save_rows, interval):
         label = '' if same_predictor else predictor
         if previous is not None and not same_predictor:
             label = r'\midrule ' + label
+        panel_label = panel
+        # Source-backed distinctions: across heads versus across paired seeds.
+        if recipe == ('Protenix', '384', 'ESM2') and panel == 'L48':
+            panel_label += r'$^\dagger$'
+        elif predictor == 'AtlasFold' and feature == 'ESMC':
+            panel_label += r'$^\ddagger$'
         compact.append([label, '' if same_train else train,
-                        '' if same_feature else feature, panel, *scores])
+                        '' if same_feature else feature, panel_label, *scores])
         previous = recipe
     compact.append([r'\midrule \multicolumn{9}{l}{\emph{New targets, fixed models}} \\ OpenFold',
                     '96', 'ESM2', 'Fresh96',

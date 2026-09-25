@@ -36,9 +36,11 @@ The Protenix direction study uses Train24/384 updates, with tangent as the
 locked main comparison and Full as a secondary comparison. Full Train96/1536
 and Train384/1536 test larger sets at a fixed update budget. OpenFold uses Full
 Train96 and Train384, each for 1536 updates; AtlasFold uses Train96/1536.
-Within each recipe, heads share data order, three training seeds, random-condition
+Within each core four-cell recipe, heads share data order, three training seeds, random-condition
 rules and optimizer settings. Each of three fixed rotations uses all three seeds;
 G+ also has three native and nine rotated fits in each completed four-cell setting.
+The prediction and compensation studies use their separately specified rotation
+sets and parameter groups.
 We evaluate the fixed final checkpoint and one inference sample, without
 target-label selection or cropping. Native task losses backpropagate through
 the final recycle.

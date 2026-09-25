@@ -219,6 +219,11 @@ Protenix/96 has no L48 run.}
 Predictor & Train & PLM & Panel & Query & F & RF & G+ & RG+ \\\midrule
 \input{generated/complete_fourcell_means}
 \end{tabular}
+\par\smallskip\raggedright\footnotesize
+$^\dagger$ Query/F/RF on H100; G+/RG+ on MI250.
+$^\ddagger$ All adapted arms for seed 20260925 on H100, other seeds and Query
+on MI250. These mix backends across heads or across seeds, respectively
+(Appendix~\ref{app:dh_fourcells}).
 \end{table}
 
 \label{sec:limits_results}
@@ -243,15 +248,15 @@ but not Confirm96-B. G+ nevertheless wins the two OpenFold long-chain
 comparisons (Appendix Table~\ref{tab:gplus}): a direction benefit can coexist
 with a better generic adapter.
 
-AtlasFold establishes no adaptation benefit or interaction with either
-feature source. High baseline and native AtlasLM are unisolated explanations;
+Neither an adaptation benefit nor an interaction is established for AtlasFold
+with either feature source. High baseline and native AtlasLM are unisolated explanations;
 its mixed-backend limits remain in Appendix~\ref{app:dh_fourcells}.
 
 \paragraph{Training data and budget.}
 Training-set changes provide another boundary. At fixed Full/1536, the Factor
 direction effect changes by \result{pt_scale} in Protenix and
-\result{of_scale_c96} in OpenFold on Confirm96-B; OpenFold Length48 establishes
-no change. All four OpenFold/ESM2 mean scores improve: rotated Factor catches
+\result{of_scale_c96} in OpenFold on Confirm96-B; the OpenFold Length48 interval
+does not establish a change. All four OpenFold/ESM2 mean scores improve: rotated Factor catches
 up without an absolute Native decline. The direct, post-hoc change of the
 complete interaction, $\Psi_{384}-\Psi_{96}$, is
 \result{psi_train_c96_ca_lddt}

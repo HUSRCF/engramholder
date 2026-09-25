@@ -1,11 +1,12 @@
 \begin{abstract}
 Under a fixed task-training budget, does output-channel rotation affect
 adaptation differently across parameterizations? We also test whether a shared
-trainable orthogonal output map reduces Factor's Native--Rotated score gap.
-We compose adapter residuals through frozen protein predictors' native
-pair-generating operators and train native and rotated heads separately under
+trainable orthogonal output map reduces the Native--Rotated score gap of a
+structured head (Factor), which composes residue-level increments through
+frozen protein predictors' native pair-generating operators. We train native
+and rotated heads separately under
 paired settings, starting from the same zero-residual function. Orthogonal controls preserve
-local writer spectra; a generic head with explicit factor access and a free
+local writer spectra; a generic head (G+) with explicit factor access and a free
 output layer provides a function class closed under output rotation.
 Under fixed 1536-update recipes, four-cell studies find greater rotation
 sensitivity for Factor than G+ in specified OpenFold and Protenix settings.
