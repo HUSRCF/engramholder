@@ -1,20 +1,27 @@
 \begin{abstract}
 Matching local spectra does not guarantee matching adaptation behavior in a
-frozen predictor. We study adapter residuals composed through protein predictors'
-native pair-generating operators, with independently trained orthogonal output 
-controls that begin from the same zero-residual function. We use a generic head with explicit factor access and a free output layer as a control whose function class is closed under output rotation.
-Under fixed 1536-update recipes, matched four-cell studies on observed panels find greater
-rotation sensitivity for Factor than G+ in both OpenFold and Protenix under Train96/ESM2,
-with C$\alpha$ pair-lDDT interactions of \result{inter_c96_interaction} and
-\result{p96_pair_interaction}. On 96 prospectively locked targets, however, the same fixed
-OpenFold models yield an interaction of \result{fresh_ca_lddt_interaction}
-[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}], so
-the primary interaction is not established. On the observed panel, a shared
-orthogonal compensator reduces mean direction cost by \result{e2_pair_T_C}
-[\result{e2_pair_T_CLo}, \result{e2_pair_T_CHi}] across two preselected OpenFold
-rotations, whereas a reconstruction diagnostic fails to predict rotation costs.
-Across settings, useful adaptation, rotation sensitivity and head competitiveness
-remain distinct. These controls identify a conditional design effect: interface
-evaluation must consider output freedom and task training alongside local
-spectral properties, without treating direction sensitivity as method superiority.
+frozen predictor. We study adapter residuals composed through protein
+predictors' native pair-generating operators, with independently trained
+orthogonal output controls that begin from the same zero-residual function.
+We use a generic head with explicit factor access and a free output layer as
+a control whose function class is closed under output rotation.
+Under fixed 1536-update recipes, matched four-cell studies on observed
+panels find greater rotation sensitivity for Factor than G+ in both
+OpenFold and Protenix under Train96/ESM2, with C$\alpha$ pair-lDDT
+interactions of \result{inter_c96_interaction} and
+\result{p96_pair_interaction}. On 96 prospectively locked targets, however,
+the same fixed OpenFold models yield an interaction of
+\result{fresh_ca_lddt_interaction}
+[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}],
+so the primary interaction is not established. On the observed panel, a
+shared orthogonal compensator reduces mean direction cost by
+\result{e2_pair_T_C}
+[\result{e2_pair_T_CLo}, \result{e2_pair_T_CHi}] across two preselected
+OpenFold rotations, whereas a reconstruction diagnostic fails to predict
+rotation costs.
+Across ested predictors and training settings, adaptation benefit, rotation
+sensitivity, and head competitiveness remain distinct. These controls
+identify a conditional design effect: structured interface evaluation must
+consider output freedom and task training alongside local spectral
+properties, without treating direction sensitivity as method superiority.
 \end{abstract}
