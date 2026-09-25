@@ -12,6 +12,9 @@ using synthetic features and a small frozen OPM fixture. It needs NumPy and
 PyTorch, but no backbone weights, PLM or experimental structure. The second
 command reconstructs the original paired structure-score evaluation. These are
 two separate checks: the synthetic loss is not evidence about protein quality.
+The smoke JSON records the current Python, PyTorch and NumPy versions, device,
+dtype and thread count. These describe that execution, not the historical
+training environment.
 
 The example covers:
 

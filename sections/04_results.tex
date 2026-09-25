@@ -71,14 +71,13 @@ replace this endpoint. Supplementary interaction intervals also include zero.
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
 \caption{Head competitiveness and orientation sensitivity. Left: Protenix
-four-cell means. Right: target-level $\Psi_i$ distributions after averaging
-paired seeds and rotations (96 or 48 targets per row). Violins use a fixed
-bandwidth factor of 0.35, stop at observed extrema and have equal maximum width;
-points and bars show $\Psi$ and its original conditional 95\% bootstrap interval.
-The shaded diamond marks Fresh96's new-target primary test, whose interval
-includes zero. Other panels are observed; rows are not independent replications
-(Table~\ref{tab:study_roles}). A66 follow-ups lack joint correction; backend
-qualifications are in Appendix~\ref{app:dh_fourcells}.}
+four-cell means. Right: target-level $\Psi_i$, averaging seeds and rotations
+within 96/48 targets. Violins span observed extrema (bandwidth 0.35, equal width);
+the separate, narrower axis shows $\Psi$ and its original conditional 95\% bootstrap
+interval. Fresh96's shaded diamond marks the new-target primary test; its interval
+includes zero. Other rows reuse observed panels and are not independent
+replications (Table~\ref{tab:study_roles}). A66 multiplicity and backend limits
+are in Appendix~\ref{app:dh_fourcells}.}
 \label{fig:interaction}
 \end{figure}
 
@@ -136,10 +135,11 @@ retraining, not inverse-rotating a previously trained model.
 \begin{table}[t]\centering\small
 \caption{Compensation within Factor on observed Confirm96-B. Scores are mean
 C$\alpha$ pair-lDDT over three seeds. Each arm is jointly retrained with $C$;
-the original no-$C$ fits supply the paired reference.}
+the original no-$C$ fits supply the paired reference. Intervals are conditional
+on fitted models and unadjusted; contrasts use unrounded scores.}
 \label{tab:e2_absolute}
 \begin{tabular}{lrrrr}\toprule
-Condition & Without $C$ & With $C$ & Own change & 95\% interval \\\midrule
+Condition & Without $C$ & With $C$ & Own change & 95\% CI for change \\\midrule
 \input{generated/e2_means}
 \end{tabular}\end{table}
 
@@ -165,9 +165,6 @@ and does not validate the failed reconstruction predictor.
 
 \subsection{Does direction sensitivity explain adapter competitiveness?}
 \label{sec:esmc}
-Table~\ref{tab:coverage} reports all completed same-feature cells under each
-study's fixed final-1536-update recipe.
-
 ESMC raises Protenix Native scores from
 \result{dh_protenix_c96_e_native}/\result{dh_protenix_l48_e_native} to
 \result{dh_protenix_c96_c_native}/\result{dh_protenix_l48_c_native}
@@ -183,11 +180,12 @@ cache precision and input-projection size together; it does not isolate model
 size or test intermediate-layer or multilayer features.
 
 \begin{table}[t]
-\caption{Complete four-cell C$\alpha$ pair-lDDT means at 1536 updates, displayed
-to four decimals. F/G+: three seeds; RF/RG+: three seeds $\times$ three rotations.
-PLM denotes added adapter features; Query lacks them and Atlas retains native
-AtlasLM-3B. Blank recipe cells inherit the entry above within each predictor.
-Study identities are in Table~\ref{tab:study_roles}; Protenix/96 has no L48 run.}
+\caption{Four-cell C$\alpha$ pair-lDDT means at 1536 updates. F/G+: three seeds;
+RF/RG+: three seeds $\times$ three rotations. Query lacks the added PLM features;
+Atlas retains AtlasLM-3B. Blank recipe cells inherit preceding entries within
+each predictor. Fresh96 uses new targets and fixed models; other panels are
+observed (Table~\ref{tab:study_roles}). Contrasts use unrounded scores.
+Protenix/96 has no L48 run.}
 \label{tab:coverage}\label{tab:esmc}\centering\footnotesize
 \setlength{\tabcolsep}{5pt}
 \begin{tabular}{@{}llllrrrrr@{}}\toprule
@@ -197,17 +195,15 @@ Predictor & Train & PLM & Panel & Query & F & RF & G+ & RG+ \\\midrule
 \end{table}
 
 \label{sec:limits_results}
-Table~\ref{tab:coverage} places direction effects next to absolute performance
-and the generic comparator. In the matched Protenix Train384/ESM2 follow-up, Native
+In the matched Protenix Train384/ESM2 follow-up, Native
 exceeds G+ by \result{pt384_c96_gdiff}
 [\result{pt384_c96_gdiffLo}, \result{pt384_c96_gdiffHi}] on Confirm96-B and
 \result{pt384_l48_gdiff}
 [\result{pt384_l48_gdiffLo}, \result{pt384_l48_gdiffHi}] on Length48.
 The differences are positive for 78/96 and 43/48 targets and all three paired
 seed means. G+ itself improves over query-only by \result{pt384_c96_gquery}
-and \result{pt384_l48_gquery} in mean score. Thus Native's advantage holds
-against a functioning explicit-factor generic comparator under this common
-learning rate and budget; neither optimal G+ performance nor an upper bound is established.
+and \result{pt384_l48_gquery} in mean score. G+ is thus a functioning explicit-factor
+comparator under the shared learning rate and budget, not an optimized performance bound.
 For Protenix Train384/ESMC on Confirm96-B, the Native head gap is
 $F-G^+=\result{dh_protenix_c96_c_pair_native_minus_gplus}$, while
 $RF-RG^+=\result{dh_protenix_c96_c_rotated_head_gap}$ after rotation.
@@ -249,17 +245,15 @@ or convergence effect.
 
 \paragraph{A global-norm alternative.}
 \label{sec:norm_cross}
-A full-inference robustness analysis crosses learned residual source and global
-Frobenius norm on 24 observed Confirm96-B targets, using fixed Protenix
-Train384/Full/1536 models. All 720 pure and mixed predictions are rerun on the
-same backend. Native-source advantages are \result{cross_ca_D_mN} at the
+A robustness analysis crosses learned residual source and global Frobenius
+norm for fixed Protenix Train384/Full/1536 models: 24 observed Confirm96-B targets,
+720 complete predictions on the same backend. Native-source advantages are \result{cross_ca_D_mN} at the
 native norm and \result{cross_ca_D_mR} at the rotated norm; the symmetric
 source effect is \result{cross_ca_Edir}
 [\result{cross_ca_EdirLo}, \result{cross_ca_EdirHi}]. Thus global norm alone is
-insufficient to explain this gap. The normalized residuals still differ in
-learned content, local magnitudes and channel organization: this is not a
-second pure channel-rotation experiment. The complete four cells, conditional
-effects and scope are retained in Appendix~\ref{app:norm_cross}.
+insufficient to explain this gap. Normalized residuals still differ in learned
+content, local magnitudes and channel organization. This is not a pure
+channel-rotation experiment (complete four cells in Appendix~\ref{app:norm_cross}).
 
 \paragraph{Budget dependence remains unresolved.}
 Saved 384/768/1536 checkpoints of both OpenFold training sizes were evaluated

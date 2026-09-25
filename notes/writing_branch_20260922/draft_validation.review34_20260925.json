@@ -1,0 +1,143 @@
+{
+  "revision_base": "3d8eb29f6d2cbc4a9703743ba31587b39b41d4a4",
+  "review_inputs_sha256": {
+    "review3.md": "60e2080b50e2d57748d9462e0c4cbbc7a893d3c49db2eeac93ddfbe552bd7730",
+    "review4.md": "c60153c3f22c64cdd7c1d849c9e127ea2015e1693d2456c628488c5fac5ef499"
+  },
+  "source_lock": "notes/writing_branch_20260922/paper_sources.v9.lock.json",
+  "numeric_cells_values_formatting_and_provenance_unchanged": 1522,
+  "source_lock_unchanged": true,
+  "main_table": {
+    "previous_rows_preserved": 15,
+    "total_rows": 16,
+    "score_cells": 80,
+    "fresh96_existing_fields_only": true,
+    "scores": {
+      "query_native": 0.33303973950492766,
+      "factor_native": 0.5312050292466008,
+      "factor_rotated": 0.5188030200566849,
+      "generic_plus_native": 0.5326698876354622,
+      "generic_plus_rotated": 0.5304105142195049
+    }
+  },
+  "figure": {
+    "rows_preserved": 16,
+    "target_distributions_unchanged": true,
+    "figure_inches": [
+      5.5,
+      4.05
+    ],
+    "distribution_xlim": [
+      -0.26,
+      0.31
+    ],
+    "mean_ci_xlim": [
+      -0.02,
+      0.065
+    ],
+    "mean_axis_width_fraction": 0.165,
+    "row_label_font_pt_at_manuscript_size": 7.2,
+    "fresh96_ci_width_mm_at_manuscript_size": 7.225440154969957,
+    "kde_bandwidth_factor": 0.35,
+    "no_tail_clipping": true,
+    "separate_scales_explicitly_labelled": true
+  },
+  "latex": {
+    "main_end_page": 9,
+    "total_pages": 35,
+    "overfull_boxes": 0,
+    "undefined_references_or_citations": 0,
+    "official_styles_unchanged": true
+  },
+  "compiled_source_sha256": {
+    "iclr2027_conference.tex": "e193791116c8f5e8c51c051c22ca9d6df00f02751404af025d9cadfc04ce1b8a",
+    "iclr2027_conference.sty": "797deef41724e93761426ac0cbcca46279a91cc650dd1f0ce76a4f08d2098ea6",
+    "iclr2027_conference.bst": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5",
+    "math_commands.tex": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9",
+    "natbib.sty": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d",
+    "fancyhdr.sty": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea",
+    "paper_references.bib": "ba7bae5f86c4778b4559d9597ab496ae6207e15e3336801c5728a55b3eab13b5",
+    "sections/00_abstract.tex": "8f9cb4008905bc5f6a7ddcb5c88f7be8a4e4cc0b69a75310be57b06872cf5da0",
+    "sections/01_introduction.tex": "4c3e59fc54a1779c5e8430e1c4d987b74bab8944c43a69b5ae9af8c48ef263aa",
+    "sections/02_construction.tex": "8669496b775d6b3a775e5f526511d4aea1eb0d699d809de6e0839b1cb726e2cc",
+    "sections/03_design.tex": "ed6fa66713fdad02d700fd368f893d3643f463ddafee1dfdee7829462073f42f",
+    "sections/04_results.tex": "816f787bc0f2e0ba0130cd71446d1d6e9800e8e0cc14cfeba44921283a7e1d9f",
+    "sections/05_discussion.tex": "d539f58945301882e6e2a7cca301011d8bbcfa857465a360dbaaaa9a3e12cec1",
+    "sections/06_related_work.tex": "dcf768baae9336184cfe4ac56d83a1d88f8d7b7e49112d9be197bea3281161a2",
+    "sections/07_conclusion.tex": "4d3f075955435098d889c1f693fde2dfe86283c2bce97dca2aeb7ab1a8ddbf70",
+    "sections/08_statements.tex": "8d81de19541b6bcd92a54fa446664bb8717b63823091906861c8da71ebb137e9",
+    "appendices/implementation_and_evidence.tex": "1e38d73425def645549d637e3640974bebd3c7dcb292d50c26baa9469cff293d",
+    "generated/checkpoint_curve_contrasts.tex": "3dcd59ec050ee28290053e5886c861edd36d51af97fabddece2b3e449e9f2404",
+    "generated/checkpoint_curve_means.tex": "ab4ce55b032ece6462b6d20ab5c5461baf06b0482a295013c7f855f5814230c1",
+    "generated/complete_fourcell_means.tex": "b22a70dc0f5d40b2535c487eebbf40fcb4699602626cc51388427b80150d2d89",
+    "generated/complete_interaction_scope.tex": "feb73ea0b4abf5189d6cd2d46c324a71c72c39177e7ed7bafe929a1336251eb6",
+    "generated/cross_cells.tex": "2581d75d5f1ce4fbb4fa463ec88bc2220372b9a0baf514f9827c2d99bb940565",
+    "generated/cross_effects.tex": "70d17aeb88fe4d20754bd325168868e83d47676cede965ede52fc2bce2387bde",
+    "generated/cross_supplement.tex": "37e4266f2e19eabbd16c8a6d8a55758715be475a253559a0edba602c500c663e",
+    "generated/data_composition_rows.tex": "7bb635863d652e0071fbc30c3b9147018da1894beb3c8897a53484df2065c226",
+    "generated/dh_atlasfold_pair_contrasts.tex": "cdf6f5c335295aa6dbd4d19b09ee8f1e290e4a6a38dc47b3060fe9904ba24e7d",
+    "generated/dh_atlasfold_residue_contrasts.tex": "0fabbb29f2cd3ae75b03498a5f6e0b177d51527cd3d5608664ac3c845a2103cf",
+    "generated/dh_atlasfold_tm_contrasts.tex": "dc6c21d397ff1942b7bd36e9d59c9ce9b818e491033a0e1dcc1cd2abaa687528",
+    "generated/dh_feature_changes.tex": "43de93829badbea67adff0b09c6b9e2df8cc2e9a8b5e0275bb234a3fa0fddecf",
+    "generated/dh_interaction_marginals.tex": "b89c9e86d7007ab7d068ff07058cdf3b48403bee70baefb5ea322d1d85a04264",
+    "generated/dh_protenix_pair_contrasts.tex": "5e6a81d55f9eaa7bdc0b3ec954ab3f55a8757765b9aa2bee81b473cab8ab334f",
+    "generated/dh_protenix_residue_contrasts.tex": "d0a49029dd4026edf61c33893f438e6883d2b21f5aee11b70f21a6462383d300",
+    "generated/dh_protenix_tm_contrasts.tex": "cde1599177db4bb88740f917d4d4e5456f77f314986371592e00602d1305f2c7",
+    "generated/e1_prediction_rotations.tex": "264a22ed7bf28b9cd44c9d6e8d067945b70460291dcadc9105a16b34043d4ded",
+    "generated/e1_prediction_tests.tex": "43aed311abc1008952721d85ede523797a9d2fa2ac0b6e841c42beda1f3e7ea0",
+    "generated/e2_contrasts.tex": "03567346ea985970268071bcdeb327248089001b93e84d0926727291d3c424a0",
+    "generated/e2_means.tex": "c4e9be9778438ac06ecbd6f0ae6ff6b1a82959c7e8717178beaf6550aa2a2624",
+    "generated/esmc_A_means.tex": "34df80ec7405f189920c0c12a5a217d7d25c4af4fbb2b8ff86fd95b8d24b4a37",
+    "generated/esmc_A_pair_contrasts.tex": "3b1e5ba266f071ce0e1589a56abf7e117999ee5ad8f32bc4e10a15d875ec7409",
+    "generated/esmc_A_residue_contrasts.tex": "dfd8bc375e04885c5575d6794f897a183c92d6691b3c66f79863d459e1fabc66",
+    "generated/esmc_A_tm_contrasts.tex": "486daabc5ace535047e787a07411090df54f21f49b92212773b077e3113d3eaa",
+    "generated/fresh96_contrasts.tex": "e09b68ab684c42918f2d384b65d27fd7870283074f8cdd5845ed9adc3bb6a587",
+    "generated/fresh96_marginals.tex": "923945d6d72e0ce2483a9d380eccf4f466ac69766c977960d2aae81919147a7c",
+    "generated/interaction_scope_rows.tex": "f3e5a4285a1e4a1aef216a9d98c6f670f2348ac5ba3c56a47664a94c7029e10f",
+    "generated/main_table_rows.tex": "65e8587ac4f387347fe0271a8c627442e5dde8f18cbf3757caa2806bbcbb984e",
+    "generated/numbers.tex": "26244cb452749d03811c6e1a7ca667be0db3bc0b6bf98b80061d4968e18af512",
+    "generated/paired_table_rows.tex": "4855d89eb4897dbd4cec75e4d3e7580a6900c01a789ada40492411c948ef14e7",
+    "generated/protenix_gplus_supplement_rows.tex": "6981aef33c651a96eecf72e00565cfc041592a6fc3f400ddb0701b8e45926f13",
+    "generated/scope_table_rows.tex": "a043df3df43303d6725187bfbfbae5fd102590811393737889204c20237dd99f",
+    "generated/signed_contrasts.tex": "c4de239dc44bf17cc4b9be7d67e1fce145fc6e6ce9a16689ecd55aac09dd99ef",
+    "generated/signed_means.tex": "5e921f293f63a06f53d8a5cbdc650dd33bea8072f6ed6b5bc48f4ca62bdcfbf0",
+    "generated/training_psi_change.tex": "1dba70a48aeac4bf7dc3db9ddacf0bd903064ce57b63efeb988100e03c6ab9b6",
+    "generated/v4_mechanism_rows.tex": "c43ea384d54e6a7abccf22960489dc8408c12536a43e0e7fb2c916e55012da94",
+    "figures/construction.pdf": "c4de6b08137a790228d922d233f2ef3b7e93d427890559c3de4a3346b96fc20d",
+    "figures/interaction.pdf": "133214ec6cc84a987d9553196789680ffca819d1d33635ef58d2aba00e73c61e",
+    "figures/scope.pdf": "db16ef11a402c6678029564f043472ca14af50dbf329003e9fbb520f311a00cc"
+  },
+  "pdf_sha256": "665186d3674ed7f883f0da2b033fa1f61d659649b79a1935e3767f75fffeb626",
+  "visual_review_pages": [
+    1,
+    6,
+    7,
+    8,
+    9
+  ],
+  "visual_scope": "Revised abstract, interaction figure, E2 table, complete main table and main-text end; not all 35 pages.",
+  "compensation_smoke": {
+    "passed": true,
+    "sealed_modules_and_recipe_unchanged": true,
+    "change": "Execution environment metadata only",
+    "environment": {
+      "python": "3.12.7",
+      "pytorch": "2.9.1+rocm7.2.0.git7e1940d4",
+      "numpy": "1.26.4",
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "threads": 1
+    },
+    "full_structure_training_reproduced": false
+  },
+  "anonymous_package": {
+    "path": "build/anonymous_artifact_v30.zip",
+    "sha256": "9ec7f52ff27505ca13c29861be9d918fc337e97ed4a2dba2751a26f692c57c5d",
+    "files": 212,
+    "numeric_cells_identical": 1522,
+    "tests_passed": 18,
+    "operator_checks_passed": true,
+    "identity_scan_passed": true
+  },
+  "E3_status": "Reviewed separately in 3d8eb29; not integrated into manuscript numerical lock or anonymous package."
+}

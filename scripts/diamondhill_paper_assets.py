@@ -60,6 +60,10 @@ def build(data, number, contrast, tex, save_rows, interval):
         compact.append([label, '' if same_train else train,
                         '' if same_feature else feature, panel, *scores])
         previous = recipe
+    compact.append([r'\midrule \multicolumn{9}{l}{\emph{New targets, fixed models}} \\ OpenFold',
+                    '96', 'ESM2', 'Fresh96',
+                    *[tex('fresh_'+name) for name in ['query_native', 'factor_native',
+                      'factor_rotated', 'generic_plus_native', 'generic_plus_rotated']]])
     save_rows('complete_fourcell_means.tex', compact)
 
     interactions = []

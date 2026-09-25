@@ -8,6 +8,7 @@ from pathlib import Path
 import copy
 import hashlib
 import json
+import platform
 import sys
 
 import numpy as np
@@ -121,7 +122,12 @@ def main():
         assert torch.equal(model(m, mask), baseline), 'Removing the hook restores the frozen path'
         results[rid] = dict(channel_gradient_norms=channel_gradients,
                            orthogonality_error=orthogonality, mean_direction_error=mean_error)
+    environment = dict(python=platform.python_version(), pytorch=str(torch.__version__),
+                       numpy=np.__version__, device=str(next(model.parameters()).device),
+                       dtype=str(next(model.parameters()).dtype),
+                       threads=torch.get_num_threads())
     print(json.dumps(dict(passed=True, conditions=results, exact_source_hash_checks=True,
+                         environment=environment,
                          scope='CPU execution of sealed E2 writer, optimizer, zero initialization, injection, gradients and mask/constraint checks on synthetic inputs; not whole-protein prediction or quality reproduction.'), indent=2))
 
 

@@ -23088,8 +23088,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1464,
-    "distinct_keys": 1231,
+    "literal_references": 1472,
+    "distinct_keys": 1236,
     "missing": []
   },
   "pending": [],

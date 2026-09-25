@@ -78,15 +78,19 @@ def draw_interactions(directory, cells, data):
                           f'dh_atlas_{short}_{feature}_pair_interaction', '#fc8d62', False))
     specs.append(('OpenFold 96 / ESM2 / Fresh96', 'fresh_ca_lddt_interaction', '#8da0cb', True))
     assert len(specs) == 16
-    fig = plt.figure(figsize=(6.6, 4.85))
-    left = fig.add_axes([.085, .44, .255, .43])
-    right = fig.add_axes([.63, .14, .345, .79])
+    # Match the manuscript's 5.5-inch line width: these font sizes survive
+    # inclusion unchanged. Distribution and inferential intervals need separate
+    # horizontal scales, with exactly aligned rows and shared labels.
+    fig = plt.figure(figsize=(5.5, 4.05))
+    left = fig.add_axes([.075, .44, .27, .42])
+    right = fig.add_axes([.585, .17, .19, .76])
+    intervals = fig.add_axes([.825, .17, .165, .76], sharey=right)
     means = [val('dh_protenix_c96_c_'+n) for n in ['native', 'rotated_factor', 'gplus', 'rotated_gplus']]
     # Seaborn Set2 teal/lavender, with lighter partners for trained rotations.
     # Keep the exact palette here so artifact generation needs no new dependency.
     factor_color, generic_color = '#66c2a5', '#8da0cb'
     lighter = lambda color: tuple(.6 * c + .4 for c in to_rgb(color))
-    positions = [0, 1.0, 2.4, 3.4]
+    positions = [0, 1.05, 2.3, 3.35]
     left.set_axisbelow(True)
     left.yaxis.grid(True, color='#e8ecf0', linewidth=.55)
     left.bar(positions, means,
@@ -95,23 +99,24 @@ def draw_interactions(directory, cells, data):
              width=.66, edgecolor='white', linewidth=.55, zorder=3)
     for position, x in zip(positions, means):
         left.text(position, x+.019, f'{x:.4f}', ha='center', va='bottom',
-                  fontsize=7, color='#374151')
+                  fontsize=6.7, color='#374151')
     left.set(xticks=positions, xticklabels=['F', 'RF', 'G+', 'RG+'], ylim=(0, 1),
              ylabel='Mean pair-lDDT')
-    left.set_ylabel('Mean pair-lDDT', fontsize=8, labelpad=2)
-    left.tick_params(labelsize=8, length=0)
+    left.set_ylabel('Mean pair-lDDT', fontsize=7.2, labelpad=2)
+    left.tick_params(labelsize=7.2, length=0)
     left.tick_params(axis='y', labelcolor='#66717e', pad=4)
     left.spines['left'].set_visible(False)
     left.spines['bottom'].set_color('#b9c2cc')
     left.spines['bottom'].set_linewidth(.65)
-    left.set_title('Four-cell example\nProtenix 384 / ESMC / C96-B', fontsize=8)
-    fig.text(.06, .30, r'$\Psi=(F-RF)-(G^+-RG^+)$'+'\n'+r'$\quad=(F-G^+)-(RF-RG^+)$', fontsize=9)
-    fig.text(.06, .20, 'The cross-head gap remains\nafter rotation; its change is '+r'$\Psi$'+'.', fontsize=8)
+    left.set_title('Four-cell example\nProtenix 384 / ESMC / C96-B', fontsize=7.2)
+    fig.text(.04, .30, r'$\Psi=(F-RF)-(G^+-RG^+)$'+'\n'+r'$\quad=(F-G^+)-(RF-RG^+)$', fontsize=7.5)
+    fig.text(.04, .20, 'The cross-head gap remains\nafter rotation; its change is '+r'$\Psi$'+'.', fontsize=7)
     distributions = []
     for i, (label, key, color, fresh) in enumerate(specs):
         y = len(specs)-1-i
         if fresh:
             right.axhspan(y-.46, y+.46, color='#eef2f5', zorder=0)
+            intervals.axhspan(y-.46, y+.46, color='#eef2f5', zorder=0)
         # Each sample is one target after averaging its paired seeds/rotations.
         # Never use bootstrap replicates or individual fits as violin samples.
         cell = cells[key]
@@ -136,27 +141,36 @@ def draw_interactions(directory, cells, data):
         else:
             right.vlines(values[0], y-.34, y+.34, color=color, lw=.7, zorder=2)
         m, lo, hi = val(key), val(key+'Lo'), val(key+'Hi')
-        right.errorbar(m, y, xerr=[[m-lo], [hi-m]], fmt='D' if fresh else 'o',
-                       color='#354052', markerfacecolor='white', markeredgewidth=.7,
-                       markersize=3.2, capsize=1.5, linewidth=.9, zorder=4)
-    right.axvline(0, color='#8f99a5', linewidth=.65, linestyle='--', zorder=1)
-    for boundary in [9.5, 4.5, .5]:
-        right.axhline(boundary, color='#d4dae1', linewidth=.55, linestyle=':', zorder=1)
+        intervals.errorbar(m, y, xerr=[[m-lo], [hi-m]], fmt='D' if fresh else 'o',
+                           color=color, markeredgecolor='#354052', markeredgewidth=.45,
+                           markersize=3, capsize=1.5, linewidth=1, zorder=4)
+        assert -.02 <= lo <= m <= hi <= .065
+    for axis in [right, intervals]:
+        axis.axvline(0, color='#8f99a5', linewidth=.65, linestyle='--', zorder=1)
+        for boundary in [9.5, 4.5, .5]:
+            axis.axhline(boundary, color='#d4dae1', linewidth=.55, linestyle=':', zorder=1)
+        axis.tick_params(axis='x', labelsize=7, colors='#66717e', length=3)
+        axis.spines['left'].set_visible(False)
+        axis.spines['bottom'].set_color('#b9c2cc')
+        axis.spines['bottom'].set_linewidth(.65)
     all_values = np.concatenate(distributions)
     lower = np.floor(all_values.min()/.05)*.05-.01
     upper = np.ceil(all_values.max()/.05)*.05+.01
-    right.set(yticks=range(len(specs)), yticklabels=[s[0] for s in reversed(specs)],
+    labels = [s[0].replace('OpenFold', 'OF').replace('Protenix', 'P').replace('AtlasFold', 'A')
+              for s in reversed(specs)]
+    right.set(yticks=range(len(specs)), yticklabels=labels,
               ylim=(-.65, len(specs)-.35), xlim=(lower, upper),
-              xticks=np.arange(np.ceil(lower/.1)*.1, upper, .1),
-              xlabel=r'Target-level interaction $\Psi_i$')
-    right.tick_params(axis='y', labelsize=7.4, length=0, pad=4)
-    right.tick_params(axis='x', labelsize=8, colors='#66717e', length=3)
-    right.spines['left'].set_visible(False)
-    right.spines['bottom'].set_color('#b9c2cc')
-    right.spines['bottom'].set_linewidth(.65)
-    right.set_title('Target-wise dense-rotation interactions', fontsize=8.5)
-    fig.text(.975, .025, 'Violin: targets; point + bar: mean and 95% CI. Shaded diamond: Fresh96.',
-             ha='right', fontsize=7)
+              xticks=[-.2, 0, .2])
+    right.set_xlabel(r'Target effects $\Psi_i$', fontsize=7.2, labelpad=2)
+    right.tick_params(axis='y', labelsize=7.2, length=0, pad=4)
+    intervals.set(xlim=(-.02, .065), xticks=[0, .03, .06])
+    intervals.set_xlabel(r'Mean $\Psi$', fontsize=7.2, labelpad=2)
+    intervals.tick_params(axis='y', left=False, labelleft=False)
+    right.set_title('Target distribution', fontsize=7.2, pad=7)
+    intervals.set_title('Mean + 95% CI', fontsize=7.2, pad=7)
+    fig.text(.99, .047, 'OF: OpenFold; P: Protenix; A: AtlasFold.', ha='right', fontsize=6.5)
+    fig.text(.99, .017, 'Shaded diamond: Fresh96. Distribution and mean axes use different scales.',
+             ha='right', fontsize=6.3)
     fig.savefig(directory/'interaction.pdf')
     fig.savefig(directory/'interaction.png', dpi=200)
     plt.close(fig)
