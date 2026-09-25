@@ -1,0 +1,20 @@
+{
+  "old_lock": "v12",
+  "new_lock": "v13",
+  "unchanged_inputs": 266,
+  "new_inputs": 83,
+  "unchanged_numeric_cells": 1851,
+  "new_numeric_cells": [
+    "atlas_probe_esmc_ce",
+    "atlas_probe_esmc_permuted_ce",
+    "atlas_probe_native_view_ce",
+    "atlas_probe_primary_native_minus_esmc",
+    "atlas_probe_primary_native_minus_esmcHi",
+    "atlas_probe_primary_native_minus_esmcLo",
+    "atlas_probe_secondary_permuted_minus_esmc",
+    "atlas_probe_secondary_permuted_minus_esmcHi",
+    "atlas_probe_secondary_permuted_minus_esmcLo"
+  ],
+  "main_text_and_figures_unchanged": true,
+  "new_training_this_turn": false
+}

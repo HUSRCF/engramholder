@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "lock_sha256": "f4fd74939460ef6d92ba13d8104d8ae872809617f134b092fa85ab18702c7bf1",
+  "arm": "esmc",
+  "seed": 20260923,
+  "steps": 1536,
+  "parameters": 131520,
+  "checkpoint_sha256": "2bc3dac482701513910bc327d732e07ab074fb137f38632910d6f04782583139"
+}

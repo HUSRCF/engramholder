@@ -1580,7 +1580,7 @@ prediction coverage and the recorded lock/completion chronology. This
 score-level reproduction is distinct from rerunning BLAST searches, generating
 new coordinates or rescoring CIF files.
 
-\section{AtlasFold propagation and post-training calibration}
+\section{AtlasFold boundary checks}
 \label{app:atlas_propagation}
 On two previously observed diagnostic chains, 7hln\_A and 9qdy\_A, we recorded
 five passes for Query and three Native parents with their C-only/head-only
@@ -1617,3 +1617,23 @@ Neither establishes a benefit. All 960 predictions completed; intervals use
 20,000 target bootstrap draws after averaging three fitted seeds, with the
 Query comparison descriptive and unadjusted. These results do not establish
 information redundancy or motivate a specific alternative interface.
+
+\paragraph{Native/ESMC readout.}
+A fixed Train96/Dev8 64-bin distance probe compared native single/pair inputs plus a
+128-dimensional auxiliary view of native single features, aligned ESMC, or
+residue-permuted ESMC. Each arm used 131,520 trainable parameters, three seeds
+and 1,536 updates; the folding model stayed frozen. Final Dev8 cross-entropies
+were \result{atlas_probe_native_view_ce}, \result{atlas_probe_esmc_ce}, and
+\result{atlas_probe_esmc_permuted_ce}. The sole primary native-minus-ESMC
+improvement was \result{atlas_probe_primary_native_minus_esmc}
+[\result{atlas_probe_primary_native_minus_esmcLo},
+\result{atlas_probe_primary_native_minus_esmcHi}], with one seed mean negative.
+Intervals use 20,000 resamples of eight observed targets after seed aggregation. Aligned ESMC
+outperformed its permutation overall, but their ordering reversed in the
+prespecified close-pair subset; these unadjusted secondary comparisons do not
+replace the primary result. Fixed compression, readout capacity and optimization
+limit the inference: this does not establish ESMC redundancy or folding gains.
+Six additional ESMC Native propagation observations on the same two chains
+also retained trunk-state differences with small final structural changes.
+The supplement provides all fixed-node scores, secondary contrasts and replay
+records.

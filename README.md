@@ -1,16 +1,18 @@
 # EngramFold 证据整理仓库
 
-**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v12**，共 **1,851** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+**当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v13**，共 **1,860** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
+
+**最新 Atlas 信息读出收口：** [审阅与整合](reports/atlas_probe_integration_20260926.md)。九组 probe 的主要 Dev8 增益未建立，六个 ESMC 观测保留“状态改变、结构响应较弱”的边界；不能据此证明冗余。主文不扩展，现有附录只补一短段，[完整主次比较与记录](reproducibility/atlas_followup/complementarity/README.md)进入补充材料。旧266输入、1851数值对象不变；[当前PDF](build/feedback_v46_atlas_probe/paper.pdf)、[更新补充包](build/anonymous_atlas_probe_v46.zip)。没有新训练或新的接口承诺。
 
 **最新 Atlas 边界收口：** [整合与核验](reports/atlas_boundary_integration_20260926.md)。主文仅增一句，附录用五行表格报告两条链的传播定位及既有 Native-only 通道校准阴性结果；完整图和记录进入[补充材料](reproducibility/atlas_followup/README.md)。旧204输入、1830数值对象不变；新增62输入、21字段。复算、编译及新增表格局部检查通过；[当前PDF](build/feedback_v45_atlas_boundary/paper.pdf)、[更新补充包](build/anonymous_atlas_boundary_v45.zip)。最终篇幅和全稿验收仍留到收尾，没有新增训练或接口承诺。
 
 **最新记号修订：** [外积表示](reports/outer_product_notation_20260925.md)。decoder和残差展开统一使用列向量外积，并明确与实现一致的行优先展平。实验数值不变；编译及公式视觉检查通过。[当前PDF](build/feedback_v44_outer_product/paper.pdf)。
 
-**注入时序第一阶段已完成：** [完整MD结果与图](reports/openfold_injection_schedule_phase1_20260926.md)、[写作侧复核](reports/openfold_injection_schedule_phase1_review_20260926.md)。7,008轨迹、14,112评分、0失败；261项复算一致。主要All−First交互差+0.00268，区间跨零；First仍有正向交互，四臂绝对质量低于All。当前只归档报告，未纳入正文／v12／匿名包。
+**注入时序第一阶段已完成：** [完整MD结果与图](reports/openfold_injection_schedule_phase1_20260926.md)、[写作侧复核](reports/openfold_injection_schedule_phase1_review_20260926.md)。7,008轨迹、14,112评分、0失败；261项复算一致。主要All−First交互差+0.00268，区间跨零；First仍有正向交互，四臂绝对质量低于All。当前只归档报告，未纳入正文／v13／匿名包。
 
 **第二阶段执行身份：**按执行侧最新授权恢复72组；第一波36含全部Native与R1，第二波36补R2/R3。前轮只读快照（本轮未查队列）：HPC3公共校准652881运行，正式第一波652882等待校准；HPC2第二波工程12865355_0/1均已RUNNING，正式放行依验收收据。[原设计及36组预算](reports/openfold_injection_schedule_plan_20260926.md)保留此前时点，不作为当前未启动声明，也不按阶段一结果改配方。
 
-**最新独立结果审阅：** [同起点通道校准 A+B](reports/posttraining_calibration_review_20260925/interpretation.md)。33组续训、3,744次预测完成；本轮独立重建69项原比较及30项已有补充汇总。两项主要优势均未建立，OpenFold联合续训相对普通续训有次要平均收益。当前只进入审阅报告，尚未纳入正文、v12数值锁或匿名包；没有新GPU任务。
+**最新独立结果审阅：** [同起点通道校准 A+B](reports/posttraining_calibration_review_20260925/interpretation.md)。33组续训、3,744次预测完成；本轮独立重建69项原比较及30项已有补充汇总。两项主要优势均未建立，OpenFold联合续训相对普通续训有次要平均收益。当前只进入审阅报告，尚未纳入正文、v13数值锁或匿名包；没有新GPU任务。
 
 **最新补偿数值诊断：** [初值核对与短程定位](reports/compensation_numerical_diagnosis_20260925.md)。九对起点张量一致；同卡短程在第二步反传捕获差异，确定性cuDNN对照的两次八步路径一致。附录S.1区分这一局部定位与未解决的完整收益重复性；原204输入、1830分数字段不变。[当前PDF](build/feedback_v43_compensation_diagnosis/paper.pdf)供反馈。
 

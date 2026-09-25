@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "lock_sha256": "f4fd74939460ef6d92ba13d8104d8ae872809617f134b092fa85ab18702c7bf1",
+  "arm": "native_view",
+  "seed": 20260924,
+  "steps": 1536,
+  "parameters": 131520,
+  "checkpoint_sha256": "cc314ea853ffa285d221b6652d42c9a8703172703d7555647522fb4effbcb475"
+}

@@ -21,3 +21,10 @@ def build(number, tex, save_rows):
             number('atlas_cal_' + name + suffix, 'atlas_posttraining_summary',
                    ['metrics', 'ca_lddt', 'contrasts', name] + field,
                    signed=True, decimals=6)
+    for arm in ['native_view', 'esmc', 'esmc_permuted']:
+        number('atlas_probe_' + arm + '_ce', 'atlas_probe_summary',
+               ['means', arm], decimals=6)
+    for name in ['primary_native_minus_esmc', 'secondary_permuted_minus_esmc']:
+        for suffix, field in [('', ['mean']), ('Lo', ['ci95', 0]), ('Hi', ['ci95', 1])]:
+            number('atlas_probe_' + name + suffix, 'atlas_probe_summary',
+                   ['comparisons', name] + field, signed=True, decimals=6)

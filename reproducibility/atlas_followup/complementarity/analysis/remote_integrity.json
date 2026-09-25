@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "fits": [
+    {
+      "name": "esmc_permuted_s20260923",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "920c495e01c0234994fc0f49c41b984079289f7d2e66d7ba24354c750bc667fb"
+    },
+    {
+      "name": "esmc_permuted_s20260924",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "447731849a39010742194b25cb2a9a1b3a2a14576bd34906e78aa3466db306f5"
+    },
+    {
+      "name": "esmc_permuted_s20260925",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "fd7e2186a6ecf04922e9ec1dc30611056941925bb130a976c63c9c5cfd5c9621"
+    },
+    {
+      "name": "esmc_s20260923",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "2bc3dac482701513910bc327d732e07ab074fb137f38632910d6f04782583139"
+    },
+    {
+      "name": "esmc_s20260924",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "396ed83ef693a455bb7b6918a41d99cd5af513faf0fb274a37b4631588a34079"
+    },
+    {
+      "name": "esmc_s20260925",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "613315a384f97edcc38d9d22af67a1116defa9eaec4609068e6f1ef184d311b5"
+    },
+    {
+      "name": "native_view_s20260923",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "735867ad5bbcf88878691a186d0f44273b93e0de16bca50742700cdb74796dbd"
+    },
+    {
+      "name": "native_view_s20260924",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "cc314ea853ffa285d221b6652d42c9a8703172703d7555647522fb4effbcb475"
+    },
+    {
+      "name": "native_view_s20260925",
+      "optimizer_steps": [
+        1536
+      ],
+      "steps": 1536,
+      "finite": true,
+      "checkpoint_sha256": "1585a6f6c572998e6a3b2e5f9d73e2ad95dc20ded61cf817e639527d55eb0ad7"
+    }
+  ],
+  "feature_targets": 104,
+  "label_targets": 104,
+  "esmc_full_forwards": 10,
+  "code_lock_sha256": "f4fd74939460ef6d92ba13d8104d8ae872809617f134b092fa85ab18702c7bf1"
+}

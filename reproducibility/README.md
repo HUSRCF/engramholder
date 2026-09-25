@@ -5,10 +5,11 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v12 input lock contains
-266 source files and 1,851 generated numerical fields. All 1,830 previously
+full-inference source/norm cells and contrasts. The active v13 input lock contains
+349 source files and 1,860 generated numerical fields. All 1,851 previously
 integrated values, display formats and scientific source mappings are unchanged;
-21 fields add the bounded Atlas propagation table and Native-only calibration.
+nine fields add the bounded Atlas native/ESMC readout study. The v12 additions
+cover the Atlas propagation table and Native-only calibration.
 The v11 additions cover Protenix Fresh192 and the same-seed compensation repeat. The earlier additions
 cover compensation (including explicitly post-hoc target-distribution summaries),
 signed permutations and developmental checkpoint studies.
@@ -57,7 +58,12 @@ against the generated keys; an unknown key also raises a LaTeX PackageError.
 The [Atlas boundary bundle](atlas_followup/README.md) retains all 20 two-chain
 propagation instances, unrounded coordinates and the full propagation figure.
 Its verifier rebuilds recorded state-summary aggregations, prediction-distance
-changes and 18 calibration contrasts from 960 scores. Neither hidden-state
+changes and 18 calibration contrasts from 960 scores. The subsequent
+[native/ESMC readout bundle](atlas_followup/complementarity/README.md) adds nine
+fixed-budget probes on observed Train96/Dev8, all six primary/secondary CE
+contrasts and six ESMC propagation observations. The sole all-pair primary
+comparison does not establish an incremental benefit; permutation and subset
+comparisons do not prove information redundancy or folding gains. Neither hidden-state
 differences nor Native-only calibration establish a rotation interaction or an
 explanation for absent adaptation gains.
 
