@@ -60,7 +60,7 @@ def draw_adapter(directory):
 
 def draw_interactions(directory, cells, data):
     val = lambda k: cells[k]['value']
-    # Keep every completed panel/configuration, including the new-target null result.
+    # Preserve both new-target studies; do not replace the OpenFold boundary.
     specs = []
     for prefix, label in [('inter', 'OpenFold 96 / ESM2'),
                           ('a_e', 'OpenFold 384 / ESM2'), ('a_c', 'OpenFold 384 / ESMC')]:
@@ -77,11 +77,12 @@ def draw_interactions(directory, cells, data):
             specs.append(('AtlasFold 96 / '+('ESM2' if feature == 'e' else 'ESMC')+' / '+panel,
                           f'dh_atlas_{short}_{feature}_pair_interaction', '#fc8d62', False))
     specs.append(('OpenFold 96 / ESM2 / Fresh96', 'fresh_ca_lddt_interaction', '#8da0cb', True))
-    assert len(specs) == 16
+    specs.append(('Protenix 384 / ESMC / Fresh192', 'p192_pair_interaction', '#66c2a5', True))
+    assert len(specs) == 17
     # Match the manuscript's 5.5-inch line width: these font sizes survive
     # inclusion unchanged. Distribution and inferential intervals need separate
     # horizontal scales, with exactly aligned rows and shared labels.
-    fig = plt.figure(figsize=(5.5, 4.05))
+    fig = plt.figure(figsize=(5.5, 4.15))
     left = fig.add_axes([.075, .44, .27, .42])
     right = fig.add_axes([.585, .17, .19, .76])
     intervals = fig.add_axes([.825, .17, .165, .76], sharey=right)
@@ -125,7 +126,7 @@ def draw_interactions(directory, cells, data):
         for part in cell['field_path'][:-1]:
             obj = obj[part]
         values = np.asarray(obj['per_target'], dtype=float)
-        assert values.shape == (48 if label.endswith('/ L48') else 96,)
+        assert values.shape == (192 if label.endswith('/ Fresh192') else 48 if label.endswith('/ L48') else 96,)
         assert np.isfinite(values).all() and abs(values.mean()-val(key)) < 1e-12
         distributions.append(values)
         if np.ptp(values) > 0:
@@ -147,7 +148,7 @@ def draw_interactions(directory, cells, data):
         assert -.02 <= lo <= m <= hi <= .065
     for axis in [right, intervals]:
         axis.axvline(0, color='#8f99a5', linewidth=.65, linestyle='--', zorder=1)
-        for boundary in [9.5, 4.5, .5]:
+        for boundary in [10.5, 5.5, 1.5]:
             axis.axhline(boundary, color='#d4dae1', linewidth=.55, linestyle=':', zorder=1)
         axis.tick_params(axis='x', labelsize=7, colors='#66717e', length=3)
         axis.spines['left'].set_visible(False)
@@ -169,7 +170,7 @@ def draw_interactions(directory, cells, data):
     right.set_title('Target distribution', fontsize=7.2, pad=7)
     intervals.set_title('Mean + 95% CI', fontsize=7.2, pad=7)
     fig.text(.99, .047, 'OF: OpenFold; P: Protenix; A: AtlasFold.', ha='right', fontsize=6.5)
-    fig.text(.99, .017, 'Shaded diamond: Fresh96. Distribution and mean axes use different scales.',
+    fig.text(.99, .017, 'Shaded diamonds: new targets. Distribution and mean axes use different scales.',
              ha='right', fontsize=6.3)
     fig.savefig(directory/'interaction.pdf')
     fig.savefig(directory/'interaction.png', dpi=200)

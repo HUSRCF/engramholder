@@ -29,9 +29,10 @@ This closure does not guarantee matching AdamW trajectories
 
 Fixed-budget studies find greater Factor rotation sensitivity in several
 Protenix recipes and OpenFold Train96/ESM2 \citep{ahdritz2024openfold} on observed
-panels. OpenFold Train384 and AtlasFold do not establish the interaction;
-neither does the fixed OpenFold Train96 study's new-target primary test on
-Fresh96. Native Factor outperforms G+ in Protenix, whereas G+ wins some OpenFold
+panels. Fixed Protenix/ESMC models also establish the primary interaction on
+192 prospectively locked new targets. OpenFold Train384 and AtlasFold do not
+establish it; neither does the fixed OpenFold Train96 study on Fresh96.
+Native Factor outperforms G+ in Protenix, whereas G+ wins some OpenFold
 comparisons. Thus direction effects, cross-head interactions and practical head
 competitiveness answer different questions.
 
@@ -40,9 +41,10 @@ spectra at a common state; across heads, the initial function, approximate
 parameter count and training recipe are matched, but Jacobians and effective
 learning scales are not. The interaction therefore compares two complete
 parameterizations, without establishing an expressivity hierarchy. A shared
-orthogonal compensator provides useful average mitigation for two preselected
-OpenFold rotations; separately, teacher-update reconstruction fails to predict
-retraining costs.
+orthogonal compensator improves two preselected OpenFold rotated arms in both
+the original execution and a same-seed retraining repeat, but its greater
+benefit over Native is established only in the original execution.
+Teacher-update reconstruction separately fails to predict retraining costs.
 
 This controlled empirical study contributes a native-operator residual,
 trained four-cell comparisons, and a within-Factor compensation intervention.

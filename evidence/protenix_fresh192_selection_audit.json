@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "utc": "2026-09-25T09:57:12.178738+00:00",
+  "selection_lock_sha256": "7a343c591a3f94c085d6659585d2ddc8360edeb0c55b1be0441d0875ab64ba84",
+  "n_targets": 192,
+  "quota": [
+    48,
+    48,
+    48,
+    48
+  ],
+  "length_range": [
+    128,
+    383
+  ],
+  "known_id_pdb_sequence_overlap": 0,
+  "independently_rechecked_searches": 1195,
+  "all_recorded_hsp_and_database_hashes_pass": true,
+  "no_predicted_scores_used": true,
+  "family_isolation": false
+}

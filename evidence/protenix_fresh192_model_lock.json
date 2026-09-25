@@ -1,0 +1,973 @@
+{
+  "schema": "engramfold.protenix_fresh192.models.v1",
+  "base": {
+    "protenix_mini_default_v0.5.0.pt": {
+      "path": "/media/PM982/onestepfold/protenix_stage0_pkg/v1_1/runtime/checkpoint/protenix_mini_default_v0.5.0.pt",
+      "sha256": "3803340c5d9958c038e799ddd2b53b532db21855f261592ad455a5f003791f81"
+    }
+  },
+  "adapters": {
+    "C_factor_native_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_native_s20260923/task_1536.pt",
+      "sha256": "e8e86d990c83d5e81057be7bbe1f5e234379f5b9c3f98b4ba703ae973b3cf97c",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": null,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_native_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "f7dbebe61b22c4202764b9be6b5994b9b8b09df7dd4bfec69609b2e386522ec6",
+      "training_report_sha256": "697ab2cb79f6faf2fb63295af2e44e3efb793e49f1c8983b2c68010631086190",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261001_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261001_s20260923/task_1536.pt",
+      "sha256": "7ba51084373a87c5472d6b5938b18e2af5b69e0290d745136ec244c1ccaf1b68",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261001,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261001_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "6ec27ee633295e257154e8f92a44d60058e95a330f8cde3ec71c03361422b521",
+      "training_report_sha256": "16f249eb30507d51dddb66c2a2f8ca823dc545f44a0f33bafaf582e2fe482d3c",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261002_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261002_s20260923/task_1536.pt",
+      "sha256": "63eb59fdeaf1d88c779fc1c4c84e1d429a1528c396c61a15018189348d58d805",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261002,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261002_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "d1bd1cfab97c60ee9d1011a827b1b5232c8e4889e57310e4f8581441d3a1a8b0",
+      "training_report_sha256": "931ff7dbea10286e955680beeebcffd76dc4215a1768d314789d62611a9b0afe",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261003_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261003_s20260923/task_1536.pt",
+      "sha256": "61247e252e494e7dea1b11df4ef3920e31b88f1d41b5c5c1ea9636f9ba09c01f",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261003,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261003_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "bcf28de71e5667e750908b30fdf796c7544b9616a7d38d685e2864fb6336d7ed",
+      "training_report_sha256": "02437829d42dc5636a26861e80fec9dfad19757fb3f1c25ce35526ce44f0fcd2",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_native_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_native_s20260924/task_1536.pt",
+      "sha256": "76fe9ef084fe09694c2b7a22c20e7c798a45de7c25fe01869a873ac441f69d51",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": null,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_native_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "1a6709c8424de0a110614502738bb36d5e5bdad4b95178771f07a71c838a6e5c",
+      "training_report_sha256": "19be379fa6270ea11b0c4ade750c32073aa7790adc1cda8151f5561a3a219bd2",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261001_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261001_s20260924/task_1536.pt",
+      "sha256": "75efde2d210d4847c9c118ad0507b6407dbf4aac44a0302a9538787a82f5b612",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261001,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261001_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "b84e751d92248f87518788968c1dc6e93e1c4236b0ca96c7bc9d72bd50c45b05",
+      "training_report_sha256": "782a745ac40059edb53affdf73c6023552f6ee153c47f0d789d929c867984908",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261002_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261002_s20260924/task_1536.pt",
+      "sha256": "f44e1b3214e9ba30f9b3456a625dea4c9fd9bf32f98f2f948f3299b78194feaa",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261002,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261002_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "4bc7ad018b70814f5e67e1f9219068c07db4a0f78d264b73abb6f0c20be345b3",
+      "training_report_sha256": "7869ee033fea258eeb45fe947a2e48bdbe001702940a30ad7c6ff84945b9c3e5",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261003_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261003_s20260924/task_1536.pt",
+      "sha256": "974e3ecca389fc4466a151964e8e14d356e4bc78af3343f7ea4626124b1508a0",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261003,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261003_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "a806afcfafae079dba63ac50b8aa92071c9205790272cbbb72a491944a921186",
+      "training_report_sha256": "9349c2165d48f7e25d38a223731686a005898117071a5b565374941853512d1c",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_native_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_native_s20260925/task_1536.pt",
+      "sha256": "4f465040fdf9ebfa04350496fa17fe22bb6603e78d2bd30fe7d962ec80b517df",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": null,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_native_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "06ccfa91ead3995795ab942ea46e63cc3199015b609946e44a16e7fdf1f0c21b",
+      "training_report_sha256": "9ec60da11a3be9ec85bef37a7f6ed6896e9534c85bd58968e60e813a1fd5c4e5",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261001_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261001_s20260925/task_1536.pt",
+      "sha256": "7140cfe3a13333932f7fda51cdfb89da441d8648fac5b0eed65014cae0acbe68",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261001,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261001_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "2251d379393123524e09e28f4a8f140da5eb0d3f73629dcfa43e321f4eb02985",
+      "training_report_sha256": "520d651421c8c484cafb202e56c266d0e2b56b543b8dfd951d77c41b7780d358",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261002_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261002_s20260925/task_1536.pt",
+      "sha256": "c3fa006846a02ed47c162c03561ed2530ca092ae314cddd40b22df2b09498b04",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261002,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261002_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "9d9bfefff7e394a40b8d3c07ab91cbb94ccbe6db5278de302fdbb16e7328dbe4",
+      "training_report_sha256": "87f9e8f16089867c76d05ce828fe403cad8922f6c4666235651a534ae9ea3435",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_factor_r20261003_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_factor_r20261003_s20260925/task_1536.pt",
+      "sha256": "7d2432b0415b26648ccc0afa222a3b982fa004e0b470dfe5587235f1ee122078",
+      "step": 1536,
+      "geometry": {
+        "kind": "factor",
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "factor",
+      "rotation_seed": 20261003,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_factor_r20261003_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "02217db286684f353faea0eef6259c69ce3aa46bc7fd2839886cf646e2a058e3",
+      "training_report_sha256": "42c68fb4458bc9a81d71de280a25117dd43b480bcd17a7bd26944576f196036e",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_native_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_native_s20260923/task_1536.pt",
+      "sha256": "7c3148f75db4798e8915e0ccea0b1e89d56f5f3b3126f8c4578e857787f7a97b",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": null,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_native_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "7ac7ccb40a44d7b6c299cd8c8c1acb5c9ec94b4070533c08ab6abac09a47bafb",
+      "training_report_sha256": "532001c17c1017349e53a0193f64fa569d8ddf8e872d810d9fa76b3f88e1c12b",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261001_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261001_s20260923/task_1536.pt",
+      "sha256": "140dff8b04010d433dc016838f34ad2dffb432a6ff20d44b434a5204f586898e",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261001,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261001_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "37997ffa1a1dbc741f652b70c78e499b05d4f46769b3c854ad62a45860385044",
+      "training_report_sha256": "87dcf7527470fb4675c7c1b0e98a3e5aa0edbabef474faa6a94ffa091a97479b",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261002_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261002_s20260923/task_1536.pt",
+      "sha256": "657d7c8506812007f54317e8738663d65ddc583461563bb81ca951656ebdcc6b",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261002,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261002_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "0a901e2eed8e5c3069a5736774d3d23fa8f4784a765d97de58fcc4e7893e3e2c",
+      "training_report_sha256": "2c9eb2ffabc5e27577e8e5321f929f10c8bdebf381bbe0e3a71f58cba5d27493",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261003_s20260923": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261003_s20260923/task_1536.pt",
+      "sha256": "25be49fe5afae5102683807dcfae1ec914055a09a04105b7ed23c87f2f4e0f0a",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      },
+      "seed": 20260923,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261003,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261003_s20260923_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "c6e1a9e0732ad6530a0b59f9c4d1291b06d5b746533bcc4a4f9c89a316d4e1b4",
+      "training_report_sha256": "2bb6678b895bb8f8f253f9f51971ef4ecdf45bc0cbc8ff24db8d611022d4792d",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_native_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_native_s20260924/task_1536.pt",
+      "sha256": "5ad3a0139166c422a52ab0b9e12749dbff954b7bab126fc08b079176f87616c8",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": null,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_native_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "9948ed74c7342fea4d62fce87c234a23f02379efd820186f1e50614a2a9879e7",
+      "training_report_sha256": "cd44ebfbe13ff0de2fe38b1c365d7a713dbd6577658c92528ac28dca1d89d0fc",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261001_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261001_s20260924/task_1536.pt",
+      "sha256": "065a6d6bc136821524310a19baaf11d9a55e3d670e43c202bb74d18111e1228a",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261001,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261001_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "0da2a826041212860596e37acc04d0914f6ec16aec3fc483f1a74ed2370d2ba9",
+      "training_report_sha256": "dc5b9a46d2b1798291e826583e2cfd24f8b4f9849370fd12e505523a5e8a7fa7",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261002_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261002_s20260924/task_1536.pt",
+      "sha256": "159e26dcb433b46c4b68eca8d3cee0fffeba003198f0d8633503ffbbf7ca74d1",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261002,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261002_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "dee0bb5de152b363cfcd6e4da1f63a9c077b2b7018f149519f9c7fecdc601cc2",
+      "training_report_sha256": "f0a83e77561fb721e416d3c3ed12060be315358fdf1bfd51a1617f4a652f1086",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261003_s20260924": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261003_s20260924/task_1536.pt",
+      "sha256": "4777e6f0749cdf1c86a23da231b06716396d8fbf9b1f2d88349ab024d5a984df",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      },
+      "seed": 20260924,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261003,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261003_s20260924_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "b170527486de40ba926f97dcc8de4a73b857ec90da5d74685863f87d514808ec",
+      "training_report_sha256": "6488fd9cdb9c949fec8b73d7e35280c854fee5f122c48a5ff9d623d650f42cb3",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_native_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_native_s20260925/task_1536.pt",
+      "sha256": "c119aed9692967fd078818c409f5a2f78b5ff4a82ec6a5f862b345c76d046344",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": null,
+        "rotation_sha256": "66957d69fd7a0016b2ee4a95af26a8f7b93a932819cba34db82effad451f08fa"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": null,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_native_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "8de3f9fa07dd02060f3240576e8155cbc3f9361b383bcf9d3ff9a3aab06d46f2",
+      "training_report_sha256": "f51bed83d69e11c5616a7c3da4f2edb98eeabf59bcbd0196ec4b5ac24e145f3c",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261001_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261001_s20260925/task_1536.pt",
+      "sha256": "d107ac7169f3ec00096e6435bd8cf9baca7783cbadd7d96c6e833fb22dc04839",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261001,
+        "rotation_sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261001,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261001_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "0b161de6eedcd67df5ddb70e425259d00ce89bf7e0fbc9599e72ff70e8e79e5b",
+      "training_report_sha256": "20e391ce97ff19ac45951eb5e71aef619f66ce4368f56501316d02850b36de17",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261002_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261002_s20260925/task_1536.pt",
+      "sha256": "c9160845ed2f89b7ef8b2ef129ffb9cea811c1d9942c4d80ca15ba1c3e5b0281",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261002,
+        "rotation_sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261002,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261002_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "07a2c154d397deb77f7cde53465223e8beb2c5f8c867e4433577a69a88027c9c",
+      "training_report_sha256": "d14a547f9b82e53625eff9e054ddf043fe376bc8e4703d124310c16dedcf8537",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    },
+    "C_generic_plus_r20261003_s20260925": {
+      "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/formal/protenix/C_generic_plus_r20261003_s20260925/task_1536.pt",
+      "sha256": "6ae7087827619f1e10ac54d0661f0f469a2ce089a163a0aa7f5fe699e7d6d982",
+      "step": 1536,
+      "geometry": {
+        "kind": "generic_plus",
+        "order": "full",
+        "rotation_seed": 20261003,
+        "rotation_sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3"
+      },
+      "seed": 20260925,
+      "train_size": 384,
+      "kind": "generic_plus",
+      "rotation_seed": 20261003,
+      "source_evaluation_lock": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/evaluation_locks/C_generic_plus_r20261003_s20260925_confirm96_formal.json",
+      "source_evaluation_lock_sha256": "5029d8d25be49712fbb8036b1de1c37db9641b05676c3d50acaed76118092dfd",
+      "training_report_sha256": "523be365743f4b035a5669833c642bd58be0b290392ab06bcea870e6f7027445",
+      "common_sha256": "2b9297e27faa31a531556d4267faf3a6372b6f34e991acc5b9ee4cdd8dd1538f",
+      "depth": 508.5,
+      "trained_provenance": {
+        "model_name": "ESMC-600M",
+        "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+        "input_dim": 1152,
+        "layer": 36,
+        "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+        "feature_spec": {
+          "bos_removed": true,
+          "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+          "dtype": "bfloat16",
+          "eos_removed": true,
+          "feature_variant": "final",
+          "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+          "hidden_dim": 1152,
+          "model_id": "biohub/ESMC-600M",
+          "num_layers": 36
+        }
+      }
+    }
+  },
+  "systems": [
+    "query",
+    "C_factor_native_s20260923",
+    "C_factor_r20261001_s20260923",
+    "C_factor_r20261002_s20260923",
+    "C_factor_r20261003_s20260923",
+    "C_factor_native_s20260924",
+    "C_factor_r20261001_s20260924",
+    "C_factor_r20261002_s20260924",
+    "C_factor_r20261003_s20260924",
+    "C_factor_native_s20260925",
+    "C_factor_r20261001_s20260925",
+    "C_factor_r20261002_s20260925",
+    "C_factor_r20261003_s20260925",
+    "C_generic_plus_native_s20260923",
+    "C_generic_plus_r20261001_s20260923",
+    "C_generic_plus_r20261002_s20260923",
+    "C_generic_plus_r20261003_s20260923",
+    "C_generic_plus_native_s20260924",
+    "C_generic_plus_r20261001_s20260924",
+    "C_generic_plus_r20261002_s20260924",
+    "C_generic_plus_r20261003_s20260924",
+    "C_generic_plus_native_s20260925",
+    "C_generic_plus_r20261001_s20260925",
+    "C_generic_plus_r20261002_s20260925",
+    "C_generic_plus_r20261003_s20260925"
+  ],
+  "parent_execution_lock_sha256": "dff9f9da14da39100e45d65b1449910c25370e563556bedf8f82e343ea974913",
+  "feature_root": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/features/esmc",
+  "feature_index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+  "feature_provenance": {
+    "model_name": "ESMC-600M",
+    "checkpoint_sha256": "8f0f074626b8f97c6239d32b0bebd5de0c7a8fe081b92e3a5d8c99ae8abe5a6e",
+    "input_dim": 1152,
+    "layer": 36,
+    "index_sha256": "2c60bdbc00eac229b1f1f086fa7e610631162606ba28905384328aa0eded3f44",
+    "feature_spec": {
+      "bos_removed": true,
+      "code_revision": "bf343ba264b650dff7a073643725f9aaa1fdbe8d",
+      "dtype": "bfloat16",
+      "eos_removed": true,
+      "feature_variant": "final",
+      "hf_revision": "28aed46fcaf217dfa59f78a589bb449aa3ae5d98",
+      "hidden_dim": 1152,
+      "model_id": "biohub/ESMC-600M",
+      "num_layers": 36
+    }
+  },
+  "selection_origin": "chosen from already observed historical configuration; fixed all 24 checkpoints",
+  "new_training": 0
+}

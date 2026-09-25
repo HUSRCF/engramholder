@@ -1,0 +1,108 @@
+{
+  "schema": "engramfold.E2_full_retraining.repeat.v1",
+  "created_utc": "2026-09-25T07:04:22.273974+00:00",
+  "parent_root": "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924",
+  "output_root": "/data/user/shuang886/Folding/engramfold/e2_retraining_20260925",
+  "parent_execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "parent_e2_release_sha256": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+  "parent_e1_records_sha256": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+  "parent_e2_analysis_sha256": "ab484a919f095298ae970e23efcdd51c0bcce91d880a3b4f0c58773b685cf1cc",
+  "directions": [
+    "I",
+    "r20270107",
+    "r20270104"
+  ],
+  "runs": [
+    {
+      "name": "I_C_s20260923",
+      "rotation_id": "I",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "I_C_s20260924",
+      "rotation_id": "I",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "I_C_s20260925",
+      "rotation_id": "I",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270107_C_s20260923",
+      "rotation_id": "r20270107",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270107_C_s20260924",
+      "rotation_id": "r20270107",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270107_C_s20260925",
+      "rotation_id": "r20270107",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270104_C_s20260923",
+      "rotation_id": "r20270104",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270104_C_s20260924",
+      "rotation_id": "r20270104",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    },
+    {
+      "name": "r20270104_C_s20260925",
+      "rotation_id": "r20270104",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_plus_shared_C"
+    }
+  ],
+  "protocol_sha256": "647ba7fb30d1fd7497024d4d10540343f2377dad9df209c0dbad0fd7c2ea47f5",
+  "files": {
+    "cpu.sh": "2e0fd976e2b020afa3d6db3f2eedbb330c7b38780523c52dbafd6a14721f85a2",
+    "engineering.py": "21329f905ed36cbdd7970a4572f79e162cc144d9276abec26896c0bf28def1b7",
+    "gate.py": "5e69f49acadb5244da68fe736a8530f4d4e732ac9bdd9a9eed9dd5ceab756868",
+    "job.sh": "21b3d34deac620dea5745041f69692e09198ae757dd32c8be1499d9e5e56bdd0",
+    "run.py": "5e4c92d622328ff4991401c070542646a8cca9d21404f4ae2918678a2e80c119",
+    "score.py": "261d4e69d4d7a368ceb8735bf1d12e7f0efadc93ad1f6a78ce270c37434aa98e",
+    "support.py": "00910ba5c4785d816b737b1cdafd3cd70d2fb4f375aa4fff81391f0c4809e3ba"
+  },
+  "engineering": {
+    "conditions": 6,
+    "updates": 384,
+    "forward_relative_max": 1e-06,
+    "loss_atol": 1e-06,
+    "loss_rtol": 1e-06,
+    "restore_state": "exact",
+    "full_trajectory_equivalence_required": false
+  },
+  "formal": {
+    "fits": 9,
+    "updates": 13824,
+    "predictions": 864,
+    "initialization": "from_original_seed_zero_output_identity_C",
+    "baseline": "fixed_original_E1"
+  },
+  "environment": "reuse_hash_validated_parent_env_not_clean_room",
+  "fresh_plm_features": false
+}

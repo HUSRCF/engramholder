@@ -28,7 +28,7 @@ for name in ['iclr2027_conference.tex','iclr2027_conference.sty','iclr2027_confe
 for directory in ['sections','appendices','figures','generated','reproducibility']:
     for p in (ROOT/directory).rglob('*'):
         if p.is_file() and '__pycache__' not in p.parts:write(p,DEST/p.relative_to(ROOT))
-lockpath=Path('notes/writing_branch_20260922/paper_sources.v10.lock.json')
+lockpath=Path('notes/writing_branch_20260922/paper_sources.v11.lock.json')
 inputs=json.loads((ROOT/lockpath).read_text())
 for name in inputs:write(ROOT/name,DEST/name)
 # Only non-scientific identifying strings are redacted; revalidate numerics below.
@@ -38,14 +38,14 @@ lock={name:hashlib.sha256((DEST/name).read_bytes()).hexdigest() for name in inpu
 (DEST/lockpath.parent/'bundled_source_provenance.json').write_text(json.dumps({name:dict(original_sha256=inputs[name],bundled_sha256=lock[name]) for name in inputs},indent=2)+'\n')
 write(ROOT/'scripts/build_paper_assets.py',DEST/'scripts/build_paper_assets.py')
 write(ROOT/'scripts/verify_openfold_esmc_A.py',DEST/'scripts/verify_openfold_esmc_A.py')
-for name in ['verify_diamondhill_fourcells.py','diamondhill_paper_assets.py','paper_figure_layouts.py','verify_e1_prediction.py','verify_e2_intervention.py','verify_signed_and_curves.py','completed_controls_assets.py','verify_anchor_intervention.py','anchor_intervention_assets.py']:
+for name in ['verify_diamondhill_fourcells.py','diamondhill_paper_assets.py','paper_figure_layouts.py','verify_e1_prediction.py','verify_e2_intervention.py','verify_signed_and_curves.py','completed_controls_assets.py','verify_anchor_intervention.py','anchor_intervention_assets.py','verify_protenix_fresh192.py','verify_e2_retraining.py','latest_completed_assets.py']:
     write(ROOT/'scripts'/name,DEST/'scripts'/name)
 write(ROOT/'scripts/analyze_openfold_followups.py',DEST/'scripts/analyze_openfold_followups.py')
 write(ROOT/'tests/test_numeric_keys.py',DEST/'tests/test_numeric_keys.py')
 write(ROOT/'tests/test_openfold_followups.py',DEST/'tests/test_openfold_followups.py')
 write(ROOT/'tests/test_single_prediction_score.py',DEST/'tests/test_single_prediction_score.py')
 write(ROOT/'tests/test_e1_prediction.py',DEST/'tests/test_e1_prediction.py')
-for name in ['test_e2_intervention.py','test_signed_and_curves.py','test_anchor_intervention.py']:
+for name in ['test_e2_intervention.py','test_signed_and_curves.py','test_anchor_intervention.py','test_protenix_fresh192.py']:
     write(ROOT/'tests'/name,DEST/'tests'/name)
 (DEST/'README.md').write_text((DEST/'reproducibility/README.md').read_text())
 source_manifest=json.loads((DEST/'reproducibility/source_manifest.json').read_text())
@@ -59,7 +59,7 @@ subprocess.run([sys.executable,str(DEST/'tests/test_numeric_keys.py')],check=Tru
 subprocess.run([sys.executable,str(DEST/'tests/test_openfold_followups.py')],check=True,cwd=DEST)
 subprocess.run([sys.executable,str(DEST/'tests/test_single_prediction_score.py')],check=True,cwd=DEST)
 subprocess.run([sys.executable,str(DEST/'tests/test_e1_prediction.py')],check=True,cwd=DEST)
-for name in ['test_e2_intervention.py','test_signed_and_curves.py','test_anchor_intervention.py']:
+for name in ['test_e2_intervention.py','test_signed_and_curves.py','test_anchor_intervention.py','test_protenix_fresh192.py']:
     subprocess.run([sys.executable,str(DEST/'tests'/name)],check=True,cwd=DEST)
 subprocess.run([sys.executable,str(DEST/'reproducibility/operator_smoke.py')],check=True,cwd=DEST)
 subprocess.run([sys.executable,str(DEST/'reproducibility/compensation/smoke.py')],check=True,cwd=DEST)

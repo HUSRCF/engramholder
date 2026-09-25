@@ -104,6 +104,31 @@
     "evidence/e3_anchor_references.json": "e20afad04b45a8fd6573d55a7fb233218d7b7a5101a556d39a7725ca5716edc8",
     "evidence/e3_anchor_engineering_amendment.json": "a25cc565c245ae69386797e7acc675dd6afe4038d1c33f13e80008da2cad0f34",
     "evidence/e3_anchor_resume_diagnosis.json": "436d01f0574943aaf35d67d1892df92e558b9512e8693c936878bee74ee40572",
+    "evidence/protenix_fresh192_summary.json": "4dac76b11dfd8aaa584f1c44ee56795a8f3f1f51f831b2f573c9a7a36cbd8edf",
+    "evidence/protenix_fresh192_records.json": "c1a32c387e535dad806e68455e64717171a2e03f0212dbd7e29bb12f64fb4447",
+    "evidence/protenix_fresh192_complete.json": "800301feab00ab5d7f0f4474e5b1a3fb68235c2f7ae39c29a038b14137ab35e2",
+    "evidence/protenix_fresh192_acceptance.json": "daf04547c61004849ddd1cdf45cd08fce9270e8ae89c4d21c1fa04cb7a20901b",
+    "evidence/protenix_fresh192_model_lock.json": "1ffe5b468d2bcd891a2eb66affa5b2cc65ada910f580dfeb54e91f070340d053",
+    "evidence/protenix_fresh192_execution_lock.json": "084b55643245390e6eb5924cc86a400bf7c909f488b7300a47403dbdacd08079",
+    "evidence/protenix_fresh192_score_lock.json": "47ecab64f1ef48a19349f5e26d01afee11bd756d152a299f207eadad1f7b6231",
+    "evidence/protenix_fresh192_selection_lock.json": "7a343c591a3f94c085d6659585d2ddc8360edeb0c55b1be0441d0875ab64ba84",
+    "evidence/protenix_fresh192_inference_manifest.json": "4a138328c4f51344d300ee3b79cec284e8fda0f64628932786500b2ac6762d0c",
+    "evidence/protenix_fresh192_reference_manifest.json": "01de99984dd34735013053a07adfe588759a1b2418b0b9467c95d7daba19777a",
+    "evidence/protenix_fresh192_selection_audit.json": "50dafea17e92e36bc446b43b0091f05db7d502ef1339036e59c7a6229947f6b7",
+    "evidence/protenix_fresh192_exposure.json": "5801877f8c112916258e3976ee751f54c44f1052236175e9b2b3e7ecab4e880e",
+    "evidence/protenix_fresh192_preflight.json": "f816eeabf9cf4be0602f40d3148a76b9cd7587f98977553eb457016f4ad45738",
+    "evidence/protenix_fresh192_engineering.json": "65ecf781b8942085fa3c2d993f9d05f15e7f52c249d46367a424b59214a1bba3",
+    "evidence/protenix_fresh192_implementation_review.json": "259b6b40aa29a6a411c6b641429b5a236938f9181355828713c446ca3b5a4f9c",
+    "evidence/protenix_fresh192_prediction_completion.json": "36ec29a5a17c5ad3ef37427b88d0f2cf49731999c60c8c3d25bec52745950373",
+    "evidence/protenix_fresh192_formal_start.json": "ffa7877b56ff7dda0aee3c36e692988f12756f6b1cb532813c3f74f5e1a6903f",
+    "evidence/e2_retraining_summary.json": "3789c40720b6f0c5836e244978f8cc8c2d917613685dcbdc007e92b695786e7c",
+    "evidence/e2_retraining_records.json": "f8f863f3bf5c9a1b22db18236181b2c165936ca6ae9c9882d9f5f66a2d813ce1",
+    "evidence/e2_retraining_score_complete.json": "ac4129d49d9d3aaeedb510ce24f8f742abaf9004a30d1b4a7aa1987e4da7ac15",
+    "evidence/e2_retraining_lock.json": "20a9d5547f367ccbf808995565b2d61526400f2e526facc4bf339d9c1c9dd1e8",
+    "evidence/e2_retraining_complete.json": "e335a3cbb34fba127f957424a3a9d75a7480578c8d3ba8f18b62315652ecf175",
+    "evidence/e2_retraining_cif_audit.json": "fe3ed157b544854f2369348f05a58dd7a20ff3513101d1988630d18d35fbaba9",
+    "evidence/e2_retraining_historical_comparison.json": "fe7415ea90b360751f74feec373ead95128c36dd57c8cb8a4d6b6d8b6169a2a5",
+    "evidence/e2_retraining_engineering.json": "2a822380fda17a72bb9bd830e94ed13802e2e918d49461afd22e764049f1c6c3",
     "reproducibility/anchor_intervention/protocol.md": "f04d8995f3c4efd0efd58b7ba4ea851c3d972638251c271fffe7ce7f70e0478a",
     "reproducibility/anchor_intervention/acceptance.md": "6c89747431b4efea546145ff66e2107fed45702c3c146cb6d1a591d480f37ff1",
     "reproducibility/anchor_intervention/per_target.csv": "8896f4f1980a0a75ad82550221f82b2d9da5043a1e9e0182c660bf4e33b3aa61",
@@ -120,7 +145,65 @@
     "reproducibility/anchor_intervention/archived/run.py": "e3da14083c1bfa203709365ec3dde2f099e9e6f8fb55536bc88245c109bbeeca",
     "reproducibility/anchor_intervention/archived/scoring.py": "585b64e2bc7518f577380fdb255394dbc12b0cd8684c1febb0a54e167b6fbdbd",
     "reproducibility/anchor_intervention/archived/smoke.py": "0a11934f0b1b9bef940fedf809f534e393a0685e9ddd3f089be229de8c2e01ed",
-    "reproducibility/anchor_intervention/archived/test_query_anchor.py": "7c6c786d124de5ebc165a71bed0121e6f1482d0b26630f53651c9e7ac4536803"
+    "reproducibility/anchor_intervention/archived/test_query_anchor.py": "7c6c786d124de5ebc165a71bed0121e6f1482d0b26630f53651c9e7ac4536803",
+    "reproducibility/protenix_fresh192/README.md": "bec9d51ead08ed82206202c356dbef2dd5431cfb98a99d6e342169c4aee7725e",
+    "reproducibility/protenix_fresh192/archived/__init__.py": "25bee7e20e504c8d676d82450d5dd27b5ffe528446632aefd4db6078b894e734",
+    "reproducibility/protenix_fresh192/archived/audit_selection.py": "d0792d6cb031934721e48d22cd28af51f54e53d3c35f38d89741f21ce9970b95",
+    "reproducibility/protenix_fresh192/archived/common.py": "7ce9c2399598cc169e13a4c338aaf09ea3e0c031030e29dc3417071ee811eda0",
+    "reproducibility/protenix_fresh192/archived/dispatch.py": "270703bfac023c02074cbb3d67a38b1d5ec4253dcb95a9bd2f4d25285ce19aa0",
+    "reproducibility/protenix_fresh192/archived/predict.py": "747e7e236049c576f924ac03fc2755364ba35a5b14975902c4df5a845832d78b",
+    "reproducibility/protenix_fresh192/archived/score.py": "f6cfd27e4d8d9b119cdc88b9754afabee2f757133bdee2e13fac000ce1bfda8b",
+    "reproducibility/protenix_fresh192/archived/seal.py": "8c9fd494134c94f5256dc102cd2f8a21736431c4957fee84df69aaa14e556782",
+    "reproducibility/protenix_fresh192/archived/select.py": "c6dc3bff22bd36a1bc632f2637b1b588ff5ae83a99902f5d2be7d6d988417bf6",
+    "reproducibility/protenix_fresh192/interpretation.md": "8cf76d60d54fee92ef891b590095e903d255093e9844417065a1d71adce80322",
+    "reproducibility/protenix_fresh192/per_target.csv": "915b634dafb6461abe052aa9306ef58b9337337cd7ba7eaa2682cce4aa21476f",
+    "reproducibility/protenix_fresh192/protocol.md": "019504e6cdb7db961f8b63b56dd415f3d88aa222a43698879ff2dd78cbb8ce7b",
+    "reproducibility/e2_retraining/README.md": "eb69c756c5de074dbbf16f85fbd96909fbc21843034f41ac7670426cca4bfab7",
+    "reproducibility/e2_retraining/archived/cpu.sh": "2e0fd976e2b020afa3d6db3f2eedbb330c7b38780523c52dbafd6a14721f85a2",
+    "reproducibility/e2_retraining/archived/engineering.py": "21329f905ed36cbdd7970a4572f79e162cc144d9276abec26896c0bf28def1b7",
+    "reproducibility/e2_retraining/archived/gate.py": "5e69f49acadb5244da68fe736a8530f4d4e732ac9bdd9a9eed9dd5ceab756868",
+    "reproducibility/e2_retraining/archived/job.sh": "21b3d34deac620dea5745041f69692e09198ae757dd32c8be1499d9e5e56bdd0",
+    "reproducibility/e2_retraining/archived/run.py": "5e4c92d622328ff4991401c070542646a8cca9d21404f4ae2918678a2e80c119",
+    "reproducibility/e2_retraining/archived/score.py": "261d4e69d4d7a368ceb8735bf1d12e7f0efadc93ad1f6a78ce270c37434aa98e",
+    "reproducibility/e2_retraining/archived/support.py": "00910ba5c4785d816b737b1cdafd3cd70d2fb4f375aa4fff81391f0c4809e3ba",
+    "reproducibility/e2_retraining/protocol.md": "647ba7fb30d1fd7497024d4d10540343f2377dad9df209c0dbad0fd7c2ea47f5",
+    "reproducibility/e2_retraining/results.md": "ebb9ccfa6f9a46837dba3b346e81b67a66a28fd606921fa78d332e5ec78f3f6a",
+    "reproducibility/e2_retraining/runs/I_C_s20260923/complete.json": "047f16d08ddf45bc1d179fdc28dc8ead88939ea6daaa65ed7c51b528a8aac443",
+    "reproducibility/e2_retraining/runs/I_C_s20260923/repetition.json": "9852a5b403d2728c72742f40a4fa27646c0e148183e9acfa84a5480ee65f8448",
+    "reproducibility/e2_retraining/runs/I_C_s20260923/run.json": "9f661ad78105fb9f2bc1f9bf79d0b246b2676458729f5069c8a692a8e35c1075",
+    "reproducibility/e2_retraining/runs/I_C_s20260923/training_complete.json": "a087316160b83b178ee6f5db84d14cbb32ee637e6ce72fe875edd78e068e3931",
+    "reproducibility/e2_retraining/runs/I_C_s20260924/complete.json": "adaf7aecba269c48af8f2fc8dcbfd9869a3b0f6caa879d5f43ca0cdc0a152dd1",
+    "reproducibility/e2_retraining/runs/I_C_s20260924/repetition.json": "3cb0510d66fed7d97dc7c711c5894c2e05425522517c72a3ae9664a6f7c565a7",
+    "reproducibility/e2_retraining/runs/I_C_s20260924/run.json": "f3166eaca88c7752673e2e78cf807d5faf27322ae1e40013b20686f03c9f024e",
+    "reproducibility/e2_retraining/runs/I_C_s20260924/training_complete.json": "04e292917b91bb8ed8f9788dd364150798f2c8e8c8c94bd91c680cdc5aa3d50e",
+    "reproducibility/e2_retraining/runs/I_C_s20260925/complete.json": "31cdfa325cf9a25e2ea9ab7069bdf415db4ed0298862da00f3072eafeeab15c4",
+    "reproducibility/e2_retraining/runs/I_C_s20260925/repetition.json": "8a5215daa72e90b9f2bb6e50f88da70d16a889d26e5e42c1a726a176cfdccc7e",
+    "reproducibility/e2_retraining/runs/I_C_s20260925/run.json": "29e7bb771c0962ca00435a2dbff69c83556efa5fad5d50b38241dc0c89b670d1",
+    "reproducibility/e2_retraining/runs/I_C_s20260925/training_complete.json": "f34ca6634476580a4cd891b170ced107a5af73a2dafe984a128d53fb0fdf0b5e",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260923/complete.json": "5ef5dac4b3de263f6fc80e16f39fa118a8350943c9294031c1d7c04f5e0e3341",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260923/repetition.json": "8cc089d44141cde46bbde70c8a8f921518327b695676ea386514fe082c06eb14",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260923/run.json": "25f5bed15ae87706f836bf79067b54e15b36f9bb680792ae59181a6e29ef708c",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260923/training_complete.json": "4eefcf84045497a545e4385d2b12f969304988629e109678751cf0922fe827fc",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260924/complete.json": "1541293180e799c99b868d733caf1fc2d79c35a727a5276ee10cbc4049c79e94",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260924/repetition.json": "ba4e376f80b9edd4eed2d50384c3e761fd3d0d06ca17c0fa04525c8dfa5f7fc9",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260924/run.json": "0eec6d21b756d17af1a16a689c1722cd7e802093ca2cc8686ff269c830dd612f",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260924/training_complete.json": "1f278360c96051d1c4f1f6460f7fd5e348afa7aa60cd6027c9fb0c77134a8665",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260925/complete.json": "4bf95f3e3f89e7cfd6ee81eaaab0df17875a062553ed610e41acb6d607564de8",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260925/repetition.json": "53fd2e82d4d6bd77f94a6d4fd4aa9080db934999a98fe5065c3a480050d82a37",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260925/run.json": "5b7c2f7da9d6a2578f135f2e81a42b725fd2f6f4da24cb80c9ffedaebeff5dae",
+    "reproducibility/e2_retraining/runs/r20270104_C_s20260925/training_complete.json": "089c054174e9d53713e43b299205e558925eb19b6c83c6cb6bdb3f55712ba3eb",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260923/complete.json": "61556191e4a281fe9151e1796b00d67fd8a4836109980508e62258da797b5a90",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260923/repetition.json": "64a02d499e6006f008d4a628fa6ad21d65928e712ba367a8c4144e7bfc1c51b6",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260923/run.json": "ca59994be561f7eda03e64d4a37c68f1716d229d77724a7a304b918eb5cb02d8",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260923/training_complete.json": "6bc6482ed290642732877684f75d459fdd869c03ae870306e2483a976e3addf1",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260924/complete.json": "7a7678190be72770e8661a55a052f5937cd8ae2382b2f9dd3ffa3a5e0c870a89",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260924/repetition.json": "8fdad7368fdb2fb6b40979ae41b425a4ed57af8787e6a0706655d604eb8d80c5",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260924/run.json": "4a1d0af91fd41d8b5feb5ebcc5509aa7c0c9d11c529be003b7822558131508ca",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260924/training_complete.json": "f3da33bf40d8d44b01bc3c024a788ffbea24baecf7cb7d0bacea3b0650180c98",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260925/complete.json": "828def0956d29306afc46791370a5f8a64f443477e250c41b4c0c24e439d3d71",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260925/repetition.json": "184d12a7fddda4bda09ef28910289cdf73e67cececeae5af0d8bc8ddb05ed08e",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260925/run.json": "bfcc78a1ed5b418424f24f4f5fec7f1f1e0fb0252023d0c972d56c6a4e0f19cd",
+    "reproducibility/e2_retraining/runs/r20270107_C_s20260925/training_complete.json": "1c2dcede62e288e606d5183ff90ff2b65915fff7633a9bd09411a691b259fb0d"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -24377,6 +24460,2811 @@
       "operation": "identity",
       "value": 0.4843629732360075,
       "formatted": "0.4844"
+    },
+    "p192_pair_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "four_cell_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.39116416332388115,
+      "formatted": "0.3912"
+    },
+    "p192_pair_factor_native": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "four_cell_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.8281373031578751,
+      "formatted": "0.8281"
+    },
+    "p192_pair_factor_rotated": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "four_cell_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.8042185535336631,
+      "formatted": "0.8042"
+    },
+    "p192_pair_gplus_native": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "four_cell_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.7280466058114878,
+      "formatted": "0.7280"
+    },
+    "p192_pair_gplus_rotated": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "four_cell_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.7292818017607391,
+      "formatted": "0.7293"
+    },
+    "p192_pair_factor_rotation": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.023918749624212005,
+      "formatted": "+0.02392"
+    },
+    "p192_pair_factor_rotationLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.018783687719100602,
+      "formatted": "+0.01878"
+    },
+    "p192_pair_factor_rotationHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029256187672488054,
+      "formatted": "+0.02926"
+    },
+    "p192_pair_gplus_rotation": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0012351959492512606,
+      "formatted": "-0.00124"
+    },
+    "p192_pair_gplus_rotationLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0061884424470219565,
+      "formatted": "-0.00619"
+    },
+    "p192_pair_gplus_rotationHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00348934387814307,
+      "formatted": "+0.00349"
+    },
+    "p192_pair_interaction": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02515394557346327,
+      "formatted": "+0.02515"
+    },
+    "p192_pair_interactionLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.018316764554140247,
+      "formatted": "+0.01832"
+    },
+    "p192_pair_interactionHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.032131885176011725,
+      "formatted": "+0.03213"
+    },
+    "p192_pair_native_minus_gplus": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.10009069734638736,
+      "formatted": "+0.10009"
+    },
+    "p192_pair_native_minus_gplusLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.08645500756691495,
+      "formatted": "+0.08646"
+    },
+    "p192_pair_native_minus_gplusHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.11441090900418655,
+      "formatted": "+0.11441"
+    },
+    "p192_pair_native_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.43697313983399405,
+      "formatted": "+0.43697"
+    },
+    "p192_pair_native_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.4141980696912983,
+      "formatted": "+0.41420"
+    },
+    "p192_pair_native_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.45946372984822087,
+      "formatted": "+0.45946"
+    },
+    "p192_pair_gplus_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3368824424876067,
+      "formatted": "+0.33688"
+    },
+    "p192_pair_gplus_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.3146846347152668,
+      "formatted": "+0.31468"
+    },
+    "p192_pair_gplus_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "gplus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.3586822054279761,
+      "formatted": "+0.35868"
+    },
+    "p192_pair_rotated_factor_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_factor_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.4130543902097821,
+      "formatted": "+0.41305"
+    },
+    "p192_pair_rotated_factor_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_factor_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.3900641887224493,
+      "formatted": "+0.39006"
+    },
+    "p192_pair_rotated_factor_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_factor_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.4357150578373096,
+      "formatted": "+0.43572"
+    },
+    "p192_pair_rotated_gplus_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_gplus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.338117638436858,
+      "formatted": "+0.33812"
+    },
+    "p192_pair_rotated_gplus_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_gplus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.31650847439288143,
+      "formatted": "+0.31651"
+    },
+    "p192_pair_rotated_gplus_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "rotated_gplus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.35941675897765735,
+      "formatted": "+0.35942"
+    },
+    "p192_pair_positive": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "positive_targets"
+      ],
+      "operation": "identity",
+      "value": 140.0,
+      "formatted": "140"
+    },
+    "p192_pair_stratum0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "128-191",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019834390906458388,
+      "formatted": "+0.01983"
+    },
+    "p192_pair_stratum0Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "128-191",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004461446582347007,
+      "formatted": "+0.00446"
+    },
+    "p192_pair_stratum0Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "128-191",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03623558512994645,
+      "formatted": "+0.03624"
+    },
+    "p192_pair_stratum1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "192-255",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.025517968839047427,
+      "formatted": "+0.02552"
+    },
+    "p192_pair_stratum1Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "192-255",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.00880417316331984,
+      "formatted": "+0.00880"
+    },
+    "p192_pair_stratum1Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "192-255",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.043109277698685854,
+      "formatted": "+0.04311"
+    },
+    "p192_pair_stratum2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "256-319",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.028045943853363235,
+      "formatted": "+0.02805"
+    },
+    "p192_pair_stratum2Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "256-319",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01851215892917448,
+      "formatted": "+0.01851"
+    },
+    "p192_pair_stratum2Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "256-319",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03804904360275457,
+      "formatted": "+0.03805"
+    },
+    "p192_pair_stratum3": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "320-384",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.027217478694984032,
+      "formatted": "+0.02722"
+    },
+    "p192_pair_stratum3Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "320-384",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.016292193087774045,
+      "formatted": "+0.01629"
+    },
+    "p192_pair_stratum3Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "length_strata_secondary",
+        "320-384",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0393896011720469,
+      "formatted": "+0.03939"
+    },
+    "p192_residue_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "four_cell_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3995317752873206,
+      "formatted": "0.3995"
+    },
+    "p192_residue_factor_native": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "four_cell_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.8200968358767178,
+      "formatted": "0.8201"
+    },
+    "p192_residue_factor_rotated": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "four_cell_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.7966873641075288,
+      "formatted": "0.7967"
+    },
+    "p192_residue_gplus_native": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "four_cell_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.7231436324604523,
+      "formatted": "0.7231"
+    },
+    "p192_residue_gplus_rotated": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "four_cell_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.7242533196809122,
+      "formatted": "0.7243"
+    },
+    "p192_residue_factor_rotation": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02340947176918903,
+      "formatted": "+0.02341"
+    },
+    "p192_residue_factor_rotationLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.018437780498821645,
+      "formatted": "+0.01844"
+    },
+    "p192_residue_factor_rotationHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.028666879961849398,
+      "formatted": "+0.02867"
+    },
+    "p192_residue_gplus_rotation": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0011096872204600255,
+      "formatted": "-0.00111"
+    },
+    "p192_residue_gplus_rotationLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0059163137611132266,
+      "formatted": "-0.00592"
+    },
+    "p192_residue_gplus_rotationHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.003474917113689279,
+      "formatted": "+0.00347"
+    },
+    "p192_residue_interaction": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.024519158989649053,
+      "formatted": "+0.02452"
+    },
+    "p192_residue_interactionLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01791779389784447,
+      "formatted": "+0.01792"
+    },
+    "p192_residue_interactionHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03128263283453729,
+      "formatted": "+0.03128"
+    },
+    "p192_residue_native_minus_gplus": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0969532034162655,
+      "formatted": "+0.09695"
+    },
+    "p192_residue_native_minus_gplusLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.08378565387878581,
+      "formatted": "+0.08379"
+    },
+    "p192_residue_native_minus_gplusHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.1107441116537198,
+      "formatted": "+0.11074"
+    },
+    "p192_residue_native_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.4205650605893973,
+      "formatted": "+0.42057"
+    },
+    "p192_residue_native_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.3984137054761565,
+      "formatted": "+0.39841"
+    },
+    "p192_residue_native_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.4424143379625654,
+      "formatted": "+0.44241"
+    },
+    "p192_residue_gplus_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.32361185717313173,
+      "formatted": "+0.32361"
+    },
+    "p192_residue_gplus_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.3023067340834273,
+      "formatted": "+0.30231"
+    },
+    "p192_residue_gplus_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "gplus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.34464542381909985,
+      "formatted": "+0.34465"
+    },
+    "p192_residue_rotated_factor_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "rotated_factor_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.39715558882020824,
+      "formatted": "+0.39716"
+    },
+    "p192_residue_rotated_factor_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "rotated_factor_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.37494226062377456,
+      "formatted": "+0.37494"
+    },
+    "p192_residue_rotated_factor_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "rotated_factor_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.41916859583045757,
+      "formatted": "+0.41917"
+    },
+    "p192_residue_rotated_gplus_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "rotated_gplus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.32472154439359174,
+      "formatted": "+0.32472"
+    },
+    "p192_residue_rotated_gplus_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "rotated_gplus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.30394989669197614,
+      "formatted": "+0.30395"
+    },
+    "p192_residue_rotated_gplus_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "rotated_gplus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.34531306027355785,
+      "formatted": "+0.34531"
+    },
+    "p192_residue_positive": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "interaction",
+        "positive_targets"
+      ],
+      "operation": "identity",
+      "value": 139.0,
+      "formatted": "139"
+    },
+    "p192_residue_stratum0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "128-191",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.019956508233932142,
+      "formatted": "+0.01996"
+    },
+    "p192_residue_stratum0Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "128-191",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004655977802485965,
+      "formatted": "+0.00466"
+    },
+    "p192_residue_stratum0Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "128-191",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03644090569834394,
+      "formatted": "+0.03644"
+    },
+    "p192_residue_stratum1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "192-255",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.025256363112847832,
+      "formatted": "+0.02526"
+    },
+    "p192_residue_stratum1Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "192-255",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.009510954530759888,
+      "formatted": "+0.00951"
+    },
+    "p192_residue_stratum1Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "192-255",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.041782617177537035,
+      "formatted": "+0.04178"
+    },
+    "p192_residue_stratum2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "256-319",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.027085832002965094,
+      "formatted": "+0.02709"
+    },
+    "p192_residue_stratum2Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "256-319",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.017790007317166158,
+      "formatted": "+0.01779"
+    },
+    "p192_residue_stratum2Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "256-319",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03676986356631745,
+      "formatted": "+0.03677"
+    },
+    "p192_residue_stratum3": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "320-384",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02577793260885115,
+      "formatted": "+0.02578"
+    },
+    "p192_residue_stratum3Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "320-384",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.015245288122693459,
+      "formatted": "+0.01525"
+    },
+    "p192_residue_stratum3Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "length_strata_secondary",
+        "320-384",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03751620078947745,
+      "formatted": "+0.03752"
+    },
+    "p192_tm_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "four_cell_means",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3470177083333333,
+      "formatted": "0.3470"
+    },
+    "p192_tm_factor_native": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "four_cell_means",
+        "factor_native"
+      ],
+      "operation": "identity",
+      "value": 0.8200354166666667,
+      "formatted": "0.8200"
+    },
+    "p192_tm_factor_rotated": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "four_cell_means",
+        "factor_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.7980690393518519,
+      "formatted": "0.7981"
+    },
+    "p192_tm_gplus_native": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "four_cell_means",
+        "gplus_native"
+      ],
+      "operation": "identity",
+      "value": 0.7209968750000001,
+      "formatted": "0.7210"
+    },
+    "p192_tm_gplus_rotated": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "four_cell_means",
+        "gplus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.7216527199074073,
+      "formatted": "0.7217"
+    },
+    "p192_tm_factor_rotation": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.021966377314814812,
+      "formatted": "+0.02197"
+    },
+    "p192_tm_factor_rotationLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01612048755787037,
+      "formatted": "+0.01612"
+    },
+    "p192_tm_factor_rotationHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.028132468171296287,
+      "formatted": "+0.02813"
+    },
+    "p192_tm_gplus_rotation": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0006558449074074071,
+      "formatted": "-0.00066"
+    },
+    "p192_tm_gplus_rotationLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006546286168981481,
+      "formatted": "-0.00655"
+    },
+    "p192_tm_gplus_rotationHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00488285734953702,
+      "formatted": "+0.00488"
+    },
+    "p192_tm_interaction": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02262222222222222,
+      "formatted": "+0.02262"
+    },
+    "p192_tm_interactionLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0147635474537037,
+      "formatted": "+0.01476"
+    },
+    "p192_tm_interactionHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.030933237847222204,
+      "formatted": "+0.03093"
+    },
+    "p192_tm_native_minus_gplus": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.09903854166666666,
+      "formatted": "+0.09904"
+    },
+    "p192_tm_native_minus_gplusLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.08336716145833334,
+      "formatted": "+0.08337"
+    },
+    "p192_tm_native_minus_gplusHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.11582889322916665,
+      "formatted": "+0.11583"
+    },
+    "p192_tm_native_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.47301770833333334,
+      "formatted": "+0.47302"
+    },
+    "p192_tm_native_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.44654887152777784,
+      "formatted": "+0.44655"
+    },
+    "p192_tm_native_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.49934012586805554,
+      "formatted": "+0.49934"
+    },
+    "p192_tm_gplus_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3739791666666667,
+      "formatted": "+0.37398"
+    },
+    "p192_tm_gplus_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.34757238715277783,
+      "formatted": "+0.34757"
+    },
+    "p192_tm_gplus_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "gplus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.40035335937500005,
+      "formatted": "+0.40035"
+    },
+    "p192_tm_rotated_factor_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "rotated_factor_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.45105133101851846,
+      "formatted": "+0.45105"
+    },
+    "p192_tm_rotated_factor_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "rotated_factor_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.4242693561921297,
+      "formatted": "+0.42427"
+    },
+    "p192_tm_rotated_factor_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "rotated_factor_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.47756687355324073,
+      "formatted": "+0.47757"
+    },
+    "p192_tm_rotated_gplus_minus_query": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "rotated_gplus_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.37463501157407414,
+      "formatted": "+0.37464"
+    },
+    "p192_tm_rotated_gplus_minus_queryLo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "rotated_gplus_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.34863915364583337,
+      "formatted": "+0.34864"
+    },
+    "p192_tm_rotated_gplus_minus_queryHi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "rotated_gplus_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.4005242635995371,
+      "formatted": "+0.40052"
+    },
+    "p192_tm_positive": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "interaction",
+        "positive_targets"
+      ],
+      "operation": "identity",
+      "value": 129.0,
+      "formatted": "129"
+    },
+    "p192_tm_stratum0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "128-191",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018790509259259264,
+      "formatted": "+0.01879"
+    },
+    "p192_tm_stratum0Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "128-191",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 9.083912037037407e-05,
+      "formatted": "+0.00009"
+    },
+    "p192_tm_stratum0Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "128-191",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03947950810185185,
+      "formatted": "+0.03948"
+    },
+    "p192_tm_stratum1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "192-255",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02515601851851851,
+      "formatted": "+0.02516"
+    },
+    "p192_tm_stratum1Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "192-255",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.006077795138888884,
+      "formatted": "+0.00608"
+    },
+    "p192_tm_stratum1Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "192-255",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04491560185185183,
+      "formatted": "+0.04492"
+    },
+    "p192_tm_stratum2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "256-319",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.026959027777777773,
+      "formatted": "+0.02696"
+    },
+    "p192_tm_stratum2Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "256-319",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.015983981481481474,
+      "formatted": "+0.01598"
+    },
+    "p192_tm_stratum2Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "256-319",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03858085648148146,
+      "formatted": "+0.03858"
+    },
+    "p192_tm_stratum3": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "320-384",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01958333333333333,
+      "formatted": "+0.01958"
+    },
+    "p192_tm_stratum3Lo": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "320-384",
+        "ci95_unadjusted",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.007741313657407409,
+      "formatted": "+0.00774"
+    },
+    "p192_tm_stratum3Hi": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "length_strata_secondary",
+        "320-384",
+        "ci95_unadjusted",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0325083043981481,
+      "formatted": "+0.03251"
+    },
+    "p192_seed0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "per_seed",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02035501221215712,
+      "formatted": "+0.02036"
+    },
+    "p192_seed1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "per_seed",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02115910095943276,
+      "formatted": "+0.02116"
+    },
+    "p192_seed2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "per_seed",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.03394772354879992,
+      "formatted": "+0.03395"
+    },
+    "p192_rotation0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "per_rotation",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.021255623147033685,
+      "formatted": "+0.02126"
+    },
+    "p192_rotation1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "per_rotation",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029164317798069137,
+      "formatted": "+0.02916"
+    },
+    "p192_rotation2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "per_rotation",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.025041895775286982,
+      "formatted": "+0.02504"
+    },
+    "p192_r0_s0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        0,
+        0
+      ],
+      "operation": "identity",
+      "value": 0.027338449097825245,
+      "formatted": "+0.02734"
+    },
+    "p192_r0_s1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        0,
+        1
+      ],
+      "operation": "identity",
+      "value": 0.015143979693605494,
+      "formatted": "+0.01514"
+    },
+    "p192_r0_s2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        0,
+        2
+      ],
+      "operation": "identity",
+      "value": 0.021284440649670323,
+      "formatted": "+0.02128"
+    },
+    "p192_r1_s0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        1,
+        0
+      ],
+      "operation": "identity",
+      "value": 0.016024457698966564,
+      "formatted": "+0.01602"
+    },
+    "p192_r1_s1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        1,
+        1
+      ],
+      "operation": "identity",
+      "value": 0.020456763215085636,
+      "formatted": "+0.02046"
+    },
+    "p192_r1_s2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        1,
+        2
+      ],
+      "operation": "identity",
+      "value": 0.051011732480155225,
+      "formatted": "+0.05101"
+    },
+    "p192_r2_s0": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        2,
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01770212983967956,
+      "formatted": "+0.01770"
+    },
+    "p192_r2_s1": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        2,
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02787655996960715,
+      "formatted": "+0.02788"
+    },
+    "p192_r2_s2": {
+      "source": "evidence/protenix_fresh192_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "interaction",
+        "rotation_by_seed",
+        2,
+        2
+      ],
+      "operation": "identity",
+      "value": 0.02954699751657423,
+      "formatted": "+0.02955"
+    },
+    "e2rep_pair_native_change": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.029604547962687616,
+      "formatted": "+0.02960"
+    },
+    "e2rep_pair_native_changeLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.016442287906872122,
+      "formatted": "+0.01644"
+    },
+    "e2rep_pair_native_changeHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04375691171818026,
+      "formatted": "+0.04376"
+    },
+    "e2rep_pair_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.030250597330069535,
+      "formatted": "+0.03025"
+    },
+    "e2rep_pair_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02128616907355685,
+      "formatted": "+0.02129"
+    },
+    "e2rep_pair_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03934269292034477,
+      "formatted": "+0.03934"
+    },
+    "e2rep_pair_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0006460493673819213,
+      "formatted": "+0.00065"
+    },
+    "e2rep_pair_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01223183532186704,
+      "formatted": "-0.01223"
+    },
+    "e2rep_pair_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01338022804825932,
+      "formatted": "+0.01338"
+    },
+    "e2rep_pair_r1_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04247950363344513,
+      "formatted": "+0.04248"
+    },
+    "e2rep_pair_r1_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02888201884261545,
+      "formatted": "+0.02888"
+    },
+    "e2rep_pair_r1_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05644092769343591,
+      "formatted": "+0.05644"
+    },
+    "e2rep_pair_r1_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012874955670757512,
+      "formatted": "+0.01287"
+    },
+    "e2rep_pair_r1_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0015390102821835482,
+      "formatted": "-0.00154"
+    },
+    "e2rep_pair_r1_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02783487214903125,
+      "formatted": "+0.02783"
+    },
+    "e2rep_pair_r2_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01802169102669394,
+      "formatted": "+0.01802"
+    },
+    "e2rep_pair_r2_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.005408885663086225,
+      "formatted": "+0.00541"
+    },
+    "e2rep_pair_r2_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03095948064299051,
+      "formatted": "+0.03096"
+    },
+    "e2rep_pair_r2_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.011582856935993674,
+      "formatted": "-0.01158"
+    },
+    "e2rep_pair_r2_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02903108646579554,
+      "formatted": "-0.02903"
+    },
+    "e2rep_pair_r2_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.005514212027922532,
+      "formatted": "+0.00551"
+    },
+    "e2rep_pair_native": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_learned"
+      ],
+      "operation": "identity",
+      "value": 0.5315072462895412,
+      "formatted": "0.5315"
+    },
+    "e2rep_pair_r1": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5255826863191031,
+      "formatted": "0.5256"
+    },
+    "e2rep_pair_r2": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5118131827828788,
+      "formatted": "0.5118"
+    },
+    "e2rep_residue_native_change": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02783527166410359,
+      "formatted": "+0.02784"
+    },
+    "e2rep_residue_native_changeLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.01546223674819247,
+      "formatted": "+0.01546"
+    },
+    "e2rep_residue_native_changeHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0411041588125457,
+      "formatted": "+0.04110"
+    },
+    "e2rep_residue_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02824521761426213,
+      "formatted": "+0.02825"
+    },
+    "e2rep_residue_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.019728113746756787,
+      "formatted": "+0.01973"
+    },
+    "e2rep_residue_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03690651264154788,
+      "formatted": "+0.03691"
+    },
+    "e2rep_residue_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0004099459501585451,
+      "formatted": "+0.00041"
+    },
+    "e2rep_residue_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.011814858930492408,
+      "formatted": "-0.01181"
+    },
+    "e2rep_residue_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.012513224551559838,
+      "formatted": "+0.01251"
+    },
+    "e2rep_residue_r1_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.039628945210263083,
+      "formatted": "+0.03963"
+    },
+    "e2rep_residue_r1_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.02675322084197178,
+      "formatted": "+0.02675"
+    },
+    "e2rep_residue_r1_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.052882649905768866,
+      "formatted": "+0.05288"
+    },
+    "e2rep_residue_r1_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011793673546159504,
+      "formatted": "+0.01179"
+    },
+    "e2rep_residue_r1_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.002005541918862398,
+      "formatted": "-0.00201"
+    },
+    "e2rep_residue_r1_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02613910436006706,
+      "formatted": "+0.02614"
+    },
+    "e2rep_residue_r2_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.016861490018261174,
+      "formatted": "+0.01686"
+    },
+    "e2rep_residue_r2_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004901639405614185,
+      "formatted": "+0.00490"
+    },
+    "e2rep_residue_r2_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029041804832900347,
+      "formatted": "+0.02904"
+    },
+    "e2rep_residue_r2_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.010973781645842416,
+      "formatted": "-0.01097"
+    },
+    "e2rep_residue_r2_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.027446905587736898,
+      "formatted": "-0.02745"
+    },
+    "e2rep_residue_r2_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.005089744885279873,
+      "formatted": "+0.00509"
+    },
+    "e2rep_residue_native": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_learned"
+      ],
+      "operation": "identity",
+      "value": 0.531522611193597,
+      "formatted": "0.5315"
+    },
+    "e2rep_residue_r1": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5259691761579481,
+      "formatted": "0.5260"
+    },
+    "e2rep_residue_r2": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5131856476968841,
+      "formatted": "0.5132"
+    },
+    "e2rep_tm_native_change": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.031226736111111108,
+      "formatted": "+0.03123"
+    },
+    "e2rep_tm_native_changeLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.013664765624999999,
+      "formatted": "+0.01366"
+    },
+    "e2rep_tm_native_changeHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.05008475694444444,
+      "formatted": "+0.05008"
+    },
+    "e2rep_tm_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.031007465277777774,
+      "formatted": "+0.03101"
+    },
+    "e2rep_tm_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.020118220486111112,
+      "formatted": "+0.02012"
+    },
+    "e2rep_tm_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04227716145833332,
+      "formatted": "+0.04228"
+    },
+    "e2rep_tm_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00021927083333332884,
+      "formatted": "-0.00022"
+    },
+    "e2rep_tm_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.017488871527777772,
+      "formatted": "-0.01749"
+    },
+    "e2rep_tm_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016675130208333316,
+      "formatted": "+0.01668"
+    },
+    "e2rep_tm_r1_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.04975972222222222,
+      "formatted": "+0.04976"
+    },
+    "e2rep_tm_r1_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.032045407986111114,
+      "formatted": "+0.03205"
+    },
+    "e2rep_tm_r1_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.06791776909722222,
+      "formatted": "+0.06792"
+    },
+    "e2rep_tm_r1_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018532986111111118,
+      "formatted": "+0.01853"
+    },
+    "e2rep_tm_r1_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0011055902777777728,
+      "formatted": "-0.00111"
+    },
+    "e2rep_tm_r1_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03888822916666667,
+      "formatted": "+0.03889"
+    },
+    "e2rep_tm_r2_B_R": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.012255208333333337,
+      "formatted": "+0.01226"
+    },
+    "e2rep_tm_r2_B_RLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.002141484374999995,
+      "formatted": "-0.00214"
+    },
+    "e2rep_tm_r2_B_RHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.027202118055555558,
+      "formatted": "+0.02720"
+    },
+    "e2rep_tm_r2_T_C": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.018971527777777775,
+      "formatted": "-0.01897"
+    },
+    "e2rep_tm_r2_T_CLo": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.040965008680555554,
+      "formatted": "-0.04097"
+    },
+    "e2rep_tm_r2_T_CHi": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_C",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0022198003472222267,
+      "formatted": "+0.00222"
+    },
+    "e2rep_tm_native": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_learned"
+      ],
+      "operation": "identity",
+      "value": 0.5510704861111111,
+      "formatted": "0.5511"
+    },
+    "e2rep_tm_r1": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5492777777777778,
+      "formatted": "0.5493"
+    },
+    "e2rep_tm_r2": {
+      "source": "evidence/e2_retraining_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "learned_mean"
+      ],
+      "operation": "identity",
+      "value": 0.5308503472222222,
+      "formatted": "0.5309"
     }
   },
   "verified_esmc_A_contrasts": 78,
@@ -24385,8 +27273,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1560,
-    "distinct_keys": 1322,
+    "literal_references": 1774,
+    "distinct_keys": 1513,
     "missing": []
   },
   "pending": [],
@@ -24754,5 +27642,121 @@
     "new_coordinate_scoring": false,
     "new_training": false,
     "scope": "Prespecified Factor-only anchor intervention on observed Confirm96-B; conditional, unadjusted target intervals. No C, new-target confirmation, between-rotation heterogeneity test or equivalence test."
+  },
+  "verified_protenix_fresh192": {
+    "passed": true,
+    "records": 4800,
+    "targets": 192,
+    "systems": 25,
+    "failures": 0,
+    "verified_contrasts": 24,
+    "supplementary_stratum_intervals": 12,
+    "scalar_or_array_checks": 288,
+    "max_abs_error": 6.782768791069316e-16,
+    "bootstrap": {
+      "draws": 20000,
+      "seed": 20260925,
+      "unit": "target within four fixed strata"
+    },
+    "source_sha256": {
+      "evidence/protenix_fresh192_execution_lock.json": "084b55643245390e6eb5924cc86a400bf7c909f488b7300a47403dbdacd08079",
+      "evidence/protenix_fresh192_summary.json": "4dac76b11dfd8aaa584f1c44ee56795a8f3f1f51f831b2f573c9a7a36cbd8edf",
+      "evidence/protenix_fresh192_records.json": "c1a32c387e535dad806e68455e64717171a2e03f0212dbd7e29bb12f64fb4447",
+      "evidence/protenix_fresh192_model_lock.json": "1ffe5b468d2bcd891a2eb66affa5b2cc65ada910f580dfeb54e91f070340d053",
+      "evidence/protenix_fresh192_exposure.json": "5801877f8c112916258e3976ee751f54c44f1052236175e9b2b3e7ecab4e880e",
+      "evidence/protenix_fresh192_selection_audit.json": "50dafea17e92e36bc446b43b0091f05db7d502ef1339036e59c7a6229947f6b7",
+      "evidence/protenix_fresh192_selection_lock.json": "7a343c591a3f94c085d6659585d2ddc8360edeb0c55b1be0441d0875ab64ba84",
+      "evidence/protenix_fresh192_inference_manifest.json": "4a138328c4f51344d300ee3b79cec284e8fda0f64628932786500b2ac6762d0c",
+      "evidence/protenix_fresh192_reference_manifest.json": "01de99984dd34735013053a07adfe588759a1b2418b0b9467c95d7daba19777a",
+      "evidence/protenix_fresh192_engineering.json": "65ecf781b8942085fa3c2d993f9d05f15e7f52c249d46367a424b59214a1bba3",
+      "reproducibility/protenix_fresh192/protocol.md": "019504e6cdb7db961f8b63b56dd415f3d88aa222a43698879ff2dd78cbb8ce7b",
+      "reproducibility/protenix_fresh192/archived/__init__.py": "25bee7e20e504c8d676d82450d5dd27b5ffe528446632aefd4db6078b894e734",
+      "reproducibility/protenix_fresh192/archived/audit_selection.py": "d0792d6cb031934721e48d22cd28af51f54e53d3c35f38d89741f21ce9970b95",
+      "reproducibility/protenix_fresh192/archived/common.py": "7ce9c2399598cc169e13a4c338aaf09ea3e0c031030e29dc3417071ee811eda0",
+      "reproducibility/protenix_fresh192/archived/dispatch.py": "270703bfac023c02074cbb3d67a38b1d5ec4253dcb95a9bd2f4d25285ce19aa0",
+      "reproducibility/protenix_fresh192/archived/predict.py": "747e7e236049c576f924ac03fc2755364ba35a5b14975902c4df5a845832d78b",
+      "reproducibility/protenix_fresh192/archived/score.py": "f6cfd27e4d8d9b119cdc88b9754afabee2f757133bdee2e13fac000ce1bfda8b",
+      "reproducibility/protenix_fresh192/archived/seal.py": "8c9fd494134c94f5256dc102cd2f8a21736431c4957fee84df69aaa14e556782",
+      "reproducibility/protenix_fresh192/archived/select.py": "c6dc3bff22bd36a1bc632f2637b1b588ff5ae83a99902f5d2be7d6d988417bf6"
+    },
+    "chronology_and_manifest_checks": true,
+    "independent_CIF_rescoring": false,
+    "new_training": false,
+    "scope": "Fixed-model, new-target primary Psi; other contrasts unadjusted secondary. Historical recipe selection disclosed; no retraining or pretraining-isolation claim."
+  },
+  "verified_e2_retraining": {
+    "passed": true,
+    "records": 864,
+    "fits": 9,
+    "updates": 13824,
+    "failures": 0,
+    "verified_contrasts": 21,
+    "scalar_or_array_checks": 153,
+    "max_abs_error": 5.551115123125783e-17,
+    "source_sha256": {
+      "evidence/e2_retraining_lock.json": "20a9d5547f367ccbf808995565b2d61526400f2e526facc4bf339d9c1c9dd1e8",
+      "evidence/e1_execution_lock.json": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+      "evidence/e2_intervention_execution_lock.json": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+      "evidence/e1_prediction_records.json": "2a850711bab8c27fb3f6e9ff48c67e23a1b64d3ddf21043c76cd99d654eef7f1",
+      "evidence/e2_intervention_summary.json": "ab484a919f095298ae970e23efcdd51c0bcce91d880a3b4f0c58773b685cf1cc",
+      "evidence/e2_retraining_summary.json": "3789c40720b6f0c5836e244978f8cc8c2d917613685dcbdc007e92b695786e7c",
+      "evidence/e2_retraining_records.json": "f8f863f3bf5c9a1b22db18236181b2c165936ca6ae9c9882d9f5f66a2d813ce1",
+      "evidence/e2_retraining_historical_comparison.json": "fe7415ea90b360751f74feec373ead95128c36dd57c8cb8a4d6b6d8b6169a2a5",
+      "evidence/e2_retraining_cif_audit.json": "fe3ed157b544854f2369348f05a58dd7a20ff3513101d1988630d18d35fbaba9",
+      "evidence/e1_prediction_lock.json": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+      "evidence/e1_scoring_amendment.json": "3489df951d698fb71b078dd1a730b8c52e4316fb4cfd7f206b5873a7f7ebbeb3",
+      "reproducibility/e2_retraining/protocol.md": "647ba7fb30d1fd7497024d4d10540343f2377dad9df209c0dbad0fd7c2ea47f5",
+      "reproducibility/e2_retraining/archived/cpu.sh": "2e0fd976e2b020afa3d6db3f2eedbb330c7b38780523c52dbafd6a14721f85a2",
+      "reproducibility/e2_retraining/archived/engineering.py": "21329f905ed36cbdd7970a4572f79e162cc144d9276abec26896c0bf28def1b7",
+      "reproducibility/e2_retraining/archived/gate.py": "5e69f49acadb5244da68fe736a8530f4d4e732ac9bdd9a9eed9dd5ceab756868",
+      "reproducibility/e2_retraining/archived/job.sh": "21b3d34deac620dea5745041f69692e09198ae757dd32c8be1499d9e5e56bdd0",
+      "reproducibility/e2_retraining/archived/run.py": "5e4c92d622328ff4991401c070542646a8cca9d21404f4ae2918678a2e80c119",
+      "reproducibility/e2_retraining/archived/score.py": "261d4e69d4d7a368ceb8735bf1d12e7f0efadc93ad1f6a78ce270c37434aa98e",
+      "reproducibility/e2_retraining/archived/support.py": "00910ba5c4785d816b737b1cdafd3cd70d2fb4f375aa4fff81391f0c4809e3ba",
+      "reproducibility/e2_retraining/runs/I_C_s20260923/repetition.json": "9852a5b403d2728c72742f40a4fa27646c0e148183e9acfa84a5480ee65f8448",
+      "reproducibility/e2_retraining/runs/I_C_s20260923/training_complete.json": "a087316160b83b178ee6f5db84d14cbb32ee637e6ce72fe875edd78e068e3931",
+      "reproducibility/e2_retraining/runs/I_C_s20260923/run.json": "9f661ad78105fb9f2bc1f9bf79d0b246b2676458729f5069c8a692a8e35c1075",
+      "reproducibility/e2_retraining/runs/I_C_s20260923/complete.json": "047f16d08ddf45bc1d179fdc28dc8ead88939ea6daaa65ed7c51b528a8aac443",
+      "reproducibility/e2_retraining/runs/I_C_s20260924/repetition.json": "3cb0510d66fed7d97dc7c711c5894c2e05425522517c72a3ae9664a6f7c565a7",
+      "reproducibility/e2_retraining/runs/I_C_s20260924/training_complete.json": "04e292917b91bb8ed8f9788dd364150798f2c8e8c8c94bd91c680cdc5aa3d50e",
+      "reproducibility/e2_retraining/runs/I_C_s20260924/run.json": "f3166eaca88c7752673e2e78cf807d5faf27322ae1e40013b20686f03c9f024e",
+      "reproducibility/e2_retraining/runs/I_C_s20260924/complete.json": "adaf7aecba269c48af8f2fc8dcbfd9869a3b0f6caa879d5f43ca0cdc0a152dd1",
+      "reproducibility/e2_retraining/runs/I_C_s20260925/repetition.json": "8a5215daa72e90b9f2bb6e50f88da70d16a889d26e5e42c1a726a176cfdccc7e",
+      "reproducibility/e2_retraining/runs/I_C_s20260925/training_complete.json": "f34ca6634476580a4cd891b170ced107a5af73a2dafe984a128d53fb0fdf0b5e",
+      "reproducibility/e2_retraining/runs/I_C_s20260925/run.json": "29e7bb771c0962ca00435a2dbff69c83556efa5fad5d50b38241dc0c89b670d1",
+      "reproducibility/e2_retraining/runs/I_C_s20260925/complete.json": "31cdfa325cf9a25e2ea9ab7069bdf415db4ed0298862da00f3072eafeeab15c4",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260923/repetition.json": "64a02d499e6006f008d4a628fa6ad21d65928e712ba367a8c4144e7bfc1c51b6",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260923/training_complete.json": "6bc6482ed290642732877684f75d459fdd869c03ae870306e2483a976e3addf1",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260923/run.json": "ca59994be561f7eda03e64d4a37c68f1716d229d77724a7a304b918eb5cb02d8",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260923/complete.json": "61556191e4a281fe9151e1796b00d67fd8a4836109980508e62258da797b5a90",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260924/repetition.json": "8fdad7368fdb2fb6b40979ae41b425a4ed57af8787e6a0706655d604eb8d80c5",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260924/training_complete.json": "f3da33bf40d8d44b01bc3c024a788ffbea24baecf7cb7d0bacea3b0650180c98",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260924/run.json": "4a1d0af91fd41d8b5feb5ebcc5509aa7c0c9d11c529be003b7822558131508ca",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260924/complete.json": "7a7678190be72770e8661a55a052f5937cd8ae2382b2f9dd3ffa3a5e0c870a89",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260925/repetition.json": "184d12a7fddda4bda09ef28910289cdf73e67cececeae5af0d8bc8ddb05ed08e",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260925/training_complete.json": "1c2dcede62e288e606d5183ff90ff2b65915fff7633a9bd09411a691b259fb0d",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260925/run.json": "bfcc78a1ed5b418424f24f4f5fec7f1f1e0fb0252023d0c972d56c6a4e0f19cd",
+      "reproducibility/e2_retraining/runs/r20270107_C_s20260925/complete.json": "828def0956d29306afc46791370a5f8a64f443477e250c41b4c0c24e439d3d71",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260923/repetition.json": "8cc089d44141cde46bbde70c8a8f921518327b695676ea386514fe082c06eb14",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260923/training_complete.json": "4eefcf84045497a545e4385d2b12f969304988629e109678751cf0922fe827fc",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260923/run.json": "25f5bed15ae87706f836bf79067b54e15b36f9bb680792ae59181a6e29ef708c",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260923/complete.json": "5ef5dac4b3de263f6fc80e16f39fa118a8350943c9294031c1d7c04f5e0e3341",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260924/repetition.json": "ba4e376f80b9edd4eed2d50384c3e761fd3d0d06ca17c0fa04525c8dfa5f7fc9",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260924/training_complete.json": "1f278360c96051d1c4f1f6460f7fd5e348afa7aa60cd6027c9fb0c77134a8665",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260924/run.json": "0eec6d21b756d17af1a16a689c1722cd7e802093ca2cc8686ff269c830dd612f",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260924/complete.json": "1541293180e799c99b868d733caf1fc2d79c35a727a5276ee10cbc4049c79e94",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260925/repetition.json": "53fd2e82d4d6bd77f94a6d4fd4aa9080db934999a98fe5065c3a480050d82a37",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260925/training_complete.json": "089c054174e9d53713e43b299205e558925eb19b6c83c6cb6bdb3f55712ba3eb",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260925/run.json": "5b7c2f7da9d6a2578f135f2e81a42b725fd2f6f4da24cb80c9ffedaebeff5dae",
+      "reproducibility/e2_retraining/runs/r20270104_C_s20260925/complete.json": "4bf95f3e3f89e7cfd6ee81eaaab0df17875a062553ed610e41acb6d607564de8"
+    },
+    "archived_CIF_audit_consistent": true,
+    "independent_CIF_rescoring": false,
+    "same_seeds_not_pooled": true,
+    "fixed_baseline": "original E1",
+    "engineering_conditions": 6,
+    "engineering_updates": 384,
+    "fresh_PLM_feature_replay": false,
+    "training_divergence_cause": "not identified"
   }
 }

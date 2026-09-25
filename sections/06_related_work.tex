@@ -1,14 +1,13 @@
 \section{Related work}
 LoRA constrains weight updates \citep{hu2021lora}; ReFT intervenes on frozen
 representations \citep{wu2024reft}; PiSSA uses principal components of pretrained
-weights \citep{meng2024pissa}. Neither representation adaptation nor pretrained
-directions are new in themselves. We compose residue-level changes through
+weights \citep{meng2024pissa}. We compose residue-level changes through
 native pair-generating operators and evaluate them with trained spectral
 controls and a rotation-closed generic head.
 
 Orthogonal finetuning includes butterfly parameterizations
-\citep{liu2023boft}; our novelty is not a learnable orthogonal matrix. The shared
-map is an intervention on the cost of fixed training-time rotations.
+\citep{liu2023boft}; our contribution is the intervention on trained rotation
+cost, not the orthogonal matrix itself.
 AdamW's coordinate-wise updates \citep{loshchilov2019adamw} distinguish
 function-class closure from training behavior. LoRA-RITE studies optimization
 invariance across equivalent low-rank factorizations \citep{yen2025lorarite}.

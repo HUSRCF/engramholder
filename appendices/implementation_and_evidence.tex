@@ -1131,7 +1131,7 @@ Native control; duplicated uses of it are not independent observations.
 Intervals condition on these fitted models and selected rotations and are
 not jointly multiplicity-adjusted. Confirm96-B was already observed.
 
-The three pair-lDDT seed marginals of average $T_C$ are positive, as are the
+In the original execution, the three pair-lDDT seed marginals of average $T_C$ are positive, as are the
 six seed-by-rotation marginals. Only r20270107 independently establishes a
 positive $T_C$ interval; both rotated arms improve in absolute score. Average
 residue-lDDT mitigation is supported, while average TM-score mitigation is not.
@@ -1184,7 +1184,71 @@ optimizer construction and exact rotation arrays. A CPU example executes their
 zero initialization, shared-map injection and joint gradients on a synthetic
 frozen OPM fixture; it checks masks, the unchanged baseline and parameter groups.
 This makes the intervention executable at the operator level, without claiming
-a replay of full OpenFold structure training or its quality gains.
+a replay of full OpenFold structure training or its quality gains. A later
+complete training execution is reported separately below; it does not turn
+the CPU fixture into a full-prediction reproduction entry.
+
+\subsection{Same-seed repetition of all nine compensated fits}
+\label{app:e2_repeat}
+After the original results, all nine $+C$ models were trained again from the
+original seeds, zero-output heads and identity $C$, for 1536 updates each.
+The original Train96 order, loss, AdamW groups, two selected rotations and
+four-pass live-anchor configuration were retained. The repeat reused the
+verified H100 software environment and hashed ESM2 caches; it was not a new
+installation or a fresh FASTA-to-feature replay. The no-$C$ models are the
+same fixed original fits, not independently retrained baselines. The repeat
+therefore adds neither new training seeds nor new targets, and is not pooled
+with the original execution.
+
+Six engineering conditions (I/two rotations, with/without $C$) first completed
+384 updates across continuous and interrupted paths. Parameters, optimizer,
+random states and data position were restored exactly; independent FP32
+training trajectories were not required or found to be bitwise identical.
+The nine formal fits then completed all 13,824 updates and 864 predictions,
+without failed predictions. After all attempts ended, coordinates were exported
+to full-atom CIF, parsed independently, and rescored. The execution audit records
+exact masked FP32 coordinate recovery and identical values for all three
+scores. This is a completed training execution and coordinate-scoring check;
+public fresh-feature replay remains a distinct deliverable.
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Original and same-seed repeat of compensation. The no-$C$ reference is
+fixed across executions. Each interval conditions on that execution's fitted
+models and the shared targets; rows are not additional independent seeds.}
+\label{tab:e2_repeat_comparison}
+\begin{tabular}{lrrrr}\toprule
+Contrast & Original & 95\% interval & Repeat & 95\% interval \\\midrule
+\input{generated/e2_retraining_comparison}
+\end{tabular}\end{table}
+
+The repeated rotated-arm gain is positive, but Native now improves by
+\result{e2rep_pair_native_change}
+[\result{e2rep_pair_native_changeLo}, \result{e2rep_pair_native_changeHi}].
+Consequently the repeated $T_C$ interval includes zero
+(Table~\ref{tab:e2_repeat_comparison}). Neither selected rotation independently
+establishes positive mitigation in the repeat, although both improve in
+absolute score. The original useful average mitigation remains an observed
+result, but its relative advantage over Native has not been re-established
+by the complete repeat. This does not prove zero mitigation, statistically
+different population effects between executions, or a particular cause for
+the training divergence. No run is replaced and no favorable executions are
+selected or averaged together. The specific divergence source remains unresolved.
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{All 21 compensation contrasts in the repeated execution, with the
+original unadjusted 20,000-draw target bootstrap (seed 20260924).}
+\label{tab:e2_repeat_all}
+\begin{tabular}{lllll}\toprule
+Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/e2_retraining_contrasts}
+\end{tabular}\end{table}
+
+The evidence bundle preserves both score arrays, the repetition protocol,
+code hashes, original-baseline bindings, per-fit receipts and the CIF audit.
+The numerical verifier reconstructs all 21 contrasts and their seed/target
+marginals from saved scores, separately from the archived CIF audit. The
+repeat neither validates the failed reconstruction predictor nor tests
+compensation at reference anchors.
 
 \clearpage
 \section{Residual-anchor intervention}
@@ -1330,3 +1394,117 @@ paired contrasts, target arrays, seed marginals and intervals, and checks
 the identity above. CPU tests exercise the actual anchor hook's preserved
 baseline, round selection and backward replay. These local checks do not
 regenerate coordinates, rerun the TM-score binary or reproduce full training.
+
+\clearpage
+\section{Fresh192: fixed Protenix models on new targets}
+\label{app:fresh192}
+This study selects the previously observed Protenix-Mini default
+Train384/Full/1536, ESMC-600M configuration for a new-target test. It freezes
+all 24 adapters: Factor and G+ each have three Native fits and nine rotated
+fits, using seeds 20260923/24/25 and rotations 20261001/02/03. Query-only is the
+25th system. No model is retrained, no checkpoint is selected on this panel,
+and the historical choice of recipe is disclosed. This is a test of a fixed
+configuration's transfer, not a random sample of predictor architectures.
+
+\paragraph{Panel, selection and chronology.}
+Fresh192 uses the short-chain catalog criteria in Appendix~\ref{app:chronology}:
+single-model X-ray monomers released by 2021-09-30, resolution at most
+2.5\,\AA, standard amino acids and at least 90\% reference C$\alpha$ coverage.
+Four prespecified strata, 128--191, 192--255, 256--319 and 320--384, each
+contribute 48 complete sequences; actual lengths are 128--383. There is one
+target per PDB. This panel is not a long-chain extrapolation study.
+
+The exposure inventory was refreshed from four execution hosts, explicitly
+including Fresh96 and later prediction, compensation and anchor-intervention
+targets. Historical conservative exclusions were retained. Newly collected
+search-only candidates and directory pseudonyms were corrected before new
+target prediction; this correction did not change search thresholds or the
+ranking salt. The final selection applies Fresh96's accepted BLAST v2 rules:
+BLASTP 2.17.0, a single qualifying HSP with $E\le10^{-5}$, identity at least
+0.30, at least 50 paired residues and coverage at least 0.70. Recorded query
+comparisons use the shorter sequence length as coverage denominator; other
+teacher rows use candidate length. HSPs are not merged or count-limited.
+Accepted panel members are screened against one another as well.
+
+Candidates are ordered within strata by SHA256 of the target ID prefixed
+by \texttt{protenix-fourcell-fresh192-v1|}, with at most 2048
+candidates per stratum and a fixed screening time cap. Selection does not
+read model scores. The archived audit reports no ID, PDB or exact-sequence
+overlap with the recorded exclusions and independently rechecks 1,195
+searches. These claims concern the auditable inventory, not certified
+complete project history, strict family separation or foundation-model
+pretraining exclusion. The 192 sequences, label correspondence, model hashes,
+execution recipe and analysis were locked before new folding predictions.
+
+\paragraph{Execution and endpoint.}
+The original complete-sequence c4/s5, one sample and inference seed101 are
+retained. $D=508.5$ comes from the adapter checkpoint. ESMC uses final-layer
+1152-dimensional features, the historical H100 FP32 extraction/BF16 cache
+path and FP32 loading; folding uses the fixed MI250 path. Fifty engineering
+predictions on two already observed targets were separate from the panel.
+Their maximum relative coordinate discrepancy was below the prior $10^{-3}$
+criterion. No target coordinates or observed-residue mask enter inference.
+All $25\times192=4,800$ formal predictions completed successfully with full
+length and four injections verified; uniform scoring followed completion.
+The predefined failure rule would retain failed predictions at zero credit,
+with no target replacement, crop or altered denominator.
+
+The sole primary endpoint is pair-lDDT $\Psi$ in Equation~\ref{eq:interaction}.
+After averaging paired seeds and rotations inside each target, 20,000 paired
+bootstrap draws (seed20260925) resample 48 targets within each of the four
+locked strata. Strata retain equal weights. Intervals condition on the fixed
+24 adapters and rotations and do not include retraining or historical
+recipe-selection uncertainty. All other contrasts, strata and structure
+metrics are secondary and unadjusted. New and observed panels are reported
+separately; neither targets nor rotations are added after the result.
+
+\paragraph{Results and scope.}
+The primary interaction is \result{p192_pair_interaction}
+[\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}], with
+\result{p192_pair_positive}/192 positive targets. All three seed and rotation
+marginals, and all nine seed-by-rotation means, are positive
+(Table~\ref{tab:fresh192_marginals}). Both supplementary interaction intervals
+are positive, but score the same structures. The full means are in
+Table~\ref{tab:coverage}; the secondary contrasts are retained below.
+Factor's positive direction effect and the positive direct interaction support
+greater Factor rotation sensitivity under this fixed recipe on new targets.
+G+'s direction interval includes zero without establishing equivalence.
+This confirmation does not replace OpenFold's Fresh96 result or identify a
+unique expressivity, optimization or downstream mechanism.
+
+\begin{table}[!htbp]\centering\small
+\caption{Fresh192 primary-interaction marginals. The first two rows give
+seed and rotation marginals in ascending locked order. The final three rows
+give individual rotations across the three training seeds.}
+\label{tab:fresh192_marginals}
+\begin{tabular}{lrrr}\toprule
+Margin / rotation & First / seed23 & Second / seed24 & Third / seed25 \\\midrule
+\input{generated/fresh192_marginals}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Fresh192 contrasts. Only pair-lDDT $\Psi$ is primary; the remaining
+intervals are unadjusted secondary summaries of the same fitted models.}
+\label{tab:fresh192_contrasts}
+\begin{tabular}{llll}\toprule
+Metric & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/fresh192_contrasts}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Fresh192 secondary interaction estimates within the four prespecified
+length strata. These unadjusted intervals do not test a length trend.}
+\label{tab:fresh192_strata}
+\begin{tabular}{llll}\toprule
+Metric & Residues & $\Psi$ & 95\% interval \\\midrule
+\input{generated/fresh192_strata}
+\end{tabular}\end{table}
+
+The accompanying evidence includes the score grid, sequence and reference
+manifests, exposure exclusions, protocol, selection/execution/model locks,
+source snapshots and completion receipts. The verifier independently
+reassembles all 24 metric--contrast combinations, target arrays, seed/rotation
+marginals and the stratified bootstrap. It also checks identity bindings,
+prediction coverage and the recorded lock/completion chronology. This
+score-level reproduction is distinct from rerunning BLAST searches, generating
+new coordinates or rescoring CIF files.

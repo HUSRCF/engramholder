@@ -1,0 +1,5193 @@
+{
+  "records": [
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3gxb_A",
+      "cif_sha256": "49630f91387df331faba6ab7c7a2797bd356014afef6fb7bd9321f929536ad9e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6a89_A",
+      "cif_sha256": "2f29d53f121e74c59099d0c2bdd8d0a13d952ef2c5a32b36262ad5d126146780",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4xbc_A",
+      "cif_sha256": "fabba5c3a30470d5977858d07571bf24930c25f230a0d3dd9e1ed5ba6bd6205f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6q3v_A",
+      "cif_sha256": "2ee3d397126a9533a7d08cecbd02d48a7aa8782cda8c7991e83efe7e09a799f3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7nuw_A",
+      "cif_sha256": "df4fdbf4edb85f3cfaefd38a5e78379619f26e963e9892f5de6da83d2722304c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2obi_A",
+      "cif_sha256": "55f1a6adb3ee93af8605394069034458fe59587ff4ae57566b7b282ac0b68455",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3qzq_A",
+      "cif_sha256": "4c66a2a194a37260f573723368975165857a6ddebc2b59f600019762e549c580",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4woh_A",
+      "cif_sha256": "6cac08bca77d7280fb3c69eb1247925ff6df694003f72a46dc1d9113d5fe9f7e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6ndw_A",
+      "cif_sha256": "7343e91b858b0149fae0e1b5392ae2a0f286cb625f87eb2b174fc4a015265592",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3hny_A",
+      "cif_sha256": "497ae7e093f7586e81df97d6e9dfa0b05dac272384ff4e25a16a9d0b20e465c8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1wba_A",
+      "cif_sha256": "b475770867f09c9c48bfdca22dc973e06d99bbf9573aecb57329a996bfdafada",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1yn9_A",
+      "cif_sha256": "bb5b0204f69e3da62dd5e40a598fd0954a6583ea7c310df4f274e3f3316892a2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1a44_A",
+      "cif_sha256": "385dc6440dd25be53fc7ecf07c4be97d9b02435fd4b456ddf37d1519ab06bd27",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4xje_A",
+      "cif_sha256": "0e7d8e8a2d8eb80d07c52021792cced560ff133737a06889c0720327bd8d1ae8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1ccz_A",
+      "cif_sha256": "c3c452e4469a8182f13a6cb31cbedeab03a8f090588f904203358e120b83c3bb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2p3k_A",
+      "cif_sha256": "35f68c532a068322fb96634f6887df5d88dfa27c7431f6670b58c0bd1482449f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6ibj_A",
+      "cif_sha256": "11ead3f6f228d341173a246f1d05ec1bac74fd77c6b96604efc155c0c8d5e81e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1j84_A",
+      "cif_sha256": "f2794af0f46627e4af32ce47540a9accba1ddc4034d2ff877d29fb15a24e9359",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3esx_A",
+      "cif_sha256": "0c61c73c9aa3a77d26ff549af78fc0f9c776631e2933e84290dae205b2b977c6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4p27_A",
+      "cif_sha256": "13870c8ee4aecf09f68fc7398a3c7ee6ed168bc37d6130b6d9f86c2463887fa1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6fpc_A",
+      "cif_sha256": "262db2af7dba24dffbedab25caa0c95f9208656ca48fb3d46128b75b7d0d6d9e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7c82_A",
+      "cif_sha256": "f661f77937be5d2c0eb24fca1d04d2b2949aed5c0068920c62b94575293746e3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1bk7_A",
+      "cif_sha256": "6bafe816e21be93e427c80ddb169a59491e60a2fda7251daf2c3ec2be2b96faf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6ht1_A",
+      "cif_sha256": "2ad5087e685d9787c92b96e48eceb483085eb23957756bd5f3357ace1efc6ad3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5d6p_A",
+      "cif_sha256": "8c88738257e960c4aa5d15dab9a5c4e4858e8d73252a91f1ec63e937d0165a8b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1lxz_A",
+      "cif_sha256": "b6b471fc1befb0540d318d6e17a541342a5649f9ca2bdcc3f16a950c24677a11",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5kdi_A",
+      "cif_sha256": "7e31bfdcc0bf5183935b38ea0a4bc440ea4bccfa4c494ab8e2e9a70164ab1df8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7np5_A",
+      "cif_sha256": "7ccd7f9c1ea4abfd9a33c7a744733b6e8bb7127a760b101f1acb80d4f1fd0196",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5nl7_A",
+      "cif_sha256": "c1facd0e77b12d887192b90f4b86c74e07bffcf8067a3b8f9d406eae1db68c49",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3eii_A",
+      "cif_sha256": "88dd3744620a8be08db874a9e8a724559719dd26dccfc357e1a89e4b561782f4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3f95_A",
+      "cif_sha256": "c8911b9a14f217e475ea2b90295e611c37fb9231f96aa17fec904e6d23dd2083",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3zj0_A",
+      "cif_sha256": "71fd3ee4eb5dc3d4a924b8340ad5e74a576f0e5f8567bc0450db2d1f95f78e70",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2nlr_A",
+      "cif_sha256": "98f5a79a09d213ada94a41ba9e2e6d13c40ad7b54f03a1d28002b1bd2b801e10",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1m1u_A",
+      "cif_sha256": "9bc6e30cd3f821e01cecd46795948373c82da0e6fd41f8da8c6dba116c1bf80b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2a7m_A",
+      "cif_sha256": "b84c220f580b9aff15f91cddecf067ab972e5f203c5628b66024bce9e771c3f9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3n36_A",
+      "cif_sha256": "dec029f100cef98176a896ea3310a50cd9bd7cfdb36d7b3ebf0237fc7f5905c9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1xa1_A",
+      "cif_sha256": "b9ea630cf64b18c3a95bcfd0ab60822a32baf1450f67a039c00a7be489ede5fb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6j5q_A",
+      "cif_sha256": "ee07ac5c3dea14a87cbef76d37959f3834567839d720f4e56c5808c67994c663",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2erf_A",
+      "cif_sha256": "45c7d7edbdae94ab92f8a23efcebedca8454553756a93e94c5dd4dacc8272ed0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4dr9_A",
+      "cif_sha256": "58fe436dc475d648149c139104043b7f236b7242636539a6b2601053bd4ea08a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1h5y_A",
+      "cif_sha256": "a2e1718449161f123a9e9b6c0372208fb97931eb8f8c61d10176fe942edca273",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1g69_A",
+      "cif_sha256": "3ddbb40b162ddb9dc9c4541e00114504d5783921abe028ff91b0f17534823440",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4zyx_A",
+      "cif_sha256": "3ad519cd7d8d8e7e8fe60d241ba729eeec7418e5ebce0e053a18c9ed54a3999e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1pxr_A",
+      "cif_sha256": "db111eef04ee32516ef8bbcd52418f79cd60571fc25d240c5a50ddede2bd0f60",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5xrb_A",
+      "cif_sha256": "08c8a56d9fa35c9abf97c8399d438e7249bd6c2dc6f84c179f9d653c1a09ecdd",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4f1j_A",
+      "cif_sha256": "443c45cd7dae4377ce5ae155eb1d4b8aa29583545268a5d3d02ec1844b0b0680",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1dua_A",
+      "cif_sha256": "32beb2cdb858a2c6c4fc28471264889cf3d25ee7dd7aee51327a9e085113df43",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2ocg_A",
+      "cif_sha256": "169af4c6f08a0aef0304024201cbca385b3fcbddbc8fa7629acd0ff607e30b9a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3voa_A",
+      "cif_sha256": "f9d8c2d80aacbf766dea6b0a85cf7974b9ecffb6e433b549f42265acc3595989",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1c91_A",
+      "cif_sha256": "e9da60591b049f7a9335366bbd0b2714232c644592f7adb681a56fceeeb236ca",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3f99_A",
+      "cif_sha256": "2ff2710e12651610dc0a60e6b697e3a46215fb2c3b152e162e3c7397ba878d95",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3ah4_A",
+      "cif_sha256": "84fc81f194cc145aed66862f83e3f41940523394cfd4c86eb83ebed7a4c30ce1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7bwv_A",
+      "cif_sha256": "eac43ccf75afbcdfa33fbc33301fbadc979e421d6a3f62bf8e66daae77a7c5e2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4q3c_A",
+      "cif_sha256": "a209d3bce118810d4a461177804891e6e729903d8a15740ed7df57ec18dd0aba",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2vi0_A",
+      "cif_sha256": "c0103a84bae909f067b5e35aab85d2ae555df4d0b85c26c5c40e040eeca329f8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4n13_A",
+      "cif_sha256": "0f78aa0f84a5c774d185101f73f2807dd6e490b780ec947112a7f9adc3304eb5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2c6z_A",
+      "cif_sha256": "106be4569bade28f67c4effaf5eb02aefafe9ef811535c19fb565dcf2cc54f57",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5byl_A",
+      "cif_sha256": "2b0795d2c0384582b61ed7cc34f5a593d227fb537bea0128348c2b106f5fbcf3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2cex_A",
+      "cif_sha256": "8e7d6244fd7a4a692b0b32cffd9baae188c7e6d338b374c14de9486151c111ca",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3ea3_A",
+      "cif_sha256": "369c978a0617a32846e67ffe1c7e5fae2fdee521c3d9d0a2c873599e90373d1c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2iry_A",
+      "cif_sha256": "c812644cc2f952d8cabb1474673eb9c9df02a7cb11ed3c4484633e53cf37a7b1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5dxn_A",
+      "cif_sha256": "519968d4bb05a5e7ed8f5864435d6887673d198659eeedf2041943b59f0fbdb2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4jpx_A",
+      "cif_sha256": "f509b4c7b5b2da9b90387e4382eae9829ce0f167bd3aed2d1b326e8d97655af8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7k27_A",
+      "cif_sha256": "9752810b58871e528f4e04323a2eeb757086d31cf10b717b121b8a9994cb81f2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2bod_A",
+      "cif_sha256": "437b050ae830556f842fe609f2044435b17751ce08ed511c7e7c701bdc909c53",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5trq_A",
+      "cif_sha256": "345277a69e6f43e891995336d47f80f7d4da61ec770a5a8136390dadad13e6eb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3wib_A",
+      "cif_sha256": "e1ecc325c33a293fe0649d9cb11801f476667e5a8440130a38a5e86b7febaa29",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4i6k_A",
+      "cif_sha256": "758c987b562e421a317615d9e2b90dff7b9b0d62b6bce57715d929628680a3e3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2ioy_A",
+      "cif_sha256": "e49472c53e7de9a17a57896c56ff80ca6d0d896448c583afc96133c9e43cec64",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6ap7_A",
+      "cif_sha256": "f8ba5a099041e3c3170b8668843089f09d29c5c56306f1976bf45d74687b1ab1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6w2p_B",
+      "cif_sha256": "8c7ed2ff0e001f973eeb006690c6f26ed8c2a513bfec1e255393f82352551aa6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4jin_A",
+      "cif_sha256": "0c4c9c4316ece12108ec4fae6c019b211f148e85679dc85592acb0c9c76471d8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3ita_A",
+      "cif_sha256": "6cb4aab8f4518902d8493dfc9249c940b2497cf7140681724ebe3af92b75c128",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "5obx_A",
+      "cif_sha256": "fe72731cf575ee043e682374e08c3ea4e2f86520dc129ee06f6db1f6015289d4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3fjl_A",
+      "cif_sha256": "38b3eb26ff0375c43e43a71c7dec36c344808308a01625f54f1acebb94d993f8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1v79_A",
+      "cif_sha256": "153e00cf6dd5ebdd329302ccb6a7c94fef75dcf6181de377c0e3fcf6b01725b4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7kk6_A",
+      "cif_sha256": "3e4ae0066a19a90b08ed2a75ecf012587bd7e7d31da7b3ad647f645849e1c081",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3tgh_A",
+      "cif_sha256": "ec3d80ca043a0e23c72630ca914e37f2b8278ee742f4295462a8c677cbbb38e9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6xqx_A",
+      "cif_sha256": "d8b731eb42f4848168256d31a09e512b90a5a688cfcb80f494c223709493496a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6l1h_A",
+      "cif_sha256": "49ee8127002e6de9532597f24e481ed27b3f23e29521ccee86044314a2b99af3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "7a16_A",
+      "cif_sha256": "f2a275d7efe699bebf93c843572d50590e906bf53350cf9f252e7525f05a1abe",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1zze_A",
+      "cif_sha256": "30c80d0ba029cb1d63f9c81ddda8553e66e0eced9604009eae5895a2dbdb27bf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4pam_A",
+      "cif_sha256": "663c99fd671d1023bc6149ea7da7cbb7135a35224e4bb8f99855283c5aa4754d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "3m10_A",
+      "cif_sha256": "d28de7ee38aff863bdd0c93f55e86ba003d489456ca6d6fdd1b23babb607076a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1z2n_A",
+      "cif_sha256": "21298c69d0e89553dad97735d71ed9e2bb38e5f496e34be879cf8136f5aac81d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4lv8_A",
+      "cif_sha256": "606723b34a0becf6e664d7f9131a4a9f5f26d939f2514afa9df0e2e7a8300178",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4ihm_A",
+      "cif_sha256": "5affeb4b270b94202e624dea884cb82a13e1e5e34bdb8c653b2f174a85f668d3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1dvn_A",
+      "cif_sha256": "4e6ea689bf372af140d9b4b94d264979d472a6669c502adff34ef779f4c59f1f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6t8d_A",
+      "cif_sha256": "244d665dfff80b8a4a80127ba3b1ac6d502041af8cfcd60fb58aa9f1fef1c172",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1jcf_A",
+      "cif_sha256": "fc98e27ae5f5fad2a9633dad9aecf34244ea8292744e12a25813411fe4aa89cb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6ijn_A",
+      "cif_sha256": "465595e94e20d6ff85ff92ad769867425702588f019c366589b8ed1f4d9452e9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "4fk9_A",
+      "cif_sha256": "9cee7f4677fa49506d41e9fb835658c55be08e7dc6083963e3e4a47311273699",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1woo_A",
+      "cif_sha256": "8545f368b95595cc09101b003ea908e8205c20a05c492ece1f41c3ed5d35f34d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "6ch1_A",
+      "cif_sha256": "8dec7d70df17eaa25bc6b849c7f82c6c84258c47e547f760f58c16713b33119e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "2d5j_A",
+      "cif_sha256": "bffe3ef3efc03555a0a50b92ae8152c2a76c2d8ba05f0d00448aa8d23e2604b2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260923",
+      "target_id": "1hb1_A",
+      "cif_sha256": "dc07b2c492e3654ddd14c0778bfa06860d30cd34ae747123f73cb545a6c53ef3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3gxb_A",
+      "cif_sha256": "119df08124aaa7ed5bd50ae40ffa1c8908539b3cf9bb770a861dde5cfc6c6ed6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6a89_A",
+      "cif_sha256": "b31bbe5466425b44ee003c0c0404d24f0e8a5adc0e02ab274581f27df2dab3c8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4xbc_A",
+      "cif_sha256": "25e90c5bc6e79bfb0ad37479c8a592cf534a727d512cd0fe4288efd172dd1122",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6q3v_A",
+      "cif_sha256": "7e225cf881a6a171465ffcf4ef67dd993203eec30dc34f2366c911c404c421e0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7nuw_A",
+      "cif_sha256": "59f5aa291fe635f26ee8725776cdc14902dfc6f79d8a5cc87fef348ced3eb5ee",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2obi_A",
+      "cif_sha256": "12f5b172072bc66a22f204581313f33130df7909be1d9f3e5cc3d4fe940d571f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3qzq_A",
+      "cif_sha256": "089daa1fab45fa73cec987211a224527e77ec2ff24e0a6132e39a7a612184a9d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4woh_A",
+      "cif_sha256": "47e7f79f30c83b2a528791086bd660c66ed8af75221c1b6b044766e7bbe430a4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6ndw_A",
+      "cif_sha256": "be0ffb3e51e5b60a7bfd071b321075fa453792541a319ad26159a16cec695b74",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3hny_A",
+      "cif_sha256": "f08cd8c175a67d718247b4181bf8f227ce3c0328a61e33c88429b82e906521f9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1wba_A",
+      "cif_sha256": "3e148cc6a4f2e9e97a09c0c0a685e0d80afe345456440ff719807d0b63c07398",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1yn9_A",
+      "cif_sha256": "27e208a10dc84d9fd19f096c1c7823b8e5c86819392759c4789ea99cc83446eb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1a44_A",
+      "cif_sha256": "74e80c8ccac76b249817657fa7a73097cabe36e1453a978c58ca7f53e329cf3a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4xje_A",
+      "cif_sha256": "88d9d51554510ca4e4b0c89bac7e1c980d7046509ef039b5f4fdde362c2c70a9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1ccz_A",
+      "cif_sha256": "c9d67c3d694046edafd37e6d79ae1e308902b16cf59bbb845b4daa6e1538a7d9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2p3k_A",
+      "cif_sha256": "24985902008fc8ddd098d1afcf79893957738ae4ac6d1e322be58fadd212e05e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6ibj_A",
+      "cif_sha256": "b95bab11a3b8570c95c3752e7c55e526d2214c87423ec0f290cd68fa04ad4db6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1j84_A",
+      "cif_sha256": "7d7df074746a663f5853b599e254d1174c32d4b0c86b79906760cbe3ca205dd6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3esx_A",
+      "cif_sha256": "11a809582cb1ada0fd9089d2d62ac5dd95c4c8fcbbec5dc471eddf205ba311c3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4p27_A",
+      "cif_sha256": "577144a097d5203af8ddfa45208619ccf9d772f728d1618b7e8879d10c1c00ca",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6fpc_A",
+      "cif_sha256": "22d49b5195b6c1e71c5b0f50a729d068e5cea27824eaa1371c4e93210bc25819",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7c82_A",
+      "cif_sha256": "3b99c2b2f15aaae8bf1ea7771fc239591c40b1474e8eef7b9fc8cc7c918da7da",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1bk7_A",
+      "cif_sha256": "dc6264c6066d005c1da6bf40ced2f450deed3ace345024377c388eea09440932",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6ht1_A",
+      "cif_sha256": "68fc4c73feed4b345c3c16c882d8e5aa2da2e5ebc662209156898dfa7023114f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5d6p_A",
+      "cif_sha256": "b50fcc9c677c32175439a963fc9ee3f0f230b5359c31835b3e9edc66ab8beb1c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1lxz_A",
+      "cif_sha256": "fef1db346358bdfe66646b37a4757168dd6d565287e3a62105ead5c0dd8f5f2d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5kdi_A",
+      "cif_sha256": "a96886112bad452206d641f412d00691baeb0072dd414ff73cd9d2197c01cca2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7np5_A",
+      "cif_sha256": "c8b805577f0fad1e4e040de15646fb8c43268244848da49354195b00a914efc4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5nl7_A",
+      "cif_sha256": "936293b79ca25d3c8e9c08a2220319d4bd3fbf0df940891a2cc6929307229a30",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3eii_A",
+      "cif_sha256": "4707054b688a8f3680d7b2c56ce2e29405fdc82abf3c76278f12bfc63301c10c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3f95_A",
+      "cif_sha256": "c95dd41347f35668fa227937201d3219356275159731cd813dced9a668f3d74c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3zj0_A",
+      "cif_sha256": "9040b18647cf623755d4e7d30dd995d5dea427d97ec854b899b55a9a3d5122d7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2nlr_A",
+      "cif_sha256": "e1c7858d6be75b5155e408a0ba38f98c8a39c2a8e19ffa52464981facfbb5db5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1m1u_A",
+      "cif_sha256": "aac6d3124443d803399c64ffeddcde4ba53ee5ab487645bb68c5d12c2f71f345",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2a7m_A",
+      "cif_sha256": "33ca7d13ac60d02b3b3b1fbc269485ecc188da75644b7cb4d7ab0fc99c10be45",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3n36_A",
+      "cif_sha256": "35ad9337fe2818f3a906e51b80c2cd2b1340cc1f7827b18fa4c3d733889de021",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1xa1_A",
+      "cif_sha256": "d124b653998168c9ed66c56f4e014024a7fad6efaa0f73adf81ab0a490472fb6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6j5q_A",
+      "cif_sha256": "11cb48312744ce42ea43bdc5180a7ea10fe4908a13d389b4a8b085166109e6a3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2erf_A",
+      "cif_sha256": "f89591479de11356a5771226e54bc63d1aace275a834f25b9838c8c1beac8dc9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4dr9_A",
+      "cif_sha256": "e0aa4a2190fed31bc414aa76350e76bab808074365c4135aad8bcd68817f8060",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1h5y_A",
+      "cif_sha256": "38297bfc13d79ba0d3f7904ad9e5515897bccea2ef8864d45e35a4a68c30ad10",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1g69_A",
+      "cif_sha256": "5ef503b0aa12d9bc72d76164933fc02bfaf62d1fee917355eb2c45a7dad1041f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4zyx_A",
+      "cif_sha256": "cf7655f8200ed285685e0bf5a777dce98106d84538ed8436726cc77f5abfcbc8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1pxr_A",
+      "cif_sha256": "1823223dc070bd13fe370ffcca76758c0298982d4effce7005978d3f8ca3330d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5xrb_A",
+      "cif_sha256": "8620b2f5db2d659603ecbbc5666b2f5fd509107c86cffee731415e8a2d1beaac",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4f1j_A",
+      "cif_sha256": "e9bd6fd148aae5ef41ed3a2e3e4fdd282a290bc4319d60a60b0caf6ce55b84e0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1dua_A",
+      "cif_sha256": "5121f821bcc13f95fd7560dbb59f859408ed6391db2c3ee76a66c2d32590bd18",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2ocg_A",
+      "cif_sha256": "364b88164de940e6fda0ce3b0592ac7cdcbbdae60b428f8fc63658f67c0b61c4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3voa_A",
+      "cif_sha256": "eb0deee3488d19d795f2fc921e47b808964cbd3cc15385b4bb82a360fd1ddb09",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1c91_A",
+      "cif_sha256": "05a9cf8462af14351d06d9f70add376ff6605eafce897f98bfdb28f3eed3c168",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3f99_A",
+      "cif_sha256": "d13f7d58418df577cbca0739c63df99d72dd42dc473fa5aa3532d720ecb926ff",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3ah4_A",
+      "cif_sha256": "84c4e77a7cd8699b8195703625b453c5598160bbd6097cd3426a7c976ab6f19a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7bwv_A",
+      "cif_sha256": "f41c10f353e2fee13c2c7095c940607bd0d38efe44f28d6a4e75f11b542a30e9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4q3c_A",
+      "cif_sha256": "c3166587f5927365fbd380b0c10d1190b7ae5afc1e9600f0acbdd489a109ad77",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2vi0_A",
+      "cif_sha256": "f28ce74efecc11dc27641bcbeb07cba02d725892373d4d7cb8de19ff81b65d2d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4n13_A",
+      "cif_sha256": "cfd380da48a179773a0730ee5c8cb2b705d691b3410971e72838b5e68694422e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2c6z_A",
+      "cif_sha256": "784224f4ff16df443b7bb0857b46b558a6d4f769e4d05d20e517e0437d74c64a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5byl_A",
+      "cif_sha256": "fb38e774bdf6adb066bc931d733fbcd6e9b4716c25c34f1b77b12df517a4e8f8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2cex_A",
+      "cif_sha256": "24655e3cdeae296e570e72f578a664e401b15c298a1b0a9a2494a5b706a2f6c7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3ea3_A",
+      "cif_sha256": "d48b4aefcab64fbbb42a40a5084d54293cd4387942ddc24809904a3cfbec1349",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2iry_A",
+      "cif_sha256": "66c5dac1a76720068caa1da2d869b25038010fc425e06ee5d7fbcb99d68db488",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5dxn_A",
+      "cif_sha256": "290ad8ffbe0a541ab332187271d66b82bcfff50010fea1a02c3bf44e25b56066",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4jpx_A",
+      "cif_sha256": "687caad5f6abc6571195a39f4d7cc386199d9e77afb3d2ce2650c618c41d487f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7k27_A",
+      "cif_sha256": "eec8d22dea7d4c3a3b2b1ae302377d44ed930ccb587aedca5859c902a2244664",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2bod_A",
+      "cif_sha256": "60f1e8d2ac138b4eb94a0d18e47307450c2381d6dd55cc3a03264ce5070beac3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5trq_A",
+      "cif_sha256": "6603630f094d77e7ce286f6adb5ee444cb78c39fb5ed46674300d14cbc3e3704",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3wib_A",
+      "cif_sha256": "4056f8023cc0fcaa93bcef582293be26ff6892fd92e31796c145c3c9bcf330c8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4i6k_A",
+      "cif_sha256": "62123bb105139fc7274ae86c2d41f95ebb24fd25cfac3f519a146120b86d2685",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2ioy_A",
+      "cif_sha256": "12b55a97dc3e857d3583d54aca033db1d275a840148eafb16bde2583c7bf85c6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6ap7_A",
+      "cif_sha256": "89d886f879be8390b76497d04387e1d014e9c285148c108230b148531bb06a55",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6w2p_B",
+      "cif_sha256": "a266da20e80fe2130bdff52c3726bbbdc913c873a0f0c7583e6c6778d2ec327a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4jin_A",
+      "cif_sha256": "16ed975379d7ef8ddab86e0ae84ff3b87f99e2f7c402a8260367e33a13514b93",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3ita_A",
+      "cif_sha256": "f8a03eacc3f79f22a94d902b18bcb21b619f6ac8594609bd8e3bc5afd7ccc131",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "5obx_A",
+      "cif_sha256": "17c26dde925a39d17c35365a5fc20e1f3701c82370d7534a16307c43d66ad9c6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3fjl_A",
+      "cif_sha256": "08438fbe057845a6722bb9b09144539450997fe1816db07d7fc66524692f131f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1v79_A",
+      "cif_sha256": "40b2cb6a9190c24f9db587110918c67ebb36428ad10430630e595ac2a90f7cbe",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7kk6_A",
+      "cif_sha256": "5dec920bb4dbf9411ba27b3109afb5866abf88dff33fd793aa71cb3e95af4f16",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3tgh_A",
+      "cif_sha256": "c25ace3c7be65a0cb6ec17d78683c550d63370d5288fb2e5150a5e361910d665",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6xqx_A",
+      "cif_sha256": "7481cb3dfc693133c915efdc7be47858870313bc79233c62ce327f16f50fe61f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6l1h_A",
+      "cif_sha256": "566dd2d374ab163d76008e6095ca9849d4e914ef3d5f090e9e72c928fda7af0e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "7a16_A",
+      "cif_sha256": "806830103d72b34301d6d1eaead251485117db2dca6b997a2dc1c724b9b907b8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1zze_A",
+      "cif_sha256": "962441f1c25722abbf05f58c596f41c9011ae594e747dc231b817364be5a490a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4pam_A",
+      "cif_sha256": "2311313ee92dd3329e9067e876c9ab189720f16a3eb7b21ede66672c93a71c9e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "3m10_A",
+      "cif_sha256": "e94a308523701be1e8cde32fd73126d1d41a9efdf359be52e1f24c78409b5f5e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1z2n_A",
+      "cif_sha256": "d817c240f612a9720dc4ed3bf20abbacdc84dab6867e7363c69a5a58b81b0ce5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4lv8_A",
+      "cif_sha256": "a182ca34edeaeedc351135e42208b70766c00362ee8d3801f1e09469dfd4f64a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4ihm_A",
+      "cif_sha256": "c18d9a617b07e7636e1b3f550a89c2280c8f8ae9edf81a6d273c8f2496e0ea1c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1dvn_A",
+      "cif_sha256": "fd11a853614ec2593adb59b50fe6ae9bcd47d9d4451438aa02d86da37957b885",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6t8d_A",
+      "cif_sha256": "eed257a92701da29e42cfd8c3907c53666b08f973aaa133e62cca10f7b746631",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1jcf_A",
+      "cif_sha256": "04a0a210033c410d6da030c19cb9deb3bc4845d8d20c92d53c8c9ea11bab1d37",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6ijn_A",
+      "cif_sha256": "73a86e99e9569939d948c93922530875c126c27f330c6bb01a5158f720e52fdb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "4fk9_A",
+      "cif_sha256": "cda29d087e7db0882875f6aa3416d154ac33ba9caddbd8f2a2906c96d4ecdcae",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1woo_A",
+      "cif_sha256": "8739f34bf407bcfd7362bdb722026e8df0b650d5068abfbb9e68ac733f4e3fb7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "6ch1_A",
+      "cif_sha256": "be1cf164b779a501e8631f6c5f40fb4f619c65ca96ec8027537c42f084b3e02f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "2d5j_A",
+      "cif_sha256": "78d41f9603e6772b6eb11b8b0c5c2d0f764981d9e8ac869b078731b7c98bbe7b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260924",
+      "target_id": "1hb1_A",
+      "cif_sha256": "dd29b7548f8c1935ec54a9c97c0f2d737abfc4ae9d3f2b7df44743c0962b5175",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3gxb_A",
+      "cif_sha256": "02faea76cf1dafca1a34a9922a7e435843ec4440ae54b83749397626b3db302c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6a89_A",
+      "cif_sha256": "e219a0c4b2d6d5f947e8e57992c3f806fd18bea3b9e1b9d6328c48989edb9ace",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4xbc_A",
+      "cif_sha256": "4b76cb8083e50899703856ca58bf2315c9b1582fa4b180ffe3c152417c92930c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6q3v_A",
+      "cif_sha256": "7e98c3cbb7d0f491f1803701ec2beb7f8a8ede4d8561c0358e0afb91b1f598c5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7nuw_A",
+      "cif_sha256": "71380437fc201e79d820d31a44dd3c21d6eeef0fecaf9381966b4ef21665f64c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2obi_A",
+      "cif_sha256": "cc05d66985e31385c64af4b299b991aa4bfd97c88b328b1261066a68a0b4ef5c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3qzq_A",
+      "cif_sha256": "dda75d2cf04a59a71aaa0f3d17876f5835f7d85c43a9d90070cac091a2cb9cc2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4woh_A",
+      "cif_sha256": "5a6553b0261cb0b3c7627bebb83f328caa5eaf93c83dc1930bf93d5f4ed62578",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6ndw_A",
+      "cif_sha256": "09df87b437c015876ae04f75f8a48a7a9e431b11b54abb10307f00481e667e47",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3hny_A",
+      "cif_sha256": "efe84c2b576ea0e5a91d5d638642e3b72ce7d8ab4ba71b3263752008a91599fa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1wba_A",
+      "cif_sha256": "5f7617687e4d8535162479abb8961f8d3b76a37c6c39c12ab3b6179edd306002",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1yn9_A",
+      "cif_sha256": "9823cf2d12a3c1cd4e5db86461cde6b9222edae6e9de93f8a78d5fd7fea88818",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1a44_A",
+      "cif_sha256": "5e0af03801e0ba6cb433344cbbb004e8968e82a98d79a4351a343472fd28b54e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4xje_A",
+      "cif_sha256": "4a6baf9e5163bb352f98ab6cd4791e499245bae7469676f64e0fd39df2710f12",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1ccz_A",
+      "cif_sha256": "2c13041b6b2ffad48edfec35836773f64738b205b95b614c22a305378bada6d0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2p3k_A",
+      "cif_sha256": "5076831ac91d0a4bd2f187826fd91079d5f53c18b2156522b5a1fdf36e1e2efb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6ibj_A",
+      "cif_sha256": "1f1b1462e570257318e0053856f389546b37e5b0fdff031fc5333a9c3efc6194",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1j84_A",
+      "cif_sha256": "6dd506ff14447309420da795b1355f1dd7b82abc9ccf130d16b7fafd8edd2836",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3esx_A",
+      "cif_sha256": "e2d6f6d8756109f64985540747900cc42105e4fc7e5a78165728cb08ba96f24e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4p27_A",
+      "cif_sha256": "69086b8e4194d60a223767a035abb75eeeea42e6e8bb1b44e15f85f256d48d08",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6fpc_A",
+      "cif_sha256": "6c7b99b6af4803e4576593278d8c79adb289f6e63df366df390cb7f1b2758327",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7c82_A",
+      "cif_sha256": "9e53d6e75345de46726e45d6a7e09a4b9009b43f197814f0de72114ce7b9dc56",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1bk7_A",
+      "cif_sha256": "c8ca9b0d28bd0ada262804828c0dbacbf4c81a3a7646751ae5b8f9cd7b953db5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6ht1_A",
+      "cif_sha256": "fec4076e287336a33a55a181141af2d7514e5e7f182294b0356c4f46a2b6e807",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5d6p_A",
+      "cif_sha256": "26761d5bd83386fb31a8c7323230a780bd5814202b1f7be4a9d6796523c6beb7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1lxz_A",
+      "cif_sha256": "b0ffe9c1608d0b780cd8939ae5840a9071c9d968c4fa302b818cebc4edfa86af",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5kdi_A",
+      "cif_sha256": "dd24280c44b3057733a95f1038999778f2cae6611e297047c04c97786c774e8c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7np5_A",
+      "cif_sha256": "1c1a9f1d2049457def9b50934819e0038b67b4c42274aae7f8d20dcf1cec0e46",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5nl7_A",
+      "cif_sha256": "fb5192306d94a63023c191a35f4f2b7f7b5756978d5a2f798373c71e0388636a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3eii_A",
+      "cif_sha256": "f41dc5765442d31883f35c628e76ecd92a324a2a55b5c97f63de2b0da435b0de",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3f95_A",
+      "cif_sha256": "853e60594ae606afbc7bc74686bb9467877c548926327197f89ff50c528d4e3a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3zj0_A",
+      "cif_sha256": "e85e34ef1a3d32c12330f6c0e9a32fe30518919d1b1c9be0b322c6ac2a33344a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2nlr_A",
+      "cif_sha256": "c4efb0dccda2c8a4583b7fa72e08f40d74381c2b87f0c5d8ca698b905aab7d99",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1m1u_A",
+      "cif_sha256": "ef6fa912d1ed42ac7cd84f9dbb7b9cfc5e04c19ee32fc6c6122e550d3a5f84f1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2a7m_A",
+      "cif_sha256": "de538103ca0e4fd8e1b6f2578add71980aae7089678e15897262a98f193be451",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3n36_A",
+      "cif_sha256": "1bf44913abd4a777dcb3ecf6562485d1bdf976fc44b05a84dde9854286ce01be",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1xa1_A",
+      "cif_sha256": "f284eaa82f4a539a3b2d682aa36e59cea565750513a71dd0913a93cdb6db73a8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6j5q_A",
+      "cif_sha256": "0a8eb1fa72056dc68a6d619a73e87146909f6d48a419616a672eee0934d7aebe",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2erf_A",
+      "cif_sha256": "fdb6401819707ed82f214b148181f665acc6c702e74d4317cb53e1f4d1ea5938",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4dr9_A",
+      "cif_sha256": "254515d6874d6697261cd21fa73148af59b3dd01688bb657515ae3b8a13a0322",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1h5y_A",
+      "cif_sha256": "036bf9d06cc66a0ceb7c6b5fe77a6a454eeec051012820f836d1a7bf33835de3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1g69_A",
+      "cif_sha256": "1df5b38928026e72e54cfb4a9b0200ab6618b3af9b17378948c4bb12327f551a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4zyx_A",
+      "cif_sha256": "e0de972d2f50b7883cc066122c17c08a54dae434dc1bf994baa3aaf7431651ff",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1pxr_A",
+      "cif_sha256": "b97c73d974eebd6c19937ca4cd9b218f051af63b7a5ed0b86b50c0bcaab5e5f0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5xrb_A",
+      "cif_sha256": "29dfa0852ce6c24b059541562b6c107caa64c10085e3ed646475771e79aabf7a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4f1j_A",
+      "cif_sha256": "6fa5eb0f08fdda2693a631772e1b3c7b47c46ebbf3c5caab66ba2a0c8671cf65",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1dua_A",
+      "cif_sha256": "c9aa4daa21be3b909de4a67c04fcb4f58ff7cfe71c3df506ca1346f535d663ac",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2ocg_A",
+      "cif_sha256": "2fbeda9b478afc74f89e16a946fa16d9f29d1cfbb4d9f898fb8f40ef0a80124d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3voa_A",
+      "cif_sha256": "dad14846f41107b92911d8a21e5cd3a1fe7a5f44a243263b26b94ae565b7e34d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1c91_A",
+      "cif_sha256": "646876061c84a5651b6be1c3d92da6fd304d2ab5a813b2e7c90d94f14836bbbf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3f99_A",
+      "cif_sha256": "b427196a9b6b0b740d44a4acf2cac60a37b3d400354fbff4fd71779adfd102f6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3ah4_A",
+      "cif_sha256": "1c7bd1d0f13f8a7511a437c31a64369e4d1a824b796a4d4b7127e5ca6b9f2c72",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7bwv_A",
+      "cif_sha256": "9c38d6b30bd7e635cf8254243de65f7ab1a02575190576962c0a87885dcadcec",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4q3c_A",
+      "cif_sha256": "3fca2f0a86e0952f02562aebb2bfabfebc651450cb00f3a97b8f056d1967fe10",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2vi0_A",
+      "cif_sha256": "aeb06057ad350061eb4644dda74582450f5b6e41676aea66789b71e177331c68",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4n13_A",
+      "cif_sha256": "a92f83477740c19dba501d8ea86174270923e15a55690dd500186cc3a8fbf0e5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2c6z_A",
+      "cif_sha256": "e61325fe43e1146e79bd57299512f74e265f542f0aa68058eaed2383b1317024",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5byl_A",
+      "cif_sha256": "2b8a853ade4c363ec2d6d506b8636a38b1e54fa89e638e9e61985bf98722ae60",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2cex_A",
+      "cif_sha256": "c8e412cfa9293732bf9d4933c710a62bb20982413b6ffe843cafe665e1bf1a69",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3ea3_A",
+      "cif_sha256": "c53e4f062509db25f1fcf6ac2c01f9d788f66614cd4da6feb876bfd5b7c827fa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2iry_A",
+      "cif_sha256": "ed02ae513838f9ef694d77b6948d897ce12eb1adef2c5cd2963132cfdf0a4bca",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5dxn_A",
+      "cif_sha256": "28935c2b7a3c24e8a183cb040b8cc9c08e38bfb3f4495803553354302b12d5dc",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4jpx_A",
+      "cif_sha256": "1ea2f5cf6a6d3e6fcd089695f42466b7ecac278f9d710f70e90e187fdf0d9c15",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7k27_A",
+      "cif_sha256": "e8a8a39aa38793b5497972276bf29dee6492333f59fd39d12047f1e83f44e4ce",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2bod_A",
+      "cif_sha256": "de31942676e0e881010fa8c4dcb373c8947799571fad3f7827204be4d7ae13d1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5trq_A",
+      "cif_sha256": "9c8b039acdb12af264705396c41662f8e606ba8b245386b19d0d261e20ec862f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3wib_A",
+      "cif_sha256": "8fec9a42c04593523c63d5132f9ee3004ada6b4b8a7e6462c8767a7187cf45a4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4i6k_A",
+      "cif_sha256": "af63a7a995911de3be50be391758882b955c3a0ebb35cd931c6ce3a473136ada",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2ioy_A",
+      "cif_sha256": "58bfb0ee148143e157df7cc4736c5fbe5a9fca468521a2cf601cb9ef7f3f13c3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6ap7_A",
+      "cif_sha256": "f7789c7685166ea69ba0dde474dfa15c9c2faa30ebde5228024052fae0bccfc3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6w2p_B",
+      "cif_sha256": "95ce38a7877b7fa8a9e61586739489dee2ecd7a1ae87d77cf130067858bec70f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4jin_A",
+      "cif_sha256": "763fda6b0c0565a2c937fe24b58900d58a87321276737917684cb20a22021331",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3ita_A",
+      "cif_sha256": "482a5a40f565b715fcab8f19fe3e10c17edbedb5e03be03a452e750ff1035e95",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "5obx_A",
+      "cif_sha256": "4a063c7258fc6389a6c7a4c72bb433b883d664986a3e98c0355c69068813688b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3fjl_A",
+      "cif_sha256": "4c0ff5e81e2f5aad131767922296694c5eeb6fc4bc916cadb4c2a757ce3ec0bf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1v79_A",
+      "cif_sha256": "39f8d33771f8f8fa36ed719316e7dac245fe2e4a764a2c4001bfd5cd71fc57ea",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7kk6_A",
+      "cif_sha256": "e3519212b9ae5a98749169871c4ed575a071259e6706ce71f5dce3e33b6350d3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3tgh_A",
+      "cif_sha256": "9d6f2886057e28e325d783cc38394433bfb97c2a74077c139c69fc8c97137fe2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6xqx_A",
+      "cif_sha256": "604f70ed182662c153d070c4e8f198fe7300bf37c61ca4437ac1a366f0c0bc9f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6l1h_A",
+      "cif_sha256": "91f763f5b26a2ab53679d9d9358f0fea200149e3542e5ef4a19428d3bd10247a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "7a16_A",
+      "cif_sha256": "07bee69f45ef479fee5d48952fd0e7aafb45ed16bda55445268d352050a750fa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1zze_A",
+      "cif_sha256": "79c0616e11bcca515190f0fe81547d199551f02cda54671a069d6d442a3900f8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4pam_A",
+      "cif_sha256": "b54af90877a1435827516b51617dca577c46022c2fcd84eb39ab67645602c3de",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "3m10_A",
+      "cif_sha256": "ab77556f4f161b47ff582a6872a28486f532825444ce930605adfb08baa9d496",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1z2n_A",
+      "cif_sha256": "7d8592677e9510cd1ac56d64ec30ed84a01ff58f2b5485c1e9198c39d3789eda",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4lv8_A",
+      "cif_sha256": "140d7b8bbf2383eec7a14f547e0f8e0bad12157071ab13e7440a86b4aa73f24b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4ihm_A",
+      "cif_sha256": "b5305aad4673c7c69653c6ed2581d8ef66994c76cee1396bb04d7c6f72b1e2f6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1dvn_A",
+      "cif_sha256": "9b5b2a3b354436bc744e6aa7cc0f8a5c78f6a23052fa5fe25253b67530f46abb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6t8d_A",
+      "cif_sha256": "657c6bbdf30becfbdee83fdbe5796d63aba1d138e44d45a86c3b959fa12937b0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1jcf_A",
+      "cif_sha256": "a1551b3c378d0481631d0e0997d262a8927d5034e8a3488e3958adc8d883b736",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6ijn_A",
+      "cif_sha256": "ab8a6e9295f6df60535ae13191e007f297edb926cd0fbdeabe9bb64f735628e6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "4fk9_A",
+      "cif_sha256": "61dd5fb3e1f89f40eb3a90c45ebe13634d3972a32af142286cb332cd4fd29268",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1woo_A",
+      "cif_sha256": "ece1647b2149611691c6f7f5403a8b8eaebffb2b557f52cc0de53e1a186273a1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "6ch1_A",
+      "cif_sha256": "0ed5d772e0d29919478becefcbc6952f6e73fba936aa8491cb1aa7b790cc3a2e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "2d5j_A",
+      "cif_sha256": "b1bd9bb87cde047989db0cc047983ee9b8acce05ed7687c675065e198eba3d0a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "I_C_s20260925",
+      "target_id": "1hb1_A",
+      "cif_sha256": "0c7b3313a08ccdfc72545deb93ba2a35d6fbb47c15548ab161f02876a5f2ed7e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3gxb_A",
+      "cif_sha256": "df6e3119c232995cecb27d7f9c3dd216a4acb588f33cf672bce187721b44600c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6a89_A",
+      "cif_sha256": "d35fd5ffead419e5ca32410d29a17fcd633b3d781843b50dc937d4db27c57009",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4xbc_A",
+      "cif_sha256": "cd1838a180d537785a1971c13c77b02e432e800ebb8e8fe81a020555edd98cac",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6q3v_A",
+      "cif_sha256": "7dd9498813595210a853b9c5ac27ede862c4f9b3d11213529e14ec995c8f738f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7nuw_A",
+      "cif_sha256": "c2592b3aed0268dd4ab46bc4d9685ec017894c274e2cd452c6f8684556f81da9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2obi_A",
+      "cif_sha256": "4a22c9daffdd1509d3eb9cee6ab279608e25228779aad337c229b906383e05ed",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3qzq_A",
+      "cif_sha256": "d8c30ff4ebaf90465fee744388dc414e1a9f047f60d9b0917955c56eeed8e402",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4woh_A",
+      "cif_sha256": "a5ac7289b2a5c8fc3d73a5644b9d27803fc52dbf4165d05cb2f9ca08c7f54148",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6ndw_A",
+      "cif_sha256": "b25c02f9db0ad5f98f2cbeb3f8b4d7547feb1f93d7a97ffa12dd25a24b609bc2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3hny_A",
+      "cif_sha256": "fca08cac2034bcb478b975c455e8c0a5915103b5dd8bde0ab2350e7c706996b1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1wba_A",
+      "cif_sha256": "279bac33cb015767f22fd434ca3c63f65cd53ebdbe2af10a68fbee2b1217b8c5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1yn9_A",
+      "cif_sha256": "655c026334a55f6238802b81fe0336e35cd350bb421797d29c16f7d4c2fe698a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1a44_A",
+      "cif_sha256": "7bf382fc535fd75f8c0982094410ce8f1b98b316267f863831b388919fbf03df",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4xje_A",
+      "cif_sha256": "1556fb2ac8e14711cb809507dd184fa5fdae3d6ebc602b0fcf56d8b2e31d4409",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1ccz_A",
+      "cif_sha256": "df9afadbbf18e974df4ad91f48b9cf3592166b38f33334c759d79b88ab3a5fbf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2p3k_A",
+      "cif_sha256": "7a95eaf9a8d40415337e82a9bb1afbf27cb9066833eae618ac432d468856a09d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6ibj_A",
+      "cif_sha256": "9a67e328162679fafc2e18fd454936366007a7e723de595379f3a59d0f4f70a1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1j84_A",
+      "cif_sha256": "e96e60ffdae0a051619547c73d204e767027eb59cfc3d45d942806ea0c5c0cf2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3esx_A",
+      "cif_sha256": "26a8b6506a9d6796924cc3564ab35b9e1ffa920fac239fd5003efee65a694a41",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4p27_A",
+      "cif_sha256": "0548921f4652d39f12b9859d072fe20c4044ccaa7ea4fd5d3de3fc3984ac7b10",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6fpc_A",
+      "cif_sha256": "cc1f391821df276e76b572eb842835a434103c20dba0e0f05f1bb45438e945b3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7c82_A",
+      "cif_sha256": "7429d60d8e93b5bd267d40edd8ebc109b49310344281974fd93235451ae3c79b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1bk7_A",
+      "cif_sha256": "db76a0887b7503a75cead82de72701a38204e8d3a1d4836a2a917e104a339f71",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6ht1_A",
+      "cif_sha256": "67e35c1e8d627eb95657fdc3a90d4103cbbd6aa31cdf5b13d421836075460d52",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5d6p_A",
+      "cif_sha256": "6f3fd0c21ca46a7ec2eaae17b745fdbb07de11cfc3886164b1d4e7285a98a3b6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1lxz_A",
+      "cif_sha256": "78eea5883e6e8077efd3ebc4140f14e4c967e0c71416935961a7411de8647e77",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5kdi_A",
+      "cif_sha256": "e984607e364886a0c0eea05b49d5b3af885b4c6b67eca1ce012ddf5fcd236a73",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7np5_A",
+      "cif_sha256": "7a158d8e7c9d6d1b2a8bce1c31249efd93ac42db902cf81b7af0de7f626eebea",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5nl7_A",
+      "cif_sha256": "acf524624b845de47c591d05fb92416f7d2d10004fdf449105ba506102d7e938",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3eii_A",
+      "cif_sha256": "672e2f324229fbf9d4eeb47d5bd7be46084ce5c601b6ae2e464aaff93b6f1394",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3f95_A",
+      "cif_sha256": "3692df121efa71d57bb0c42f7de478aabf9ae5c1384a88dee4bf3fc0af7f8885",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3zj0_A",
+      "cif_sha256": "05586c9c6b30c702ae1c12295897ccf81c1518e82cf8ed69132ddf0ebea111a2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2nlr_A",
+      "cif_sha256": "93ee0f198d04c7dac702c4e5a120987177b0832751181c201df933b022ed81a2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1m1u_A",
+      "cif_sha256": "9e675a441b366f524cdec7ac7112d2e0bd22460c5787634335734f8f5c18eaa2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2a7m_A",
+      "cif_sha256": "23176c033a0d3c133b823135527c02ac8254b721cf834250bb3d4471a48980ec",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3n36_A",
+      "cif_sha256": "5050ee056ee67dc3be0b47029b86add3a3370534be6e5a59014e23fbc2ea615e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1xa1_A",
+      "cif_sha256": "408a9563b4c6a82acb5b398baa5ab825d60650a6d665f188d481f7904d1e4370",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6j5q_A",
+      "cif_sha256": "735ab4c5a4351cada43a4a01689df67f9db726664353a85b34774c3f40d8a764",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2erf_A",
+      "cif_sha256": "6dd63bf6971c9bef286de3518fc6456c1d445fa0dd291a5d0bb765504ae2c9e0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4dr9_A",
+      "cif_sha256": "b82d88eb274f81e426f1f0cddd2f86be2cc13f1202a6947c7e796abef125098c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1h5y_A",
+      "cif_sha256": "7576a5e591528f4783f7ed339abdaa083e74445c62f0bf35abaa7393feeeefa7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1g69_A",
+      "cif_sha256": "c380b17a227030efa4661f3a269cdfdf2ef350a080f69304725b04f188d84f1f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4zyx_A",
+      "cif_sha256": "765d6b6caa6ebbdfdf93d353042b27504b294a0b704f8f8750219785da68e53b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1pxr_A",
+      "cif_sha256": "9163cd00193eefd652fe22ae5096da96c56d4ab33ba68cd5a3431b8cc602e1bb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5xrb_A",
+      "cif_sha256": "782d6639bae65030306d5e3bf885ba5eb9ded560275d6d90b6f6ba48a467c312",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4f1j_A",
+      "cif_sha256": "23626d0033e995d1129f9295ae09838aaa4e78082d94d29f91c25ee2e15fae49",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1dua_A",
+      "cif_sha256": "295bbf56181fd111391eda02f626297db7b16a8cf21918d1dda35d61da930079",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2ocg_A",
+      "cif_sha256": "827271435c8313b6edf970494d2abb5806b196c379e1df7a4fa3857ac2b46bc4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3voa_A",
+      "cif_sha256": "841de38ca0441ddf1d7b2709a8b16457fb9ffdbba77f8aa8cc288c17fc946d29",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1c91_A",
+      "cif_sha256": "e6d2b6add4597786c049272a4ad775f68e2952528ce45471d981244b7fdf6837",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3f99_A",
+      "cif_sha256": "b06f9f2afe8fe0a27ed1e13f77d2ebfc0bc46c2301878971ec6bc26213d35d00",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3ah4_A",
+      "cif_sha256": "1886f31736eaeae712599cf0aa9a9729de12ea0bc730c2d4c343ee95d9f01552",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7bwv_A",
+      "cif_sha256": "d5fb6b426d4564c5c61312191a036d38afb76d86f8a5efe64024bef33113e10d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4q3c_A",
+      "cif_sha256": "efe1263c70ea2b83f5437983e02f6ec78b482bdd095cf6fab0a18eba0cb55ebf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2vi0_A",
+      "cif_sha256": "db6487855e6ec92d087a8fd6955ce6345b86e4e06d98048ec7717a667598bc0e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4n13_A",
+      "cif_sha256": "30d8b82db267316a5ccc57bc281de07fb9f80ad69a988dd50759db4d675841e4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2c6z_A",
+      "cif_sha256": "91e877c079aaf8d8de71d0197e3b87c9d5495267fc09a016a28a399b51a0a175",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5byl_A",
+      "cif_sha256": "59ea1211b71f2c92a56a4b2f7e43f5e2b5529acaba77c770bdd3b00c07813d5d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2cex_A",
+      "cif_sha256": "cc89899cd679c72c8a169d5eb84ed47f198d1d64325d8435ad2491a522e54888",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3ea3_A",
+      "cif_sha256": "619e9ba089d2bc558e5aa23fd3444b76cdb1739996ceb2baa1be4bf5512adfae",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2iry_A",
+      "cif_sha256": "c69d75fe3cabf93856ff75e76e3ed5f7f04f85c1ea87bfd480a83eb11e58bb0a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5dxn_A",
+      "cif_sha256": "4c5ffc0421bd31ae0c9e87bfb10ff01ad4710336c939d693e8324688decc61ce",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4jpx_A",
+      "cif_sha256": "c17a1eae52900f6074cb7ab85029a18609451edeaff2d84343fa4cc33616a620",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7k27_A",
+      "cif_sha256": "bbb96d7bf1c462dba38f30f33f1d629fcfe6a1c232b384eb755982ec29c74717",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2bod_A",
+      "cif_sha256": "dcbd8610133b375e5e705b2a207dfb24b27bfaef7bce33bc356109ad6aa2e80f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5trq_A",
+      "cif_sha256": "b32f1b16af8ff554a4132417ab46364378929b0c1ae22cdab932b687339fa5f4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3wib_A",
+      "cif_sha256": "be4a7c4eb7668c1a47f7f4ac28bcddb5dce0f13dbbcc0dad9d475f21a5d74076",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4i6k_A",
+      "cif_sha256": "ca7733ba491e2831982c4d2fc6a4ddbecee2ce8b860d945b45e7d747288184d7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2ioy_A",
+      "cif_sha256": "b5e97633a61f97fb5bdd53da98ec88dfd28ce183722a9cffd6d00df59ae64d91",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6ap7_A",
+      "cif_sha256": "c39488e0cc6339192823020309cadac2447da598e9681eec05cb2acf2d4ecb5b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6w2p_B",
+      "cif_sha256": "97d9ada1cd6e7e98fb53989b70c4e20733062e2d6e96d117bade5005bae25e24",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4jin_A",
+      "cif_sha256": "6ae03cc70b0af8e01e43d5e61bcc7417f79078967b3cbb52b5cc91bc7d13eb34",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3ita_A",
+      "cif_sha256": "71ed6998494686c133204c0dfc05afb27bd06c86c8621fb50083d8c987203113",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "5obx_A",
+      "cif_sha256": "5c0e6071ebeaae99620b1160873421a6adc09a165827b840b70252a74951c6c2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3fjl_A",
+      "cif_sha256": "73a4299610e958358dd44a1c964fba59a44fda7d7749c7a5c8ee5ec456e4dc08",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1v79_A",
+      "cif_sha256": "d3ac06ce59b40eb6277ab4b8d3cead3c961b171ef2c9ffae7fcb6474ed1b9133",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7kk6_A",
+      "cif_sha256": "ed99d15d7ec6492d899a941170ef8fac938e219a4407d3db1c2afd4f80931e2c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3tgh_A",
+      "cif_sha256": "03f36069710e0cb82a1f369a29c8c062f6d86080f08cbbd6cc6585155d541496",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6xqx_A",
+      "cif_sha256": "e38dbf2bb5aec4275fede2dead01c67d00aebcb2f688bc0dea64b7eac950ff8b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6l1h_A",
+      "cif_sha256": "a2122614e4df1a042ef90091dab4e7bad130682976e5e04bdd8629d3a8ae7a29",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "7a16_A",
+      "cif_sha256": "8cd6d9283d1b1a0b2d8e0799ded912cd15e78627aea4edeace8e879c590e1b22",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1zze_A",
+      "cif_sha256": "fa83f23ff4768c697ba09e1374b2347e8b377be5121d07b38a5e876d288e980d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4pam_A",
+      "cif_sha256": "0b4c72ab845cc589f7020cf260e8b29a2712957e4f2b6e1217cb48e7b5fdef56",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "3m10_A",
+      "cif_sha256": "048eacc34a5b43facd3473ce03cdb97a5d6255bb79da8e13772402e2a7b93fee",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1z2n_A",
+      "cif_sha256": "09914d07883673365aa4aaed9c8a332e369c878d91229d75cf4780712a29cd4a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4lv8_A",
+      "cif_sha256": "1962df1c3c8a46adb4188724899d9583842089b333ce84e2490ce9d90eafdb25",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4ihm_A",
+      "cif_sha256": "6eb44522ece1846fa6aecd5b6d0baad9073b7ec01c8640f18ec545bdd724ac1b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1dvn_A",
+      "cif_sha256": "44431694a54ba2eb9946b094c76a2a64f6d5bba31b60da9251935adec6d5e8c3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6t8d_A",
+      "cif_sha256": "cb67eac948a9566ba4c2216039118dc822c393aaf111129d7877cc467bdd2e02",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1jcf_A",
+      "cif_sha256": "ff521768ed87779fa6a2f55a78cc9880e882bbccbbffaa4b8e9847178cf8aff2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6ijn_A",
+      "cif_sha256": "ec70eea3aadd40ad1437c43ad0fcc3f3983e29b6c47649cb6e7f2d110d832c85",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "4fk9_A",
+      "cif_sha256": "594748bd733fa9a70af2ed4dd2ffec9f01164457e62a3659f82377a5c793a593",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1woo_A",
+      "cif_sha256": "ceeea1ab4afe5082fcacdcc4e963e3f9e4ff64543be6c41f92ce29df741f7290",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "6ch1_A",
+      "cif_sha256": "2bc1b82982a61f5c09e3b6a014641f97b3750a688a4d334a55deed0947e39f91",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "2d5j_A",
+      "cif_sha256": "a1255b02ae1c90f47e273bd6247d63290a9471dc737694053cbafc08caee223a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260923",
+      "target_id": "1hb1_A",
+      "cif_sha256": "5619488b5c0a5ef7a1343cf71f7c85ee9a5681ddf61a6203eafb7c42bffb4322",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3gxb_A",
+      "cif_sha256": "89853c3be66f9dd35bd901a42da3b01f113b92adcf5c52ffe63f1437505b9e62",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6a89_A",
+      "cif_sha256": "fc7533518afa4d3b3aa2b1b2b354c85340a54c6a880c6139fcd52e4c9abf199c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4xbc_A",
+      "cif_sha256": "06b8f5aed245b945e7f2ac02e499ae4053ff80dbcfef0a2f3ce9bb0ab6567550",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6q3v_A",
+      "cif_sha256": "01e7a9b6802cd57d5f590e03032a46e0be92b9498d493d7ee47d26bab5d848c8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7nuw_A",
+      "cif_sha256": "a670705b66c874ac2bea4f3decff15aeccac815f33f0851dd3bfe9e02c903f72",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2obi_A",
+      "cif_sha256": "ed8dc00ac9748cd4ebc9e844269a61a65308f852380fa5cc2149a5907397101e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3qzq_A",
+      "cif_sha256": "d2792593c3ae3ec50075a42cdbecdc4b2cd684e96ee2fbb1092917e43207428a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4woh_A",
+      "cif_sha256": "f2d121e770137be91a0217c03fa52b3ab01a9f9f8c19b0c69baf2fc5fca3c256",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6ndw_A",
+      "cif_sha256": "70c140628424d6e094b8ba8f664b12528b6d08ef32327a6d8817fe61b49ae50c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3hny_A",
+      "cif_sha256": "2e909ab351bfe41f2b995030b848eb947be31e1814bf882ca4659c1dd22d4719",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1wba_A",
+      "cif_sha256": "93b746877256e88a8bce37f68884b03b3bbd3551d33b4e21f236622ebec59564",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1yn9_A",
+      "cif_sha256": "f0f66a97375986a24b9907ce186c2d03531dc3340200159dc55dfb8dabeaf7f3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1a44_A",
+      "cif_sha256": "0f39764d1c8ba304acfbeb238322e95fd919f71979f0a3a53a07690d28665ec2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4xje_A",
+      "cif_sha256": "a131c6d41a4eb23a84ee03a9ee6472614a5e300548b4d7fe8227946fc92d1181",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1ccz_A",
+      "cif_sha256": "259c28b44f9a855f1fa239e4af6fb44869f242d26b75ada54cbe88eab92e1650",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2p3k_A",
+      "cif_sha256": "4d0bc372c62492828d1dada1c6d1615c25ab1e8e3ecc98f3c64911d1c3fe3188",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6ibj_A",
+      "cif_sha256": "0114bb13a14a1b479d9af301269da92e3d43d8777389a4a7d339e264b658ae5c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1j84_A",
+      "cif_sha256": "28600a917246e13e19873d2043bb7af8155c9136fee82dca6c91e968477deac6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3esx_A",
+      "cif_sha256": "5d86089be083057e7c1f3e246e7faebfdfc92787aa0fe7ca5c32f8d2d3e4f1f9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4p27_A",
+      "cif_sha256": "960352bd39971deac0536f0f40e69249a6ffe57658848b33b7a403cca07eeaa0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6fpc_A",
+      "cif_sha256": "e979bba6f2a1bfb8f1d3019a14b0dcdcfb10b447d2881033415528aed3d38485",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7c82_A",
+      "cif_sha256": "027c535212dc66532ca08c22f8afb9c9c794035b64a9a2c0fd4bcfc5f335e877",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1bk7_A",
+      "cif_sha256": "c3fd83cb85b0ca691e9d0b344c4dc5a0ca598a06ee293d3b0f78245720d450e8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6ht1_A",
+      "cif_sha256": "48356adcedc1966bcc20671fe7d7e6d829b2c2544b3297e0c2f61cdfdc65315b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5d6p_A",
+      "cif_sha256": "4934b2eff29511bc3e8c1b06b8720f26377c1322ab6fc0336b88e261baaaafaa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1lxz_A",
+      "cif_sha256": "7af7baf0344be7a7091fb96c46bd88ca15813ab9200d98e39dc74b40e7252b79",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5kdi_A",
+      "cif_sha256": "1b580a93443161bd9834afe2dd8df38bb489a6a0e57ac640f4e8eea12ec1706b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7np5_A",
+      "cif_sha256": "97f9b945489556020b9bed5c08576aa086c4861cf8886b0d41d7001a4ca8ec9c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5nl7_A",
+      "cif_sha256": "f33dc5d36fa3d88bb8eda0325feecc6fecd71cefe252b8b9a1349e5a826ba474",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3eii_A",
+      "cif_sha256": "7f5f0af5f9416bf82dfce5a0fb926e8b801e8cc94829fdecf19e167b3c694e2c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3f95_A",
+      "cif_sha256": "61da63e6c5c5b2ed4889f2f84ffce39b113f32badd18b06ee98eec448fdcd303",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3zj0_A",
+      "cif_sha256": "6cfbfb53f51dde59e56a7fc73051a8bb5e1dec000d7374b4c677534fb0b990c9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2nlr_A",
+      "cif_sha256": "87af44cda2c23d79f3289e2345c378b49c654db622682bf0f2e29e3d28b3f0aa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1m1u_A",
+      "cif_sha256": "331a2ca1758dc4205d9380f0b88d4ed4f89dd948f46b2d7d162c25deeef87ed8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2a7m_A",
+      "cif_sha256": "28328dc1a3b95a2fe1524be7151cc32168fab6625e73de9449a2b2ac17c174ac",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3n36_A",
+      "cif_sha256": "aa416d4af0d58555adf426b68055788ef45cf15a61451ce1681290b60dc55b5e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1xa1_A",
+      "cif_sha256": "36c42f64ba87df4e6a72067bd044e00936a2076225980742d4fe4145f550877e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6j5q_A",
+      "cif_sha256": "d6cf799111065fece0c94a3509bb7a80ae7d9d8b5d18f01a9e3a7eb9c08a7ab6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2erf_A",
+      "cif_sha256": "73bed27508c4ba0a5f603b0a0dac371422a3df8806bade93912128800cba463a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4dr9_A",
+      "cif_sha256": "0074e3bd901ba3d06feaed9430c52f500cb9b4b80ed5d2424fe14244dab45cdd",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1h5y_A",
+      "cif_sha256": "4dbef4ec64ae4b4d1272600fa3cb4a48fc5f8710b408e88ee68ab52baf736e95",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1g69_A",
+      "cif_sha256": "0829dd3f3328bb4a8a2d0a298eb7f986b4ec87306c38b88c615603b857f28d17",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4zyx_A",
+      "cif_sha256": "fbae7f9cc2b1bf455e9e569bc85ac4b1fd88724234bff030338e3b6a7cc14c54",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1pxr_A",
+      "cif_sha256": "2dc2768cdbfa30fb149dd61374b3a30c0b66e11afbf5454b59eb43926e083fb4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5xrb_A",
+      "cif_sha256": "d95c13d0fc01a094b6bccdc0ba2df4b26de0c014930e419f35de5f7a44649a23",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4f1j_A",
+      "cif_sha256": "34bbdaeaf88894b64a27be33de649f0ef1c42334926066044de4e392ffb56932",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1dua_A",
+      "cif_sha256": "7d4d8fb2a6c00d85877bc8d1dd4cead3d5e53f9c8d3ab964988a8d5331b27910",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2ocg_A",
+      "cif_sha256": "64e44fffc2869ba1556ffb0505a1551a386b18a0670e92c44d056d3dbe1c0509",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3voa_A",
+      "cif_sha256": "17a54c7afc7142fab080dd7ab5ab1b9d35ad96ad5f00ba8ff5fd6c7337866e49",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1c91_A",
+      "cif_sha256": "59aa1d56c291a42161c15269eb02f3f5a383556cec26210d27412bbc8729070f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3f99_A",
+      "cif_sha256": "5936354482c1be4ac57edfcd1f17e1337fb4418440055961a352b064dec90e8c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3ah4_A",
+      "cif_sha256": "ce774dd16e8c118f7a14110002cb4eed8c5b551ce0cf41c06a7e84e8a342552d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7bwv_A",
+      "cif_sha256": "45b723731b20e551a2f87cf63c78d51d7ca989ee95b7b3e20b4779b10825483f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4q3c_A",
+      "cif_sha256": "b3fdd0e0138339780cc453013fd709b468407bfd51faca83af75752fddcf33b2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2vi0_A",
+      "cif_sha256": "7e0e3169d113c6ec493bf2d25111132aa6f89b36b58057ab724fd10e21e31b3d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4n13_A",
+      "cif_sha256": "f6a74addd99b9a213240f16d939449bf78a52c080f83df38b3524e4397791898",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2c6z_A",
+      "cif_sha256": "8d2ae8df2d50bf48a00a7f8e792ac1418831a9cbc311f629979c1cd1f9ab0bcb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5byl_A",
+      "cif_sha256": "f60eb95315044ae9f4adf3c6623171dda83ba0388784d63a6a6d8586388c8f12",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2cex_A",
+      "cif_sha256": "32c874361a3c6fafedf4db74f771ec54ea88a2b795389d5f8daece8a5c5408ef",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3ea3_A",
+      "cif_sha256": "2502e9cc14b7f840a2b42b1d37502b5bc9752d404b8c0b9a15585168bef3546f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2iry_A",
+      "cif_sha256": "38399fad9fb64b4bd6d702557c3366d6f96a8c63cf1ea6f01d976ac93c2f7a89",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5dxn_A",
+      "cif_sha256": "e32a927806a5059aefe7f48b7e80fb399e8da5e9cdb87f1be5d52abd875a8c22",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4jpx_A",
+      "cif_sha256": "70b56fdc78739824395b3da1e166ebb9e0e247f623c6387bb4ad50b3bfdbaf9b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7k27_A",
+      "cif_sha256": "f41397813b6fe125098b78a5c0fe84ece87a3dd170e6042d2266112e92101f26",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2bod_A",
+      "cif_sha256": "24421560c9bd6e01fc74a07323c06ec41d34e383dce0b213379209cc0647aa3d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5trq_A",
+      "cif_sha256": "36863beae47e56b31b5dce198b3a3f6e8ae6138fc0736a343d23977cfda799f2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3wib_A",
+      "cif_sha256": "6fddcb55fbc10fdee5c553f0e0df9401d293b15c073caa7b4d25b3e935b46348",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4i6k_A",
+      "cif_sha256": "f561b0e55e8b8c0d4ed4247229b6b6c7a074eaefc12b1aa418a3bec94a9946a1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2ioy_A",
+      "cif_sha256": "c93c540044bcbe52ba61c81f9aada66b8766eb9650d1680425e9eec069471589",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6ap7_A",
+      "cif_sha256": "33beae19b168e3b49f5602a97e0dbcd082174b6ab34b06fcb2c6ce9e998e7ebe",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6w2p_B",
+      "cif_sha256": "1dae9aead72264de20966c97cfbf41122c4b5b80a95cf4fd008ec2138a858698",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4jin_A",
+      "cif_sha256": "0cbacffca13a382ca3ad5c591cb77d749f5fdfcd223e8b3ecc670922ade80cdc",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3ita_A",
+      "cif_sha256": "4fd65cc257e85faee1a1c8fb362dae0af8d8437f573d3395583984237801e304",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "5obx_A",
+      "cif_sha256": "ff9bef92388f600378b4f82a23e752d715a56d4febf0225700230e21aae232c8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3fjl_A",
+      "cif_sha256": "578ae0777eb6f8d92d28591a23bb2cb879707c7761957daba9c9f9214acb47ee",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1v79_A",
+      "cif_sha256": "4f77525f6b8c30bf2583f0d6b6d26df4b5db59de0cede893aa02e5c92cebf36e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7kk6_A",
+      "cif_sha256": "d7b8463685903a1c9a005e61e5814542fdb7538fbaa516df13efd42b81e63dc8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3tgh_A",
+      "cif_sha256": "132d109ef1201280ab8baccf18f696871f019f999d21eb3de0fb6149851185cf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6xqx_A",
+      "cif_sha256": "15b93b2e37d48b03a0a93620284f7982ba37e1047ce1744e3f904fb4dbe4c6fd",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6l1h_A",
+      "cif_sha256": "f4a471dcd1102ddc18fe74a5575b6464e2a2252fcce8a8fcfba021c110f25db7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "7a16_A",
+      "cif_sha256": "30c4c20f108b41daa2d28f8785aa7c2ac3893019f653e90b3e1abe424453e542",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1zze_A",
+      "cif_sha256": "a8cdaadd946f4dc02c7934c2bab135ac6ad1783515697eb99eecc5a19ffe4cb9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4pam_A",
+      "cif_sha256": "c66ab27cf17bfe66a9aff6749a1f7d14de779535b33580e1ea0462b1b8e4cf4f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "3m10_A",
+      "cif_sha256": "6040143280040c3cf1a5116cb0273d63e4da17c2d083c6191c04b4a93166b8d6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1z2n_A",
+      "cif_sha256": "8ba00ae214390d3b4aeaf231f1a05ec66ca30227f9d5f9e57663bb6eedf2ba31",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4lv8_A",
+      "cif_sha256": "f96c2763b1d3545d0e5b97675f5e193f48a62da6e82e02af245df85f694a8873",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4ihm_A",
+      "cif_sha256": "a94fdbd5c26337adeb64dd99f2293394abd1481ade2cd0d86b729003082032e1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1dvn_A",
+      "cif_sha256": "873b22e268f87b4a442ff5b981e7925d306fb624e52ec8c8202b43cbf5d38470",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6t8d_A",
+      "cif_sha256": "5fc70953e75dd8ccdec7c3ed52ec76223d590d549b6cce2a0f3a8b82574137b0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1jcf_A",
+      "cif_sha256": "303df523586c6cf8cbe34b62ecded18fd558681ffced6957e91cf1264f78992e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6ijn_A",
+      "cif_sha256": "6750cc1839ebd86167c6fc626ba1563d6a6a1fd48452c9c165a9b72bfde6f28e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "4fk9_A",
+      "cif_sha256": "1368a63749ee24373f870a807769042a4e91c36fd7feb1ae9d95732c51aa7990",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1woo_A",
+      "cif_sha256": "54170363f2d99f21f4e829cc47bc1cd200ffe00ee0e5f1fe8004393549f7116d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "6ch1_A",
+      "cif_sha256": "a50e5f3510f92767d863b6e807272b40e8f78526d952c8f468171892be9ca55a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "2d5j_A",
+      "cif_sha256": "da94df4513406ae130d71c023e3225aa98474a6fa35c0613b194984c363d2a3f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260924",
+      "target_id": "1hb1_A",
+      "cif_sha256": "f29a87937addc9988bad4c8aca6860ff3f2f6709b7cd842617ba5eb320e0171e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3gxb_A",
+      "cif_sha256": "9e645f32c9e62c33b55d99df561086068e1881bab1b83d07f3410988d70e14f7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6a89_A",
+      "cif_sha256": "9d83e9b20810056778e591c5c39b78215064a0675b3772a0fc7ff43f8e6a7626",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4xbc_A",
+      "cif_sha256": "1a654042ca924f9f8a5800ecdaa6f7da0b3c7d9de9d9a3e5162808c8b24e21f2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6q3v_A",
+      "cif_sha256": "235ab3db2a38158f79183d7c7bbb9f6bd56128103d8cb4ca749776977ffd8e05",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7nuw_A",
+      "cif_sha256": "81851ebec2a86fb56b4464321ce0467efdba5e122ada0cc6f3d37c747c3ed763",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2obi_A",
+      "cif_sha256": "9c8bb60ad6d0de06c339e213de66c413ed5e8ee73c7b8081ef177f068d73e2d2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3qzq_A",
+      "cif_sha256": "b50975beda264905530284a47ed8ce78352a263050a057e4adc252a3d56f147a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4woh_A",
+      "cif_sha256": "482c87107a2bfb02770e0968faf6301ffae5710e2822a5c645b130512add9540",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6ndw_A",
+      "cif_sha256": "8d367b9b07d51726d31608aacb01e8dd957bcc647f9f09640836691a96d4ab85",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3hny_A",
+      "cif_sha256": "6cd0ecbd96f6e6a3e26f3454d9d619726fbb0f3008b71466cb435dac98e0163e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1wba_A",
+      "cif_sha256": "0ca9706faea613b4b455393b57a08d6eccf432af85c385c7510a1b3c5bce1737",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1yn9_A",
+      "cif_sha256": "34213f68708ffdbfab6fee4a0de55da9cd4e050f4a72995dabbe982ac40c43c6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1a44_A",
+      "cif_sha256": "b5e99d5b8ccc208dc0c4556bf47ddf4dc04ca48d66a96a287d414d9729a32d8d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4xje_A",
+      "cif_sha256": "30ff314208dda017da4cac36e2cecdb521f2cc56e0ffec5c24ccc0842eae6ec4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1ccz_A",
+      "cif_sha256": "286ff056007b87607205e1fd51a8566eda98ba9829e9a583e14cb837882e3b37",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2p3k_A",
+      "cif_sha256": "319e9019f7732cbee590261cc7e89db5cf05e6e99b9cf50efa9e751ae5d99887",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6ibj_A",
+      "cif_sha256": "395565579af3085f58c21f72bc663bc47640de98b1b77224d4f5e1f900fba05f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1j84_A",
+      "cif_sha256": "3846be2a1efb3fa81f06bbc411074c1fe64c48c4696bbb550a9e42ddfae3ce09",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3esx_A",
+      "cif_sha256": "45bb02edd6ef4508e23a2b350f784d15479433c1de21c895cb15096ed37e92d2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4p27_A",
+      "cif_sha256": "616099584bf783c92759f798ff55764135f8034a116daa151112a1e041999837",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6fpc_A",
+      "cif_sha256": "d42ef49c8051c92943fb0d2c958c5a57ced7b2f2665761886fa73da0f4a86d6e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7c82_A",
+      "cif_sha256": "d355f652b9b38dfcb10799fe06593bb60c5a1da46f6d98eb321449c1e729f091",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1bk7_A",
+      "cif_sha256": "7c5e34ffbde9bfdcd1c5bc3821966342ec8016bf6d85fdb552e4d69cbfb5bd50",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6ht1_A",
+      "cif_sha256": "99472c746e7ad1eaa940d03542349bc8ddec3f66329b355329dd273bb11d9f08",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5d6p_A",
+      "cif_sha256": "bcaa56f9b7d1adefe1abb8a407a3328fffebf641808b94076c44832bf2e8a6eb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1lxz_A",
+      "cif_sha256": "8b10f570586f5b09f92414d83a5fa7f256b8b74f21c011804ed91b8c44b02c15",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5kdi_A",
+      "cif_sha256": "1a6c5950f2792d7a4e3e083e52b34b69bf9388811b46abaa53a681c2c42146d9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7np5_A",
+      "cif_sha256": "8e7168b2e433c5248d1df300ba264a99d4cab3953427590f1f56d9de40fbba11",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5nl7_A",
+      "cif_sha256": "b8d90999f5e215f2758d74ae119509564a936497d0c99bcdd2f9bb304537a47d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3eii_A",
+      "cif_sha256": "a5b8ff3c552c1e86da28c111f835b5b33a189bc20225ce867a5be275d854cba9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3f95_A",
+      "cif_sha256": "5ca7afe649eecfbba9a7fc2f1cdab02f5d98e689c0bdbc5da8da3264057d8688",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3zj0_A",
+      "cif_sha256": "5e363366c289d7d4c835857b78077ed2485bb67d541ad422bf5715374b262b12",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2nlr_A",
+      "cif_sha256": "59611e7002a85064b01f2cf4290cf5d8ce462945d894c765f781132a47b66755",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1m1u_A",
+      "cif_sha256": "54f3ee7cd6ea6858970b5e750bb90c84f27aac8e9a24b2ca21f3b8cefcfb7d73",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2a7m_A",
+      "cif_sha256": "b9d8c85237d8f8b916c33e40bfa160b66ed01121162a2be3b1a7b030fe85e755",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3n36_A",
+      "cif_sha256": "05526df194f8ae45fcfdaba21b0035f9a18f651812b94bfe6300da2bb72a344c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1xa1_A",
+      "cif_sha256": "9dd17e4223d6be1b3ce0cd1f6d5f9cd595e18114ab926bbb3eb2f49ce5a3b041",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6j5q_A",
+      "cif_sha256": "7c68420683a2016180e759957d0aac2a32edb312fc195a84161d0c9a81d07b5e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2erf_A",
+      "cif_sha256": "ef08fe24e68adb8e4508789155573de7eba08bedd4e60f2e280433d28038bf09",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4dr9_A",
+      "cif_sha256": "0ce9bf0cc054864e38745e420159e2d735bd9399eb26351f72231d58a7850656",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1h5y_A",
+      "cif_sha256": "44ccf76a00c2b8601ecb198f12811db6c9c5a984a6989a72b251f47dadc629a5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1g69_A",
+      "cif_sha256": "6cb18b2f34ec78aa4f03b188082b9c5da2165715590d04264daf0224cd98ae2a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4zyx_A",
+      "cif_sha256": "40b5aa9b629e00433411aa7436b822839482187844a9efbf19bfd1b92b40e34e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1pxr_A",
+      "cif_sha256": "25aaf3aec6215bdf0c09fc075b217d8f8406d1e3aa62d71a715c6226ec4050f1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5xrb_A",
+      "cif_sha256": "d351390732ffe9d9f1ee4a064e67607ad1b5b8400cd4e67bef8fd4568e6de96d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4f1j_A",
+      "cif_sha256": "2edbac0b3a082d15367e0fc20ef250e17afd8d40651d37325d583baa1f457ee1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1dua_A",
+      "cif_sha256": "4793e15ae40c2b7ea0fe6213b12b6ad31de66ea7031a1cb91ed2465bc45c5b35",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2ocg_A",
+      "cif_sha256": "4a9bc14f2b80aeff44c823669c56c17311f23486de3c01264810866ecf4088b4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3voa_A",
+      "cif_sha256": "8d798e5a93607b11328408722ca6d271b95f668a63f4ef483b54d5dcedc47506",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1c91_A",
+      "cif_sha256": "46668f162dea9b06978b2472a512f273442fa2a94ee3a4355d816e90661c6b20",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3f99_A",
+      "cif_sha256": "f12e31f8a467763a0e5bd91f31a1ec690ec3cbf0e08c3ca9585ed9ae25ec8e95",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3ah4_A",
+      "cif_sha256": "bdf858022576f82a35372c3a44598fc273394e0d4d2ee2772537374edc55df8d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7bwv_A",
+      "cif_sha256": "fd2454ad7e481488556e3447cae0f937af591e3a2cbaf02995274b867a01cf3f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4q3c_A",
+      "cif_sha256": "72fc3af3cf97087db06e9cc3080da9f1c286b96dcb8f163324b69bae0901b25f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2vi0_A",
+      "cif_sha256": "e9176c665aafd0ba07261c26c8e5663b4cf63962e9852d4f5381799337a472dc",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4n13_A",
+      "cif_sha256": "a0d158042282bbf9baabac1a0a4ab85a277c82d103c03402ace428b133c60572",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2c6z_A",
+      "cif_sha256": "249204d8face1c2ccd3c4b76b4c577f7d563e6d1c1771e5d123afe3a2c11780c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5byl_A",
+      "cif_sha256": "aace7eb55cd56e63bb1f24bfa9bc77d93bf5e20d7dc138a733870b3c76b89aaa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2cex_A",
+      "cif_sha256": "e2047854fc503b260dcb48ceeb6f5097ff922d2fa2d941d3c4a78dc646738f2a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3ea3_A",
+      "cif_sha256": "aa57d4d817529012f99fd95a3c8a923e8480f5827686ab58471e0aa0b1e24938",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2iry_A",
+      "cif_sha256": "4de5bd79829251411f5f18b68b4ec1b3c554fa50eea2edeccc3084a6345b5748",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5dxn_A",
+      "cif_sha256": "1a748819bc022f7d0ce8ecb7ef342eed6b12a7ccb0cd7c8889f98fb7f848a793",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4jpx_A",
+      "cif_sha256": "61ce51719b5b5a60a96d9440f63473dd758f5ae5a4d794f9ce966c538e195e28",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7k27_A",
+      "cif_sha256": "e135e1227f0dc5c63fac6ee4aee8e9f7503767ff3aec8c4a538dd6f7c69690bf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2bod_A",
+      "cif_sha256": "9d0dd427d9719d303f4d3ddced0d6d936251df64c301441b852e3c6a2e1d7f5a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5trq_A",
+      "cif_sha256": "f5c039c2e58c3a5a7ef1a06029d917a6b2571e2947d64d846de8d596b99aa3a0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3wib_A",
+      "cif_sha256": "512848b304e8e34cbc2c18b225dd0da7fdb6f91b05958c94c2e88ced3389d21a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4i6k_A",
+      "cif_sha256": "11727ec14480cb1db65970ec19368e02fda9942db938e3dee1c9c20217578909",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2ioy_A",
+      "cif_sha256": "eb6944deffde676d1ce80ff2fbfe76cd6168f497d2109d378466e2bb2ca8a830",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6ap7_A",
+      "cif_sha256": "1c218eb324bd4bdca3924daad47b845a8d49fe159c64072c336a6afed555d9d8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6w2p_B",
+      "cif_sha256": "a523a91093297efc2051a008577c61b720e1cc565a43e8c4fc66daeaf39e1d29",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4jin_A",
+      "cif_sha256": "7ecdda673a5bb9c0f239602136eb18df40c674f618e32c13a44bfdd25d4748d0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3ita_A",
+      "cif_sha256": "4f41a25af7202896830d52ba9ad9f87a29854f4246c41ab946c368e307ed8205",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "5obx_A",
+      "cif_sha256": "445dddc41b4f4534b975d7aad7635b01da9d4e925b51937e3077a1568e976a21",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3fjl_A",
+      "cif_sha256": "07b29e6aeb3c5ef83d6d2357ce60511eacf29c0b33bd93da9fa060a763caf2f3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1v79_A",
+      "cif_sha256": "4efa67309bed1b0cbfc193dbeab861e6944dce2019b51f087de455029fd33a97",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7kk6_A",
+      "cif_sha256": "8481762b318148b3c22033c599d90f8829a6aa826a15ae7f5a501ce49be1969f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3tgh_A",
+      "cif_sha256": "2b3dc51bb41d3bd41c5b98a7b98efdc3f990fba4c8eef4414aed07b6990582d1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6xqx_A",
+      "cif_sha256": "475600b3d2bd565313665e0652c4e787bc3a210a792ec813d1623688262303c2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6l1h_A",
+      "cif_sha256": "4175e30b87f198b7bce8e5194f6e6dc9f9256b3c1f226cf900f85c22c9cd6c13",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "7a16_A",
+      "cif_sha256": "5aa2034999d2a1bc2797e254294adfffa63f30ee0f20b6d3d8d0b9823219d88f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1zze_A",
+      "cif_sha256": "e94e5d9af03a1e7b95f4337c2ed9395efdf89864b9866747069de08fa92eed18",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4pam_A",
+      "cif_sha256": "cbfe3a99fe7f73ae58eb1d399e3c822be75bdb2ebf5c2c65bb35dbb620284bed",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "3m10_A",
+      "cif_sha256": "2be6483b9c4436dd15d15e52c9012239a45ecf5efe91cfa9ac77b9a69c69cbde",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1z2n_A",
+      "cif_sha256": "1753ab5bae6a57792b8951fccba2027aed4c1caa9d35ac57d4f890235818e67d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4lv8_A",
+      "cif_sha256": "cd69f140a2fe0def0e2b0b35e5f37ccab3bb88ab547c8ca5c1f949d2d7e1003d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4ihm_A",
+      "cif_sha256": "a7652b59f576e5bd6d1b5b4a20056f0c82770fb11732accb9cfdb7af2e19cbfd",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1dvn_A",
+      "cif_sha256": "c00913a3244b4e4b0a2cd8b5e0898684358615f7a5c191bfb641e9f3fb42db0b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6t8d_A",
+      "cif_sha256": "d42d4f10f5bce958ea82a3052341242abecdcda86a0ad191393a3a6463b5f7c8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1jcf_A",
+      "cif_sha256": "af5a8fa48e9d9bfa2fcd4564340114eecc89d8f7f720a2faca92025b13078b9d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6ijn_A",
+      "cif_sha256": "c8d0f8b3549bcbfc9592c6f82db13e65efd65ac3ff3bf2081be58fcfb8ae106d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "4fk9_A",
+      "cif_sha256": "f37ae08126dbf60244db44d1df8b5f6f19402ea9f2a1c9ad6abeae082575b1f1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1woo_A",
+      "cif_sha256": "d400e09d8824453a5cb9fed865e2df1ced36b6cd1c57c70bd2b9691c7c5c0460",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "6ch1_A",
+      "cif_sha256": "a552d4345c588d28c6f0572c7bc92d55aa87129a56da54559fb50b92893e1e26",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "2d5j_A",
+      "cif_sha256": "77a5aabecad663ef526f06a24b619fc5a5bf517aea413e57423b045a51d54435",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270107_C_s20260925",
+      "target_id": "1hb1_A",
+      "cif_sha256": "6f3805a9a2ea79f8daa7c4be1a2892ebf0bff6ffb58d319f9c83f66df6dde379",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3gxb_A",
+      "cif_sha256": "7efd0aef3c603df2ee1c78bd2f41db8f83c8673eac1907bddbd8846b7e706134",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6a89_A",
+      "cif_sha256": "3acd304f129e11c5b722a5b3aeda104a267ecc589dd42e867378c8a05d1f708a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4xbc_A",
+      "cif_sha256": "da480fe830558a0c95210c7f5552038aedee8bae143e5ed65236b1e916eb250f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6q3v_A",
+      "cif_sha256": "c02ced2934b6c267984c9b649358fe698cf980c522cfe0b3799b840aecc46684",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7nuw_A",
+      "cif_sha256": "7d0b1fe1fbbde9149353caef96542a81be183df755e24df161572ec0b8483346",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2obi_A",
+      "cif_sha256": "cfcff16bd513be4d55d0324cec6c0da8b2d6b23a5cc2cf9db77af4e3879eb422",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3qzq_A",
+      "cif_sha256": "cc04750c5f11c69d63067da92837688af99a9486719bf01cc10f876f9cc46dd5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4woh_A",
+      "cif_sha256": "ca88ba1e8a839e68e180b5121e91197f734fdb43e69dde99ea54458cac340302",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6ndw_A",
+      "cif_sha256": "71aecc826618289f080471842f9e523eef0342e82ca1ed5b3c9f577a3327e849",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3hny_A",
+      "cif_sha256": "d7f57958e0becc1972347eda46825b73f3af9a04842c88227a76c609a48a2c8d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1wba_A",
+      "cif_sha256": "814b7c83d515d1b2f6df7703a4f8192eb89894766bd1466a1ec4bc3940792d22",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1yn9_A",
+      "cif_sha256": "65cf2f00dc4c71c7b899f1f684f71f40831428372ec5e45ea6cc06fcf9875762",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1a44_A",
+      "cif_sha256": "798c9aa49539d2bad5404271f8d5272e8e9f87ac2222f69b6ab743933cbf736e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4xje_A",
+      "cif_sha256": "9ad483e8939ae649a4eac76aab412ca7f46cda3c9932d8e08245263d22398ae9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1ccz_A",
+      "cif_sha256": "1fd930cb969c261becaec1eeae13f40d4d0b377451b8d0cf04260997e0f6fbfe",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2p3k_A",
+      "cif_sha256": "9e111e7ebb96e5eeafeba273fa670fd803a4ce2e932c72dc65bce7d88fffa1e3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6ibj_A",
+      "cif_sha256": "d67415b905aa79be0924d22d05722dc4711f2074bb68dd55471f9a56ceae072a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1j84_A",
+      "cif_sha256": "27f4c6e7ffefa409e87f933119f0b38dcb2fae17dab9cd62664196c4f5869e18",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3esx_A",
+      "cif_sha256": "c216179820587365d953578d9be79ee35862b75b7aab8719cdbd3e592837db73",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4p27_A",
+      "cif_sha256": "0cec352213fa29223bed3f19e419681416ffdc0f6ae6b8f00fc9b5257cf51450",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6fpc_A",
+      "cif_sha256": "ef6a7eb13e6900bd633bd72fa5e663fa0f15f4e7148728e52cb5a6ca33cf50e8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7c82_A",
+      "cif_sha256": "dcd409975173c8a89b2d368909bc00bfdfcf4d1cd8de46b1bbe89236149f02e3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1bk7_A",
+      "cif_sha256": "6d440c6ed18641aadf321382bfb7026a718c54dcfe9b8ce490ae75fbdb2829e9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6ht1_A",
+      "cif_sha256": "1f1c086b117545c1bdb3f14946e7b664869b3e1996779d1bf0b68348e8b5d9f5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5d6p_A",
+      "cif_sha256": "1084ad5c19815177271af846ba7cbdf5522649c344e41508d7f122bcce657613",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1lxz_A",
+      "cif_sha256": "297968534720458d6747795dd533eda993e40dc847e9e39b7c3aaae6a3c21662",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5kdi_A",
+      "cif_sha256": "422410374c5398b695a41ecc207c917e4e3ae4d0ce3bd8fc42e453bd8a0a3604",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7np5_A",
+      "cif_sha256": "1b59d13acf331a13b1a6f86bb272dd249d247634221fbcd971c56a73bbc327e9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5nl7_A",
+      "cif_sha256": "555e0b3a6ed0d8f13202c360a53d79950362a62ca7a2248519d1c19f90018458",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3eii_A",
+      "cif_sha256": "c98027e7100954e9fc634983abdc413662dfaca2ab0103bb5628ed317186008c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3f95_A",
+      "cif_sha256": "f9f04740be1f8b047741ba7a217cb3c22ee4e91a79b9e026da620ad1bcea1af7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3zj0_A",
+      "cif_sha256": "d185bf8edfe7db926827002a030070a5001677b440472691bb58a7fe185a55c9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2nlr_A",
+      "cif_sha256": "4fcb945e855c130b350917132020917f134762137eea3130cad24ce1c8b71559",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1m1u_A",
+      "cif_sha256": "dc79a5f4ef6091a979c4013c39a81c72b1ad70056c655abfbd05edce6cb69dfa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2a7m_A",
+      "cif_sha256": "47118d4c79f0b1c78133d31009db04616b4b1063b00f96a3f616e3d4a8e7224b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3n36_A",
+      "cif_sha256": "e7d5e3fbf7e2ad184a79052bb52fcc711561a2ce2d98c5b2493c36fea5e8d2d8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1xa1_A",
+      "cif_sha256": "5cbacf3edbfe09e07ced3b980c6e8341757b217d6e9d8b1ad7aecb74ca42ceba",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6j5q_A",
+      "cif_sha256": "676c6a2d966ee6d274663c99f0393a5988c92ca014c994001d1a6fbdbed42c17",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2erf_A",
+      "cif_sha256": "be91682b1054d2b9d68e5ea5e0a5753924f70d9ffdf6f33c16c52361a7bab2b1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4dr9_A",
+      "cif_sha256": "27fa6311caf7ce47130e0023e708db6c2a56d425a0aeccb53d4fa6496d057b23",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1h5y_A",
+      "cif_sha256": "2dabcaccd272d202ea3cdf043b41f33b8f800b54024a9afea8e27fd72ef222af",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1g69_A",
+      "cif_sha256": "fe489f5160026cf51be15964451d7c6cac00e3b5bc55098cf6dab5ac431c2869",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4zyx_A",
+      "cif_sha256": "fc95b8a379c24ea51e5043a8ba5a60563d03b1d6f6a12338ed082be96463fa8e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1pxr_A",
+      "cif_sha256": "04dddab632f05ca7268338b8470a70fd7a25469ef90b80a28693b7c468f525a4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5xrb_A",
+      "cif_sha256": "8290b6619b5e39b21d562e126b1b4600f2f85a6669a5d67ddc42a3510f0cd6e1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4f1j_A",
+      "cif_sha256": "83e41381eefb22b56ca2fad2ceff9976fee2cc06552f3201eeaa061eaedc92b2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1dua_A",
+      "cif_sha256": "75cb87f4353c9e63357917d27463f5e0a8c9f65bb9f7601a413a367ab178d32e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2ocg_A",
+      "cif_sha256": "d7600ce2d5e9c7a151723d9deb8e6efdc5f7628bc98ba0ee21ec2895c87a0673",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3voa_A",
+      "cif_sha256": "2673f0fea7a984b761c09afdccc61ca7fb6b3e7d503b6ea6d52592944698ec67",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1c91_A",
+      "cif_sha256": "4dced31ec241e1a9f8771c761cdba16362b782b7706943afd1c2c67535d7869a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3f99_A",
+      "cif_sha256": "258822cc57283fe47d0a30035e8541d1f7a970bca12d5d99cea2a0d2b5f8104b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3ah4_A",
+      "cif_sha256": "8a901dc2b077acb4592e36c34b9f2f14703912f6bbf14a825d6e3c7d94fe38ab",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7bwv_A",
+      "cif_sha256": "ab933fbfc31d33fc718271b4ea3491f088d64f4cc29300490da4d190e2018e98",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4q3c_A",
+      "cif_sha256": "b6d65ba3c46e25185e3a120f4e59b85ffcf520952655c01ac71bee0c9ffcd958",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2vi0_A",
+      "cif_sha256": "e8d2df8fb316702214cc6fc011b12eed85fb5339fb10d92b759c7e0da2d9e1df",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4n13_A",
+      "cif_sha256": "5e7b5194c2ac18729648f109bdf3f17a2ab5f5c10719030a0a4ebf817cba0345",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2c6z_A",
+      "cif_sha256": "dd6a21189d4666b289e0592302085c04a805da70d42361a075ff7fac94ef6e87",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5byl_A",
+      "cif_sha256": "bea02244d3c0cbeca47cbf513d6b3de7f6805aaf30e0498f9cd70af7181fbf2d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2cex_A",
+      "cif_sha256": "9e2d3ca7c0674ef1191eef11b291fd89cc1ce65dc1fccc014c4f20f112590c1b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3ea3_A",
+      "cif_sha256": "15e1da3d5586c0c639abf83e66d7cf16423a90c388d44f42ffcd145541236499",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2iry_A",
+      "cif_sha256": "2fff86af8cadaabfd2b797c522406ac0afd0cc81e130ef0705cbed55ec45ca64",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5dxn_A",
+      "cif_sha256": "d2c26b71fdbc8b50f40a366b72138d1e2fb212768a148743835a557692772890",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4jpx_A",
+      "cif_sha256": "a12de885c56b60831455d78d58550d9864e76e99e80e6c10344c627cd068d42c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7k27_A",
+      "cif_sha256": "6946e28325b27913fe4e39d05dc2f2090c2f3957b3c98d7d14d3027c5fa31d7d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2bod_A",
+      "cif_sha256": "2d4f2d4645758721e413c2dbdddd7586034cd88e8ddb81ef2db56e25ce280ad8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5trq_A",
+      "cif_sha256": "496cd856f34f909e446da66a24a382dcaa5451d91c3389f61f829ba7a511b1d4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3wib_A",
+      "cif_sha256": "efb1068db41d55d3c6944f5d3862e422db3da1525198149bf47892b3779b76a2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4i6k_A",
+      "cif_sha256": "a8312a67015a0f45ac1017f4e30e57094f39a74c1ff674f13e78800bb2942895",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2ioy_A",
+      "cif_sha256": "5ea7bdb31864f559029f890b6d45b6144e01ba2d4d8e5827e8741bae3df67357",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6ap7_A",
+      "cif_sha256": "2bba429db4ec532dea08e9b5ae8c5e2b514d76fb61fe92f0914b28d82111172c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6w2p_B",
+      "cif_sha256": "ac3d4e3355f80c0eb077ea403bd29c0d8309a559252addf9fbd839b1a397e328",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4jin_A",
+      "cif_sha256": "8703563e8215aaa17992063a09c0d8e358a4f3f556cbc81ae5d8123029ec7ee0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3ita_A",
+      "cif_sha256": "cd36bf32f7623fd72648596ef2a7c71d8495d26e95e79020c8eb6dd043bb55cb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "5obx_A",
+      "cif_sha256": "c73ffbf51de9f0c9650c127c740a6952688e61f0f54fe41f5f9be2d4b2b4ca85",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3fjl_A",
+      "cif_sha256": "e7ae59e65e81fee5ae4b11a56995924215399b157287e89005c5aeb392eee71c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1v79_A",
+      "cif_sha256": "733a435bbd064ac0a51cdda31b9544032e38e2a3b2cd0a8dad50f245279d8f4a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7kk6_A",
+      "cif_sha256": "f4c6ef692295301854f519c29e15c3ace74c842c41df795b240449242acab968",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3tgh_A",
+      "cif_sha256": "07303a7f269b4980515f9d1dd0aa16d8405856ac30664eed22357c961c035915",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6xqx_A",
+      "cif_sha256": "1eafc9e518952c11f60eac36b49347769c72dec2733f8ed1ac085683249ccb8c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6l1h_A",
+      "cif_sha256": "0ffdedbefa8f982a97d71b8704110523a7480afdb94dc3f856da692e716ac8f0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "7a16_A",
+      "cif_sha256": "861bf730dd1a2820f17982127d35bfe8a3d8efab3babeb2d425cc0638155eb63",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1zze_A",
+      "cif_sha256": "9c71038564d3f265af40cd18d65d0f6d9a7f504635d4a1d14411d4b0d6e4ed11",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4pam_A",
+      "cif_sha256": "10dbdd44498974b0d0353630b420f5ede98f61f71b75a2e32a5b9f1b3d241221",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "3m10_A",
+      "cif_sha256": "28b0bdce3a04732bb276ddfeb05e35b10b3c66545502d634bc445ec2855611df",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1z2n_A",
+      "cif_sha256": "c6afb44da0ead495f30d2572193c7ce1e8f8f1860eb2608b9c45f82a1c52b81b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4lv8_A",
+      "cif_sha256": "7483f1700e85cc31d06dcca43883fdf5621f392627529be8ddccb849b849ef26",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4ihm_A",
+      "cif_sha256": "b5bab91a72d84918415c6a610a38cec0486462b2945f6e2c2fafa2abe727a03a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1dvn_A",
+      "cif_sha256": "d37aaf0bcb413e91296d59520368b587da20c9c88aa42a4ba7746fbe653d34c9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6t8d_A",
+      "cif_sha256": "49a9336eb7cbebb39c479f0739bea8f0f6c2553cd23ca387950356051b38da0b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1jcf_A",
+      "cif_sha256": "e5236b1433b5f364b7b7e59c1c4df1e670a97734eca124641d49f5395bc95c64",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6ijn_A",
+      "cif_sha256": "9d885aaa7b275adb820e61cad3ba7928bb08b1599617a66c5fdb18598f7a5332",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "4fk9_A",
+      "cif_sha256": "40d8851d1bc672ca03f3235ecf983a84ef0b1998111c5cfec5dedb7b116330f7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1woo_A",
+      "cif_sha256": "ed25483882bbb811ca3e5225673a18984efeabe84da9ef1c16f940989a6f2764",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "6ch1_A",
+      "cif_sha256": "f077b4825e9c25fe78ff8ee994722cc37876ab2f7976c256ed734688cad37239",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "2d5j_A",
+      "cif_sha256": "32830b6e47dac29e27fd64b01bcc9bcedfeb699a0b7641dae5cc1830d8cf4055",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260923",
+      "target_id": "1hb1_A",
+      "cif_sha256": "6ced7c25081d5ff9cd94673787027d3b07781c0d2844acdd4b3bf508a8ec2f45",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3gxb_A",
+      "cif_sha256": "66faf081a919df11beda0d3f48069e1f75016e668b89a1db388780d5bb71ad4d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6a89_A",
+      "cif_sha256": "875f6b659bdf17c3cdb4b766dc83805effb96127fdcb2be3857f63819072029f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4xbc_A",
+      "cif_sha256": "0abcb29fa0333899d69474d7c38250854b2eabd4dfeea65c3009f0054378b5f3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6q3v_A",
+      "cif_sha256": "cbb6848be606ba0cd427068f0a34fe8dd17b440a90e41bcb38a5535905d1382e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7nuw_A",
+      "cif_sha256": "5fe1e9d99a9d817fdb0e5050583b055296880a54a0e69e7f768ba3baaf6a4b7f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2obi_A",
+      "cif_sha256": "99f5d8612f1f7c88b6e22e59c7f1c05e6f757da21ae435216c377fb92c04432f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3qzq_A",
+      "cif_sha256": "0a00fea90a4d91ece4fb80b27b9765eeaa52c65f3cce482a22cb12382bfeca45",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4woh_A",
+      "cif_sha256": "f712c41e379cbebed03d33f11627405c34f8b9a48559c2806dbff3bd15055f4d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6ndw_A",
+      "cif_sha256": "ff227e6b16b9a14b43c2426a0aaac1201b500e1b09d132ed363a9e1d629468d1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3hny_A",
+      "cif_sha256": "ce33b4644e01dc4e2b2ad4c080832a66ef31e45598529ba32477a596b6cb54bf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1wba_A",
+      "cif_sha256": "7c5b164829ed59d4056136f3defbc2aa71fdb38f5441fd8c80b9a4b2e8217109",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1yn9_A",
+      "cif_sha256": "39c04351bcd5d8cee80a51e4926fa0b150c28d335baee4111a89d93c356d4d0a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1a44_A",
+      "cif_sha256": "5c4ce3ed4807a51a7e1c798a5956ae15e4dd203c735c1ad323b766d8cfb5cd52",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4xje_A",
+      "cif_sha256": "a85726928a25cc0f11aa1d9e367b48d217ba4f9a0e98fa84575a521598bc9934",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1ccz_A",
+      "cif_sha256": "0fb97d2dc55f7fa243d140f762a24cf333a8cc33e508f110c624466b9746212e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2p3k_A",
+      "cif_sha256": "e7c177af3a4535f94859adb429f5f65244b1b8a43bfcbf766d243017cec2f83e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6ibj_A",
+      "cif_sha256": "6fe52485e19d9896cb0d6691819106fa2599fce06d1676732cbf68e6e71a4977",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1j84_A",
+      "cif_sha256": "dfe16e68e74d57179c9fc5127b736e47819dbf4290b1208224de333f5fa194d0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3esx_A",
+      "cif_sha256": "000b1c435d77e422855fac6c9b1b2dc65cc0a13842076d68a6466c3777ad2e3f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4p27_A",
+      "cif_sha256": "f83117ef98aa0217e7ab50e92d238ad244105d84a49f9f5e9a77ae3f2fc2c6a1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6fpc_A",
+      "cif_sha256": "1d0056772c14b4fad6b45e5e2b1dc6e154a8b3fa0e9b4374d6146200930a2306",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7c82_A",
+      "cif_sha256": "bedae5ed09330827e22e2bac0358bec7d703ce4d58231e69a9b3c0d5b88dbabb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1bk7_A",
+      "cif_sha256": "afd41c8c577ec92514116ce06e822949de6810edeea8062cac791bbde9f76445",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6ht1_A",
+      "cif_sha256": "6a054eb63772fc07aea8ee47401bce2cf288d0e894bba00444b23af603d0469a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5d6p_A",
+      "cif_sha256": "1788cb15ee74e424a334088b8c58329e5cf3bb106492b01c0fe3792ea3dd8d86",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1lxz_A",
+      "cif_sha256": "fe36cb2c15291e4843c429a033d7b336e16d9763d2a71f670ddb4fa5a52c2abe",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5kdi_A",
+      "cif_sha256": "7014518c1b63af544c35518316acf006c9e08a33cb7c51dca4b7603cc11f234c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7np5_A",
+      "cif_sha256": "d7e930310e7a7b5b1e0c4208e382ee487792fd39900f3c7cceae25a0d04d49cd",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5nl7_A",
+      "cif_sha256": "522c006ad2558a42e6cdd0d3ca430ee5ec5f93917738ab41ca35bf58b88bb0ea",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3eii_A",
+      "cif_sha256": "ef487cd7d376a0a8f7353090173bc3c6b9dde369d3df5c0abbcc66f860588b47",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3f95_A",
+      "cif_sha256": "7be520024840e1bfb9088c5eb74e20c1605223bd65a3ed786a754f26a8cac1f6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3zj0_A",
+      "cif_sha256": "e7f9ce458bb235d65ae3b8984ea0f96353e45ea567467215e7f8439892ed300d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2nlr_A",
+      "cif_sha256": "b06d7a813d9e104dcb14e5c1d7ec962c04ae6d11c571bf5e3a09ec96c9041144",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1m1u_A",
+      "cif_sha256": "e7e3b320affc48be1367e978b810c04d36f4e177c935b952d290788956af133f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2a7m_A",
+      "cif_sha256": "4406ee285623fdb2ca1a63100f93931acf9cb2be7fbafa99d3a30a96636c43fc",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3n36_A",
+      "cif_sha256": "5fc795b5b19cfe7bba1e14f0075f3da7c1432aab385c322688ae29ac7642494e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1xa1_A",
+      "cif_sha256": "b9a5d45361852f75d27cb4dbb11accb1a641c447575ab0d84678cb7775e71b32",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6j5q_A",
+      "cif_sha256": "16ba079f50433199a8ee192e145c087d1944176549aea2d3d5c5661686b05436",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2erf_A",
+      "cif_sha256": "cc0081d9a0d6b6ca5deeef8fff501a9342c3f97e87019a4b302a6bd88eb7e30a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4dr9_A",
+      "cif_sha256": "6d263fec3e271feff2c4a84ef0e6eaac7b0c6f0ee84b88e33698d4b65e1c8c84",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1h5y_A",
+      "cif_sha256": "e52e98086acb9b5628133b48c903c406d2c652e15c8e4317f6b1fe5244d253f9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1g69_A",
+      "cif_sha256": "8974c48876084c081f908bd82a5f6934a0cb49ebde94eea35d8480026d1c24e5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4zyx_A",
+      "cif_sha256": "554c02b0523074a403e9b2356b50cd83533252de455099e5be1cfe1e762e253b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1pxr_A",
+      "cif_sha256": "e2030eaa6a600fdcd4eedf2b8694ab69ed37c301b18abd76d8d364ab475e2120",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5xrb_A",
+      "cif_sha256": "e7c4b7866757068989eff3a7b7c7569d54a30556a13564d860336faa6d68c8f0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4f1j_A",
+      "cif_sha256": "34679596f641d6f50b1793a1fb585db7be35fad80f71e53025df496f85e58ec9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1dua_A",
+      "cif_sha256": "ead40c6b20bde0ccf7c7f86f6cb3173ff17853f6ce855ba3d683fc10076a8207",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2ocg_A",
+      "cif_sha256": "df7a7aa62eeae5cde40089afa4a30a41aea4533c3317b97e60533d43ad11e40c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3voa_A",
+      "cif_sha256": "bd1297a561a92eb9206cfa37562ccd897b0733548b3d7cffc980ef3f7862943c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1c91_A",
+      "cif_sha256": "a0e77c40576b94b0c0f0f73fb7c16803f199aaeb4873f7cb594fa14bff114154",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3f99_A",
+      "cif_sha256": "4553275a4a3745a615f77e2117e89b4ef43bc82b6ff3a33c3737ae96394cad3d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3ah4_A",
+      "cif_sha256": "30e4f9b159912b6851dcfa9c0a3e77ee232de68c670d52ac44159d70f9ba95be",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7bwv_A",
+      "cif_sha256": "badd09a50c8f56e24ebf8116ce0b4fbf0eb57748c6bb8d3ab883868667960c13",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4q3c_A",
+      "cif_sha256": "4e981c1789d6503115a7fed68f386bbd73d2ea34db96bee14dee856283ada938",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2vi0_A",
+      "cif_sha256": "1159e1a07a68acf63469c6f49494805565e4416705fc2b29df228ce4255357ab",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4n13_A",
+      "cif_sha256": "e1d29856eb3f8d85d98f685c51519302e78c3da86dca01f724f00b64b9a5236e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2c6z_A",
+      "cif_sha256": "e77a22b129c6b23fd356aec8f9d1236636814c6be0852c13bfa0c99a8e64e67a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5byl_A",
+      "cif_sha256": "3af64d90f13aa9446d45ff092af02260219aef28b68f948860e456c0445413b2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2cex_A",
+      "cif_sha256": "cf694c06758d1cdaa50e6a70637b51717d13044bd46583bb2d43f396d70fba8e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3ea3_A",
+      "cif_sha256": "853ccb05f85f5e26460fe1cc7bfd2e27b5c74e5a85c8d28f2c01f38bd7b21851",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2iry_A",
+      "cif_sha256": "599df20f31312335826fdab556efe1e8b5d7d7d3ad30fcf18f3aeb2175ce44ed",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5dxn_A",
+      "cif_sha256": "45e76a881a2b2458afe3a0dd66423db4e59ebe7df566cb282621f7cebb91076c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4jpx_A",
+      "cif_sha256": "1ede6ef040a28da66894c56f2ca1a84a3331295582ba673cf5e71d8d142a6411",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7k27_A",
+      "cif_sha256": "1fda9f9d6bb718ccb4d131342400c786e8ceb838d4730a5d7d9f4e632f01963c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2bod_A",
+      "cif_sha256": "1a92fea7a1d5cd4004accfec7bf767e62d61ea408a8391285d71acac46222028",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5trq_A",
+      "cif_sha256": "9627f7e15b11c2d8b3567f2928c53ae0c9633fc74c9c44394c68fc5915b3d165",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3wib_A",
+      "cif_sha256": "f16a0089734c15bd5455f8083b08feae73d8f549354370a86e212bfcf6635f5c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4i6k_A",
+      "cif_sha256": "0565302640a782ebd54b9dc1ab4e7fe74437637b22b781d2f19369847f2332d4",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2ioy_A",
+      "cif_sha256": "a0abacd594198baf2aee1b7b51f106419454e640e736600dd601cb15d1f501f1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6ap7_A",
+      "cif_sha256": "806e7a1a175fb25b37e8e6cb398728f87a269765538878089c38e9eb5fded80a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6w2p_B",
+      "cif_sha256": "a6186b292f8342476b32843a2e26904a12a5943dea4086c497aaa34663aecc82",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4jin_A",
+      "cif_sha256": "17337d3d7ad320146e8ac690720e7dda39ac79ab3946bf07829c461a1cae1119",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3ita_A",
+      "cif_sha256": "cdc0b9a888ed13c3c3cd41a913ed76d6a32eea159c31ee1db5265677f6655d7f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "5obx_A",
+      "cif_sha256": "157a5426226706a8079f82b5f7202ec387cbb5d0117ce09fefefd02862d78bac",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3fjl_A",
+      "cif_sha256": "693479a15f587db283f7a4e1fdfe06117e49fb08f59c05ef7ae190a872c95201",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1v79_A",
+      "cif_sha256": "5247a9e1b041f07482d08e12bad9634566e1f96c39d86eec1bb27c7b96003efb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7kk6_A",
+      "cif_sha256": "35b5824391c81e190e7b5290bad9dedf51804ba8b584a5f50c70fdd959245386",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3tgh_A",
+      "cif_sha256": "a2c5d402ddec3d560443e3dbe8d3dde616523548c6746980a2bc5f0e6435a26d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6xqx_A",
+      "cif_sha256": "5351dd89f4e40f6b0d0bc44035d062bd369bc0fed95074084a23d73f208d12f9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6l1h_A",
+      "cif_sha256": "456150f2573bce897a1160392325412181405b51d91fbace7ca9ee7cbe5da1cb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "7a16_A",
+      "cif_sha256": "5ec59c39a7c39242d9de08f0222340d111f7e9518d480c5c5fcd87010001d0c7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1zze_A",
+      "cif_sha256": "f35ffd668dd4e290cf7073749ae2d8f30e077e60be966776d8729b6fc0cc2c73",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4pam_A",
+      "cif_sha256": "f9d911098dd92c7c715cbdb4a74985c3fd7c589878f95858d1135a28853400ab",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "3m10_A",
+      "cif_sha256": "ba8ace6cf5f0371b84f8452553ff6f0010291d4cff66582aafa37255468be5f0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1z2n_A",
+      "cif_sha256": "574c5c2175abcc2b85305d936a7c0fd80416b24a2b9ce6c9e1956e54e8fdae02",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4lv8_A",
+      "cif_sha256": "add9790d64f2707e62445bafa8a514174277b31ce5bc10faa74807700206454a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4ihm_A",
+      "cif_sha256": "425bf4d142aa9bf864157ad9f6b67995a00fff19206a24d6530a0767e16878da",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1dvn_A",
+      "cif_sha256": "4adeba728920c7f4919a8a57eb0d506015a7204a7c64cba3828eb2dbfff4a389",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6t8d_A",
+      "cif_sha256": "ff63d979f33b178200fde6fb947126df4afac36df7e369d866607bc573766163",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1jcf_A",
+      "cif_sha256": "e9d314d68df38c88097eee41e9b4c3c72ed1fae8f9a5d01fff2d01b25c1777ab",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6ijn_A",
+      "cif_sha256": "975096472bb48c4554894eeaf4dc293953fc5f4a6a5e8b15d6e031b96eb56752",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "4fk9_A",
+      "cif_sha256": "219646a8ff2045f608ce76e957ad0b6e26db1d58ce9f7f9a3694471c965cf54a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1woo_A",
+      "cif_sha256": "59d7ee5cd8c006c3676d46de74a73290cceeb1bde35a9c209920b20313303721",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "6ch1_A",
+      "cif_sha256": "a90ce5fd73c2ce08a18cc8e78c679f1cd77e4e0ae503ae606235a858f3760d09",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "2d5j_A",
+      "cif_sha256": "363918a37cffe731e988e60c4beb2446411592577798fca19a4edfd17b756a69",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260924",
+      "target_id": "1hb1_A",
+      "cif_sha256": "ac7cb026ab3cc1d1febaafcac83b9c87639e28fa1853ee24c86e68600aa8496b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3gxb_A",
+      "cif_sha256": "8fc575a202eeb4a114f2bbfdb73756e0456198053ca9e13a6f4d4fbfdb3f8367",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6a89_A",
+      "cif_sha256": "39535cac31bd39cf2a78fb2dd4da5cdb9c2636281d7a78e00784a7b887f086b1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4xbc_A",
+      "cif_sha256": "795ee616f5d88e1cf1679062e78dd5502fe59ceebe084e738e9512cdb6506646",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6q3v_A",
+      "cif_sha256": "ba5a89d4cac96080b3aecfa6ebc82f51c680391441274e88e07b6e4d95493189",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7nuw_A",
+      "cif_sha256": "0b4a05c7c0fc64fffc4e3dcd5c307b4fa96c4f5c4afd5302c2f2de98b2fe8a8b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2obi_A",
+      "cif_sha256": "f17223f2eeb09bd32144a85755305fb5acaa2c3f97e7cb90fcc46f412ae13a92",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3qzq_A",
+      "cif_sha256": "6f9490d1fc3f0c584a4a1dcdac059848a7910e875cffd6050d43fe570b3eb951",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4woh_A",
+      "cif_sha256": "bafd990fa74fdc0e18047ce41097e267c938dca06fa51d456e90f500d60201db",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6ndw_A",
+      "cif_sha256": "92bd84c4f709c9f7688bc0d6946216d7bcc3872a2393815588df1e61d8fe8c81",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3hny_A",
+      "cif_sha256": "9574498ffde6b8e1da7f2fdb8fee7492d194d502a50184bef4d91c04e8cfff3b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1wba_A",
+      "cif_sha256": "4d759164d5c9144db2daccf3c5fc0f991c21c04aef453c299c4cfd130384ff46",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1yn9_A",
+      "cif_sha256": "7bfe7988418692667891dbcffc310e6c88dc3af80a4acba693d821d31edcd8e2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1a44_A",
+      "cif_sha256": "0b6a09b019c92eb236ec22d8237c425e45997d5e2201520cfefeebeb915761b3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4xje_A",
+      "cif_sha256": "824d1672cdcc0f22269dcef2b6d24f53f31469da49897f27f1b3aba457b948bc",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1ccz_A",
+      "cif_sha256": "581f6f8125e1ea8ffb71c82430cf56b95baa9da35b514afab59e750fd3bf1de8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2p3k_A",
+      "cif_sha256": "da90710120977bcad2af4f5e13ec89ed41de87d9ca9e1bd05e7fb8435aa8b0b7",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6ibj_A",
+      "cif_sha256": "d64898d178e4887e2e4cffc3a654725a17e023db6b0825ba3c372ac7e3a6f0f2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1j84_A",
+      "cif_sha256": "dc5971b0d67b170e8cc509e916323190688a8b1f09a69a96a5d37a3da79846f9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3esx_A",
+      "cif_sha256": "ce0c64313c919251070e0778086cd4ddc823cd2c2e4ffe80b4f0e73decea536c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4p27_A",
+      "cif_sha256": "bb0199e1be944fb41d4a901586f303ad21f8bd7eaf80256b498ea6e33dd45909",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6fpc_A",
+      "cif_sha256": "2b88c1f920e62167b0a98c24ce18a3d0a783cef3e536391fd83de03303bb8aa9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7c82_A",
+      "cif_sha256": "6a03419ae78155d6472e4390035ceb2ca5d617ba181695d4a2b808cbdc4452f3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1bk7_A",
+      "cif_sha256": "be85cd4edf45309e0ab62d0e4feaebc42b46d421e91fbe9ab8976c3658388133",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6ht1_A",
+      "cif_sha256": "4119383f79f816c00da24573b82fb6e56df73fcf60147dfbf46ae98a91ef442e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5d6p_A",
+      "cif_sha256": "d048876f87290580461146769fb066073a029e39fcefa9144dd0a76cd1e9374f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1lxz_A",
+      "cif_sha256": "84279bacc84232cc7a0bfb1b014ecf24ab94fc3813e4edf76147cdd94623e5f1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5kdi_A",
+      "cif_sha256": "a823970ab99eabc555359ac1872364ea4a0f95f74eb1afcd80347ce695974be5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7np5_A",
+      "cif_sha256": "923f9e8f4d624241fb0991f0c06e7d0278b15db81e91e695180b567a5f94e074",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5nl7_A",
+      "cif_sha256": "357d514d413609b3719349ff4136d38bad2402d75653cfef5aaba241422e277e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3eii_A",
+      "cif_sha256": "3b1713bd4144ef9837392d7cae1ff8617fd16fd77f48d0ebf60e39b3593b0935",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3f95_A",
+      "cif_sha256": "982e7b1e13ec1937eae182ff25e3161944c5c620462c770bf69b40bcd78e2c44",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3zj0_A",
+      "cif_sha256": "5c62f68e9e292d613c15dd8c54af3db2f5ab4d372e646127b91186b64767878c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2nlr_A",
+      "cif_sha256": "cfebd55596eda99cc0fe9612d6df81b548172fbe07989b20f7fbd11026bda3ff",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1m1u_A",
+      "cif_sha256": "bea71c68df26a9f3f2cebf19b8b5c5f2cc2ff76e92099c05b3c1e950d4288516",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2a7m_A",
+      "cif_sha256": "8d88f8f3c2c847f24569320cb3152fda1d569a54485833438b264c195ba8934f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3n36_A",
+      "cif_sha256": "c4531c087bf706ea8bde7f5c88e168b73fd117cbe8821eb2f6f0d10019b8ce23",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1xa1_A",
+      "cif_sha256": "73819fb08c9c2cdbc7f0036936ebc19a362aeecc2ede378306b1a37fd73aedf0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6j5q_A",
+      "cif_sha256": "1ed07ec3e543c2eef50cb0e9cab1d794ae64242d3250a48ef8ad4750bfa13b7a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2erf_A",
+      "cif_sha256": "832f1e76b82c9acb31ff20573d9a26896570362811722bb93e5b9787163d2570",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4dr9_A",
+      "cif_sha256": "52b47e5e3fc86d9b30d9c0af10bb7c71e3deeb00552a31647438045781812a17",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1h5y_A",
+      "cif_sha256": "4c81858caaaa6a1ec63a4c643b764f6802c15eefe4d69f9af8cbafd73963fc67",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1g69_A",
+      "cif_sha256": "7506b5d1e1b0ae4ef2f5b0734a71f4b298965f6737cba1eecd8be367c3229b0c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4zyx_A",
+      "cif_sha256": "3406b672d1ded7e7b43615d5801f02d6ab853ac57a65854a8f1c5da8f85c62aa",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1pxr_A",
+      "cif_sha256": "ef8d716319e5f161d9e8318a05293f2ea040f17d2ac8a4a65546b792b0274d33",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5xrb_A",
+      "cif_sha256": "5e9da8a7905065c75537b0336f8d0c90dd8c8cd9e6644f8040e8d4cb2ce3285b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4f1j_A",
+      "cif_sha256": "6f0e6bdce902192a7b3dc459f914ec6f13101835c0a741cd2b6bc1e268e1964d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1dua_A",
+      "cif_sha256": "f87cea98af4c3a4195a1e298ea6f70c72e78a061fc884280cc952153adb10764",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2ocg_A",
+      "cif_sha256": "0fe8c78fc78e6959e721148b6e12cbe42214ba90980591d11c9388bbc5b78edf",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3voa_A",
+      "cif_sha256": "22be9b918d6411cf04b7d15fe023a42a0a0100438d9c90666f91d897d0407701",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1c91_A",
+      "cif_sha256": "8ededafc85b9f742023580f7252e220dcfc686a6ad23976fd8fb8c125d37cd3d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3f99_A",
+      "cif_sha256": "2466b1674182153b58f8d58c2f75f8d840fb5424dbc5c1b39daeb9346d5707de",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3ah4_A",
+      "cif_sha256": "8f1c64e975685699e96104ede451c3e219933e91a8e10fae771f2efe408afbf6",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7bwv_A",
+      "cif_sha256": "ab1d3aca307cb6c4608268a42c332b332367d435dfbae55ca9485a9d57272d22",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4q3c_A",
+      "cif_sha256": "66f0cbd3ff20de1b07c3f341895e4f7561e4bdb922b25c94173381ff04b1b2e3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2vi0_A",
+      "cif_sha256": "5785bb38b1ac83382eec141057f0c8351effc499824a0eb5243b3f49b741b11c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4n13_A",
+      "cif_sha256": "e34182f86512d0a5b89eed2f6e7fc6a951379377f52915468fd3dfe265e5d0c2",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2c6z_A",
+      "cif_sha256": "b3988f48181970d782dfef53ce8bf0d093bfff769ab73519b14b7c06709a93fb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5byl_A",
+      "cif_sha256": "ffa466b154216cd27b69fc34f8a7b8a5428322019edc443f20b0417fcb3c481d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2cex_A",
+      "cif_sha256": "3177b34edc26c28a2532a9972ea8a8d0c12eacbe3598fa166647e7d0305d48b3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3ea3_A",
+      "cif_sha256": "47027deee23f0c706883b7202acc84cf022bf928b1bcbc9cdfee489bc07d708b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2iry_A",
+      "cif_sha256": "6801fe16173deb1667cf4fd172b3c81b4b0d952f94ee309fdc841fc6e8eb22d1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5dxn_A",
+      "cif_sha256": "1b06706698e39adcc10c7965fed01cbe1d2e24efc08b17ac8dff36a3a82b6a34",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4jpx_A",
+      "cif_sha256": "7009fd387a20bf5a4a1b8ee2a50ea8f1c1f224a04f69fcbc1c6fe7fa8019977e",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7k27_A",
+      "cif_sha256": "6c86cffb17e695a8532d2bcf118067409660e7760e499f02303ca5f9cf66cdae",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2bod_A",
+      "cif_sha256": "ea02bc5fa040eb8d4c9fc76c88bd4017007c10328554a160f3d10f8d92dc0cd1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5trq_A",
+      "cif_sha256": "e05dfeea735f298dd5d987cc65f7a45f8bcb93761712726d9d6fc3a2236a4e10",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3wib_A",
+      "cif_sha256": "e018a50eafd9edbc7d36fe9a3972eeff5a0b8e8543ceb5cca9d699a998477b3b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4i6k_A",
+      "cif_sha256": "44f12d3d37355184f8139b4e72e6903aa7c12a914e45c0c752ec9c1af2308cf9",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2ioy_A",
+      "cif_sha256": "14ce76a8185b1999482d7044b0864e59ae91a8412256ddaef9dcb021165a1928",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6ap7_A",
+      "cif_sha256": "ed807176f722e6ef247555b29c51833c9043c856763381886d3bc0eb5db8c84d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6w2p_B",
+      "cif_sha256": "dfaafcf1dd9e8cab309e1e8b6794df2e7d3527b64b6acd7047b6ad520e7c9094",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4jin_A",
+      "cif_sha256": "72af03bf02272130fe52f9bd75152f06e5c448a2c97c714489af2e9a71852e22",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3ita_A",
+      "cif_sha256": "faa21ee5b02504a4578872a9252ca0f4ce23473a2bbccbceb98567f2a88102d8",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "5obx_A",
+      "cif_sha256": "f6e90af7540712ab8ed4f7debd19879b2c63b58a6244e87fdcd7bfeb0e440d61",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3fjl_A",
+      "cif_sha256": "6bc2740a6cc2c26ac0024d396f472920c210d6634603af1cef388a8fb116837d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1v79_A",
+      "cif_sha256": "8cf756edb981ca4d4e745cce6d1c2043f5923a558802332689609c7d3d547ca1",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7kk6_A",
+      "cif_sha256": "3381c34104b5d333a15ab7aac89fb6b68e894ea025428519c9fa4f77d473a66d",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3tgh_A",
+      "cif_sha256": "9aafc1de7e23f76177644416c12f6fb17a957928c4df2bf010cdd4ce6055df97",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6xqx_A",
+      "cif_sha256": "31868261dde0c2e4fb33fffec2cd02d437299bd11e7ea7cb23fe159f65833ed3",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6l1h_A",
+      "cif_sha256": "f0252a3e7c69a21ab77aae4d53ce379640280eb21600a2ca0d4167315ce219fb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "7a16_A",
+      "cif_sha256": "bb7e2a989ec481bb333a43e54283eb4db54af9bde6b5498612398c6a5e2e6454",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1zze_A",
+      "cif_sha256": "a2d4f298dd334808b6676f6c6b29a912047aa356c301419ada3c25089f7bc464",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4pam_A",
+      "cif_sha256": "05adae217add7800122c65a777ea16dd3788328c6aedb4d19eb4f32a4c3c9585",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "3m10_A",
+      "cif_sha256": "f1fef9bc29385172f68784a1d5395bab5fd0cca91313d90dce1257d31cb36f1c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1z2n_A",
+      "cif_sha256": "3eb5999567ef877e91d4ab8d9842db3f408853ea79744a5b2037578cc9aa7316",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4lv8_A",
+      "cif_sha256": "20d11fe1bd9a4beca68b28332e4d027c522cb050e150645f1fa1d212e856e218",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4ihm_A",
+      "cif_sha256": "8aafd388715b997090d48aef00ba2a23ce590fd55054883d0de2f608d98ec12c",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1dvn_A",
+      "cif_sha256": "521a70fdf65dad095033672056e1fbdaccd12f0f3311eca65653dc370984a4f0",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6t8d_A",
+      "cif_sha256": "1262f87dc8c2268677dba746b19b3070e3165dc712cc8d102250a7c89c85a89b",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1jcf_A",
+      "cif_sha256": "f3b21b0a40cd87200f58a1c6e627a90c8d79317fc0c7a93eafa8e3fa864793eb",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6ijn_A",
+      "cif_sha256": "dde5fa13ade9fa8972a6e1cba5c6f88f2b420f309c3ddf71d19c7cdc9e953f6a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "4fk9_A",
+      "cif_sha256": "f908ea1e9514596b066832be64ee067b50610fb4b5283ecb8855688cb61d2c26",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1woo_A",
+      "cif_sha256": "966f9900b3dcde34d6fb368b4ec68a2a5b51b4965d36a52e7a895b619b481ec5",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "6ch1_A",
+      "cif_sha256": "2ffb470015e8c9cd63467e6cfe567bfb227ed36c0f2707c6f59aa35e15fe3a1f",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "2d5j_A",
+      "cif_sha256": "4e13f15a81382cb1e4e32e78c93d5dbad7bd03e19b4c8b1bb927f8d206a0522a",
+      "masked_coordinates_fp32_exact": true
+    },
+    {
+      "system": "r20270104_C_s20260925",
+      "target_id": "1hb1_A",
+      "cif_sha256": "aa44648b49073231852c440f297a00415222ffd60497d73adff206abe17f1a12",
+      "masked_coordinates_fp32_exact": true
+    }
+  ],
+  "scoring_maxabs": {
+    "ca_lddt": 0.0,
+    "residue_ca_lddt": 0.0,
+    "tm_score_fixed_full_length": 0.0
+  }
+}

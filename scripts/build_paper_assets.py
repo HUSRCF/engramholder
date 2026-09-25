@@ -52,6 +52,18 @@ ANCHOR_SOURCES += ['reproducibility/anchor_intervention/archived/'+name for name
                   ['analyze.py', 'cpu.sh', 'e3_common.py', 'job.sh', 'parent_core.py',
                    'query_anchor.py', 'references.py', 'run.py', 'scoring.py',
                    'smoke.py', 'test_query_anchor.py']]
+SOURCES += ['protenix_fresh192_'+name for name in [
+    'summary', 'records', 'complete', 'acceptance', 'model_lock', 'execution_lock',
+    'score_lock', 'selection_lock', 'inference_manifest', 'reference_manifest',
+    'selection_audit', 'exposure', 'preflight', 'engineering', 'implementation_review',
+    'prediction_completion', 'formal_start']]
+SOURCES += ['e2_retraining_'+name for name in [
+    'summary', 'records', 'score_complete', 'lock', 'complete', 'cif_audit',
+    'historical_comparison', 'engineering']]
+COMPLETED_SOURCES = [str(p.relative_to(ROOT)) for folder in
+                     ['reproducibility/protenix_fresh192', 'reproducibility/e2_retraining']
+                     for p in sorted((ROOT/folder).rglob('*'))
+                     if p.is_file() and '__pycache__' not in p.parts]
 
 def read(file, path):
     x = DATA[file]
@@ -146,7 +158,8 @@ def main():
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
     hashes.update({name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ANCHOR_SOURCES})
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v10.lock.json'
+    hashes.update({name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in COMPLETED_SOURCES})
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v11.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -164,6 +177,9 @@ def main():
     sc_audit=verify_sc(ROOT)
     from verify_anchor_intervention import verify as verify_anchor
     anchor_audit=verify_anchor(ROOT)
+    from verify_protenix_fresh192 import verify as verify_p192
+    from verify_e2_retraining import verify as verify_repeat
+    p192_audit, repeat_audit = verify_p192(ROOT), verify_repeat(ROOT)
     from analyze_openfold_followups import calculate
     followup_audit=calculate(ROOT)
     assert followup_audit==DATA['openfold_followup_analysis']
@@ -375,6 +391,9 @@ def main():
     table.append(['Fresh96','96','Short-chain eligibility (Q); BLAST v2',
                   '4 x 24; 129--384','Excludes recorded exposure and accepted neighbors',
                   'New for fixed OpenFold Train96 interaction'])
+    table.append(['Fresh192','192','Short-chain eligibility (Q); BLAST v2',
+                  '4 x 48; 128--383','Refreshed exposure exclusions and accepted neighbors',
+                  'New for fixed Protenix Train384/ESMC interaction'])
     save_rows('data_composition_rows.tex',table)
     from diamondhill_paper_assets import build as build_dh
     build_dh(DATA, score, contrast, tex, save_rows, interval_cell)
@@ -414,6 +433,8 @@ def main():
     build_controls(DATA, number, contrast, tex, save_rows, interval_cell)
     from anchor_intervention_assets import build as build_anchor
     build_anchor(DATA, number, contrast, tex, save_rows, interval_cell)
+    from latest_completed_assets import build as build_latest
+    build_latest(DATA, number, contrast, tex, save_rows, interval_cell)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -427,7 +448,7 @@ def main():
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit,'verified_anchor_intervention':anchor_audit},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit,'verified_anchor_intervention':anchor_audit,'verified_protenix_fresh192':p192_audit,'verified_e2_retraining':repeat_audit},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):

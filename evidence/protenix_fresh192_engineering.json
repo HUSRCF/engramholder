@@ -1,0 +1,310 @@
+{
+  "passed": true,
+  "models": 25,
+  "predictions": 50,
+  "rows": [
+    {
+      "system": "query",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 2.10665992137464e-06,
+      "passed": true
+    },
+    {
+      "system": "query",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 2.963350728424618e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_native_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 8.583932818924693e-07,
+      "passed": true
+    },
+    {
+      "system": "C_factor_native_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.0792966258180415e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.391935136625804e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.2499006951884053e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.2495454965363073e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.4927809441179729e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.0984534481636758e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 2.0973103204177456e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_native_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 9.26988355155127e-07,
+      "passed": true
+    },
+    {
+      "system": "C_factor_native_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.0802032030441551e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.1344079169564974e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.2601757095702985e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 7.720909539744106e-07,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.1602977422900935e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 9.292488491821721e-07,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.7186488205860945e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_native_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.408861712516667e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_native_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.2169271767735618e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.2712756490233356e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.1034785650798663e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 8.928673508933993e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 3.572762213423122e-06,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 8.689420115772703e-07,
+      "passed": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.0457215639764661e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.2561835983378248e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.4885063865411125e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.6801075496314885e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 9.870800352615728e-07,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.1554835134607484e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 9.786842247613481e-07,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260923",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.5257553775800211e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260923",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.1931012054204986e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.2275595949459692e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.049429884036149e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.347970928294831e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.1217402345620634e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.0900608453316893e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.2495662033627742e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260924",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 2.4678612788612183e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260924",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 9.374326692069266e-07,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.3529876174346461e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 8.946346825628646e-07,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.2878822218926884e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 1.043455151815126e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.6649619530291747e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 8.383107914672403e-07,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260925",
+      "target_id": "3gxb_A",
+      "relative_coordinate_l2": 1.384393104107462e-06,
+      "passed": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260925",
+      "target_id": "6t8d_A",
+      "relative_coordinate_l2": 8.45413834236212e-07,
+      "passed": true
+    }
+  ],
+  "model_lock_sha256": "1ffe5b468d2bcd891a2eb66affa5b2cc65ada910f580dfeb54e91f070340d053",
+  "maximum_relative_l2": 8.928673508933993e-06,
+  "completed_time": 1790328312.5429225
+}

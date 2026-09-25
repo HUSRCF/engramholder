@@ -64,6 +64,9 @@ def build(data, number, contrast, tex, save_rows, interval):
                     '96', 'ESM2', 'Fresh96',
                     *[tex('fresh_'+name) for name in ['query_native', 'factor_native',
                       'factor_rotated', 'generic_plus_native', 'generic_plus_rotated']]])
+    compact.append(['Protenix', '384', 'ESMC', 'Fresh192',
+                    *[tex('p192_pair_'+name) for name in ['query', 'factor_native',
+                      'factor_rotated', 'gplus_native', 'gplus_rotated']]])
     save_rows('complete_fourcell_means.tex', compact)
 
     interactions = []

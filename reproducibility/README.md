@@ -5,10 +5,10 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v10 input lock contains
-121 source files and 1,617 generated numerical fields. All 1,522 previously
+full-inference source/norm cells and contrasts. The active v11 input lock contains
+204 source files and 1,830 generated numerical fields. All 1,617 previously
 integrated values, display formats and scientific source mappings are unchanged;
-95 fields add the completed residual-anchor intervention. The earlier additions
+213 fields add Protenix Fresh192 and the same-seed compensation repeat. The earlier additions
 cover compensation (including explicitly post-hoc target-distribution summaries),
 signed permutations and developmental checkpoint studies.
 Absolute structure scores are displayed to four decimals (168 formatting-only
@@ -41,6 +41,16 @@ verifies all 2,400 Fresh96 score records and three-metric contrasts, plus the
 post-hoc Train384-minus-Train96 change of the full interaction on both panels.
 Fresh96 does not establish its sole primary interaction; its positive Factor
 contrast is not substituted for that endpoint.
+The [Protenix Fresh192 bundle](protenix_fresh192/README.md) adds 4,800 fixed-model
+predictions on 192 new targets. The verifier reconstructs 24 contrasts and the
+prespecified stratified bootstrap; the sole primary pair-lDDT interaction is
+positive. It does not replace the OpenFold result or guarantee family/pretraining
+isolation. The [compensation repeat](e2_retraining/README.md) adds nine completed
+same-seed training executions, 864 predictions and 21 reconstructed contrasts.
+The rotated-arm benefit remains positive, but the additional benefit over Native
+is not re-established. Original no-C baselines are fixed; executions are not
+pooled as extra seeds. The execution reused the environment and PLM caches, so
+it does not complete the separate fresh-feature full-prediction replay.
 Literal numerical references in the manuscript and generated tables are checked
 against the generated keys; an unknown key also raises a LaTeX PackageError.
 
@@ -55,6 +65,9 @@ python tests/test_e2_intervention.py
 python tests/test_signed_and_curves.py
 python scripts/verify_anchor_intervention.py
 python tests/test_anchor_intervention.py
+python scripts/verify_protenix_fresh192.py
+python tests/test_protenix_fresh192.py
+python scripts/verify_e2_retraining.py
 python reproducibility/operator_smoke.py
 python reproducibility/compensation/smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex

@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "utc": "2026-09-25T11:01:36.458709+00:00",
+  "records": 4800,
+  "all_predictions_ok": true,
+  "targets": 192,
+  "systems": 25,
+  "metrics": 3,
+  "comparisons": 12,
+  "bootstrap_draws": 20000,
+  "max_abs_error": 3.8163916471489756e-16,
+  "checks": [
+    {
+      "metric": "ca_lddt",
+      "comparison": "factor_rotation",
+      "max_abs_error": 1.942890293094024e-16
+    },
+    {
+      "metric": "ca_lddt",
+      "comparison": "gplus_rotation",
+      "max_abs_error": 1.734723475976807e-16
+    },
+    {
+      "metric": "ca_lddt",
+      "comparison": "interaction",
+      "max_abs_error": 2.962040335230398e-16
+    },
+    {
+      "metric": "ca_lddt",
+      "comparison": "native_minus_gplus",
+      "max_abs_error": 1.942890293094024e-16
+    },
+    {
+      "metric": "residue_ca_lddt",
+      "comparison": "factor_rotation",
+      "max_abs_error": 1.973247953923618e-16
+    },
+    {
+      "metric": "residue_ca_lddt",
+      "comparison": "gplus_rotation",
+      "max_abs_error": 1.8561541192951836e-16
+    },
+    {
+      "metric": "residue_ca_lddt",
+      "comparison": "interaction",
+      "max_abs_error": 3.8163916471489756e-16
+    },
+    {
+      "metric": "residue_ca_lddt",
+      "comparison": "native_minus_gplus",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "metric": "tm_score_fixed_full_length",
+      "comparison": "factor_rotation",
+      "max_abs_error": 2.463307335887066e-16
+    },
+    {
+      "metric": "tm_score_fixed_full_length",
+      "comparison": "gplus_rotation",
+      "max_abs_error": 1.8561541192951836e-16
+    },
+    {
+      "metric": "tm_score_fixed_full_length",
+      "comparison": "interaction",
+      "max_abs_error": 3.191891195797325e-16
+    },
+    {
+      "metric": "tm_score_fixed_full_length",
+      "comparison": "native_minus_gplus",
+      "max_abs_error": 2.220446049250313e-16
+    }
+  ],
+  "analysis_sha256": "4dac76b11dfd8aaa584f1c44ee56795a8f3f1f51f831b2f573c9a7a36cbd8edf",
+  "scope": "Independent reassembly from scored records and locked target strata; no new GPU computation, no additional CIF rescoring"
+}
