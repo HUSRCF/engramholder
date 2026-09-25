@@ -1,36 +1,6 @@
 \section{Results}
 \label{sec:results}
-\subsection{When does native orientation benefit Factor adaptation?}
-\label{sec:protenix}
-The original Protenix-Mini tangent comparison on Confirm96-B gives a native
-advantage of \result{pt_tangent} [\result{pt_tangentLo}, \result{pt_tangentHi}],
-with 78/96 positive targets. Full gives \result{pt_full24}
-[\result{pt_full24Lo}, \result{pt_full24Hi}]. The tangent construction isolates first-order updates, not a uniformly better adapter.
-Using Tiny's own factors and decoder retains an advantage of
-\result{pt_tiny} [\result{pt_tinyLo}, \result{pt_tinyHi}], extending the evidence
-to a second checkpoint within the same family.
-
-A mean-preserving orthogonal control, $Ru=u$ for the all-ones unit vector $u$,
-also underperforms native updates: \result{pt_mean}
-[\result{pt_meanLo}, \result{pt_meanHi}]. Preserving this channel direction does not remove the effect or isolate
-all downstream normalization. The original scope comparisons are retained in
-Appendix Figure~\ref{fig:scope}.
-
-\label{sec:length}
-Without further training, the original ESM2 Train384 Full adapters retain an advantage
-on Length48 of \result{pt_length} [\result{pt_lengthLo}, \result{pt_lengthHi}],
-with 41/48 positive targets. Native and rotated means are
-\result{pt384_l48_native} and \result{pt384_l48_rotated}, both above the
-unadapted mean of \result{pt384_l48_query} (Table~\ref{tab:coverage}).
-Both adapted families improve in mean score; baseline comparisons are
-descriptive. Supplementary residue-average lDDT and TM-score are concordant.
-
-This complete-sequence study tests adapter length transfer, not family novelty
-or exclusion from backbone/PLM pretraining.
-Official Mini-ESM scores \result{pt384_l48_official} on the same panel, leaving
-a substantial quality gap rather than establishing a competitive replacement.
-
-\subsection{Does rotation sensitivity depend on the head parameterization?}
+\subsection{Does parameterization change rotation cost after training?}
 \label{sec:interaction_result}
 Under the matched OpenFold Train96/ESM2-35M recipe with 1536 AdamW updates, output rotation affects the factor
 head more than G+ (Figure~\ref{fig:interaction}). On Confirm96-B, the factor
@@ -57,16 +27,6 @@ These metrics score the same structures, not independent samples.
 
 G+'s direction intervals include zero on both panels, without establishing
 equivalence of trained systems.
-
-We then evaluated these same 24 adapters and query-only baseline on Fresh96,
-locked before prediction under the sequence-screening protocol in
-Appendix~\ref{app:fresh96}. All 2,400 predictions completed successfully, with
-no new training. Factor retains a direction effect of \result{fresh_ca_lddt_factor_rotation}
-[\result{fresh_ca_lddt_factor_rotationLo}, \result{fresh_ca_lddt_factor_rotationHi}],
-but the sole primary interaction is \result{fresh_ca_lddt_interaction}
-[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}].
-It is not established on new targets; the positive Factor contrast cannot
-replace this endpoint. Supplementary interaction intervals also include zero.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
@@ -104,6 +64,16 @@ ESM2 interactions also have positive intervals. ESMC G+ itself has positive
 rotation contrasts (\result{dh_protenix_c96_c_pair_gplus_rotation}/\result{dh_protenix_l48_c_pair_gplus_rotation});
 function-class closure does not ensure equivalent finite-budget training.
 The direct interactions establish that Factor's differences are larger here.
+
+The same 24 OpenFold adapters and query-only baseline were evaluated on Fresh96,
+locked before prediction under the sequence-screening protocol in
+Appendix~\ref{app:fresh96}. All 2,400 predictions completed successfully, with
+no new training. Factor retains a direction effect of \result{fresh_ca_lddt_factor_rotation}
+[\result{fresh_ca_lddt_factor_rotationLo}, \result{fresh_ca_lddt_factor_rotationHi}],
+but the sole primary interaction is \result{fresh_ca_lddt_interaction}
+[\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}].
+It is not established on new targets; the positive Factor contrast cannot
+replace this endpoint. Supplementary interaction intervals also include zero.
 
 \paragraph{A coordinate-compatible control.}
 A follow-up replaces dense rotations by three signed channel permutations,
@@ -163,8 +133,39 @@ The result supports useful average mitigation in this setting, not equivalence
 or uniform benefit. It changes output freedom and joint optimization together
 and does not validate the failed reconstruction predictor.
 
-\subsection{Does direction sensitivity explain adapter competitiveness?}
+\subsection{Where do effects transfer, and do they imply a better head?}
 \label{sec:esmc}
+\paragraph{Checkpoint and length transfer.}
+\label{sec:protenix}
+The original Protenix-Mini tangent comparison on Confirm96-B gives a native
+advantage of \result{pt_tangent} [\result{pt_tangentLo}, \result{pt_tangentHi}],
+with 78/96 positive targets. Full gives \result{pt_full24}
+[\result{pt_full24Lo}, \result{pt_full24Hi}]. The tangent construction isolates first-order updates, not a uniformly better adapter.
+Using Tiny's own factors and decoder retains an advantage of
+\result{pt_tiny} [\result{pt_tinyLo}, \result{pt_tinyHi}], extending the evidence
+to a second checkpoint within the same family.
+
+A mean-preserving orthogonal control, $Ru=u$ for the all-ones unit vector $u$,
+also underperforms native updates: \result{pt_mean}
+[\result{pt_meanLo}, \result{pt_meanHi}]. Preserving this channel direction does not remove the effect or isolate
+all downstream normalization. The original scope comparisons are retained in
+Appendix Figure~\ref{fig:scope}.
+
+\label{sec:length}
+Without further training, the original ESM2 Train384 Full adapters retain an advantage
+on Length48 of \result{pt_length} [\result{pt_lengthLo}, \result{pt_lengthHi}],
+with 41/48 positive targets. Native and rotated means are
+\result{pt384_l48_native} and \result{pt384_l48_rotated}, both above the
+unadapted mean of \result{pt384_l48_query} (Table~\ref{tab:coverage}).
+Both adapted families improve in mean score; baseline comparisons are
+descriptive. Supplementary residue-average lDDT and TM-score are concordant.
+
+This complete-sequence study tests adapter length transfer, not family novelty
+or exclusion from backbone/PLM pretraining.
+Official Mini-ESM scores \result{pt384_l48_official} on the same panel, leaving
+a substantial quality gap rather than establishing a competitive replacement.
+
+\paragraph{Feature source and head competitiveness.}
 ESMC raises Protenix Native scores from
 \result{dh_protenix_c96_e_native}/\result{dh_protenix_l48_e_native} to
 \result{dh_protenix_c96_c_native}/\result{dh_protenix_l48_c_native}
@@ -230,6 +231,7 @@ are not isolated explanations. Specified comparisons mix backends, including
 Atlas ESMC's third seed and historical Protenix ESM2 Length48; these limitations
 remain explicit in Appendix~\ref{app:dh_fourcells}.
 
+\paragraph{Training data and budget.}
 Training-set changes provide another boundary. At fixed Full/1536, the Factor
 direction effect changes by \result{pt_scale} in Protenix and
 \result{of_scale_c96} in OpenFold on Confirm96-B; OpenFold Length48 establishes
@@ -243,6 +245,13 @@ Data coverage, training-set composition and repetitions (16 versus 4 average
 passes) change together, so neither difference identifies a universal data-size
 or convergence effect.
 
+Saved 384/768/1536 checkpoints of both OpenFold training sizes were evaluated
+on fixed Dev8 (Appendix~\ref{app:checkpoint_curves}). All four cells improve in
+mean score from 384 to 1536, while $\Psi$ is nonmonotone and all six node
+intervals include zero. This developmental diagnostic neither establishes
+convergence nor a uniform rotation-induced learning delay; it does not select
+a checkpoint or replace final Confirm96-B evaluation.
+
 \paragraph{A global-norm alternative.}
 \label{sec:norm_cross}
 A robustness analysis crosses learned residual source and global Frobenius
@@ -254,11 +263,3 @@ source effect is \result{cross_ca_Edir}
 insufficient to explain this gap. Normalized residuals still differ in learned
 content, local magnitudes and channel organization. This is not a pure
 channel-rotation experiment (complete four cells in Appendix~\ref{app:norm_cross}).
-
-\paragraph{Budget dependence remains unresolved.}
-Saved 384/768/1536 checkpoints of both OpenFold training sizes were evaluated
-on fixed Dev8 (Appendix~\ref{app:checkpoint_curves}). All four cells improve in
-mean score from 384 to 1536, while $\Psi$ is nonmonotone and all six node
-intervals include zero. This developmental diagnostic neither establishes
-convergence nor a uniform rotation-induced learning delay; it does not select
-a checkpoint or replace final Confirm96-B evaluation.
