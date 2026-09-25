@@ -1,11 +1,15 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-Four-cell controls establish parameterization-dependent sensitivity in specified
-Protenix and OpenFold recipes. Protenix/ESMC's Fresh192 primary test supports
-transfer to new targets; OpenFold's Fresh96 primary interaction remains
-unestablished. Shared compensation improves rotated Factor in both executions,
-but its additional benefit over Native is not robust to the same-seed repeat.
-Neither result predicts direction cost or guarantees head competitiveness.
+Under fixed training budgets, four-cell controls establish parameterization-dependent
+sensitivity in specified Protenix and OpenFold recipes. For a recipe selected
+on earlier data, Fresh192 provides prospective evidence of greater Factor
+rotation sensitivity on new targets. Its inference concerns the fixed
+Protenix/ESMC models and screened short-chain population; OpenFold's Fresh96
+primary interaction remains unestablished. Shared compensation improves
+rotated Factor in both executions. The rotated-arm gain has similar point
+estimates, whereas Native gains more in the repeat, in which relative
+mitigation was not re-established. This distinction separates an intervention's
+useful quality gain from its extra benefit to rotated models.
 
 Dense rotations, signed permutations and the mean-preserving rotations used for
 prediction and compensation are distinct transformation families.
@@ -17,30 +21,31 @@ a learned inverse nor expressivity as the unique cause, and does not establish
 elimination of $\Psi$. Across-head controls also change nonlinearities and
 residue/pair organization, without proved function-class inclusion.
 
-The eight-rotation teacher-reconstruction predictor failed
+The prespecified teacher-update reconstruction score showed no established
+positive association with post-training Native--Rotated score gaps across
+the eight tested rotations
 ($\rho=\result{e1_ca_lddt_x_rho}$, exact one-sided
-$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). The compensation result
-does not rescue that ranking. Norm exchange constrains global-scale explanations, leaving
-content and local magnitudes coupled. Local compatibility, small equal-norm
-learned directions and bounded shared-transfer diagnostics retain their
-negative boundaries (Appendix~\ref{app:mechanisms}). A separately retrained
+$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). The compensation
+intervention does not validate that ranking. A separately retrained
 comparison with recycle-matched query-only references did not support the
 predicted average benefit of live residual anchors to rotated Factor; the two
 selected rotations responded in opposite directions
 (Appendix~\ref{app:anchor_intervention}). This intervention contains no $C$,
 leaving whether $C$'s benefit depends on live anchors untested.
+Norm exchange constrains a global-scale explanation while leaving content
+and local magnitudes coupled. Earlier local and shared-transfer diagnostics
+retain their negative results in Appendix~\ref{app:mechanisms}.
 
 ESMC improves quality without establishing changed direction sensitivity;
 family, width, precision and projection size vary together. AtlasFold adds no
 established adaptation benefit. Input complementarity and downstream use remain
 candidate explanations.
 
-Intervals condition on fitted models and rotations, excluding
-retraining and research-selection uncertainty; follow-ups lack joint correction.
-The compensation repeat illustrates this limit: a positive target interval in
-one execution did not establish a reproducible relative benefit. The runs reuse
-the same seeds and no-$C$ baselines and are not pooled. Fresh192's recipe was
-selected from prior observed evidence; its new targets do not remove this selection.
+Target intervals condition on fitted models and rotations; they do not estimate
+robustness to retraining or transfer across recipes. Follow-ups lack joint
+correction. The compensation executions reuse the same seeds and no-$C$
+baselines and are not pooled; their differing interval significance does not
+test a between-execution population difference.
 Dev8 curves do not establish convergence. Reused panels, one inference sample,
 backend differences and incomplete exposure records limit scope.
 Sequence screening guarantees neither family nor foundation-model isolation.

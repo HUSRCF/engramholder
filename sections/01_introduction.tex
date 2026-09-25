@@ -11,8 +11,10 @@ downstream computation.
 
 Parameter-efficient methods constrain weight updates, as in LoRA
 \citep{hu2021lora}, or intervene on representations, as in ReFT
-\citep{wu2024reft}. We ask: \emph{after task training, does rotation cost depend
-on the update parameterization, and can shared output freedom mitigate it?}
+\citep{wu2024reft}. We ask: \emph{under a fixed task-training budget, does
+output-channel rotation affect adaptation differently across parameterizations?}
+We then test whether a shared trainable orthogonal output map reduces the
+Native--Rotated score gap within Factor.
 Matching parameter counts and local spectra does not specify how a frozen predictor uses an
 update. Conversely, sensitivity to rotation need not imply superiority over
 another adapter.
@@ -21,7 +23,7 @@ Our four-cell design compares native and rotated versions of two heads.
 Factor composes query-anchored increments through a frozen native operator;
 G+ receives the same extra sequence features and explicit factors, with a free
 affine output layer. Orthogonal transforms act only on completed residuals.
-Each arm receives independent task training under paired settings, beginning
+Each arm is trained separately under paired settings, beginning
 at the same zero-residual function. G+'s output layer can absorb a rotation
 without changing its function class, providing a control for the Factor effect.
 This closure does not guarantee matching AdamW trajectories
@@ -44,11 +46,13 @@ parameterizations, without establishing an expressivity hierarchy. A shared
 orthogonal compensator improves two preselected OpenFold rotated arms in both
 the original execution and a same-seed retraining repeat, but its greater
 benefit over Native is established only in the original execution.
-Teacher-update reconstruction separately fails to predict retraining costs.
+Across eight tested rotations, a prespecified teacher-update reconstruction
+diagnostic did not establish the predicted ranking of post-training rotation penalties.
 
-This controlled empirical study contributes a native-operator residual,
-trained four-cell comparisons, and a within-Factor compensation intervention.
-The results separate useful adaptation, direction sensitivity and head
-competitiveness. They motivate evaluating structured interfaces through output
-freedom and task training alongside local spectra, without supplying a universal
-adapter-selection rule.
+This controlled empirical study introduces a native-operator residual and
+combines trained four-cell comparisons with a prospective test of fixed
+Protenix/ESMC models on new targets. A separate within-Factor intervention
+tests whether a shared orthogonal output map preferentially benefits rotated
+models, with its original and repeated executions reported together.
+The results distinguish useful adaptation, rotation sensitivity and head
+competitiveness as separate criteria for evaluating structured interfaces.

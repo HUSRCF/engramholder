@@ -7,9 +7,10 @@ controls and a rotation-closed generic head.
 
 Orthogonal finetuning includes butterfly parameterizations
 \citep{liu2023boft}; our contribution is the intervention on trained rotation
-cost, not the orthogonal matrix itself.
+penalty, not the orthogonal matrix itself.
 AdamW's coordinate-wise updates \citep{loshchilov2019adamw} distinguish
 function-class closure from training behavior. LoRA-RITE studies optimization
 invariance across equivalent low-rank factorizations \citep{yen2025lorarite}.
 Here, the completed internal residual is rotated relative to a fixed downstream
-predictor, and Factor lacks a general compensating reparameterization.
+predictor; no analogous general rotation-closure guarantee is established for
+Factor.

@@ -1200,6 +1200,36 @@ same fixed original fits, not independently retrained baselines. The repeat
 therefore adds neither new training seeds nor new targets, and is not pooled
 with the original execution.
 
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Compensation repeat: recorded common conditions and limits of the
+comparison. The parent execution lock, repetition lock, archived wrapper and
+run receipts distinguish intended recipe agreement from checked source/data
+identity and engineering replay. They do not identify the training divergence.}
+\label{tab:e2_execution_conditions}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{.15\linewidth}p{.43\linewidth}p{.36\linewidth}@{}}\toprule
+Aspect & Recorded agreement & Remaining limit \\\midrule
+Data / order & Original Train96, hashed input files and seed-derived task schedule;
+1536 updates. & No claim of identical numerical states along the formal trajectories. \\
+Initialization & Same three seeds; zero head output, $C=I$; the repeat forbids
+loading a parent trained checkpoint. & No cross-execution initial-tensor audit is claimed. \\
+Source & Same parent lock and accepted diagnostic-repair runner/amendment;
+the repeat wrapper is separately hashed. & The first diverging formal update or
+operation is not localized. \\
+Weights / features & Parent hashes bind frozen AF2 weights, backbone state,
+rotation arrays and cached ESM2 inputs. & Features are reused, not freshly extracted. \\
+Software / device & Parent contract checks Torch 2.7.1+cu128, H100, TF32 off
+and eight CPU threads. & A full comparison of driver and kernel runtime states
+is not supplied. \\
+Optimizer & Original AdamW groups: head learning rate $10^{-4}$, decay 0.01;
+$C$ rate $10^{-3}$, no decay; global clipping at 1. & Matching hyperparameters
+does not establish matching trajectories or convergence. \\
+Checkpoint replay & Six engineering conditions restore parameters, optimizer,
+RNG, learning rates and data position exactly; saved-state forward checks pass.
+& Independent 32-step trajectories differ; this is not a full-trajectory
+equivalence test. \\
+\bottomrule\end{tabular}\end{table}
+
 Six engineering conditions (I/two rotations, with/without $C$) first completed
 384 updates across continuous and interrupted paths. Parameters, optimizer,
 random states and data position were restored exactly; independent FP32
@@ -1210,16 +1240,6 @@ to full-atom CIF, parsed independently, and rescored. The execution audit record
 exact masked FP32 coordinate recovery and identical values for all three
 scores. This is a completed training execution and coordinate-scoring check;
 public fresh-feature replay remains a distinct deliverable.
-
-\begin{table}[!htbp]\centering\footnotesize
-\caption{Original and same-seed repeat of compensation. The no-$C$ reference is
-fixed across executions. Each interval conditions on that execution's fitted
-models and the shared targets; rows are not additional independent seeds.}
-\label{tab:e2_repeat_comparison}
-\begin{tabular}{lrrrr}\toprule
-Contrast & Original & 95\% interval & Repeat & 95\% interval \\\midrule
-\input{generated/e2_retraining_comparison}
-\end{tabular}\end{table}
 
 The repeated rotated-arm gain is positive, but Native now improves by
 \result{e2rep_pair_native_change}
@@ -1360,9 +1380,11 @@ comparisons do not establish the average hypothesis or a general
 rotation-by-anchor heterogeneity rule; no direct heterogeneity test was
 specified. Pooled supplementary-metric intervals likewise include zero.
 The results establish neither equivalence nor a universal harm from live
-anchors. They leave the failed reconstruction ranking and the useful mean
-compensation effect unchanged. Because $C$ is absent, they do not test whether its benefit
-depends on live anchors, nor isolate expressivity as the unique mechanism.
+anchors. These anchor results neither validate the reconstruction ranking nor
+resolve the compensation findings, whose relative benefit over Native was
+not re-established in the repeat. Because $C$ is absent, they do not test
+whether its benefit depends on live anchors, nor isolate expressivity as the
+unique mechanism.
 
 \begin{table}[!htbp]\centering\footnotesize
 \caption{Both selected rotations in the anchor intervention. These secondary

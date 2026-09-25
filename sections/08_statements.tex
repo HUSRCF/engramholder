@@ -19,7 +19,11 @@ synthetic OPM inputs, including zero initialization and joint gradients
 (Appendix~\ref{app:e2_compensation}). A one-target OpenFold entry has been executed in a fresh isolated Python
 environment: FASTA to recomputed ESM2 features, released adapter, full-atom CIF
 and separate fixed-correspondence pair-lDDT scoring (Appendix~\ref{app:single_repro}).
-This is a bounded prediction replay, not full retraining. Appendix~\ref{app:recipes}
+This is a bounded prediction replay. Separately, all nine compensated models
+completed a full-budget retraining repeat and coordinate-scoring audit
+(Appendix~\ref{app:e2_repeat}). That execution reused the environment, feature
+caches and fixed original no-$C$ baselines; it is not a fresh-environment
+end-to-end reproduction. Appendix~\ref{app:recipes}
 describes the backbone-specific recipes, Appendix~\ref{app:chronology} the study
 sequence, and Appendix~\ref{app:scoring} the metrics and pairing. This compact
 artifact does not bundle pretrained model weights, the original full structure

@@ -5,7 +5,10 @@
 Let $e(x)$ be frozen sequence features and $f_\theta$ a shared trainable predictor
 of residue-level factor increments. At interface $k$ and recycle $t$, let
 $a_{k,t},b_{k,t}$ denote the native factors, $G_{k,t}$ the frozen pair-generating
-operator, and $U_{k,t,0}$ its baseline update. We define
+operator, and $U_{k,t,0}$ its native baseline update at the selected interface.
+This is an update, not the full pair state or a common query-only trajectory:
+OpenFold computes it on each arm's current state, while Protenix reuses its
+cached query update. We define
 \begin{align}
  (\delta a,\delta b)&=f_\theta(e(x)),\label{eq:increments}\\
  \Delta U_{k,t}&=G_{k,t}(a_{k,t}+\delta a,b_{k,t}+\delta b)

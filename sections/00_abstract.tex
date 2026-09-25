@@ -1,9 +1,10 @@
 \begin{abstract}
-After task training, does the output orientation of structured updates still
-affect adaptation in a frozen predictor, and can shared output freedom
-mitigate the cost? We compose adapter residuals through protein predictors'
-native pair-generating operators and independently train native and rotated
-heads from the same zero-residual function. Orthogonal controls preserve
+Under a fixed task-training budget, does output-channel rotation affect
+adaptation differently across parameterizations? We also test whether a shared
+trainable orthogonal output map reduces Factor's Native--Rotated score gap.
+We compose adapter residuals through frozen protein predictors' native
+pair-generating operators and train native and rotated heads separately under
+paired settings, starting from the same zero-residual function. Orthogonal controls preserve
 local writer spectra; a generic head with explicit factor access and a free
 output layer provides a function class closed under output rotation.
 Under fixed 1536-update recipes, four-cell studies find greater rotation
@@ -15,12 +16,12 @@ OpenFold's Fresh96 primary interaction remains unestablished.
 Within Factor, a shared orthogonal compensator improves two preselected
 OpenFold rotated arms. Its extra benefit over Native is
 \result{e2_pair_T_C} in the original execution but
-\result{e2rep_pair_T_C} in a same-seed retraining repeat, whose interval includes
-zero: rotated-arm benefit repeats, relative mitigation does not.
-A reconstruction diagnostic also fails to predict retraining costs.
-Across tested predictors and training settings, adaptation benefit, rotation
-sensitivity, and head competitiveness remain distinct. These controls
-identify a conditional design effect: structured interface evaluation must
-consider output freedom and task training alongside local spectral
-properties, without treating direction sensitivity as method superiority.
+\result{e2rep_pair_T_C} in a same-seed retraining repeat: rotated-arm benefit
+is observed in both, but relative mitigation was not re-established in the repeat.
+A prespecified reconstruction diagnostic did not establish the predicted ranking
+of post-training rotation penalties across eight tested rotations.
+The new-target test supports parameterization-dependent rotation sensitivity
+for one fixed recipe; useful output freedom does not ensure a repeated extra
+benefit over Native. Adaptation gains, rotation sensitivity and head
+competitiveness therefore require separate evaluation.
 \end{abstract}

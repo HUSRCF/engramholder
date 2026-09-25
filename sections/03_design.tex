@@ -82,6 +82,9 @@ For target $i$ define
  \quad \Psi_i=d_{F,i}-d_{G+,i},\quad
  \Psi=\frac1N\sum_i\Psi_i.\label{eq:interaction}
 \end{equation}
+We write $\Delta_H=N^{-1}\sum_i d_{H,i}$ for the signed Native-minus-Rotated
+score contrast; positive values indicate a rotation penalty. Thus
+$\Psi=\Delta_F-\Delta_{G+}$.
 We resample whole target records for 20,000 paired bootstrap draws, preserving
 within-target seed/rotation pairing; Fresh192 resamples within its four fixed
 length strata. Intervals condition on the fitted models;
