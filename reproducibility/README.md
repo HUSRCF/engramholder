@@ -6,10 +6,14 @@ operator check, and fixed configuration records. The paper asset generator at
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
 full-inference source/norm cells and contrasts. The active v9 input lock contains 93 source files and 1,522 generated numerical
-fields. All 1,518 previously integrated fields and source mappings are unchanged; four
+fields. All 1,518 previously integrated raw values and scientific source mappings are unchanged; four
 post-hoc target-distribution fields add medians and positive counts for E2. The
 319 fields added in the preceding revision cover
 the completed compensation, signed-permutation and developmental checkpoint studies.
+Absolute structure scores are displayed to four decimals (168 formatting-only
+changes); effects, intervals, p-values and diagnostic errors retain their original
+precision. The interaction violins use paired per-target effects, not bootstrap
+replicates; their mean markers and intervals retain the original estimands.
 The reconstruction prediction study remains a negative predictive test. Its verifier reconstructs 2,688 score records,
 51 three-metric contrasts and the two exact 40,320-permutation tests (primary X,
 exploratory D). Eight rotations are the prediction units; neither association

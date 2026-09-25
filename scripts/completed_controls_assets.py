@@ -20,7 +20,7 @@ def build(data, number, contrast, tex, save_rows, interval):
                 keys = []
                 for name in ['query', 'factor_native', 'factor_rotated', 'gplus_native', 'gplus_rotated']:
                     key = f'signed_{short}_{name}'
-                    number(key, 'signed_summary', base + ['group_means', name])
+                    number(key, 'signed_summary', base + ['group_means', name], decimals=4)
                     keys.append(tex(key))
                 signed_means.append([label, *keys])
     save_rows('signed_contrasts.tex', signed_rows)
@@ -40,13 +40,13 @@ def build(data, number, contrast, tex, save_rows, interval):
                 contrast(key, 'e2_intervention_summary', base + ['per_rotation', rid, name])
                 e2_rows.append([ml, rid, display, tex(key), interval(key)])
         if metric == 'ca_lddt':
-            number('e2_native_fixed', 'e2_intervention_summary', base + ['native_fixed'])
-            number('e2_native_learned', 'e2_intervention_summary', base + ['native_learned'])
+            number('e2_native_fixed', 'e2_intervention_summary', base + ['native_fixed'], decimals=4)
+            number('e2_native_learned', 'e2_intervention_summary', base + ['native_learned'], decimals=4)
             e2_arms.append(['Native', tex('e2_native_fixed'), tex('e2_native_learned'),
                             tex('e2_pair_native_change'), interval('e2_pair_native_change')])
             for i, rid in enumerate(rotations, 1):
                 for name in ['fixed_mean', 'learned_mean']:
-                    number(f'e2_r{i}_{name}', 'e2_intervention_summary', base + ['per_rotation', rid, name])
+                    number(f'e2_r{i}_{name}', 'e2_intervention_summary', base + ['per_rotation', rid, name], decimals=4)
                 e2_arms.append([rid, tex(f'e2_r{i}_fixed_mean'), tex(f'e2_r{i}_learned_mean'),
                                 tex(f'e2_pair_r{i}_B_R'), interval(f'e2_pair_r{i}_B_R')])
     save_rows('e2_contrasts.tex', e2_rows)
@@ -74,7 +74,7 @@ def build(data, number, contrast, tex, save_rows, interval):
                     means = []
                     for name in ['factor_native', 'factor_rotated', 'gplus_native', 'gplus_rotated']:
                         key = prefix + '_' + name
-                        number(key, 'checkpoint_curves_summary', base + ['means', name])
+                        number(key, 'checkpoint_curves_summary', base + ['means', name], decimals=4)
                         means.append(tex(key))
                     curve_means.append([size, step, *means])
     save_rows('checkpoint_curve_contrasts.tex', curve_rows)

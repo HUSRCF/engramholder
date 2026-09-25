@@ -12,22 +12,23 @@ feature access and adaptation; Native--Rotated isolates direction more closely.
 Table~\ref{tab:recipes} summarizes the paths.
 
 \begin{table}[t]
-\caption{Core configurations. We transfer a residual construction, not a universal
-normalization or loss. All folding and PLM weights are frozen.}
+\caption{Core recipes; folding and PLM weights stay frozen.
+$M$, $B$, $S$, $D$: MSE, bond, smooth-lDDT and distogram losses;
+$M_w$: weighted MSE; $\chi_s$: supervised torsion loss.
+Anchor definitions and full recipes are in Appendices~\ref{app:operators}--\ref{app:recipes}.}
 \label{tab:recipes}
 \centering\footnotesize\setlength{\tabcolsep}{4pt}
-\begin{tabular}{p{.16\linewidth}p{.25\linewidth}p{.29\linewidth}p{.19\linewidth}}
+\begin{tabular}{@{}llcl@{}}
 \toprule
 Predictor & Interface / anchor & Task supervision & Structure inference \\
 \midrule
-Protenix & Single MSA-block OPM; cached anchor/update & $4$ MSE + $4$ bond + $4$ smooth-lDDT + $0.03$ distogram & 4 trunk passes; 5 diffusion steps \\
-OpenFold & First of 48 Evoformer OPMs; recycled-state anchor & FAPE + $0.3$ distogram + supervised-chi & 4 trunk passes; structure module \\
-AtlasFold & First LM difference/product; MLM anchor, no adapted history & $0.4$ distogram + $2$ (weighted MSE + smooth-lDDT) & 5 trunk passes; 20/30 diffusion steps$^*$ \\
+Protenix & MSA-OPM; cached & $4M+4B+4S+0.03D$ & 4 trunk; 5 diffusion \\
+OpenFold & First of 48 OPMs; recycled & $\mathrm{FAPE}+0.3D+\chi_s$ & 4 trunk; structure module \\
+AtlasFold & First LM diff/product; MLM & $0.4D+2(M_w+S)$ & 5 trunk; 20/30 diffusion$^*$ \\
 \bottomrule
 \end{tabular}
-\par\smallskip\footnotesize $^*$20 steps for $L\le512$ and 30 for $513\le L\le1024$,
-fixed before evaluation. Protenix's protein-only bond mask is empty in this
-setting. Confidence losses are excluded. Full recipes are in Appendix~\ref{app:recipes}.
+\par\smallskip\footnotesize $^*$20 steps for $L\le512$; 30 for $513\le L\le1024$.
+Protenix's bond mask is empty here.
 \end{table}
 
 \paragraph{Training and pairing.}

@@ -47,7 +47,7 @@ def read(file, path):
     for key in path: x = x[key]
     return x
 
-def number(key, file, path, operation='identity', signed=False, scientific=False):
+def number(key, file, path, operation='identity', signed=False, scientific=False, decimals=5):
     value = read(file, path)
     if operation == 'mean': value = float(np.mean(value))
     elif operation == 'median': value = float(np.median(value))
@@ -55,16 +55,20 @@ def number(key, file, path, operation='identity', signed=False, scientific=False
     value = float(value)
     assert np.isfinite(value)
     CELLS[key] = dict(source=f'evidence/{file}.json', field_path=path,
-                      operation=operation, value=value, formatted=(f'{value:+.5e}' if signed else f'{value:.5e}') if scientific else (f'{value:+.5f}' if signed else f'{value:.5f}'))
+                      operation=operation, value=value, formatted=(f'{value:+.5e}' if signed else f'{value:.5e}') if scientific else (f'{value:+.{decimals}f}' if signed else f'{value:.{decimals}f}'))
     if operation == 'count_positive': CELLS[key]['formatted'] = str(int(value))
     return value
+
+def score(key, file, path):
+    """Absolute structure scores: four decimals; contrasts retain finer precision."""
+    return number(key, file, path, decimals=4)
 
 def mean_systems(key, file, prefix, names):
     paths = [prefix + [n] for n in names]
     values = [float(read(file, p)) for p in paths]
     value = float(np.mean(values))
     CELLS[key] = dict(source=f'evidence/{file}.json', field_paths=paths,
-                     operation='arithmetic mean of complete system means',value=value,formatted=f'{value:.5f}')
+                     operation='arithmetic mean of complete system means',value=value,formatted=f'{value:.4f}')
     return value
 
 def contrast(key, file, path, scientific=False):
@@ -204,7 +208,7 @@ def main():
     assert DATA['protenix_gplus384_verification']['passed'] and DATA['protenix_gplus384_collection_audit']['passed']
     for panel,short in [('confirm96','c96'),('length48','l48')]:
         pre=[panel,'metrics']
-        number(f'pt384_{short}_gplus','protenix_gplus384_summary',pre+['ca_pair_lddt','means','generic_plus'])
+        score(f'pt384_{short}_gplus','protenix_gplus384_summary',pre+['ca_pair_lddt','means','generic_plus'])
         number(f'pt384_{short}_gquery','protenix_gplus384_summary',pre+['ca_pair_lddt','gplus_minus_query','mean'],signed=True)
         number(f'pt384_{short}_gmedian','protenix_gplus384_verification',['results',panel,'ca_pair_lddt','median'],signed=True)
         for metric,suffix in [('ca_pair_lddt','gdiff'),('residue_ca_lddt','gdiff_residue'),('tm_score_fixed_full_length','gdiff_tm')]:
@@ -220,13 +224,13 @@ def main():
                 source_file='protenix_extensions';pattern='C_mini_ordinary_r[0-9]+_s[0-9]+'
                 group_means={n:v['mean_ca_lddt'] for n,v in DATA[source_file]['systems'].items()}
             ns=[n for n in group_means if re.fullmatch(pattern,n)];assert len(ns)==num,(source_file,pattern,len(ns))
-            key=f'pt{size}_c96_{group}';value=np.mean([group_means[n] for n in ns]);CELLS[key]=dict(source=f'evidence/{source_file}.json',field_paths=[['systems',n,'mean_ca_lddt'] for n in ns],operation='mean',value=float(value),formatted=f'{value:.5f}');keys.append(key)
-        number(f'pt{size}_c96_query','protenix_direction',['systems','query','mean_ca_lddt'])
+            key=f'pt{size}_c96_{group}';value=np.mean([group_means[n] for n in ns]);CELLS[key]=dict(source=f'evidence/{source_file}.json',field_paths=[['systems',n,'mean_ca_lddt'] for n in ns],operation='mean',value=float(value),formatted=f'{value:.4f}');keys.append(key)
+        score(f'pt{size}_c96_query','protenix_direction',['systems','query','mean_ca_lddt'])
         rows.append((f'Protenix, Train{size}', 'C96-B', [f'pt{size}_c96_query',*keys], tex('p96_gplus') if size==96 else tex('pt384_c96_gplus')))
     for group,pattern,n in [('native','n384_full_native_s[0-9]+_u1536',3),('rotated','n384_full_r[0-9]+_s[0-9]+_u1536',9)]:
         pre=['metrics','ca_pair_lddt','absolute_means'];ns=names_matching('length48',pre,pattern,n);mean_systems('pt384_l48_'+group,'length48',pre,ns)
-    number('pt384_l48_query','length48',['metrics','ca_pair_lddt','absolute_means','query'])
-    number('pt384_l48_official','length48',['metrics','ca_pair_lddt','absolute_means','official_mini_esm'])
+    score('pt384_l48_query','length48',['metrics','ca_pair_lddt','absolute_means','query'])
+    score('pt384_l48_official','length48',['metrics','ca_pair_lddt','absolute_means','official_mini_esm'])
     rows.append(('Protenix, Train384','L48',['pt384_l48_query','pt384_l48_native','pt384_l48_rotated'],tex('pt384_l48_gplus')))
     for size in [96,384]:
         file=f'openfold_train{size}'
@@ -234,18 +238,18 @@ def main():
             pre=['panels',panel,'ca_lddt','system_means'];keys=[]
             for group,pattern,n in [('native','native_s[0-9]+',3),('rotated','r[0-9]+_s[0-9]+',9),('gplus','gplus_s[0-9]+',3)]:
                 key=f'of{size}_{short}_{group}';mean_systems(key,file,pre,names_matching(file,pre,pattern,n));keys.append(key)
-            number(f'of{size}_{short}_query',file,pre+['query'])
+            score(f'of{size}_{short}_query',file,pre+['query'])
             rows.append((f'OpenFold, Train{size}','C96-B' if short=='c96' else 'L48',[f'of{size}_{short}_query',*keys[:-1]],tex(keys[-1])))
             contrast(f'of{size}_{short}_direction',file,['panels',panel,'ca_lddt','native_minus_rotated'])
             contrast(f'of{size}_{short}_gdiff','openfold_paired',['panels',panel,'ca_lddt',f'train{size}_native_minus_gplus'])
     for panel,short in [('confirm96','c96'),('length48','l48')]:
         pre=['panels',panel,'ca_lddt']
-        for g in ['query_native_plm','native','rotated','gplus']: number('atlas_'+short+'_'+g,'atlasfold_adapters_final',pre+['means',g])
+        for g in ['query_native_plm','native','rotated','gplus']: score('atlas_'+short+'_'+g,'atlasfold_adapters_final',pre+['means',g])
         rows.append(('AtlasFold, Train96','C96-B' if short=='c96' else 'L48',[f'atlas_{short}_query_native_plm',f'atlas_{short}_native',f'atlas_{short}_rotated'],tex(f'atlas_{short}_gplus')))
         contrast('atlas_'+short+'_direction','atlasfold_adapters_final',pre+['native_minus_rotated'])
         contrast('atlas_'+short+'_gdiff','atlasfold_adapters_final',pre+['native_minus_gplus'])
         for g in ['factor_native','factor_rotated','gplus_native','gplus_rotated']:
-            number(f'inter_{short}_{g}','openfold_gplus_rotation_final',pre+['group_means',g])
+            score(f'inter_{short}_{g}','openfold_gplus_rotation_final',pre+['group_means',g])
         for kind in ['factor_rotation','gplus_rotation','interaction']:
             contrast(f'inter_{short}_{kind}','openfold_gplus_rotation_final',pre+[kind])
         contrast('of_scale_'+short,'openfold_paired',pre+['direction_interaction_384_minus_96'])
@@ -260,7 +264,7 @@ def main():
     contrast('pt_scale_native','protenix_data_interaction',['native_train384_minus96'])
     cross_checks=verify_full_cross()
     for cell in ['NN','NR','RN','RR']:
-        number('cross_'+cell,'full_cross_summary',['metrics','ca_lddt','cells',cell,'mean'])
+        score('cross_'+cell,'full_cross_summary',['metrics','ca_lddt','cells',cell,'mean'])
     for metric,short in [('ca_lddt','ca'),('residue_ca_lddt','res'),('tm_score','tm')]:
         for key in ['D_mN','D_mR','Edir','Eamp','I','A_dN','A_dR','NN_minus_RR']:
             contrast(f'cross_{short}_{key}','full_cross_summary',['metrics',metric,'contrasts',key])
@@ -286,7 +290,7 @@ def main():
         for feat,tag,flabel in [('E_last','e','ESM2-35M'),('C_last','c','ESMC-600M')]:
             pre=['panels',panel,'ca_lddt','cells',feat];prefix=f'a_{short}_{tag}_'
             keys=['query','native','rotated_factor','gplus','rotated_gplus']
-            for key in keys:number(prefix+key,'openfold_esmc_A_summary',pre+['means',key])
+            for key in keys:score(prefix+key,'openfold_esmc_A_summary',pre+['means',key])
             a_rows.append([label,flabel,*[tex(prefix+k) for k in keys]])
             for metric,mlabel in [('ca_lddt','Pair-lDDT'),('residue_ca_lddt','Residue-lDDT'),('tm_score_fixed_full_length','TM-score')]:
                 for k,kl in [('factor_rotation',r'$\Delta_F$'),('gplus_rotation',r'$\Delta_{G+}$'),('interaction',r'$\Psi$'),('native_minus_gplus','Native--G+')]:
@@ -313,7 +317,7 @@ def main():
             contrast(key,'openfold_followup_analysis',['training_setting_change','panels',panel,metric])
             training_rows.append([label_panel,label,tex(key),interval_cell(key)])
     for k in ['factor_native','factor_rotated','generic_plus_native','generic_plus_rotated','query_native']:
-        number('fresh_'+k,'openfold_fresh96_summary',['metrics','ca_lddt','group_means',k])
+        score('fresh_'+k,'openfold_fresh96_summary',['metrics','ca_lddt','group_means',k])
     marginal_rows=[]
     for kind in ['seed','rotation']:
         keys=[]
@@ -359,7 +363,7 @@ def main():
                   'New for fixed OpenFold Train96 interaction'])
     save_rows('data_composition_rows.tex',table)
     from diamondhill_paper_assets import build as build_dh
-    build_dh(DATA, number, contrast, tex, save_rows, interval_cell)
+    build_dh(DATA, score, contrast, tex, save_rows, interval_cell)
     # Descriptive mean identity: no new hypothesis test or confidence interval.
     gap = CELLS['dh_protenix_c96_c_rotated_factor']['value'] - CELLS['dh_protenix_c96_c_rotated_gplus']['value']
     assert abs(gap - (CELLS['dh_protenix_c96_c_pair_native_minus_gplus']['value'] - CELLS['dh_protenix_c96_c_pair_interaction']['value'])) < 1e-12
@@ -380,12 +384,12 @@ def main():
         key=f'e1_r{i+1}'
         number(key+'_x','e1_prediction_lock',['X',i])
         number(key+'_d','e1_prediction_lock',['D',i],signed=True)
-        number(key+'_rotated','e1_prediction_summary',['metrics','ca_lddt','rotated_means',i])
+        score(key+'_rotated','e1_prediction_summary',['metrics','ca_lddt','rotated_means',i])
         contrast(key+'_cost','e1_prediction_summary',['metrics','ca_lddt','rotation_costs',rid])
         e1_rows.append([rid,tex(key+'_x'),tex(key+'_d'),tex(key+'_rotated'),tex(key+'_cost'),interval_cell(key+'_cost')])
     save_rows('e1_prediction_rotations.tex',e1_rows)
     for name in ['native_mean','query_mean']:
-        number('e1_'+name,'e1_prediction_summary',['metrics','ca_lddt',name])
+        score('e1_'+name,'e1_prediction_summary',['metrics','ca_lddt',name])
     number('e1_x_span','e1_prediction_lock',['X_span'])
     for i in range(3):
         number(f'e1_seed{i+1}_rho','e1_prediction_summary',['metrics','ca_lddt','per_training_seed',i,'X_rho'],signed=True)
@@ -414,7 +418,7 @@ def draw_figures(scope):
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'pdf.fonttype':42,'ps.fonttype':42})
     def val(k):return CELLS[k]['value']
     from paper_figure_layouts import draw_adapter, draw_interactions
-    draw_interactions(FIG, CELLS)
+    draw_interactions(FIG, CELLS, DATA)
     draw_adapter(FIG)
     fig,ax=plt.subplots(figsize=(6.6,5.6));fig.subplots_adjust(left=.52,right=.98,top=.98,bottom=.12)
     for i,(label,k,status) in enumerate(scope):

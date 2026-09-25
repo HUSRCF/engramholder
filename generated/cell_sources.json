@@ -106,7 +106,7 @@
       ],
       "operation": "identity",
       "value": 0.549415702165485,
-      "formatted": "0.54942"
+      "formatted": "0.5494"
     },
     "pt384_c96_gquery": {
       "source": "evidence/protenix_gplus384_summary.json",
@@ -267,7 +267,7 @@
       ],
       "operation": "identity",
       "value": 0.44781212910214996,
-      "formatted": "0.44781"
+      "formatted": "0.4478"
     },
     "pt384_l48_gquery": {
       "source": "evidence/protenix_gplus384_summary.json",
@@ -438,7 +438,7 @@
       ],
       "operation": "mean",
       "value": 0.6165282605305852,
-      "formatted": "0.61653"
+      "formatted": "0.6165"
     },
     "pt96_c96_rotated": {
       "source": "evidence/protenix_extensions.json",
@@ -491,7 +491,7 @@
       ],
       "operation": "mean",
       "value": 0.5914760057523224,
-      "formatted": "0.59148"
+      "formatted": "0.5915"
     },
     "pt96_c96_query": {
       "source": "evidence/protenix_direction.json",
@@ -502,7 +502,7 @@
       ],
       "operation": "identity",
       "value": 0.3793080201245919,
-      "formatted": "0.37931"
+      "formatted": "0.3793"
     },
     "pt384_c96_native": {
       "source": "evidence/protenix_train384.json",
@@ -525,7 +525,7 @@
       ],
       "operation": "mean",
       "value": 0.6257196927838583,
-      "formatted": "0.62572"
+      "formatted": "0.6257"
     },
     "pt384_c96_rotated": {
       "source": "evidence/protenix_train384.json",
@@ -578,7 +578,7 @@
       ],
       "operation": "mean",
       "value": 0.5862107152025524,
-      "formatted": "0.58621"
+      "formatted": "0.5862"
     },
     "pt384_c96_query": {
       "source": "evidence/protenix_direction.json",
@@ -589,7 +589,7 @@
       ],
       "operation": "identity",
       "value": 0.3793080201245919,
-      "formatted": "0.37931"
+      "formatted": "0.3793"
     },
     "pt384_l48_native": {
       "source": "evidence/length48.json",
@@ -615,7 +615,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.5291924583572504,
-      "formatted": "0.52919"
+      "formatted": "0.5292"
     },
     "pt384_l48_rotated": {
       "source": "evidence/length48.json",
@@ -677,7 +677,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.4866682726042055,
-      "formatted": "0.48667"
+      "formatted": "0.4867"
     },
     "pt384_l48_query": {
       "source": "evidence/length48.json",
@@ -689,7 +689,7 @@
       ],
       "operation": "identity",
       "value": 0.3212187384778337,
-      "formatted": "0.32122"
+      "formatted": "0.3212"
     },
     "pt384_l48_official": {
       "source": "evidence/length48.json",
@@ -701,7 +701,7 @@
       ],
       "operation": "identity",
       "value": 0.9213893554942022,
-      "formatted": "0.92139"
+      "formatted": "0.9214"
     },
     "of96_c96_native": {
       "source": "evidence/openfold_train96.json",
@@ -730,7 +730,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.5019025118487536,
-      "formatted": "0.50190"
+      "formatted": "0.5019"
     },
     "of96_c96_rotated": {
       "source": "evidence/openfold_train96.json",
@@ -801,7 +801,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.4820937620791109,
-      "formatted": "0.48209"
+      "formatted": "0.4821"
     },
     "of96_c96_gplus": {
       "source": "evidence/openfold_train96.json",
@@ -830,7 +830,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.4953386632334904,
-      "formatted": "0.49534"
+      "formatted": "0.4953"
     },
     "of96_c96_query": {
       "source": "evidence/openfold_train96.json",
@@ -843,7 +843,7 @@
       ],
       "operation": "identity",
       "value": 0.3019105772713658,
-      "formatted": "0.30191"
+      "formatted": "0.3019"
     },
     "of96_c96_direction": {
       "source": "evidence/openfold_train96.json",
@@ -954,7 +954,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.3887202763321403,
-      "formatted": "0.38872"
+      "formatted": "0.3887"
     },
     "of96_l48_rotated": {
       "source": "evidence/openfold_train96.json",
@@ -1025,7 +1025,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.3783364588144406,
-      "formatted": "0.37834"
+      "formatted": "0.3783"
     },
     "of96_l48_gplus": {
       "source": "evidence/openfold_train96.json",
@@ -1054,7 +1054,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.39849430548181264,
-      "formatted": "0.39849"
+      "formatted": "0.3985"
     },
     "of96_l48_query": {
       "source": "evidence/openfold_train96.json",
@@ -1067,7 +1067,7 @@
       ],
       "operation": "identity",
       "value": 0.2607893500665757,
-      "formatted": "0.26079"
+      "formatted": "0.2608"
     },
     "of96_l48_direction": {
       "source": "evidence/openfold_train96.json",
@@ -1178,7 +1178,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.5068443393728,
-      "formatted": "0.50684"
+      "formatted": "0.5068"
     },
     "of384_c96_rotated": {
       "source": "evidence/openfold_train384.json",
@@ -1249,7 +1249,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.5038130028423794,
-      "formatted": "0.50381"
+      "formatted": "0.5038"
     },
     "of384_c96_gplus": {
       "source": "evidence/openfold_train384.json",
@@ -1278,7 +1278,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.5133273534331355,
-      "formatted": "0.51333"
+      "formatted": "0.5133"
     },
     "of384_c96_query": {
       "source": "evidence/openfold_train384.json",
@@ -1291,7 +1291,7 @@
       ],
       "operation": "identity",
       "value": 0.3019105772713658,
-      "formatted": "0.30191"
+      "formatted": "0.3019"
     },
     "of384_c96_direction": {
       "source": "evidence/openfold_train384.json",
@@ -1402,7 +1402,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.40165206821200905,
-      "formatted": "0.40165"
+      "formatted": "0.4017"
     },
     "of384_l48_rotated": {
       "source": "evidence/openfold_train384.json",
@@ -1473,7 +1473,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.39039511813057604,
-      "formatted": "0.39040"
+      "formatted": "0.3904"
     },
     "of384_l48_gplus": {
       "source": "evidence/openfold_train384.json",
@@ -1502,7 +1502,7 @@
       ],
       "operation": "arithmetic mean of complete system means",
       "value": 0.408683082860721,
-      "formatted": "0.40868"
+      "formatted": "0.4087"
     },
     "of384_l48_query": {
       "source": "evidence/openfold_train384.json",
@@ -1515,7 +1515,7 @@
       ],
       "operation": "identity",
       "value": 0.2607893500665757,
-      "formatted": "0.26079"
+      "formatted": "0.2608"
     },
     "of384_l48_direction": {
       "source": "evidence/openfold_train384.json",
@@ -1610,7 +1610,7 @@
       ],
       "operation": "identity",
       "value": 0.9567569611557952,
-      "formatted": "0.95676"
+      "formatted": "0.9568"
     },
     "atlas_c96_native": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1623,7 +1623,7 @@
       ],
       "operation": "identity",
       "value": 0.9562626299253364,
-      "formatted": "0.95626"
+      "formatted": "0.9563"
     },
     "atlas_c96_rotated": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1636,7 +1636,7 @@
       ],
       "operation": "identity",
       "value": 0.9565506426015835,
-      "formatted": "0.95655"
+      "formatted": "0.9566"
     },
     "atlas_c96_gplus": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1649,7 +1649,7 @@
       ],
       "operation": "identity",
       "value": 0.957062330398456,
-      "formatted": "0.95706"
+      "formatted": "0.9571"
     },
     "atlas_c96_direction": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1744,7 +1744,7 @@
       ],
       "operation": "identity",
       "value": 0.5019025118487536,
-      "formatted": "0.50190"
+      "formatted": "0.5019"
     },
     "inter_c96_factor_rotated": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -1757,7 +1757,7 @@
       ],
       "operation": "identity",
       "value": 0.482093762079111,
-      "formatted": "0.48209"
+      "formatted": "0.4821"
     },
     "inter_c96_gplus_native": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -1770,7 +1770,7 @@
       ],
       "operation": "identity",
       "value": 0.49533866323349035,
-      "formatted": "0.49534"
+      "formatted": "0.4953"
     },
     "inter_c96_gplus_rotated": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -1783,7 +1783,7 @@
       ],
       "operation": "identity",
       "value": 0.49434912958995,
-      "formatted": "0.49435"
+      "formatted": "0.4943"
     },
     "inter_c96_factor_rotation": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -1960,7 +1960,7 @@
       ],
       "operation": "identity",
       "value": 0.9505000362033348,
-      "formatted": "0.95050"
+      "formatted": "0.9505"
     },
     "atlas_l48_native": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1973,7 +1973,7 @@
       ],
       "operation": "identity",
       "value": 0.9478940106845601,
-      "formatted": "0.94789"
+      "formatted": "0.9479"
     },
     "atlas_l48_rotated": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1986,7 +1986,7 @@
       ],
       "operation": "identity",
       "value": 0.9485289933851122,
-      "formatted": "0.94853"
+      "formatted": "0.9485"
     },
     "atlas_l48_gplus": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -1999,7 +1999,7 @@
       ],
       "operation": "identity",
       "value": 0.9483764791040584,
-      "formatted": "0.94838"
+      "formatted": "0.9484"
     },
     "atlas_l48_direction": {
       "source": "evidence/atlasfold_adapters_final.json",
@@ -2094,7 +2094,7 @@
       ],
       "operation": "identity",
       "value": 0.38872027633214035,
-      "formatted": "0.38872"
+      "formatted": "0.3887"
     },
     "inter_l48_factor_rotated": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -2107,7 +2107,7 @@
       ],
       "operation": "identity",
       "value": 0.3783364588144406,
-      "formatted": "0.37834"
+      "formatted": "0.3783"
     },
     "inter_l48_gplus_native": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -2120,7 +2120,7 @@
       ],
       "operation": "identity",
       "value": 0.3984943054818127,
-      "formatted": "0.39849"
+      "formatted": "0.3985"
     },
     "inter_l48_gplus_rotated": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -2133,7 +2133,7 @@
       ],
       "operation": "identity",
       "value": 0.4021132278779156,
-      "formatted": "0.40211"
+      "formatted": "0.4021"
     },
     "inter_l48_factor_rotation": {
       "source": "evidence/openfold_gplus_rotation_final.json",
@@ -2613,7 +2613,7 @@
       ],
       "operation": "identity",
       "value": 0.6373395256040874,
-      "formatted": "0.63734"
+      "formatted": "0.6373"
     },
     "cross_NR": {
       "source": "evidence/full_cross_summary.json",
@@ -2626,7 +2626,7 @@
       ],
       "operation": "identity",
       "value": 0.6320931571843343,
-      "formatted": "0.63209"
+      "formatted": "0.6321"
     },
     "cross_RN": {
       "source": "evidence/full_cross_summary.json",
@@ -2639,7 +2639,7 @@
       ],
       "operation": "identity",
       "value": 0.590648194136547,
-      "formatted": "0.59065"
+      "formatted": "0.5906"
     },
     "cross_RR": {
       "source": "evidence/full_cross_summary.json",
@@ -2652,7 +2652,7 @@
       ],
       "operation": "identity",
       "value": 0.5924250157218015,
-      "formatted": "0.59243"
+      "formatted": "0.5924"
     },
     "cross_ca_D_mN": {
       "source": "evidence/full_cross_summary.json",
@@ -3848,7 +3848,7 @@
       ],
       "operation": "identity",
       "value": 0.3019105772713658,
-      "formatted": "0.30191"
+      "formatted": "0.3019"
     },
     "a_c96_e_native": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -3863,7 +3863,7 @@
       ],
       "operation": "identity",
       "value": 0.5068443393727999,
-      "formatted": "0.50684"
+      "formatted": "0.5068"
     },
     "a_c96_e_rotated_factor": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -3878,7 +3878,7 @@
       ],
       "operation": "identity",
       "value": 0.5038130028423794,
-      "formatted": "0.50381"
+      "formatted": "0.5038"
     },
     "a_c96_e_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -3893,7 +3893,7 @@
       ],
       "operation": "identity",
       "value": 0.5133273534331355,
-      "formatted": "0.51333"
+      "formatted": "0.5133"
     },
     "a_c96_e_rotated_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -3908,7 +3908,7 @@
       ],
       "operation": "identity",
       "value": 0.5099798770737709,
-      "formatted": "0.50998"
+      "formatted": "0.5100"
     },
     "a_c96_e_ca_lddt_factor_rotation": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -4487,7 +4487,7 @@
       ],
       "operation": "identity",
       "value": 0.3019105772713658,
-      "formatted": "0.30191"
+      "formatted": "0.3019"
     },
     "a_c96_c_native": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -4502,7 +4502,7 @@
       ],
       "operation": "identity",
       "value": 0.6703067319183789,
-      "formatted": "0.67031"
+      "formatted": "0.6703"
     },
     "a_c96_c_rotated_factor": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -4517,7 +4517,7 @@
       ],
       "operation": "identity",
       "value": 0.6577964082508851,
-      "formatted": "0.65780"
+      "formatted": "0.6578"
     },
     "a_c96_c_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -4532,7 +4532,7 @@
       ],
       "operation": "identity",
       "value": 0.6761855588675834,
-      "formatted": "0.67619"
+      "formatted": "0.6762"
     },
     "a_c96_c_rotated_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -4547,7 +4547,7 @@
       ],
       "operation": "identity",
       "value": 0.6711670042116203,
-      "formatted": "0.67117"
+      "formatted": "0.6712"
     },
     "a_c96_c_ca_lddt_factor_rotation": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -5346,7 +5346,7 @@
       ],
       "operation": "identity",
       "value": 0.2607893500665757,
-      "formatted": "0.26079"
+      "formatted": "0.2608"
     },
     "a_l48_e_native": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -5361,7 +5361,7 @@
       ],
       "operation": "identity",
       "value": 0.40165206821200905,
-      "formatted": "0.40165"
+      "formatted": "0.4017"
     },
     "a_l48_e_rotated_factor": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -5376,7 +5376,7 @@
       ],
       "operation": "identity",
       "value": 0.3903951181305761,
-      "formatted": "0.39040"
+      "formatted": "0.3904"
     },
     "a_l48_e_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -5391,7 +5391,7 @@
       ],
       "operation": "identity",
       "value": 0.408683082860721,
-      "formatted": "0.40868"
+      "formatted": "0.4087"
     },
     "a_l48_e_rotated_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -5406,7 +5406,7 @@
       ],
       "operation": "identity",
       "value": 0.404447070133963,
-      "formatted": "0.40445"
+      "formatted": "0.4044"
     },
     "a_l48_e_ca_lddt_factor_rotation": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -5985,7 +5985,7 @@
       ],
       "operation": "identity",
       "value": 0.2607893500665757,
-      "formatted": "0.26079"
+      "formatted": "0.2608"
     },
     "a_l48_c_native": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -6000,7 +6000,7 @@
       ],
       "operation": "identity",
       "value": 0.48880065245952525,
-      "formatted": "0.48880"
+      "formatted": "0.4888"
     },
     "a_l48_c_rotated_factor": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -6015,7 +6015,7 @@
       ],
       "operation": "identity",
       "value": 0.4815791523498629,
-      "formatted": "0.48158"
+      "formatted": "0.4816"
     },
     "a_l48_c_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -6030,7 +6030,7 @@
       ],
       "operation": "identity",
       "value": 0.5052707635104912,
-      "formatted": "0.50527"
+      "formatted": "0.5053"
     },
     "a_l48_c_rotated_gplus": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -6045,7 +6045,7 @@
       ],
       "operation": "identity",
       "value": 0.5012809978457976,
-      "formatted": "0.50128"
+      "formatted": "0.5013"
     },
     "a_l48_c_ca_lddt_factor_rotation": {
       "source": "evidence/openfold_esmc_A_summary.json",
@@ -7801,7 +7801,7 @@
       ],
       "operation": "identity",
       "value": 0.5312050292466008,
-      "formatted": "0.53121"
+      "formatted": "0.5312"
     },
     "fresh_factor_rotated": {
       "source": "evidence/openfold_fresh96_summary.json",
@@ -7813,7 +7813,7 @@
       ],
       "operation": "identity",
       "value": 0.5188030200566849,
-      "formatted": "0.51880"
+      "formatted": "0.5188"
     },
     "fresh_generic_plus_native": {
       "source": "evidence/openfold_fresh96_summary.json",
@@ -7825,7 +7825,7 @@
       ],
       "operation": "identity",
       "value": 0.5326698876354622,
-      "formatted": "0.53267"
+      "formatted": "0.5327"
     },
     "fresh_generic_plus_rotated": {
       "source": "evidence/openfold_fresh96_summary.json",
@@ -7837,7 +7837,7 @@
       ],
       "operation": "identity",
       "value": 0.5304105142195049,
-      "formatted": "0.53041"
+      "formatted": "0.5304"
     },
     "fresh_query_native": {
       "source": "evidence/openfold_fresh96_summary.json",
@@ -7849,7 +7849,7 @@
       ],
       "operation": "identity",
       "value": 0.33303973950492766,
-      "formatted": "0.33304"
+      "formatted": "0.3330"
     },
     "fresh_seed_0": {
       "source": "evidence/openfold_fresh96_summary.json",
@@ -8015,7 +8015,7 @@
       ],
       "operation": "identity",
       "value": 0.3793080201245919,
-      "formatted": "0.37931"
+      "formatted": "0.3793"
     },
     "p96_native": {
       "source": "evidence/pt96_fourcell_summary.json",
@@ -8027,7 +8027,7 @@
       ],
       "operation": "identity",
       "value": 0.6165282605305852,
-      "formatted": "0.61653"
+      "formatted": "0.6165"
     },
     "p96_rotated_factor": {
       "source": "evidence/pt96_fourcell_summary.json",
@@ -8039,7 +8039,7 @@
       ],
       "operation": "identity",
       "value": 0.5914760057523224,
-      "formatted": "0.59148"
+      "formatted": "0.5915"
     },
     "p96_gplus": {
       "source": "evidence/pt96_fourcell_summary.json",
@@ -8051,7 +8051,7 @@
       ],
       "operation": "identity",
       "value": 0.5556641012837229,
-      "formatted": "0.55566"
+      "formatted": "0.5557"
     },
     "p96_rotated_gplus": {
       "source": "evidence/pt96_fourcell_summary.json",
@@ -8063,7 +8063,7 @@
       ],
       "operation": "identity",
       "value": 0.5489409101829226,
-      "formatted": "0.54894"
+      "formatted": "0.5489"
     },
     "p96_pair_factor_rotation": {
       "source": "evidence/pt96_fourcell_summary.json",
@@ -8763,7 +8763,7 @@
       ],
       "operation": "identity",
       "value": 0.3793080201245919,
-      "formatted": "0.37931"
+      "formatted": "0.3793"
     },
     "dh_protenix_c96_e_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -8779,7 +8779,7 @@
       ],
       "operation": "identity",
       "value": 0.6257196927838582,
-      "formatted": "0.62572"
+      "formatted": "0.6257"
     },
     "dh_protenix_c96_e_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -8795,7 +8795,7 @@
       ],
       "operation": "identity",
       "value": 0.5862107152025524,
-      "formatted": "0.58621"
+      "formatted": "0.5862"
     },
     "dh_protenix_c96_e_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -8811,7 +8811,7 @@
       ],
       "operation": "identity",
       "value": 0.549415702165485,
-      "formatted": "0.54942"
+      "formatted": "0.5494"
     },
     "dh_protenix_c96_e_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -8827,7 +8827,7 @@
       ],
       "operation": "identity",
       "value": 0.5465651437011703,
-      "formatted": "0.54657"
+      "formatted": "0.5466"
     },
     "dh_protenix_c96_e_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -9743,7 +9743,7 @@
       ],
       "operation": "identity",
       "value": 0.3793080201245919,
-      "formatted": "0.37931"
+      "formatted": "0.3793"
     },
     "dh_protenix_c96_c_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -9759,7 +9759,7 @@
       ],
       "operation": "identity",
       "value": 0.8299634114713761,
-      "formatted": "0.82996"
+      "formatted": "0.8300"
     },
     "dh_protenix_c96_c_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -9775,7 +9775,7 @@
       ],
       "operation": "identity",
       "value": 0.7944969699075978,
-      "formatted": "0.79450"
+      "formatted": "0.7945"
     },
     "dh_protenix_c96_c_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -9791,7 +9791,7 @@
       ],
       "operation": "identity",
       "value": 0.7186535529804206,
-      "formatted": "0.71865"
+      "formatted": "0.7187"
     },
     "dh_protenix_c96_c_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -9807,7 +9807,7 @@
       ],
       "operation": "identity",
       "value": 0.7101862996339358,
-      "formatted": "0.71019"
+      "formatted": "0.7102"
     },
     "dh_protenix_c96_c_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -10723,7 +10723,7 @@
       ],
       "operation": "identity",
       "value": 0.3212187384778337,
-      "formatted": "0.32122"
+      "formatted": "0.3212"
     },
     "dh_protenix_l48_e_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -10739,7 +10739,7 @@
       ],
       "operation": "identity",
       "value": 0.5291924583572504,
-      "formatted": "0.52919"
+      "formatted": "0.5292"
     },
     "dh_protenix_l48_e_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -10755,7 +10755,7 @@
       ],
       "operation": "identity",
       "value": 0.4866682726042054,
-      "formatted": "0.48667"
+      "formatted": "0.4867"
     },
     "dh_protenix_l48_e_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -10771,7 +10771,7 @@
       ],
       "operation": "identity",
       "value": 0.44781212910214996,
-      "formatted": "0.44781"
+      "formatted": "0.4478"
     },
     "dh_protenix_l48_e_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -10787,7 +10787,7 @@
       ],
       "operation": "identity",
       "value": 0.44824328975882455,
-      "formatted": "0.44824"
+      "formatted": "0.4482"
     },
     "dh_protenix_l48_e_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -11703,7 +11703,7 @@
       ],
       "operation": "identity",
       "value": 0.3212187384778337,
-      "formatted": "0.32122"
+      "formatted": "0.3212"
     },
     "dh_protenix_l48_c_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -11719,7 +11719,7 @@
       ],
       "operation": "identity",
       "value": 0.7565232591688998,
-      "formatted": "0.75652"
+      "formatted": "0.7565"
     },
     "dh_protenix_l48_c_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -11735,7 +11735,7 @@
       ],
       "operation": "identity",
       "value": 0.7184453062654085,
-      "formatted": "0.71845"
+      "formatted": "0.7184"
     },
     "dh_protenix_l48_c_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -11751,7 +11751,7 @@
       ],
       "operation": "identity",
       "value": 0.5925522530195544,
-      "formatted": "0.59255"
+      "formatted": "0.5926"
     },
     "dh_protenix_l48_c_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -11767,7 +11767,7 @@
       ],
       "operation": "identity",
       "value": 0.5825667643349041,
-      "formatted": "0.58257"
+      "formatted": "0.5826"
     },
     "dh_protenix_l48_c_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -12683,7 +12683,7 @@
       ],
       "operation": "identity",
       "value": 0.9567569611557952,
-      "formatted": "0.95676"
+      "formatted": "0.9568"
     },
     "dh_atlas_c96_e_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -12699,7 +12699,7 @@
       ],
       "operation": "identity",
       "value": 0.9562626299253364,
-      "formatted": "0.95626"
+      "formatted": "0.9563"
     },
     "dh_atlas_c96_e_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -12715,7 +12715,7 @@
       ],
       "operation": "identity",
       "value": 0.9565506426015835,
-      "formatted": "0.95655"
+      "formatted": "0.9566"
     },
     "dh_atlas_c96_e_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -12731,7 +12731,7 @@
       ],
       "operation": "identity",
       "value": 0.957062330398456,
-      "formatted": "0.95706"
+      "formatted": "0.9571"
     },
     "dh_atlas_c96_e_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -12747,7 +12747,7 @@
       ],
       "operation": "identity",
       "value": 0.9568253507887303,
-      "formatted": "0.95683"
+      "formatted": "0.9568"
     },
     "dh_atlas_c96_e_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -13663,7 +13663,7 @@
       ],
       "operation": "identity",
       "value": 0.9567569611557952,
-      "formatted": "0.95676"
+      "formatted": "0.9568"
     },
     "dh_atlas_c96_c_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -13679,7 +13679,7 @@
       ],
       "operation": "identity",
       "value": 0.9566580897061949,
-      "formatted": "0.95666"
+      "formatted": "0.9567"
     },
     "dh_atlas_c96_c_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -13695,7 +13695,7 @@
       ],
       "operation": "identity",
       "value": 0.9565424578724275,
-      "formatted": "0.95654"
+      "formatted": "0.9565"
     },
     "dh_atlas_c96_c_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -13711,7 +13711,7 @@
       ],
       "operation": "identity",
       "value": 0.9570559380601193,
-      "formatted": "0.95706"
+      "formatted": "0.9571"
     },
     "dh_atlas_c96_c_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -13727,7 +13727,7 @@
       ],
       "operation": "identity",
       "value": 0.9565382675016662,
-      "formatted": "0.95654"
+      "formatted": "0.9565"
     },
     "dh_atlas_c96_c_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -14643,7 +14643,7 @@
       ],
       "operation": "identity",
       "value": 0.9505000362033348,
-      "formatted": "0.95050"
+      "formatted": "0.9505"
     },
     "dh_atlas_l48_e_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -14659,7 +14659,7 @@
       ],
       "operation": "identity",
       "value": 0.9478940106845601,
-      "formatted": "0.94789"
+      "formatted": "0.9479"
     },
     "dh_atlas_l48_e_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -14675,7 +14675,7 @@
       ],
       "operation": "identity",
       "value": 0.9485289933851122,
-      "formatted": "0.94853"
+      "formatted": "0.9485"
     },
     "dh_atlas_l48_e_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -14691,7 +14691,7 @@
       ],
       "operation": "identity",
       "value": 0.9483764791040584,
-      "formatted": "0.94838"
+      "formatted": "0.9484"
     },
     "dh_atlas_l48_e_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -14707,7 +14707,7 @@
       ],
       "operation": "identity",
       "value": 0.948948292932344,
-      "formatted": "0.94895"
+      "formatted": "0.9489"
     },
     "dh_atlas_l48_e_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -15623,7 +15623,7 @@
       ],
       "operation": "identity",
       "value": 0.9505000362033348,
-      "formatted": "0.95050"
+      "formatted": "0.9505"
     },
     "dh_atlas_l48_c_native": {
       "source": "evidence/dh_A66_summary.json",
@@ -15639,7 +15639,7 @@
       ],
       "operation": "identity",
       "value": 0.9469091834656275,
-      "formatted": "0.94691"
+      "formatted": "0.9469"
     },
     "dh_atlas_l48_c_rotated_factor": {
       "source": "evidence/dh_A66_summary.json",
@@ -15655,7 +15655,7 @@
       ],
       "operation": "identity",
       "value": 0.9478461619121851,
-      "formatted": "0.94785"
+      "formatted": "0.9478"
     },
     "dh_atlas_l48_c_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -15671,7 +15671,7 @@
       ],
       "operation": "identity",
       "value": 0.94847654396758,
-      "formatted": "0.94848"
+      "formatted": "0.9485"
     },
     "dh_atlas_l48_c_rotated_gplus": {
       "source": "evidence/dh_A66_summary.json",
@@ -15687,7 +15687,7 @@
       ],
       "operation": "identity",
       "value": 0.9489622613137408,
-      "formatted": "0.94896"
+      "formatted": "0.9490"
     },
     "dh_atlas_l48_c_pair_factor_rotation": {
       "source": "evidence/dh_A66_summary.json",
@@ -17823,7 +17823,7 @@
       ],
       "operation": "identity",
       "value": 0.4857582978956765,
-      "formatted": "0.48576"
+      "formatted": "0.4858"
     },
     "e1_r1_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -17896,7 +17896,7 @@
       ],
       "operation": "identity",
       "value": 0.49164643297147737,
-      "formatted": "0.49165"
+      "formatted": "0.4916"
     },
     "e1_r2_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -17969,7 +17969,7 @@
       ],
       "operation": "identity",
       "value": 0.482641899232879,
-      "formatted": "0.48264"
+      "formatted": "0.4826"
     },
     "e1_r3_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18042,7 +18042,7 @@
       ],
       "operation": "identity",
       "value": 0.49379149175618475,
-      "formatted": "0.49379"
+      "formatted": "0.4938"
     },
     "e1_r4_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18115,7 +18115,7 @@
       ],
       "operation": "identity",
       "value": 0.5122975327424883,
-      "formatted": "0.51230"
+      "formatted": "0.5123"
     },
     "e1_r5_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18188,7 +18188,7 @@
       ],
       "operation": "identity",
       "value": 0.4870728922958791,
-      "formatted": "0.48707"
+      "formatted": "0.4871"
     },
     "e1_r6_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18261,7 +18261,7 @@
       ],
       "operation": "identity",
       "value": 0.48310318268565783,
-      "formatted": "0.48310"
+      "formatted": "0.4831"
     },
     "e1_r7_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18334,7 +18334,7 @@
       ],
       "operation": "identity",
       "value": 0.5026451178538962,
-      "formatted": "0.50265"
+      "formatted": "0.5026"
     },
     "e1_r8_cost": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18386,7 +18386,7 @@
       ],
       "operation": "identity",
       "value": 0.5019026983268536,
-      "formatted": "0.50190"
+      "formatted": "0.5019"
     },
     "e1_query_mean": {
       "source": "evidence/e1_prediction_summary.json",
@@ -18397,7 +18397,7 @@
       ],
       "operation": "identity",
       "value": 0.3019105772713658,
-      "formatted": "0.30191"
+      "formatted": "0.3019"
     },
     "e1_x_span": {
       "source": "evidence/e1_prediction_lock.json",
@@ -18643,7 +18643,7 @@
       ],
       "operation": "identity",
       "value": 0.3019105772713658,
-      "formatted": "0.30191"
+      "formatted": "0.3019"
     },
     "signed_c96_factor_native": {
       "source": "evidence/signed_summary.json",
@@ -18656,7 +18656,7 @@
       ],
       "operation": "identity",
       "value": 0.5019025118487536,
-      "formatted": "0.50190"
+      "formatted": "0.5019"
     },
     "signed_c96_factor_rotated": {
       "source": "evidence/signed_summary.json",
@@ -18669,7 +18669,7 @@
       ],
       "operation": "identity",
       "value": 0.48785586166136014,
-      "formatted": "0.48786"
+      "formatted": "0.4879"
     },
     "signed_c96_gplus_native": {
       "source": "evidence/signed_summary.json",
@@ -18682,7 +18682,7 @@
       ],
       "operation": "identity",
       "value": 0.49533866323349035,
-      "formatted": "0.49534"
+      "formatted": "0.4953"
     },
     "signed_c96_gplus_rotated": {
       "source": "evidence/signed_summary.json",
@@ -18695,7 +18695,7 @@
       ],
       "operation": "identity",
       "value": 0.4956926002765344,
-      "formatted": "0.49569"
+      "formatted": "0.4957"
     },
     "signed_c96_residue_factor_rotation": {
       "source": "evidence/signed_summary.json",
@@ -19077,7 +19077,7 @@
       ],
       "operation": "identity",
       "value": 0.2607893500665757,
-      "formatted": "0.26079"
+      "formatted": "0.2608"
     },
     "signed_l48_factor_native": {
       "source": "evidence/signed_summary.json",
@@ -19090,7 +19090,7 @@
       ],
       "operation": "identity",
       "value": 0.38872027633214035,
-      "formatted": "0.38872"
+      "formatted": "0.3887"
     },
     "signed_l48_factor_rotated": {
       "source": "evidence/signed_summary.json",
@@ -19103,7 +19103,7 @@
       ],
       "operation": "identity",
       "value": 0.3806369452064877,
-      "formatted": "0.38064"
+      "formatted": "0.3806"
     },
     "signed_l48_gplus_native": {
       "source": "evidence/signed_summary.json",
@@ -19116,7 +19116,7 @@
       ],
       "operation": "identity",
       "value": 0.3984943054818127,
-      "formatted": "0.39849"
+      "formatted": "0.3985"
     },
     "signed_l48_gplus_rotated": {
       "source": "evidence/signed_summary.json",
@@ -19129,7 +19129,7 @@
       ],
       "operation": "identity",
       "value": 0.39333247160625034,
-      "formatted": "0.39333"
+      "formatted": "0.3933"
     },
     "signed_l48_residue_factor_rotation": {
       "source": "evidence/signed_summary.json",
@@ -19676,7 +19676,7 @@
       ],
       "operation": "identity",
       "value": 0.5019026983268536,
-      "formatted": "0.50190"
+      "formatted": "0.5019"
     },
     "e2_native_learned": {
       "source": "evidence/e2_intervention_summary.json",
@@ -19687,7 +19687,7 @@
       ],
       "operation": "identity",
       "value": 0.5147982426949463,
-      "formatted": "0.51480"
+      "formatted": "0.5148"
     },
     "e2_r1_fixed_mean": {
       "source": "evidence/e2_intervention_summary.json",
@@ -19700,7 +19700,7 @@
       ],
       "operation": "identity",
       "value": 0.48310318268565783,
-      "formatted": "0.48310"
+      "formatted": "0.4831"
     },
     "e2_r1_learned_mean": {
       "source": "evidence/e2_intervention_summary.json",
@@ -19713,7 +19713,7 @@
       ],
       "operation": "identity",
       "value": 0.5213676621877328,
-      "formatted": "0.52137"
+      "formatted": "0.5214"
     },
     "e2_r2_fixed_mean": {
       "source": "evidence/e2_intervention_summary.json",
@@ -19726,7 +19726,7 @@
       ],
       "operation": "identity",
       "value": 0.49379149175618475,
-      "formatted": "0.49379"
+      "formatted": "0.4938"
     },
     "e2_r2_learned_mean": {
       "source": "evidence/e2_intervention_summary.json",
@@ -19739,7 +19739,7 @@
       ],
       "operation": "identity",
       "value": 0.514996534470241,
-      "formatted": "0.51500"
+      "formatted": "0.5150"
     },
     "e2_residue_native_change": {
       "source": "evidence/e2_intervention_summary.json",
@@ -20513,7 +20513,7 @@
       ],
       "operation": "identity",
       "value": 0.4891228920508755,
-      "formatted": "0.48912"
+      "formatted": "0.4891"
     },
     "curve_pair_n96_s384_factor_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20527,7 +20527,7 @@
       ],
       "operation": "identity",
       "value": 0.4802631187352191,
-      "formatted": "0.48026"
+      "formatted": "0.4803"
     },
     "curve_pair_n96_s384_gplus_native": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20541,7 +20541,7 @@
       ],
       "operation": "identity",
       "value": 0.4615479967722496,
-      "formatted": "0.46155"
+      "formatted": "0.4615"
     },
     "curve_pair_n96_s384_gplus_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20555,7 +20555,7 @@
       ],
       "operation": "identity",
       "value": 0.44170496603305653,
-      "formatted": "0.44170"
+      "formatted": "0.4417"
     },
     "curve_pair_n96_s768_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20701,7 +20701,7 @@
       ],
       "operation": "identity",
       "value": 0.538956815967217,
-      "formatted": "0.53896"
+      "formatted": "0.5390"
     },
     "curve_pair_n96_s768_factor_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20715,7 +20715,7 @@
       ],
       "operation": "identity",
       "value": 0.5101434609904376,
-      "formatted": "0.51014"
+      "formatted": "0.5101"
     },
     "curve_pair_n96_s768_gplus_native": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20729,7 +20729,7 @@
       ],
       "operation": "identity",
       "value": 0.5507493172617632,
-      "formatted": "0.55075"
+      "formatted": "0.5507"
     },
     "curve_pair_n96_s768_gplus_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20743,7 +20743,7 @@
       ],
       "operation": "identity",
       "value": 0.5433974438078729,
-      "formatted": "0.54340"
+      "formatted": "0.5434"
     },
     "curve_pair_n96_s1536_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20889,7 +20889,7 @@
       ],
       "operation": "identity",
       "value": 0.5412806771651334,
-      "formatted": "0.54128"
+      "formatted": "0.5413"
     },
     "curve_pair_n96_s1536_factor_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20903,7 +20903,7 @@
       ],
       "operation": "identity",
       "value": 0.5500180026880505,
-      "formatted": "0.55002"
+      "formatted": "0.5500"
     },
     "curve_pair_n96_s1536_gplus_native": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20917,7 +20917,7 @@
       ],
       "operation": "identity",
       "value": 0.5527438287908506,
-      "formatted": "0.55274"
+      "formatted": "0.5527"
     },
     "curve_pair_n96_s1536_gplus_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -20931,7 +20931,7 @@
       ],
       "operation": "identity",
       "value": 0.5572363966256229,
-      "formatted": "0.55724"
+      "formatted": "0.5572"
     },
     "curve_pair_n384_s384_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21077,7 +21077,7 @@
       ],
       "operation": "identity",
       "value": 0.4915059057681117,
-      "formatted": "0.49151"
+      "formatted": "0.4915"
     },
     "curve_pair_n384_s384_factor_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21091,7 +21091,7 @@
       ],
       "operation": "identity",
       "value": 0.48874016554078437,
-      "formatted": "0.48874"
+      "formatted": "0.4887"
     },
     "curve_pair_n384_s384_gplus_native": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21105,7 +21105,7 @@
       ],
       "operation": "identity",
       "value": 0.48648879447442334,
-      "formatted": "0.48649"
+      "formatted": "0.4865"
     },
     "curve_pair_n384_s384_gplus_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21119,7 +21119,7 @@
       ],
       "operation": "identity",
       "value": 0.4671969749519705,
-      "formatted": "0.46720"
+      "formatted": "0.4672"
     },
     "curve_pair_n384_s768_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21265,7 +21265,7 @@
       ],
       "operation": "identity",
       "value": 0.5444683193971304,
-      "formatted": "0.54447"
+      "formatted": "0.5445"
     },
     "curve_pair_n384_s768_factor_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21279,7 +21279,7 @@
       ],
       "operation": "identity",
       "value": 0.5154667553842438,
-      "formatted": "0.51547"
+      "formatted": "0.5155"
     },
     "curve_pair_n384_s768_gplus_native": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21293,7 +21293,7 @@
       ],
       "operation": "identity",
       "value": 0.5282243168413078,
-      "formatted": "0.52822"
+      "formatted": "0.5282"
     },
     "curve_pair_n384_s768_gplus_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21307,7 +21307,7 @@
       ],
       "operation": "identity",
       "value": 0.525840741423087,
-      "formatted": "0.52584"
+      "formatted": "0.5258"
     },
     "curve_pair_n384_s1536_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21453,7 +21453,7 @@
       ],
       "operation": "identity",
       "value": 0.5660379101992689,
-      "formatted": "0.56604"
+      "formatted": "0.5660"
     },
     "curve_pair_n384_s1536_factor_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21467,7 +21467,7 @@
       ],
       "operation": "identity",
       "value": 0.5576958012915676,
-      "formatted": "0.55770"
+      "formatted": "0.5577"
     },
     "curve_pair_n384_s1536_gplus_native": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21481,7 +21481,7 @@
       ],
       "operation": "identity",
       "value": 0.5598666575219561,
-      "formatted": "0.55987"
+      "formatted": "0.5599"
     },
     "curve_pair_n384_s1536_gplus_rotated": {
       "source": "evidence/checkpoint_curves_summary.json",
@@ -21495,7 +21495,7 @@
       ],
       "operation": "identity",
       "value": 0.5572244264283799,
-      "formatted": "0.55722"
+      "formatted": "0.5572"
     },
     "curve_residue_n96_s384_factor_rotation": {
       "source": "evidence/checkpoint_curves_summary.json",

@@ -42,7 +42,25 @@ def build(data, number, contrast, tex, save_rows, interval):
         for feature, tag in [('ESM2', 'e'), ('ESMC', 'c')]:
             of_means.append(['OpenFold/384', panel, feature,
                              *[tex(f'a_{short}_{tag}_{n}') for n in names]])
-    save_rows('complete_fourcell_means.tex', means[:5]+of_means+means[5:])
+    # Group recipe labels rather than repeating long predictor names in every row.
+    ordered = sorted(means[:5]+of_means+means[5:], key=lambda row: (
+        ['Protenix', 'OpenFold', 'AtlasFold'].index(row[0].split('/')[0]),
+        int(row[0].split('/')[1]), ['ESM2', 'ESMC'].index(row[2]),
+        ['C96-B', 'L48'].index(row[1])))
+    compact, previous = [], None
+    for model, panel, feature, *scores in ordered:
+        predictor, train = model.split('/')
+        recipe = (predictor, train, feature)
+        same_predictor = previous is not None and predictor == previous[0]
+        same_train = same_predictor and train == previous[1]
+        same_feature = same_train and feature == previous[2]
+        label = '' if same_predictor else predictor
+        if previous is not None and not same_predictor:
+            label = r'\midrule ' + label
+        compact.append([label, '' if same_train else train,
+                        '' if same_feature else feature, panel, *scores])
+        previous = recipe
+    save_rows('complete_fourcell_means.tex', compact)
 
     interactions = []
     for label, keys in [

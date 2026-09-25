@@ -70,13 +70,14 @@ replace this endpoint. Supplementary interaction intervals also include zero.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
-\caption{Head competitiveness and orientation sensitivity. Left: a complete
-Protenix four-cell example. Right: all completed dense-rotation $\Psi$ comparisons on the same
-axis, including Protenix, OpenFold and AtlasFold. The shaded diamond marks
-Fresh96's fixed-model new-target primary test; its interval includes zero.
-Other rows reuse observed panels; endpoint roles are in Table~\ref{tab:study_roles}.
-All use 1536 updates and conditional 95\% target intervals, not independent
-cross-row replications. A66 follow-ups lack joint correction; backend
+\caption{Head competitiveness and orientation sensitivity. Left: Protenix
+four-cell means. Right: target-level $\Psi_i$ distributions after averaging
+paired seeds and rotations (96 or 48 targets per row). Violins use a fixed
+bandwidth factor of 0.35, stop at observed extrema and have equal maximum width;
+points and bars show $\Psi$ and its original conditional 95\% bootstrap interval.
+The shaded diamond marks Fresh96's new-target primary test, whose interval
+includes zero. Other panels are observed; rows are not independent replications
+(Table~\ref{tab:study_roles}). A66 follow-ups lack joint correction; backend
 qualifications are in Appendix~\ref{app:dh_fourcells}.}
 \label{fig:interaction}
 \end{figure}
@@ -182,15 +183,15 @@ cache precision and input-projection size together; it does not isolate model
 size or test intermediate-layer or multilayer features.
 
 \begin{table}[t]
-\caption{Complete same-feature four cells and unadapted baselines: C$\alpha$
-pair-lDDT means, all at 1536 updates. The recipe includes training-set size.
-F/G+ average three seeds; RF/RG+ average three seeds and three rotations.
-Query lacks the added adapter PLM; Atlas retains its native AtlasLM-3B.
-ESM2/ESMC denote the added features. Historical cells are reused; all displayed
-cells are complete. Protenix Train96 Length48 was not run.}
+\caption{Complete four-cell C$\alpha$ pair-lDDT means at 1536 updates, displayed
+to four decimals. F/G+: three seeds; RF/RG+: three seeds $\times$ three rotations.
+PLM denotes added adapter features; Query lacks them and Atlas retains native
+AtlasLM-3B. Blank recipe cells inherit the entry above within each predictor.
+Study identities are in Table~\ref{tab:study_roles}; Protenix/96 has no L48 run.}
 \label{tab:coverage}\label{tab:esmc}\centering\footnotesize
-\begin{tabular}{lllrrrrr}\toprule
-Predictor/Train & Panel & Features & Query & F & RF & G+ & RG+ \\\midrule
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llllrrrrr@{}}\toprule
+Predictor & Train & PLM & Panel & Query & F & RF & G+ & RG+ \\\midrule
 \input{generated/complete_fourcell_means}
 \end{tabular}
 \end{table}
