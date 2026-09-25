@@ -92,7 +92,35 @@
     "evidence/checkpoint_curves_protocol.json": "8e6bfc38b77a351baa7e5912bc60c0afdeb2e8326e267bffab5821d90eca4212",
     "evidence/e2_intervention_prespecified_analysis.json": "ab068234919c8d25c3f0cba333ffd96a14a3ec481bb2321596ca2ca79edf2e0e",
     "evidence/e2_intervention_prespecified_design.json": "235ea39d7f4d00b440c0443c27d7a98c9a2bea1017efc5dc9e0987319d0e7aa8",
-    "evidence/openfold_train96_records.json": "d372de6b271dac9ed37a1495ba50419f74f3fbd2c4c3e9ea36b30cd6bcdf8406"
+    "evidence/openfold_train96_records.json": "d372de6b271dac9ed37a1495ba50419f74f3fbd2c4c3e9ea36b30cd6bcdf8406",
+    "evidence/e3_anchor_summary.json": "9707ac229a88de83aa9ee1dfddee307e80710fb9e7d93a0c281a8a99123cdb33",
+    "evidence/e3_anchor_records.json": "513871c1ede76e31aeeddcda36501610735ff6d70c73814deaa9b3f477b02e5b",
+    "evidence/e3_anchor_new_records.json": "1c4635f111124457a2a9ddd348afb85ba4468f682bc98432429d809ab5f64299",
+    "evidence/e3_anchor_execution_lock.json": "25f162d613455d380113d29a58256b9b5be72d46f669675073ce035c739c7200",
+    "evidence/e3_anchor_complete.json": "9f014dd00b9f5eda753eb2d4695e2961e3936eb878f01c7160ef07ce085fd573",
+    "evidence/e3_anchor_runtime_audit.json": "7323375cb583cb586b650c2c0890a0c31cf87d6f1d7c6346c3dffe0a6cbbefbb",
+    "evidence/e3_anchor_statistical_readback.json": "fd34d792a5aa147b22d7dfedbd2ea4a41ef1d5ed7f014daa08b395a34a6dcffc",
+    "evidence/e3_anchor_acceptance.json": "c0df19469d91c78c59b56fa9618931e635418d6412ec5159740d3b6f9d095fcd",
+    "evidence/e3_anchor_references.json": "e20afad04b45a8fd6573d55a7fb233218d7b7a5101a556d39a7725ca5716edc8",
+    "evidence/e3_anchor_engineering_amendment.json": "a25cc565c245ae69386797e7acc675dd6afe4038d1c33f13e80008da2cad0f34",
+    "evidence/e3_anchor_resume_diagnosis.json": "436d01f0574943aaf35d67d1892df92e558b9512e8693c936878bee74ee40572",
+    "reproducibility/anchor_intervention/protocol.md": "f04d8995f3c4efd0efd58b7ba4ea851c3d972638251c271fffe7ce7f70e0478a",
+    "reproducibility/anchor_intervention/acceptance.md": "6c89747431b4efea546145ff66e2107fed45702c3c146cb6d1a591d480f37ff1",
+    "reproducibility/anchor_intervention/per_target.csv": "8896f4f1980a0a75ad82550221f82b2d9da5043a1e9e0182c660bf4e33b3aa61",
+    "reproducibility/anchor_intervention/runtime_audit.py": "38209c8e31d137b9da2a44b89d745d693792de76e706296324010c67a1b3d6f0",
+    "reproducibility/anchor_intervention/statistical_readback.py": "de8e020cd0edb6888444e5e20cdef652b371ca81f617050fc331384f5c598797",
+    "reproducibility/anchor_intervention/engineering_amendment.md": "140c34f3b7cca150429bfcf7eb4a2533cd40bcd4cfb3b12439b8bf2f321d7eb7",
+    "reproducibility/anchor_intervention/archived/analyze.py": "d4672bd3a51412c2cf4a0ec831ba1f92fa105a2fe4719bc39e308e7d53c12c81",
+    "reproducibility/anchor_intervention/archived/cpu.sh": "14a40554693816d466de7b26141169293ea17caa6923ecb8d72fb620acd1b246",
+    "reproducibility/anchor_intervention/archived/e3_common.py": "f99438ae03c304cde8a8b95b6fb90ace0b2ee4fca90115470c7fcdca6406b412",
+    "reproducibility/anchor_intervention/archived/job.sh": "2ec4d8a870ed3a06560af5db6d081df60f14d1a7875a9a8968f6dc46fb17eea5",
+    "reproducibility/anchor_intervention/archived/parent_core.py": "c1db4ccf80b4a5ce995807cc104b68ba0383a43f679c5856e6ddfac41c315141",
+    "reproducibility/anchor_intervention/archived/query_anchor.py": "bf1636780f065d592666a26c450d694eedbebb4e95053fe79b506a3a1347712f",
+    "reproducibility/anchor_intervention/archived/references.py": "1fa4dbd678c00ef402b29f1c55328879bfeb926050dbdea4e4fcc35aaa552af6",
+    "reproducibility/anchor_intervention/archived/run.py": "e3da14083c1bfa203709365ec3dde2f099e9e6f8fb55536bc88245c109bbeeca",
+    "reproducibility/anchor_intervention/archived/scoring.py": "585b64e2bc7518f577380fdb255394dbc12b0cd8684c1febb0a54e167b6fbdbd",
+    "reproducibility/anchor_intervention/archived/smoke.py": "0a11934f0b1b9bef940fedf809f534e393a0685e9ddd3f089be229de8c2e01ed",
+    "reproducibility/anchor_intervention/archived/test_query_anchor.py": "7c6c786d124de5ebc165a71bed0121e6f1482d0b26630f53651c9e7ac4536803"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -23080,6 +23108,1275 @@
       "operation": "identity",
       "value": 0.04783611111111111,
       "formatted": "+0.04784"
+    },
+    "anchor_pair_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.011996929029789353,
+      "formatted": "-0.01200"
+    },
+    "anchor_pair_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.026652411499746387,
+      "formatted": "-0.02665"
+    },
+    "anchor_pair_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0018719421547911338,
+      "formatted": "+0.00187"
+    },
+    "anchor_pair_T_A_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 42.0,
+      "formatted": "42"
+    },
+    "anchor_pair_T_A_seed1": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "per_seed",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.029664793621495822,
+      "formatted": "-0.02966"
+    },
+    "anchor_pair_T_A_seed2": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "per_seed",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.014467700136691136,
+      "formatted": "-0.01447"
+    },
+    "anchor_pair_T_A_seed3": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "T_A",
+        "per_seed",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.0081417066688189,
+      "formatted": "+0.00814"
+    },
+    "anchor_pair_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.002641439062482105,
+      "formatted": "-0.00264"
+    },
+    "anchor_pair_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.008941595041290974,
+      "formatted": "-0.00894"
+    },
+    "anchor_pair_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.003318970480482795,
+      "formatted": "+0.00332"
+    },
+    "anchor_pair_B_R_live_minus_Q_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 46.0,
+      "formatted": "46"
+    },
+    "anchor_pair_B_R_live_minus_Q_seed1": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "per_seed",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.026739159898536657,
+      "formatted": "-0.02674"
+    },
+    "anchor_pair_B_R_live_minus_Q_seed2": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "per_seed",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008602677554643215,
+      "formatted": "+0.00860"
+    },
+    "anchor_pair_B_R_live_minus_Q_seed3": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "B_R_live_minus_Q",
+        "per_seed",
+        2
+      ],
+      "operation": "identity",
+      "value": 0.010212165156447127,
+      "formatted": "+0.01021"
+    },
+    "anchor_pair_native_Q_minus_live": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.009355489967307248,
+      "formatted": "-0.00936"
+    },
+    "anchor_pair_native_Q_minus_liveLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02016215240929675,
+      "formatted": "-0.02016"
+    },
+    "anchor_pair_native_Q_minus_liveHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0012202883080971293,
+      "formatted": "+0.00122"
+    },
+    "anchor_pair_native_Q_minus_live_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 45.0,
+      "formatted": "45"
+    },
+    "anchor_pair_native_Q_minus_live_seed1": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "per_seed",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0029256337229591665,
+      "formatted": "-0.00293"
+    },
+    "anchor_pair_native_Q_minus_live_seed2": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "per_seed",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.023070377691334354,
+      "formatted": "-0.02307"
+    },
+    "anchor_pair_native_Q_minus_live_seed3": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_live",
+        "per_seed",
+        2
+      ],
+      "operation": "identity",
+      "value": -0.0020704584876282263,
+      "formatted": "-0.00207"
+    },
+    "anchor_pair_native_Q_minus_query": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.19063663108818055,
+      "formatted": "+0.19064"
+    },
+    "anchor_pair_native_Q_minus_queryLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_query",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.16123613092237415,
+      "formatted": "+0.16124"
+    },
+    "anchor_pair_native_Q_minus_queryHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "native_Q_minus_query",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.22135413988247446,
+      "formatted": "+0.22135"
+    },
+    "anchor_pair_r1_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.02406688661244873,
+      "formatted": "-0.02407"
+    },
+    "anchor_pair_r1_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.04227422010103001,
+      "formatted": "-0.04227"
+    },
+    "anchor_pair_r1_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.007586894079491726,
+      "formatted": "-0.00759"
+    },
+    "anchor_pair_r1_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.014711396645141482,
+      "formatted": "-0.01471"
+    },
+    "anchor_pair_r1_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.025283716667455585,
+      "formatted": "-0.02528"
+    },
+    "anchor_pair_r1_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.004985238532785921,
+      "formatted": "-0.00499"
+    },
+    "anchor_pair_r2_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 7.302855287002336e-05,
+      "formatted": "+0.00007"
+    },
+    "anchor_pair_r2_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.014711855873624443,
+      "formatted": "-0.01471"
+    },
+    "anchor_pair_r2_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014879910057658811,
+      "formatted": "+0.01488"
+    },
+    "anchor_pair_r2_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.009428518520177271,
+      "formatted": "+0.00943"
+    },
+    "anchor_pair_r2_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 3.821396585484177e-07,
+      "formatted": "+3.82140e-07"
+    },
+    "anchor_pair_r2_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01863198564051402,
+      "formatted": "+0.01863"
+    },
+    "anchor_residue_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.010648247067987128,
+      "formatted": "-0.01065"
+    },
+    "anchor_residue_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.02435085856601428,
+      "formatted": "-0.02435"
+    },
+    "anchor_residue_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.002326966351935147,
+      "formatted": "+0.00233"
+    },
+    "anchor_residue_T_A_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "T_A",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 42.0,
+      "formatted": "42"
+    },
+    "anchor_residue_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0021294069047584226,
+      "formatted": "-0.00213"
+    },
+    "anchor_residue_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.008031806691033289,
+      "formatted": "-0.00803"
+    },
+    "anchor_residue_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0034786028682957906,
+      "formatted": "+0.00348"
+    },
+    "anchor_residue_B_R_live_minus_Q_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "B_R_live_minus_Q",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 45.0,
+      "formatted": "45"
+    },
+    "anchor_residue_native_Q_minus_live": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_Q_minus_live",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.008518840163228705,
+      "formatted": "-0.00852"
+    },
+    "anchor_residue_native_Q_minus_liveLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_Q_minus_live",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01868797709690847,
+      "formatted": "-0.01869"
+    },
+    "anchor_residue_native_Q_minus_liveHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_Q_minus_live",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0014465025095327549,
+      "formatted": "+0.00145"
+    },
+    "anchor_residue_native_Q_minus_live_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "native_Q_minus_live",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 44.0,
+      "formatted": "44"
+    },
+    "anchor_residue_r1_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.021959877465371747,
+      "formatted": "-0.02196"
+    },
+    "anchor_residue_r1_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.03899055809768996,
+      "formatted": "-0.03899"
+    },
+    "anchor_residue_r1_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0063542556867647055,
+      "formatted": "-0.00635"
+    },
+    "anchor_residue_r1_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.01344103730214305,
+      "formatted": "-0.01344"
+    },
+    "anchor_residue_r1_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.023409491653112603,
+      "formatted": "-0.02341"
+    },
+    "anchor_residue_r1_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.004233611775143532,
+      "formatted": "-0.00423"
+    },
+    "anchor_residue_r2_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0006633833293974983,
+      "formatted": "+0.00066"
+    },
+    "anchor_residue_r2_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.013274933482835049,
+      "formatted": "-0.01327"
+    },
+    "anchor_residue_r2_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.014475618008910703,
+      "formatted": "+0.01448"
+    },
+    "anchor_residue_r2_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.009182223492626202,
+      "formatted": "+0.00918"
+    },
+    "anchor_residue_r2_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.00013286339603417978,
+      "formatted": "+0.00013"
+    },
+    "anchor_residue_r2_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01804971730112441,
+      "formatted": "+0.01805"
+    },
+    "anchor_tm_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.009661631944444447,
+      "formatted": "-0.00966"
+    },
+    "anchor_tm_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.029227365451388893,
+      "formatted": "-0.02923"
+    },
+    "anchor_tm_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008840052083333319,
+      "formatted": "+0.00884"
+    },
+    "anchor_tm_T_A_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "T_A",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 44.0,
+      "formatted": "44"
+    },
+    "anchor_tm_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0005296875000000003,
+      "formatted": "-0.00053"
+    },
+    "anchor_tm_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.009880868055555554,
+      "formatted": "-0.00988"
+    },
+    "anchor_tm_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.008025559895833326,
+      "formatted": "+0.00803"
+    },
+    "anchor_tm_B_R_live_minus_Q_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "B_R_live_minus_Q",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 47.0,
+      "formatted": "47"
+    },
+    "anchor_tm_native_Q_minus_live": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_Q_minus_live",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.009131944444444443,
+      "formatted": "-0.00913"
+    },
+    "anchor_tm_native_Q_minus_liveLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_Q_minus_live",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.022834973958333334,
+      "formatted": "-0.02283"
+    },
+    "anchor_tm_native_Q_minus_liveHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_Q_minus_live",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.004572942708333335,
+      "formatted": "+0.00457"
+    },
+    "anchor_tm_native_Q_minus_live_positive": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "native_Q_minus_live",
+        "per_target"
+      ],
+      "operation": "count_positive",
+      "value": 42.0,
+      "formatted": "42"
+    },
+    "anchor_tm_r1_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.025337499999999995,
+      "formatted": "-0.02534"
+    },
+    "anchor_tm_r1_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.04910651041666666,
+      "formatted": "-0.04911"
+    },
+    "anchor_tm_r1_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.003932543402777783,
+      "formatted": "-0.00393"
+    },
+    "anchor_tm_r1_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.016205555555555556,
+      "formatted": "-0.01621"
+    },
+    "anchor_tm_r1_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.030524348958333326,
+      "formatted": "-0.03052"
+    },
+    "anchor_tm_r1_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270107",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0031551475694444444,
+      "formatted": "-0.00316"
+    },
+    "anchor_tm_r2_T_A": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.00601423611111111,
+      "formatted": "+0.00601"
+    },
+    "anchor_tm_r2_T_ALo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.013990824652777775,
+      "formatted": "-0.01399"
+    },
+    "anchor_tm_r2_T_AHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "T_A",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.026416979166666636,
+      "formatted": "+0.02642"
+    },
+    "anchor_tm_r2_B_R_live_minus_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.015146180555555555,
+      "formatted": "+0.01515"
+    },
+    "anchor_tm_r2_B_R_live_minus_QLo": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0022878125,
+      "formatted": "+0.00229"
+    },
+    "anchor_tm_r2_B_R_live_minus_QHi": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "per_rotation",
+        "r20270104",
+        "B_R_live_minus_Q",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02807178819444442,
+      "formatted": "+0.02807"
+    },
+    "anchor_query": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "query"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.3019"
+    },
+    "anchor_native_live": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "native_live"
+      ],
+      "operation": "identity",
+      "value": 0.5019026983268536,
+      "formatted": "0.5019"
+    },
+    "anchor_native_Q": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "native_Q"
+      ],
+      "operation": "identity",
+      "value": 0.49254720835954635,
+      "formatted": "0.4925"
+    },
+    "anchor_rotated_live": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "rotated_live"
+      ],
+      "operation": "identity",
+      "value": 0.4884473372209214,
+      "formatted": "0.4884"
+    },
+    "anchor_rotated_Q": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "rotated_Q"
+      ],
+      "operation": "identity",
+      "value": 0.4910887762834035,
+      "formatted": "0.4911"
+    },
+    "anchor_live_native_minus_rotated": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "live_native_minus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.013455361105932264,
+      "formatted": "+0.01346"
+    },
+    "anchor_Q_native_minus_rotated": {
+      "source": "evidence/e3_anchor_statistical_readback.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "absolute",
+        "Q_native_minus_rotated"
+      ],
+      "operation": "identity",
+      "value": 0.00145843207614291,
+      "formatted": "+0.00146"
+    },
+    "anchor_r1_rotated_live": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "rotated_live"
+      ],
+      "operation": "identity",
+      "value": 0.48310318268565783,
+      "formatted": "0.4831"
+    },
+    "anchor_r1_rotated_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270107",
+        "rotated_Q"
+      ],
+      "operation": "identity",
+      "value": 0.4978145793307994,
+      "formatted": "0.4978"
+    },
+    "anchor_r2_rotated_live": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "rotated_live"
+      ],
+      "operation": "identity",
+      "value": 0.49379149175618475,
+      "formatted": "0.4938"
+    },
+    "anchor_r2_rotated_Q": {
+      "source": "evidence/e3_anchor_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "per_rotation",
+        "r20270104",
+        "rotated_Q"
+      ],
+      "operation": "identity",
+      "value": 0.4843629732360075,
+      "formatted": "0.4844"
     }
   },
   "verified_esmc_A_contrasts": 78,
@@ -23088,8 +24385,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1472,
-    "distinct_keys": 1236,
+    "literal_references": 1560,
+    "distinct_keys": 1322,
     "missing": []
   },
   "pending": [],
@@ -23401,5 +24698,61 @@
     "scalar_or_array_checks": 810,
     "max_abs_error": 0.0,
     "scope": "Locked score-array reconstruction and original pointwise target bootstraps; no CIF scoring, new fit, full-model trajectory equivalence, convergence, new K test or new-target confirmation. Signed transformations do not preserve the all-ones direction. Dev8 nodes do not select checkpoints."
+  },
+  "verified_anchor_intervention": {
+    "passed": true,
+    "records": 1824,
+    "new_records": 864,
+    "reused_records": 960,
+    "targets": 96,
+    "verified_contrasts": 42,
+    "scalar_or_array_checks": 477,
+    "max_abs_error": 1.1102230246251565e-16,
+    "source_sha256": {
+      "evidence/e3_anchor_execution_lock.json": "25f162d613455d380113d29a58256b9b5be72d46f669675073ce035c739c7200",
+      "evidence/e1_execution_lock.json": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+      "evidence/e3_anchor_summary.json": "9707ac229a88de83aa9ee1dfddee307e80710fb9e7d93a0c281a8a99123cdb33",
+      "evidence/e3_anchor_new_records.json": "1c4635f111124457a2a9ddd348afb85ba4468f682bc98432429d809ab5f64299",
+      "evidence/e3_anchor_records.json": "513871c1ede76e31aeeddcda36501610735ff6d70c73814deaa9b3f477b02e5b",
+      "evidence/e1_prediction_lock.json": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+      "evidence/e1_prediction_complete.json": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+      "evidence/e2_intervention_complete.json": "c9f192d7a1b05a23f12d5b424dcb901954b81e87e18ce4ad8d8907416206dfc2",
+      "reproducibility/anchor_intervention/protocol.md": "f04d8995f3c4efd0efd58b7ba4ea851c3d972638251c271fffe7ce7f70e0478a",
+      "reproducibility/anchor_intervention/archived/analyze.py": "d4672bd3a51412c2cf4a0ec831ba1f92fa105a2fe4719bc39e308e7d53c12c81",
+      "reproducibility/anchor_intervention/archived/cpu.sh": "14a40554693816d466de7b26141169293ea17caa6923ecb8d72fb620acd1b246",
+      "reproducibility/anchor_intervention/archived/e3_common.py": "f99438ae03c304cde8a8b95b6fb90ace0b2ee4fca90115470c7fcdca6406b412",
+      "reproducibility/anchor_intervention/archived/job.sh": "2ec4d8a870ed3a06560af5db6d081df60f14d1a7875a9a8968f6dc46fb17eea5",
+      "reproducibility/anchor_intervention/archived/parent_core.py": "c1db4ccf80b4a5ce995807cc104b68ba0383a43f679c5856e6ddfac41c315141",
+      "reproducibility/anchor_intervention/archived/query_anchor.py": "bf1636780f065d592666a26c450d694eedbebb4e95053fe79b506a3a1347712f",
+      "reproducibility/anchor_intervention/archived/references.py": "1fa4dbd678c00ef402b29f1c55328879bfeb926050dbdea4e4fcc35aaa552af6",
+      "reproducibility/anchor_intervention/archived/run.py": "e3da14083c1bfa203709365ec3dde2f099e9e6f8fb55536bc88245c109bbeeca",
+      "reproducibility/anchor_intervention/archived/scoring.py": "585b64e2bc7518f577380fdb255394dbc12b0cd8684c1febb0a54e167b6fbdbd",
+      "reproducibility/anchor_intervention/archived/smoke.py": "0a11934f0b1b9bef940fedf809f534e393a0685e9ddd3f089be229de8c2e01ed",
+      "reproducibility/anchor_intervention/archived/test_query_anchor.py": "7c6c786d124de5ebc165a71bed0121e6f1482d0b26630f53651c9e7ac4536803",
+      "evidence/e3_anchor_runtime_audit.json": "7323375cb583cb586b650c2c0890a0c31cf87d6f1d7c6346c3dffe0a6cbbefbb",
+      "evidence/e3_anchor_statistical_readback.json": "fd34d792a5aa147b22d7dfedbd2ea4a41ef1d5ed7f014daa08b395a34a6dcffc",
+      "reproducibility/anchor_intervention/per_target.csv": "8896f4f1980a0a75ad82550221f82b2d9da5043a1e9e0182c660bf4e33b3aa61",
+      "reproducibility/anchor_intervention/acceptance.md": "6c89747431b4efea546145ff66e2107fed45702c3c146cb6d1a591d480f37ff1",
+      "evidence/e3_anchor_resume_diagnosis.json": "436d01f0574943aaf35d67d1892df92e558b9512e8693c936878bee74ee40572"
+    },
+    "paired_seeds": [
+      20260923,
+      20260924,
+      20260925
+    ],
+    "selected_rotations": [
+      "r20270107",
+      "r20270104"
+    ],
+    "bootstrap": {
+      "seed": 20260924,
+      "draws": 20000
+    },
+    "protocol_and_implementation_identities_verified": true,
+    "archived_runtime_audit_consistent": true,
+    "original_failed_trajectory_check_preserved": true,
+    "new_coordinate_scoring": false,
+    "new_training": false,
+    "scope": "Prespecified Factor-only anchor intervention on observed Confirm96-B; conditional, unadjusted target intervals. No C, new-target confirmation, between-rotation heterogeneity test or equivalence test."
   }
 }

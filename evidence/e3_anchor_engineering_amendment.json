@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-24T15:31:01.091469+00:00",
+  "execution_lock_sha256": "25f162d613455d380113d29a58256b9b5be72d46f669675073ce035c739c7200",
+  "original_smoke_sha256": "0a11934f0b1b9bef940fedf809f534e393a0685e9ddd3f089be229de8c2e01ed",
+  "smoke_sha256": "ae98772aa0d284be3feb2b85123ad38f480123d8c3661f3d80f636c761220b86",
+  "diagnosis_sha256": "436d01f0574943aaf35d67d1892df92e558b9512e8693c936878bee74ee40572",
+  "old_jobs": [
+    "649535_0",
+    "649535_1"
+  ],
+  "diagnostic_job": "649564",
+  "change": "Engineering only: exact saved parameter/optimizer equality and exact forward; same-gradient optimizer exact; subsequent actual-gradient relative<=1e-6 and parameter maxabs<=2e-8. Original next-update-bitwise assertion failed and remains failed. No scientific/training source change.",
+  "gradient_relative": 6.350186197214839e-10,
+  "parameter_maxabs": 3.725290298461914e-09
+}

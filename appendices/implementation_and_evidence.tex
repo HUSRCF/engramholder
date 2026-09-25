@@ -1114,12 +1114,12 @@ performance. Orthogonal adaptation itself is not new
 \paragraph{Paired endpoints and their identity.}
 Define
 \begin{equation}
- B_N=S(N+C)-S(N),\quad B_R=S(R+C)-S(R),\quad
- T_C=(N-R)-(N_C-R_C)=B_R-B_N,
+ B_N=S(N+C)-S(N),\quad B_R^{C}=S(R+C)-S(R),\quad
+ T_C=(N-R)-(N_C-R_C)=B_R^{C}-B_N,
 \end{equation}
 where the last expression uses scores, with the same target and seed paired
 in each term. The original sealed design explicitly defines equal-weight averages of
-$B_R$ and $T_C$ and the prediction that both are positive, with both rotations
+$B_R^{C}$ and $T_C$ and the prediction that both are positive, with both rotations
 and Native's own change also reported. The sealed analysis code implements
 these averages before outcomes. These are prespecified mechanism contrasts,
 not a new-target confirmation or a newly declared sole-primary endpoint.
@@ -1141,9 +1141,10 @@ joint optimization remain coupled.
 \clearpage
 \begin{table}[!htbp]\centering\small
 \caption{Pair-lDDT before and after jointly training the shared map. Native
-also improves, so the mean mitigation is not caused by harming its reference.}
+also improves. Intervals for changes are conditional on fitted models and
+unadjusted; contrasts use unrounded scores.}
 \begin{tabular}{lrrrr}\toprule
-Condition & Without $C$ & With $C$ & Own change & 95\% interval \\\midrule
+Condition & Without $C$ & With $C$ & Own change & 95\% CI for change \\\midrule
 \input{generated/e2_means}
 \end{tabular}\end{table}
 
@@ -1156,7 +1157,7 @@ Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
 \end{tabular}\end{table}
 
 The target distribution also limits a uniform-benefit interpretation. Averaging
-paired seeds and rotations within each target, $B_R$ is positive on
+paired seeds and rotations within each target, $B_R^{C}$ is positive on
 \result{e2_pair_B_R_count_positive}/96 targets with median
 \result{e2_pair_B_R_median}; $T_C$ is positive on
 \result{e2_pair_T_C_count_positive}/96 with median \result{e2_pair_T_C_median},
@@ -1181,3 +1182,148 @@ zero initialization, shared-map injection and joint gradients on a synthetic
 frozen OPM fixture; it checks masks, the unchanged baseline and parameter groups.
 This makes the intervention executable at the operator level, without claiming
 a replay of full OpenFold structure training or its quality gains.
+
+\clearpage
+\section{Residual-anchor intervention}
+\label{app:anchor_intervention}
+This study tests a specific feedback hypothesis: whether constructing the
+residual from the adapted trajectory's live factors helps rotated Factor and
+reduces its direction cost. It is internally called E3 in the prospective
+series, distinct from the earlier diagnostic E3 in
+Appendix~\ref{app:mechanisms}. It contains no channel compensator $C$.
+
+\paragraph{Intervention and paired training.}
+Let $L$ denote live residual anchors and $Q$ the query-only references for
+the same sequence and recycle index $t$. At the first OPM of the intact
+48-block Evoformer, the two paths are
+\begin{align}
+ U_{L,t}&=U_{0,t}^{\mathrm{live}}+\mathcal R
+ \bigl[G(a_t+\delta a,b_t+\delta b)-G(a_t,b_t)\bigr],\\
+ U_{Q,t}&=U_{0,t}^{\mathrm{live}}+\mathcal R
+ \bigl[G(a^Q_t+\delta a,b^Q_t+\delta b)-G(a^Q_t,b^Q_t)\bigr],
+\end{align}
+where $\mathcal R$ is identity for Native and the fixed channel rotation for
+Rotated. Each adapted path retains its own live OPM baseline, pair state,
+four-pass recycling and structure module. The four reference pairs
+$(a^Q_t,b^Q_t)$ come from four separate query-only passes, not a repeated
+first-pass anchor. Mask, normalization and frozen decoder are unchanged.
+One sequence-conditioned writer supplies the same factor increments at each
+pass; only the anchors differ. This replaces neither the live baseline nor
+the full recycling process, and does not make the update a cached Protenix
+residual.
+
+The recipe is OpenFold model\_3\_ptm, Train96, ESM2-35M layer 12 and Full,
+with 1,536 updates and the original AdamW recipe. Native and the two rotations
+r20270107/r20270104 are independently retrained under $Q$, each with the
+three paired seeds. These rotations were selected and locked before their
+task scores in the prediction study. All nine new fits start from the
+original zero-output initialization, without a warm start or $C$.
+The accepted $L$ models are reused from E1. The 864 new predictions and
+960 original query/Native/Rotated predictions yield 1,824 score records on
+the already observed Confirm96-B panel; no target or rotation is replaced.
+
+\paragraph{Predeclared quantities and statistical identity.}
+Using scores with matched target and training seed, define
+\begin{equation}
+ T_A=(N_Q-R_Q)-(N_L-R_L),\qquad
+ B_R^{\mathrm{anchor}}=R_L-R_Q.
+\end{equation}
+Both are averaged equally over the two selected rotations. The hypothesis
+requires positive $T_A$ and positive $B_R^{\mathrm{anchor}}$, supported by
+their intervals. The latter differs from compensation's
+$B_R^{C}=S(R+C)-S(R)$; only display notation changes, not sealed field names.
+The paired identity
+\begin{equation}
+ T_A=B_R^{\mathrm{anchor}}+(N_Q-N_L)
+\end{equation}
+holds for each target and seed. Thus a reduced gap can reflect a changed
+Native reference as well as a changed rotated arm.
+
+As locked, 20,000 synchronous target-bootstrap draws (seed 20260924) preserve
+the shared Native control. Intervals condition on the three fitted seeds
+and two selected rotations; they are not jointly multiplicity-adjusted.
+Proteins, not predictions, seeds or residue pairs, are the sampling units.
+Pair-lDDT is primary; residue-lDDT and TM-score are supplementary measurements
+from the same structures. This is an observed-panel, Factor-only intervention,
+not a new-target confirmation of the Factor/G+ interaction.
+
+\begin{table}[!htbp]\centering\small
+\caption{Anchor intervention: absolute C$\alpha$ pair-lDDT over three seeds.
+$L$ uses live residual factors; $Q$ uses round-matched query-only references.
+The unadapted baseline is common. Scores have four decimals; contrasts use
+unrounded values. Rotated means average the same two selected rotations.}
+\label{tab:anchor_absolute}
+\begin{tabular}{lrr}\toprule
+Condition & Live $L$ & Reference $Q$ \\\midrule
+\input{generated/anchor_means}
+\end{tabular}\end{table}
+
+\paragraph{Results and interpretation.}
+The two predeclared mean effects have negative point estimates and intervals
+including zero (Table~\ref{tab:anchor_pooled}). The expected average feedback
+benefit is not established. Table~\ref{tab:anchor_absolute} shows why the
+smaller $Q$ gap alone is insufficient evidence of useful compensation:
+it combines a Native decrease with a slight mean increase of Rotated.
+Neither corresponding average change has an interval excluding zero.
+Adaptation under $Q$ still works: Native exceeds query-only by
+\result{anchor_pair_native_Q_minus_query}
+[\result{anchor_pair_native_Q_minus_queryLo},
+\result{anchor_pair_native_Q_minus_queryHi}], and both rotated $Q$ arms
+retain positive adaptation intervals. Failure of the feedback prediction
+cannot therefore be explained by all reference-anchor models losing their
+adaptation benefit.
+
+\begin{table}[!htbp]\centering\small
+\caption{Pooled anchor contrasts. Positive $T_A$ means a larger direction
+cost under $Q$; positive $B_R^{\mathrm{anchor}}$ favors live anchors for the
+rotated arm. Intervals are conditional target intervals, unadjusted.
+Sign counts use effects averaged over paired seeds and rotations per target.}
+\label{tab:anchor_pooled}
+\begin{tabular}{llrrr}\toprule
+Metric & Contrast & Mean & 95\% interval & Positive \\\midrule
+\input{generated/anchor_pooled}
+\end{tabular}\end{table}
+
+The individual rotations respond in opposite directions
+(Table~\ref{tab:anchor_individual}): r20270107 favors reference anchors,
+whereas r20270104 has a positive live-anchor benefit and nearly zero $T_A$.
+The latter benefit's pair-lDDT interval starts at only
+\result{anchor_pair_r2_B_R_live_minus_QLo}. These unadjusted secondary
+comparisons do not establish the average hypothesis or a general
+rotation-by-anchor heterogeneity rule; no direct heterogeneity test was
+specified. Pooled supplementary-metric intervals likewise include zero.
+The results establish neither equivalence nor a universal harm from live
+anchors. They leave E1's failed ranking and E2's useful mean intervention
+unchanged. Because $C$ is absent, they do not test whether its benefit
+depends on live anchors, nor isolate expressivity as the unique mechanism.
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Both selected rotations in the anchor intervention. These secondary
+intervals use the same target draws without joint correction. The very small
+positive endpoint is retained in scientific notation rather than rounded to zero.}
+\label{tab:anchor_individual}
+\begin{tabular}{lllrr}\toprule
+Metric & Rotation & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/anchor_individual}
+\end{tabular}\end{table}
+
+\paragraph{Execution record and reproduction scope.}
+All nine training runs, 13,824 updates and 864 new predictions completed with
+no formal prediction failures. The 192 training/evaluation reference caches
+were certified by 384 query-only forwards at two seeds, with equal factors
+and coordinates and preserved RNG state. Training and evaluation caches
+remain separate. The final reference is pinned during backward checkpoint
+recomputation; 27 saved-node reference replays passed. The engineering
+amendment retains an earlier failed bitwise next-update check and separately
+checks exact saved-state/forward replay and a common-gradient AdamW update;
+it does not claim strict full-model trajectory equivalence. Formal scientific
+settings and source files were unchanged.
+
+The archived execution audit independently rescored 1,824 raw-coordinate
+primary scores and parsed the saved TM-score outputs. The accompanying
+artifact bundles all 1,824 score records, the protocol, source snapshots,
+audit receipts and analysis definitions. Its verifier reconstructs all 42
+paired contrasts, target arrays, seed marginals and intervals, and checks
+the identity above. CPU tests exercise the actual anchor hook's preserved
+baseline, round selection and backward replay. These local checks do not
+regenerate coordinates, rerun the TM-score binary or reproduce full training.

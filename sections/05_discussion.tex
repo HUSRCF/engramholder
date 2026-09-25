@@ -1,40 +1,43 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-The findings separate three questions. Trained four-cell controls establish
-parameterization-dependent sensitivity in specified Protenix and OpenFold
-recipes. Within Factor, shared orthogonal compensation provides a useful
-average intervention. Neither finding supplies a reliable predictor of direction
-cost or implies that Factor is the better head: Protenix favors Native over G+,
-while some OpenFold comparisons favor G+. Protenix's observed-panel support
-does not replace OpenFold's unestablished Fresh96 primary interaction.
+Four-cell controls establish parameterization-dependent sensitivity in specified
+Protenix and OpenFold recipes; shared orthogonal compensation yields useful
+average mitigation within Factor. Neither result predicts direction cost or
+guarantees competitiveness: Protenix favors Native over G+, while some OpenFold
+comparisons favor G+. Observed-panel support does not replace the unestablished
+Fresh96 primary interaction.
 
-These controls narrow different explanations. Dense rotations, signed
-permutations and the mean-preserving E1/E2 family are distinct transformations.
-Signed-permutation compatibility with ideal AdamW does not establish strict
-FP32 trajectory correspondence. E2 tests Factor's direction cost, not elimination
-of the original Factor/G+ interaction. Its output freedom and joint optimization
-change together; the result identifies neither a learned inverse nor expressivity
-as the unique cause. Across-head controls additionally change nonlinearities and
-residue/pair organization; no function-class inclusion has been proved.
+Dense rotations, signed permutations and mean-preserving E1/E2 rotations address
+distinct explanations. Signed-permutation compatibility with ideal AdamW does
+not establish strict FP32 trajectory correspondence.
+E2 changes output freedom and joint optimization together; it identifies neither
+a learned inverse nor expressivity as the unique cause, and does not establish
+elimination of $\Psi$. Across-head controls also change nonlinearities and
+residue/pair organization, without proved function-class inclusion.
 
 The eight-rotation teacher-reconstruction predictor failed
 ($\rho=\result{e1_ca_lddt_x_rho}$, exact one-sided
 $p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). E2 does not rescue
-that ranking. Norm exchange limits a global-scale explanation without separating
-learned content and local magnitudes. Local compatibility, small equal-norm
+that ranking. Norm exchange constrains global-scale explanations, leaving
+content and local magnitudes coupled. Local compatibility, small equal-norm
 learned directions and bounded shared-transfer diagnostics retain their
-negative boundaries (Appendix~\ref{app:mechanisms}).
+negative boundaries (Appendix~\ref{app:mechanisms}). A separately retrained
+comparison with recycle-matched query-only references did not support the
+predicted average benefit of live residual anchors to rotated Factor; the two
+selected rotations responded in opposite directions
+(Appendix~\ref{app:anchor_intervention}). This intervention contains no $C$,
+leaving whether $C$'s benefit depends on live anchors untested.
 
-ESMC improves quality without establishing a change in direction sensitivity;
-family, width, precision and projection size change together. AtlasFold adds no
+ESMC improves quality without establishing changed direction sensitivity;
+family, width, precision and projection size vary together. AtlasFold adds no
 established adaptation benefit. Input complementarity and downstream use remain
-candidate explanations, not selection rules.
+candidate explanations.
 
-Intervals condition on fitted models and limited rotations, excluding full
+Intervals condition on fitted models and rotations, excluding
 retraining and research-selection uncertainty; follow-ups lack joint correction.
-The Dev8 curves do not establish convergence. Reused panels, one inference sample,
-specified backend differences and incomplete historical exposure limit scope.
+Dev8 curves do not establish convergence. Reused panels, one inference sample,
+backend differences and incomplete exposure records limit scope.
 Sequence screening guarantees neither family nor foundation-model isolation.
-Cross-predictor comparisons also change losses and interfaces, and gaps to native
-single-sequence systems limit deployment claims. These results motivate evaluating
-output freedom and task training alongside local spectra, within explicit budgets.
+Cross-predictor comparisons change losses and interfaces; gaps to native
+single-sequence systems limit deployment claims. Evaluation should consider
+output freedom and task training alongside local spectra under explicit budgets.

@@ -5,11 +5,12 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v9 input lock contains 93 source files and 1,522 generated numerical
-fields. All 1,518 previously integrated raw values and scientific source mappings are unchanged; four
-post-hoc target-distribution fields add medians and positive counts for E2. The
-319 fields added in the preceding revision cover
-the completed compensation, signed-permutation and developmental checkpoint studies.
+full-inference source/norm cells and contrasts. The active v10 input lock contains
+121 source files and 1,617 generated numerical fields. All 1,522 previously
+integrated values, display formats and scientific source mappings are unchanged;
+95 fields add the completed residual-anchor intervention. The earlier additions
+cover compensation (including explicitly post-hoc target-distribution summaries),
+signed permutations and developmental checkpoint studies.
 Absolute structure scores are displayed to four decimals (168 formatting-only
 changes); effects, intervals, p-values and diagnostic errors retain their original
 precision. The interaction violins use paired per-target effects, not bootstrap
@@ -26,6 +27,11 @@ checkpoint verifier reconstructs 18 contrasts from 3,600 records and 72 contrast
 from 1,160 records, respectively, preserving each original bootstrap stream.
 Ideal signed-coordinate AdamW compatibility is not a demonstrated full-model
 FP32 trajectory equivalence; the Dev8 curves do not establish convergence.
+The [anchor-intervention verifier and source bundle](anchor_intervention/README.md)
+add all 1,824 model–target score records and reconstruct 42 paired contrasts.
+The expected mean benefit of live residual anchors was not established. This
+independently retrained intervention preserves the live baseline and recycling,
+uses four round-matched query-only reference anchors, and contains no C.
 It additionally reconstructs 216 A66 and 18 Protenix Train96 contrasts from
 14,112 and 2,400 score records, including target bootstrap and model marginals.
 A66 prespecifies ESMC Factor-minus-Rotated on Confirm96-B per backbone; its
@@ -47,6 +53,8 @@ python tests/test_single_prediction_score.py
 python tests/test_e1_prediction.py
 python tests/test_e2_intervention.py
 python tests/test_signed_and_curves.py
+python scripts/verify_anchor_intervention.py
+python tests/test_anchor_intervention.py
 python reproducibility/operator_smoke.py
 python reproducibility/compensation/smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex

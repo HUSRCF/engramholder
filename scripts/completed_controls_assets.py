@@ -30,12 +30,12 @@ def build(data, number, contrast, tex, save_rows, interval):
     rotations = [data['e1_prediction_lock']['selected_low'], data['e1_prediction_lock']['selected_high']]
     for metric, ms, ml in METRICS:
         base = ['metrics', metric]
-        for name, display in [('native_change', r'$B_N$'), ('B_R', r'$B_R$'), ('T_C', r'$T_C$')]:
+        for name, display in [('native_change', r'$B_N$'), ('B_R', r'$B_R^{C}$'), ('T_C', r'$T_C$')]:
             key = f'e2_{ms}_{name}'
             contrast(key, 'e2_intervention_summary', base + [name])
             e2_rows.append([ml, 'Two-R mean' if name != 'native_change' else 'Native', display, tex(key), interval(key)])
         for i, rid in enumerate(rotations, 1):
-            for name, display in [('B_R', r'$B_R$'), ('T_C', r'$T_C$')]:
+            for name, display in [('B_R', r'$B_R^{C}$'), ('T_C', r'$T_C$')]:
                 key = f'e2_{ms}_r{i}_{name}'
                 contrast(key, 'e2_intervention_summary', base + ['per_rotation', rid, name])
                 e2_rows.append([ml, rid, display, tex(key), interval(key)])

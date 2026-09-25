@@ -1,0 +1,111 @@
+{
+  "before_state_equal": true,
+  "before_opt_equal": true,
+  "forward": {
+    "x": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "pair": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "g": {
+      "exact": false,
+      "relative": 6.350186197214839e-10,
+      "maxabs": 3.637978807091713e-12
+    }
+  },
+  "losses": [
+    2.2437334060668945,
+    2.2437334060668945
+  ],
+  "feature_hash": [
+    "ceb469e583f13315e393a633407630e21c74d95950d3cbfc8680e3e3f724cc72",
+    "ceb469e583f13315e393a633407630e21c74d95950d3cbfc8680e3e3f724cc72"
+  ],
+  "parameters": {
+    "rotation": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "encoder.embedding.weight": {
+      "exact": false,
+      "relative": 2.865611632742924e-09,
+      "maxabs": 3.725290298461914e-09
+    },
+    "encoder.embedding.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "encoder.convolutions.0.weight": {
+      "exact": false,
+      "relative": 1.894714979493244e-09,
+      "maxabs": 3.725290298461914e-09
+    },
+    "encoder.convolutions.0.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "encoder.convolutions.1.weight": {
+      "exact": false,
+      "relative": 9.598727394655062e-10,
+      "maxabs": 3.725290298461914e-09
+    },
+    "encoder.convolutions.1.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "encoder.convolutions.2.weight": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "encoder.convolutions.2.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "encoder.global_projection.weight": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "output_head.0.weight": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "output_head.0.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "output_head.1.weight": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "output_head.1.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "output_head.3.weight": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    },
+    "output_head.3.bias": {
+      "exact": true,
+      "relative": 0.0,
+      "maxabs": 0.0
+    }
+  }
+}

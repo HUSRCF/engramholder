@@ -143,17 +143,17 @@ Condition & Without $C$ & With $C$ & Own change & 95\% CI for change \\\midrule
 \input{generated/e2_means}
 \end{tabular}\end{table}
 
-Let $B_N=S(N+C)-S(N)$ and $B_R=S(R+C)-S(R)$, with $B_R$ averaged over the two rotations.
-The predeclared mean $B_R=\result{e2_pair_B_R}$
+Let $B_N=S(N+C)-S(N)$ and $B_R^{C}=S(R+C)-S(R)$, averaging $B_R^{C}$ over both rotations.
+The predeclared mean $B_R^{C}=\result{e2_pair_B_R}$
 [\result{e2_pair_B_RLo}, \result{e2_pair_B_RHi}] exceeds Native's improvement
 $B_N=\result{e2_pair_native_change}$ (Table~\ref{tab:e2_absolute}).
 The mean reduction in direction cost is
-$T_C=B_R-B_N=\result{e2_pair_T_C}$
+$T_C=B_R^{C}-B_N=\result{e2_pair_T_C}$
 [\result{e2_pair_T_CLo}, \result{e2_pair_T_CHi}]. Unlike $\Psi$, which compares
 Factor with G+, $T_C$ tests the effect of adding $C$ within Factor.
 Native also improves, so the smaller mean gap is not produced by harming it.
 
-For effects averaged within each target, descriptively, $B_R>0$ for
+For effects averaged within each target, descriptively, $B_R^{C}>0$ for
 \result{e2_pair_B_R_count_positive}/96 targets (median
 \result{e2_pair_B_R_median}), whereas $T_C>0$ for
 \result{e2_pair_T_C_count_positive}/96 (median \result{e2_pair_T_C_median}).

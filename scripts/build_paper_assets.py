@@ -41,6 +41,17 @@ SOURCES += ['e2_intervention_summary', 'e2_intervention_records', 'e2_interventi
             'checkpoint_curves_complete', 'checkpoint_curves_execution_lock', 'checkpoint_curves_protocol']
 SOURCES += ['e2_intervention_prespecified_analysis', 'e2_intervention_prespecified_design',
             'openfold_train96_records']
+SOURCES += ['e3_anchor_summary', 'e3_anchor_records', 'e3_anchor_new_records',
+            'e3_anchor_execution_lock', 'e3_anchor_complete', 'e3_anchor_runtime_audit',
+            'e3_anchor_statistical_readback', 'e3_anchor_acceptance', 'e3_anchor_references',
+            'e3_anchor_engineering_amendment', 'e3_anchor_resume_diagnosis']
+ANCHOR_SOURCES = ['reproducibility/anchor_intervention/'+name for name in
+                 ['protocol.md', 'acceptance.md', 'per_target.csv', 'runtime_audit.py',
+                  'statistical_readback.py', 'engineering_amendment.md']]
+ANCHOR_SOURCES += ['reproducibility/anchor_intervention/archived/'+name for name in
+                  ['analyze.py', 'cpu.sh', 'e3_common.py', 'job.sh', 'parent_core.py',
+                   'query_anchor.py', 'references.py', 'run.py', 'scoring.py',
+                   'smoke.py', 'test_query_anchor.py']]
 
 def read(file, path):
     x = DATA[file]
@@ -134,7 +145,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--init-lock',action='store_true');args=p.parse_args()
     OUT.mkdir(exist_ok=True);FIG.mkdir(exist_ok=True)
     hashes={f'evidence/{f}.json':hashlib.sha256((ROOT/'evidence'/f'{f}.json').read_bytes()).hexdigest() for f in SOURCES}
-    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v9.lock.json'
+    hashes.update({name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ANCHOR_SOURCES})
+    lock=ROOT/'notes/writing_branch_20260922/paper_sources.v10.lock.json'
     if args.init_lock:
         if lock.exists(): raise FileExistsError('Input lock exists; do not overwrite')
         lock.write_text(json.dumps(hashes,indent=2)+'\n')
@@ -150,6 +162,8 @@ def main():
     from verify_signed_and_curves import verify as verify_sc
     e2_audit=verify_e2(ROOT)
     sc_audit=verify_sc(ROOT)
+    from verify_anchor_intervention import verify as verify_anchor
+    anchor_audit=verify_anchor(ROOT)
     from analyze_openfold_followups import calculate
     followup_audit=calculate(ROOT)
     assert followup_audit==DATA['openfold_followup_analysis']
@@ -398,6 +412,8 @@ def main():
         number('e1_target_rho'+name,'e1_prediction_summary',['metrics','ca_lddt','target_bootstrap_X_rho','ci95',i],signed=True)
     from completed_controls_assets import build as build_controls
     build_controls(DATA, number, contrast, tex, save_rows, interval_cell)
+    from anchor_intervention_assets import build as build_anchor
+    build_anchor(DATA, number, contrast, tex, save_rows, interval_cell)
     # All text/table numerical macros derive from these same sources.
     (OUT/'numbers.tex').write_text('% Generated; edit sources/script, not numbers.\n'+''.join(r'\expandafter\def\csname data:'+k+r'\endcsname{'+v['formatted']+'}\n' for k,v in CELLS.items()))
     (OUT/'main_table_rows.tex').write_text('% Generated from fixed source hashes.\n'+'\n'.join(' & '.join([model,panel,*[tex(k) for k in keys],g])+r' \\' for model,panel,keys,g in rows)+'\n')
@@ -411,7 +427,7 @@ def main():
         p=OUT/(table+".tex");p.write_text(p.read_text()+r"\bottomrule"+"\n")
     key_audit=validate_numeric_keys(ROOT,CELLS)
     draw_figures(scope)
-    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit},indent=2)+'\n')
+    (OUT/'cell_sources.json').write_text(json.dumps({'inputs':hashes,'cells':CELLS,'verified_esmc_A_contrasts':esmc_audit['verified_contrasts'],'verified_raw_system_metric_means':checks,'verified_target_interactions':interaction_checks,'verified_new_protenix_contrasts':pt_checks,'verified_full_cross_cells_and_contrasts':cross_checks,'numeric_key_audit':key_audit,'pending':[],'unrun':[], 'verified_diamondhill':dh_audit,'verified_e1_prediction':e1_audit,'verified_e2_intervention':e2_audit,'verified_signed_and_curves':sc_audit,'verified_anchor_intervention':anchor_audit},indent=2)+'\n')
     print(f'Generated {len(CELLS)} numeric fields; checked {checks} raw-score system/metric means.')
 
 def draw_figures(scope):
