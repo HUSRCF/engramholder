@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Design arithmetic, parent audit bindings and unchanged manuscript inputs; no GPU validation",
+  "four_cell_task_counts": {
+    "factor_native": 3,
+    "factor_rotated": 9,
+    "generic_plus_native": 3,
+    "generic_plus_rotated": 9
+  },
+  "continuation_updates": 36864,
+  "main_predictions": 9408,
+  "all_budgeted_predictions": 10084,
+  "historical_inputs_unchanged": 349,
+  "numeric_fields_unchanged": 1860,
+  "gpu_jobs_submitted": false
+}

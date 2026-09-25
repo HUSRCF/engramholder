@@ -2,6 +2,8 @@
 
 **当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v13**，共 **1,860** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
+**新增待审方案：** [Protenix／ESMC 四格预算检查](reports/protenix_fourcell_budget_plan_20260926.md)。24 条续训由1536延至3072，唯一主要量为最终Ψ，直接配对预算差为次要量；同环境重放父模型，保留Fresh192已观察身份。CPU已核验全部24对task／resume及优化器、顺序；尚未运行GPU工程或提交训练。正文、v13及1860数值不变。
+
 **最新 Atlas 信息读出收口：** [审阅与整合](reports/atlas_probe_integration_20260926.md)。九组 probe 的主要 Dev8 增益未建立，六个 ESMC 观测保留“状态改变、结构响应较弱”的边界；不能据此证明冗余。主文不扩展，现有附录只补一短段，[完整主次比较与记录](reproducibility/atlas_followup/complementarity/README.md)进入补充材料。旧266输入、1851数值对象不变；[当前PDF](build/feedback_v46_atlas_probe/paper.pdf)、[更新补充包](build/anonymous_atlas_probe_v46.zip)。没有新训练或新的接口承诺。
 
 **最新 Atlas 边界收口：** [整合与核验](reports/atlas_boundary_integration_20260926.md)。主文仅增一句，附录用五行表格报告两条链的传播定位及既有 Native-only 通道校准阴性结果；完整图和记录进入[补充材料](reproducibility/atlas_followup/README.md)。旧204输入、1830数值对象不变；新增62输入、21字段。复算、编译及新增表格局部检查通过；[当前PDF](build/feedback_v45_atlas_boundary/paper.pdf)、[更新补充包](build/anonymous_atlas_boundary_v45.zip)。最终篇幅和全稿验收仍留到收尾，没有新增训练或接口承诺。

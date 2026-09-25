@@ -1,0 +1,7 @@
+{
+  "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/train_interface_control.py": "37aef30f7b067a4b2abe48b3e8769ffca8e61e0d9ce0bd1bdbd030dcd11677a6",
+  "/home/husrcf/Code/onestepfold/engramfold/reports/diamondhill_plm_A_20260923/staging/train_protenix_plm.py": "846f72ed16bebec2e3d462841bd9ed03c96b8ce2af8e3710e9660e9b8db1c0a3",
+  "evidence/protenix_fresh192_model_lock.json": "1ffe5b468d2bcd891a2eb66affa5b2cc65ada910f580dfeb54e91f070340d053",
+  "evidence/protenix_fresh192_inference_manifest.json": "4a138328c4f51344d300ee3b79cec284e8fda0f64628932786500b2ac6762d0c",
+  "evidence/protenix_fresh192_execution_lock.json": "084b55643245390e6eb5924cc86a400bf7c909f488b7300a47403dbdacd08079"
+}
