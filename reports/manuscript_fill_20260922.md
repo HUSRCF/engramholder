@@ -4,12 +4,12 @@
 
 | 项目 | 当前状态 |
 |---|---|
-| 当前反馈版 | `main`匿名；本轮在`d64bd84`训练定义修订后补入事后数值定位。作者资料不提交。 |
+| 当前反馈版 | `main`匿名；本轮基于`64f23d6`统一外积记号。作者资料不提交。 |
 | 科学更新 | [联合整合报告](fresh192_retraining_integration_20260925.md)：Fresh192唯一主要Ψ得到支持；E2重训练保留旋转收益，但额外缓解T_C未重新建立。原结果与重训练分开，不合并为新种子。 |
-| 稿件呈现 | [训练定义](training_definition_revision_20260925.md)已补齐；[补偿诊断](compensation_numerical_diagnosis_20260925.md)更新S.1的初值审计与短程边界。原完整重复的统计结论保持。 |
+| 稿件呈现 | [外积记号](outer_product_notation_20260925.md)统一decoder与残差展开；前轮训练定义、补偿诊断和完整重复的统计结论保持。 |
 | 来源与数值 | [v11锁](../notes/writing_branch_20260922/paper_sources.v11.lock.json)，204输入、1830字段。旧121输入哈希及1617完整数值对象不变；新增83输入、213字段。旧锁不覆盖。 |
-| 直接核验 | [本轮验证](../notes/writing_branch_20260922/draft_validation.compensation_diagnosis_20260925.json)：历史初值、日志及22次短程更新已核查；204输入、1830分数对象不变；编译与S.1局部视觉检查通过。 |
-| 当前PDF | [反馈版PDF](../build/feedback_v43_compensation_diagnosis/paper.pdf)，无未定义引用、重复标签、overfull或最终编译警告。最终篇幅与全稿验收留到收尾。 |
+| 直接核验 | [本轮验证](../notes/writing_branch_20260922/draft_validation.outer_product_20260925.json)：展平顺序与源码一致；204输入、1830分数对象不变；编译及公式视觉检查通过。 |
+| 当前PDF | [反馈版PDF](../build/feedback_v44_outer_product/paper.pdf)，无编译警告。最终篇幅与全稿验收留到收尾。 |
 | 匿名材料 | [v38补充材料](../build/feedback_v38/supplement.zip)是340文件的历史快照，尚未包含本轮文字。最终同版本PDF、补充材料和二进制匿名检查统一收尾；不沿用旧包作为当前稿件的验收声明。 |
 | 已完成任务 | P192、R2六条件／384更新、R3九组／13824更新／864预测均完成。相关协议、分数、实现身份与收据已纳入；不再列为待启动。 |
 | 已审阅、尚未纳入 | [同起点通道校准A+B](posttraining_calibration_review_20260925/interpretation.md)：33组／3744预测完成，69项原比较及30项已有补充汇总独立复算一致。两项主要优势未建立，OpenFold联合续训保留次要平均收益。本次只归档审阅，不改变正文、v11或匿名包。 |

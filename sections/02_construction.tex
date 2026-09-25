@@ -36,14 +36,16 @@ the intervention.
 \label{sec:full_tangent}
 For Protenix's bilinear decoder, write
 \begin{equation}
- G_D(a,b)_{ij}=\frac{D W\operatorname{vec}(a_i\otimes b_j)+b_{\rm out}}{D+\epsilon},
+ G_D(a,b)_{ij}=\frac{D W\operatorname{vec}(a_i b_j^\top)+b_{\rm out}}{D+\epsilon},
  \qquad \widetilde W=\frac{D}{D+\epsilon}W.
 \end{equation}
+Here $a_i$ and $b_j$ are column vectors; $\operatorname{vec}$ flattens their
+outer product in row-major order (the $b$ index varies fastest), matching $W$.
 The full residual is
 \begin{equation}
  \Delta U^{\rm full}_{ij}=\widetilde W\operatorname{vec}
- (\delta a_i\otimes b_{q,j}+a_{q,i}\otimes\delta b_j+
- \delta a_i\otimes\delta b_j).
+ (\delta a_i b_{q,j}^\top+a_{q,i}\delta b_j^\top+
+ \delta a_i\delta b_j^\top).
  \label{eq:full}
 \end{equation}
 The first-order, or tangent, construction omits the final quadratic term while
