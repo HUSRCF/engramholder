@@ -9,8 +9,8 @@
 | 活跃来源锁 | [paper_sources.v9.lock.json](../notes/writing_branch_20260922/paper_sources.v9.lock.json)，93份输入、1,522字段；前轮已增4项E2目标分布描述，本轮不增字段或改变原值／来源，仅修改168项显示格式。v8及此前旧锁保留。 |
 | 已纳入结果 | Protenix方向／长度／G+及两规模完整四格；OpenFold两规模／两PLM四格；AtlasFold两PLM四格；Fresh96；范数干预；E1阴性预测；E2共享补偿；带符号置换；Dev8三节点曲线。 |
 | 统计身份 | E2平均BR、TC在原书面设计与代码中预设，属于已观察面板机制对比。置换C96-B Ψ为该后续研究主要量。A66各底座主要量仍为C96-B ESMC Factor−Rotated，其Ψ等未统一校正；这些均不替代Fresh96。 |
-| 已完成但独立保留 | 六组共享重建和三底座18次几何／传播数值仍为独立报告；接口反馈分类已进入方法。 |
-| 其他独立工作 | B组、SGDM未纳入本稿，本入口不推断其队列进度。执行侧9月24日夜间已有E3独立正式启动记录，结果尚未纳入本文；E4未启动。本轮未核实时队列。 |
+| 已完成但独立保留 | 六组共享重建和三底座18次几何／传播数值仍为独立报告；接口反馈分类已进入方法。[E3验收审阅](e3_anchor_review_20260925.md)：9组／864次新预测完成，本轮从保存分数复算42项对比一致；现场anchor补偿的主要假说未获支持，尚未纳入正文／v9。 |
+| 其他独立工作 | B组、SGDM未纳入本稿，本入口不推断其队列进度。E3已收口，不追加配置；E4未启动。本轮未核实时队列。 |
 | 候选实施计划 | [Protenix新目标与E2重放](protenix_fresh_e2_replay_plan_20260925.md)：P192固定模型4,800预测；E2完整推理1,824预测＋有界训练入口验收，可选九组完整重训练分别计数。本轮未选目标、未提交新任务。 |
 | 前轮评审落实 | [E2正文与复现](e2_presentation_review_20260924.md)；[验证记录](../notes/writing_branch_20260922/draft_validation.e2_presentation_20260924.json)。四项目标分布为事后描述，原E2终点不变。主文9页、全文35页，无未定义引用／overfull；修改页已视觉检查，非全页人工验收。 |
 | 前轮检查 | [E2及评审落实](e2_completed_review_20260924/interpretation.md)；[验证JSON](../notes/writing_branch_20260922/draft_validation.completed_controls_v9.json)。数值复算与18项CPU测试通过；主文9页、全文35页，无未定义引用／overfull。修改正文与新增附录已视觉检查，非全页人工验收。 |
