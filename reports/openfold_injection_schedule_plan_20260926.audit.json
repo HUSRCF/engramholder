@@ -1,0 +1,148 @@
+{
+  "status": "PROPOSAL_NOT_IMPLEMENTED_NOT_SUBMITTED",
+  "review_date": "2026-09-26",
+  "plan_sha256": "7d6ef449f22f72fe302c2a4f4e24f7dca12cbba0832c79cdd7a442a033b5b81b",
+  "source_sha256": {
+    "../onestepfold/engramfold/src/engramfold/experiments/openfold_adapter_runtime.py": "19a97fa53c143e80586a927005e01039d580fa12be68684482f2d7cb27f5737a",
+    "../onestepfold/engramfold/src/engramfold/models/live_opm.py": "fd8ca8acaebb5c1bac181d68b97336275a57774a0ab26a0d481c513b7ce6f662",
+    "../onestepfold/engramfold/scripts/run_openfold_study.py": "953d73a3c31ef852cf3ac3df614bccac8d879ff40f8755a9b260a5ba8f93df5a",
+    "../onestepfold/engramfold/scripts/smoke_openfold_adapter.py": "71bc491ea623dde57d8be9cda10f5534bb38bbb4e70d10eb1db7ce3ca931b8f4",
+    "reproducibility/openfold_rotation_execution_lock.json": "bf2842c58d20acd06b263e84b85fec039ab7e0aa475409f9907d7ee1d20d5651",
+    "reproducibility/openfold_single/asset_manifest.json": "7fc3324044643df7ab3fa65e9b9d07b0c509ebfd2131609bc710633da540c565",
+    "reports/rotatable_gplus_audit.json": "61022ba1bf3037543781fcc5e01b1e7ce878deb4170cca2a83350ded75ea3324"
+  },
+  "upstream_revision": "be2ec1841f16c966c65ae0e7599ebbadc725757d",
+  "source_review_findings": {
+    "trunk_passes": 4,
+    "adapted_opm_block_zero_indexed": 0,
+    "historical_training_grad_enabled": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "sparse_injection_gradient_runtime_tested": false,
+    "first_only_needs_new_gradient_rule_for_retraining": true,
+    "rotation_handling": "Reuse existing Factor/G+ residual; no second output rotation"
+  },
+  "proposal": {
+    "formal_seeds": [
+      20260923,
+      20260924,
+      20260925
+    ],
+    "rotation_seeds": [
+      20261001,
+      20261002,
+      20261003
+    ],
+    "adapter_count": 24,
+    "checkpoint_updates": 1536,
+    "targets": 96,
+    "panel": "Confirm96-B",
+    "panel_status": "already_observed_followup",
+    "schedule_masks": {
+      "all": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "first": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "last": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "analyzed_adapter_conditions": [
+      {
+        "schedule": "single",
+        "pass_count": 1,
+        "mask": [
+          1
+        ]
+      },
+      {
+        "schedule": "all",
+        "pass_count": 2,
+        "mask": [
+          1,
+          1
+        ]
+      },
+      {
+        "schedule": "all",
+        "pass_count": 4,
+        "mask": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "schedule": "first",
+        "pass_count": 2,
+        "mask": [
+          1,
+          0
+        ]
+      },
+      {
+        "schedule": "first",
+        "pass_count": 4,
+        "mask": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "schedule": "last",
+        "pass_count": 4,
+        "mask": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "query_pass_counts": [
+      1,
+      2,
+      4
+    ],
+    "four_pass_trajectories": 7008,
+    "score_records": 14112,
+    "historical_conditions_replayed": 2400,
+    "new_condition_records": 11712,
+    "new_training_runs": 0,
+    "primary": "Psi(all,4) - Psi(first,4); CA pair-lDDT",
+    "bootstrap": {
+      "draws": 20000,
+      "seed": 20260926,
+      "unit": "target; average paired seeds and rotations first"
+    },
+    "unfunded_retraining_option": {
+      "runs": 72,
+      "updates": 110592,
+      "requires_new_gradient_contract": true
+    }
+  },
+  "validation": {
+    "relative_links_resolve": true,
+    "budget_arithmetic": true,
+    "gpu_jobs_submitted": [],
+    "new_prediction_outputs": 0,
+    "scientific_runtime_gates_passed": false
+  }
+}
