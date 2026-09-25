@@ -1,0 +1,1047 @@
+{
+  "schema": "engramfold.e2_posthoc_short_numerical_audit.v1",
+  "status": "complete",
+  "scientific_status": "Post-hoc Train-only diagnostic; original statistical endpoints and panel scores unchanged",
+  "historical_initialization": {
+    "pairs": 9,
+    "parameter_tensors_per_pair": 16,
+    "buffer_tensors_per_pair": 3,
+    "all_writer_tensors_numerically_equal": true,
+    "all_writer_tensor_bytes_equal": true,
+    "optimizer_equal": true,
+    "torch_cpu_rng_equal": true,
+    "torch_cuda_rng_equal": true,
+    "schedules_byte_equal": true,
+    "historical_rng_not_saved": [
+      "Python",
+      "NumPy"
+    ],
+    "cpu_reconstructions": 9,
+    "cpu_reconstructions_all_equal": true,
+    "first_logged_gradient_norm_difference_step": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "historical_checkpoints_available": [
+      0,
+      384,
+      768,
+      1536
+    ]
+  },
+  "old_engineering_without_and_with_C": {
+    "conditions": 6,
+    "without_C": 3,
+    "all_first_logged_gradient_difference_step": 3,
+    "same_allocation_sequential_processes": true
+  },
+  "short_trace": {
+    "direction": "identity",
+    "seed": 20260923,
+    "all_conditions_same_physical_gpu_verified_by_uuid": true,
+    "conditions": [
+      {
+        "condition": "historical",
+        "replicates": 2,
+        "updates_per_replicate": 3,
+        "total_updates": 6,
+        "completed": true,
+        "environment": {
+          "torch": "2.7.1+cu128",
+          "cuda": "12.8",
+          "cudnn": 90701,
+          "device": "NVIDIA H100 80GB HBM3",
+          "deterministic_algorithms": false,
+          "cudnn_enabled": true,
+          "cudnn_deterministic": false,
+          "cudnn_benchmark": false,
+          "matmul_tf32": false,
+          "cudnn_tf32": false
+        },
+        "optimizer_parameter_groups_equal": true,
+        "rng_states_equal": {
+          "torch": true,
+          "cuda": true,
+          "python": false,
+          "numpy": false
+        },
+        "steps": [
+          {
+            "step": 1,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.986572027206421,
+              1.986572027206421
+            ],
+            "gradient_norms": [
+              0.019439052790403366,
+              0.019439052790403366
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 2,
+            "all_captured_tensors_numerically_equal": false,
+            "all_captured_tensors_byte_equal": false,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.9190107583999634,
+              1.9190107583999634
+            ],
+            "gradient_norms": [
+              0.05481633171439171,
+              0.05481633171439171
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 5,
+                "byte_hash_differences": 5,
+                "max_relative_l2_fp64": 3.129537892846013e-09,
+                "max_absolute_fp64": 3.725290298461914e-09
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 5,
+                "byte_hash_differences": 5,
+                "max_relative_l2_fp64": 1.1250465003622319e-06,
+                "max_absolute_fp64": 3.725290298461914e-09
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 6,
+                "byte_hash_differences": 6,
+                "max_relative_l2_fp64": 9.024140921503814e-08,
+                "max_absolute_fp64": 3.637978807091713e-12
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 6,
+                "byte_hash_differences": 6,
+                "max_relative_l2_fp64": 9.024140921503814e-08,
+                "max_absolute_fp64": 3.637978807091713e-12
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 12,
+                "byte_hash_differences": 12,
+                "max_relative_l2_fp64": 1.3824720276871747e-07,
+                "max_absolute_fp64": 4.547473508864641e-13
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 3,
+            "all_captured_tensors_numerically_equal": false,
+            "all_captured_tensors_byte_equal": false,
+            "inputs_equal": true,
+            "loss_equal": false,
+            "losses": [
+              2.177755355834961,
+              2.17775559425354
+            ],
+            "gradient_norms": [
+              0.01804589480161667,
+              0.018046775832772255
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 5,
+                "byte_hash_differences": 5,
+                "max_relative_l2_fp64": 3.129537892846013e-09,
+                "max_absolute_fp64": 3.725290298461914e-09
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 16,
+                "byte_hash_differences": 16,
+                "max_relative_l2_fp64": 0.0006625525849049804,
+                "max_absolute_fp64": 1.622084528207779e-05
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 16,
+                "byte_hash_differences": 16,
+                "max_relative_l2_fp64": 0.0018428589797470714,
+                "max_absolute_fp64": 1.622084528207779e-05
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 16,
+                "byte_hash_differences": 16,
+                "max_relative_l2_fp64": 0.002394049429204754,
+                "max_absolute_fp64": 1.3922399375587702e-06
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 16,
+                "byte_hash_differences": 16,
+                "max_relative_l2_fp64": 0.002394049429204754,
+                "max_absolute_fp64": 1.3922399375587702e-06
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 32,
+                "byte_hash_differences": 32,
+                "max_relative_l2_fp64": 0.000805982865568896,
+                "max_absolute_fp64": 1.3923272490501404e-07
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 55,
+                "byte_hash_differences": 55,
+                "max_relative_l2_fp64": 1.7245385995092552e-07,
+                "max_absolute_fp64": 1.7881393432617188e-07
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 1,
+                "byte_hash_differences": 1,
+                "max_relative_l2_fp64": 7.22033337723194e-06,
+                "max_absolute_fp64": 0.0004749298095703125
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "condition": "deterministic_conv",
+        "replicates": 2,
+        "updates_per_replicate": 8,
+        "total_updates": 16,
+        "completed": true,
+        "environment": {
+          "torch": "2.7.1+cu128",
+          "cuda": "12.8",
+          "cudnn": 90701,
+          "device": "NVIDIA H100 80GB HBM3",
+          "deterministic_algorithms": false,
+          "cudnn_enabled": true,
+          "cudnn_deterministic": true,
+          "cudnn_benchmark": false,
+          "matmul_tf32": false,
+          "cudnn_tf32": false
+        },
+        "optimizer_parameter_groups_equal": true,
+        "rng_states_equal": {
+          "torch": true,
+          "cuda": true,
+          "python": false,
+          "numpy": false
+        },
+        "steps": [
+          {
+            "step": 1,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.986572027206421,
+              1.986572027206421
+            ],
+            "gradient_norms": [
+              0.019439052790403366,
+              0.019439052790403366
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 2,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.9190107583999634,
+              1.9190107583999634
+            ],
+            "gradient_norms": [
+              0.05481633171439171,
+              0.05481633171439171
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 3,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              2.17775559425354,
+              2.17775559425354
+            ],
+            "gradient_norms": [
+              0.018050452694296837,
+              0.018050452694296837
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 4,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              2.057171106338501,
+              2.057171106338501
+            ],
+            "gradient_norms": [
+              0.026972757652401924,
+              0.026972757652401924
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 5,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.8798099756240845,
+              1.8798099756240845
+            ],
+            "gradient_norms": [
+              0.011743608862161636,
+              0.011743608862161636
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 6,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              2.030616521835327,
+              2.030616521835327
+            ],
+            "gradient_norms": [
+              0.01768479309976101,
+              0.01768479309976101
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 7,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.6258087158203125,
+              1.6258087158203125
+            ],
+            "gradient_norms": [
+              0.03432692959904671,
+              0.03432692959904671
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          },
+          {
+            "step": 8,
+            "all_captured_tensors_numerically_equal": true,
+            "all_captured_tensors_byte_equal": true,
+            "inputs_equal": true,
+            "loss_equal": true,
+            "losses": [
+              1.9802392721176147,
+              1.9802392721176147
+            ],
+            "gradient_norms": [
+              0.026026468724012375,
+              0.026026468724012375
+            ],
+            "parts": {
+              "pre": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "post": {
+                "tensor_count": 19,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "updates64": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "clipped_gradients": {
+                "tensor_count": 16,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "optimizer": {
+                "tensor_count": 48,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "trace": {
+                "tensor_count": 65,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "coordinates": {
+                "tensor_count": 1,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              },
+              "torch_cuda_rng": {
+                "tensor_count": 2,
+                "numeric_differences": 0,
+                "byte_hash_differences": 0,
+                "max_relative_l2_fp64": 0.0,
+                "max_absolute_fp64": 0.0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "total_updates": 22,
+    "first_observed_difference": {
+      "step": 2,
+      "stage": "backward gradients among captured objects",
+      "parameter_names": [
+        "encoder.embedding.weight",
+        "encoder.embedding.bias",
+        "encoder.convolutions.0.weight",
+        "encoder.convolutions.0.bias",
+        "encoder.convolutions.1.weight",
+        "encoder.convolutions.1.bias"
+      ],
+      "max_per_tensor_relative_l2_fp64": 9.024140921503814e-08,
+      "gradient_tensors_different": 6,
+      "post_update_parameter_tensors_different": 5,
+      "forward_trace_coordinates_loss_and_torch_cuda_rng_equal": true
+    },
+    "original_scalar_comparison": [
+      {
+        "step": 1,
+        "original_loss": 1.986572027206421,
+        "repeat_loss": 1.986572027206421,
+        "original_gradient_norm": 0.019439052790403366,
+        "repeat_gradient_norm": 0.019439052790403366
+      },
+      {
+        "step": 2,
+        "original_loss": 1.9190107583999634,
+        "repeat_loss": 1.9190107583999634,
+        "original_gradient_norm": 0.05481633171439171,
+        "repeat_gradient_norm": 0.05481633171439171
+      },
+      {
+        "step": 3,
+        "original_loss": 2.177755117416382,
+        "repeat_loss": 2.17775559425354,
+        "original_gradient_norm": 0.01801927760243416,
+        "repeat_gradient_norm": 0.018048597499728203
+      }
+    ]
+  },
+  "limitations": [
+    "Only captured tensors were compared; native anchor factors, full residuals and all upstream activation gradients were not traced.",
+    "The deterministic cuDNN intervention removed observed differences in this two-trial eight-update prefix; it does not establish full-trajectory determinism or the unique cause of the original long-run endpoint change.",
+    "Detached CPU traces synchronize GPU work and change launch timing; the instrumented runs do not exactly recover historical trajectories.",
+    "Python and NumPy ambient RNG states differ across fresh processes; saved torch/CUDA RNG states match. The schedule uses a separately seeded local NumPy generator.",
+    "The unchanged contract verifier hashes all locked assets, including historical evaluation assets, solely for integrity; evaluation examples were not used for diagnostic training and panel scores were not read."
+  ],
+  "source_sha256": {
+    "historical_audit/history_audit.json": "4ff52aa88d205cac1ef456d18f38f03de25b2caa20106a095a386572cf474339",
+    "historical_audit/cpu_initialization.json": "1efc891000500ab7feafeb2fac770aa46f83c83f2a45404511dce5c8392f5771",
+    "historical_audit/engineering_early_logs.json": "6794abb95a19bdaaf0fd085e3fa2051ad58f695b87946e533dab320c587c5e29",
+    "historical_audit/trace_metadata_comparison.json": "4474023d1493d53ce8781943f1037ca5c9922f93b23a7ed06392716a4884c85d",
+    "historical_audit/gpu_trace.py": "59ba30048e7479d2db089f1ba76e3e8110910d9aa59499e23153062004bbd67f",
+    "historical_audit/gpu_trace_job.sh": "0329c9d2fc140a794ece9fead18d7903bc389263cae7614dedeee2b178c05f0a",
+    "historical_audit/traces_652340/historical/comparison_3.json": "43a7dfb6a029f4c28f05c437d5f8a9e9804ce6f1816a741c4c031f06eccec2f6",
+    "historical_audit/traces_652345/deterministic_conv/comparison_8.json": "8dc6ad6240cd93098fc36e5732ffd61588241c588b4b8e5ea8f67316129eb7a6",
+    "historical_audit/traces_652340/historical/trial_0/environment_3.json": "bce64cd14a9d707efce3b53c51ec3e485bf5b381c06f9b9966e55a3a7f37921d",
+    "historical_audit/traces_652345/deterministic_conv/trial_0/environment_8.json": "fcd504a5cde56f705e4791e54d241812421e24d64c078f13cc9605824f811d1a"
+  }
+}

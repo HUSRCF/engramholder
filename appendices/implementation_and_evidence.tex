@@ -1220,20 +1220,22 @@ with the original execution.
 
 \begin{table}[!htbp]\centering\footnotesize
 \caption{Compensation repeat: recorded common conditions and limits of the
-comparison. The parent execution lock, repetition lock, archived wrapper and
-run receipts distinguish intended recipe agreement from checked source/data
-identity and engineering replay. They do not identify the training divergence.}
+comparison. The parent execution lock, repetition lock, archived wrapper,
+run receipts and subsequent starting-state audit distinguish recipe agreement
+from checked tensor identity and engineering replay. These checks do not
+causally explain the full-training score difference.}
 \label{tab:e2_execution_conditions}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}p{.15\linewidth}p{.43\linewidth}p{.36\linewidth}@{}}\toprule
 Aspect & Recorded agreement & Remaining limit \\\midrule
 Data / order & Original Train96, hashed input files and seed-derived task schedule;
 1536 updates. & No claim of identical numerical states along the formal trajectories. \\
-Initialization & Same three seeds; zero head output, $C=I$; the repeat forbids
-loading a parent trained checkpoint. & No cross-execution initial-tensor audit is claimed. \\
+Initialization & Same three seeds; zero head output, $C=I$; a later audit finds
+identical saved writer tensors, optimizer states and Torch/CUDA RNG states.
+& Starting-state equality does not ensure equal numerical trajectories. \\
 Source & Same parent lock and accepted diagnostic-repair runner/amendment;
-the repeat wrapper is separately hashed. & The first diverging formal update or
-operation is not localized. \\
+the repeat wrapper is separately hashed. & Early formal logs differ; the original
+intermediate tensors were not retained to identify their first divergent operation. \\
 Weights / features & Parent hashes bind frozen AF2 weights, backbone state,
 rotation arrays and cached ESM2 inputs. & Features are reused, not freshly extracted. \\
 Software / device & Parent contract checks Torch 2.7.1+cu128, H100, TF32 off
@@ -1259,6 +1261,34 @@ exact masked FP32 coordinate recovery and identical values for all three
 scores. This is a completed training execution and coordinate-scoring check;
 public fresh-feature replay remains a distinct deliverable.
 
+\paragraph{Post-hoc starting-state and numerical audit.}
+A subsequent comparison of the stored starting checkpoints found identical
+writer parameters and buffers, optimizer configuration and state, saved
+Torch CPU/CUDA random states, learning rates and data positions across all
+nine original/repeated pairs; the complete target schedules also matched.
+Python/NumPy global RNG states were not recorded in these historical
+checkpoints. Matching early log scalars did not establish matching hidden
+tensors. The new workers also had different ambient Python/NumPy states;
+their recorded Torch/CUDA states and actual input hashes matched.
+Two three-update replays of one Native+$C$ condition on the same
+physical H100, with the original loss and optimizer, first exposed differences
+in encoder parameter gradients during the second backward pass, while the captured forward activations,
+coordinates and loss still agreed. With cuDNN benchmarking and TF32 disabled
+in both settings, enabling deterministic cuDNN eliminated the observed
+between-replay differences in a separate pair extended to eight updates
+with checkpoint restoration after update three, including the captured
+gradients, parameters and optimizer tensors. Diagnostic summaries, source
+hashes and capture boundaries accompany the artifact in
+\texttt{reproducibility/compensation\_diagnosis/}.
+
+This is an instrumented, post-hoc numerical diagnosis, not a full-budget
+repeat or a new estimate of compensation benefit. Tensor copies introduce
+synchronization, and the trace does not cover every backbone intermediate
+or adjoint. It supports a controllable source of early numerical variability
+under the tested execution, without uniquely locating a kernel in the
+historical trajectories, explaining their final effect-size difference,
+or establishing deterministic full training. No original run is replaced.
+
 The repeated rotated-arm gain is positive, but Native now improves by
 \result{e2rep_pair_native_change}
 [\result{e2rep_pair_native_changeLo}, \result{e2rep_pair_native_changeHi}].
@@ -1270,7 +1300,8 @@ result, but its relative advantage over Native has not been re-established
 by the complete repeat. This does not prove zero mitigation, statistically
 different population effects between executions, or a particular cause for
 the training divergence. No run is replaced and no favorable executions are
-selected or averaged together. The specific divergence source remains unresolved.
+selected or averaged together. The full-training outcome variation has not
+been causally attributed.
 
 \begin{table}[!htbp]\centering\footnotesize
 \caption{All 21 compensation contrasts in the repeated execution, with the

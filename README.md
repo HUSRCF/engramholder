@@ -2,6 +2,8 @@
 
 **当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v11**，共 **1,830** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
+**最新补偿数值诊断：** [初值核对与短程定位](reports/compensation_numerical_diagnosis_20260925.md)。九对起点张量一致；同卡短程在第二步反传捕获差异，确定性cuDNN对照的两次八步路径一致。附录S.1区分这一局部定位与未解决的完整收益重复性；原204输入、1830分数字段不变。[当前PDF](build/feedback_v43_compensation_diagnosis/paper.pdf)供反馈。
+
 **最新训练定义修订：** [源码核对与训练定义](reports/training_definition_revision_20260925.md)。补齐卷积编码器、Factor/G+层序、初始化及构造随机流，并明确普通旋转允许反射的QR采样规则。204输入、1830数值不变；构造核验、3项数值键测试、编译和局部视觉检查通过。[当前PDF](build/feedback_v42_training_definition/paper.pdf)供反馈，最终验收留到收尾。
 
 **最新引用修订：** [引用修订与来源核验](reports/citation_revision_20260925.md)。补齐BLAST+、Holm、Adam、PDB、CATH、OFT与指数映射来源，四篇文献更新为正式会议版本；21条文献全部被引用。修正姓名和引用归属，区分CATH两类版本，并明确PDB原始下载日期未记录。204输入、1830数值不变；编译、引用检查及局部视觉检查通过。[当前PDF](build/feedback_v41_citations/paper.pdf)供反馈，最终验收留到收尾。

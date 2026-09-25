@@ -1,0 +1,12 @@
+{
+  "schema": "engramfold.compensation_diagnosis_artifact.v1",
+  "scope": "Separate post-hoc numerical audit; original v11 score inputs unchanged",
+  "original_history_audit_sha256": "4ff52aa88d205cac1ef456d18f38f03de25b2caa20106a095a386572cf474339",
+  "history_path_redaction": "Only absolute experiment-root identity replaced by EXPERIMENTS_ROOT",
+  "files": {
+    "README.md": "4652c2fea40247010267233bafe5f4c21838c53cc54601faa5056a35324238cc",
+    "archived/gpu_trace.py": "59ba30048e7479d2db089f1ba76e3e8110910d9aa59499e23153062004bbd67f",
+    "compact_summary.json": "bc5e46fabe7224aecd8ce6a417347eac0e000f487e0cff027da16998cb28afae",
+    "historical_starting_state_audit.json": "cca278ab40a5f7d2e56876cc1df5a10d278e0dc8372ee39b19277c41a4828a27"
+  }
+}
