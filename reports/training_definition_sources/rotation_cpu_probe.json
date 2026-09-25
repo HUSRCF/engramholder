@@ -1,0 +1,40 @@
+{
+  "torch": "2.12.0a0+git78258b9",
+  "numpy": "2.5.2",
+  "threads": 1,
+  "rows": [
+    {
+      "seed": 20261001,
+      "sha256": "ad5431b5f729517f7a1226cb00f2f93d0b52fe5d3d9a57cd4f3dcab9a60d08df",
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "determinant": 0.9999999794797494,
+      "orthogonality_max_abs": 2.573202029232391e-08,
+      "torch_global_rng_unchanged": true,
+      "numpy_global_rng_unchanged": true,
+      "independent_of_global_seed": true
+    },
+    {
+      "seed": 20261002,
+      "sha256": "354c43014e7e1e27eef7c4de0994c0b6e62bbe76640a5bba19d1964eb2c84fd8",
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "determinant": -0.9999999881485119,
+      "orthogonality_max_abs": 2.8181924793813096e-08,
+      "torch_global_rng_unchanged": true,
+      "numpy_global_rng_unchanged": true,
+      "independent_of_global_seed": true
+    },
+    {
+      "seed": 20261003,
+      "sha256": "5579c9af856a23f6b43989634cac3a814d6180086042903d9d3507eb6945a0b3",
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "determinant": 0.9999999924947554,
+      "orthogonality_max_abs": 1.9905468828795847e-08,
+      "torch_global_rng_unchanged": true,
+      "numpy_global_rng_unchanged": true,
+      "independent_of_global_seed": true
+    }
+  ]
+}

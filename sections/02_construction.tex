@@ -16,8 +16,11 @@ cached query update. We define
  U^{(R)}_{k,t}&=U_{k,t,0}+\mathcal R_k\Delta U_{k,t}.\label{eq:injection}
 \end{align}
 The last predictor affine layer has zero weights and bias, giving zero residual
-and exactly the unadapted initial function. The sequence encoder remains
-nonzero. Only the adapter is optimized; gradients propagate through the frozen
+and exactly the unadapted initial function. The sequence encoder retains its
+default initialization. Its three residual convolution layers, sequence-mean
+projection, head dimensions, and seeded constructor order are specified in
+Appendix~\ref{app:adapter_definition}. Only the adapter is optimized;
+gradients propagate through the frozen
 folding model. Query factors provide the composition anchors, rather than
 structure labels as predictor inputs.
 
@@ -61,6 +64,8 @@ not the baseline update or protein-coordinate axes. Labels are identical across
 arms. Native uses $R=I$. Each rotated adapter
 starts from zero residual and receives task training, so the experiment does
 not perturb an already trained native adapter at inference time.
+Appendix~\ref{app:rotation_sampling} specifies the ordinary QR sampler,
+its separate random stream, and the implementation's multiplication convention.
 Within the same head at matched factors and parameters, orthogonality preserves residual norms,
 decoder singular values and the local writer's $J^\top J$. It need not preserve
 its composition with the frozen downstream Jacobian, AdamW dynamics, or norms

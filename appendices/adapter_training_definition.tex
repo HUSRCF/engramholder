@@ -1,0 +1,86 @@
+\subsection{Encoder, heads, and initialization}
+\label{app:adapter_definition}
+For one complete sequence of length $L$, let $e_i\in\mathbb R^d$ be the
+aligned frozen feature at residue $i$, with $d=480$ for ESM2 and $d=1152$
+for ESMC. Each fitted head has its own trainable encoder; parameters are
+shared over residues and interface calls within that head. The encoder is
+\begin{align}
+ h_i^{(0)}&=P e_i+p, &&P\in\mathbb R^{128\times d},\\
+ h^{(\ell)}&=h^{(\ell-1)}+
+   \operatorname{GELU}\!\left(\operatorname{Conv1d}_{\ell}
+   (h^{(\ell-1)})\right), &&\ell=1,2,3,\\
+ h_i&=h_i^{(3)}+V\left(\frac{1}{L}\sum_{j=1}^{L}h_j^{(3)}\right),
+ &&V\in\mathbb R^{128\times128}.
+\end{align}
+Each convolution has 128 input and output channels, kernel size 5, stride
+and dilation 1, groups 1, zero padding of 2, and a bias. The global projection
+$V$ has no bias; its output is broadcast to all residues. There is no
+encoder normalization, dropout, or positional embedding. The sequence mean
+uses all $L$ aligned residues, including when residual pairs are evaluated
+in chunks. GELU uses the exact, non-tanh implementation.
+
+Factor maps each $h_i$ through
+$\operatorname{LayerNorm}_{128}\to\operatorname{Linear}_{128\to256}
+\to\operatorname{GELU}\to\operatorname{Linear}_{256\to2r}$,
+then splits the output into $(\delta a_i,\delta b_i)$.
+Here $r=32$ for Protenix/OpenFold and $r=128$ for AtlasFold.
+G+ instead forms $z_i$ using
+$\operatorname{LayerNorm}_{128}\to\operatorname{Linear}_{128\to32}$.
+Its pair input $[z_i,z_j,a_i,b_j,\operatorname{clip}(i-j,-32,32)/32]$
+has width $65+2r$, and its head is
+$\operatorname{Linear}_{65+2r\to192}\to\operatorname{GELU}
+\to\operatorname{Linear}_{192\to128}$, with no final activation.
+All LayerNorms act on the last 128 channels, use $\epsilon=10^{-5}$,
+and have learned scale and bias. All listed affine layers have a bias
+except $V$.
+
+\paragraph{Initial values and random-number order.}
+The ordinary head parameters are constructed on CPU in FP32. Except for
+the final output affine, Linear and Conv1d weights and biases use PyTorch's
+default uniform initialization on $[-1/\sqrt{n_{\rm in}},1/\sqrt{n_{\rm in}}]$,
+where $n_{\rm in}$ is fan-in (including kernel width for convolutions).
+LayerNorm scales start at one and biases at zero. After constructing the
+head, both weight and bias of its final output affine are set to zero;
+the encoder and earlier affine layers retain their default initialization.
+This gives zero factor increments or zero G+ residual without zeroing
+the sequence representation.
+
+Exact seeded reconstruction also requires the original constructor order.
+\texttt{FeatureResiduePredictor} first constructs a 21-token embedding,
+the three convolutions, $V$, and the Factor output head, then replaces the
+embedding with the feature projection $P$. G+ subsequently replaces the
+Factor output head with its node projection and pair head. The discarded
+modules still consume random numbers; omitting them changes seeded initial
+tensors despite preserving the final architecture. The accompanying source
+under \texttt{reproducibility/src/engramfold/models/} retains these
+constructors. For ESMC, the original 480-input writer is built first and
+only $P,p$ are replaced using an isolated CPU random stream seeded by the
+training seed plus $10^6$, with the caller's CPU random state restored.
+Thus the wider input does not reinitialize the remaining head parameters.
+This pairing is within the same backbone and head, not a claim of identical
+initial tensors across different backbone-specific head dimensions.
+
+\subsection{Ordinary dense orthogonal sampling}
+\label{app:rotation_sampling}
+For each ordinary rotation seed, a dedicated CPU PyTorch generator samples
+$M\in\mathbb R^{128\times128}$ with independent standard-normal entries
+in float64. NumPy QR gives $M=QT$. We set
+\begin{equation}
+ R=Q\operatorname{diag}(s),\qquad
+ s_k=\begin{cases}-1,&T_{kk}<0,\\+1,&T_{kk}\ge0,\end{cases}
+\end{equation}
+and store $R$ in float32. There is no determinant correction:
+$R\in O(128)$ in ideal arithmetic, so reflections are allowed.
+The ordinary rotation seeds are 20261001/02/03, separate from the training
+seeds 20260923/24/25. Sampling a rotation neither reads nor advances the
+global training random stream. One sampled matrix is a fixed buffer,
+shared over pairs, targets, and all calls to the adapted interface during
+training and prediction. Column-vector residuals receive $R\delta$
+(row-vector storage uses $\delta R^\top$), while the baseline is unchanged.
+Factor fuses this operation into the frozen output weight as $RW$; G+
+rotates its emitted residual. The source implementation is
+\texttt{orthogonal\_rotation} in \texttt{native\_geometry.py}.
+These ordinary controls are distinct from the mean-preserving family in
+Appendix~\ref{app:prediction_e1}, the signed-permutation controls in
+Appendix~\ref{app:signed_control}, and
+the trainable compensator in Appendix~\ref{app:e2_compensation}.

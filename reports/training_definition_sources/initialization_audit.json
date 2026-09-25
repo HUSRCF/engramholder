@@ -1,0 +1,79 @@
+{
+  "torch_version": "2.9.1+rocm7.2.0.git7e1940d4",
+  "device": "cpu",
+  "seed": 20260923,
+  "factor_gplus_encoder_equal": {
+    "embedding.weight": true,
+    "embedding.bias": true,
+    "convolutions.0.weight": true,
+    "convolutions.0.bias": true,
+    "convolutions.1.weight": true,
+    "convolutions.1.bias": true,
+    "convolutions.2.weight": true,
+    "convolutions.2.bias": true,
+    "global_projection.weight": true
+  },
+  "opm_atlas_encoder_equal": {
+    "embedding.weight": false,
+    "embedding.bias": false,
+    "convolutions.0.weight": true,
+    "convolutions.0.bias": true,
+    "convolutions.1.weight": true,
+    "convolutions.1.bias": true,
+    "convolutions.2.weight": true,
+    "convolutions.2.bias": true,
+    "global_projection.weight": true
+  },
+  "factor_native_rotated_parameters_equal": {
+    "encoder.embedding.weight": true,
+    "encoder.embedding.bias": true,
+    "encoder.convolutions.0.weight": true,
+    "encoder.convolutions.0.bias": true,
+    "encoder.convolutions.1.weight": true,
+    "encoder.convolutions.1.bias": true,
+    "encoder.convolutions.2.weight": true,
+    "encoder.convolutions.2.bias": true,
+    "encoder.global_projection.weight": true,
+    "output_head.0.weight": true,
+    "output_head.0.bias": true,
+    "output_head.1.weight": true,
+    "output_head.1.bias": true,
+    "output_head.3.weight": true,
+    "output_head.3.bias": true
+  },
+  "esm2_to_esmc_preserved_nonprojection_parameters": {
+    "rotation": true,
+    "encoder.convolutions.0.weight": true,
+    "encoder.convolutions.0.bias": true,
+    "encoder.convolutions.1.weight": true,
+    "encoder.convolutions.1.bias": true,
+    "encoder.convolutions.2.weight": true,
+    "encoder.convolutions.2.bias": true,
+    "encoder.global_projection.weight": true,
+    "output_head.0.weight": true,
+    "output_head.0.bias": true,
+    "output_head.1.weight": true,
+    "output_head.1.bias": true,
+    "output_head.3.weight": true,
+    "output_head.3.bias": true
+  },
+  "clean_equivalent_construction_projection_equal": false,
+  "clean_equivalent_construction_first_conv_equal": false,
+  "zero_final_factor": true,
+  "zero_final_gplus": true,
+  "counts": {
+    "protenix_480_factor": 373824,
+    "protenix_480_generic_plus": 378144,
+    "protenix_1152_factor": 459840,
+    "protenix_1152_generic_plus": 464160,
+    "atlas_480_factor": 423168,
+    "atlas_480_generic_plus": 415008,
+    "atlas_1152_factor": 509184,
+    "atlas_1152_generic_plus": 501024
+  },
+  "projection_fingerprints": {
+    "opm_esm2": "23919e65e6bd8e01f5d3dbc8c31b675dc1c19b24d8c83eaf07c9d26367cfd775",
+    "atlas_esm2": "4592d255e469d70f5d141cf8d4ff7a7fef8be0cf35ac5942a8203bfbc6e91d55",
+    "protenix_esmc": "d7dc844299c4a3d94c2dab21c765c5d07f1a9abc4131c5e2fac8530f6587d355"
+  }
+}
