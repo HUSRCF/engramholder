@@ -5,9 +5,10 @@ weights \citep{meng2024pissa}. We compose residue-level changes through
 native pair-generating operators and evaluate them with trained spectral
 controls and a rotation-closed generic head.
 
-Orthogonal finetuning includes butterfly parameterizations
-\citep{liu2023boft}; our contribution is the intervention on trained rotation
-penalty, not the orthogonal matrix itself.
+Orthogonal finetuning (OFT) learns orthogonal transformations \citep{qiu2023oft};
+BOFT uses butterfly factorizations for parameter-efficient orthogonal adaptation
+\citep{liu2023boft}. Our shared map acts on completed pair residuals to test
+compensation for rotation penalties.
 AdamW's coordinate-wise updates \citep{loshchilov2019adamw} distinguish
 function-class closure from training behavior. LoRA-RITE studies optimization
 invariance across equivalent low-rank factorizations \citep{yen2025lorarite}.

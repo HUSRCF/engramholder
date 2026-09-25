@@ -113,6 +113,12 @@ Set / origin & $N$ & Source / conditions & Quota; actual range & Nesting / exclu
 \end{tabular}
 \end{table}
 
+Experimental structures come from an existing local PDB/mmCIF collection,
+with candidate identities fixed by the archived \texttt{monomer\_clean}
+catalog hash. The original download date of the underlying collection was
+not retained; the 2021-09-30 criterion is an entry-release eligibility cutoff,
+not a database snapshot date.
+
 The inherited Train24 and Dev8 are the original interface-cache queries,
 including later releases; the 2021-09-30 cutoff applies to newly selected
 candidates, not retrospectively to these sets. Train96 retains Train24 and adds
@@ -122,7 +128,7 @@ stratum. Realized lengths and target identities are retained in the data audit.
 Confirm96-A uses the existing \texttt{monomer\_clean} candidate catalog and
 experimental CIFs. Within each stratum, candidates are ordered by SHA256 of
 \texttt{engramfold-independent96-v1|target\_id}, without model scores.
-One PDB is retained per panel; old Train24/Dev8 PDBs and qualifying sequence
+At most one chain is retained per PDB entry in each panel; old Train24/Dev8 PDBs and qualifying sequence
 matches are excluded. Confirm96-B uses the same candidate quality criteria,
 with ordering \texttt{native-direction96-v1|confirmation|target\_id}; it also
 excludes the previously observed Confirm96-A. Confirmation B is selected
@@ -163,15 +169,22 @@ model--target attempts preceded opening the structural scores.
 The length screening corpus contained 15,605 reference sequences including
 584 known queries (Train384, Dev8, and both confirmation panels) and historical
 teacher rows. The filter-development examples were excluded from the panel.
-BLASTP 2.17.0 used a fixed search configuration and retained HSPs without a
+BLASTP 2.17.0+ from BLAST+ \citep{camacho2009blastplus} used a fixed search configuration and retained HSPs without a
 small hit-count cap. A candidate was rejected for a single HSP meeting all of:
 $E\le10^{-5}$, identity at least 0.30 with internal gaps included in the
 alignment-column denominator, at least 50 residue--residue columns, and paired
 coverage at least 0.70. Coverage is relative to the shorter sequence for known
 queries and to the candidate length for other teacher rows. HSPs are not
 unioned. Within-panel screening adds previously accepted targets to the
-reference corpus. Four CATH-linked examples were missed at retrieval, so this
+reference corpus. CATH annotations \citep{orengo1997cath} were used to audit
+this filter. Four CATH-linked examples were missed at retrieval, so this
 is operational sequence screening, not homologous-superfamily isolation.
+The annotation-feasibility audit used the archived daily-release file
+\texttt{cath-b-newest-all.gz}, retrieved on 2026-09-19 with HTTP
+Last-Modified 2025-01-15. Its entries include \texttt{v4\_3\_0} and
+\texttt{putative} labels. Separate v4.4.0 chain and unclassified lists,
+whose headers are dated 2024-12-16, were retrieved on 2026-09-20 for the
+missing-annotation audit; these are distinct sources, not one CATH release.
 
 The later OpenFold, AtlasFold and matched-G+ studies use these panels as
 observed follow-ups. Documented cumulative query exposure reaches 632 records,
@@ -756,7 +769,7 @@ had first mislabeled 256 synthetic controls as real queries; correcting that
 bug did not resolve the alignment failure. Both failed attempts are archived.
 
 Before any new folding prediction, selection v2 adopted the previously
-calibrated BLASTP 2.17.0 rule used for Length48, without changing the models,
+calibrated BLASTP 2.17.0+ rule used for Length48, without changing the models,
 96-target quota, deterministic order or primary endpoint. Searches use BLOSUM62,
 gap-open 11/extend 1, word size 3, SEG and soft masking, composition adjustment
 2, search E-value $10^{-3}$ and no HSP-count truncation. Exclusion requires one
@@ -885,7 +898,8 @@ rotated Factor student reconstructs a trained Native teacher's updates.
 Three historical Native teachers generate reconstruction targets on the same
 fixed query-only anchor trajectories. For each teacher and rotation, one student
 starts from that teacher's adapter weights with the added rotation and is fitted
-on Train24 for 768 Adam updates (learning rate $10^{-3}$, no decay, global clip 1), with
+on Train24 for 768 Adam updates \citep{kingma2015adam}
+(learning rate $10^{-3}$, no decay, global clip 1), with
 2048 sampled pairs per target. The full sequence is encoded before pair
 sampling, and the same residue increments are used in all four rounds; only
 the supplied anchors vary. The locked final-node error averages equally over
@@ -1076,7 +1090,8 @@ The original Native and rotated models provide the paired no-map controls.
 
 \paragraph{A targeted output freedom.}
 For the all-ones unit vector $u\in\mathbb R^{128}$ and orthonormal complement
-$B\in\mathbb R^{128\times127}$, the map is
+$B\in\mathbb R^{128\times127}$, we use an exponential-map parameterization
+\citep{lezcano2019orthogonal} on that complement:
 \begin{equation}
  C=uu^\top+B\exp(A)B^\top,\qquad A^\top=-A.
 \end{equation}
@@ -1112,7 +1127,7 @@ with no decay; head parameters retain $10^{-4}$ and decay 0.01; all use one
 global clipping norm of 1. Function-class equality therefore does not imply
 mapped initial parameters, equivalent optimizer trajectories or equal final
 performance. Orthogonal adaptation itself is not new
-\citep{liu2023boft}; here it is a controlled intervention on rotation cost.
+\citep{qiu2023oft,liu2023boft}; here it is a controlled intervention on rotation cost.
 
 \paragraph{Paired endpoints and their identity.}
 Define
@@ -1442,7 +1457,7 @@ targets. Historical conservative exclusions were retained. Newly collected
 search-only candidates and directory pseudonyms were corrected before new
 target prediction; this correction did not change search thresholds or the
 ranking salt. The final selection applies Fresh96's accepted BLAST v2 rules:
-BLASTP 2.17.0, a single qualifying HSP with $E\le10^{-5}$, identity at least
+BLASTP 2.17.0+, a single qualifying HSP with $E\le10^{-5}$, identity at least
 0.30, at least 50 paired residues and coverage at least 0.70. Recorded query
 comparisons use the shorter sequence length as coverage denominator; other
 teacher rows use candidate length. HSPs are not merged or count-limited.

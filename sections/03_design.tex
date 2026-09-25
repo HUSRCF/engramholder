@@ -49,7 +49,8 @@ the final recycle.
 \label{sec:panels}
 Confirm96-A supports the historical Factor--Generic comparison; Confirm96-B
 supports the original Protenix direction comparison. Both contain 96 short-chain
-targets selected from the existing experimental-structure catalog: single-model
+targets selected from the existing Protein Data Bank (PDB) structure catalog
+\citep{berman2000pdb}: single-model
 X-ray entries released by 2021-09-30, resolution at most 2.5\,\AA, standard
 amino acids and at least 90\% mapped C$\alpha$ coverage. Four length strata
 (128--191, 192--255, 256--319, 320--384) contribute 24 targets each.
@@ -92,7 +93,8 @@ within-target seed/rotation pairing; Fresh192 resamples within its four fixed
 length strata. Intervals condition on the fitted models;
 seeds, rotations and supplementary metrics are not additional independent
 proteins. Secondary and follow-up intervals are unadjusted; the OpenFold feature-substitution
-study reports its own predeclared three-test Holm correction (Appendix~\ref{app:esmc}). Protocol-specific
+study reports its own predeclared three-test Holm correction \citep{holm1979simple}
+(Appendix~\ref{app:esmc}). Protocol-specific
 bootstrap seeds and endpoint roles are preserved in the accompanying records.
 
 \begin{table}[t]\centering\footnotesize
