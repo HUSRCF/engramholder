@@ -7,18 +7,20 @@ guarantees competitiveness: Protenix favors Native over G+, while some OpenFold
 comparisons favor G+. Observed-panel support does not replace the unestablished
 Fresh96 primary interaction.
 
-Dense rotations, signed permutations and mean-preserving E1/E2 rotations address
-distinct explanations. Signed-permutation compatibility with ideal AdamW does
+Dense rotations, signed permutations and the mean-preserving rotations used for
+prediction and compensation are distinct transformation families.
+Signed-permutation compatibility with ideal AdamW does
 not establish strict FP32 trajectory correspondence.
-E2 changes output freedom and joint optimization together; it identifies neither
+Channel compensation changes output freedom and joint optimization together;
+it identifies neither
 a learned inverse nor expressivity as the unique cause, and does not establish
 elimination of $\Psi$. Across-head controls also change nonlinearities and
 residue/pair organization, without proved function-class inclusion.
 
 The eight-rotation teacher-reconstruction predictor failed
 ($\rho=\result{e1_ca_lddt_x_rho}$, exact one-sided
-$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). E2 does not rescue
-that ranking. Norm exchange constrains global-scale explanations, leaving
+$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). The compensation result
+does not rescue that ranking. Norm exchange constrains global-scale explanations, leaving
 content and local magnitudes coupled. Local compatibility, small equal-norm
 learned directions and bounded shared-transfer diagnostics retain their
 negative boundaries (Appendix~\ref{app:mechanisms}). A separately retrained

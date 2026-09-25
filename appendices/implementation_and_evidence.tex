@@ -310,8 +310,8 @@ advantage. These distinct outcomes are retained rather than merged into one
 successful mechanism claim.
 
 \subsection{Reachable versus learned updates: v4 diagnostics}
-The v4 study uses nine paired noise conditions on Observed96. E1 constructs
-oracle directions at the common query-only state. E2 evaluates 12 archived
+The v4 study uses nine paired noise conditions on Observed96. The oracle diagnostic
+constructs directions at the common query-only state. The learned-update diagnostic evaluates 12 archived
 Train24/tangent/384 adapters, keeping the first three recycles query-only and
 changing only the fourth update. For learned residual $\delta$, it compares
 $\ell(U_q)-\ell(U_q+\eta\delta/\|\delta\|)$, normalized by
@@ -320,9 +320,9 @@ change $\ell(U_q)-\ell(U_q+\delta)$. These quantities have different units and
 scales; their difference is not an amplitude attribution.
 
 \begin{table}[h]
-\caption{v4 task-loss diagnostics: native-minus-rotation effects. E2 small
-matched-norm response is the new primary comparison; other rows are secondary.
-All intervals condition on fitted models. E3 uses different models and states.}
+\caption{v4 task-loss diagnostics: native-minus-rotation effects. Small
+matched-norm learned response is the primary comparison; other rows are secondary.
+Intervals condition on fitted models. Final-residual retention uses different models and states.}
 \label{tab:v4}\centering\footnotesize
 \begin{tabular}{lrr}\toprule
 Diagnostic & Difference & 95\% interval \\\midrule
@@ -335,21 +335,24 @@ The mean norm ratios $\|\delta\|/\|U_q\|$ are
 \result{v4_norm_ratio_rotated} for Rotated. Actual-scale response favors Native
 although its residuals are smaller; this is not evidence that the smaller norm
 causes the improvement. Relative to the small common amplitude, these average
-ratios correspond to roughly 483- and 686-fold larger interventions. E3 instead
+ratios correspond to roughly 483- and 686-fold larger interventions. The retention diagnostic instead
 uses Train96/Full/1536 on 24 fixed targets with three noises, retaining or removing
 only the final residual after each model's own preceding adapted states.
 It finds no established native advantage in that marginal task response, and
-does not generate free-sampling structures. Neither E2 nor E3 identifies an
+does not generate free-sampling structures. Neither learned-update nor retention diagnostics identify an
 explanation of the Train384 structural gains.
 
-All 864 core conditions and 864 E3 conditions were completed. At the primary
+All 864 core conditions and 864 retention conditions were completed. At the primary
 oracle step, 3398/3456 dynamic finite differences meet the 5\% relative criterion;
-58 exceptions remain included. These checks concern E1 oracle directions, not
-every E2 learned direction. Independent scalar reconstruction reproduces the
+58 exceptions remain included. These checks concern oracle directions, not
+every learned direction. Independent scalar reconstruction reproduces the
 archived target means and intervals. Five of six current v4 source files match
 the historical hashes; the main analysis script differs, so the reconstruction
 uses a separate verifier. Conflicting historical start-time fields are preserved,
-not treated as independently certified chronology.
+not treated as independently certified chronology. For provenance, the v4
+records call the oracle, learned-update and retention diagnostics E1, E2 and
+E3, respectively; those internal labels are separate from the subsequent
+prediction, compensation and anchor-intervention studies.
 
 \section{Full-inference source--norm intervention}
 \label{app:norm_cross}
@@ -1218,7 +1221,7 @@ r20270107/r20270104 are independently retrained under $Q$, each with the
 three paired seeds. These rotations were selected and locked before their
 task scores in the prediction study. All nine new fits start from the
 original zero-output initialization, without a warm start or $C$.
-The accepted $L$ models are reused from E1. The 864 new predictions and
+The accepted $L$ models are reused from the prediction study. The 864 new predictions and
 960 original query/Native/Rotated predictions yield 1,824 score records on
 the already observed Confirm96-B panel; no target or rotation is replaced.
 
@@ -1293,8 +1296,8 @@ comparisons do not establish the average hypothesis or a general
 rotation-by-anchor heterogeneity rule; no direct heterogeneity test was
 specified. Pooled supplementary-metric intervals likewise include zero.
 The results establish neither equivalence nor a universal harm from live
-anchors. They leave E1's failed ranking and E2's useful mean intervention
-unchanged. Because $C$ is absent, they do not test whether its benefit
+anchors. They leave the failed reconstruction ranking and the useful mean
+compensation effect unchanged. Because $C$ is absent, they do not test whether its benefit
 depends on live anchors, nor isolate expressivity as the unique mechanism.
 
 \begin{table}[!htbp]\centering\footnotesize

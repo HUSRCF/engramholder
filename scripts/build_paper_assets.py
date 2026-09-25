@@ -298,7 +298,7 @@ def main():
     save_rows('cross_cells.tex', [['Native source',tex('cross_NN'),tex('cross_NR')],['Rotated source',tex('cross_RN'),tex('cross_RR')]])
     save_rows('cross_effects.tex',[[label,tex('cross_ca_'+key),interval_cell('cross_ca_'+key)] for label,key in [('At native norm','D_mN'),('At rotated norm','D_mR'),('Average source effect','Edir')]])
     save_rows('cross_supplement.tex',[[label,key.replace('_',r'\_'),tex('cross_'+short+'_'+key),interval_cell('cross_'+short+'_'+key)] for label,short in [('Pair-lDDT','ca'),('Residue-lDDT','res'),('TM-score','tm')] for key in ['Edir','Eamp','I','A_dN','A_dR']])
-    save_rows('v4_mechanism_rows.tex',[[label,tex('v4_'+key),interval_cell('v4_'+key)] for label,key in [('E1 oracle (normalized)','oracle'),('E2 learned, small equal norm (normalized)','equal'),('E2 learned, actual norm (raw loss)','actual'),('E3 final-residual retention (raw loss)','retain')]])
+    save_rows('v4_mechanism_rows.tex',[[label,tex('v4_'+key),interval_cell('v4_'+key)] for label,key in [('Oracle direction (normalized)','oracle'),('Learned, small equal norm (normalized)','equal'),('Learned, actual norm (raw loss)','actual'),('Final-residual retention (raw loss)','retain')]])
     a_rows=[];a_contrasts=[]
     for panel,short,label in [('confirm96','c96','C96-B'),('length48','l48','L48')]:
         for feat,tag,flabel in [('E_last','e','ESM2-35M'),('C_last','c','ESMC-600M')]:

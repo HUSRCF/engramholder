@@ -11,9 +11,9 @@ downstream computation.
 
 Parameter-efficient methods constrain weight updates, as in LoRA
 \citep{hu2021lora}, or intervene on representations, as in ReFT
-\citep{wu2024reft}. We ask: \emph{does changing an update's output orientation
-affect learning differently across parameterizations?} Matching parameter
-counts and local spectra does not specify how a frozen predictor uses an
+\citep{wu2024reft}. We ask: \emph{after task training, does rotation cost depend
+on the update parameterization, and can shared output freedom mitigate it?}
+Matching parameter counts and local spectra does not specify how a frozen predictor uses an
 update. Conversely, sensitivity to rotation need not imply superiority over
 another adapter.
 
@@ -44,9 +44,9 @@ orthogonal compensator provides useful average mitigation for two preselected
 OpenFold rotations; separately, teacher-update reconstruction fails to predict
 retraining costs.
 
-This controlled empirical study contributes a concrete native-operator
-residual, a trained four-cell evaluation, and evidence separating useful
-adaptation from direction sensitivity and head competitiveness. Its practical
-implication is to evaluate structured interfaces through output freedom and
-task training as well as local spectral controls. The resulting conditional
-design effect is not a universal adapter-selection rule.
+This controlled empirical study contributes a native-operator residual,
+trained four-cell comparisons, and a within-Factor compensation intervention.
+The results separate useful adaptation, direction sensitivity and head
+competitiveness. They motivate evaluating structured interfaces through output
+freedom and task training alongside local spectra, without supplying a universal
+adapter-selection rule.
