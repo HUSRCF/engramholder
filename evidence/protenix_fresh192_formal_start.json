@@ -1,0 +1,16 @@
+{
+  "pid": 851446,
+  "host": "DiamondHill",
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "started": 1790331675.6677656,
+  "execution_lock_sha256": "084b55643245390e6eb5924cc86a400bf7c909f488b7300a47403dbdacd08079"
+}

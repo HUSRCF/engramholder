@@ -310,8 +310,8 @@ advantage. These distinct outcomes are retained rather than merged into one
 successful mechanism claim.
 
 \subsection{Reachable versus learned updates: v4 diagnostics}
-The v4 study uses nine paired noise conditions on Observed96. E1 constructs
-oracle directions at the common query-only state. E2 evaluates 12 archived
+The v4 study uses nine paired noise conditions on Observed96. The oracle diagnostic
+constructs directions at the common query-only state. The learned-update diagnostic evaluates 12 archived
 Train24/tangent/384 adapters, keeping the first three recycles query-only and
 changing only the fourth update. For learned residual $\delta$, it compares
 $\ell(U_q)-\ell(U_q+\eta\delta/\|\delta\|)$, normalized by
@@ -320,9 +320,9 @@ change $\ell(U_q)-\ell(U_q+\delta)$. These quantities have different units and
 scales; their difference is not an amplitude attribution.
 
 \begin{table}[h]
-\caption{v4 task-loss diagnostics: native-minus-rotation effects. E2 small
-matched-norm response is the new primary comparison; other rows are secondary.
-All intervals condition on fitted models. E3 uses different models and states.}
+\caption{v4 task-loss diagnostics: native-minus-rotation effects. Small
+matched-norm learned response is the primary comparison; other rows are secondary.
+Intervals condition on fitted models. Final-residual retention uses different models and states.}
 \label{tab:v4}\centering\footnotesize
 \begin{tabular}{lrr}\toprule
 Diagnostic & Difference & 95\% interval \\\midrule
@@ -335,21 +335,24 @@ The mean norm ratios $\|\delta\|/\|U_q\|$ are
 \result{v4_norm_ratio_rotated} for Rotated. Actual-scale response favors Native
 although its residuals are smaller; this is not evidence that the smaller norm
 causes the improvement. Relative to the small common amplitude, these average
-ratios correspond to roughly 483- and 686-fold larger interventions. E3 instead
+ratios correspond to roughly 483- and 686-fold larger interventions. The retention diagnostic instead
 uses Train96/Full/1536 on 24 fixed targets with three noises, retaining or removing
 only the final residual after each model's own preceding adapted states.
 It finds no established native advantage in that marginal task response, and
-does not generate free-sampling structures. Neither E2 nor E3 identifies an
+does not generate free-sampling structures. Neither learned-update nor retention diagnostics identify an
 explanation of the Train384 structural gains.
 
-All 864 core conditions and 864 E3 conditions were completed. At the primary
+All 864 core conditions and 864 retention conditions were completed. At the primary
 oracle step, 3398/3456 dynamic finite differences meet the 5\% relative criterion;
-58 exceptions remain included. These checks concern E1 oracle directions, not
-every E2 learned direction. Independent scalar reconstruction reproduces the
+58 exceptions remain included. These checks concern oracle directions, not
+every learned direction. Independent scalar reconstruction reproduces the
 archived target means and intervals. Five of six current v4 source files match
 the historical hashes; the main analysis script differs, so the reconstruction
 uses a separate verifier. Conflicting historical start-time fields are preserved,
-not treated as independently certified chronology.
+not treated as independently certified chronology. For provenance, the v4
+records call the oracle, learned-update and retention diagnostics E1, E2 and
+E3, respectively; those internal labels are separate from the subsequent
+prediction, compensation and anchor-intervention studies.
 
 \section{Full-inference source--norm intervention}
 \label{app:norm_cross}
@@ -1114,12 +1117,12 @@ performance. Orthogonal adaptation itself is not new
 \paragraph{Paired endpoints and their identity.}
 Define
 \begin{equation}
- B_N=S(N+C)-S(N),\quad B_R=S(R+C)-S(R),\quad
- T_C=(N-R)-(N_C-R_C)=B_R-B_N,
+ B_N=S(N+C)-S(N),\quad B_R^{C}=S(R+C)-S(R),\quad
+ T_C=(N-R)-(N_C-R_C)=B_R^{C}-B_N,
 \end{equation}
 where the last expression uses scores, with the same target and seed paired
 in each term. The original sealed design explicitly defines equal-weight averages of
-$B_R$ and $T_C$ and the prediction that both are positive, with both rotations
+$B_R^{C}$ and $T_C$ and the prediction that both are positive, with both rotations
 and Native's own change also reported. The sealed analysis code implements
 these averages before outcomes. These are prespecified mechanism contrasts,
 not a new-target confirmation or a newly declared sole-primary endpoint.
@@ -1128,7 +1131,7 @@ Native control; duplicated uses of it are not independent observations.
 Intervals condition on these fitted models and selected rotations and are
 not jointly multiplicity-adjusted. Confirm96-B was already observed.
 
-The three pair-lDDT seed marginals of average $T_C$ are positive, as are the
+In the original execution, the three pair-lDDT seed marginals of average $T_C$ are positive, as are the
 six seed-by-rotation marginals. Only r20270107 independently establishes a
 positive $T_C$ interval; both rotated arms improve in absolute score. Average
 residue-lDDT mitigation is supported, while average TM-score mitigation is not.
@@ -1141,9 +1144,10 @@ joint optimization remain coupled.
 \clearpage
 \begin{table}[!htbp]\centering\small
 \caption{Pair-lDDT before and after jointly training the shared map. Native
-also improves, so the mean mitigation is not caused by harming its reference.}
+also improves. Intervals for changes are conditional on fitted models and
+unadjusted; contrasts use unrounded scores.}
 \begin{tabular}{lrrrr}\toprule
-Condition & Without $C$ & With $C$ & Own change & 95\% interval \\\midrule
+Condition & Without $C$ & With $C$ & Own change & 95\% CI for change \\\midrule
 \input{generated/e2_means}
 \end{tabular}\end{table}
 
@@ -1156,7 +1160,7 @@ Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
 \end{tabular}\end{table}
 
 The target distribution also limits a uniform-benefit interpretation. Averaging
-paired seeds and rotations within each target, $B_R$ is positive on
+paired seeds and rotations within each target, $B_R^{C}$ is positive on
 \result{e2_pair_B_R_count_positive}/96 targets with median
 \result{e2_pair_B_R_median}; $T_C$ is positive on
 \result{e2_pair_T_C_count_positive}/96 with median \result{e2_pair_T_C_median},
@@ -1180,4 +1184,349 @@ optimizer construction and exact rotation arrays. A CPU example executes their
 zero initialization, shared-map injection and joint gradients on a synthetic
 frozen OPM fixture; it checks masks, the unchanged baseline and parameter groups.
 This makes the intervention executable at the operator level, without claiming
-a replay of full OpenFold structure training or its quality gains.
+a replay of full OpenFold structure training or its quality gains. A later
+complete training execution is reported separately below; it does not turn
+the CPU fixture into a full-prediction reproduction entry.
+
+\subsection{Same-seed repetition of all nine compensated fits}
+\label{app:e2_repeat}
+After the original results, all nine $+C$ models were trained again from the
+original seeds, zero-output heads and identity $C$, for 1536 updates each.
+The original Train96 order, loss, AdamW groups, two selected rotations and
+four-pass live-anchor configuration were retained. The repeat reused the
+verified H100 software environment and hashed ESM2 caches; it was not a new
+installation or a fresh FASTA-to-feature replay. The no-$C$ models are the
+same fixed original fits, not independently retrained baselines. The repeat
+therefore adds neither new training seeds nor new targets, and is not pooled
+with the original execution.
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Compensation repeat: recorded common conditions and limits of the
+comparison. The parent execution lock, repetition lock, archived wrapper and
+run receipts distinguish intended recipe agreement from checked source/data
+identity and engineering replay. They do not identify the training divergence.}
+\label{tab:e2_execution_conditions}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{.15\linewidth}p{.43\linewidth}p{.36\linewidth}@{}}\toprule
+Aspect & Recorded agreement & Remaining limit \\\midrule
+Data / order & Original Train96, hashed input files and seed-derived task schedule;
+1536 updates. & No claim of identical numerical states along the formal trajectories. \\
+Initialization & Same three seeds; zero head output, $C=I$; the repeat forbids
+loading a parent trained checkpoint. & No cross-execution initial-tensor audit is claimed. \\
+Source & Same parent lock and accepted diagnostic-repair runner/amendment;
+the repeat wrapper is separately hashed. & The first diverging formal update or
+operation is not localized. \\
+Weights / features & Parent hashes bind frozen AF2 weights, backbone state,
+rotation arrays and cached ESM2 inputs. & Features are reused, not freshly extracted. \\
+Software / device & Parent contract checks Torch 2.7.1+cu128, H100, TF32 off
+and eight CPU threads. & A full comparison of driver and kernel runtime states
+is not supplied. \\
+Optimizer & Original AdamW groups: head learning rate $10^{-4}$, decay 0.01;
+$C$ rate $10^{-3}$, no decay; global clipping at 1. & Matching hyperparameters
+does not establish matching trajectories or convergence. \\
+Checkpoint replay & Six engineering conditions restore parameters, optimizer,
+RNG, learning rates and data position exactly; saved-state forward checks pass.
+& Independent 32-step trajectories differ; this is not a full-trajectory
+equivalence test. \\
+\bottomrule\end{tabular}\end{table}
+
+Six engineering conditions (I/two rotations, with/without $C$) first completed
+384 updates across continuous and interrupted paths. Parameters, optimizer,
+random states and data position were restored exactly; independent FP32
+training trajectories were not required or found to be bitwise identical.
+The nine formal fits then completed all 13,824 updates and 864 predictions,
+without failed predictions. After all attempts ended, coordinates were exported
+to full-atom CIF, parsed independently, and rescored. The execution audit records
+exact masked FP32 coordinate recovery and identical values for all three
+scores. This is a completed training execution and coordinate-scoring check;
+public fresh-feature replay remains a distinct deliverable.
+
+The repeated rotated-arm gain is positive, but Native now improves by
+\result{e2rep_pair_native_change}
+[\result{e2rep_pair_native_changeLo}, \result{e2rep_pair_native_changeHi}].
+Consequently the repeated $T_C$ interval includes zero
+(Table~\ref{tab:e2_repeat_comparison}). Neither selected rotation independently
+establishes positive mitigation in the repeat, although both improve in
+absolute score. The original useful average mitigation remains an observed
+result, but its relative advantage over Native has not been re-established
+by the complete repeat. This does not prove zero mitigation, statistically
+different population effects between executions, or a particular cause for
+the training divergence. No run is replaced and no favorable executions are
+selected or averaged together. The specific divergence source remains unresolved.
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{All 21 compensation contrasts in the repeated execution, with the
+original unadjusted 20,000-draw target bootstrap (seed 20260924).}
+\label{tab:e2_repeat_all}
+\begin{tabular}{lllll}\toprule
+Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/e2_retraining_contrasts}
+\end{tabular}\end{table}
+
+The evidence bundle preserves both score arrays, the repetition protocol,
+code hashes, original-baseline bindings, per-fit receipts and the CIF audit.
+The numerical verifier reconstructs all 21 contrasts and their seed/target
+marginals from saved scores, separately from the archived CIF audit. The
+repeat neither validates the failed reconstruction predictor nor tests
+compensation at reference anchors.
+
+\clearpage
+\section{Residual-anchor intervention}
+\label{app:anchor_intervention}
+This study tests a specific feedback hypothesis: whether constructing the
+residual from the adapted trajectory's live factors helps rotated Factor and
+reduces its direction cost. It is internally called E3 in the prospective
+series, distinct from the earlier diagnostic E3 in
+Appendix~\ref{app:mechanisms}. It contains no channel compensator $C$.
+
+\paragraph{Intervention and paired training.}
+Let $L$ denote live residual anchors and $Q$ the query-only references for
+the same sequence and recycle index $t$. At the first OPM of the intact
+48-block Evoformer, the two paths are
+\begin{align}
+ U_{L,t}&=U_{0,t}^{\mathrm{live}}+\mathcal R
+ \bigl[G(a_t+\delta a,b_t+\delta b)-G(a_t,b_t)\bigr],\\
+ U_{Q,t}&=U_{0,t}^{\mathrm{live}}+\mathcal R
+ \bigl[G(a^Q_t+\delta a,b^Q_t+\delta b)-G(a^Q_t,b^Q_t)\bigr],
+\end{align}
+where $\mathcal R$ is identity for Native and the fixed channel rotation for
+Rotated. Each adapted path retains its own live OPM baseline, pair state,
+four-pass recycling and structure module. The four reference pairs
+$(a^Q_t,b^Q_t)$ come from four separate query-only passes, not a repeated
+first-pass anchor. Mask, normalization and frozen decoder are unchanged.
+One sequence-conditioned writer supplies the same factor increments at each
+pass; only the anchors differ. This replaces neither the live baseline nor
+the full recycling process, and does not make the update a cached Protenix
+residual.
+
+The recipe is OpenFold model\_3\_ptm, Train96, ESM2-35M layer 12 and Full,
+with 1,536 updates and the original AdamW recipe. Native and the two rotations
+r20270107/r20270104 are independently retrained under $Q$, each with the
+three paired seeds. These rotations were selected and locked before their
+task scores in the prediction study. All nine new fits start from the
+original zero-output initialization, without a warm start or $C$.
+The accepted $L$ models are reused from the prediction study. The 864 new predictions and
+960 original query/Native/Rotated predictions yield 1,824 score records on
+the already observed Confirm96-B panel; no target or rotation is replaced.
+
+\paragraph{Predeclared quantities and statistical identity.}
+Using scores with matched target and training seed, define
+\begin{equation}
+ T_A=(N_Q-R_Q)-(N_L-R_L),\qquad
+ B_R^{\mathrm{anchor}}=R_L-R_Q.
+\end{equation}
+Both are averaged equally over the two selected rotations. The hypothesis
+requires positive $T_A$ and positive $B_R^{\mathrm{anchor}}$, supported by
+their intervals. The latter differs from compensation's
+$B_R^{C}=S(R+C)-S(R)$; only display notation changes, not sealed field names.
+The paired identity
+\begin{equation}
+ T_A=B_R^{\mathrm{anchor}}+(N_Q-N_L)
+\end{equation}
+holds for each target and seed. Thus a reduced gap can reflect a changed
+Native reference as well as a changed rotated arm.
+
+As locked, 20,000 synchronous target-bootstrap draws (seed 20260924) preserve
+the shared Native control. Intervals condition on the three fitted seeds
+and two selected rotations; they are not jointly multiplicity-adjusted.
+Proteins, not predictions, seeds or residue pairs, are the sampling units.
+Pair-lDDT is primary; residue-lDDT and TM-score are supplementary measurements
+from the same structures. This is an observed-panel, Factor-only intervention,
+not a new-target confirmation of the Factor/G+ interaction.
+
+\begin{table}[!htbp]\centering\small
+\caption{Anchor intervention: absolute C$\alpha$ pair-lDDT over three seeds.
+$L$ uses live residual factors; $Q$ uses round-matched query-only references.
+The unadapted baseline is common. Scores have four decimals; contrasts use
+unrounded values. Rotated means average the same two selected rotations.}
+\label{tab:anchor_absolute}
+\begin{tabular}{lrr}\toprule
+Condition & Live $L$ & Reference $Q$ \\\midrule
+\input{generated/anchor_means}
+\end{tabular}\end{table}
+
+\paragraph{Results and interpretation.}
+The two predeclared mean effects have negative point estimates and intervals
+including zero (Table~\ref{tab:anchor_pooled}). The expected average feedback
+benefit is not established. Table~\ref{tab:anchor_absolute} shows why the
+smaller $Q$ gap alone is insufficient evidence of useful compensation:
+it combines a Native decrease with a slight mean increase of Rotated.
+Neither corresponding average change has an interval excluding zero.
+Adaptation under $Q$ still works: Native exceeds query-only by
+\result{anchor_pair_native_Q_minus_query}
+[\result{anchor_pair_native_Q_minus_queryLo},
+\result{anchor_pair_native_Q_minus_queryHi}], and both rotated $Q$ arms
+retain positive adaptation intervals. Failure of the feedback prediction
+cannot therefore be explained by all reference-anchor models losing their
+adaptation benefit.
+
+\begin{table}[!htbp]\centering\small
+\caption{Pooled anchor contrasts. Positive $T_A$ means a larger direction
+cost under $Q$; positive $B_R^{\mathrm{anchor}}$ favors live anchors for the
+rotated arm. Intervals are conditional target intervals, unadjusted.
+Sign counts use effects averaged over paired seeds and rotations per target.}
+\label{tab:anchor_pooled}
+\begin{tabular}{llrrr}\toprule
+Metric & Contrast & Mean & 95\% interval & Positive \\\midrule
+\input{generated/anchor_pooled}
+\end{tabular}\end{table}
+
+The individual rotations respond in opposite directions
+(Table~\ref{tab:anchor_individual}): r20270107 favors reference anchors,
+whereas r20270104 has a positive live-anchor benefit and nearly zero $T_A$.
+The latter benefit's pair-lDDT interval starts at only
+\result{anchor_pair_r2_B_R_live_minus_QLo}. These unadjusted secondary
+comparisons do not establish the average hypothesis or a general
+rotation-by-anchor heterogeneity rule; no direct heterogeneity test was
+specified. Pooled supplementary-metric intervals likewise include zero.
+The results establish neither equivalence nor a universal harm from live
+anchors. These anchor results neither validate the reconstruction ranking nor
+resolve the compensation findings, whose relative benefit over Native was
+not re-established in the repeat. Because $C$ is absent, they do not test
+whether its benefit depends on live anchors, nor isolate expressivity as the
+unique mechanism.
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Both selected rotations in the anchor intervention. These secondary
+intervals use the same target draws without joint correction. The very small
+positive endpoint is retained in scientific notation rather than rounded to zero.}
+\label{tab:anchor_individual}
+\begin{tabular}{lllrr}\toprule
+Metric & Rotation & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/anchor_individual}
+\end{tabular}\end{table}
+
+\paragraph{Execution record and reproduction scope.}
+All nine training runs, 13,824 updates and 864 new predictions completed with
+no formal prediction failures. The 192 training/evaluation reference caches
+were certified by 384 query-only forwards at two seeds, with equal factors
+and coordinates and preserved RNG state. Training and evaluation caches
+remain separate. The final reference is pinned during backward checkpoint
+recomputation; 27 saved-node reference replays passed. The engineering
+amendment retains an earlier failed bitwise next-update check and separately
+checks exact saved-state/forward replay and a common-gradient AdamW update;
+it does not claim strict full-model trajectory equivalence. Formal scientific
+settings and source files were unchanged.
+
+The archived execution audit independently rescored 1,824 raw-coordinate
+primary scores and parsed the saved TM-score outputs. The accompanying
+artifact bundles all 1,824 score records, the protocol, source snapshots,
+audit receipts and analysis definitions. Its verifier reconstructs all 42
+paired contrasts, target arrays, seed marginals and intervals, and checks
+the identity above. CPU tests exercise the actual anchor hook's preserved
+baseline, round selection and backward replay. These local checks do not
+regenerate coordinates, rerun the TM-score binary or reproduce full training.
+
+\clearpage
+\section{Fresh192: fixed Protenix models on new targets}
+\label{app:fresh192}
+This study selects the previously observed Protenix-Mini default
+Train384/Full/1536, ESMC-600M configuration for a new-target test. It freezes
+all 24 adapters: Factor and G+ each have three Native fits and nine rotated
+fits, using seeds 20260923/24/25 and rotations 20261001/02/03. Query-only is the
+25th system. No model is retrained, no checkpoint is selected on this panel,
+and the historical choice of recipe is disclosed. This is a test of a fixed
+configuration's transfer, not a random sample of predictor architectures.
+
+\paragraph{Panel, selection and chronology.}
+Fresh192 uses the short-chain catalog criteria in Appendix~\ref{app:chronology}:
+single-model X-ray monomers released by 2021-09-30, resolution at most
+2.5\,\AA, standard amino acids and at least 90\% reference C$\alpha$ coverage.
+Four prespecified strata, 128--191, 192--255, 256--319 and 320--384, each
+contribute 48 complete sequences; actual lengths are 128--383. There is one
+target per PDB. This panel is not a long-chain extrapolation study.
+
+The exposure inventory was refreshed from four execution hosts, explicitly
+including Fresh96 and later prediction, compensation and anchor-intervention
+targets. Historical conservative exclusions were retained. Newly collected
+search-only candidates and directory pseudonyms were corrected before new
+target prediction; this correction did not change search thresholds or the
+ranking salt. The final selection applies Fresh96's accepted BLAST v2 rules:
+BLASTP 2.17.0, a single qualifying HSP with $E\le10^{-5}$, identity at least
+0.30, at least 50 paired residues and coverage at least 0.70. Recorded query
+comparisons use the shorter sequence length as coverage denominator; other
+teacher rows use candidate length. HSPs are not merged or count-limited.
+Accepted panel members are screened against one another as well.
+
+Candidates are ordered within strata by SHA256 of the target ID prefixed
+by \texttt{protenix-fourcell-fresh192-v1|}, with at most 2048
+candidates per stratum and a fixed screening time cap. Selection does not
+read model scores. The archived audit reports no ID, PDB or exact-sequence
+overlap with the recorded exclusions and independently rechecks 1,195
+searches. These claims concern the auditable inventory, not certified
+complete project history, strict family separation or foundation-model
+pretraining exclusion. The 192 sequences, label correspondence, model hashes,
+execution recipe and analysis were locked before new folding predictions.
+
+\paragraph{Execution and endpoint.}
+The original complete-sequence c4/s5, one sample and inference seed101 are
+retained. $D=508.5$ comes from the adapter checkpoint. ESMC uses final-layer
+1152-dimensional features, the historical H100 FP32 extraction/BF16 cache
+path and FP32 loading; folding uses the fixed MI250 path. Fifty engineering
+predictions on two already observed targets were separate from the panel.
+Their maximum relative coordinate discrepancy was below the prior $10^{-3}$
+criterion. No target coordinates or observed-residue mask enter inference.
+All $25\times192=4,800$ formal predictions completed successfully with full
+length and four injections verified; uniform scoring followed completion.
+The predefined failure rule would retain failed predictions at zero credit,
+with no target replacement, crop or altered denominator.
+
+The sole primary endpoint is pair-lDDT $\Psi$ in Equation~\ref{eq:interaction}.
+After averaging paired seeds and rotations inside each target, 20,000 paired
+bootstrap draws (seed20260925) resample 48 targets within each of the four
+locked strata. Strata retain equal weights. Intervals condition on the fixed
+24 adapters and rotations and do not include retraining or historical
+recipe-selection uncertainty. All other contrasts, strata and structure
+metrics are secondary and unadjusted. New and observed panels are reported
+separately; neither targets nor rotations are added after the result.
+
+\paragraph{Results and scope.}
+The primary interaction is \result{p192_pair_interaction}
+[\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}], with
+\result{p192_pair_positive}/192 positive targets. All three seed and rotation
+marginals, and all nine seed-by-rotation means, are positive
+(Table~\ref{tab:fresh192_marginals}). Both supplementary interaction intervals
+are positive, but score the same structures. The full means are in
+Table~\ref{tab:coverage}; the secondary contrasts are retained below.
+Factor's positive direction effect and the positive direct interaction support
+greater Factor rotation sensitivity under this fixed recipe on new targets.
+G+'s direction interval includes zero without establishing equivalence.
+This confirmation does not replace OpenFold's Fresh96 result or identify a
+unique expressivity, optimization or downstream mechanism.
+
+\begin{table}[!htbp]\centering\small
+\caption{Fresh192 primary-interaction marginals. The first two rows give
+seed and rotation marginals in ascending locked order. The final three rows
+give individual rotations across the three training seeds.}
+\label{tab:fresh192_marginals}
+\begin{tabular}{lrrr}\toprule
+Margin / rotation & First / seed23 & Second / seed24 & Third / seed25 \\\midrule
+\input{generated/fresh192_marginals}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Fresh192 contrasts. Only pair-lDDT $\Psi$ is primary; the remaining
+intervals are unadjusted secondary summaries of the same fitted models.}
+\label{tab:fresh192_contrasts}
+\begin{tabular}{llll}\toprule
+Metric & Contrast & Mean & 95\% interval \\\midrule
+\input{generated/fresh192_contrasts}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Fresh192 secondary interaction estimates within the four prespecified
+length strata. These unadjusted intervals do not test a length trend.}
+\label{tab:fresh192_strata}
+\begin{tabular}{llll}\toprule
+Metric & Residues & $\Psi$ & 95\% interval \\\midrule
+\input{generated/fresh192_strata}
+\end{tabular}\end{table}
+
+The accompanying evidence includes the score grid, sequence and reference
+manifests, exposure exclusions, protocol, selection/execution/model locks,
+source snapshots and completion receipts. The verifier independently
+reassembles all 24 metric--contrast combinations, target arrays, seed/rotation
+marginals and the stratified bootstrap. It also checks identity bindings,
+prediction coverage and the recorded lock/completion chronology. This
+score-level reproduction is distinct from rerunning BLAST searches, generating
+new coordinates or rescoring CIF files.

@@ -1,0 +1,98 @@
+{
+  "schema": "engramfold.E3.query_anchor.v1",
+  "utc": "2026-09-24T15:24:59.379510+00:00",
+  "parent_root": "/data/user/shuang886/Folding/engramfold/prospective_orientation_series_20260924",
+  "parent_execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "protocol_sha256": "f04d8995f3c4efd0efd58b7ba4ea851c3d972638251c271fffe7ce7f70e0478a",
+  "files": {
+    "analyze.py": "d4672bd3a51412c2cf4a0ec831ba1f92fa105a2fe4719bc39e308e7d53c12c81",
+    "cpu.sh": "14a40554693816d466de7b26141169293ea17caa6923ecb8d72fb620acd1b246",
+    "e3_common.py": "f99438ae03c304cde8a8b95b6fb90ace0b2ee4fca90115470c7fcdca6406b412",
+    "job.sh": "2ec4d8a870ed3a06560af5db6d081df60f14d1a7875a9a8968f6dc46fb17eea5",
+    "parent_core.py": "c1db4ccf80b4a5ce995807cc104b68ba0383a43f679c5856e6ddfac41c315141",
+    "query_anchor.py": "bf1636780f065d592666a26c450d694eedbebb4e95053fe79b506a3a1347712f",
+    "references.py": "1fa4dbd678c00ef402b29f1c55328879bfeb926050dbdea4e4fcc35aaa552af6",
+    "run.py": "e3da14083c1bfa203709365ec3dde2f099e9e6f8fb55536bc88245c109bbeeca",
+    "scoring.py": "585b64e2bc7518f577380fdb255394dbc12b0cd8684c1febb0a54e167b6fbdbd",
+    "smoke.py": "0a11934f0b1b9bef940fedf809f534e393a0685e9ddd3f089be229de8c2e01ed",
+    "test_query_anchor.py": "7c6c786d124de5ebc165a71bed0121e6f1482d0b26630f53651c9e7ac4536803"
+  },
+  "parent_receipts": {
+    "prediction_lock.json": "79d8a8950114a34406b86fcd2cf6e54655c1f3bb5cf2f0f8c361731978334cc2",
+    "e1/analysis/complete.json": "e8d9e0854b634ed7be8ac547f371a4f2e39a87f03137d937a34f2db110efbd33",
+    "e2/analysis/complete.json": "c9f192d7a1b05a23f12d5b424dcb901954b81e87e18ce4ad8d8907416206dfc2"
+  },
+  "selected_rotations": [
+    "r20270107",
+    "r20270104"
+  ],
+  "runs": [
+    {
+      "name": "I_Q_s20260923",
+      "rotation_id": "I",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "I_Q_s20260924",
+      "rotation_id": "I",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "I_Q_s20260925",
+      "rotation_id": "I",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "r20270107_Q_s20260923",
+      "rotation_id": "r20270107",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "r20270107_Q_s20260924",
+      "rotation_id": "r20270107",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "r20270107_Q_s20260925",
+      "rotation_id": "r20270107",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "r20270104_Q_s20260923",
+      "rotation_id": "r20270104",
+      "seed": 20260923,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "r20270104_Q_s20260924",
+      "rotation_id": "r20270104",
+      "seed": 20260924,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    },
+    {
+      "name": "r20270104_Q_s20260925",
+      "rotation_id": "r20270104",
+      "seed": 20260925,
+      "steps": 1536,
+      "kind": "factor_query_anchor"
+    }
+  ],
+  "reference_rule": "separate train/eval; both seeds exact per target, RNG-free certified, full feature hash bound",
+  "formal_predictions": 864,
+  "training_updates": 13824,
+  "E4_not_released": true
+}

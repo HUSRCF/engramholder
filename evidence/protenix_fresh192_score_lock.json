@@ -1,0 +1,11 @@
+{
+  "execution_lock_sha256": "084b55643245390e6eb5924cc86a400bf7c909f488b7300a47403dbdacd08079",
+  "tm_path": "/media/PM982/engramfold/audits/post_validation_20260918/USalign/TMscore",
+  "lddt_path": "/media/PM982/engramfold/folding_e2e_20260921/formal_panel/alphafold_lddt.py",
+  "files": {
+    "/media/PM982/engramfold/audits/post_validation_20260918/USalign/TMscore": "c8849339b34ebafda1fd976557eef4f5a54a54d8bd1d2bb70a712c337ab7d317",
+    "/media/PM982/engramfold/folding_e2e_20260921/formal_panel/alphafold_lddt.py": "2a3bb36fed58cff0beb92da0af40ca74c5b9892947f01ab825e7547691d99d96"
+  },
+  "primary": "ca_lddt interaction Psi",
+  "release": "all 4800 predictions terminal and source/output identities valid"
+}

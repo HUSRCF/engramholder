@@ -1,0 +1,12 @@
+{
+  "run": {
+    "name": "I_C_s20260925",
+    "rotation_id": "I",
+    "seed": 20260925,
+    "steps": 1536,
+    "kind": "factor_plus_shared_C"
+  },
+  "execution_lock_sha256": "9f1c96479787b439e9001069d52d1d0a6c9e460d904b3c44977397f293dd210e",
+  "release_sha256": "1ae23446bcfa994b5f8d5effbb640cf80ec8b05ba69053d9a719df293143ef4d",
+  "engineering_amendment_sha256": "1a94990c3168674e965fee648be80a8a0754d6cade6eab6f6cc37e9ee615cd1e"
+}

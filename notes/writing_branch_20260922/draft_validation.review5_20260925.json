@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-25T09:12:29.982144+00:00",
+  "base_commit": "bf5f4cc90daa54505b4866fded2f2d0f50d365c1",
+  "review_file_sha256": "18638c54b48ba43cd80f901e5de7f981ad31c0870bb58031e4f3d81604c2fb71",
+  "active_source_lock": "v10",
+  "source_inputs_unchanged": 121,
+  "numeric_fields_unchanged": 1617,
+  "all_values_formats_and_sources_unchanged": true,
+  "figures_byte_unchanged": true,
+  "author_abstract_byte_unchanged": false,
+  "internal_E_labels_in_main_text": 0,
+  "original_protocols_and_statistics_unchanged": true,
+  "new_experiments": false,
+  "compile_or_page_check": false,
+  "page_check_scope": "Deferred to final manuscript at user request; no new page-count claim.",
+  "anonymous_package_scope": "v34 remains the preceding E3/author-abstract snapshot; final source package must include these editorial changes.",
+  "author_abstract_words_unchanged": true,
+  "author_current_abstract_preserved": true,
+  "author_abstract_sha256": "972ede46a35ed4ddc9ef53af7f9d034d1f2882aee54897c861792654defd2a9a",
+  "numeric_key_audit": {
+    "literal_references": 1560,
+    "distinct_keys": 1322,
+    "missing": []
+  }
+}

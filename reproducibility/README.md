@@ -5,11 +5,12 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v9 input lock contains 93 source files and 1,522 generated numerical
-fields. All 1,518 previously integrated raw values and scientific source mappings are unchanged; four
-post-hoc target-distribution fields add medians and positive counts for E2. The
-319 fields added in the preceding revision cover
-the completed compensation, signed-permutation and developmental checkpoint studies.
+full-inference source/norm cells and contrasts. The active v11 input lock contains
+204 source files and 1,830 generated numerical fields. All 1,617 previously
+integrated values, display formats and scientific source mappings are unchanged;
+213 fields add Protenix Fresh192 and the same-seed compensation repeat. The earlier additions
+cover compensation (including explicitly post-hoc target-distribution summaries),
+signed permutations and developmental checkpoint studies.
 Absolute structure scores are displayed to four decimals (168 formatting-only
 changes); effects, intervals, p-values and diagnostic errors retain their original
 precision. The interaction violins use paired per-target effects, not bootstrap
@@ -26,6 +27,11 @@ checkpoint verifier reconstructs 18 contrasts from 3,600 records and 72 contrast
 from 1,160 records, respectively, preserving each original bootstrap stream.
 Ideal signed-coordinate AdamW compatibility is not a demonstrated full-model
 FP32 trajectory equivalence; the Dev8 curves do not establish convergence.
+The [anchor-intervention verifier and source bundle](anchor_intervention/README.md)
+add all 1,824 model–target score records and reconstruct 42 paired contrasts.
+The expected mean benefit of live residual anchors was not established. This
+independently retrained intervention preserves the live baseline and recycling,
+uses four round-matched query-only reference anchors, and contains no C.
 It additionally reconstructs 216 A66 and 18 Protenix Train96 contrasts from
 14,112 and 2,400 score records, including target bootstrap and model marginals.
 A66 prespecifies ESMC Factor-minus-Rotated on Confirm96-B per backbone; its
@@ -35,6 +41,16 @@ verifies all 2,400 Fresh96 score records and three-metric contrasts, plus the
 post-hoc Train384-minus-Train96 change of the full interaction on both panels.
 Fresh96 does not establish its sole primary interaction; its positive Factor
 contrast is not substituted for that endpoint.
+The [Protenix Fresh192 bundle](protenix_fresh192/README.md) adds 4,800 fixed-model
+predictions on 192 new targets. The verifier reconstructs 24 contrasts and the
+prespecified stratified bootstrap; the sole primary pair-lDDT interaction is
+positive. It does not replace the OpenFold result or guarantee family/pretraining
+isolation. The [compensation repeat](e2_retraining/README.md) adds nine completed
+same-seed training executions, 864 predictions and 21 reconstructed contrasts.
+The rotated-arm benefit remains positive, but the additional benefit over Native
+is not re-established. Original no-C baselines are fixed; executions are not
+pooled as extra seeds. The execution reused the environment and PLM caches, so
+it does not complete the separate fresh-feature full-prediction replay.
 Literal numerical references in the manuscript and generated tables are checked
 against the generated keys; an unknown key also raises a LaTeX PackageError.
 
@@ -47,6 +63,11 @@ python tests/test_single_prediction_score.py
 python tests/test_e1_prediction.py
 python tests/test_e2_intervention.py
 python tests/test_signed_and_curves.py
+python scripts/verify_anchor_intervention.py
+python tests/test_anchor_intervention.py
+python scripts/verify_protenix_fresh192.py
+python tests/test_protenix_fresh192.py
+python scripts/verify_e2_retraining.py
 python reproducibility/operator_smoke.py
 python reproducibility/compensation/smoke.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2027_conference.tex

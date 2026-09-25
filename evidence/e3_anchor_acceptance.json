@@ -1,0 +1,15 @@
+{
+  "accepted": true,
+  "engineering_and_statistics_passed": true,
+  "scientific_hypothesis_supported": false,
+  "scope": "E3 existing two-rotation anchor-feedback study; no new experiment",
+  "accepted_at": "2026-09-25T15:17:48.508263+08:00",
+  "execution_lock_sha256": "25f162d613455d380113d29a58256b9b5be72d46f669675073ce035c739c7200",
+  "files": {
+    "runtime_audit.json": "7323375cb583cb586b650c2c0890a0c31cf87d6f1d7c6346c3dffe0a6cbbefbb",
+    "statistical_readback.json": "fd34d792a5aa147b22d7dfedbd2ea4a41ef1d5ed7f014daa08b395a34a6dcffc",
+    "per_target.csv": "8896f4f1980a0a75ad82550221f82b2d9da5043a1e9e0182c660bf4e33b3aa61",
+    "acceptance.md": "6c89747431b4efea546145ff66e2107fed45702c3c146cb6d1a591d480f37ff1"
+  },
+  "new_gpu_runs": 0
+}
