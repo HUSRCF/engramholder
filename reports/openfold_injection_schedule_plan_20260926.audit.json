@@ -1,7 +1,7 @@
 {
   "status": "PROPOSAL_NOT_IMPLEMENTED_NOT_SUBMITTED",
   "review_date": "2026-09-26",
-  "plan_sha256": "7d6ef449f22f72fe302c2a4f4e24f7dca12cbba0832c79cdd7a442a033b5b81b",
+  "plan_sha256": "d1a26244438760fd48c8e26f6e601d2a98c3a884b2d9676b6d678c6907406b8e",
   "source_sha256": {
     "../onestepfold/engramfold/src/engramfold/experiments/openfold_adapter_runtime.py": "19a97fa53c143e80586a927005e01039d580fa12be68684482f2d7cb27f5737a",
     "../onestepfold/engramfold/src/engramfold/models/live_opm.py": "fd8ca8acaebb5c1bac181d68b97336275a57774a0ab26a0d481c513b7ce6f662",
@@ -132,7 +132,56 @@
       "seed": 20260926,
       "unit": "target; average paired seeds and rotations first"
     },
-    "unfunded_retraining_option": {
+    "recommended_retraining": {
+      "status": "PROPOSED_NOT_SUBMITTED",
+      "schedules": [
+        "first",
+        "last",
+        "all"
+      ],
+      "arms": [
+        "F",
+        "RF",
+        "G+",
+        "RG+"
+      ],
+      "formal_seeds": [
+        20260923,
+        20260924,
+        20260925
+      ],
+      "rotation_seeds": [
+        20261001
+      ],
+      "rotation_selection": "Smallest ID in original core rotation set, not chosen from scores",
+      "runs": 36,
+      "steps_per_run": 1536,
+      "updates": 55296,
+      "adapted_model_predictions": 3456,
+      "optional_query_predictions": 96,
+      "parallel_workers": 16,
+      "first_and_all_hours_per_run": [
+        3.5,
+        5.0
+      ],
+      "last_hours_per_run": [
+        1.8,
+        2.2
+      ],
+      "training_hours": [
+        7,
+        10
+      ],
+      "end_to_end_planning_hours": [
+        10,
+        16
+      ],
+      "queue_time_included": false,
+      "new_gradient_runtime_measured": false,
+      "scope": "Single-rotation follow-up; new all arm under the common gradient rule",
+      "fixed_model_inference_grid_included_in_eta": false
+    },
+    "full_retraining_reference": {
       "runs": 72,
       "updates": 110592,
       "requires_new_gradient_contract": true
@@ -144,5 +193,21 @@
     "gpu_jobs_submitted": [],
     "new_prediction_outputs": 0,
     "scientific_runtime_gates_passed": false
+  },
+  "latest_user_steering": "Retraining accepted in principle; estimate with 16 parallel workers; consider a smaller matrix. No jobs submitted in this planning turn.",
+  "timing_readback": {
+    "e2_retraining_runs": 9,
+    "e2_retraining_updates": 13824,
+    "e2_mean_step_seconds": 4.137902951325217,
+    "e2_run_hours_minmax": [
+      1.7268850012113237,
+      1.8261904544290155
+    ],
+    "recent_head_only_runs": 9,
+    "recent_head_only_updates": 4608,
+    "recent_head_only_mean_step_seconds": 4.0350488364035755,
+    "recent_confirm96_predictions": 2592,
+    "recent_prediction_mean_seconds": 2.572868822782856,
+    "scope": "Historical measured stages; new cross-pass differentiation is an unmeasured planning estimate"
   }
 }
