@@ -122,9 +122,10 @@ in Length48 (Appendix Figure~\ref{fig:scope}). Length transfer does not
 establish family or pretraining novelty. At Train384, Protenix interactions
 are positive with both ESM2 and ESMC on the observed panels, while OpenFold
 establishes them with neither feature source
-(Appendix Table~\ref{tab:interaction_scope}). ESMC improves prediction
-quality in both predictors without establishing changes in $\Delta_F$ or
-$\Psi$. Feature family, width, precision and projection size change together
+(Appendix Table~\ref{tab:interaction_scope}). In these Train384 comparisons,
+ESMC improves prediction quality over ESM2 in both predictors without
+establishing changes in $\Delta_F$ or $\Psi$. Feature family, width,
+precision and projection size change together
 (Appendix~\ref{app:dh_fourcells}); model size is not isolated.
 
 \label{sec:limits_results}
@@ -165,7 +166,8 @@ on MI250. These mix backends across heads or across seeds, respectively
 \label{sec:e2_compensation}
 Using OpenFold Train96/ESM2 and evaluating on observed Confirm96-B,
 we jointly train each Factor head with its own mean-preserving orthogonal
-map $C$ in Native and two preselected mean-preserving Rotated conditions.
+map $C$ in Native and two mean-preserving Rotated conditions selected for
+low and high reconstruction error before their task training.
 Initialized at identity, $C$ is shared across targets, pairs and recycles
 within that model (Appendix~\ref{app:e2_compensation}). Let
 $B_N=S(N+C)-S(N)$ and $B_R^C=S(R+C)-S(R)$, averaging the latter over both
@@ -181,9 +183,10 @@ versus \result{e2rep_pair_T_C}
 The repeat adds no independent seeds and is not pooled with the original;
 its $T_C$ interval includes zero. Differing interval significance does not
 establish a between-execution population difference
-(Appendix~\ref{app:e2_repeat}). A prespecified reconstruction diagnostic
-also did not establish its predicted ranking of post-training score
-differences across eight rotations ($\rho=\result{e1_ca_lddt_x_rho}$,
+(Appendix~\ref{app:e2_repeat}). Across eight rotations, the prespecified
+positive association between held-out reconstruction error and post-training
+Native--Rotated score differences was not established
+($\rho=\result{e1_ca_lddt_x_rho}$,
 exact one-sided $p=\result{e1_ca_lddt_x_p}$;
 Appendix~\ref{app:prediction_e1}). The useful rotated-arm gains do not
 validate that prediction or identify output freedom as the unique
