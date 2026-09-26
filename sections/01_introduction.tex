@@ -5,6 +5,7 @@ learned pairwise representations
 \citep{jumper2021alphafold,gong2025protenix,seo2026atlasfold}.
 An adapter can reuse a pretrained pair-generating operator, predicting
 residue-level factor increments and combining them in its native coordinates.
+We call this structured adapter the Factor head.
 Freezing the predictor lets us study two inherited properties of this
 construction: its restricted update form and its orientation relative to
 downstream computation.
@@ -19,20 +20,21 @@ effect within a head from its absolute quality and competitiveness with
 another adapter.
 
 Our four-cell design compares native and rotated versions of two heads.
-Factor composes query-anchored increments through a frozen native operator;
-G+ receives the same extra sequence features and explicit factors, with a free
+Factor composes increments with native interface anchors through the frozen operator;
+G+ receives the same extra sequence features and explicit anchors, with a free
 affine output layer. Orthogonal transforms act only on completed residuals.
 Each arm is trained separately under paired settings, beginning
 at the same zero-residual function. For each head $H$, we measure the signed
-Native--Rotated score contrast $\Delta_H$ and compare heads through
+Native--Rotated score difference $\Delta_H$ and compare heads through
 $\Psi=\Delta_F-\Delta_{G+}$. A positive interaction means a larger signed
-contrast for Factor; it establishes neither a larger absolute response to
-rotation nor a positive Factor contrast by itself.
+score difference for Factor; it establishes neither a larger absolute response
+to rotation nor a positive Factor score difference by itself.
 
 G+'s free output layer can absorb a rotation without changing its function
 class, but this closure does not guarantee matching AdamW trajectories
 \citep{loshchilov2019adamw}. Within-head rotations preserve local writer
-spectra at a common state. Across heads, we match the initial function,
+spectra at identical inputs, interface anchors and parameters. Across heads,
+we match the initial function,
 approximate parameter count and training recipe, while Jacobians and
 effective learning scales can differ. The interaction therefore compares
 complete parameterizations without establishing an expressivity hierarchy.
@@ -49,21 +51,23 @@ which head performs best.
 
 After Fresh192 was observed, a prespecified doubling of the Protenix update
 budget retains a positive interaction while significantly reducing Factor's
-own Native--Rotated gap. The paired overall change in $\Psi$ remains
+own Native--Rotated score difference. The paired change in interaction remains
 unestablished. A separate amended OpenFold schedule study on observed targets,
 conditional on its fitted models and one fixed rotation, finds the largest
 interaction with First-only injection, which also has the lowest absolute
 quality. Thus evidence beyond the original stopping point supports the
-orientation effect, while the schedule comparison demonstrates why maximizing
+interaction, while the schedule comparison demonstrates why maximizing
 $\Psi$ alone cannot select an adapter.
 
 Additional interventions test the limits of a mechanism account. A shared
 orthogonal compensator improves two preselected OpenFold rotated Factor arms
-in both the original execution and a same-seed retraining repeat, but its
-greater benefit over Native is established only in the original execution.
+in both the original execution and a same-seed retraining repeat. Only the
+original execution establishes a larger compensation gain for rotated Factor
+than for Native Factor.
 Across eight tested rotations, a prespecified teacher-update reconstruction
-diagnostic did not establish the predicted ranking of post-training rotation
-penalties. Together, the construction and controlled comparisons support
+diagnostic did not establish the predicted ranking of post-training
+Native--Rotated score differences. Together, the construction and controlled
+comparisons support
 evaluating structured interfaces through absolute performance, signed
-within-head orientation contrasts and their interaction under explicit
+within-head score differences and their interaction under explicit
 training budgets.

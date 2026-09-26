@@ -887,8 +887,9 @@ verified by hash; they are not bundled in the compact artifact.
 \clearpage
 \section{A prospective reconstruction-based prediction test}
 \label{app:prediction_e1}
-This subsequent study (internally E1) tests a candidate predictor of rotation
-cost, distinct from the earlier v4 oracle diagnostic also called E1. It fixes
+This subsequent study (internally E1) tests a candidate predictor of the
+post-training Native--Rotated score difference, distinct from the earlier v4
+oracle diagnostic also called E1. It fixes
 OpenFold/Train96/ESM2/Full, 1536 task updates and Confirm96-B, an already
 observed panel. Eight new rotations were locked before diagnostic measurements;
 all preserve the all-ones channel direction and are conjugates of one fixed
@@ -1130,7 +1131,8 @@ with no decay; head parameters retain $10^{-4}$ and decay 0.01; all use one
 global clipping norm of 1. Function-class equality therefore does not imply
 mapped initial parameters, equivalent optimizer trajectories or equal final
 performance. Orthogonal adaptation itself is not new
-\citep{qiu2023oft,liu2023boft}; here it is a controlled intervention on rotation cost.
+\citep{qiu2023oft,liu2023boft}; here it is a controlled intervention on the
+Native--Rotated score difference.
 
 \paragraph{Paired endpoints and their identity.}
 Define
@@ -1139,7 +1141,9 @@ Define
  T_C=(N-R)-(N_C-R_C)=B_R^{C}-B_N,
 \end{equation}
 where the last expression uses scores, with the same target and seed paired
-in each term. The original sealed design explicitly defines equal-weight averages of
+in each term. Here $T_C$ is the additional compensation gain for rotated
+Factor, relative to Native Factor's gain; it compares gains, not the absolute
+scores of the compensated models. The original sealed design explicitly defines equal-weight averages of
 $B_R^{C}$ and $T_C$ and the prediction that both are positive, with both rotations
 and Native's own change also reported. The sealed analysis code implements
 these averages before outcomes. These are prespecified mechanism contrasts,
@@ -1152,7 +1156,8 @@ not jointly multiplicity-adjusted. Confirm96-B was already observed.
 In the original execution, the three pair-lDDT seed marginals of average $T_C$ are positive, as are the
 six seed-by-rotation marginals. Only r20270107 independently establishes a
 positive $T_C$ interval; both rotated arms improve in absolute score. Average
-residue-lDDT mitigation is supported, while average TM-score mitigation is not.
+residue-lDDT supports a positive $T_C$, whereas the average TM-score interval
+for $T_C$ includes zero.
 This supplies a useful average intervention in the tested setting, without
 establishing equivalence, elimination for every rotation, a learned $R^{-1}$,
 or a predictive rule for unseen settings. It does not validate the failed
@@ -1184,8 +1189,8 @@ paired seeds and rotations within each target, $B_R^{C}$ is positive on
 \result{e2_pair_T_C_count_positive}/96 with median \result{e2_pair_T_C_median},
 below its mean of \result{e2_pair_T_C}. These medians and sign counts are
 post-hoc descriptive summaries of the saved arrays, not additional
-prespecified tests. Mean mitigation need not imply equal or positive mitigation
-for each target. A remaining gap whose interval includes zero establishes
+prespecified tests. A positive mean $T_C$ need not imply equal or positive
+additional gains for each target. A remaining score difference whose interval includes zero establishes
 neither equivalence nor complete recovery; no recovery percentage is reported.
 
 The engineering record preserves the earlier diagnostic dtype failure at the
@@ -1294,10 +1299,11 @@ The repeated rotated-arm gain is positive, but Native now improves by
 [\result{e2rep_pair_native_changeLo}, \result{e2rep_pair_native_changeHi}].
 Consequently the repeated $T_C$ interval includes zero
 (Table~\ref{tab:e2_repeat_comparison}). Neither selected rotation independently
-establishes positive mitigation in the repeat, although both improve in
-absolute score. The original useful average mitigation remains an observed
-result, but its relative advantage over Native has not been re-established
-by the complete repeat. This does not prove zero mitigation, statistically
+establishes positive $T_C$ in the repeat, although both improve in absolute
+score. The original positive average $T_C$ remains an observed result, but
+the additional compensation gain for rotated Factor relative to Native
+Factor's gain has not been re-established by the complete repeat.
+This does not prove zero additional gain, statistically
 different population effects between executions, or a particular cause for
 the training divergence. No run is replaced and no favorable executions are
 selected or averaged together. The full-training outcome variation has not
@@ -1324,7 +1330,7 @@ compensation at reference anchors.
 \label{app:anchor_intervention}
 This study tests a specific feedback hypothesis: whether constructing the
 residual from the adapted trajectory's live factors helps rotated Factor and
-reduces its direction cost. It is internally called E3 in the prospective
+reduces the Native--Rotated score difference. It is internally called E3 in the prospective
 series, distinct from the earlier diagnostic E3 in
 Appendix~\ref{app:mechanisms}. It contains no channel compensator $C$.
 
@@ -1410,8 +1416,8 @@ cannot therefore be explained by all reference-anchor models losing their
 adaptation benefit.
 
 \begin{table}[!htbp]\centering\small
-\caption{Pooled anchor contrasts. Positive $T_A$ means a larger direction
-cost under $Q$; positive $B_R^{\mathrm{anchor}}$ favors live anchors for the
+\caption{Pooled anchor contrasts. Positive $T_A$ means a larger Native--Rotated
+score difference under $Q$; positive $B_R^{\mathrm{anchor}}$ favors live anchors for the
 rotated arm. Intervals are conditional target intervals, unadjusted.
 Sign counts use effects averaged over paired seeds and rotations per target.}
 \label{tab:anchor_pooled}
@@ -1758,7 +1764,8 @@ contrast is \result{schedule_all_factor_rotation}
 [\result{schedule_all_factor_rotationLo}, \result{schedule_all_factor_rotationHi}];
 its G+ contrast is \result{schedule_all_gplus_rotation}
 [\result{schedule_all_gplus_rotationLo}, \result{schedule_all_gplus_rotationHi}].
-Thus its positive $\Psi$ does not establish a positive Factor rotation penalty.
+Thus its positive $\Psi$ does not establish a positive Factor Native--Rotated
+score difference.
 Last's Native Factor--G+ contrast is \result{schedule_last_native_factor_minus_gplus}
 [\result{schedule_last_native_factor_minus_gplusLo},
 \result{schedule_last_native_factor_minus_gplusHi}].

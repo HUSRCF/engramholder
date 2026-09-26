@@ -1,9 +1,9 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
 The strongest evidence concerns a fixed Protenix/ESMC recipe: Factor's signed
-Native--Rotated contrast exceeds G+'s on prospectively locked Fresh192 targets,
+Native--Rotated score difference exceeds G+'s on prospectively locked Fresh192 targets,
 and the interaction remains positive after one prespecified budget doubling.
-Factor's own penalty decreases with extra optimization. Together, these findings
+Factor's own score difference decreases with continued training. Together, these findings
 show persistence across two tested budgets while allowing substantial learning
 of rotated updates. They establish neither convergence nor a universal
 parameterization law; OpenFold's Fresh96 primary interaction remains
@@ -11,8 +11,8 @@ unestablished.
 
 The schedule study gives an evaluation consequence: First-only has the largest
 interaction but the lowest quality, while All's positive interaction does not
-establish a positive Factor contrast. Absolute scores and both signed row
-contrasts are therefore needed to interpret $\Psi$. An adapter can be useful
+establish a positive Factor score difference. Absolute scores and both signed
+within-head differences are therefore needed to interpret $\Psi$. An adapter can be useful
 without a large native-orientation advantage, and a large interaction does not
 select a better adapter or schedule. This amended R1-only study changes training
 and inference together and does not identify repeated writing or feedback as
@@ -20,11 +20,12 @@ the unique cause.
 
 The explanatory interventions place further limits on the inference.
 Shared compensation improves the two selected rotated Factor arms against
-fixed no-$C$ controls in both executions, but its extra benefit over Native
-was not re-established in the repeat. Output freedom and joint optimization
+fixed no-$C$ controls in both executions. The additional compensation gain for
+rotated Factor, relative to Native Factor's gain, was not re-established in the
+repeat. Output freedom and joint optimization
 change together; the intervention identifies neither expressivity as the
 unique cause nor a learned inverse. The failed reconstruction prediction
-also leaves the trained penalty without an established predictor.
+did not establish the proposed ranking of post-training score differences.
 A separately retrained residual-anchor intervention did not establish the
 predicted average benefit of live anchors to rotated Factor; the two selected
 rotations responded in opposite directions (Appendix~\ref{app:anchor_intervention}).
@@ -45,7 +46,7 @@ interval significance does not test a between-execution population difference.
 The OpenFold feature study applies its prespecified Holm correction; no
 correction is applied jointly across all follow-up studies.
 
-ESMC improves quality without establishing changed signed contrasts; feature
+ESMC improves quality without establishing changes in signed score differences; feature
 family, width, precision and projection size vary together. AtlasFold adds no
 established adaptation benefit. Dev8 curves do not establish convergence.
 Reused panels, one inference sample, backend differences and incomplete

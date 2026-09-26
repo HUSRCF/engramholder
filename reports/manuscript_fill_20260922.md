@@ -4,14 +4,14 @@
 
 | 项目 | 当前状态 |
 |---|---|
-| 当前反馈版 | `main`匿名；本轮基于`00d96b4`落实新结果整合后的审稿意见。作者资料不提交。 |
+| 当前反馈版 | `main`匿名；本轮基于`dd9d009`，保留已完成的叙事重排并落实七项措辞评审。作者资料不提交。 |
 | 预算扩展完成 | [原方案](protenix_fourcell_budget_plan_20260926.md)已由执行侧完成：24条1536→3072续训，9984条正式／Dev预测；[本轮复核](budget_schedule_integration_20260926.md)。不追加训练。 |
 | 科学更新 | [联合整合报告](fresh192_retraining_integration_20260925.md)：Fresh192唯一主要Ψ得到支持；E2重训练保留旋转收益，但额外缓解T_C未重新建立。原结果与重训练分开，不合并为新种子。 |
-| 稿件呈现 | 主文以新目标证据开篇，预算／时序单列一节并新增四格＋Δ_F／Δ_G＋Ψ总览；补偿及失败预测集中说明解释边界。[修订报告](narrative_review_revision_20260926.md)。 |
+| 稿件呈现 | 主文以新目标证据开篇，预算／时序单列一节并新增四格＋Δ_F／Δ_G＋Ψ总览；补偿及失败预测集中说明解释边界。[叙事修订](narrative_review_revision_20260926.md)及[术语与比较对象](terminology_review_revision_20260926.md)。 |
 | 来源与数值 | [v14锁](../notes/writing_branch_20260922/paper_sources.v14.lock.json)，384输入、1985字段。旧349输入哈希及1860完整数值对象不变；新增35输入、125字段。旧锁保留。 |
-| 直接核验 | [本轮验证](../notes/writing_branch_20260922/draft_validation.narrative_revision_20260926.json)：384输入哈希、1985完整数值对象不变；新总览复用原字段，原评分复算与数值键检查通过。未重训或重新评分CIF。 |
-| 当前PDF | [反馈版PDF](../build/feedback_v48_narrative/paper.pdf)。最终篇幅与全稿验收留到收尾。 |
-| 匿名材料 | [v48补充材料](../build/anonymous_narrative_v48_final.zip)同步本轮稿源及有界证据；全稿、二进制匿名性及最终篇幅仍待统一验收。 |
+| 直接核验 | [本轮验证](../notes/writing_branch_20260922/draft_validation.terminology_revision_20260926.json)：384输入哈希、1985完整数值对象不变；新总览复用原字段，原评分复算与数值键检查通过。未重训或重新评分CIF。 |
+| 当前PDF | [反馈版PDF](../build/feedback_v49_terminology/paper.pdf)。最终篇幅与全稿验收留到收尾。 |
+| 匿名材料 | [v49补充材料](../build/anonymous_terminology_v49.zip)同步本轮稿源及有界证据；全稿、二进制匿名性及最终篇幅仍待统一验收。 |
 | 已完成任务 | P192、R2六条件／384更新、R3九组／13824更新／864预测均完成。相关协议、分数、实现身份与收据已纳入；不再列为待启动。 |
 | 已审阅、尚未纳入 | [同起点通道校准A+B](posttraining_calibration_review_20260925/interpretation.md)：33组／3744预测完成，69项原比较及30项已有补充汇总独立复算一致。两项主要优势未建立，OpenFold联合续训保留次要平均收益。仍未纳入正文、v14或匿名包；本轮新增的是独立的 Atlas Native-only 校准。 |
 | 注入时序、报告阶段 | [第一阶段](openfold_injection_schedule_phase1_20260926.md)7,008轨迹／14,112评分／0失败，261项复算通过；All−First主要交互差未建立，First自身交互保留。只进入MD，未纳入正文、v14或匿名包。 |

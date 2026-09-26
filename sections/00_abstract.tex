@@ -1,27 +1,29 @@
 \begin{abstract}
-Under a fixed task-training budget, does output-channel rotation affect
-adaptation differently across parameterizations? We compare a structured head
-(Factor), which composes residue-level increments through frozen protein
-predictors' native pair-generating operators, with a generic head (G+) whose
-free output layer makes its function class closed under rotation.
-Native and rotated arms train separately from the same zero-residual function
-under paired settings; orthogonal rotations preserve local writer spectra at
-a common state. Our interaction $\Psi$ is the difference between their signed
-Native--Rotated score contrasts, rather than absolute rotation sensitivity.
+We study whether adapter parameterization changes the effect of output-channel
+rotation under a fixed training budget. Our Factor head composes residue-level
+increments through a frozen predictor's native pair-generating operators.
+The generic head G+ explicitly receives the interface anchors and has a free
+output layer, making its function class closed under output rotation.
+Our four-cell design trains Native and Rotated versions of each head separately
+from the same zero-residual function under paired settings. At identical
+inputs, interface anchors and parameters, orthogonal rotations preserve local
+writer spectra. The interaction $\Psi$ is the difference between the two heads'
+signed Native--Rotated score differences, rather than their absolute responses.
 On 192 prospectively locked new targets, fixed Protenix/ESMC models establish
 a C$\alpha$ pair-lDDT interaction of \result{p192_pair_interaction}
 [\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}];
 OpenFold's Fresh96 primary interaction remains unestablished.
 In an observed-panel follow-up, the Protenix interaction remains positive
 after a prespecified doubling of the update budget, while Factor's own
-Native--Rotated gap significantly decreases.
+Native--Rotated score difference decreases.
 An amended OpenFold schedule study on observed targets and one fixed rotation
 finds the largest interaction at the lowest absolute quality.
-Mechanism tests constrain the interpretation: shared orthogonal compensation
-improves preselected rotated Factor arms, but its preferential benefit over
-Native was not re-established in a same-seed repeat; a prespecified
-reconstruction diagnostic did not establish the predicted ranking of
-post-training rotation penalties.
+We then test whether a shared trainable orthogonal output map gives rotated
+Factor a larger compensation gain than Native Factor. Rotated Factor improves
+in both executions, but this gain difference was not re-established in the
+same-seed repeat. A prespecified reconstruction diagnostic did not establish
+the predicted ranking of post-training Native--Rotated score differences
+across eight tested rotations.
 Together, these findings motivate reporting absolute performance, signed
-within-head contrasts and their interaction under explicit training budgets.
+within-head score differences and their interaction under explicit training budgets.
 \end{abstract}

@@ -1,0 +1,48 @@
+{
+  "utc": "2026-09-26T08:51:25.261192+00:00",
+  "initial_head": "00d96b4",
+  "preceding_narrative_commit": "dd9d009",
+  "user_confirmed_existing_edits_complete": true,
+  "source_lock": "v14",
+  "inputs_unchanged": 384,
+  "complete_numeric_objects_unchanged": 1985,
+  "all_figures_unchanged": true,
+  "new_training": false,
+  "new_predictions": false,
+  "new_statistics": false,
+  "numeric_key_audit": {
+    "literal_references": 1944,
+    "distinct_keys": 1645,
+    "missing": []
+  },
+  "compile": {
+    "passed": true,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "pdf": "build/feedback_v49_terminology/paper.pdf",
+    "sha256": "c84eab0158e0b1ff17cacb22de786e9df3f9d75482f34310b922361f93546cb4",
+    "source_manifest": "build/feedback_v49_terminology/compile_sources.json",
+    "page_limit_checked": false,
+    "full_visual_acceptance": false,
+    "local_visual_review": [
+      "abstract and definition order",
+      "interface-anchor method paragraph",
+      "injection-schedule comparison",
+      "E2 gain definition, results and table",
+      "conclusion and study chronology"
+    ]
+  },
+  "artifact": {
+    "path": "build/anonymous_terminology_v49.zip",
+    "sha256": "829a04d470e16fdb0533f4cebe24a6051c4b7cdb21c2e0afbc51d61cf3a644ca",
+    "files": 537,
+    "tests": 27,
+    "numerical_fields": 1985,
+    "all_existing_score_verifiers_passed": true,
+    "operator_and_compensation_cpu_checks": true,
+    "manuscript_tex_matches_compiled_sources": true,
+    "full_retraining": false,
+    "full_binary_anonymity_certification": false
+  },
+  "scope": "Editorial revision of existing prose and terminology; frozen inputs and complete numeric mappings unchanged. Final pagination and full-PDF acceptance deferred."
+}

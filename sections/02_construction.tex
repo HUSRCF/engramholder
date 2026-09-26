@@ -1,10 +1,10 @@
 \section{Native update construction and orientation controls}
 \label{sec:construction}
-\subsection{Query-anchored residual adaptation}
+\subsection{Residual adaptation with native interface anchors}
 \label{sec:residual}
 Let $e(x)$ be frozen sequence features and $f_\theta$ a shared trainable predictor
 of residue-level factor increments. At interface $k$ and recycle $t$, let
-$a_{k,t},b_{k,t}$ denote the native factors, $G_{k,t}$ the frozen pair-generating
+$a_{k,t},b_{k,t}$ denote the interface anchors (native factors), $G_{k,t}$ the frozen pair-generating
 operator, and $U_{k,t,0}$ its native baseline update at the selected interface.
 This is an update, not the full pair state or a common query-only trajectory:
 OpenFold computes it on each arm's current state, while Protenix reuses its
@@ -21,8 +21,8 @@ default initialization. Its three residual convolution layers, sequence-mean
 projection, head dimensions, and seeded constructor order are specified in
 Appendix~\ref{app:adapter_definition}. Only the adapter is optimized;
 gradients propagate through the frozen
-folding model. Query factors provide the composition anchors, rather than
-structure labels as predictor inputs.
+folding model. The interface factors anchor the composition; the increment
+predictor receives sequence features, not structure labels.
 
 The operator is backbone-specific. Protenix reuses cached query anchors and
 the same update across passes within a prediction. OpenFold's first main
@@ -68,7 +68,8 @@ starts from zero residual and receives task training, so the experiment does
 not perturb an already trained native adapter at inference time.
 Appendix~\ref{app:rotation_sampling} specifies the ordinary QR sampler,
 its separate random stream, and the implementation's multiplication convention.
-Within the same head at matched factors and parameters, orthogonality preserves residual norms,
+Within the same head at identical inputs, interface anchors and parameters,
+orthogonality preserves residual norms,
 decoder singular values and the local writer's $J^\top J$. It need not preserve
 its composition with the frozen downstream Jacobian, AdamW dynamics, or norms
 of the different updates learned after training. For state-dependent anchors,
@@ -76,8 +77,9 @@ this is a local control, not a spectral equivalence of the whole recycled model.
 
 \subsection{A generic head that can absorb the rotation}
 \label{sec:generic}
-G+ uses the same sequence-encoder architecture and explicitly receives the corresponding
-query factors. Its pair input concatenates projected node features $z_i,z_j$,
+G+ uses the same sequence-encoder architecture, with separately fitted
+parameters, and explicitly receives the interface anchors $a_i,b_j$.
+Its pair input concatenates projected node features $z_i,z_j$,
 $a_i,b_j$, and clipped relative sequence position. A pair MLP ends in a free
 affine layer and produces a zero-initialized residual. Unlike the earlier
 Generic control, G+ has explicit factor access.

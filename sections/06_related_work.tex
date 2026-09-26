@@ -8,7 +8,7 @@ controls and a rotation-closed generic head.
 Orthogonal finetuning (OFT) learns orthogonal transformations \citep{qiu2023oft};
 BOFT uses butterfly factorizations for parameter-efficient orthogonal adaptation
 \citep{liu2023boft}. Our shared map acts on completed pair residuals to test
-compensation for rotation penalties.
+whether compensation reduces the Native--Rotated score difference.
 AdamW's coordinate-wise updates \citep{loshchilov2019adamw} distinguish
 function-class closure from training behavior. LoRA-RITE studies optimization
 invariance across equivalent low-rank factorizations \citep{yen2025lorarite}.
