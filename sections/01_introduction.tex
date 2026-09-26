@@ -10,19 +10,20 @@ native pair-generating operators. Reusing these operators gives the adapter
 both a structured update form and an inherited output-channel orientation
 relative to the frozen downstream network.
 
-Parameter-efficient methods constrain weight updates, as in LoRA
-\citep{hu2021lora}, or intervene on representations, as in ReFT
-\citep{wu2024reft}. We ask: \emph{under a fixed task-training budget, does
+Parameter-efficient adaptation can modify model weights, as in LoRA
+\citep{hu2021lora}, or intermediate representations, as in ReFT
+\citep{wu2024reft}. Our construction follows the latter approach.
+For a given residual update, an orthogonal output rotation preserves its
+norm but can change how the frozen downstream network responds to it.
+We therefore ask: \emph{under a fixed task-training budget, does
 output-channel rotation affect adaptation differently across parameterizations?}
-Matching parameter counts and local spectra does not specify how a frozen
-predictor uses an update. A comparison must also distinguish an orientation
-effect within a head from its absolute quality and competitiveness with
-another adapter.
+We distinguish the effect of rotation within an adapter from its prediction
+quality and from performance differences between adapters.
 
 Our four-cell design compares native and rotated versions of two heads.
 Factor composes increments with native interface anchors through the frozen operator;
 G+ receives the same extra sequence features and explicit anchors, with a free
-affine output layer. Orthogonal transforms act only on completed residuals.
+affine output layer. And orthogonal transforms act only on completed residuals.
 Each arm is trained separately under paired settings, beginning
 at the same zero-residual function. For each head $H$, we measure the signed
 Native--Rotated score difference $\Delta_H$ and compare heads through
