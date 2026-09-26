@@ -95,8 +95,7 @@ rotation family. Protenix prediction uses seed 101, four recycles, five steps,
 FP32 torch kernels, TF32 and MC dropout off. OpenFold uses seed 20260921 and
 four trunk passes without early stopping; AtlasFold uses seed 1. Different
 backbones use native losses and inference budgets: equal update counts do not
-mean equal computation. Frozen-parameter hashes, zero-initialization replay,
-output-head gradients and subsequent encoder gradients are checked.
+mean equal computation.
 
 \section{Data, study chronology, and cumulative exposure}
 \label{app:chronology}
@@ -126,7 +125,7 @@ The inherited Train24 and Dev8 are the original interface-cache queries,
 including later releases; the 2021-09-30 cutoff applies to newly selected
 candidates, not retrospectively to these sets. Train96 retains Train24 and adds
 18 chains per short stratum; Train384 retains Train96 and adds another 72 per
-stratum. Realized lengths and target identities are retained in the data audit.
+stratum. Realized lengths and target identities are provided with the data.
 
 Confirm96-A uses the existing \texttt{monomer\_clean} candidate catalog and
 experimental CIFs. Within each stratum, candidates are ordered by SHA256 of
@@ -148,23 +147,20 @@ coverage instead uses the candidate length; query duplicates retain the
 stricter rule. Confirm96-A's initial shorter-sequence rule for all MSA rows
 failed to fill its shortest stratum. Its v2 changed only that MSA denominator
 before any new prediction or score, retaining the ranking and quotas. These
-are operational sequence exclusions, not family labels. This audit verifies
-stored membership, lengths and metadata; it does not rerun sequence searches.
+are sequence exclusions, not family labels.
 
 The original Confirm96-A study compared Factor with Generic, which did not
 explicitly receive query factors. The later Confirm96-B direction study fixed
 its primary tangent comparison and prespecified Full as secondary. Subsequent
-Tiny, mean-preserving, and training-scale studies reuse that panel. These
-distinctions remain unchanged when the paper presents the later OpenFold
-interaction first. The separate Train24 G+ study used its own seeds and
-head-specific development-selected rates; its results cannot fill matched
-Train384 cells.
+Tiny, mean-preserving, and training-scale studies reuse that panel.
+The separate Train24 G+ study used its own seeds and head-specific
+development-selected rates; its results cannot fill matched Train384 cells.
 
 Length48 was selected before its original new structure scores, with 16
 complete proteins in each range 385--512, 513--640, and 641--768. Candidates
 were single-model X-ray structures, at most 2.5\,\AA\ resolution, with standard
 amino acids, initial release no later than 2021-09-30, verified entity mapping,
-and at least 90\% reference C$\alpha$ coverage. The actual accepted lengths
+and at least 90\% reference C$\alpha$ coverage. The realized lengths
 were 392--750. Deterministic hash ordering, exclusion rules and quotas were
 locked; targets were not cropped or replaced based on scores. All 672 original
 model--target attempts preceded opening the structural scores.
@@ -181,7 +177,7 @@ queries and to the candidate length for other teacher rows. HSPs are not
 unioned. Within-panel screening adds previously accepted targets to the
 reference corpus. CATH annotations \citep{orengo1997cath} were used to audit
 this filter. Four CATH-linked examples were missed at retrieval, so this
-is operational sequence screening, not homologous-superfamily isolation.
+is sequence screening, not homologous-superfamily isolation.
 The annotation-feasibility audit used the archived daily-release file
 \texttt{cath-b-newest-all.gz}, retrieved on 2026-09-19 with HTTP
 Last-Modified 2025-01-15. Its entries include \texttt{v4\_3\_0} and
@@ -194,8 +190,6 @@ observed follow-ups. Documented cumulative query exposure reaches 632 records,
 but does not certify complete historical teacher or development exposure.
 Unresolved CATH annotations and the added Train384 chains preclude the planned
 strict family-held-out claim. Foundation-model pretraining exposure is unknown.
-The public writing history is separate from these scientific locks; it does
-not retrospectively change endpoint status.
 
 \section{Scoring, failure handling, and statistical analysis}
 \label{app:scoring}
@@ -217,10 +211,8 @@ A target's complete seed/rotation record is the paired resampling unit.
 The original Protenix direction bootstrap uses seed 20260926, the original
 Length48 bootstrap uses 20260928, and the OpenFold four-cell study uses 20260921,
 each with 20,000 draws. The matched Protenix G+ study uses seed 20260926 and
-20,000 draws on each panel. The paper generation script reads locked intervals
-and independently reconstructs the six new G+ contrasts with the same rule;
-it does not select a new resampling procedure. Original primary gate definitions
-remain in the historical records; later comparisons do not replace them.
+20,000 draws on each panel. The original prespecified endpoints retain their
+roles; later comparisons do not replace them.
 Unadjusted secondary intervals and limited training-seed coverage should not be
 interpreted as a universal simultaneous confidence guarantee.
 
@@ -239,19 +231,14 @@ from ESMC features, including subsequent Protenix/AtlasFold comparisons; this fi
 \section{Complete direction and comparator results}
 \label{app:complete_results}
 Table~\ref{tab:scope_full} provides the exact direction contrasts underlying
-Figure~\ref{fig:scope}. The accompanying score artifact retains every target
-and model instance; \texttt{generated/cell\_sources.json} maps each generated
-number to its evidence field and records input hashes. A single script produces
-both LaTeX values and figures and independently checks completed raw system
-means before rendering. No structure prediction or scoring is performed by
-that script.
+Figure~\ref{fig:scope}. Per-target scores and analysis code accompany the paper.
 
 \begin{table}[h]
 \caption{Direction contrasts by tested setting. P/S/F study identities are as
 in Figure~\ref{fig:scope}; secondary intervals are unadjusted.}
 \label{tab:scope_full}\centering\scriptsize
 \begin{tabular}{lcrr}\toprule
-Setting & Status & Difference & 95\% interval \\\midrule
+Setting & Study role & Difference & 95\% interval \\\midrule
 \input{generated/scope_table_rows}
 \end{tabular}
 \end{table}
@@ -318,15 +305,14 @@ The observed-panel local advantage did not establish a positive association
 with the previously measured per-target folding gains. This oracle chooses
 increments using each target's structure supervision, bypassing the shared
 sequence predictor's learning problem. A later parameter-space differential
-study passed independent writer and gradient-chain checks but encountered
-responses near downstream numerical resolution; its original S0 remained
-unpassed. A separately declared finite-step Train8-to-Dev8 study produced
-measurable responses but did not establish mean positive transfer or a native
-advantage. These distinct outcomes are retained rather than merged into one
-successful mechanism claim.
+study encountered responses near downstream numerical resolution, preventing
+a resolved differential comparison. A separate finite-step Train8-to-Dev8 study
+produced measurable responses but did not establish mean positive transfer or
+a native advantage. These outcomes do not establish a mechanism for the
+trained folding gains.
 
-\subsection{Reachable versus learned updates: v4 diagnostics}
-The v4 study uses nine paired noise conditions on Observed96. The oracle diagnostic
+\subsection{Reachable versus learned updates}
+This diagnostic study uses nine paired noise conditions on Observed96. The oracle diagnostic
 constructs directions at the common query-only state. The learned-update diagnostic evaluates 12 archived
 Train24/tangent/384 adapters, keeping the first three recycles query-only and
 changing only the fourth update. For learned residual $\delta$, it compares
@@ -336,7 +322,7 @@ change $\ell(U_q)-\ell(U_q+\delta)$. These quantities have different units and
 scales; their difference is not an amplitude attribution.
 
 \begin{table}[h]
-\caption{v4 task-loss diagnostics: native-minus-rotation effects. Small
+\caption{Task-loss diagnostics: native-minus-rotation effects. Small
 matched-norm learned response is the primary comparison; other rows are secondary.
 Intervals condition on fitted models. Final-residual retention uses different models and states.}
 \label{tab:v4}\centering\footnotesize
@@ -358,17 +344,9 @@ It finds no established native advantage in that marginal task response, and
 does not generate free-sampling structures. Neither learned-update nor retention diagnostics identify an
 explanation of the Train384 structural gains.
 
-All 864 core conditions and 864 retention conditions were completed. At the primary
-oracle step, 3398/3456 dynamic finite differences meet the 5\% relative criterion;
-58 exceptions remain included. These checks concern oracle directions, not
-every learned direction. Independent scalar reconstruction reproduces the
-archived target means and intervals. Five of six current v4 source files match
-the historical hashes; the main analysis script differs, so the reconstruction
-uses a separate verifier. Conflicting historical start-time fields are preserved,
-not treated as independently certified chronology. For provenance, the v4
-records call the oracle, learned-update and retention diagnostics E1, E2 and
-E3, respectively; those internal labels are separate from the subsequent
-prediction, compensation and anchor-intervention studies.
+At the primary oracle step, 58 of 3456 dynamic finite differences differed by
+more than 5\% from the predicted response; these cases remain included. This
+numerical comparison concerns oracle directions, not every learned direction.
 
 \section{Full-inference source--norm intervention}
 \label{app:norm_cross}
@@ -378,10 +356,10 @@ $\delta_a=m_ad_a$, where $m_a=\|\delta_a\|_F$, $\|d_a\|_F=1$, and
 $a\in\{N,R\}$. Each trained rotation is paired with the same-seed native model.
 We inject $m_Nd_N$, $m_Rd_N$, $m_Nd_R$, or $m_Rd_R$ throughout c4/s5 inference,
 scaling completed pair residuals rather than factor increments. Norms use no
-reference-structure mask. All 720 pure and mixed predictions are rerun on the
-same backend; none fails. The mixed residuals are inference-time interventions
-and need not correspond to outputs of the trained factor head or states
-encountered during training.
+reference-structure mask. All 720 pure and mixed predictions use the same
+backend. The mixed residuals are inference-time interventions and need not
+correspond to outputs of the trained factor head or states encountered
+during training.
 
 Here, \emph{direction source} includes learned content and relative pair/channel
 magnitudes after global normalization, unlike the original channel-rotation
@@ -432,7 +410,7 @@ chain or identify how training produced the residuals.
 
 The 24 observed Confirm96-B targets are chosen by the fixed hash order, six in
 each historical length stratum 128--191, 192--255, 256--319 and 320--384.
-All 288 nonzero, finite residuals pass the preaudit. The model is fixed
+All residuals used for normalization are finite and nonzero. The model is fixed
 Protenix-Mini Train384/Full/1536; no target supervision enters residual formation,
 norms or input masks. The completed pair residual is globally scaled before
 adding it to the unchanged query baseline. Scaling factor increments would
@@ -462,45 +440,24 @@ Metric & Contrast & Difference & 95\% interval \\\midrule
 
 All 720 predictions (288 pure, 432 mixed) are computed on MI250 with c4/s5,
 seed101 and a single sample; pure baselines are not reused from another backend.
-The completion audit records all CIF hashes and frozen parameters, paired query
-hashes and RNG states, and 432 mixed-norm/direction checks. Actual random-tensor
-hash pairing is checked on the two engineering targets only. There are no formal
-failures or HIP retries. Initial preflight failures, their repaired fields and
-CPU/device comparison issue, and their superseded locks remain separately
-recorded. The formal protocol is frozen after these repairs and before scoring.
-
-All 720 score records reconstruct the 36 metric-by-cell/contrast summaries,
-target arrays, seed and rotation marginals to within $10^{-12}$. The primary
-bootstrap has 20,000 draws, seed20260926, with six targets resampled in each
+The primary bootstrap has 20,000 draws, seed20260926, with six targets resampled in each
 stratum. Inference noise, seed and rotation pairing are retained within a target;
 the repeated native baseline in three rotation pairs is not three independent
 observations. The intervals remain conditional on these models and observed
-proteins. Full-predictor computations and CIF scoring are not rerun by the
-paper's numerical reconstruction script.
+proteins.
 
-\section{Engineering audits and recovery records}
+\section{Numerical implementation limits}
 \label{app:engineering}
-Zero-residual replay, input/parameter gradients, frozen hashes, pairing, and
-complete-sequence outputs are audited independently of quality-based model
-selection. Backend reruns are numerical checks, not new biological samples.
-In the AtlasFold final evaluation, broken cross-machine absolute symlinks caused
-720 recorded engineering failures across the first five runs. Repairs retained
-the same final checkpoints, reused the available short-chain CIFs, and generated
-missing outputs under independent recovery reports. The final 2160 predictions
-were complete; the original attempts were not erased or selected by quality.
-Post-start supplementary checks in the original length study retain their
-actual chronology rather than being relabeled as prelaunch checks.
+Backend reruns provide numerical comparisons, not new biological samples.
+AtlasFold evaluation required recovery of outputs after infrastructure failures;
+the same final checkpoints and target set were retained, without quality-based
+selection. Detailed recovery records accompany the artifact.
 
-For matched Protenix G+, three two-step prefixes passed before formal
-continuation; those steps count within each completed 1536-update run.
-All 432 formal predictions succeeded without HIP retries. Audits checked the
-complete training order, paired noise levels, frozen-parameter and artifact
-hashes; score contrasts were independently reconstructed. Confirm96-B uses
-MI250 for both sides. Length48 reuses historical H100 Native/Rotated predictions
-and new MI250 G+ predictions. Short-chain replay was exact, while a 750-residue
-replay had relative coordinate L2 error 0.00032018, below the predeclared
-$10^{-3}$ engineering tolerance. This limited replay does not establish a
-numerical error bound for the entire long-chain panel.
+For matched Protenix G+, Confirm96-B uses MI250 for both sides. Length48 reuses
+historical H100 Native/Rotated predictions and new MI250 G+ predictions.
+Short-chain replay was exact, while a 750-residue replay had relative coordinate
+L2 error 0.00032018. This limited replay does not establish a numerical error
+bound for the entire long-chain panel.
 
 \section{Historical exploratory branches}
 \label{app:historical}
@@ -512,16 +469,14 @@ in the evidence archive with their original roles; they are not additional
 successful replications of the head-by-rotation interaction.
 
 
-\section{OpenFold Stage A: frozen ESMC feature substitution}
+\section{OpenFold: frozen ESMC feature substitution}
 \label{app:esmc}
-Stage A fixes Train384, Full, 1536 updates, three paired training seeds and
+This study fixes Train384, Full, 1536 updates, three paired training seeds and
 three rotations. It reuses the 15 historical ESM2 Factor/Rotated Factor/G+
 fits and adds nine ESM2 rotated G+ fits plus the complete 24-fit ESMC matrix.
-The same observed Confirm96-B and Length48 targets supply 144 scores per new
-fit: 4,752 new predictions with no failures. The combined score archive contains
-7,200 records, including historical systems and baselines. This is distinct
-from the original Train96 four-cell study; its primary endpoint is ESMC
-Native--Rotated on Confirm96-B, not a newly selected interaction endpoint.
+The new fits are evaluated on the same 96 Confirm96-B and 48 Length48 targets.
+This is distinct from the original Train96 four-cell study; its primary endpoint
+is ESMC Native--Rotated on Confirm96-B, not a newly selected interaction endpoint.
 
 ESMC-600M uses final post-layer-normalization representations from layer 36,
 width 1152, cached in BF16. The old ESM2 layer-12 cache has width 480 in FP32.
@@ -567,7 +522,7 @@ and rotation marginals are retained in the accompanying evidence.
 \begin{table}[htbp]\centering\footnotesize
 \caption{Feature-substitution pair-lDDT contrasts. $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$,
 and $\Psi=\Delta_F-\Delta_{G+}$. Negative Native--G+ favors the generic head. Historical point estimates are
-unchanged; these intervals use the Stage A bootstrap stream.}
+unchanged; these intervals use the feature study's bootstrap stream.}
 \begin{tabular}{lllrr}\toprule
 Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/esmc_A_pair_contrasts}
@@ -589,7 +544,7 @@ Panel & Features & Contrast & Difference & 95\% interval \\\midrule
 \caption{Complete head-by-rotation interactions $\Psi$ on observed panels;
 95\% target-bootstrap intervals condition on fitted models. Confirm96-B $\Psi$
 is primary only in the original OpenFold Train96 and Protenix Train96
-four-cell follow-ups. A66's primary is instead ESMC $\Delta_F$ on Confirm96-B
+four-cell follow-ups. The Protenix/AtlasFold feature study's primary is instead ESMC $\Delta_F$ on Confirm96-B
 per backbone; its $\Psi$ entries are follow-up intervals without joint
 multiplicity correction. Length48 is not new confirmation here. ---: not run.
 These are not direct tests of differences between rows.}
@@ -600,24 +555,23 @@ Predictor / training set / features & Confirm96-B & Length48 \\\midrule
 \end{tabular}
 \end{table}
 
-\section{Completed Protenix and AtlasFold four-cell follow-ups}
+\section{Protenix and AtlasFold four-cell follow-ups}
 \label{app:dh_fourcells}
 The Protenix Train96 follow-up adds three Native G+ and nine rotated G+ fits,
 reusing the 12 fixed Full Factor models. All 12 new fits use 1536 updates,
 learning rate $5\times10^{-5}$, weight decay $10^{-4}$, global clipping at 1,
 the original seeds and rotations, and frozen ESM2 layer-12 features.
-Train96 and Dev8 manifest hashes match the OpenFold experiment. This matches
+Train96 and Dev8 membership matches the OpenFold experiment. This matches
 training membership and update count, not backbone loss or computation cost.
-The 1,152 new Confirm96-B predictions complete the 2,400-record factorial plus
-query baseline; no Train96 Length48 factorial is added. Its primary is the
-direct pair-lDDT interaction on the already observed Confirm96-B panel.
+The study evaluates the already observed Confirm96-B panel, with the direct
+pair-lDDT interaction as its primary endpoint; no Train96 Length48 factorial
+is added.
 
-The separate Protenix/AtlasFold feature study (A66) adds 33 fits per backbone:
+The separate Protenix/AtlasFold feature study adds 33 fits per backbone:
 nine ESM2 rotated-G+ fits and the complete 24-fit ESMC factorial. Protenix
 uses Train384 and AtlasFold Train96, both at 1536 updates under the retained
 backbone-specific recipe. Atlas uses learning rate $10^{-4}$ and decay 0.01;
-Protenix retains $5\times10^{-5}$ and $10^{-4}$. All 9,504 new predictions
-complete, combined with 4,608 historical score records. No new quality-based
+Protenix retains $5\times10^{-5}$ and $10^{-4}$. No new quality-based
 hyperparameter search is introduced. Atlas's native AtlasLM-3B is retained;
 ESMC replaces only the added adapter features. As in OpenFold, this changes
 480-dimensional FP32 ESM2 features to 1152-dimensional BF16 ESMC features and
@@ -625,14 +579,14 @@ adds 86,016 input-projection weights per head. These are not pure PLM-size or
 equal-parameter comparisons.
 
 \paragraph{Endpoint identity and uncertainty.}
-For each A66 backbone, the prespecified primary is ESMC Factor--Rotated on
+For each backbone in the feature study, the prespecified primary is ESMC Factor--Rotated on
 Confirm96-B. The new $\Psi$, G+ rotation effects, Native--G+, cross-feature
 contrasts, Length48 and supplementary metrics retain follow-up roles.
 Completing four cells does not give all contrasts a new confirmatory identity.
-A66 did not prespecify OpenFold's three-test Holm family; that correction is
-not transferred here. All reported A66 intervals are unadjusted for joint
+The feature study did not prespecify OpenFold's three-test Holm family; that correction is
+not transferred here. All feature-study intervals are unadjusted for joint
 multiplicity. Both studies resample whole target records 20,000 times with
-seed 20260926. A66 Length48 resamples 16 targets within each of its three fixed
+seed 20260926. The feature study's Length48 analysis resamples 16 targets within each of its three fixed
 length strata. Historical point estimates are unchanged; re-estimated
 intervals can differ from older tables using another seed or resampling rule.
 Neither study replaces Fresh96's unestablished primary interaction.
@@ -648,24 +602,16 @@ the interaction. A tiny unadjusted positive Atlas ESMC Confirm96-B G+ rotation
 interval is retained; this is not a Factor benefit or an interaction.
 Supplementary metrics reuse the same structures, not independent samples.
 
-\paragraph{Backend and engineering provenance.}
+\paragraph{Backend limitations.}
 Protenix's ESMC four cells run on MI250. Historical ESM2 Length48 Factor/query
 predictions run on H100, while its G+ cells run on MI250. Atlas's ESMC seed
 20260925 has all eight models on H100; the other two ESMC seeds and all ESM2
 models run on MI250. Backend is therefore confounded with that seed, and its
 ESMC--ESM2 comparison changes backend too. This is not an independent hardware
-replication. The execution archive retains Atlas gradient-assertion failures,
-checkpoint recovery, hidden-layer saturation events, the amended diagnostic
-policy and H100 Torch API compatibility edits. Final matrix completion is not
-claimed to mean an absence of engineering failures. No targets, model arms,
-final checkpoints, activations or learning rates were selected by these scores.
-
-The paper verifier reconstructs all 216 A66 and 18 Train96 metric/contrast
-combinations from 14,112 and 2,400 score records respectively, including
-pairing, bootstrap intervals and seed/rotation marginals. It neither reruns
-folding nor rescores CIFs. Source hashes, original locks and the scoring
-amendment are retained; this verification does not certify an end-to-end
-retraining reproduction.
+replication. Atlas training required checkpoint recovery and revisions to
+numerical diagnostics and software compatibility. These changes did not select
+targets, model arms, final checkpoints, activations or learning rates by their
+structure scores; the execution history is documented in the artifact.
 
 \begin{table}[htbp]\centering\scriptsize
 \caption{Pair-lDDT interaction marginals. Each entry averages whole targets and
@@ -676,7 +622,7 @@ Predictor/Train & Panel & Features & Three seed means & Three rotation means \\\
 \input{generated/dh_interaction_marginals}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{Protenix completed factorials: pair-lDDT contrasts.
+\caption{Protenix four-cell comparisons: pair-lDDT contrasts.
 $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
 Endpoint roles and unadjusted intervals are as specified above.}
 \begin{tabular}{lllrr}\toprule
@@ -684,7 +630,7 @@ Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/dh_protenix_pair_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{Protenix completed factorials: residue-average C$\alpha$-lDDT contrasts.
+\caption{Protenix four-cell comparisons: residue-average C$\alpha$-lDDT contrasts.
 $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
 Endpoint roles and unadjusted intervals are as specified above.}
 \begin{tabular}{lllrr}\toprule
@@ -692,7 +638,7 @@ Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/dh_protenix_residue_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{Protenix completed factorials: fixed-correspondence TM-score contrasts.
+\caption{Protenix four-cell comparisons: fixed-correspondence TM-score contrasts.
 $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
 Endpoint roles and unadjusted intervals are as specified above.}
 \begin{tabular}{lllrr}\toprule
@@ -700,7 +646,7 @@ Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/dh_protenix_tm_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{AtlasFold completed factorials: pair-lDDT contrasts.
+\caption{AtlasFold four-cell comparisons: pair-lDDT contrasts.
 $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
 Endpoint roles and unadjusted intervals are as specified above.}
 \begin{tabular}{lllrr}\toprule
@@ -708,7 +654,7 @@ Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/dh_atlasfold_pair_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{AtlasFold completed factorials: residue-average C$\alpha$-lDDT contrasts.
+\caption{AtlasFold four-cell comparisons: residue-average C$\alpha$-lDDT contrasts.
 $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
 Endpoint roles and unadjusted intervals are as specified above.}
 \begin{tabular}{lllrr}\toprule
@@ -716,7 +662,7 @@ Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/dh_atlasfold_residue_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{AtlasFold completed factorials: fixed-correspondence TM-score contrasts.
+\caption{AtlasFold four-cell comparisons: fixed-correspondence TM-score contrasts.
 $\Delta_F=F-RF$, $\Delta_{G+}=G+-RG+$ and $\Psi=\Delta_F-\Delta_{G+}$.
 Endpoint roles and unadjusted intervals are as specified above.}
 \begin{tabular}{lllrr}\toprule
@@ -724,7 +670,7 @@ Train/features & Panel & Contrast & Difference & 95\% interval \\\midrule
 \input{generated/dh_atlasfold_tm_contrasts}
 \end{tabular}\end{table}
 \begin{table}[htbp]\centering\footnotesize
-\caption{A66 direct ESMC-minus-ESM2 changes, pair-lDDT. These paired follow-up
+\caption{Direct ESMC-minus-ESM2 changes, pair-lDDT. These paired follow-up
 intervals are unadjusted; backend qualifications above also apply.}
 \begin{tabular}{lllrr}\toprule
 Predictor & Panel & Contrast & Difference & 95\% interval \\\midrule
@@ -749,15 +695,9 @@ Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
 \section{Fresh96: fixed-model validation on new targets}
 \label{app:fresh96}
 This study reused the 24 OpenFold Train96/ESM2-35M adapters and query-only
-baseline without further training. The model lock preceded target selection;
-execution and scoring locks preceded the first new prediction. All 2,400
-model--target predictions completed before scoring, with zero failures. Fifty
-engineering predictions on two previously observed targets were separate from
-the formal panel. Their coordinates and three scores replayed the historical
-outputs exactly. The collection audit checked all 24 checkpoint hashes, 2,400
-prediction hashes and 328 source/lock bindings; score-array reconstruction
-independently recovered the reported contrasts and marginals. These checks do
-not reproduce the CIF scoring or certify every historical access event.
+baseline without further training. Models were fixed before target selection;
+the execution recipe and analysis were specified before new predictions.
+The score grid contains all $25\times96=2,400$ model--target pairs.
 
 \paragraph{Selection and its revision.}
 Fresh96 contains four prespecified short-chain length strata with 24 targets
@@ -767,9 +707,7 @@ hash ordering independent of model scores. Recorded training, development,
 evaluation and engineering exposures were excluded, including query/PDB
 identities and sequences. The historical teacher exclusion library was retained.
 An initial global-alignment rule failed to fill the first stratum and rejected
-all eight fixed shuffled negative controls. A separate exposure-inventory bug
-had first mislabeled 256 synthetic controls as real queries; correcting that
-bug did not resolve the alignment failure. Both failed attempts are archived.
+all eight fixed shuffled negative controls, motivating the revision below.
 
 Before any new folding prediction, selection v2 adopted the previously
 calibrated BLASTP 2.17.0+ rule used for Length48, without changing the models,
@@ -779,11 +717,11 @@ gap-open 11/extend 1, word size 3, SEG and soft masking, composition adjustment
 HSP with E-value $\leq10^{-5}$, identity $\geq0.30$ over alignment columns
 including internal gaps, at least 50 paired residues and coverage $\geq0.70$.
 Coverage uses the shorter sequence for real queries/panel neighbors and the
-candidate length for historical teacher rows; HSPs are not merged. The archived
-selection audit checked 474 searches and reported no known ID/PDB/full-sequence
-overlap. This is sequence-screened new-target validation relative to auditable
-project exposure, not the identical Confirm96-B screening implementation,
-strict family isolation or exclusion from foundation-model pretraining.
+candidate length for historical teacher rows; HSPs are not merged. No known
+ID, PDB or exact-sequence overlap remains with the recorded exclusions. This
+is sequence-screened new-target validation relative to documented project
+exposure, not the identical Confirm96-B screening implementation, strict
+family isolation or exclusion from foundation-model pretraining.
 
 \paragraph{Endpoint and complete reporting.}
 The sole primary endpoint was pair-lDDT $\Psi$, using 20,000 whole-target
@@ -829,10 +767,9 @@ $(N-R)_{384}-(N-R)_{96}$ is \result{of_scale_c96}
 Length48. These quantities do not equal the change of the full interaction below.
 
 After the ESM2 Train384 four-cell control was complete, a subsequent analysis
-computed $q_i=\Psi_{384,i}-\Psi_{96,i}$ for every shared target. Model identities,
-three seeds, three rotations and complete target coverage were checked before
-aggregation. The analysis uses 20,000 paired whole-target bootstrap draws
-(seed 20260924), retaining all model cells for each sampled target. These are
+computed $q_i=\Psi_{384,i}-\Psi_{96,i}$ for every shared target, pairing the same
+three seeds and three rotations. The analysis uses 20,000 paired whole-target
+bootstrap draws (seed 20260924), retaining all model cells for each sampled target. These are
 exploratory, unadjusted intervals, not differences between two marginal
 confidence intervals or new confirmatory endpoints.
 
@@ -852,46 +789,14 @@ Confirm96-B under this analysis; the Length48 interval includes zero. Neither
 result isolates dataset size: coverage, membership and repetition counts change
 together, and convergence at 1536 updates has not been established.
 
-\section{A portable one-target complete-prediction entry}
-\label{app:single_repro}
-The accompanying \texttt{reproducibility/openfold\_single} entry includes a
-public FASTA, the fixed Native adapter exported without changing writer tensors,
-a pinned environment/source setup script, a label-free predictor and a separate
-CIF scorer. It was executed on an H100 using a newly created Python 3.12 venv
-with system site-packages disabled, Torch 2.7.1+cu128 and a newly compiled,
-revision-pinned OpenFold extension. Host Python, CUDA 12.8 and GCC 12.5 remain
-explicit prerequisites; this is not an operating-system/container reproduction.
-
-The first previously observed engineering target, 3gxb\_A, and the first Native
-training seed were fixed for this check. ESM2 layer-12 features were recomputed
-from its 184-residue FASTA, without historical feature caches. All 184 residues
-were predicted through four trunk and selected OPM calls, with backbone and
-adapter frozen. All predicted heavy atoms were exported to mmCIF; only the
-separate scorer read experimental coordinates. The published output was also
-rescored from CIF on the local machine with the same result. The verification
-record reports the preset feature/coordinate tolerances, the score difference,
-file hashes and actual import paths. This validates one model, target and
-primary metric, not the complete experimental matrix, all supplementary metrics
-or end-to-end adapter retraining.
-
-The archived engineering history includes two missing-dependency starts before
-prediction, followed by a successful run. A copied reference symlink was replaced
-by a hash-identical ordinary file and independently rescored. The current writer
-source matches the verified Fresh96 inference snapshot; its later rotated-G+
-branch differs from the initial Train96 training snapshot, without changing this
-Native Factor computation. These provenance distinctions are retained rather
-than describing all historical sources as byte-identical. Pretrained AF2/ESM2
-weights are obtained separately from upstream under their original terms and
-verified by hash; they are not bundled in the compact artifact.
 
 \clearpage
 \section{A prospective reconstruction-based prediction test}
 \label{app:prediction_e1}
-This subsequent study (internally E1) tests a candidate predictor of the
-post-training Native--Rotated score difference, distinct from the earlier v4
-oracle diagnostic also called E1. It fixes
-OpenFold/Train96/ESM2/Full, 1536 task updates and Confirm96-B, an already
-observed panel. Eight new rotations were locked before diagnostic measurements;
+This subsequent study tests a candidate predictor of the post-training
+Native--Rotated score difference. It fixes OpenFold/Train96/ESM2/Full,
+1536 task updates and Confirm96-B, an already observed panel. Eight new
+rotations were fixed before diagnostic measurements;
 all preserve the all-ones channel direction and are conjugates of one fixed
 matrix in $SO(127)$ on its orthogonal complement. Thus their spectra and distance
 from identity are matched. They are not the three historical rotations used
@@ -919,11 +824,9 @@ All $X_R$, $D_R$, rankings and the low/high-$X$ selections were locked before
 the new structure-training runs. Each of the eight rotated configurations was
 then trained from the paired historical encoder initialization and zero output
 layer for three seeds; reconstruction students were not used as initializers.
-All 24 trainings and 2,304 new predictions completed with no prediction failures.
 The outcome $Y_R$ is the mean Native-minus-retrained-Rotated pair-lDDT over the
-96 targets and three seeds. With 384 audited historical Native/query outputs,
-the complete score array contains 2,688 records. None is an additional
-independent rotation for the prediction test.
+96 targets and three seeds. The eight rotations, rather than proteins or fits,
+are the units for this prediction test.
 
 \begin{table}[htbp]\centering\small
 \caption{All eight locked rotations in the reconstruction prediction study.
@@ -940,11 +843,10 @@ $Y_R$, with eight rotations as units and all $8!=40{,}320$ permutations.
 It gives $\rho=\result{e1_ca_lddt_x_rho}$ and one-sided
 $p=\result{e1_ca_lddt_x_p}$. The exploratory $D$ test gives
 $\rho=\result{e1_ca_lddt_d_rho}$, $p=\result{e1_ca_lddt_d_p}$ and cannot replace
-the primary predictor. The $X$ span is \result{e1_x_span}, exceeding the
-predeclared $10^{-5}$ engineering resolution gate. Its large absolute error
-reflects partial, finite-budget reconstruction, not a lower bound on
-representational error. The prediction hypothesis was not supported; this was
-not a failure to resolve variation in the diagnostic.
+the primary predictor. The $X$ span is \result{e1_x_span}, so the diagnostic
+varied across rotations. Its large absolute error reflects partial,
+finite-budget reconstruction, not a lower bound on representational error.
+The prediction hypothesis was not supported.
 
 Six of the eight $Y_R$ point estimates are positive and two are negative,
 ranging from \result{e1_r5_cost} to \result{e1_r3_cost}. Neither negative estimate
@@ -974,13 +876,6 @@ The eight rotations limit power, but neither the near-zero main estimate nor
 these sensitivities provide a stable positive ranking. No new diagnostic,
 rotation or training budget was selected to rescue the prediction.
 
-The scoring audit retained an auxiliary-check precision failure: casting
-prediction coordinates from FP32 to FP64 changed a thresholded pair credit in
-four records, without changing the fixed reference pair set. The repaired
-auxiliary check uses the main scorer's original input precision and separately
-records the FP64 comparison. Main scores, their inputs and the statistical
-rules were unchanged. The bundled verifier reconstructs outcomes and exact
-tests from score arrays; it does not rerun CIF scoring or training.
 
 The result constrains this specific reconstruction diagnostic, not the
 observed direction effects or all possible measures of compensation.
@@ -996,10 +891,10 @@ this failed predictive link.
 \section{Signed-permutation control under the fixed AdamW recipe}
 \label{app:signed_control}
 This observed-panel OpenFold/Train96/ESM2/Full/1536 follow-up trains three
-signed transforms across three seeds in Factor and G+: 18 fits and 2,592
-successful predictions. Reusing six audited Native/G+ fits and query outputs
-gives 3,600 records. Confirm96-B pair-lDDT $\Psi$ is primary; Length48 and other
-metrics are secondary and unadjusted, not new-target confirmation.
+signed transforms across three seeds in Factor and G+, giving 18 fits, and
+reuses the six original Native/G+ fits and query outputs. Confirm96-B pair-lDDT
+$\Psi$ is primary; Length48 and other metrics are secondary and unadjusted,
+not new-target confirmation.
 
 Each transform is $(Tx)_j=s_jx_{\pi(j)}$ with $s_j\in\{-1,+1\}$ and fixed
 permutation $\pi$. The three matrices have 63, 63 and 55 negative signs,
@@ -1015,10 +910,9 @@ AdamW's first moment with signs and permutation, and its second moment by the
 unsigned permutation. With matched random conditions, parameter groups, scalar
 $\epsilon$, isotropic decay and global L2 clipping, this coordinate mapping is
 compatible with the update. It differs from arbitrary dense rotations.
-Small-head VJP and optimizer checks passed, but a strict correspondence of
-complete FP32 training trajectories was not established. Non-significant G+
-differences are not equivalence tests, nor do they rule out optimization or
-numerical contributions to Factor's behavior.
+A strict correspondence of complete FP32 training trajectories was not
+established. Non-significant G+ differences are not equivalence tests, nor do
+they rule out optimization or numerical contributions to Factor's behavior.
 
 \begin{table}[htbp]\centering\small
 \caption{Signed-permutation four-cell pair-lDDT means. RF/RG+ here denote the
@@ -1047,9 +941,9 @@ marginal; supplementary metrics need not share all signs.
 \label{app:checkpoint_curves}
 Without further training, the 48 OpenFold/ESM2 fits from Train96 and Train384
 were evaluated at saved 384, 768 and 1536 updates on the same eight Dev targets.
-The 1,160 successful predictions comprise $48\times3\times8$ adapted predictions
-and eight shared query outputs. These are observed-development diagnostics,
-not a new confirmation panel or a basis for selecting the final checkpoint.
+The query baseline is shared across nodes. These are observed-development
+diagnostics, not a new confirmation panel or a basis for selecting the final
+checkpoint.
 The final-1536 rule in the structural comparisons is unchanged.
 
 \begin{table}[htbp]\centering\small
@@ -1083,14 +977,13 @@ the final results on the different Confirm96-B population.
 \clearpage
 \section{Shared orthogonal channel compensation within Factor}
 \label{app:e2_compensation}
-The separately locked compensation study (internally E2) uses the same
-OpenFold/Train96/ESM2/Full/1536 recipe as the prediction study in
-Appendix~\ref{app:prediction_e1}. It adds a shared channel map to Native and to
-r20270107/r20270104, selected as low/high reconstruction error before the new
-rotations' task training. Selection was not based on their later structure
-scores. There are three paired seeds per condition: nine fits and 864 new
-Confirm96-B predictions, all complete without prediction failures.
-The original Native and rotated models provide the paired no-map controls.
+The compensation study uses the same OpenFold/Train96/ESM2/Full/1536 recipe
+as the prediction study in Appendix~\ref{app:prediction_e1}. It adds a shared
+channel map to Native and to r20270107/r20270104, selected as low/high
+reconstruction error before the new rotations' task training. Selection was
+not based on their later structure scores. There are three paired seeds per
+condition, giving nine fits evaluated on Confirm96-B. The original Native and
+rotated models provide the paired no-map controls.
 
 \paragraph{A targeted output freedom.}
 For the all-ones unit vector $u\in\mathbb R^{128}$ and orthonormal complement
@@ -1143,11 +1036,11 @@ Define
 where the last expression uses scores, with the same target and seed paired
 in each term. Here $T_C$ is the additional compensation gain for rotated
 Factor, relative to Native Factor's gain; it compares gains, not the absolute
-scores of the compensated models. The original sealed design explicitly defines equal-weight averages of
-$B_R^{C}$ and $T_C$ and the prediction that both are positive, with both rotations
-and Native's own change also reported. The sealed analysis code implements
-these averages before outcomes. These are prespecified mechanism contrasts,
-not a new-target confirmation or a newly declared sole-primary endpoint.
+scores of the compensated models. The prespecified contrasts average $B_R^{C}$
+and $T_C$ equally over the two rotations, with the prediction that both are
+positive; each rotation and Native's own change are also reported. These are
+prespecified mechanism contrasts, not a new-target confirmation or a newly
+declared sole-primary endpoint.
 The 20,000 synchronous whole-target draws (seed 20260924) retain the shared
 Native control; duplicated uses of it are not independent observations.
 Intervals condition on these fitted models and selected rotations and are
@@ -1193,88 +1086,42 @@ prespecified tests. A positive mean $T_C$ need not imply equal or positive
 additional gains for each target. A remaining score difference whose interval includes zero establishes
 neither equivalence nor complete recovery; no recovery percentage is reported.
 
-The engineering record preserves the earlier diagnostic dtype failure at the
-96th update and the authorized restart from checkpoint zero. All nine final
-runs have complete 1--1536 logs and 16 periodic checks below the original
-$10^{-3}$ tolerance; the maximum orthogonality and mean-direction errors are
-approximately $1.67\times10^{-5}$ and $2.18\times10^{-6}$.
-These are constraint diagnostics, not full-model error bounds. Final checkpoint,
-receipt and all 864 prediction hashes were audited. No structure score was
-used to change the chosen rotations, training budget or retry rule.
-
-The artifact includes the sealed channel module, original live OPM writer,
-optimizer construction and exact rotation arrays. A CPU example executes their
-zero initialization, shared-map injection and joint gradients on a synthetic
-frozen OPM fixture; it checks masks, the unchanged baseline and parameter groups.
-This makes the intervention executable at the operator level, without claiming
-a replay of full OpenFold structure training or its quality gains. A later
-complete training execution is reported separately below; it does not turn
-the CPU fixture into a full-prediction reproduction entry.
+The maximum orthogonality and mean-direction errors of the learned maps are
+approximately $1.67\times10^{-5}$ and $2.18\times10^{-6}$, respectively.
+These quantify finite-precision constraint errors, not full-model error bounds.
+A diagnostic dtype failure required restarting from initialization; no structure
+score was used to change the chosen rotations, training budget or retry rule.
 
 \subsection{Same-seed repetition of all nine compensated fits}
 \label{app:e2_repeat}
 After the original results, all nine $+C$ models were trained again from the
 original seeds, zero-output heads and identity $C$, for 1536 updates each.
 The original Train96 order, loss, AdamW groups, two selected rotations and
-four-pass live-anchor configuration were retained. The repeat reused the
-verified H100 software environment and hashed ESM2 caches; it was not a new
-installation or a fresh FASTA-to-feature replay. The no-$C$ models are the
+four-pass live-anchor configuration were retained. The repeat reused the same
+H100 software environment and cached ESM2 features; it did not test a new
+installation or fresh feature extraction. The no-$C$ models are the
 same fixed original fits, not independently retrained baselines. The repeat
 therefore adds neither new training seeds nor new targets, and is not pooled
 with the original execution.
 
-\begin{table}[!htbp]\centering\footnotesize
-\caption{Compensation repeat: recorded common conditions and limits of the
-comparison. The parent execution lock, repetition lock, archived wrapper,
-run receipts and subsequent starting-state audit distinguish recipe agreement
-from checked tensor identity and engineering replay. These checks do not
-causally explain the full-training score difference.}
-\label{tab:e2_execution_conditions}
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}p{.15\linewidth}p{.43\linewidth}p{.36\linewidth}@{}}\toprule
-Aspect & Recorded agreement & Remaining limit \\\midrule
-Data / order & Original Train96, hashed input files and seed-derived task schedule;
-1536 updates. & No claim of identical numerical states along the formal trajectories. \\
-Initialization & Same three seeds; zero head output, $C=I$; a later audit finds
-identical saved writer tensors, optimizer states and Torch/CUDA RNG states.
-& Starting-state equality does not ensure equal numerical trajectories. \\
-Source & Same parent lock and accepted diagnostic-repair runner/amendment;
-the repeat wrapper is separately hashed. & Early formal logs differ; the original
-intermediate tensors were not retained to identify their first divergent operation. \\
-Weights / features & Parent hashes bind frozen AF2 weights, backbone state,
-rotation arrays and cached ESM2 inputs. & Features are reused, not freshly extracted. \\
-Software / device & Parent contract checks Torch 2.7.1+cu128, H100, TF32 off
-and eight CPU threads. & A full comparison of driver and kernel runtime states
-is not supplied. \\
-Optimizer & Original AdamW groups: head learning rate $10^{-4}$, decay 0.01;
-$C$ rate $10^{-3}$, no decay; global clipping at 1. & Matching hyperparameters
-does not establish matching trajectories or convergence. \\
-Checkpoint replay & Six engineering conditions restore parameters, optimizer,
-RNG, learning rates and data position exactly; saved-state forward checks pass.
-& Independent 32-step trajectories differ; this is not a full-trajectory
-equivalence test. \\
-\bottomrule\end{tabular}\end{table}
+Both executions used H100, Torch 2.7.1+cu128, TF32 disabled and eight CPU
+threads. Frozen AF2 weights, rotation arrays and cached ESM2 inputs were the
+same. A full comparison of driver and kernel runtime states is unavailable.
+Independent 32-update FP32 trajectories differed despite exact restoration
+of parameters, optimizer state, recorded random states and data position;
+saved-state forward agreement did not establish training-trajectory equality.
+The original formal runs did not retain the intermediate tensors needed to
+identify their first divergent operation.
 
-Six engineering conditions (I/two rotations, with/without $C$) first completed
-384 updates across continuous and interrupted paths. Parameters, optimizer,
-random states and data position were restored exactly; independent FP32
-training trajectories were not required or found to be bitwise identical.
-The nine formal fits then completed all 13,824 updates and 864 predictions,
-without failed predictions. After all attempts ended, coordinates were exported
-to full-atom CIF, parsed independently, and rescored. The execution audit records
-exact masked FP32 coordinate recovery and identical values for all three
-scores. This is a completed training execution and coordinate-scoring check;
-public fresh-feature replay remains a distinct deliverable.
-
-\paragraph{Post-hoc starting-state and numerical audit.}
+\paragraph{Post-hoc numerical diagnosis.}
 A subsequent comparison of the stored starting checkpoints found identical
 writer parameters and buffers, optimizer configuration and state, saved
 Torch CPU/CUDA random states, learning rates and data positions across all
 nine original/repeated pairs; the complete target schedules also matched.
-Python/NumPy global RNG states were not recorded in these historical
-checkpoints. Matching early log scalars did not establish matching hidden
-tensors. The new workers also had different ambient Python/NumPy states;
-their recorded Torch/CUDA states and actual input hashes matched.
+Python/NumPy global RNG states were not recorded in the historical checkpoints
+and differed between later diagnostic executions, while the recorded
+Torch/CUDA states and actual inputs matched. Matching early log scalars did
+not establish matching hidden tensors.
 Two three-update replays of one Native+$C$ condition on the same
 physical H100, with the original loss and optimizer, first exposed differences
 in encoder parameter gradients during the second backward pass, while the captured forward activations,
@@ -1282,9 +1129,7 @@ coordinates and loss still agreed. With cuDNN benchmarking and TF32 disabled
 in both settings, enabling deterministic cuDNN eliminated the observed
 between-replay differences in a separate pair extended to eight updates
 with checkpoint restoration after update three, including the captured
-gradients, parameters and optimizer tensors. Diagnostic summaries, source
-hashes and capture boundaries accompany the artifact in
-\texttt{reproducibility/compensation\_diagnosis/}.
+gradients, parameters and optimizer tensors.
 
 This is an instrumented, post-hoc numerical diagnosis, not a full-budget
 repeat or a new estimate of compensation benefit. Tensor copies introduce
@@ -1318,11 +1163,7 @@ Metric & Condition & Contrast & Mean & 95\% interval \\\midrule
 \input{generated/e2_retraining_contrasts}
 \end{tabular}\end{table}
 
-The evidence bundle preserves both score arrays, the repetition protocol,
-code hashes, original-baseline bindings, per-fit receipts and the CIF audit.
-The numerical verifier reconstructs all 21 contrasts and their seed/target
-marginals from saved scores, separately from the archived CIF audit. The
-repeat neither validates the failed reconstruction predictor nor tests
+The repeat neither validates the failed reconstruction predictor nor tests
 compensation at reference anchors.
 
 \clearpage
@@ -1330,9 +1171,8 @@ compensation at reference anchors.
 \label{app:anchor_intervention}
 This study tests a specific feedback hypothesis: whether constructing the
 residual from the adapted trajectory's live factors helps rotated Factor and
-reduces the Native--Rotated score difference. It is internally called E3 in the prospective
-series, distinct from the earlier diagnostic E3 in
-Appendix~\ref{app:mechanisms}. It contains no channel compensator $C$.
+reduces the Native--Rotated score difference. It contains no channel
+compensator $C$.
 
 \paragraph{Intervention and paired training.}
 Let $L$ denote live residual anchors and $Q$ the query-only references for
@@ -1360,9 +1200,9 @@ r20270107/r20270104 are independently retrained under $Q$, each with the
 three paired seeds. These rotations were selected and locked before their
 task scores in the prediction study. All nine new fits start from the
 original zero-output initialization, without a warm start or $C$.
-The accepted $L$ models are reused from the prediction study. The 864 new predictions and
-960 original query/Native/Rotated predictions yield 1,824 score records on
-the already observed Confirm96-B panel; no target or rotation is replaced.
+The original $L$ models and query baseline are reused from the prediction
+study. All comparisons use the same already observed Confirm96-B panel;
+no target or rotation is replaced.
 
 \paragraph{Predeclared quantities and statistical identity.}
 Using scores with matched target and training seed, define
@@ -1373,7 +1213,7 @@ Using scores with matched target and training seed, define
 Both are averaged equally over the two selected rotations. The hypothesis
 requires positive $T_A$ and positive $B_R^{\mathrm{anchor}}$, supported by
 their intervals. The latter differs from compensation's
-$B_R^{C}=S(R+C)-S(R)$; only display notation changes, not sealed field names.
+$B_R^{C}=S(R+C)-S(R)$.
 The paired identity
 \begin{equation}
  T_A=B_R^{\mathrm{anchor}}+(N_Q-N_L)
@@ -1451,26 +1291,11 @@ Metric & Rotation & Contrast & Mean & 95\% interval \\\midrule
 \input{generated/anchor_individual}
 \end{tabular}\end{table}
 
-\paragraph{Execution record and reproduction scope.}
-All nine training runs, 13,824 updates and 864 new predictions completed with
-no formal prediction failures. The 192 training/evaluation reference caches
-were certified by 384 query-only forwards at two seeds, with equal factors
-and coordinates and preserved RNG state. Training and evaluation caches
-remain separate. The final reference is pinned during backward checkpoint
-recomputation; 27 saved-node reference replays passed. The engineering
-amendment retains an earlier failed bitwise next-update check and separately
-checks exact saved-state/forward replay and a common-gradient AdamW update;
-it does not claim strict full-model trajectory equivalence. Formal scientific
-settings and source files were unchanged.
-
-The archived execution audit independently rescored 1,824 raw-coordinate
-primary scores and parsed the saved TM-score outputs. The accompanying
-artifact bundles all 1,824 score records, the protocol, source snapshots,
-audit receipts and analysis definitions. Its verifier reconstructs all 42
-paired contrasts, target arrays, seed marginals and intervals, and checks
-the identity above. CPU tests exercise the actual anchor hook's preserved
-baseline, round selection and backward replay. These local checks do not
-regenerate coordinates, rerun the TM-score binary or reproduce full training.
+Training and evaluation reference caches are separate. The reference for the
+final pass is held fixed during backward checkpoint recomputation. A preliminary
+next-update comparison did not establish bitwise training-trajectory equivalence;
+subsequent agreement from a restored state does not resolve that limitation.
+The scientific settings and source implementation were unchanged.
 
 \clearpage
 \section{Fresh192: fixed Protenix models on new targets}
@@ -1491,40 +1316,35 @@ Four prespecified strata, 128--191, 192--255, 256--319 and 320--384, each
 contribute 48 complete sequences; actual lengths are 128--383. There is one
 target per PDB. This panel is not a long-chain extrapolation study.
 
-The exposure inventory was refreshed from four execution hosts, explicitly
-including Fresh96 and later prediction, compensation and anchor-intervention
-targets. Historical conservative exclusions were retained. Newly collected
-search-only candidates and directory pseudonyms were corrected before new
-target prediction; this correction did not change search thresholds or the
-ranking salt. The final selection applies Fresh96's accepted BLAST v2 rules:
+The exposure inventory includes Fresh96 and the later prediction,
+compensation and anchor-intervention targets, while retaining historical
+conservative exclusions. Inventory corrections preceded new target predictions
+and did not change the search thresholds or deterministic ranking. Selection
+uses the same BLAST screening rule as Fresh96:
 BLASTP 2.17.0+, a single qualifying HSP with $E\le10^{-5}$, identity at least
 0.30, at least 50 paired residues and coverage at least 0.70. Recorded query
 comparisons use the shorter sequence length as coverage denominator; other
 teacher rows use candidate length. HSPs are not merged or count-limited.
-Accepted panel members are screened against one another as well.
+Selected panel members are screened against one another as well.
 
 Candidates are ordered within strata by SHA256 of the target ID prefixed
 by \texttt{protenix-fourcell-fresh192-v1|}, with at most 2048
 candidates per stratum and a fixed screening time cap. Selection does not
-read model scores. The archived audit reports no ID, PDB or exact-sequence
-overlap with the recorded exclusions and independently rechecks 1,195
-searches. These claims concern the auditable inventory, not certified
-complete project history, strict family separation or foundation-model
-pretraining exclusion. The 192 sequences, label correspondence, model hashes,
-execution recipe and analysis were locked before new folding predictions.
+read model scores. No ID, PDB or exact-sequence overlap remains with the
+recorded exclusions. These claims concern the documented inventory, not
+certified complete project history, strict family separation or foundation-model
+pretraining exclusion. The panel, models, execution recipe and analysis were
+fixed before new folding predictions.
 
-\paragraph{Execution and endpoint.}
+\paragraph{Inference and endpoint.}
 The original complete-sequence c4/s5, one sample and inference seed101 are
 retained. $D=508.5$ comes from the adapter checkpoint. ESMC uses final-layer
 1152-dimensional features, the historical H100 FP32 extraction/BF16 cache
-path and FP32 loading; folding uses the fixed MI250 path. Fifty engineering
-predictions on two already observed targets were separate from the panel.
-Their maximum relative coordinate discrepancy was below the prior $10^{-3}$
-criterion. No target coordinates or observed-residue mask enter inference.
-All $25\times192=4,800$ formal predictions completed successfully with full
-length and four injections verified; uniform scoring followed completion.
-The predefined failure rule would retain failed predictions at zero credit,
-with no target replacement, crop or altered denominator.
+path and FP32 loading; folding uses the fixed MI250 path. No target coordinates
+or observed-residue mask enter inference. The score grid contains all
+$25\times192=4,800$ model--target pairs. The predefined failure rule assigns
+zero credit to failed predictions, with no target replacement, crop or altered
+denominator; no formal prediction required this rule.
 
 The sole primary endpoint is pair-lDDT $\Psi$ in Equation~\ref{eq:interaction}.
 After averaging paired seeds and rotations inside each target, 20,000 paired
@@ -1577,16 +1397,8 @@ Metric & Residues & $\Psi$ & 95\% interval \\\midrule
 \input{generated/fresh192_strata}
 \end{tabular}\end{table}
 
-The accompanying evidence includes the score grid, sequence and reference
-manifests, exposure exclusions, protocol, selection/execution/model locks,
-source snapshots and completion receipts. The verifier independently
-reassembles all 24 metric--contrast combinations, target arrays, seed/rotation
-marginals and the stratified bootstrap. It also checks identity bindings,
-prediction coverage and the recorded lock/completion chronology. This
-score-level reproduction is distinct from rerunning BLAST searches, generating
-new coordinates or rescoring CIF files.
 
-\section{AtlasFold boundary checks}
+\section{AtlasFold propagation and calibration}
 \label{app:atlas_propagation}
 On two previously observed diagnostic chains, 7hln\_A and 9qdy\_A, we recorded
 five passes for Query and three Native parents with their C-only/head-only
@@ -1596,8 +1408,8 @@ Their smaller relative size at the trunk output does not imply deletion of the
 update; absolute difference RMS increases while the Query scale increases more.
 Final structures change little relative to Query; this is not a quality gain.
 These two-chain, Native-only observations identify neither the cause of absent
-adaptation gains nor a rotation interaction. Full per-pass records, coordinates,
-propagation plots and engineering checks are in the supplementary artifact.
+adaptation gains nor a rotation interaction. Full per-pass measurements and
+coordinates accompany the artifact.
 
 \begin{table}[!htbp]\centering\small
 \caption{Atlas parent-model pair-state differences. Each ratio is
@@ -1611,7 +1423,7 @@ Position & Relative difference & Difference RMS & Query RMS \\\midrule
 \input{generated/atlas_propagation_rows}
 \end{tabular}\end{table}
 
-A separate completed Native-only calibration continued each parent for 512
+A separate Native-only calibration continued each parent for 512
 updates, either learning an identity-initialized shared orthogonal $C$ with
 the original head frozen, or continuing the head with its AdamW state.
 On observed Confirm96-B, the primary C-only minus head-only pair-lDDT contrast
@@ -1619,10 +1431,10 @@ is \result{atlas_cal_C_only_minus_head_only}
 [\result{atlas_cal_C_only_minus_head_onlyLo}, \result{atlas_cal_C_only_minus_head_onlyHi}];
 C-only minus Query is \result{atlas_cal_C_only_minus_query}
 [\result{atlas_cal_C_only_minus_queryLo}, \result{atlas_cal_C_only_minus_queryHi}].
-Neither establishes a benefit. All 960 predictions completed; intervals use
-20,000 target bootstrap draws after averaging three fitted seeds, with the
-Query comparison descriptive and unadjusted. These results do not establish
-information redundancy or motivate a specific alternative interface.
+Neither establishes a benefit. Intervals use 20,000 target bootstrap draws
+after averaging three fitted seeds, with the Query comparison descriptive and
+unadjusted. These results do not establish information redundancy or motivate
+a specific alternative interface.
 
 \paragraph{Native/ESMC readout.}
 A fixed Train96/Dev8 64-bin distance probe compared native single/pair inputs plus a
@@ -1641,8 +1453,7 @@ replace the primary result. Fixed compression, readout capacity and optimization
 limit the inference: this does not establish ESMC redundancy or folding gains.
 Six additional ESMC Native propagation observations on the same two chains
 also retained trunk-state differences with small final structural changes.
-The supplement provides all fixed-node scores, secondary contrasts and replay
-records.
+The supplement provides all fixed-node scores and secondary contrasts.
 
 \section{Protenix four-cell budget extension}
 \label{app:budget_extension}
@@ -1650,10 +1461,10 @@ This observed-panel follow-up continues the 24 Protenix Train384/ESMC-600M
 Full models used for Fresh192. The training set, feature cache, three seeds,
 three rotations, loss, constant learning rate $5\times10^{-5}$ and inference
 recipe remain fixed. We restore each model's step1536 weights and AdamW state
-and train to step3072: 36,864 additional updates. The original checkpoints
-lack complete RNG states, so this is not a claim of bitwise equivalence to
-uninterrupted historical training. No compensator is added, and the final
-checkpoint is fixed independently of Dev or evaluation scores.
+and train to step3072. The original checkpoints lack complete RNG states, so
+this is not a claim of bitwise equivalence to uninterrupted historical training.
+No compensator is added, and the final checkpoint is fixed independently of
+Dev or evaluation scores.
 
 The sole primary endpoint is $\Psi_{3072}$; the paired change
 $K=\Psi_{3072}-\Psi_{1536}$ is the key secondary endpoint. Fresh192 has already
@@ -1700,16 +1511,8 @@ and \result{budget_psi_tm} [\result{budget_psi_tmLo}, \result{budget_psi_tmHi}]
 for TM-score. Their budget-change intervals include zero; one TM-score
 seed-by-rotation cell is negative. These metrics score the same structures.
 
-The study completed 9,408 Fresh192 predictions (both model budgets plus Query)
-and 576 Dev8 predictions at 1536/2304/3072, with no failures. Another 100
-predictions and 288 updates belonged to isolated engineering checks. All 4,800
-parent/Query replay score records match the original three metrics exactly.
-The first aggregation failed because Dev reference metadata also contained
-the training targets; the isolated repair selected only the sealed eight Dev
-IDs, sequence identities and order. All 9,984 saved score records retained
-their hashes. The supplement preserves the original execution lock, repair,
-completion receipts and independent score reconstruction. Increasing scores
-and three Dev nodes do not establish convergence.
+Dev8 was evaluated at 1536, 2304 and 3072 updates. Increasing scores and
+three Dev nodes do not establish convergence.
 
 \section{OpenFold injection-schedule retraining}
 \label{app:schedule_retraining}
@@ -1727,14 +1530,13 @@ A bounded Train/Dev calibration compares learning rates $5\times10^{-5}$ and
 $10^{-4}$ across all 12 schedule/arm cells, using a separate development seed
 and 192 updates per fit. The average absolute Dev8 pair-lDDT selects the common
 rate $5\times10^{-5}$; neither interaction size nor Confirm96-B selects it.
-The original lock planned three rotations and 72 fits. After the first wave
-completed, computational-budget constraints limited the final scope to its
+The original design planned three rotations and 72 fits. After the first set
+of fits, computational-budget constraints limited the final scope to
 36 fits: three schedules, four cells, three seeds and the first prespecified
-rotation R1=20261001. The reporting amendment was recorded before unified
-scoring of these predictions; the remaining two rotations were not launched.
-We report the single-R1 analogue of the planned All--First comparison,
-not completion of the original three-rotation primary matrix. Original locks
-and the amendment remain in the artifact.
+rotation R1=20261001. This reporting amendment preceded unified scoring of
+these predictions; the remaining two rotations were not trained. We report
+the single-R1 analogue of the planned All--First comparison, not completion
+of the original three-rotation primary matrix.
 
 \begin{table}[!htbp]\centering\small
 \caption{Retrained OpenFold schedules on observed Confirm96-B. Each absolute
@@ -1776,7 +1578,6 @@ Corresponding residue-lDDT and TM-score differences are
 [\result{schedule_write_residueLo}, \result{schedule_write_residueHi}] and
 \result{schedule_write_tm}
 [\result{schedule_write_tmLo}, \result{schedule_write_tmHi}].
-All 36 fits and 3,552 predictions (including Query) completed without failure.
 We resample the 96 targets 20,000 times (seed20260926), averaging seeds within
 target and sharing draws across schedules and contrasts. These intervals are
 conditional on the fitted models and R1. The full row effects, query gains,

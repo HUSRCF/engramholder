@@ -1,9 +1,7 @@
 \subsection*{AI use statement}
-AI assistants were used to assist code development, experiment orchestration,
-evidence auditing, and manuscript drafting. Numerical claims are
-linked to saved experimental artifacts through a source-hashed generation script;
-they are not generated experimental observations. The authors remain responsible
-for the content and verification.
+AI assistants supported code development, experiment orchestration, analysis
+checks, and manuscript drafting. The authors checked the numerical results
+against experimental records and remain responsible for the content.
 
 \subsection*{Ethics statement}
 This work studies computational adaptation using protein structure data. Its
@@ -12,19 +10,13 @@ biological function, clinical use, or safety of designed proteins. Data and mode
 access remain subject to their respective source terms.
 
 \subsection*{Reproducibility statement}
-The accompanying analysis artifact reconstructs manuscript tables and figures
-from fixed score records and includes numerical source mappings and operator
-checks. A CPU example executes the sealed compensation writer and optimizer on
-synthetic OPM inputs, including zero initialization and joint gradients
-(Appendix~\ref{app:e2_compensation}). A one-target OpenFold entry has been executed in a fresh isolated Python
-environment: FASTA to recomputed ESM2 features, released adapter, full-atom CIF
-and separate fixed-correspondence pair-lDDT scoring (Appendix~\ref{app:single_repro}).
-This is a bounded prediction replay. Separately, all nine compensated models
-completed a full-budget retraining repeat and coordinate-scoring audit
-(Appendix~\ref{app:e2_repeat}). That execution reused the environment, feature
-caches and fixed original no-$C$ baselines; it is not a fresh-environment
-end-to-end reproduction. Appendix~\ref{app:recipes}
-describes the backbone-specific recipes, Appendix~\ref{app:chronology} the study
-sequence, and Appendix~\ref{app:scoring} the metrics and pairing. This compact
-artifact does not bundle pretrained model weights, the original full structure
-data, or an end-to-end retraining environment.
+The accompanying materials provide adapter implementations, training and
+scoring configurations, per-target scores, and code to reproduce the tables
+and figures. Appendices~\ref{app:recipes}, \ref{app:chronology} and
+\ref{app:scoring} describe the model-specific recipes, study sequence and
+statistical analysis. The materials also include a one-target OpenFold
+inference example with feature extraction and scoring, and CPU operator
+examples using synthetic inputs. These examples do not reproduce the full
+training and evaluation matrix. Pretrained model weights, the full structure
+data and an end-to-end retraining environment are not bundled; setup
+instructions and implementation checks accompany the code.

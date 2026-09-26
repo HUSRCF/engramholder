@@ -33,13 +33,13 @@ Protenix's bond mask is empty here.
 
 \paragraph{Training and pairing.}
 The original Protenix direction study trains on Train24 for 384 updates,
-with tangent as the locked main comparison and Full as a secondary comparison.
+with tangent as the prespecified primary comparison and Full as a secondary comparison.
 The larger-set studies use Full on Train96 and Train384, with 1536 updates
 in each case. OpenFold uses Full on Train96 and Train384, each for 1536 updates;
 AtlasFold trains on Train96 for 1536 updates.
 Within each core four-cell recipe, heads share data order, three training seeds, random-condition
 rules and optimizer settings. Each of three fixed rotations uses all three seeds;
-G+ also has three native and nine rotated fits in each completed four-cell setting.
+G+ also has three native and nine rotated fits in each core four-cell setting.
 The prediction and compensation studies use their separately specified rotation
 sets and parameter groups.
 We evaluate the fixed final checkpoint and one inference sample, without
@@ -60,11 +60,13 @@ amino acids and at least 90\% mapped C$\alpha$ coverage. Four length strata
 (128--191, 192--255, 256--319, 320--384) contribute 24 targets each.
 Table~\ref{tab:data_composition} distinguishes their construction and first use. Length48 comprises 16 targets in each prespecified range 385--512,
 513--640 and 641--768; actual lengths are 392--750, beyond the Train384 adapter
-training range of 152--383. The original direction and length studies locked new targets before scoring;
+training range of 152--383. The original direction and length studies selected
+their evaluation targets before scoring;
 later uses of those panels are observed follow-ups. Table~\ref{tab:study_roles}
 separates panel novelty from each four-cell study's endpoint role. Fresh192
-locks 48 targets per short-chain stratum (actual 128--383 residues) for fixed
-Protenix/ESMC models, after refreshing project exposure exclusions; its only
+contains 48 targets per short-chain stratum (actual 128--383 residues), selected
+before evaluation of fixed Protenix/ESMC models after updating exclusions
+for prior project exposure; its only
 primary endpoint is $\Psi$ (Appendix~\ref{app:fresh192}). The channel-compensation
 study predeclares mean benefit and gap reduction over two selected rotations;
 its original execution and same-seed repeat, the eight-rotation prediction test and Dev8
@@ -105,7 +107,7 @@ study reports its own predeclared three-test Holm correction \citep{holm1979simp
 bootstrap seeds and endpoint roles are preserved in the accompanying records.
 
 \begin{table}[t]\centering\footnotesize
-\caption{Identity of the complete four-cell studies. A study-specific primary
+\caption{Identity of the four-cell studies. A study-specific primary
 endpoint on observed targets is not new-target confirmation. C96-B denotes
 Confirm96-B. All intervals condition on fitted models.}
 \label{tab:study_roles}

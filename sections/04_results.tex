@@ -4,8 +4,8 @@
 \label{sec:interaction_result}
 \paragraph{Prospective tests of fixed models.}
 For Protenix, we fixed all 24 Train384/ESMC adapters and Query, selecting this
-recipe from observed evidence before evaluating Fresh192. All 4,800 predictions
-completed without failure or new training. The sole primary interaction is
+recipe from observed evidence before evaluating Fresh192, without further
+training. The sole primary interaction is
 $\Psi=\result{p192_pair_interaction}$
 [\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}];
 \result{p192_pair_positive}/192 target effects and all nine seed-by-rotation
@@ -19,8 +19,8 @@ for these fixed Protenix/ESMC models on screened short-chain targets
 
 For OpenFold, the 24 fixed Train96/ESM2 adapters and query-only baseline were evaluated on Fresh96,
 locked before prediction under the sequence-screening protocol in
-Appendix~\ref{app:fresh96}. All 2,400 predictions completed successfully, with
-no new training. Factor's Native--Rotated score difference remains positive:
+Appendix~\ref{app:fresh96}, without further training. Factor's Native--Rotated
+score difference remains positive:
 \result{fresh_ca_lddt_factor_rotation}
 [\result{fresh_ca_lddt_factor_rotationLo}, \result{fresh_ca_lddt_factor_rotationHi}],
 but the sole primary interaction is \result{fresh_ca_lddt_interaction}
@@ -39,7 +39,7 @@ within each panel's 48, 96 or 192 targets. Violins span observed extrema (bandwi
 the separate, narrower axis shows $\Psi$ and its original conditional 95\% bootstrap
 interval. Shaded diamonds mark the new-target primary tests: Fresh96's interval
 includes zero; Fresh192's is positive. Other rows reuse observed panels and are not independent
-replications (Table~\ref{tab:study_roles}). A66 multiplicity and backend limits
+replications (Table~\ref{tab:study_roles}). Feature-study multiplicity and backend limits
 are in Appendix~\ref{app:dh_fourcells}.}
 \label{fig:interaction}
 \end{figure}
@@ -55,14 +55,14 @@ The Length48 secondary comparison is also positive:
 \result{inter_l48_interaction}
 [\result{inter_l48_interactionLo}, \result{inter_l48_interactionHi}].
 These are differences-in-differences on a 0--1 score scale, not relative
-percentage improvements. The completed OpenFold Train384 four-cell controls do not
+percentage improvements. The OpenFold Train384 four-cell controls do not
 establish the interaction with either ESM2 or ESMC
 (Appendix Table~\ref{tab:interaction_scope}); the positive finding is recipe-specific.
 
 
-The Protenix Train96/Full follow-up adds three G+ and nine rotated-G+ fits,
-matching the training/development manifests and 1536-update budget of the
-OpenFold comparison, with Protenix's own fixed recipe. On Confirm96-B,
+The Protenix Train96/Full study uses the same training/development sets
+and 1536-update budget as the OpenFold comparison, with Protenix's own
+fixed recipe. On Confirm96-B,
 $\Delta_F=\result{p96_pair_factor_rotation}$ and
 $\Delta_{G+}=\result{p96_pair_gplus_rotation}$ give
 $\Psi=\result{p96_pair_interaction}$
@@ -110,7 +110,10 @@ Continued training therefore reduces Factor's score difference at the tested bud
 The prespecified final interaction nevertheless remains positive:
 $\Psi_{3072}=\result{budget_interaction_3072}$
 [\result{budget_interaction_3072Lo}, \result{budget_interaction_3072Hi}].
-G+'s signed score difference also shifts in point estimate. The paired change
+G+'s signed score difference becomes more negative in point estimate, from
+\result{budget_gplus_rotation_1536} to \result{budget_gplus_rotation_3072};
+its paired change interval includes zero. Thus the interaction change combines
+changes in both heads' effects. The paired change
 in interaction is $K=\result{budget_K}$ [\result{budget_KLo}, \result{budget_KHi}]:
 its point estimate decreases, but the interval does not establish an overall
 change. The evidence extends beyond the original stopping point, without
@@ -180,7 +183,7 @@ transfer, not family/pretraining novelty. Official Mini-ESM scores
 \result{pt384_l48_official}, leaving a substantial system-quality gap.
 
 \paragraph{Feature source and head competitiveness.}
-The Protenix Train384 feature study completes both ESM2 and ESMC four cells
+The Protenix Train384 feature study compares both ESM2 and ESMC in four cells
 (Table~\ref{tab:coverage}). Its prespecified Confirm96-B ESMC Factor contrast is
 \result{dh_protenix_c96_c_pair_factor_rotation}
 [\result{dh_protenix_c96_c_pair_factor_rotationLo}, \result{dh_protenix_c96_c_pair_factor_rotationHi}];
@@ -237,8 +240,8 @@ $F-G^+=\result{dh_protenix_c96_c_pair_native_minus_gplus}$, while
 $RF-RG^+=\result{dh_protenix_c96_c_rotated_head_gap}$ after rotation.
 Their difference is $\Psi=\result{dh_protenix_c96_c_pair_interaction}$: a
 substantial head gap survives rotation. This identity is not a causal
-percentage decomposition. Historical ESM2 Length48 compares H100 with MI250;
-replays give no panel-wide error bound (Appendix~\ref{app:engineering}).
+percentage decomposition. Historical ESM2 Length48 compares H100 with MI250; the effect of backend
+differences is not bounded over the full panel (Appendix~\ref{app:engineering}).
 
 OpenFold Train384/ESM2 establishes a Factor direction advantage on Length48,
 but not Confirm96-B. G+ nevertheless wins the two OpenFold long-chain
@@ -271,7 +274,7 @@ $\Psi$ is nonmonotone and all six node intervals include zero
 (Appendix~\ref{app:checkpoint_curves}). This establishes neither convergence
 nor a uniform learning delay, and does not select checkpoints.
 
-\subsection{What does shared output compensation establish?}
+\subsection{Does shared output freedom preferentially help rotated Factor?}
 \label{sec:e2_compensation}
 The four-cell interaction compares complete parameterizations and does not
 isolate output freedom. To test whether adding an output map gives rotated
@@ -294,7 +297,7 @@ under the fixed OpenFold/Train96/ESM2/1536 recipe. This is joint retraining,
 with no inverse-rotation initialization.
 
 \begin{table}[t]\centering\footnotesize
-\caption{Compensation within Factor on observed Confirm96-B. Mean C$\alpha$
+\caption{Testing shared output freedom within Factor on observed Confirm96-B. Mean C$\alpha$
 pair-lDDT: (a) absolute scores over the same three seeds; (b) paired gains,
 with rotated gains averaged over both selected rotations. Both executions
 jointly train $C$ from identity and share the original fixed no-$C$ baseline.
@@ -338,14 +341,13 @@ Descriptively, the original $B_R^C$ is positive on
 a positive additional gain, and the average TM-score interval for $T_C$ includes zero.
 
 \paragraph{Same-seed retraining repeat.}
-Repeating all nine $+C$ fits for 1536 steps gives 864 successful predictions.
-The original no-$C$ models remain fixed; the repeat adds no independent seeds
-and is not pooled with the original execution. A positive additional
-compensation gain for rotated Factor was not re-established. Starting states
-were verified identical, and short replays
-identified controllable early numerical variability; its contribution to the
-full-training outcome difference remains unresolved. Output freedom and
-joint optimization remain coupled (Appendix~\ref{app:e2_repeat}).
+The nine $+C$ fits were repeated with the same seeds and 1536-update recipe,
+keeping the original no-$C$ models fixed. This adds no independent seeds and
+is not pooled with the original execution. A positive additional compensation
+gain for rotated Factor was not re-established. Despite identical starting
+states, the numerical training trajectories can differ; the cause of the
+full-training outcome difference remains unresolved
+(Appendix~\ref{app:e2_repeat}). Output freedom and joint optimization remain coupled.
 
 \paragraph{Predicting post-training score differences.}
 A prespecified teacher-update reconstruction diagnostic did not establish
@@ -358,8 +360,8 @@ output freedom as the unique explanation of the four-cell interaction.
 \paragraph{A global-norm alternative.}
 \label{sec:norm_cross}
 A robustness analysis crosses learned residual source and global Frobenius
-norm for fixed Protenix Train384/Full/1536 models: 24 observed Confirm96-B targets,
-720 complete predictions on the same backend. Native-source advantages are \result{cross_ca_D_mN} at the
+norm for fixed Protenix Train384/Full/1536 models on 24 observed Confirm96-B
+targets, evaluating all conditions on the same backend. Native-source advantages are \result{cross_ca_D_mN} at the
 native norm and \result{cross_ca_D_mR} at the rotated norm; the symmetric
 source effect is \result{cross_ca_Edir}
 [\result{cross_ca_EdirLo}, \result{cross_ca_EdirHi}]. Thus global norm alone is

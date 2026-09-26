@@ -1,5 +1,10 @@
 # Bounded reproduction artifact
 
+[Engineering provenance moved out of the manuscript](manuscript_engineering_notes.md)
+preserves historical implementation checks, acceptance tolerances and recovery
+records. These operational records accompany the code; the paper retains the
+scientific methods, results and limitations.
+
 This directory contains actual adapter/operator source snapshots, a CPU-only
 operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed

@@ -29656,7 +29656,7 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1944,
+    "literal_references": 1946,
     "distinct_keys": 1645,
     "missing": []
   },
@@ -30215,7 +30215,7 @@
     "propagation_instances": 6,
     "numeric_checks": 113,
     "maximum_absolute_error": 2.7755575615628914e-17,
-    "maximum_coordinate_distance_error": 0.0,
+    "maximum_coordinate_distance_error": 1.3877787807814457e-17,
     "scope": "Saved probe scores/curves, receipt bindings and prediction-distance changes; no new fitting, cache extraction or structure-quality rescoring."
   },
   "verified_budget_schedule": {

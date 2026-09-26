@@ -1,0 +1,77 @@
+{
+  "utc": "2026-09-26T09:04:02.186507+00:00",
+  "initial_head": "05c2110",
+  "source_lock": "v14",
+  "inputs_unchanged": 384,
+  "complete_numeric_objects_unchanged": 1985,
+  "all_figures_unchanged": true,
+  "new_training": false,
+  "new_predictions": false,
+  "new_statistics": false,
+  "numeric_key_audit": {
+    "literal_references": 1946,
+    "distinct_keys": 1645,
+    "missing": []
+  },
+  "compile": {
+    "passed": true,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 58,
+    "pdf": "build/feedback_v50_editorial_scope/paper.pdf",
+    "sha256": "e38a1e23865768463dbc07a9623c3def5a3443a978390702780039fcc80f10d0",
+    "source_manifest": "build/feedback_v50_editorial_scope/compile_sources.json",
+    "page_limit_checked": false,
+    "full_visual_acceptance": false,
+    "local_visual_review": [
+      "abstract",
+      "introduction and contribution order",
+      "four-cell/row-effect/interaction overview",
+      "output-map hypothesis section",
+      "statements",
+      "numerical implementation limits",
+      "same-seed numerical diagnosis"
+    ]
+  },
+  "artifact": {
+    "path": "build/anonymous_editorial_scope_v50.zip",
+    "sha256": "93f7a8309824677947ea964d49dd8366269e42b9002111b00baf4d141065f062",
+    "files": 538,
+    "manifest_entries_verified": 537,
+    "tests": 27,
+    "numerical_fields": 1985,
+    "all_existing_score_verifiers_passed": true,
+    "operator_and_compensation_cpu_checks": true,
+    "check_device": "CPU on X570, BIO environment",
+    "manuscript_tex_matches_compiled_sources": true,
+    "full_retraining": false,
+    "full_binary_anonymity_certification": false
+  },
+  "editorial_scope": {
+    "engineering_notes": "reproducibility/manuscript_engineering_notes.md",
+    "removed_labels": [
+      "app:single_repro",
+      "tab:e2_execution_conditions"
+    ],
+    "no_dangling_references": true,
+    "scientific_selection_failure_protocol_and_numerical_limits_retained": true,
+    "narrative_priorities": [
+      "four-cell and prospective target evidence",
+      "four-cell budget extension",
+      "schedule interaction versus quality",
+      "output freedom as hypothesis test and negative mechanism results"
+    ]
+  },
+  "scope": "Editorial scope and narrative revision only. Archived original operational prose outside the PDF. Final page-limit, full-PDF visual and binary anonymity review deferred.",
+  "generated_metadata_changes": {
+    "literal_references": [
+      1944,
+      1946
+    ],
+    "atlas_probe_maximum_coordinate_distance_error": [
+      0.0,
+      1.3877787807814457e-17
+    ],
+    "scientific_numeric_objects_changed": false
+  }
+}

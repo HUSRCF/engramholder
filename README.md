@@ -2,9 +2,11 @@
 
 **当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v14**，共 **1,985** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
-**最新措辞收口：** [七项评审落实](reports/terminology_review_revision_20260926.md)。在已有叙事重排之上，先定义Factor／G+，明确interface anchors、固定预算和同状态谱控制；统一行内分数差、Ψ和补偿增益之差，分开Fresh192首次前瞻检验与后续预算扩展。v14的384输入、1985数值对象不变。[当前PDF](build/feedback_v49_terminology/paper.pdf)、[匿名补充包](build/anonymous_terminology_v49.zip)。最终篇幅留到收尾。
+**最新正文范围与主线修订：** [论文／工程记录分离](reports/editorial_scope_cleanup_20260926.md)。验收清单、哈希／收据和交付流程移到[代码材料中的工程归档](reproducibility/manuscript_engineering_notes.md)；科学阈值、失败计分、方案修订与数值限制保留。摘要和引言按新目标、预算、时序、机制检验收束，主表同列四格分数与两行效应。384输入及1985完整数值对象不变；[当前PDF](build/feedback_v50_editorial_scope/paper.pdf)、[匿名补充包](build/anonymous_editorial_scope_v50.zip)。未新增实验，最终页限与全稿检查留到收尾。
 
-**最新论证修订：** [审稿意见落实](reports/narrative_review_revision_20260926.md)。主线调整为新目标检验、预算延长、注入策略与质量的分离；新增主文四格／行内对比／交互总览，补偿作为机制解释的边界。Ψ明确为有符号对比之差。36组收口因算力预算，修订早于记录中的统一评分；不宣称完成原三旋转矩阵。来源锁v14及1985个数值对象不变。[v48历史PDF](build/feedback_v48_narrative/paper.pdf)及[补充包](build/anonymous_narrative_v48_final.zip)保留；当前交付见上方v49。
+**最新措辞收口：** [七项评审落实](reports/terminology_review_revision_20260926.md)。在已有叙事重排之上，先定义Factor／G+，明确interface anchors、固定预算和同状态谱控制；统一行内分数差、Ψ和补偿增益之差，分开Fresh192首次前瞻检验与后续预算扩展。v14的384输入、1985数值对象不变。[v49历史PDF](build/feedback_v49_terminology/paper.pdf)、[v49历史补充包](build/anonymous_terminology_v49.zip)。最终篇幅留到收尾。
+
+**最新论证修订：** [审稿意见落实](reports/narrative_review_revision_20260926.md)。主线调整为新目标检验、预算延长、注入策略与质量的分离；新增主文四格／行内对比／交互总览，补偿作为机制解释的边界。Ψ明确为有符号对比之差。36组收口因算力预算，修订早于记录中的统一评分；不宣称完成原三旋转矩阵。来源锁v14及1985个数值对象不变。[v48历史PDF](build/feedback_v48_narrative/paper.pdf)及[补充包](build/anonymous_narrative_v48_final.zip)保留；当前交付见上方v50。
 
 **最新完成结果：** [预算扩展与注入时序复核](reports/budget_schedule_integration_20260926.md)。Protenix／ESMC 24条续训的Ψ3072仍为正，配对预算变化未建立；OpenFold按R1／36组收口，All的Factor质量更高、Ψ反而低于First。正文与附录现已整合，[补充记录及复算入口](reproducibility/budget_schedule_followups/README.md)保留完整四格及统计身份。旧349输入、1860数值对象不变；新增35输入、125字段。两项均为已观察面板后续研究；R2/R3不再等待或启动。 [v47历史PDF](build/feedback_v47_budget_schedule/paper.pdf)及[v47补充包](build/anonymous_budget_schedule_v47_final.zip)已同步，数值复算／编译／局部检查通过；篇幅留到最后。
 
