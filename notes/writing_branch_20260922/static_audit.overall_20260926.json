@@ -1,0 +1,571 @@
+{
+  "scope": "Static review initially checked commit 1afe01b; final build incorporates 505c340 wording, the user-added AI disclosure and two layout changes. Numerical inputs, values and reference commands remain unchanged; final compilation resolves all references.",
+  "numeric_snapshot": {
+    "commit_4d3a2c1": {
+      "previous_cells": 1985,
+      "current_cells": 1985,
+      "added": [],
+      "removed": [],
+      "changed_full_objects": [],
+      "entire_json_object_equal": true,
+      "bytes_equal": true
+    },
+    "design_v51": {
+      "previous_cells": 1985,
+      "current_cells": 1985,
+      "added": [],
+      "removed": [],
+      "changed_full_objects": [],
+      "entire_json_object_equal": true,
+      "bytes_equal": true
+    }
+  },
+  "v14": {
+    "format": "direct relative_path -> sha256 string map",
+    "input_count": 384,
+    "missing": [],
+    "mismatches": [],
+    "cell_sources_inputs_equal_lock": true,
+    "reference_locks_equal": {
+      "commit_4d3a2c1": true,
+      "design_v51": true
+    }
+  },
+  "tex_graph": {
+    "active_tex_files": [
+      "iclr2027_conference.tex",
+      "math_commands.tex",
+      "generated/numbers.tex",
+      "sections/00_abstract.tex",
+      "sections/01_introduction.tex",
+      "sections/02_construction.tex",
+      "sections/03_design.tex",
+      "sections/04_results.tex",
+      "generated/budget_schedule_overview_rows.tex",
+      "generated/complete_fourcell_means.tex",
+      "sections/05_discussion.tex",
+      "sections/06_related_work.tex",
+      "sections/07_conclusion.tex",
+      "sections/08_statements.tex",
+      "appendices/implementation_and_evidence.tex",
+      "appendices/adapter_training_definition.tex",
+      "appendices/core_recipes_table.tex",
+      "appendices/study_roles_table.tex",
+      "generated/data_composition_rows.tex",
+      "generated/scope_table_rows.tex",
+      "generated/protenix_gplus_supplement_rows.tex",
+      "generated/v4_mechanism_rows.tex",
+      "generated/cross_cells.tex",
+      "generated/cross_effects.tex",
+      "generated/cross_supplement.tex",
+      "generated/esmc_A_pair_contrasts.tex",
+      "generated/esmc_A_residue_contrasts.tex",
+      "generated/esmc_A_tm_contrasts.tex",
+      "generated/complete_interaction_scope.tex",
+      "generated/dh_interaction_marginals.tex",
+      "generated/dh_protenix_pair_contrasts.tex",
+      "generated/dh_protenix_residue_contrasts.tex",
+      "generated/dh_protenix_tm_contrasts.tex",
+      "generated/dh_atlasfold_pair_contrasts.tex",
+      "generated/dh_atlasfold_residue_contrasts.tex",
+      "generated/dh_atlasfold_tm_contrasts.tex",
+      "generated/dh_feature_changes.tex",
+      "generated/paired_table_rows.tex",
+      "generated/fresh96_marginals.tex",
+      "generated/fresh96_contrasts.tex",
+      "generated/training_psi_change.tex",
+      "generated/e1_prediction_rotations.tex",
+      "generated/e1_prediction_tests.tex",
+      "generated/signed_means.tex",
+      "generated/signed_contrasts.tex",
+      "generated/checkpoint_curve_means.tex",
+      "generated/checkpoint_curve_contrasts.tex",
+      "generated/e2_means.tex",
+      "generated/e2_contrasts.tex",
+      "appendices/compensation_comparison_table.tex",
+      "generated/e2_execution_means.tex",
+      "generated/e2_retraining_comparison.tex",
+      "generated/e2_retraining_contrasts.tex",
+      "generated/anchor_means.tex",
+      "generated/anchor_pooled.tex",
+      "generated/anchor_individual.tex",
+      "generated/fresh192_marginals.tex",
+      "generated/fresh192_contrasts.tex",
+      "generated/fresh192_strata.tex",
+      "generated/atlas_propagation_rows.tex",
+      "generated/budget_fourcell_rows.tex",
+      "generated/budget_effect_rows.tex",
+      "generated/schedule_fourcell_rows.tex",
+      "generated/schedule_difference_rows.tex"
+    ],
+    "edges": [
+      [
+        "iclr2027_conference.tex",
+        "math_commands.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "generated/numbers.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/00_abstract.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/01_introduction.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/02_construction.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/03_design.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/04_results.tex"
+      ],
+      [
+        "sections/04_results.tex",
+        "generated/budget_schedule_overview_rows.tex"
+      ],
+      [
+        "sections/04_results.tex",
+        "generated/complete_fourcell_means.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/05_discussion.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/06_related_work.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/07_conclusion.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "sections/08_statements.tex"
+      ],
+      [
+        "iclr2027_conference.tex",
+        "appendices/implementation_and_evidence.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "appendices/adapter_training_definition.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "appendices/core_recipes_table.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "appendices/study_roles_table.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/data_composition_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/scope_table_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/protenix_gplus_supplement_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/v4_mechanism_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/cross_cells.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/cross_effects.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/cross_supplement.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/esmc_A_pair_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/esmc_A_residue_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/esmc_A_tm_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/complete_interaction_scope.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_interaction_marginals.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_protenix_pair_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_protenix_residue_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_protenix_tm_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_atlasfold_pair_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_atlasfold_residue_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_atlasfold_tm_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/dh_feature_changes.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/paired_table_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/fresh96_marginals.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/fresh96_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/training_psi_change.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/e1_prediction_rotations.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/e1_prediction_tests.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/signed_means.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/signed_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/checkpoint_curve_means.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/checkpoint_curve_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/e2_means.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/e2_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "appendices/compensation_comparison_table.tex"
+      ],
+      [
+        "appendices/compensation_comparison_table.tex",
+        "generated/e2_execution_means.tex"
+      ],
+      [
+        "appendices/compensation_comparison_table.tex",
+        "generated/e2_retraining_comparison.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/e2_retraining_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/anchor_means.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/anchor_pooled.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/anchor_individual.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/fresh192_marginals.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/fresh192_contrasts.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/fresh192_strata.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/atlas_propagation_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/budget_fourcell_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/budget_effect_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/schedule_fourcell_rows.tex"
+      ],
+      [
+        "appendices/implementation_and_evidence.tex",
+        "generated/schedule_difference_rows.tex"
+      ]
+    ],
+    "missing_inputs": [],
+    "cycles": [],
+    "duplicate_inclusions": {},
+    "inactive_tex_under_manuscript_dirs": [
+      "generated/esmc_A_means.tex",
+      "generated/interaction_scope_rows.tex",
+      "generated/main_table_rows.tex"
+    ],
+    "graphics_missing": []
+  },
+  "numeric_references": {
+    "active_occurrences": 1820,
+    "active_distinct_keys": 1619,
+    "missing_cells": {},
+    "missing_tex_definitions": {},
+    "definitions_count": 1985,
+    "duplicate_definitions": {},
+    "definition_keys_missing_from_cells": [],
+    "cells_without_definition": [],
+    "formatted_mismatch": []
+  },
+  "references": {
+    "labels_count": 83,
+    "ref_occurrences": 82,
+    "distinct_refs": 51,
+    "undefined_refs": {},
+    "duplicate_labels": {},
+    "unused_labels": [
+      "app:atlas_propagation",
+      "app:engineering",
+      "app:historical",
+      "app:protenix_gplus",
+      "eq:increments",
+      "eq:injection",
+      "eq:residual",
+      "sec:budget_schedule",
+      "sec:conclusion",
+      "sec:construction",
+      "sec:design",
+      "sec:discussion",
+      "sec:e2_compensation",
+      "sec:esmc",
+      "sec:full_tangent",
+      "sec:generic",
+      "sec:interaction_result",
+      "sec:introduction",
+      "sec:length",
+      "sec:limits_results",
+      "sec:main_text_end",
+      "sec:panels",
+      "sec:protenix",
+      "sec:residual",
+      "sec:results",
+      "sec:rotation",
+      "tab:e2_repeat_all",
+      "tab:esmc",
+      "tab:fresh192_contrasts",
+      "tab:fresh192_strata",
+      "tab:schedule_differences",
+      "tab:v4"
+    ],
+    "macro_formal_parameters_excluded": {
+      "#1": [
+        "math_commands.tex:21",
+        "math_commands.tex:23",
+        "math_commands.tex:24",
+        "math_commands.tex:25",
+        "math_commands.tex:27",
+        "math_commands.tex:29",
+        "math_commands.tex:31",
+        "math_commands.tex:33",
+        "math_commands.tex:35",
+        "math_commands.tex:37",
+        "math_commands.tex:39",
+        "math_commands.tex:41",
+        "math_commands.tex:43",
+        "math_commands.tex:45",
+        "math_commands.tex:47",
+        "math_commands.tex:49",
+        "math_commands.tex:50",
+        "math_commands.tex:51",
+        "math_commands.tex:53",
+        "math_commands.tex:55",
+        "math_commands.tex:56"
+      ],
+      "#2": [
+        "math_commands.tex:24",
+        "math_commands.tex:25",
+        "math_commands.tex:31",
+        "math_commands.tex:33",
+        "math_commands.tex:45",
+        "math_commands.tex:50",
+        "math_commands.tex:51",
+        "math_commands.tex:56"
+      ],
+      "#3": [
+        "math_commands.tex:25",
+        "math_commands.tex:33"
+      ],
+      "#4": [
+        "math_commands.tex:25"
+      ]
+    },
+    "reference_aliases_recognized": {
+      "figref": 1,
+      "Figref": 1,
+      "twofigref": 2,
+      "quadfigref": 4,
+      "secref": 1,
+      "Secref": 1,
+      "twosecrefs": 2,
+      "secrefs": 3,
+      "eqref": 1,
+      "Eqref": 1,
+      "plaineqref": 1,
+      "chapref": 1,
+      "Chapref": 1,
+      "rangechapref": 2,
+      "algref": 1,
+      "Algref": 1,
+      "twoalgref": 2,
+      "Twoalgref": 2,
+      "partref": 1,
+      "Partref": 1,
+      "twopartref": 2
+    }
+  },
+  "citations": {
+    "bib_files": [
+      "paper_references.bib"
+    ],
+    "bib_entries": 21,
+    "distinct_cited_keys": 21,
+    "cite_occurrences": 24,
+    "undefined_citations": {},
+    "duplicate_bib_keys": {},
+    "uncited_bib_keys": []
+  },
+  "template_files": {
+    "iclr2027_conference.sty": {
+      "sha256": "797deef41724e93761426ac0cbcca46279a91cc650dd1f0ce76a4f08d2098ea6",
+      "unchanged_from_references": {
+        "commit_4d3a2c1": true,
+        "design_v51": true
+      }
+    },
+    "iclr2027_conference.bst": {
+      "sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5",
+      "unchanged_from_references": {
+        "commit_4d3a2c1": true,
+        "design_v51": true
+      }
+    },
+    "natbib.sty": {
+      "sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d",
+      "unchanged_from_references": {
+        "commit_4d3a2c1": true,
+        "design_v51": true
+      }
+    },
+    "fancyhdr.sty": {
+      "sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea",
+      "unchanged_from_references": {
+        "commit_4d3a2c1": true,
+        "design_v51": true
+      }
+    },
+    "math_commands.tex": {
+      "sha256": "90473c4d0542070db244cea73ef962d6cddc5b2a746757e6a40ddf5fdfb90ba9",
+      "unchanged_from_references": {
+        "commit_4d3a2c1": true,
+        "design_v51": true
+      }
+    }
+  },
+  "anonymous_mode": {
+    "author": [
+      "Anonymous authors"
+    ],
+    "active_iclrfinalcopy": false
+  },
+  "identity_scan": {
+    "files": "active TeX input graph plus bibliography, with TeX comments removed",
+    "candidates": [
+      {
+        "location": "appendices/implementation_and_evidence.tex:136",
+        "text": "\\texttt{engramfold-independent96-v1|target\\_id}, without model scores."
+      },
+      {
+        "location": "appendices/adapter_training_definition.tex:55",
+        "text": "under \\texttt{reproducibility/src/engramfold/models/} retains these"
+      }
+    ],
+    "hardware_terms_preserved": {
+      "H100": 9,
+      "MI250": 9
+    },
+    "raw_source_including_comments_identity_hits": [],
+    "candidates_reviewed": [
+      {
+        "location": "appendices/implementation_and_evidence.tex:136",
+        "classification": "Protocol hash namespace / relative scientific source module, not account, hostname or absolute local path"
+      },
+      {
+        "location": "appendices/adapter_training_definition.tex:55",
+        "classification": "Protocol hash namespace / relative scientific source module, not account, hostname or absolute local path"
+      }
+    ],
+    "anonymous_scan_pass": true
+  },
+  "limitations": [
+    "Reference/citation/input checks are static traversal of literal TeX commands, with known template reference macros recognized and formal parameters excluded. Compilation/log check is handled separately by the parent reviewer.",
+    "Style preservation is verified against two authorized prior snapshots; no new network retrieval of the official template was performed.",
+    "No historical orphan/notes files are counted as active manuscript inputs. Three unused generated TeX files are listed separately."
+  ],
+  "passed": true
+}
