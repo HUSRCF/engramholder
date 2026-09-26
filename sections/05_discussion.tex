@@ -1,64 +1,54 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-Under fixed training budgets, four-cell controls establish parameterization-dependent
-sensitivity in specified Protenix and OpenFold recipes. For a recipe selected
-on earlier data, Fresh192 provides prospective evidence of greater Factor
-rotation sensitivity on new targets. Its inference concerns the fixed
-Protenix/ESMC models and screened short-chain population; OpenFold's Fresh96
-primary interaction remains unestablished. Shared compensation improves
-rotated Factor in both executions. The rotated-arm gain has similar point
-estimates, whereas Native gains more in the repeat, in which relative
-mitigation was not re-established. This distinction separates an intervention's
-useful quality gain from its extra benefit to rotated models.
+The strongest evidence concerns a fixed Protenix/ESMC recipe: Factor's signed
+Native--Rotated contrast exceeds G+'s on prospectively locked Fresh192 targets,
+and the interaction remains positive after one prespecified budget doubling.
+Factor's own penalty decreases with extra optimization. Together, these findings
+show persistence across two tested budgets while allowing substantial learning
+of rotated updates. They establish neither convergence nor a universal
+parameterization law; OpenFold's Fresh96 primary interaction remains
+unestablished.
 
-The Protenix interaction remains positive after a fixed doubling of the update
-budget; its paired change does not establish either a decline or invariance.
-The OpenFold schedule study gives a complementary warning: First-only has
-the largest interaction but the lowest quality, and All's positive interaction
-does not establish a positive Factor direction effect. Row contrasts and
-absolute scores are therefore necessary to interpret $\Psi$, rather than
-treating it as an adapter-selection score. Schedule-dependent retraining does
-not identify repeated writing or feedback as the unique cause.
+The schedule study gives an evaluation consequence: First-only has the largest
+interaction but the lowest quality, while All's positive interaction does not
+establish a positive Factor contrast. Absolute scores and both signed row
+contrasts are therefore needed to interpret $\Psi$. An adapter can be useful
+without a large native-orientation advantage, and a large interaction does not
+select a better adapter or schedule. This amended R1-only study changes training
+and inference together and does not identify repeated writing or feedback as
+the unique cause.
 
-Dense rotations, signed permutations and the mean-preserving rotations used for
-prediction and compensation are distinct transformation families.
-Signed-permutation compatibility with ideal AdamW does
-not establish strict FP32 trajectory correspondence.
-Channel compensation changes output freedom and joint optimization together;
-it identifies neither
-a learned inverse nor expressivity as the unique cause, and does not establish
-elimination of $\Psi$. Across-head controls also change nonlinearities and
-residue/pair organization, without proved function-class inclusion.
+The explanatory interventions place further limits on the inference.
+Shared compensation improves the two selected rotated Factor arms against
+fixed no-$C$ controls in both executions, but its extra benefit over Native
+was not re-established in the repeat. Output freedom and joint optimization
+change together; the intervention identifies neither expressivity as the
+unique cause nor a learned inverse. The failed reconstruction prediction
+also leaves the trained penalty without an established predictor.
+A separately retrained residual-anchor intervention did not establish the
+predicted average benefit of live anchors to rotated Factor; the two selected
+rotations responded in opposite directions (Appendix~\ref{app:anchor_intervention}).
+It contains no $C$, so whether compensation depends on live anchors remains
+untested. Norm exchange constrains a global-scale explanation while leaving
+content and local magnitudes coupled. Across-head comparisons also change
+nonlinearities and residue/pair organization, without proved function-class
+inclusion. Dense, signed-permutation and mean-preserving controls have distinct
+scopes; ideal coordinate compatibility does not establish FP32 trajectory identity.
 
-The prespecified teacher-update reconstruction score showed no established
-positive association with post-training Native--Rotated score gaps across
-the eight tested rotations
-($\rho=\result{e1_ca_lddt_x_rho}$, exact one-sided
-$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). The compensation
-intervention does not validate that ranking. A separately retrained
-comparison with recycle-matched query-only references did not support the
-predicted average benefit of live residual anchors to rotated Factor; the two
-selected rotations responded in opposite directions
-(Appendix~\ref{app:anchor_intervention}). This intervention contains no $C$,
-leaving whether $C$'s benefit depends on live anchors untested.
-Norm exchange constrains a global-scale explanation while leaving content
-and local magnitudes coupled. Earlier local and shared-transfer diagnostics
-retain their negative results in Appendix~\ref{app:mechanisms}.
+The three kinds of follow-up answer different questions: new targets test
+fixed fitted models, budget continuation evaluates those models after further
+training, and the same-seed compensation repeat probes execution variability
+without adding independent seeds or retrained no-$C$ controls. Target intervals
+condition on fitted models and rotations; they do not quantify reliability over
+new training runs. The compensation executions are not pooled, and differing
+interval significance does not test a between-execution population difference.
+The OpenFold feature study applies its prespecified Holm correction; no
+correction is applied jointly across all follow-up studies.
 
-ESMC improves quality without establishing changed direction sensitivity;
+ESMC improves quality without establishing changed signed contrasts; feature
 family, width, precision and projection size vary together. AtlasFold adds no
-established adaptation benefit. Input complementarity and downstream use remain
-candidate explanations, alongside finite-budget optimization limits.
-
-Target intervals condition on fitted models and rotations; they do not estimate
-robustness to retraining or transfer across recipes. The OpenFold feature study
-applies its prespecified Holm correction; no correction is applied jointly
-across all follow-up studies. The compensation executions reuse the same seeds and no-$C$
-baselines and are not pooled; their differing interval significance does not
-test a between-execution population difference.
-Dev8 curves do not establish convergence. Reused panels, one inference sample,
-backend differences and incomplete exposure records limit scope.
-Sequence screening guarantees neither family nor foundation-model isolation.
-Cross-predictor comparisons change losses and interfaces; gaps to native
-single-sequence systems limit deployment claims. Evaluation should consider
-output freedom and task training alongside local spectra under explicit budgets.
+established adaptation benefit. Dev8 curves do not establish convergence.
+Reused panels, one inference sample, backend differences and incomplete
+exposure records limit scope. Sequence screening guarantees neither family
+nor foundation-model isolation. Cross-predictor comparisons change losses and
+interfaces, and gaps to native single-sequence systems limit deployment claims.

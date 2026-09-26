@@ -60,3 +60,17 @@ def build(number, score, contrast, tex, save_rows):
     save_rows('schedule_difference_rows.tex', rows)
     for metric, short in [('residue_ca_lddt', 'residue'), ('tm_score_fixed_full_length', 'tm')]:
         contrast('schedule_write_'+short, of, ['statistics', metric, 'differences', 'D_write_R1', 'interaction'])
+    # Main-text overview reuses the locked cells above; no new estimates.
+    rows = []
+    for node in ['1536', '3072']:
+        rows.append([node + ' updates',
+                     *[tex(f'budget_{arm}_{node}') for arm, _ in labels],
+                     *[tex(f'budget_{effect}_{node}') for effect in
+                       ['factor_rotation', 'gplus_rotation', 'interaction']]])
+    rows.append([r'\multicolumn{8}{@{}l}{\textit{OpenFold/ESM2, Train96; observed Confirm96-B, R1 only}}'])
+    for schedule, label in [('first', 'First-only'), ('all', 'All'), ('last', 'Last-only')]:
+        rows.append([label,
+                     *[tex(f'schedule_{schedule}_{arm}') for arm, _ in labels],
+                     *[tex(f'schedule_{schedule}_{effect}') for effect in
+                       ['factor_rotation', 'gplus_rotation', 'interaction']]])
+    save_rows('budget_schedule_overview_rows.tex', rows)

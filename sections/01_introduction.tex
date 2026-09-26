@@ -13,10 +13,9 @@ Parameter-efficient methods constrain weight updates, as in LoRA
 \citep{hu2021lora}, or intervene on representations, as in ReFT
 \citep{wu2024reft}. We ask: \emph{under a fixed task-training budget, does
 output-channel rotation affect adaptation differently across parameterizations?}
-We then test whether a shared trainable orthogonal output map reduces the
-Native--Rotated score gap within Factor.
-Matching parameter counts and local spectra does not specify how a frozen predictor uses an
-update. Conversely, sensitivity to rotation need not imply superiority over
+Matching parameter counts and local spectra does not specify how a frozen
+predictor uses an update. A comparison must also distinguish an orientation
+effect within a head from its absolute quality and competitiveness with
 another adapter.
 
 Our four-cell design compares native and rotated versions of two heads.
@@ -24,35 +23,47 @@ Factor composes query-anchored increments through a frozen native operator;
 G+ receives the same extra sequence features and explicit factors, with a free
 affine output layer. Orthogonal transforms act only on completed residuals.
 Each arm is trained separately under paired settings, beginning
-at the same zero-residual function. G+'s output layer can absorb a rotation
-without changing its function class, providing a control for the Factor effect.
-This closure does not guarantee matching AdamW trajectories
-\citep{loshchilov2019adamw}.
+at the same zero-residual function. For each head $H$, we measure the signed
+Native--Rotated score contrast $\Delta_H$ and compare heads through
+$\Psi=\Delta_F-\Delta_{G+}$. A positive interaction means a larger signed
+contrast for Factor; it establishes neither a larger absolute response to
+rotation nor a positive Factor contrast by itself.
 
-Our fixed-budget studies find greater Factor rotation sensitivity in several
-Protenix recipes and in OpenFold \citep{ahdritz2024openfold} under the
-Train96/ESM2 recipe on observed panels. Fixed Protenix/ESMC models also establish the primary interaction on
-192 prospectively locked new targets. OpenFold Train384 and AtlasFold do not
-establish it; neither does the fixed OpenFold Train96 study on Fresh96.
-Native Factor outperforms G+ in Protenix, whereas G+ wins some OpenFold
-comparisons. Thus direction effects, cross-head interactions and practical head
-competitiveness answer different questions.
+G+'s free output layer can absorb a rotation without changing its function
+class, but this closure does not guarantee matching AdamW trajectories
+\citep{loshchilov2019adamw}. Within-head rotations preserve local writer
+spectra at a common state. Across heads, we match the initial function,
+approximate parameter count and training recipe, while Jacobians and
+effective learning scales can differ. The interaction therefore compares
+complete parameterizations without establishing an expressivity hierarchy.
 
-The controls have distinct scopes: within-head rotations preserve local writer
-spectra at a common state; across heads, the initial function, approximate
-parameter count and training recipe are matched, but Jacobians and effective
-learning scales are not. The interaction therefore compares two complete
-parameterizations, without establishing an expressivity hierarchy. A shared
-orthogonal compensator improves two preselected OpenFold rotated arms in both
-the original execution and a same-seed retraining repeat, but its greater
-benefit over Native is established only in the original execution.
+Our fixed-budget studies establish positive interactions in several Protenix
+recipes and in OpenFold \citep{ahdritz2024openfold} under the Train96/ESM2
+recipe on observed panels. Fixed Protenix/ESMC models also establish the
+primary interaction on 192 prospectively locked new targets (Fresh192).
+The fixed OpenFold Train96 models do not establish their Fresh96 primary
+interaction; OpenFold Train384 and AtlasFold likewise do not establish it
+on their observed panels. Native Factor outperforms G+ in Protenix, whereas
+G+ wins some OpenFold comparisons, so the interaction does not determine
+which head performs best.
+
+After Fresh192 was observed, a prespecified doubling of the Protenix update
+budget retains a positive interaction while significantly reducing Factor's
+own Native--Rotated gap. The paired overall change in $\Psi$ remains
+unestablished. A separate amended OpenFold schedule study on observed targets,
+conditional on its fitted models and one fixed rotation, finds the largest
+interaction with First-only injection, which also has the lowest absolute
+quality. Thus evidence beyond the original stopping point supports the
+orientation effect, while the schedule comparison demonstrates why maximizing
+$\Psi$ alone cannot select an adapter.
+
+Additional interventions test the limits of a mechanism account. A shared
+orthogonal compensator improves two preselected OpenFold rotated Factor arms
+in both the original execution and a same-seed retraining repeat, but its
+greater benefit over Native is established only in the original execution.
 Across eight tested rotations, a prespecified teacher-update reconstruction
-diagnostic did not establish the predicted ranking of post-training rotation penalties.
-
-This controlled empirical study introduces a native-operator residual and
-combines trained four-cell comparisons with a prospective test of fixed
-Protenix/ESMC models on new targets. A separate within-Factor intervention
-tests whether a shared orthogonal output map preferentially benefits rotated
-models, with its original and repeated executions reported together.
-The results distinguish useful adaptation, rotation sensitivity and head
-competitiveness as separate criteria for evaluating structured interfaces.
+diagnostic did not establish the predicted ranking of post-training rotation
+penalties. Together, the construction and controlled comparisons support
+evaluating structured interfaces through absolute performance, signed
+within-head orientation contrasts and their interaction under explicit
+training budgets.

@@ -1,0 +1,57 @@
+{
+  "utc": "2026-09-26T08:42:59.293171+00:00",
+  "base_commit": "00d96b4",
+  "source_lock": "v14",
+  "inputs": 384,
+  "numerical_fields": 1985,
+  "all_input_hashes_unchanged": true,
+  "all_complete_numerical_objects_unchanged": true,
+  "numeric_keys": {
+    "literal_references": 1944,
+    "distinct_keys": 1645,
+    "missing": []
+  },
+  "score_verification": {
+    "passed": true,
+    "openfold_records": 3552,
+    "openfold_summaries": 138,
+    "protenix_records": 9984,
+    "protenix_summaries": 129,
+    "exact_historical_replay_rows": 4800,
+    "numeric_field_checks": 1404,
+    "maximum_absolute_error": 1.3877787807814457e-17,
+    "scope": "Saved score grids, paired bootstrap, marginals, source/receipt bindings; no GPU training or independent CIF rescoring."
+  },
+  "compile": {
+    "passed": true,
+    "pdf": "build/feedback_v48_narrative/paper.pdf",
+    "sha256": "a7163a4047856a4bbe50e0cf5b334aace2e24dc62c5551ae8241ff3a9d74fbad",
+    "pages": 49,
+    "main_text_ends_page": 11,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "source_manifest": "build/feedback_v48_narrative/compile_sources.json",
+    "visual_review": [
+      "abstract",
+      "introduction",
+      "new main overview table",
+      "budget and schedule paragraphs",
+      "discussion and conclusion",
+      "schedule appendix amendment"
+    ],
+    "final_submission_page_limit_checked": false
+  },
+  "artifact": {
+    "path": "build/anonymous_narrative_v48_final.zip",
+    "sha256": "c284c03216eadfffe6bfeafbf84d7fd8b1124051cd1be3dbcf7514fc84faa898",
+    "files": 537,
+    "tests_passed": 27,
+    "operator_and_compensation_cpu_checks": true,
+    "all_manifest_hashes_verified": true,
+    "manuscript_text_inputs_identical_to_compiled_sources": 69,
+    "all_complete_numerical_objects_identical": true,
+    "environment": "X570 BIO: Python3.12.7, Torch2.9.1+rocm7.2.0.git7e1940d4; CPU only",
+    "validation_environment_note": "Initial staging environment lacked Gemmi/LAPACK. Final package generated and all checks passed in the existing X570 BIO environment used for v47; no test or experimental code changed."
+  },
+  "scope": "Editorial revision, a generated overview of existing estimates, source/score validation, CPU synthetic-input operator checks and compilation. No new folding experiment, prediction or CIF rescoring."
+}

@@ -91,7 +91,9 @@ For target $i$ define
 The single-rotation schedule study replaces the inner rotation average by R1.
 We write $\Delta_H=N^{-1}\sum_i d_{H,i}$ for the signed Native-minus-Rotated
 score contrast; positive values indicate a rotation penalty. Thus
-$\Psi=\Delta_F-\Delta_{G+}$.
+$\Psi=\Delta_F-\Delta_{G+}$ compares signed contrasts, not absolute rotation
+sensitivity. Positive $\Psi$ alone implies neither $\Delta_F>0$ nor
+$|\Delta_F|>|\Delta_{G+}|$ and does not rank absolute prediction quality.
 We resample whole target records for 20,000 paired bootstrap draws, preserving
 within-target seed/rotation pairing; Fresh192 resamples within its four fixed
 length strata. Intervals condition on the fitted models;

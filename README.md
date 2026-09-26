@@ -2,7 +2,9 @@
 
 **当前状态唯一入口：** [稿件状态](reports/manuscript_fill_20260922.md)。写作分支为 `main`，活跃来源锁 **v14**，共 **1,985** 个生成数值字段；入口区分已纳入证据、尚未纳入的独立工作及未完成复现交付。下列报告保留各自历史时点，不是远端队列的实时状态。
 
-**最新完成结果：** [预算扩展与注入时序复核](reports/budget_schedule_integration_20260926.md)。Protenix／ESMC 24条续训的Ψ3072仍为正，配对预算变化未建立；OpenFold按R1／36组收口，All的Factor质量更高、Ψ反而低于First。正文与附录现已整合，[补充记录及复算入口](reproducibility/budget_schedule_followups/README.md)保留完整四格及统计身份。旧349输入、1860数值对象不变；新增35输入、125字段。两项均为已观察面板后续研究；R2/R3不再等待或启动。 [当前PDF](build/feedback_v47_budget_schedule/paper.pdf)及[匿名补充包](build/anonymous_budget_schedule_v47_final.zip)已同步，数值复算／编译／局部检查通过；篇幅留到最后。
+**最新论证修订：** [审稿意见落实](reports/narrative_review_revision_20260926.md)。主线调整为新目标检验、预算延长、注入策略与质量的分离；新增主文四格／行内对比／交互总览，补偿作为机制解释的边界。Ψ明确为有符号对比之差。36组收口因算力预算，修订早于记录中的统一评分；不宣称完成原三旋转矩阵。来源锁v14及1985个数值对象不变。[当前PDF](build/feedback_v48_narrative/paper.pdf)、[匿名补充包](build/anonymous_narrative_v48_final.zip)。
+
+**最新完成结果：** [预算扩展与注入时序复核](reports/budget_schedule_integration_20260926.md)。Protenix／ESMC 24条续训的Ψ3072仍为正，配对预算变化未建立；OpenFold按R1／36组收口，All的Factor质量更高、Ψ反而低于First。正文与附录现已整合，[补充记录及复算入口](reproducibility/budget_schedule_followups/README.md)保留完整四格及统计身份。旧349输入、1860数值对象不变；新增35输入、125字段。两项均为已观察面板后续研究；R2/R3不再等待或启动。 [v47历史PDF](build/feedback_v47_budget_schedule/paper.pdf)及[v47补充包](build/anonymous_budget_schedule_v47_final.zip)已同步，数值复算／编译／局部检查通过；篇幅留到最后。
 
 **最新 Atlas 信息读出收口：** [审阅与整合](reports/atlas_probe_integration_20260926.md)。九组 probe 的主要 Dev8 增益未建立，六个 ESMC 观测保留“状态改变、结构响应较弱”的边界；不能据此证明冗余。主文不扩展，现有附录只补一短段，[完整主次比较与记录](reproducibility/atlas_followup/complementarity/README.md)进入补充材料。旧266输入、1851数值对象不变；[当前PDF](build/feedback_v46_atlas_probe/paper.pdf)、[更新补充包](build/anonymous_atlas_probe_v46.zip)。没有新训练或新的接口承诺。
 
