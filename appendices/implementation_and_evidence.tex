@@ -434,9 +434,9 @@ and all three seed and rotation marginals; residue-average lDDT and TM-score
 agree in direction. Global norm alone is therefore insufficient to explain
 this structural gap. The norm-source effect is \result{cross_ca_Eamp}
 [\result{cross_ca_EampLo}, \result{cross_ca_EampHi}], and the interaction is
-\result{cross_ca_I} [\result{cross_ca_ILo}, \result{cross_ca_IHi}]; neither
-establishes a stable effect. This does not establish norm irrelevance or
-additivity (the conditional contrasts below).
+\result{cross_ca_I} [\result{cross_ca_ILo}, \result{cross_ca_IHi}]; neither interval excludes zero.
+These intervals do not establish norm irrelevance or additivity; conditional
+contrasts are reported below.
 
 Earlier Train24/tangent diagnostics found an oracle-space advantage but no
 established learned-direction advantage at $10^{-3}\|U_q\|_F$; actual-scale
@@ -1545,10 +1545,11 @@ Effect & 1536 & 95\% interval & 3072 & 95\% interval & Change & 95\% interval \\
 \input{generated/budget_effect_rows}
 \end{tabular}\end{table}
 
-All four cells improve (Table~\ref{tab:budget_means}). Factor's gap shrinks by
-\result{budget_factor_rotation_change}
-[\result{budget_factor_rotation_changeLo}, \result{budget_factor_rotation_changeHi}],
-while G+'s contrast also shifts in point estimate; their difference is $K$, whose interval includes
+All four cells improve (Table~\ref{tab:budget_means}). Factor's signed gap decreases
+(paired change \result{budget_factor_rotation_change}
+[\result{budget_factor_rotation_changeLo}, \result{budget_factor_rotation_changeHi}]),
+while G+'s contrast also shifts in point estimate. The difference between these
+paired changes is $K$, whose interval includes
 zero (Table~\ref{tab:budget_effects}). The final interaction is positive on
 \result{budget_positive}/192 targets and in all three seed marginals, three
 rotation marginals and nine seed-by-rotation cells. Supplementary final

@@ -1,29 +1,31 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-The Protenix/ESMC interaction persists across two tested budgets;
-OpenFold's Fresh96 interaction remains unestablished. Neither result
-establishes convergence or a universal parameterization effect. First-only
-injection gives the largest interaction but the lowest quality, motivating
-joint reporting of $\Psi$, absolute scores and both within-head differences.
+For the fixed Protenix/ESMC recipe, the interaction remains positive at
+both tested budgets. In the OpenFold R1 schedule study, First-only has
+the largest interaction and lowest absolute scores. These results
+motivate joint reporting of $\Psi$, absolute quality and both within-head
+differences under explicit training budgets.
 
-Compensation benefits rotated Factor in both executions, but its additional
-gain over Native was not re-established in the repeat. Output freedom and joint
-optimization remain coupled, and the schedule comparison changes training
-and inference together. These interventions do not identify a unique
-mechanism. Reconstruction prediction and the residual-anchor intervention
-also failed to establish their proposed effects
+In OpenFold, compensation improves rotated Factor in both executions,
+but its additional gain over Native is not re-established in the repeat.
+The reconstruction and residual-anchor tests also fail to establish their
+predicted effects
 (Appendices~\ref{app:prediction_e1} and~\ref{app:anchor_intervention}).
-On 24 observed Protenix targets, a residual source--norm exchange control
-retained a native-source advantage at matched global norms
-(Appendix~\ref{app:norm_cross}).
+Output freedom and joint optimization remain coupled, and schedule
+retraining changes training and inference together.
+
+On 24 observed Protenix targets, the native residual source retains an
+advantage at matched global norms (Appendix~\ref{app:norm_cross}).
+This source contrast includes learned content and relative pair/channel
+magnitudes, so it does not isolate a causal effect of channel orientation.
 
 Target intervals condition on fitted models and rotations, excluding
 variability across new training runs. The same-seed repeat adds no
-independent seeds or retrained no-$C$ controls; its executions are not
-pooled. Different interval significance does not establish a
-between-execution population difference. Follow-ups have no joint
-multiplicity correction; the OpenFold feature study retains its
-prespecified Holm correction.
+independent seeds or retrained no-$C$ controls; the two executions are not
+pooled. Different significance outcomes do not establish different
+population effects between executions. There is no joint multiplicity
+correction across follow-up studies; the OpenFold feature study retains
+its prespecified Holm correction of $p$ values.
 
 AtlasFold showed no established adaptation benefit. Limited budgets, one
 inference sample, differing interfaces, losses and backends, and incomplete

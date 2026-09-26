@@ -4,7 +4,8 @@ whereas ReFT adapts representations \citep{wu2024reft}. Factor composes
 residue-level increments through frozen native pair operators. Orthogonal
 finetuning (OFT) and BOFT learn orthogonal transformations
 \citep{qiu2023oft,liu2023boft}; our fixed rotations act on completed
-residuals, and a separately learned shared map tests compensation.
+residuals, while a shared map trained jointly with Factor tests whether
+rotated models benefit more than Native.
 G+'s rotation closure distinguishes representable functions from
 finite-budget training behavior under AdamW \citep{loshchilov2019adamw}.
 This distinction complements LoRA-RITE's study of optimization invariance

@@ -10,13 +10,14 @@ biological function, clinical use, or safety of designed proteins. Data and mode
 access remain subject to their respective source terms.
 
 \subsection*{Reproducibility statement}
-The accompanying materials provide adapter implementations, training and
-scoring configurations, per-target scores, and code to reproduce the tables
-and figures. Appendices~\ref{app:recipes}, \ref{app:chronology} and
-\ref{app:scoring} describe the model-specific recipes, study sequence and
-statistical analysis. The materials also include a one-target OpenFold
-inference example with feature extraction and scoring, and CPU operator
-examples using synthetic inputs. These examples do not reproduce the full
-training and evaluation matrix. Pretrained model weights, the full structure
-data and an end-to-end retraining environment are not bundled; setup
-instructions and implementation checks accompany the code.
+The accompanying materials provide adapter source snapshots, training and
+scoring recipe summaries, per-target scores, and code to regenerate numerical
+results and plots from archived scores. Appendices~\ref{app:recipes},
+\ref{app:chronology} and~\ref{app:scoring} describe the model-specific recipes,
+study sequence and statistical analysis. A one-target OpenFold example
+includes a trained adapter, feature extraction, prediction and scoring;
+prediction requires separately obtained upstream software and foundation-model
+weights. CPU operator examples use synthetic inputs. The package does not
+reproduce the full training and evaluation matrix: complete training data,
+feature caches, the full set of trained adapters and predicted structures,
+and an end-to-end retraining environment are not bundled.
