@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "utc": "2026-09-26T07:13:46.051571+00:00",
+  "n_predictions": 3552,
+  "failures": 0,
+  "analysis_sha256": "6ed826e302b87eb3301d6b440b7461aae16b0f767c54a56bc2946ee957e8fa38",
+  "metric_records_sha256": "b6951567bafb1c5728c44f06a5bf43214d7479439a514828d5a138cd1f939e00",
+  "reporting_amendment_sha256": "d4aefe7f6a0837b3cee4ebde985c3bb91cee42b2ce52592db8b0ca219fe10868"
+}

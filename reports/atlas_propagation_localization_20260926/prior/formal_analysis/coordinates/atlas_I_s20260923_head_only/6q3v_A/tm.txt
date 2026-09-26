@@ -1,0 +1,35 @@
+
+ *************************************************************************
+ *                                 TM-SCORE                              *
+ * A scoring function to assess the similarity of protein structures     *
+ * Based on statistics:                                                  *
+ *       0.0 < TM-score < 0.17, random structural similarity             *
+ *       0.5 < TM-score < 1.00, in about the same fold                   *
+ * Reference: Yang Zhang and Jeffrey Skolnick, Proteins 2004 57: 702-710 *
+ * For comments, please email to: zhanglab@zhanggroup.org                *
+ *************************************************************************
+
+Structure1: /media/PM982/engramfold/runs/atlas_posttraining_calibration_20260925/atlas/formal_analysis/coordinates/atlas_I_s20260923_head_only/6q3v_A/prediction.pdb    Length=  188
+Structure2: /media/PM982/engramfold/runs/atlas_posttraining_calibration_20260925/atlas/formal_analysis/coordinates/atlas_I_s20260923_head_only/6q3v_A/reference.pdb    Length=  188 (by which all scores are normalized)
+Number of residues in common=  188
+RMSD of  the common residues=    1.369
+
+TM-score    = 0.9627  (d0= 5.11)
+MaxSub-score= 0.9345  (d0= 3.50)
+GDT-TS-score= 0.9601 %(d<1)=0.9096 %(d<2)=0.9415 %(d<4)=0.9894 %(d<8)=1.0000
+GDT-HA-score= 0.9189 %(d<0.5)=0.8351 %(d<1)=0.9096 %(d<2)=0.9415 %(d<4)=0.9894
+TM-score    = 0.9627  (if normalized by user-specified LN=188.00 and d0=5.11)
+
+ -------- rotation matrix to rotate Chain-1 to Chain-2 ------
+ i          t(i)         u(i,1)         u(i,2)         u(i,3)
+ 1     32.5519573470  -0.6259900454  -0.4894057095  -0.6071396171
+ 2     32.9257286536  -0.6856700669  -0.0254427214   0.7274676812
+ 3     22.8675974941  -0.3714741208   0.8716849886  -0.3196439553
+
+Superposition in the TM-score: Length(d<5.0)= 182
+(":" denotes the residue pairs of distance < 5.0 Angstrom)
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+:::::::::::::::::::::::::::::::::::      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678
+

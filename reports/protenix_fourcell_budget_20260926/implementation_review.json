@@ -1,0 +1,29 @@
+{
+  "local_focused_tests": "12 passed (budget extension + PLM head + Fresh192 contracts)",
+  "remote_focused_tests": "11 passed with isolated pytest config; remaining exposure-scanner fixture test passed after copying its unchanged test fixture. Original harness error logs retained.",
+  "source_sha256": {
+    "src/engramfold/experiments/protenix_budget_extension/controller.py": "5cdffbf90e9477db7af57029cf1efbf9be126daf0b5f09a4454c3b261a4cab9f",
+    "src/engramfold/experiments/protenix_budget_extension/common.py": "8a9e2eb55e5353c74e6e7f8d317347effd749abdab90b97ce84cf8e10454eeb4",
+    "src/engramfold/experiments/protenix_budget_extension/train.py": "360e9547bd87fbd7f8334c357dfa20d7659f684352df17ca4d2892fb4f5fd839",
+    "src/engramfold/experiments/protenix_budget_extension/predict.py": "42017e9d33733a158539a816a5b11896ee603f731f37fcf3bb46cba66cc73735",
+    "src/engramfold/experiments/protenix_budget_extension/__init__.py": "f19d3555ee16ccb0a46b69e353685e18e75686266a1f6db0e82ba6c70f28a702",
+    "src/engramfold/experiments/protenix_budget_extension/prepare.py": "0ff36774f59cd2c32a57c6c023a349b534f62ae26d8d88bd6ed0192719e3e575",
+    "src/engramfold/experiments/protenix_budget_extension/state.py": "a9ffca063e79aaeb64226433893ae61e14dd284d26e971b99e0ad420b9d2459a",
+    "src/engramfold/experiments/protenix_budget_extension/score.py": "5febd51d58420ddc59125266be86153e75281e3bdb5be57af42f6e5486d2de9d"
+  },
+  "scientific_settings_changed": [
+    "total task updates 1536 -> 3072"
+  ],
+  "unchanged": [
+    "Train384 and Dev8 identities",
+    "24 parent heads and AdamW moments",
+    "ESMC600M layer36 1152 BF16 cache",
+    "Full residual and D508.5",
+    "three seeds and three rotations",
+    "native Protenix loss and last-cycle backpropagation",
+    "LR5e-5 / weight_decay1e-4 / clip1",
+    "Fresh192 input set and failure denominator"
+  ],
+  "release_gate": "24 exact 4-step restore checks + 100 old/new entry predictions",
+  "no_test_score_selection": true
+}

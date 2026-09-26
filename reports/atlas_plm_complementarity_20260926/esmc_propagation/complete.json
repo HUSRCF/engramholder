@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "lock_sha256": "a2d110c64faf1fd974a8ed79549df4451fa0dc1699f6e1f8282ea43eb6d96082",
+  "observations": [
+    [
+      "7hln_A",
+      20260923
+    ],
+    [
+      "7hln_A",
+      20260924
+    ],
+    [
+      "7hln_A",
+      20260925
+    ],
+    [
+      "9qdy_A",
+      20260923
+    ],
+    [
+      "9qdy_A",
+      20260924
+    ],
+    [
+      "9qdy_A",
+      20260925
+    ]
+  ],
+  "full_forwards": 10,
+  "no_structure_scoring": true,
+  "hashes": {
+    "label_guard.json": "e82161164a4bbcbb358db6aabf0d03d191571544f0ab097e4ceac6b30729c7f6",
+    "7hln_A/native_esmc_s20260923_ca.npy": "3101428b93edabc8a234c0566abd7de61dc5d101d94898af92b4972caad2e719",
+    "7hln_A/native_esmc_s20260924.cif": "4ecaf71a8d204b4bd4af6573737644d13c04f6ddaffa70185175b6f0ef6acd79",
+    "7hln_A/native_esmc_s20260925_ca.npy": "0e89737704f340c8fee8bda28194240689b2cae96b497cef46bec81ca88cac7e",
+    "7hln_A/observer_replay.json": "0649d0f7c3be24399ecfd749f92f7da04ad433acd1caea0d3f4e9faa427534d8",
+    "7hln_A/native_esmc_s20260925.cif": "914cda4b2313cd945b790fe269524e686ae1cdcfca7db83d687510b21d8f5c0b",
+    "7hln_A/native_esmc_s20260923.json": "0807f568ff5f40d1844910c714587562eee9e419ed7a57e88f302bafe047bc54",
+    "7hln_A/query_replay.json": "19cb54e5240afef57eb4e6806018dc70ad80e55ab4974aedd11aeba9018ac82e",
+    "7hln_A/native_esmc_s20260925.json": "36b5de550e4af75f2a0d116f326bff90af125f766a49bb514070df5893b780cf",
+    "7hln_A/native_esmc_s20260924_ca.npy": "b6893647cb273d87336ee74659b7f82313d7ba45632f34400454db40bfcf4a88",
+    "7hln_A/native_esmc_s20260924.json": "47a17f200c8e93aa320ff9c25c28faff7828abe6048d276febfabf0f05d19f18",
+    "7hln_A/native_esmc_s20260923.cif": "9957ba89c72126bfd4aa3b34593fc0fe6c9822cca758bc1c5a963b7f5830f214",
+    "9qdy_A/native_esmc_s20260923_ca.npy": "fb9ecec1af313c26d5d0a0dbb2834311884c5ee584d77cf96b5e4c417959f213",
+    "9qdy_A/native_esmc_s20260924.cif": "0c6f48b67c2ea499ba62a40ec10accdc61be77287e65d44bd06a678cce035f84",
+    "9qdy_A/native_esmc_s20260925_ca.npy": "f229d73d95d1bf50dd0b45e93560f7e700d6d466ecbda757246cbce6ee0170d7",
+    "9qdy_A/observer_replay.json": "0649d0f7c3be24399ecfd749f92f7da04ad433acd1caea0d3f4e9faa427534d8",
+    "9qdy_A/native_esmc_s20260925.cif": "d6fcadf2a2c23c79bf0742825252ab1ca588b5b4ebb93341df4607d179b3b8e1",
+    "9qdy_A/native_esmc_s20260923.json": "9c8a3b7033acf1a900753d9588e784c9ced4f030f30ee5355123cd09cff8a602",
+    "9qdy_A/query_replay.json": "19cb54e5240afef57eb4e6806018dc70ad80e55ab4974aedd11aeba9018ac82e",
+    "9qdy_A/native_esmc_s20260925.json": "cb35fc8a963e690c1f8dfe70f8b755777d1a0d3a7155bf029b5915c366e476aa",
+    "9qdy_A/native_esmc_s20260924_ca.npy": "47004e458aa7d71a96461f1edcd72854d7d8b1425b221f3a19458edf4c027e3a",
+    "9qdy_A/native_esmc_s20260924.json": "fcfc8856a895c8d18e2e6bbf00cc7a5440a8627b0f4a4117c146728e55ba4f29",
+    "9qdy_A/native_esmc_s20260923.cif": "6c62109168ffcce150c98277c07e2b31fe02e259ee64edf3a172d696c1c5faee"
+  }
+}

@@ -1,0 +1,1801 @@
+{
+  "target_id": "7hln_A",
+  "seed": 20260924,
+  "checkpoint": {
+    "seed": 20260924,
+    "path": "/media/PM982/engramfold/runs/diamondhill_plm_A_20260923/atlas/formal/C_factor_native_s20260924/checkpoint_1536.pt",
+    "sha256": "87dc1a5a2eaa0541867d70e6be09e52cf76d8efdb31f2afc621f0dced9dc4567",
+    "training_backend": "MI250"
+  },
+  "sites": {
+    "recycle_out.s": [
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 10.446187058065071,
+        "adapted_rms": 10.446187058065071,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.5678547697706,
+        "adapted_rms": 17.578201417591576,
+        "delta_rms": 0.4009654974187942,
+        "relative_delta_rms": 0.022823816719429197,
+        "max_absolute_delta": 4.5546875,
+        "changed_fraction": 0.9617409131205674,
+        "cosine": 0.9997398633366061,
+        "channel_constant_delta_energy_fraction": 0.001234788160151216
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.43897578758982,
+        "adapted_rms": 17.445158231251813,
+        "delta_rms": 0.3848743641664481,
+        "relative_delta_rms": 0.02206978029296526,
+        "max_absolute_delta": 8.46875,
+        "changed_fraction": 0.9556044991134752,
+        "cosine": 0.9997566115264517,
+        "channel_constant_delta_energy_fraction": 0.0016625796898810797
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.4181257224244,
+        "adapted_rms": 17.40886170609797,
+        "delta_rms": 0.37047585758638196,
+        "relative_delta_rms": 0.021269559279241214,
+        "max_absolute_delta": 8.625,
+        "changed_fraction": 0.9524324024822695,
+        "cosine": 0.9997738240678423,
+        "channel_constant_delta_energy_fraction": 0.0019262921455786765
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.379242859856625,
+        "adapted_rms": 17.372018379975398,
+        "delta_rms": 0.3362034554258224,
+        "relative_delta_rms": 0.01934511521226282,
+        "max_absolute_delta": 7.0625,
+        "changed_fraction": 0.9502437943262412,
+        "cosine": 0.9998128918801731,
+        "channel_constant_delta_energy_fraction": 0.001989407787241049
+      }
+    ],
+    "recycle_out.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.9212591096827304,
+        "adapted_rms": 0.9212591096827304,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 5.741937305663959,
+        "adapted_rms": 5.7356365343565106,
+        "delta_rms": 0.50268649431612,
+        "relative_delta_rms": 0.08754649651438379,
+        "max_absolute_delta": 9.5,
+        "changed_fraction": 0.9763693095009054,
+        "cosine": 0.9961641984141532,
+        "channel_constant_delta_energy_fraction": 0.0004903077625951069
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 5.854983732989746,
+        "adapted_rms": 5.878416975919866,
+        "delta_rms": 0.5387142298677525,
+        "relative_delta_rms": 0.09200951777754426,
+        "max_absolute_delta": 12.5,
+        "changed_fraction": 0.9734007186509733,
+        "cosine": 0.9957919750777522,
+        "channel_constant_delta_energy_fraction": 0.00048356624205237624
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 5.8714814250084775,
+        "adapted_rms": 5.888967191416335,
+        "delta_rms": 0.4991681982850106,
+        "relative_delta_rms": 0.08501571616302778,
+        "max_absolute_delta": 12.34375,
+        "changed_fraction": 0.9711438822713898,
+        "cosine": 0.996401315680694,
+        "channel_constant_delta_energy_fraction": 0.00047183964557510335
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 5.892466262539279,
+        "adapted_rms": 5.907750776989462,
+        "delta_rms": 0.46848306317478927,
+        "relative_delta_rms": 0.07950542986611905,
+        "max_absolute_delta": 11.859375,
+        "changed_fraction": 0.9703633838133771,
+        "cosine": 0.9968509757684999,
+        "channel_constant_delta_energy_fraction": 0.0004612146293869105
+      }
+    ],
+    "lm_input.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 182.62967252696996,
+        "adapted_rms": 182.62967252696996,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 183.35395287215073,
+        "adapted_rms": 183.35395287215073,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 182.8132381677619,
+        "adapted_rms": 182.8132381677619,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 183.60638487168745,
+        "adapted_rms": 183.60638487168745,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 183.34402347016714,
+        "adapted_rms": 183.34402347016714,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      }
+    ],
+    "lm_input.s": [
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 825.5518647407264,
+        "adapted_rms": 825.5518647407264,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 821.5253373451237,
+        "adapted_rms": 821.5253373451237,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 820.5624152460883,
+        "adapted_rms": 820.5624152460883,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 822.8507902070038,
+        "adapted_rms": 822.8507902070038,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 828.8512751034975,
+        "adapted_rms": 828.8512751034975,
+        "delta_rms": 0.0,
+        "relative_delta_rms": 0.0,
+        "max_absolute_delta": 0.0,
+        "changed_fraction": 0.0,
+        "cosine": 1.0,
+        "channel_constant_delta_energy_fraction": null
+      }
+    ],
+    "interface_update.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 40.73942616672175,
+        "adapted_rms": 98.16261412630182,
+        "delta_rms": 92.79435063939276,
+        "relative_delta_rms": 2.2777530115333926,
+        "max_absolute_delta": 510.0,
+        "changed_fraction": 0.9992575207248755,
+        "cosine": 0.3356775048320607,
+        "channel_constant_delta_energy_fraction": 0.0018586789128852723
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 40.46529745350696,
+        "adapted_rms": 97.97853232547936,
+        "delta_rms": 92.97329051117076,
+        "relative_delta_rms": 2.297605512921125,
+        "max_absolute_delta": 483.5,
+        "changed_fraction": 0.9992701201052513,
+        "cosine": 0.3270336250938489,
+        "channel_constant_delta_energy_fraction": 0.001794258760724088
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 40.91023708350059,
+        "adapted_rms": 98.79765366642964,
+        "delta_rms": 93.53866858341134,
+        "relative_delta_rms": 2.2864367271324415,
+        "max_absolute_delta": 563.5,
+        "changed_fraction": 0.9992447003027388,
+        "cosine": 0.33216856440421844,
+        "channel_constant_delta_energy_fraction": 0.0018394934077386011
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 40.31164181023355,
+        "adapted_rms": 98.19028181752637,
+        "delta_rms": 93.02582857934753,
+        "relative_delta_rms": 2.3076665797256593,
+        "max_absolute_delta": 493.5,
+        "changed_fraction": 0.9992460265533046,
+        "cosine": 0.3300171233714835,
+        "channel_constant_delta_energy_fraction": 0.0018320937933633083
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 40.92828142076604,
+        "adapted_rms": 98.78023548494811,
+        "delta_rms": 93.08388875472001,
+        "relative_delta_rms": 2.2743170620277118,
+        "max_absolute_delta": 526.0,
+        "changed_fraction": 0.9992515525973291,
+        "cosine": 0.3423341146211403,
+        "channel_constant_delta_energy_fraction": 0.001936666892119434
+      }
+    ],
+    "after_injection.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 188.20631462848883,
+        "adapted_rms": 202.84261796817185,
+        "delta_rms": 92.79436844804715,
+        "relative_delta_rms": 0.4930459885536745,
+        "max_absolute_delta": 510.0,
+        "changed_fraction": 0.9976412633686057,
+        "cosine": 0.8900288675044743,
+        "channel_constant_delta_energy_fraction": 0.0018587321829755294
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 188.8459881880516,
+        "adapted_rms": 203.35949983547144,
+        "delta_rms": 92.97355893889429,
+        "relative_delta_rms": 0.49232477655978496,
+        "max_absolute_delta": 482.0,
+        "changed_fraction": 0.9976339689904934,
+        "cosine": 0.890199942233877,
+        "channel_constant_delta_energy_fraction": 0.001794052592364934
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 188.35327738303187,
+        "adapted_rms": 203.10537579290326,
+        "delta_rms": 93.53880801354842,
+        "relative_delta_rms": 0.49661364704225225,
+        "max_absolute_delta": 563.5,
+        "changed_fraction": 0.9976496629555228,
+        "cosine": 0.8884883205625903,
+        "channel_constant_delta_energy_fraction": 0.0018395026114268608
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 188.97831261803188,
+        "adapted_rms": 203.497616267584,
+        "delta_rms": 93.02578403664569,
+        "relative_delta_rms": 0.4922564010012723,
+        "max_absolute_delta": 494.75,
+        "changed_fraction": 0.9976016968933906,
+        "cosine": 0.8902271862060238,
+        "channel_constant_delta_energy_fraction": 0.0018320159302511586
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 188.80003641342773,
+        "adapted_rms": 203.57271455713425,
+        "delta_rms": 93.08441899811947,
+        "relative_delta_rms": 0.4930317851967277,
+        "max_absolute_delta": 524.25,
+        "changed_fraction": 0.9976441369114984,
+        "cosine": 0.890118654509002,
+        "channel_constant_delta_energy_fraction": 0.0019366509748924684
+      }
+    ],
+    "lm_block1.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 210.58590618650882,
+        "adapted_rms": 221.81049362769068,
+        "delta_rms": 96.62494048903693,
+        "relative_delta_rms": 0.45883859104730157,
+        "max_absolute_delta": 654.0,
+        "changed_fraction": 0.9976998394352649,
+        "cosine": 0.9014091686739198,
+        "channel_constant_delta_energy_fraction": 0.0024542730647404637
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 211.22932690049606,
+        "adapted_rms": 221.97981035939463,
+        "delta_rms": 96.58764536617952,
+        "relative_delta_rms": 0.4572643713042703,
+        "max_absolute_delta": 572.0,
+        "changed_fraction": 0.9977332167411724,
+        "cosine": 0.9017501981504559,
+        "channel_constant_delta_energy_fraction": 0.00244558159921455
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 210.8791818845559,
+        "adapted_rms": 222.04131420470665,
+        "delta_rms": 97.37498329141278,
+        "relative_delta_rms": 0.4617572129273525,
+        "max_absolute_delta": 642.0,
+        "changed_fraction": 0.9977754357175193,
+        "cosine": 0.9000799160816448,
+        "channel_constant_delta_energy_fraction": 0.002481151181796136
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 211.1254499262529,
+        "adapted_rms": 221.944411618024,
+        "delta_rms": 96.48016814890782,
+        "relative_delta_rms": 0.4569802843883046,
+        "max_absolute_delta": 590.0,
+        "changed_fraction": 0.9977276906971481,
+        "cosine": 0.9019233578122519,
+        "channel_constant_delta_energy_fraction": 0.002557610110589191
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 211.59981225357882,
+        "adapted_rms": 222.55717219926993,
+        "delta_rms": 96.99160030971737,
+        "relative_delta_rms": 0.4583728089204717,
+        "max_absolute_delta": 668.0,
+        "changed_fraction": 0.9977400690357627,
+        "cosine": 0.9013940948890614,
+        "channel_constant_delta_energy_fraction": 0.002550537660875525
+      }
+    ],
+    "lm_block1.s": [
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1536.349017861698,
+        "adapted_rms": 1536.2599872007606,
+        "delta_rms": 2.7850625507689233,
+        "relative_delta_rms": 0.0018127798556119715,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.16748393173758866,
+        "cosine": 0.9999983584985459,
+        "channel_constant_delta_energy_fraction": 0.0004926339904600931
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1453.2505068821667,
+        "adapted_rms": 1453.2865435683234,
+        "delta_rms": 2.019922552713455,
+        "relative_delta_rms": 0.0013899341807539006,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.1749293550531915,
+        "cosine": 0.9999990343728844,
+        "channel_constant_delta_energy_fraction": 0.0007914843739670431
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1537.6136761402297,
+        "adapted_rms": 1537.8211359930954,
+        "delta_rms": 3.0946965441891754,
+        "relative_delta_rms": 0.002012661952875958,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.31002742686170215,
+        "cosine": 0.9999979839700843,
+        "channel_constant_delta_energy_fraction": 0.0008571351318349845
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1432.637106782733,
+        "adapted_rms": 1432.7301615275792,
+        "delta_rms": 1.8689206400841138,
+        "relative_delta_rms": 0.0013045317835450603,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.17469387189716312,
+        "cosine": 0.9999991512630176,
+        "channel_constant_delta_energy_fraction": 0.0006938065532565086
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1610.0537453611973,
+        "adapted_rms": 1610.049752397866,
+        "delta_rms": 2.339153244230485,
+        "relative_delta_rms": 0.0014528417147377417,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.1794312389184397,
+        "cosine": 0.9999989446259339,
+        "channel_constant_delta_energy_fraction": 0.0009490403552261845
+      }
+    ],
+    "lm_block2.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 252.68902111317243,
+        "adapted_rms": 248.18660795584358,
+        "delta_rms": 104.8157203935327,
+        "relative_delta_rms": 0.41480124435872756,
+        "max_absolute_delta": 3024.0,
+        "changed_fraction": 0.9976503260808058,
+        "cosine": 0.9125708925147044,
+        "channel_constant_delta_energy_fraction": 0.002747305198567361
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 253.01770951431007,
+        "adapted_rms": 248.34224611899253,
+        "delta_rms": 104.68167011892838,
+        "relative_delta_rms": 0.4137325814855969,
+        "max_absolute_delta": 2712.0,
+        "changed_fraction": 0.9976819350526256,
+        "cosine": 0.9129752965116842,
+        "channel_constant_delta_energy_fraction": 0.002798069643098912
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 252.8779971455737,
+        "adapted_rms": 248.45684040133148,
+        "delta_rms": 105.56918828943594,
+        "relative_delta_rms": 0.41747083368689913,
+        "max_absolute_delta": 2904.0,
+        "changed_fraction": 0.9977106704815527,
+        "cosine": 0.9114639783989787,
+        "channel_constant_delta_energy_fraction": 0.0028057853037545552
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 253.18481520010883,
+        "adapted_rms": 248.42337017255707,
+        "delta_rms": 104.46944871332903,
+        "relative_delta_rms": 0.4126213044441858,
+        "max_absolute_delta": 2592.0,
+        "changed_fraction": 0.9977184069431869,
+        "cosine": 0.9134204332887731,
+        "channel_constant_delta_energy_fraction": 0.002921913512032517
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 254.25551449334046,
+        "adapted_rms": 249.15212603749168,
+        "delta_rms": 105.25665133159566,
+        "relative_delta_rms": 0.41397981688358854,
+        "max_absolute_delta": 3004.0,
+        "changed_fraction": 0.9976819350526256,
+        "cosine": 0.9127607392138866,
+        "channel_constant_delta_energy_fraction": 0.0028164231118993454
+      }
+    ],
+    "lm_block2.s": [
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1654.0709188774745,
+        "adapted_rms": 1653.9647489395288,
+        "delta_rms": 3.7433446041220497,
+        "relative_delta_rms": 0.0022631101009033205,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.2901083222517731,
+        "cosine": 0.9999974410620739,
+        "channel_constant_delta_energy_fraction": 0.0008453210100348458
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1577.2189865743894,
+        "adapted_rms": 1577.2825049149917,
+        "delta_rms": 3.293902112962961,
+        "relative_delta_rms": 0.002088424081247645,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.2816724844858156,
+        "cosine": 0.999997820141148,
+        "channel_constant_delta_energy_fraction": 0.0007615252731286361
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1657.1420908156535,
+        "adapted_rms": 1657.2305778487316,
+        "delta_rms": 4.389177431064156,
+        "relative_delta_rms": 0.002648642778063636,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.40437998670212766,
+        "cosine": 0.9999964939585702,
+        "channel_constant_delta_energy_fraction": 0.000709895695762508
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1558.62066661833,
+        "adapted_rms": 1558.7098576466642,
+        "delta_rms": 2.7603662650038507,
+        "relative_delta_rms": 0.0017710314793867674,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.2802734375,
+        "cosine": 0.9999984334507065,
+        "channel_constant_delta_energy_fraction": 0.0006325586577159483
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1723.548998022891,
+        "adapted_rms": 1723.5515074895927,
+        "delta_rms": 3.2716101560441815,
+        "relative_delta_rms": 0.0018981822737833935,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.305255429964539,
+        "cosine": 0.9999981984557108,
+        "channel_constant_delta_energy_fraction": 0.0008202067600894612
+      }
+    ],
+    "lm_block3.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 291.9103899083357,
+        "adapted_rms": 281.9471921383817,
+        "delta_rms": 113.6865980076442,
+        "relative_delta_rms": 0.3894571825392838,
+        "max_absolute_delta": 3296.0,
+        "changed_fraction": 0.9972215050645088,
+        "cosine": 0.9220846858394,
+        "channel_constant_delta_energy_fraction": 0.0025996211260573042
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 291.8961249451141,
+        "adapted_rms": 281.8574000070436,
+        "delta_rms": 113.52869826019364,
+        "relative_delta_rms": 0.3889352703176197,
+        "max_absolute_delta": 2904.0,
+        "changed_fraction": 0.9972608504979629,
+        "cosine": 0.9222832736575747,
+        "channel_constant_delta_energy_fraction": 0.0026699082859733205
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 292.3399323882159,
+        "adapted_rms": 282.559257965966,
+        "delta_rms": 114.5739320793221,
+        "relative_delta_rms": 0.3919202250042681,
+        "max_absolute_delta": 3176.0,
+        "changed_fraction": 0.9972413988229968,
+        "cosine": 0.921119884177579,
+        "channel_constant_delta_energy_fraction": 0.0026796240683453613
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 292.09176239917304,
+        "adapted_rms": 282.1418396819893,
+        "delta_rms": 113.38750573987606,
+        "relative_delta_rms": 0.3881913848187219,
+        "max_absolute_delta": 2776.0,
+        "changed_fraction": 0.9972139896446356,
+        "cosine": 0.9225972385986647,
+        "channel_constant_delta_energy_fraction": 0.0027982994350895215
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 294.17372770887926,
+        "adapted_rms": 283.6776811744649,
+        "delta_rms": 114.0252374344271,
+        "relative_delta_rms": 0.3876118996842198,
+        "max_absolute_delta": 3304.0,
+        "changed_fraction": 0.9972522298692847,
+        "cosine": 0.9227590934479415,
+        "channel_constant_delta_energy_fraction": 0.002652077709816143
+      }
+    ],
+    "lm_block3.s": [
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1886.5361280619657,
+        "adapted_rms": 1886.5746933792223,
+        "delta_rms": 9.061935092245275,
+        "relative_delta_rms": 0.004803478161616009,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.5222254543439716,
+        "cosine": 0.9999884637435499,
+        "channel_constant_delta_energy_fraction": 0.00041963180967309095
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1804.7897955774795,
+        "adapted_rms": 1804.8723324329674,
+        "delta_rms": 7.630713889273291,
+        "relative_delta_rms": 0.004228034704081251,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.5432665669326241,
+        "cosine": 0.9999910633156772,
+        "channel_constant_delta_energy_fraction": 0.0005153592829982874
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1886.55468129575,
+        "adapted_rms": 1886.6441469685494,
+        "delta_rms": 8.44665219342615,
+        "relative_delta_rms": 0.004477289885721575,
+        "max_absolute_delta": 512.0,
+        "changed_fraction": 0.59161679964539,
+        "cosine": 0.9999899785373454,
+        "channel_constant_delta_energy_fraction": 0.0004770939559446451
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1781.3041934725966,
+        "adapted_rms": 1781.5645964817413,
+        "delta_rms": 7.774649480703127,
+        "relative_delta_rms": 0.004364582708103713,
+        "max_absolute_delta": 256.0,
+        "changed_fraction": 0.5291791334219859,
+        "cosine": 0.9999904872848026,
+        "channel_constant_delta_energy_fraction": 0.000574390428230172
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 1975.0646242302269,
+        "adapted_rms": 1975.1424746791113,
+        "delta_rms": 7.292877325401132,
+        "relative_delta_rms": 0.003692475292165946,
+        "max_absolute_delta": 512.0,
+        "changed_fraction": 0.534429022606383,
+        "cosine": 0.9999931838586144,
+        "channel_constant_delta_energy_fraction": 0.00045353171549044214
+      }
+    ],
+    "lm_block4.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 379.7846984675623,
+        "adapted_rms": 371.4665750411271,
+        "delta_rms": 130.67153473451035,
+        "relative_delta_rms": 0.3440674025619574,
+        "max_absolute_delta": 3320.0,
+        "changed_fraction": 0.9962283644324355,
+        "cosine": 0.9397285875973731,
+        "channel_constant_delta_energy_fraction": 0.0022967981002119183
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 379.12121404841514,
+        "adapted_rms": 371.55008376324406,
+        "delta_rms": 130.8705342938688,
+        "relative_delta_rms": 0.34519443767437435,
+        "max_absolute_delta": 2904.0,
+        "changed_fraction": 0.9963044027982119,
+        "cosine": 0.9394098058390261,
+        "channel_constant_delta_energy_fraction": 0.0023331233067262203
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 379.73149233342644,
+        "adapted_rms": 372.6520572870052,
+        "delta_rms": 132.01927368741988,
+        "relative_delta_rms": 0.34766480092596386,
+        "max_absolute_delta": 3176.0,
+        "changed_fraction": 0.9963152338444998,
+        "cosine": 0.9385935622485805,
+        "channel_constant_delta_energy_fraction": 0.0023734295104118125
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 379.12059974061134,
+        "adapted_rms": 371.7830281602414,
+        "delta_rms": 130.35778466161003,
+        "relative_delta_rms": 0.3438425259687785,
+        "max_absolute_delta": 2752.0,
+        "changed_fraction": 0.9962566577778407,
+        "cosine": 0.9399104668187961,
+        "channel_constant_delta_energy_fraction": 0.002502315157290764
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 383.89967875367915,
+        "adapted_rms": 375.75709043674726,
+        "delta_rms": 130.70418414437052,
+        "relative_delta_rms": 0.34046442697920043,
+        "max_absolute_delta": 3320.0,
+        "changed_fraction": 0.9962714675758262,
+        "cosine": 0.9410158578857049,
+        "channel_constant_delta_energy_fraction": 0.0023780702627224817
+      }
+    ],
+    "lm_block4.s": [
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 2525.3386439184733,
+        "adapted_rms": 2529.626901789912,
+        "delta_rms": 52.96025015550062,
+        "relative_delta_rms": 0.020971543869191412,
+        "max_absolute_delta": 2560.0,
+        "changed_fraction": 0.8570686502659575,
+        "cosine": 0.9997819092706112,
+        "channel_constant_delta_energy_fraction": 9.19282175211791e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 2364.7875274556673,
+        "adapted_rms": 2367.797259629776,
+        "delta_rms": 56.52509202963007,
+        "relative_delta_rms": 0.0239028206015814,
+        "max_absolute_delta": 3072.0,
+        "changed_fraction": 0.8533286236702128,
+        "cosine": 0.9997154995941333,
+        "channel_constant_delta_energy_fraction": 8.375820330015012e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 2503.21933883885,
+        "adapted_rms": 2506.3032496797614,
+        "delta_rms": 56.87765764742551,
+        "relative_delta_rms": 0.022721803385319372,
+        "max_absolute_delta": 2048.0,
+        "changed_fraction": 0.8563137189716312,
+        "cosine": 0.9997429354080908,
+        "channel_constant_delta_energy_fraction": 7.165947492840015e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 2294.7735432280974,
+        "adapted_rms": 2296.5317150699566,
+        "delta_rms": 52.91542530727003,
+        "relative_delta_rms": 0.02305910553284181,
+        "max_absolute_delta": 2560.0,
+        "changed_fraction": 0.8695077016843972,
+        "cosine": 0.999734635641803,
+        "channel_constant_delta_energy_fraction": 9.179894446900919e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 2649.738323499063,
+        "adapted_rms": 2647.6415104678313,
+        "delta_rms": 55.52946841916375,
+        "relative_delta_rms": 0.02095658576045175,
+        "max_absolute_delta": 4096.0,
+        "changed_fraction": 0.8464926861702128,
+        "cosine": 0.9997805502000578,
+        "channel_constant_delta_energy_fraction": 6.121005042277618e-05
+      }
+    ],
+    "projection_ln.s": [
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.5453406808176205,
+        "adapted_rms": 0.5450871986407895,
+        "delta_rms": 0.01852824866067103,
+        "relative_delta_rms": 0.033975548335935475,
+        "max_absolute_delta": 0.29931640625,
+        "changed_fraction": 0.8646595190602837,
+        "cosine": 0.9994226707328976,
+        "channel_constant_delta_energy_fraction": 8.079107864837643e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.5423576870243957,
+        "adapted_rms": 0.542130817773988,
+        "delta_rms": 0.02078250800980468,
+        "relative_delta_rms": 0.03831882262760271,
+        "max_absolute_delta": 0.390625,
+        "changed_fraction": 0.8678385416666666,
+        "cosine": 0.9992656142094859,
+        "channel_constant_delta_energy_fraction": 5.644886991553763e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.5454460868547584,
+        "adapted_rms": 0.5453227525453815,
+        "delta_rms": 0.021061314110262606,
+        "relative_delta_rms": 0.03861300799078026,
+        "max_absolute_delta": 0.32666015625,
+        "changed_fraction": 0.8646733710106383,
+        "cosine": 0.9992543747731694,
+        "channel_constant_delta_energy_fraction": 6.165955542307834e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.5407467652491676,
+        "adapted_rms": 0.5404119846151159,
+        "delta_rms": 0.02012914260838983,
+        "relative_delta_rms": 0.03722471201305225,
+        "max_absolute_delta": 0.328125,
+        "changed_fraction": 0.8775002770390071,
+        "cosine": 0.9993069229655959,
+        "channel_constant_delta_energy_fraction": 6.237745878139475e-05
+      },
+      {
+        "shape": [
+          188,
+          768
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.5480837399235573,
+        "adapted_rms": 0.5476821512946185,
+        "delta_rms": 0.019061699103965848,
+        "relative_delta_rms": 0.03477880790009285,
+        "max_absolute_delta": 0.40234375,
+        "changed_fraction": 0.8548800421099291,
+        "cosine": 0.9993950424345495,
+        "channel_constant_delta_energy_fraction": 5.381771902505645e-05
+      }
+    ],
+    "projection_out.s": [
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.67744421715995,
+        "adapted_rms": 17.661440775499358,
+        "delta_rms": 0.4270920510812335,
+        "relative_delta_rms": 0.024160282778131703,
+        "max_absolute_delta": 10.0,
+        "changed_fraction": 0.8675892065602837,
+        "cosine": 0.9997082860652446,
+        "channel_constant_delta_energy_fraction": 0.0017753448297552776
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.58460455174024,
+        "adapted_rms": 17.566592487702586,
+        "delta_rms": 0.47861474390948977,
+        "relative_delta_rms": 0.02721782810078173,
+        "max_absolute_delta": 14.0,
+        "changed_fraction": 0.8656637854609929,
+        "cosine": 0.9996297402606449,
+        "channel_constant_delta_energy_fraction": 0.0013293388899039296
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.7139907711218,
+        "adapted_rms": 17.70517508795437,
+        "delta_rms": 0.4791062221078299,
+        "relative_delta_rms": 0.02704676931913569,
+        "max_absolute_delta": 10.0,
+        "changed_fraction": 0.8667996453900709,
+        "cosine": 0.9996341779134482,
+        "channel_constant_delta_energy_fraction": 0.0015646802689504376
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.558461591900244,
+        "adapted_rms": 17.549631563872236,
+        "delta_rms": 0.4595583358714679,
+        "relative_delta_rms": 0.026173041041560447,
+        "max_absolute_delta": 8.0,
+        "changed_fraction": 0.8781028368794326,
+        "cosine": 0.9996574401410537,
+        "channel_constant_delta_energy_fraction": 0.0014683238412620016
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 17.81922132374439,
+        "adapted_rms": 17.80729122786265,
+        "delta_rms": 0.4355646360527177,
+        "relative_delta_rms": 0.024443528038586123,
+        "max_absolute_delta": 6.0,
+        "changed_fraction": 0.8608848625886525,
+        "cosine": 0.9997012810939778,
+        "channel_constant_delta_energy_fraction": 0.0011438206252946997
+      }
+    ],
+    "projection_ln.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.9696437380543531,
+        "adapted_rms": 0.9671019271974194,
+        "delta_rms": 0.3924847261288207,
+        "relative_delta_rms": 0.4047720938376442,
+        "max_absolute_delta": 2.8671875,
+        "changed_fraction": 0.9961801773285424,
+        "cosine": 0.9178679119239571,
+        "channel_constant_delta_energy_fraction": 5.269946423862533e-05
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.9693453891548774,
+        "adapted_rms": 0.9661219230482275,
+        "delta_rms": 0.39354555835847077,
+        "relative_delta_rms": 0.40599105619265696,
+        "max_absolute_delta": 2.9765625,
+        "changed_fraction": 0.9962979925871435,
+        "cosine": 0.9173162031852274,
+        "channel_constant_delta_energy_fraction": 5.5250737174699316e-05
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.9712943525208295,
+        "adapted_rms": 0.9676085465412256,
+        "delta_rms": 0.3959471111465321,
+        "relative_delta_rms": 0.4076489378517631,
+        "max_absolute_delta": 2.8828125,
+        "changed_fraction": 0.9962674888241285,
+        "cosine": 0.9166018979372583,
+        "channel_constant_delta_energy_fraction": 5.30296931959397e-05
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.9703867275317247,
+        "adapted_rms": 0.9670229010246291,
+        "delta_rms": 0.392013641490395,
+        "relative_delta_rms": 0.40397671399269935,
+        "max_absolute_delta": 2.78125,
+        "changed_fraction": 0.9962520159008601,
+        "cosine": 0.9181235925626046,
+        "channel_constant_delta_energy_fraction": 5.470094816313955e-05
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 0.9701438480720801,
+        "adapted_rms": 0.9671806222870399,
+        "delta_rms": 0.38841830368018787,
+        "relative_delta_rms": 0.40037186696805094,
+        "max_absolute_delta": 2.9140625,
+        "changed_fraction": 0.9961472421061567,
+        "cosine": 0.9196103049975273,
+        "channel_constant_delta_energy_fraction": 5.5297142196221204e-05
+      }
+    ],
+    "projection_out.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 10.39876960709676,
+        "adapted_rms": 10.242018244810515,
+        "delta_rms": 2.745694973756259,
+        "relative_delta_rms": 0.264040369918613,
+        "max_absolute_delta": 74.625,
+        "changed_fraction": 0.9961401687698054,
+        "cosine": 0.9647231910456717,
+        "channel_constant_delta_energy_fraction": 0.0010069789209762973
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 10.384033109606692,
+        "adapted_rms": 10.222720976029697,
+        "delta_rms": 2.7532784478220083,
+        "relative_delta_rms": 0.2651453841450908,
+        "max_absolute_delta": 70.5,
+        "changed_fraction": 0.9961240327212539,
+        "cosine": 0.964416853948604,
+        "channel_constant_delta_energy_fraction": 0.0010037479271341858
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 10.417914955024006,
+        "adapted_rms": 10.239737482030222,
+        "delta_rms": 2.774780020397051,
+        "relative_delta_rms": 0.26634696408794567,
+        "max_absolute_delta": 72.125,
+        "changed_fraction": 0.9961611677370983,
+        "cosine": 0.9640612433385685,
+        "channel_constant_delta_energy_fraction": 0.001016698589905697
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 10.406372025551578,
+        "adapted_rms": 10.226776655509715,
+        "delta_rms": 2.7372859441897623,
+        "relative_delta_rms": 0.26303940868812786,
+        "max_absolute_delta": 72.125,
+        "changed_fraction": 0.9961054652133319,
+        "cosine": 0.9649491425584488,
+        "channel_constant_delta_energy_fraction": 0.0010159807336369833
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 10.413736268146733,
+        "adapted_rms": 10.24190193252732,
+        "delta_rms": 2.718300628366092,
+        "relative_delta_rms": 0.2610302929104091,
+        "max_absolute_delta": 76.75,
+        "changed_fraction": 0.996093528958239,
+        "cosine": 0.9654984288799744,
+        "channel_constant_delta_energy_fraction": 0.0010577766747689131
+      }
+    ],
+    "trunk_input.s": [
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 27.031222891717015,
+        "adapted_rms": 27.01559123269377,
+        "delta_rms": 0.42959841819240313,
+        "relative_delta_rms": 0.015892674183232827,
+        "max_absolute_delta": 10.0,
+        "changed_fraction": 0.8294270833333334,
+        "cosine": 0.9998738056826089,
+        "channel_constant_delta_energy_fraction": 0.001806103768836024
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 33.76248720846335,
+        "adapted_rms": 33.761979508587,
+        "delta_rms": 0.6355849896760914,
+        "relative_delta_rms": 0.01882518268727451,
+        "max_absolute_delta": 16.0,
+        "changed_fraction": 0.9322778147163121,
+        "cosine": 0.9998228036968863,
+        "channel_constant_delta_energy_fraction": 0.0013741329539589523
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 33.744007478458514,
+        "adapted_rms": 33.73762443251312,
+        "delta_rms": 0.6280057783797298,
+        "relative_delta_rms": 0.01861088309622489,
+        "max_absolute_delta": 12.0,
+        "changed_fraction": 0.9250193927304965,
+        "cosine": 0.9998268026439442,
+        "channel_constant_delta_energy_fraction": 0.0015255760702310415
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 33.5732795400787,
+        "adapted_rms": 33.55938461539234,
+        "delta_rms": 0.6056364669792196,
+        "relative_delta_rms": 0.018039240588820945,
+        "max_absolute_delta": 16.0,
+        "changed_fraction": 0.9226368572695035,
+        "cosine": 0.9998373112113058,
+        "channel_constant_delta_energy_fraction": 0.0014703878424073133
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 33.77884801812249,
+        "adapted_rms": 33.76156393774881,
+        "delta_rms": 0.5671833514482741,
+        "relative_delta_rms": 0.01679108035726908,
+        "max_absolute_delta": 12.0,
+        "changed_fraction": 0.9172900044326241,
+        "cosine": 0.999859088618204,
+        "channel_constant_delta_energy_fraction": 0.0015653473042618082
+      }
+    ],
+    "trunk_input.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 12.666933198562692,
+        "adapted_rms": 12.610710102116593,
+        "delta_rms": 2.7458842389754423,
+        "relative_delta_rms": 0.21677577326191438,
+        "max_absolute_delta": 74.75,
+        "changed_fraction": 0.994200969400747,
+        "cosine": 0.9764092733832739,
+        "channel_constant_delta_energy_fraction": 0.0010075573404218169
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 14.68255672259877,
+        "adapted_rms": 14.52271321825811,
+        "delta_rms": 2.8108924110296787,
+        "relative_delta_rms": 0.19144434202684005,
+        "max_absolute_delta": 73.0,
+        "changed_fraction": 0.9926667185377999,
+        "cosine": 0.9815327451688959,
+        "channel_constant_delta_energy_fraction": 0.0009885791350495456
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 14.764142697313662,
+        "adapted_rms": 14.604225648353584,
+        "delta_rms": 2.84200391654528,
+        "relative_delta_rms": 0.19249366352049574,
+        "max_absolute_delta": 75.0,
+        "changed_fraction": 0.9924878957531689,
+        "cosine": 0.9813295266208846,
+        "channel_constant_delta_energy_fraction": 0.0009754713204467987
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 14.771348500817385,
+        "adapted_rms": 14.606805138144178,
+        "delta_rms": 2.79630466515467,
+        "relative_delta_rms": 0.1893059841489715,
+        "max_absolute_delta": 73.5,
+        "changed_fraction": 0.9924492134449977,
+        "cosine": 0.9819425160415851,
+        "channel_constant_delta_energy_fraction": 0.000981575898337396
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 14.784548059924978,
+        "adapted_rms": 14.62399755360133,
+        "delta_rms": 2.7722333353091524,
+        "relative_delta_rms": 0.18750883179334868,
+        "max_absolute_delta": 78.375,
+        "changed_fraction": 0.9923313981863966,
+        "cosine": 0.9822868282443231,
+        "channel_constant_delta_energy_fraction": 0.0010241920433934604
+      }
+    ],
+    "trunk_end.s": [
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 293.5921221216027,
+        "adapted_rms": 293.12241825930346,
+        "delta_rms": 5.770123564901184,
+        "relative_delta_rms": 0.01965353676115077,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.9612283909574468,
+        "cosine": 0.9998078415841835,
+        "channel_constant_delta_energy_fraction": 0.0034127145043516896
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 312.1545011536126,
+        "adapted_rms": 311.4972410746434,
+        "delta_rms": 5.74810416919436,
+        "relative_delta_rms": 0.01841429211480661,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.9550088652482269,
+        "cosine": 0.999832320555576,
+        "channel_constant_delta_energy_fraction": 0.006295602504254546
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 313.7367561707771,
+        "adapted_rms": 313.61728947204176,
+        "delta_rms": 5.505047946471043,
+        "relative_delta_rms": 0.017546710221847475,
+        "max_absolute_delta": 192.0,
+        "changed_fraction": 0.951670545212766,
+        "cosine": 0.9998460703650314,
+        "channel_constant_delta_energy_fraction": 0.004670795935067444
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 314.512436524536,
+        "adapted_rms": 313.97877956608517,
+        "delta_rms": 4.9987787828169425,
+        "relative_delta_rms": 0.01589373965002803,
+        "max_absolute_delta": 96.0,
+        "changed_fraction": 0.9493849734042553,
+        "cosine": 0.9998749218137238,
+        "channel_constant_delta_energy_fraction": 0.0054955663363804716
+      },
+      {
+        "shape": [
+          188,
+          384
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 314.7728896331277,
+        "adapted_rms": 314.15411568346764,
+        "delta_rms": 4.890613355162027,
+        "relative_delta_rms": 0.015536958601682969,
+        "max_absolute_delta": 128.0,
+        "changed_fraction": 0.9482906693262412,
+        "cosine": 0.9998809996739803,
+        "channel_constant_delta_energy_fraction": 0.005206805737581764
+      }
+    ],
+    "trunk_end.z": [
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 97.97755218328588,
+        "adapted_rms": 96.86148847032338,
+        "delta_rms": 4.072070576865799,
+        "relative_delta_rms": 0.041561260575771544,
+        "max_absolute_delta": 1616.0,
+        "changed_fraction": 0.979552310858986,
+        "cosine": 0.9991920045266932,
+        "channel_constant_delta_energy_fraction": 0.004820946911454529
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 100.19866138608509,
+        "adapted_rms": 100.15349995774193,
+        "delta_rms": 3.14378011151877,
+        "relative_delta_rms": 0.03137547017125477,
+        "max_absolute_delta": 960.0,
+        "changed_fraction": 0.9773080738597781,
+        "cosine": 0.9995076696069175,
+        "channel_constant_delta_energy_fraction": 0.008158570733173153
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 100.87673561923508,
+        "adapted_rms": 101.04625440612473,
+        "delta_rms": 3.227269473722594,
+        "relative_delta_rms": 0.031992207657314614,
+        "max_absolute_delta": 1088.0,
+        "changed_fraction": 0.9757094998443866,
+        "cosine": 0.9994905174510011,
+        "channel_constant_delta_energy_fraction": 0.007163972111067799
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 101.3351633188384,
+        "adapted_rms": 101.51019590783505,
+        "delta_rms": 2.866441718089341,
+        "relative_delta_rms": 0.028286742964734175,
+        "max_absolute_delta": 800.0,
+        "changed_fraction": 0.9756595444064056,
+        "cosine": 0.9996021090695649,
+        "channel_constant_delta_energy_fraction": 0.008452654436633244
+      },
+      {
+        "shape": [
+          188,
+          188,
+          128
+        ],
+        "dtype": "torch.bfloat16",
+        "query_rms": 101.25289943859366,
+        "adapted_rms": 101.2859582503186,
+        "delta_rms": 3.0773124074643152,
+        "relative_delta_rms": 0.03039233863451582,
+        "max_absolute_delta": 1184.0,
+        "changed_fraction": 0.9757484031943187,
+        "cosine": 0.9995383569017358,
+        "channel_constant_delta_energy_fraction": 0.0077748452646726
+      }
+    ]
+  },
+  "residuals": [
+    {
+      "rms": 92.79447233133791,
+      "max_abs": 510.0,
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "rms": 92.97363182711612,
+      "max_abs": 484.0,
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "rms": 93.53903969417101,
+      "max_abs": 564.0,
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "rms": 93.02608046451924,
+      "max_abs": 494.0,
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "rms": 93.08416259726462,
+      "max_abs": 524.0,
+      "dtype": "torch.bfloat16"
+    }
+  ],
+  "structure_change": {
+    "ca_pair_distance_delta_rms": 0.06098363819836882,
+    "aligned_ca_rmsd": 0.07466168689562298,
+    "unaligned_ca_max_difference": 0.5446654558181763,
+    "interpretation": "Change relative to Query, not structure quality"
+  },
+  "seconds": 7.929544582031667,
+  "lock_sha256": "a2d110c64faf1fd974a8ed79549df4451fa0dc1699f6e1f8282ea43eb6d96082"
+}

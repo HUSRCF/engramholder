@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "repeated_states_exact": true,
+  "observer_vs_plain_output_exact": true,
+  "query_states_sha256": "408dd656617f0101ceff3ed4f1196cf03c34dbb3eeaadfc2457af57772dda812"
+}

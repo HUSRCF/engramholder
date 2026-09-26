@@ -1,0 +1,306 @@
+{
+  "utc": "2026-09-26T04:05:04.747068+00:00",
+  "monitor_pid": 1653411,
+  "monitor_version": 2,
+  "job": "653002",
+  "snapshot_valid": true,
+  "completed": true,
+  "needs_attention": false,
+  "scheduler_query_ok": true,
+  "training_complete": 36,
+  "full_runs_complete": 36,
+  "updates": 55296,
+  "expected_updates": 55296,
+  "rows": [
+    {
+      "name": "first_factor_native_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13589.16604065895
+    },
+    {
+      "name": "first_factor_r20261001_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13637.232509613037
+    },
+    {
+      "name": "first_generic_plus_native_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13614.83186674118
+    },
+    {
+      "name": "first_generic_plus_r20261001_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13547.385848283768
+    },
+    {
+      "name": "first_factor_native_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13665.110188007355
+    },
+    {
+      "name": "first_factor_r20261001_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13893.409056425095
+    },
+    {
+      "name": "first_generic_plus_native_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13954.151240348816
+    },
+    {
+      "name": "first_generic_plus_r20261001_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 14021.210562229156
+    },
+    {
+      "name": "first_factor_native_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13986.9394698143
+    },
+    {
+      "name": "first_factor_r20261001_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13784.072914361954
+    },
+    {
+      "name": "first_generic_plus_native_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13774.663484573364
+    },
+    {
+      "name": "first_generic_plus_r20261001_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13951.97846531868
+    },
+    {
+      "name": "all_factor_native_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13949.377430677414
+    },
+    {
+      "name": "all_factor_r20261001_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13873.538921356201
+    },
+    {
+      "name": "all_generic_plus_native_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13852.783844947815
+    },
+    {
+      "name": "all_generic_plus_r20261001_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 13458.912415504456
+    },
+    {
+      "name": "all_factor_native_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 568.026935338974
+    },
+    {
+      "name": "all_factor_r20261001_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 503.3736479282379
+    },
+    {
+      "name": "all_generic_plus_native_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 368.41230607032776
+    },
+    {
+      "name": "all_generic_plus_r20261001_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 368.43892335891724
+    },
+    {
+      "name": "all_factor_native_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 523.3575866222382
+    },
+    {
+      "name": "all_factor_r20261001_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 296.10933017730713
+    },
+    {
+      "name": "all_generic_plus_native_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 334.5254349708557
+    },
+    {
+      "name": "all_generic_plus_r20261001_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 369.9041256904602
+    },
+    {
+      "name": "last_factor_native_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7492.8720009326935
+    },
+    {
+      "name": "last_factor_r20261001_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7493.214181661606
+    },
+    {
+      "name": "last_generic_plus_native_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7340.019048452377
+    },
+    {
+      "name": "last_generic_plus_r20261001_s20260923",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7385.946572542191
+    },
+    {
+      "name": "last_factor_native_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7389.547002792358
+    },
+    {
+      "name": "last_factor_r20261001_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7350.07049369812
+    },
+    {
+      "name": "last_generic_plus_native_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7259.5795838832855
+    },
+    {
+      "name": "last_generic_plus_r20261001_s20260924",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 7166.135768175125
+    },
+    {
+      "name": "last_factor_native_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 1220.2496590614319
+    },
+    {
+      "name": "last_factor_r20261001_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 1220.033139705658
+    },
+    {
+      "name": "last_generic_plus_native_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 1007.7727706432343
+    },
+    {
+      "name": "last_generic_plus_r20261001_s20260925",
+      "step": 1536,
+      "training_complete": true,
+      "complete": true,
+      "failed": false,
+      "heartbeat_age_s": 982.9209578037262
+    }
+  ],
+  "scheduler": [],
+  "scheduler_stderr": ""
+}

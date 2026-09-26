@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-26T07:29:52+08:00",
+  "basis": "DiamondHill 8 workers; 24 tasks, three tasks per worker; first-wave observed mean wall seconds per step",
+  "observed_step_range": [
+    2071,
+    2077
+  ],
+  "observed_seconds_per_step_range": [
+    3.43607,
+    3.47462
+  ],
+  "current_wave_remaining_minutes": 57.968243666666666,
+  "training_remaining_hours_nominal": 3.931146461111111,
+  "training_nominal_finish": "2026-09-26T11:25+08:00",
+  "training_finish_window_hkt": "2026-09-26 11:20\u201311:50",
+  "prediction_and_scoring_allowance_minutes": [
+    80,
+    110
+  ],
+  "full_results_finish_window_hkt": "2026-09-26 12:40\u201313:40",
+  "assumptions": [
+    "8 logical GPUs remain available",
+    "later two waves similar task time",
+    "no nontransient failures or restarts requiring investigation"
+  ],
+  "interpretation": "ETA; not completion guarantee"
+}

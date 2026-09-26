@@ -1,0 +1,83 @@
+{
+  "checked_time": "2026-09-26T07:27:32.820442+08:00",
+  "phase": "formal_training",
+  "controller_alive": true,
+  "controller_pid": 1118732,
+  "formal_stage_started_utc": "2026-09-25T22:58:16.882576+00:00",
+  "active_training_processes": 8,
+  "active_models": 8,
+  "pending_models": 16,
+  "completed_models": 0,
+  "progress": [
+    {
+      "system": "C_factor_native_s20260923",
+      "step": 2046,
+      "additional_updates": 510,
+      "progress_age_seconds": 2.95,
+      "loss": 1.079521894454956
+    },
+    {
+      "system": "C_factor_native_s20260924",
+      "step": 2042,
+      "additional_updates": 506,
+      "progress_age_seconds": 1.88,
+      "loss": 1.1576383113861084
+    },
+    {
+      "system": "C_factor_r20261001_s20260923",
+      "step": 2045,
+      "additional_updates": 509,
+      "progress_age_seconds": 1.2,
+      "loss": 1.0752044916152954
+    },
+    {
+      "system": "C_factor_r20261001_s20260924",
+      "step": 2046,
+      "additional_updates": 510,
+      "progress_age_seconds": 4.55,
+      "loss": 1.1611729860305786
+    },
+    {
+      "system": "C_factor_r20261002_s20260923",
+      "step": 2047,
+      "additional_updates": 511,
+      "progress_age_seconds": 1.43,
+      "loss": 1.2195346355438232
+    },
+    {
+      "system": "C_factor_r20261002_s20260924",
+      "step": 2041,
+      "additional_updates": 505,
+      "progress_age_seconds": 5.44,
+      "loss": 1.3897910118103027
+    },
+    {
+      "system": "C_factor_r20261003_s20260923",
+      "step": 2046,
+      "additional_updates": 510,
+      "progress_age_seconds": 2.33,
+      "loss": 1.1151283979415894
+    },
+    {
+      "system": "C_factor_r20261003_s20260924",
+      "step": 2044,
+      "additional_updates": 508,
+      "progress_age_seconds": 2.9,
+      "loss": 1.1798888444900513
+    }
+  ],
+  "formal_processes": [
+    "1127222 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_native_s20260923 --mode formal",
+    "1127225 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_r20261001_s20260923 --mode formal",
+    "1127228 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_r20261003_s20260923 --mode formal",
+    "1127229 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_r20261002_s20260923 --mode formal",
+    "1127230 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_native_s20260924 --mode formal",
+    "1127231 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_r20261003_s20260924 --mode formal",
+    "1127232 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_r20261002_s20260924 --mode formal",
+    "1127233 1118732       29:15 /home/pc/anaconda3/envs/fold/bin/python -u -m engramfold.experiments.protenix_budget_extension.train --system C_factor_r20261001_s20260924 --mode formal"
+  ],
+  "engineering_prediction_count": 100,
+  "exact_restore_count": 24,
+  "max_coordinate_replay_error": 0.0,
+  "execution_lock_sha256": "3e90778a46f6062fa136d49a85f6fc7cb6ebc5882e04a0916698f9295729ffd1"
+}

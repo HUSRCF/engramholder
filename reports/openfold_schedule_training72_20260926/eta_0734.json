@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-09-26T07:36:31.051512+08:00",
+  "active_h100_workers": 16,
+  "job": "653002",
+  "current_wave_fits": 36,
+  "total_design_fits": 72,
+  "current_step_range": [
+    1220,
+    1273
+  ],
+  "wave2_submitted": false,
+  "scenarios": [
+    {
+      "per_fit_overhead_seconds": 120,
+      "first16_all_predicted": "2026-09-26T08:27+08:00",
+      "wave1_36_all_predicted": "2026-09-26T12:10+08:00",
+      "remaining_hours": 4.607469768538326
+    },
+    {
+      "per_fit_overhead_seconds": 300,
+      "first16_all_predicted": "2026-09-26T08:30+08:00",
+      "wave1_36_all_predicted": "2026-09-26T12:16+08:00",
+      "remaining_hours": 4.707469768538327
+    },
+    {
+      "per_fit_overhead_seconds": 600,
+      "first16_all_predicted": "2026-09-26T08:35+08:00",
+      "wave1_36_all_predicted": "2026-09-26T12:26+08:00",
+      "remaining_hours": 4.874136435204993
+    }
+  ],
+  "eta_window_hkt": "first16:08:15\u201308:35; wave1 36 training+predictions:12:00\u201312:45; excludes unsubmitted wave2",
+  "assumption": "same 16 H100 workers continue; old calibration Last timing; 96 targets/fit approximately230s prediction plus overhead"
+}

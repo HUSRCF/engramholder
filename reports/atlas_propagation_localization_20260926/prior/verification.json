@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "n_predictions": 960,
+  "hashes": {
+    "analysis.json": "c9aaaf6363779e495885edf411e0ad124821829cc4ff7b0a19613f5499d67f7b",
+    "metric_records.json": "d86ee348a00b883a1581b13603b00e58d9c6aa5431b061f320cd5fcbd2ee201e"
+  },
+  "failure_counts": {
+    "atlas_I_s20260923_C_only": 0,
+    "atlas_I_s20260923_head_only": 0,
+    "atlas_I_s20260923_parent": 0,
+    "atlas_I_s20260924_C_only": 0,
+    "atlas_I_s20260924_head_only": 0,
+    "atlas_I_s20260924_parent": 0,
+    "atlas_I_s20260925_C_only": 0,
+    "atlas_I_s20260925_head_only": 0,
+    "atlas_I_s20260925_parent": 0,
+    "atlas_query": 0
+  },
+  "cif_rescored": false
+}

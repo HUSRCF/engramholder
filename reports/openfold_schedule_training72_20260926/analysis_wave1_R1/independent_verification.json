@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "n_predictions": 3552,
+  "all_cif_ca_equal_original_npz": true,
+  "comparisons": 552,
+  "maximum_absolute_error": 3.3306690738754696e-16,
+  "analysis_sha256": "6ed826e302b87eb3301d6b440b7461aae16b0f767c54a56bc2946ee957e8fa38",
+  "metric_records_sha256": "b6951567bafb1c5728c44f06a5bf43214d7479439a514828d5a138cd1f939e00"
+}

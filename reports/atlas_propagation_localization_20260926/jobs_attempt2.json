@@ -1,0 +1,16 @@
+{
+  "started": "2026-09-26T05:02:55.924430+08:00",
+  "lock_sha256": "9f1fa5380f127943957dc2e57c10f928e8a6331fba4e4d7516d03e3e0ad556c3",
+  "jobs": [
+    {
+      "index": 0,
+      "hip_visible_devices": 6,
+      "pid": 1081454
+    },
+    {
+      "index": 1,
+      "hip_visible_devices": 7,
+      "pid": 1081455
+    }
+  ]
+}

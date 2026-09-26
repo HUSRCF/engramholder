@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "instances": 20,
+  "all_same_site_query_rms_equal": true,
+  "all_lm_inputs_exact": true,
+  "max_pair_distance_recompute_error": 2.7755575615628914e-17,
+  "scope": "NumPy full CA distance recomputation from saved unrounded coordinates; no CIF label rescoring"
+}

@@ -1,0 +1,11 @@
+{
+  "independent_192_target_K_error": 2.1510571102112408e-16,
+  "same_draw_bootstrap_seed": 20260926,
+  "matrix_counts": {
+    "train": 24,
+    "fresh": 9408,
+    "dev": 576,
+    "engineering_predictions": 100,
+    "engineering_updates": 288
+  }
+}

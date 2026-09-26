@@ -1,0 +1,19 @@
+{
+  "time": "2026-09-26T14:55:33.517797+08:00",
+  "execution_lock_sha256": "3e90778a46f6062fa136d49a85f6fc7cb6ebc5882e04a0916698f9295729ffd1",
+  "original_metric_records_sha256": "30ed0e78d8afc2215a671a0103e14c1e334b062f5c5f9c328df5fb0159cc09b2",
+  "files": {
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/operations/reference_selection_fix/recover.py": "e635dc25646081c2a8b1d9fcc070393f1d1e16f8859a12654d912184d9f81982",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/operations/reference_selection_fix/reference_subset.py": "1286b12e290808225a14836a02dd59908eda1f8664cd923dac271f0fff5ce6f6",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/source/src/engramfold/experiments/protenix_budget_extension/score.py": "5febd51d58420ddc59125266be86153e75281e3bdb5be57af42f6e5486d2de9d",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/inputs/dev.json": "661b652750e64a5947c923bbcef239357c181c58cc229acd6caef4004c5b637c",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/inputs/dev_reference.json": "0d6d85aae4644a33cb20fde6a8dc3ded357bb9e733f9e76ac6b7c3b8702c83c2",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/prediction_completion.json": "5e137801d545adbab03d1ad6e1a1db23ea8cd2e0b94786d63531d85d6ba32a96",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/operations/reference_selection_fix/failed_status.json": "182071f18bccf10398df9d42163a30635b4812c8c6c6f26621d366e1cfde4654",
+    "/media/PM982/engramfold/runs/protenix_fourcell_budget_20260926/logs/scoring/all.attempt1790396794894889443.log": "a15c86473060f83feecbc8579adaad0d0f77f03a0c2dfbd694823d656bb270cb"
+  },
+  "reason": "Reference metadata has Train384 plus Dev8 (392 targets); summary incorrectly treated all as Dev. Prediction and metric tables contain only the sealed Dev8. Select reference metadata by sealed sequence IDs/order.",
+  "changes_to_models_or_predictions": false,
+  "changes_to_metric_or_bootstrap": false,
+  "tests": "9 focused checks passed; missing/duplicate/mismatched references rejected; full 392-to-8 selection regression covered"
+}

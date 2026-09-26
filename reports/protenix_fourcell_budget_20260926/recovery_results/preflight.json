@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "original_reference_targets": 392,
+  "actual_dev_targets": [
+    "9qdy_A",
+    "1yz7_A",
+    "9f4s_A",
+    "5zyl_A",
+    "8w7p_A",
+    "5me4_A",
+    "7f7m_A",
+    "4anl_A"
+  ],
+  "metric_records": 9984,
+  "selection_uses_locked_ids_only": true,
+  "time": "2026-09-26T06:55:33.766298+00:00"
+}

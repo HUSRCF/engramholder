@@ -1,0 +1,5 @@
+{
+  "time": "2026-09-26T05:29:54.865257+08:00",
+  "correction": "The initial feature equality failure was the shortest Train target 5cn6_A (152 residues), not the longest. Worker1 had completed odd indices1,3 and failed at index5. The same documented padding mismatch applies; no runtime/scientific configuration change.",
+  "current_lock_unchanged": true
+}
