@@ -1,17 +1,11 @@
 \section{Related work}
-LoRA constrains weight updates \citep{hu2021lora}; ReFT intervenes on frozen
-representations \citep{wu2024reft}; PiSSA uses principal components of pretrained
-weights \citep{meng2024pissa}. We compose residue-level changes through
-native pair-generating operators and evaluate them with trained spectral
-controls and a rotation-closed generic head.
-
-Orthogonal finetuning (OFT) learns orthogonal transformations \citep{qiu2023oft};
-BOFT uses butterfly factorizations for parameter-efficient orthogonal adaptation
-\citep{liu2023boft}. Our shared map acts on completed pair residuals to test
-whether compensation reduces the Native--Rotated score difference.
-AdamW's coordinate-wise updates \citep{loshchilov2019adamw} distinguish
-function-class closure from training behavior. LoRA-RITE studies optimization
-invariance across equivalent low-rank factorizations \citep{yen2025lorarite}.
-Here, the completed internal residual is rotated relative to a fixed downstream
-predictor; no analogous general rotation-closure guarantee is established for
-Factor.
+LoRA and PiSSA adapt pretrained weights \citep{hu2021lora,meng2024pissa},
+whereas ReFT adapts representations \citep{wu2024reft}. Factor composes
+residue-level increments through frozen native pair operators. Orthogonal
+finetuning (OFT) and BOFT learn orthogonal transformations
+\citep{qiu2023oft,liu2023boft}; our fixed rotations act on completed
+residuals, and a separately learned shared map tests compensation.
+G+'s rotation closure distinguishes representable functions from
+finite-budget training behavior under AdamW \citep{loshchilov2019adamw}.
+This distinction complements LoRA-RITE's study of optimization invariance
+across equivalent low-rank factorizations \citep{yen2025lorarite}.

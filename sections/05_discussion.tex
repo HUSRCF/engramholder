@@ -1,55 +1,29 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-The strongest evidence concerns a fixed Protenix/ESMC recipe: Factor's signed
-Native--Rotated score difference exceeds G+'s on prospectively locked Fresh192 targets,
-and the interaction remains positive after one prespecified budget doubling.
-Factor's own score difference decreases with continued training. Together, these findings
-show persistence across two tested budgets while allowing substantial learning
-of rotated updates. They establish neither convergence nor a universal
-parameterization law; OpenFold's Fresh96 primary interaction remains
-unestablished.
+The Protenix/ESMC interaction persists across two tested budgets;
+OpenFold's Fresh96 interaction remains unestablished. Neither result
+establishes convergence or a universal parameterization effect. First-only
+injection gives the largest interaction but the lowest quality, motivating
+joint reporting of $\Psi$, absolute scores and both within-head differences.
 
-The schedule study gives an evaluation consequence: First-only has the largest
-interaction but the lowest quality, while All's positive interaction does not
-establish a positive Factor score difference. Absolute scores and both signed
-within-head differences are therefore needed to interpret $\Psi$. An adapter can be useful
-without a large native-orientation advantage, and a large interaction does not
-select a better adapter or schedule. This amended R1-only study changes training
-and inference together and does not identify repeated writing or feedback as
-the unique cause.
+Compensation benefits rotated Factor in both executions, but its additional
+gain over Native was not re-established in the repeat. Output freedom and joint
+optimization remain coupled, and the schedule comparison changes training
+and inference together. These interventions do not identify a unique
+mechanism. Reconstruction prediction and the residual-anchor intervention
+also failed to establish their proposed effects
+(Appendices~\ref{app:prediction_e1} and~\ref{app:anchor_intervention}).
 
-The output-map intervention tests whether shared output freedom
-preferentially benefits rotated Factor. It improves the two selected rotated Factor arms against
-fixed no-$C$ controls in both executions. The additional compensation gain for
-rotated Factor, relative to Native Factor's gain, was not re-established in the
-repeat. Output freedom and joint optimization
-change together; the intervention identifies neither expressivity as the
-unique cause nor a learned inverse. The failed reconstruction prediction
-did not establish the proposed ranking of post-training score differences.
-A separately retrained residual-anchor intervention did not establish the
-predicted average benefit of live anchors to rotated Factor; the two selected
-rotations responded in opposite directions (Appendix~\ref{app:anchor_intervention}).
-It contains no $C$, so whether compensation depends on live anchors remains
-untested. Norm exchange constrains a global-scale explanation while leaving
-content and local magnitudes coupled. Across-head comparisons also change
-nonlinearities and residue/pair organization, without proved function-class
-inclusion. Dense, signed-permutation and mean-preserving controls have distinct
-scopes; ideal coordinate compatibility does not establish FP32 trajectory identity.
+Target intervals condition on fitted models and rotations, excluding
+variability across new training runs. The same-seed repeat adds no
+independent seeds or retrained no-$C$ controls; its executions are not
+pooled. Different interval significance does not establish a
+between-execution population difference. Follow-ups have no joint
+multiplicity correction; the OpenFold feature study retains its
+prespecified Holm correction.
 
-The three kinds of follow-up answer different questions: new targets test
-fixed fitted models, budget continuation evaluates those models after further
-training, and the same-seed compensation repeat probes execution variability
-without adding independent seeds or retrained no-$C$ controls. Target intervals
-condition on fitted models and rotations; they do not quantify reliability over
-new training runs. The compensation executions are not pooled, and differing
-interval significance does not test a between-execution population difference.
-The OpenFold feature study applies its prespecified Holm correction; no
-correction is applied jointly across all follow-up studies.
-
-ESMC improves quality without establishing changes in signed score differences; feature
-family, width, precision and projection size vary together. AtlasFold adds no
-established adaptation benefit. Dev8 curves do not establish convergence.
-Reused panels, one inference sample, backend differences and incomplete
-exposure records limit scope. Sequence screening guarantees neither family
-nor foundation-model isolation. Cross-predictor comparisons change losses and
-interfaces, and gaps to native single-sequence systems limit deployment claims.
+AtlasFold showed no established adaptation benefit. Limited budgets, one
+inference sample, differing interfaces, losses and backends, and incomplete
+exposure records restrict generalization. Sequence screening establishes
+neither family nor foundation-model pretraining isolation. Gaps to native
+single-sequence systems limit deployment claims.

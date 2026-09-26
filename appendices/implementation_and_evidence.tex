@@ -57,6 +57,8 @@ control, not a prediction of identical training.
 
 \section{Per-predictor implementation and training recipes}
 \label{app:recipes}
+\input{appendices/core_recipes_table}
+
 The Protenix task-only direction recipe uses AdamW with learning rate
 $5\times10^{-5}$, weight decay $10^{-4}$, betas $(0.9,0.999)$,
 $\epsilon=10^{-8}$ and gradient clipping at 1. The original Mini direction
@@ -99,6 +101,8 @@ mean equal computation.
 
 \section{Data, study chronology, and cumulative exposure}
 \label{app:chronology}
+
+\input{appendices/study_roles_table}
 
 \begin{table}[htbp]
 \caption{Data composition, separating inherited sets from additions. Quotas
@@ -233,6 +237,24 @@ from ESMC features, including subsequent Protenix/AtlasFold comparisons; this fi
 Table~\ref{tab:scope_full} provides the exact direction contrasts underlying
 Figure~\ref{fig:scope}. Per-target scores and analysis code accompany the paper.
 
+The original Protenix-Mini tangent comparison gives a Confirm96-B
+Native--Rotated advantage of \result{pt_tangent}
+[\result{pt_tangentLo}, \result{pt_tangentHi}], with 78/96 positive targets.
+Separate comparisons using the Full residual, the Tiny checkpoint's own
+interface, and mean-preserving rotations also retain a Native--Rotated
+advantage (Figure~\ref{fig:scope}). These controls neither establish tangent
+as a better adapter nor isolate all downstream normalization.
+
+Without further training, ESM2 Train384 Full adapters retain a
+Native--Rotated advantage on Length48 of \result{pt_length}
+[\result{pt_lengthLo}, \result{pt_lengthHi}], with 41/48 positive targets.
+Native and rotated means are \result{pt384_l48_native} and
+\result{pt384_l48_rotated}, both above the unadapted mean of
+\result{pt384_l48_query} (Table~\ref{tab:coverage}). Supplementary metrics
+are concordant. This tests complete-sequence length transfer, not
+family/pretraining novelty. Official Mini-ESM scores
+\result{pt384_l48_official}, leaving a substantial system-quality gap.
+
 \begin{table}[h]
 \caption{Direction contrasts by tested setting. P/S/F study identities are as
 in Figure~\ref{fig:scope}; secondary intervals are unadjusted.}
@@ -260,6 +282,17 @@ Structural-separation analysis retains its original bins 1--11, 12--23 and
 at least 24 residues. It describes which reference relationships improve,
 not recovery of evolutionary covariance or a causal mechanism for the scores.
 
+On Confirm96-B, Factor's difference is \result{inter_c96_factor_rotation},
+while G+'s is \result{inter_c96_gplus_rotation}.
+The Confirm96-B residue-average C$\alpha$ lDDT and TM-score interactions are
+\result{inter_c96_interaction_residue}
+[\result{inter_c96_interaction_residueLo}, \result{inter_c96_interaction_residueHi}]
+and \result{inter_c96_interaction_tm}
+[\result{inter_c96_interaction_tmLo}, \result{inter_c96_interaction_tmHi}].
+They score the same structures, not independent samples. Intervals for G+'s
+Native--Rotated score difference include zero on both panels without establishing
+training equivalence.
+
 \subsection{Matched Protenix Train384 generic-head comparison}
 \label{app:protenix_gplus}
 The three G+ fits use the same 1536-update order, paired noise levels, frozen
@@ -271,6 +304,11 @@ on both panels. Primary-score target medians are \result{pt384_c96_gmedian}
 and \result{pt384_l48_gmedian}, with 78/96 and 43/48 positive targets,
 respectively. These counts and medians complement the means without treating
 metrics or training instances as independent proteins.
+
+G+ itself improves over query-only by
+\result{pt384_c96_gquery}/\result{pt384_l48_gquery}; it is a functioning
+explicit-factor comparator under the shared recipe, not an optimized
+performance bound.
 
 \begin{table}[h]
 \caption{Matched Protenix Train384 Native minus G+. Supplementary metric
@@ -601,6 +639,13 @@ both feature sources and panels. Atlas's complete matrices do not establish
 the interaction. A tiny unadjusted positive Atlas ESMC Confirm96-B G+ rotation
 interval is retained; this is not a Factor benefit or an interaction.
 Supplementary metrics reuse the same structures, not independent samples.
+
+For Protenix Train384/ESMC on Confirm96-B, the Native head gap is
+$F-G^+=\result{dh_protenix_c96_c_pair_native_minus_gplus}$, while
+$RF-RG^+=\result{dh_protenix_c96_c_rotated_head_gap}$ after rotation.
+Their difference is $\Psi=\result{dh_protenix_c96_c_pair_interaction}$: a
+substantial head gap survives rotation. This identity is not a causal
+percentage decomposition.
 
 \paragraph{Backend limitations.}
 Protenix's ESMC four cells run on MI250. Historical ESM2 Length48 Factor/query
@@ -1094,6 +1139,8 @@ score was used to change the chosen rotations, training budget or retry rule.
 
 \subsection{Same-seed repetition of all nine compensated fits}
 \label{app:e2_repeat}
+\input{appendices/compensation_comparison_table}
+
 After the original results, all nine $+C$ models were trained again from the
 original seeds, zero-output heads and identity $C$, for 1536 updates each.
 The original Train96 order, loss, AdamW groups, two selected rotations and

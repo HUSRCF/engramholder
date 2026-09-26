@@ -4,87 +4,53 @@ Protein structure predictors map sequence information to geometry through
 learned pairwise representations
 \citep{jumper2021alphafold,gong2025protenix,seo2026atlasfold}.
 We adapt a frozen predictor by adding residual updates to these
-representations. Our Factor head constructs these updates by predicting
-residue-level factor increments and composing them through the predictor's
-native pair-generating operators. Reusing these operators gives the adapter
-both a structured update form and an inherited output-channel orientation
-relative to the frozen downstream network.
+representations. Factor constructs these updates by composing predicted
+residue-level factor increments through native pair-generating operators.
+This construction inherits both a structured update form and an
+output-channel orientation relative to the frozen downstream network.
 
-Parameter-efficient adaptation can modify model weights, as in LoRA
-\citep{hu2021lora}, or intermediate representations, as in ReFT
-\citep{wu2024reft}. Our construction follows the latter approach.
-For a given residual update, an orthogonal output rotation preserves its
-norm but can change how the frozen downstream network responds to it.
-We therefore ask: \emph{under a fixed task-training budget, does
-output-channel rotation affect adaptation differently across parameterizations?}
-We distinguish the effect of rotation within an adapter from its prediction
-quality and from performance differences between adapters.
+An orthogonal output rotation preserves a residual's norm but can change
+the frozen downstream network's response. We ask: \emph{under a fixed
+task-training budget, does output-channel rotation affect adaptation
+differently across parameterizations?}
 
-Our four-cell design compares native and rotated versions of two heads.
-Factor forms residual updates by composing predicted factor increments
-with native interface anchors through a frozen operator. G+ uses the
-same additional sequence features, receives the anchors explicitly, and
-produces its residual through a free affine output layer.
-In each Rotated arm, a fixed orthogonal transform acts only on the
-completed residual.
-All arms within a recipe start from the same unadapted predictor, with
-zero residuals, and are trained separately under paired settings.
-For each head $H$, we measure the signed
-Native--Rotated score difference $\Delta_H$ and compare heads through
-$\Psi=\Delta_F-\Delta_{G+}$. A positive interaction means a larger signed
-score difference for Factor; it establishes neither a larger absolute response
-to rotation nor a positive Factor score difference by itself.
+Our four-cell design trains Native and Rotated versions of Factor and G+
+separately from the same zero-residual predictor under paired settings.
+G+ uses the same additional sequence features, receives interface anchors
+explicitly, and has a free affine output layer. Each Rotated arm applies
+a fixed orthogonal transform only to its completed residual. G+'s function
+class is closed under output rotation, but its AdamW trajectories need not
+match \citep{loshchilov2019adamw}. For each head $H$, we measure the signed
+Native--Rotated score difference $\Delta_H$ and their interaction
+$\Psi=\Delta_F-\Delta_{G+}$. Positive $\Psi$ means a larger signed difference
+for Factor; it implies neither a positive Factor difference nor a larger
+absolute response to rotation.
 
-G+'s free output layer can absorb a rotation without changing its function
-class, but this closure does not guarantee matching AdamW trajectories
-\citep{loshchilov2019adamw}. Within either head, an orthogonal output rotation
-preserves the singular values of the local update Jacobian at identical
-inputs, interface anchors, and parameters. Across heads, we match the initial
-predictor function and training recipe and use similar parameter counts.
-The heads can still have different Jacobians and effective learning scales.
-The interaction therefore compares the two complete parameterizations;
-it does not establish that either head's function class contains the other's.
+Fixed Protenix/ESMC models establish the primary interaction on 192 new
+targets locked before prediction (Fresh192). Fixed OpenFold Train96 models
+\citep{ahdritz2024openfold} do not establish their Fresh96 primary
+interaction. Native Factor outperforms G+ in the tested Protenix recipes,
+whereas G+ wins some OpenFold comparisons: the interaction does not determine
+which head gives higher prediction quality.
 
-Our fixed-budget studies establish positive interactions in several Protenix
-recipes and in OpenFold \citep{ahdritz2024openfold} under the Train96/ESM2
-recipe on observed panels. Fixed Protenix/ESMC models also establish the
-primary interaction on 192 prospectively locked new targets (Fresh192).
-The fixed OpenFold Train96 models do not establish their Fresh96 primary
-interaction; OpenFold Train384 and AtlasFold likewise do not establish it
-on their observed panels. Native Factor outperforms G+ in Protenix, whereas
-G+ wins some OpenFold comparisons, so the interaction does not determine
-which head performs best.
+On the now-observed Fresh192 panel, a prespecified doubling of the Protenix
+update budget retains a positive interaction and reduces Factor's own score
+difference, without establishing a paired change in $\Psi$. An amended
+OpenFold schedule study on observed targets, using one fixed rotation R1,
+finds the largest interaction with First-only injection, which gives the
+lowest absolute quality. A larger $\Psi$ therefore need not identify a
+better adapter or schedule.
 
-After Fresh192 was observed, a prespecified doubling of the Protenix update
-budget retains a positive interaction while significantly reducing Factor's
-own Native--Rotated score difference. The paired change in interaction remains
-unestablished. A separate amended OpenFold schedule study on observed targets,
-conditional on its fitted models and one fixed rotation, finds the largest
-interaction with First-only injection, which also has the lowest absolute
-quality. With All injection, a positive interaction coexists with a Factor
-score difference whose interval includes zero and a negative G+ difference.
-The interaction remains positive after doubling the training budget, while
-the schedule comparison shows that a larger $\Psi$ need not imply higher
-prediction quality.
-
-Additional interventions test the limits of a mechanism account. We ask
-whether adding shared orthogonal output freedom helps rotated Factor more
-than Native Factor. The two preselected OpenFold rotated Factor arms improve
-in both the original execution and a same-seed retraining repeat.
-Only the original execution establishes a larger compensation gain for
-rotated Factor than for Native Factor; the repeat yields a smaller positive
-estimate of this gain difference.
-Short paired diagnostic replays show small early numerical drift in training
-trajectories; its contribution to the final effect-size difference remains
-unresolved (Appendix~\ref{app:e2_repeat}).
-Across eight tested rotations, a prespecified teacher-update reconstruction
+We also test whether a shared trainable orthogonal output map benefits
+rotated Factor more than Native Factor. Both selected rotated Factor arms
+improve in the original execution and a same-seed retraining repeat.
+Only the original establishes a larger compensation gain than Native's;
+the repeat gives a smaller positive estimate of this gain difference whose
+interval includes zero. A prespecified teacher-update reconstruction
 diagnostic did not establish the predicted ranking of post-training
-Native--Rotated score differences.
+Native--Rotated score differences across eight tested rotations.
 
-Our contributions are the four-cell comparison and new-target test, evidence
-that the interaction persists across two tested training budgets, and a
-schedule comparison showing that interaction size does not select the best
-absolute quality. The output-map and reconstruction studies test possible
-explanations and delimit what the interaction identifies. Together, these
-results motivate reporting absolute performance, both signed within-head
-effects and their interaction under explicit training budgets.
+The four-cell design, new-target test and budget/schedule comparisons
+support reporting absolute performance, signed within-head differences
+and their interaction under explicit training budgets. The mechanism
+studies delimit what this interaction identifies.

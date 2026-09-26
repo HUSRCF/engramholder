@@ -1,0 +1,19 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Testing shared output freedom within Factor on observed Confirm96-B. Mean C$\alpha$
+pair-lDDT: (a) absolute scores over the same three seeds; (b) paired gains,
+with rotated gains averaged over both selected rotations. Both executions
+jointly train $C$ from identity and share the original fixed no-$C$ baseline.
+Intervals are unadjusted 95\% target intervals conditional on each execution's
+fitted models. The repeat adds no independent seeds. Contrasts use unrounded scores.}
+\label{tab:e2_absolute}\label{tab:e2_repeat_comparison}
+\textbf{(a) Absolute scores}\par\smallskip
+\begin{tabular}{lrrr}\toprule
+Condition & Without $C$ & Original $+C$ & Repeat $+C$ \\\midrule
+\input{generated/e2_execution_means}
+\end{tabular}
+\par\medskip\textbf{(b) Compensation gains and their difference}\par\smallskip
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}\toprule
+Contrast & Original & 95\% interval & Repeat & 95\% interval \\\midrule
+\input{generated/e2_retraining_comparison}
+\end{tabular}\end{table}

@@ -3,33 +3,29 @@
 \subsection{Do Native--Rotated score differences vary between heads?}
 \label{sec:interaction_result}
 \paragraph{Prospective tests of fixed models.}
-For Protenix, we fixed all 24 Train384/ESMC adapters and Query, selecting this
-recipe from observed evidence before evaluating Fresh192, without further
+For Protenix, we selected the Train384/ESMC recipe from observed evidence,
+then evaluated all 24 fixed adapters and Query on Fresh192 without further
 training. The sole primary interaction is
 $\Psi=\result{p192_pair_interaction}$
-[\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}];
-\result{p192_pair_positive}/192 target effects and all nine seed-by-rotation
-mean effects are positive. Factor's Native--Rotated score difference is
+[\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}].
+Factor's Native--Rotated score difference is
 \result{p192_pair_factor_rotation}, while G+'s is
 \result{p192_pair_gplus_rotation}; its interval includes zero without proving
-training equivalence. Table~\ref{tab:coverage} retains all five means.
-Fresh192 establishes a larger signed score difference for Factor than G+
-for these fixed Protenix/ESMC models on screened short-chain targets
-(Appendix~\ref{app:fresh192}).
+training equivalence. Fresh192 establishes a larger signed score difference
+for Factor on screened short-chain targets (Appendix~\ref{app:fresh192});
+Table~\ref{tab:coverage} retains all five means.
 
-For OpenFold, the 24 fixed Train96/ESM2 adapters and query-only baseline were evaluated on Fresh96,
-locked before prediction under the sequence-screening protocol in
-Appendix~\ref{app:fresh96}, without further training. Factor's Native--Rotated
-score difference remains positive:
+For OpenFold, we evaluated the 24 fixed Train96/ESM2 adapters and Query on
+Fresh96, locked before prediction, without further training
+(Appendix~\ref{app:fresh96}). Factor's score difference remains positive:
 \result{fresh_ca_lddt_factor_rotation}
 [\result{fresh_ca_lddt_factor_rotationLo}, \result{fresh_ca_lddt_factor_rotationHi}],
 but the sole primary interaction is \result{fresh_ca_lddt_interaction}
 [\result{fresh_ca_lddt_interactionLo}, \result{fresh_ca_lddt_interactionHi}].
-It is not established on new targets; the positive Factor score difference cannot
-replace this endpoint. Supplementary interaction intervals also include zero.
-The two studies differ in predictor, training
-scale, features and panel; their significance outcomes do not estimate a
-between-predictor interaction difference.
+It is not established on new targets; a positive Factor difference cannot
+replace this endpoint. The studies differ in predictor, training scale,
+features and panel, so their significance outcomes do not estimate a
+between-predictor difference in $\Psi$.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
@@ -45,56 +41,17 @@ are in Appendix~\ref{app:dh_fourcells}.}
 \end{figure}
 
 \paragraph{Observed-panel comparisons.}
-Under the OpenFold Train96/ESM2-35M recipe with 1536 AdamW updates, Factor
-has a larger signed Native--Rotated score difference than G+ (Figure~\ref{fig:interaction}).
-On Confirm96-B, Factor's difference is \result{inter_c96_factor_rotation}, while G+'s is
-\result{inter_c96_gplus_rotation}. The directly estimated interaction is
-\result{inter_c96_interaction}
-[\result{inter_c96_interactionLo}, \result{inter_c96_interactionHi}].
-The Length48 secondary comparison is also positive:
-\result{inter_l48_interaction}
-[\result{inter_l48_interactionLo}, \result{inter_l48_interactionHi}].
-These are differences-in-differences on a 0--1 score scale, not relative
-percentage improvements. The OpenFold Train384 four-cell controls do not
-establish the interaction with either ESM2 or ESMC
-(Appendix Table~\ref{tab:interaction_scope}); the positive finding is recipe-specific.
-
-
-The Protenix Train96/Full study uses the same training/development sets
-and 1536-update budget as the OpenFold comparison, with Protenix's own
-fixed recipe. On Confirm96-B,
-$\Delta_F=\result{p96_pair_factor_rotation}$ and
-$\Delta_{G+}=\result{p96_pair_gplus_rotation}$ give
-$\Psi=\result{p96_pair_interaction}$
-[\result{p96_pair_interactionLo}, \result{p96_pair_interactionHi}].
-All three seed and rotation marginals are positive; 61/96 target interactions
-are positive. This extends observed-panel interaction support to a second
-predictor, without providing a new-target confirmation.
-
-\paragraph{Observed-panel robustness.}
-For OpenFold Train96, all seed and rotation marginals are positive on both
-observed panels; 8/9 and 7/9 seed-by-rotation cells are positive, respectively.
-The Confirm96-B residue-average C$\alpha$ lDDT and TM-score interactions are
-\result{inter_c96_interaction_residue}
-[\result{inter_c96_interaction_residueLo}, \result{inter_c96_interaction_residueHi}]
-and \result{inter_c96_interaction_tm}
-[\result{inter_c96_interaction_tmLo}, \result{inter_c96_interaction_tmHi}].
-They score the same structures, not independent samples. Intervals for G+'s
-Native--Rotated score difference include zero on both panels without establishing
-training equivalence.
-
-\paragraph{A coordinate-compatible control.}
-A follow-up replaces dense rotations by three signed channel permutations,
-training 18 rotated Factor/G+ models under the OpenFold Train96 recipe.
-The Confirm96-B primary interaction is \result{signed_c96_pair_interaction}
-[\result{signed_c96_pair_interactionLo}, \result{signed_c96_pair_interactionHi}];
-Length48 gives \result{signed_l48_pair_interaction}
-[\result{signed_l48_pair_interactionLo}, \result{signed_l48_pair_interactionHi}].
-Thus the interaction is not confined to dense mixing. Signed permutations are
-compatible with ideal coordinate-wise AdamW under mapped parameters and states,
-but the full FP32 training trajectories were not established as equivalent.
-These transforms do not preserve the all-ones direction, and the panels are
-observed (Appendix~\ref{app:signed_control}).
+The OpenFold Train96/ESM2 interaction is positive on Confirm96-B and
+Length48; Protenix Train96 also supports it on Confirm96-B
+(Figure~\ref{fig:interaction}; Appendix Table~\ref{tab:interaction_scope}).
+These observed-panel results do not replace new-target tests.
+Seed/rotation marginals and supplementary metrics are reported in
+Appendices~\ref{app:complete_results} and \ref{app:dh_fourcells}.
+Signed channel permutations retain a positive Confirm96-B interaction,
+while the Length48 interval includes zero. The effect is therefore not
+confined to dense mixing, although ideal AdamW coordinate compatibility
+does not establish equivalent FP32 trajectories
+(Appendix~\ref{app:signed_control}).
 
 \subsection{What changes with training budget and injection schedule?}
 \label{sec:budget_schedule}
@@ -102,22 +59,18 @@ observed (Appendix~\ref{app:signed_control}).
 After Fresh192 was observed, we continued all 24 Protenix/ESMC models from
 1536 to 3072 updates with their AdamW states and unchanged learning rate.
 All four cells improve (Table~\ref{tab:budget_schedule_overview}). Factor's
-Native--Rotated score difference falls from \result{budget_factor_rotation_1536} to
-\result{budget_factor_rotation_3072}, a paired change of
+Native--Rotated score difference decreases, with a paired change of
 \result{budget_factor_rotation_change}
 [\result{budget_factor_rotation_changeLo}, \result{budget_factor_rotation_changeHi}].
-Continued training therefore reduces Factor's score difference at the tested budgets.
-The prespecified final interaction nevertheless remains positive:
+The prespecified final interaction remains positive:
 $\Psi_{3072}=\result{budget_interaction_3072}$
 [\result{budget_interaction_3072Lo}, \result{budget_interaction_3072Hi}].
-G+'s signed score difference becomes more negative in point estimate, from
-\result{budget_gplus_rotation_1536} to \result{budget_gplus_rotation_3072};
-its paired change interval includes zero. Thus the interaction change combines
-changes in both heads' effects. The paired change
-in interaction is $K=\result{budget_K}$ [\result{budget_KLo}, \result{budget_KHi}]:
-its point estimate decreases, but the interval does not establish an overall
-change. The evidence extends beyond the original stopping point, without
-establishing convergence, budget invariance or another new-target confirmation
+G+'s difference becomes more negative in point estimate, with a paired
+change interval including zero. The interaction change is
+$K=\result{budget_K}$ [\result{budget_KLo}, \result{budget_KHi}],
+which does not establish an overall change. These results extend beyond
+the original stopping point without establishing convergence, budget
+invariance or another new-target confirmation
 (Appendix~\ref{app:budget_extension}).
 
 \begin{table}[t]\centering\footnotesize
@@ -140,71 +93,48 @@ Condition & $F_N$ & $F_R$ & $G^+_N$ & $G^+_R$ & $\Delta_F$ & $\Delta_{G+}$ & $\P
 
 \paragraph{Injection schedule and absolute quality.}
 A separate OpenFold Train96 study retrains First-only, All and Last-only
-injection. Computational-budget constraints closed the amended study at
-36 fits using R1 and three seeds per cell; the scope amendment preceded
-unified scoring (Appendix~\ref{app:schedule_retraining}). Unlike the
-historical recipe, it retains gradients across four passes and uses a common
-Train/Dev-calibrated learning rate. All yields higher mean Factor scores
-than First-only, but a smaller interaction (Table~\ref{tab:budget_schedule_overview}):
+injection with gradients across four passes and a common Train/Dev-calibrated
+learning rate. Computational-budget constraints limited the amended scope
+to R1 and 36 fits; this amendment preceded unified scoring
+(Appendix~\ref{app:schedule_retraining}). All yields higher mean Factor
+scores than First-only, but a smaller interaction:
 $\Psi_{\mathrm{All}}-\Psi_{\mathrm{First}}=
 \result{schedule_D_write_R1}$
 [\result{schedule_D_write_R1Lo}, \result{schedule_D_write_R1Hi}].
-First has the largest interaction and lowest absolute quality, with both
-G+ arms near Query. For All, Factor's Native--Rotated score difference is
-\result{schedule_all_factor_rotation}, with a confidence interval that includes
-zero, whereas G+'s is negative (\result{schedule_all_gplus_rotation}).
-Their difference nevertheless gives a positive $\Psi$. Last does not establish a
-Native Factor advantage over G+. Thus a larger $\Psi$ need not identify a
-better schedule, a positive Factor score difference, or a larger absolute
-rotation response for Factor. These are jointly
-retrained schedule comparisons, not an isolated feedback mechanism
-(Appendix~\ref{app:schedule_retraining}).
+First has the largest interaction and lowest absolute quality
+(Table~\ref{tab:budget_schedule_overview}). Under All, Factor's difference
+has an interval including zero while G+'s is negative, yielding positive
+$\Psi$. A larger interaction therefore need not identify a better schedule
+or a positive Factor difference. Jointly retraining each schedule does not
+isolate a feedback mechanism.
 
 \subsection{Where do effects transfer, and do they imply a better head?}
 \label{sec:esmc}
-\paragraph{Checkpoint and length transfer.}
 \label{sec:protenix}
-The original Protenix-Mini tangent comparison gives a Confirm96-B Native--Rotated
-advantage of \result{pt_tangent} [\result{pt_tangentLo}, \result{pt_tangentHi}],
-with 78/96 positive targets. Separate comparisons using the Full residual,
-the Tiny checkpoint's own interface, and mean-preserving rotations also
-retain a Native--Rotated advantage (Appendix Figure~\ref{fig:scope}). These
-controls neither establish tangent as a better adapter nor isolate all
-downstream normalization.
-
 \label{sec:length}
-Without further training, ESM2 Train384 Full adapters retain a Native--Rotated advantage
-on Length48 of \result{pt_length} [\result{pt_lengthLo}, \result{pt_lengthHi}],
-with 41/48 positive targets. Native and rotated means are
-\result{pt384_l48_native} and \result{pt384_l48_rotated}, both above the
-unadapted mean of \result{pt384_l48_query} (Table~\ref{tab:coverage}).
-Supplementary metrics are concordant. This tests complete-sequence length
-transfer, not family/pretraining novelty. Official Mini-ESM scores
-\result{pt384_l48_official}, leaving a substantial system-quality gap.
+Protenix retains Native--Rotated advantages across the tested residual
+forms, checkpoints and mean-preserving rotations, and on complete sequences
+in Length48 (Appendix Figure~\ref{fig:scope}). Length transfer does not
+establish family or pretraining novelty. At Train384, Protenix interactions
+are positive with both ESM2 and ESMC on the observed panels, while OpenFold
+establishes them with neither feature source
+(Appendix Table~\ref{tab:interaction_scope}). ESMC improves prediction
+quality in both predictors without establishing changes in $\Delta_F$ or
+$\Psi$. Feature family, width, precision and projection size change together
+(Appendix~\ref{app:dh_fourcells}); model size is not isolated.
 
-\paragraph{Feature source and head competitiveness.}
-The Protenix Train384 feature study compares both ESM2 and ESMC in four cells
-(Table~\ref{tab:coverage}). Its prespecified Confirm96-B ESMC Factor contrast is
-\result{dh_protenix_c96_c_pair_factor_rotation}
-[\result{dh_protenix_c96_c_pair_factor_rotationLo}, \result{dh_protenix_c96_c_pair_factor_rotationHi}];
-the follow-up $\Psi$ is \result{dh_protenix_c96_c_pair_interaction}
-[\result{dh_protenix_c96_c_pair_interactionLo}, \result{dh_protenix_c96_c_pair_interactionHi}].
-The ESMC interaction on Length48 and the ESM2 interactions on both panels
-also have positive intervals (Appendix Table~\ref{tab:interaction_scope}).
-ESMC G+ has positive Native--Rotated score differences on both panels, so
-function-class closure does not ensure equivalent finite-budget training;
-Factor's differences are nevertheless larger.
-
-ESMC raises Protenix Native scores from
-\result{dh_protenix_c96_e_native}/\result{dh_protenix_l48_e_native} to
-\result{dh_protenix_c96_c_native}/\result{dh_protenix_l48_c_native}
-on Confirm96-B/Length48. G+ and both OpenFold heads also improve.
-Yet direct ESMC--ESM2 changes in $\Delta_F$ and $\Psi$ have intervals including
-zero for both predictors. Protenix retains positive interaction intervals;
-OpenFold establishes them with neither Train384 feature source. Higher
-structural quality therefore need not coincide with an established change in
-signed orientation contrasts. PLM family, feature width, cache precision and
-input-projection size change together; model size is not isolated.
+\label{sec:limits_results}
+Direction effects do not determine head competitiveness. Factor exceeds
+G+ in the matched Protenix comparison, whereas G+ wins both OpenFold
+long-chain comparisons (Appendix Table~\ref{tab:gplus}). Neither adaptation
+benefit nor interaction is established for AtlasFold with either feature
+source; high baseline and native AtlasLM remain unisolated explanations
+(Appendix~\ref{app:dh_fourcells}). Training-set changes also alter data
+composition and repetition counts, preventing a pure data-size attribution
+(Appendix~\ref{app:training_psi}). Saved Dev8 checkpoint curves establish
+neither convergence nor a uniform learning delay
+(Appendix~\ref{app:checkpoint_curves}). Table~\ref{tab:coverage} reports
+all four-cell means and backend differences.
 
 \begin{table}[t]
 \caption{Four-cell C$\alpha$ pair-lDDT means at 1536 updates. F/G+: three seeds;
@@ -226,145 +156,29 @@ on MI250. These mix backends across heads or across seeds, respectively
 (Appendix~\ref{app:dh_fourcells}).
 \end{table}
 
-\label{sec:limits_results}
-In the matched Protenix Train384/ESM2 follow-up, Native
-exceeds G+ by \result{pt384_c96_gdiff}
-[\result{pt384_c96_gdiffLo}, \result{pt384_c96_gdiffHi}] on Confirm96-B and
-\result{pt384_l48_gdiff}
-[\result{pt384_l48_gdiffLo}, \result{pt384_l48_gdiffHi}] on Length48.
-G+ itself improves over query-only by \result{pt384_c96_gquery}/\result{pt384_l48_gquery};
-it is a functioning explicit-factor comparator under the shared recipe,
-not an optimized performance bound.
-For Protenix Train384/ESMC on Confirm96-B, the Native head gap is
-$F-G^+=\result{dh_protenix_c96_c_pair_native_minus_gplus}$, while
-$RF-RG^+=\result{dh_protenix_c96_c_rotated_head_gap}$ after rotation.
-Their difference is $\Psi=\result{dh_protenix_c96_c_pair_interaction}$: a
-substantial head gap survives rotation. This identity is not a causal
-percentage decomposition. Historical ESM2 Length48 compares H100 with MI250; the effect of backend
-differences is not bounded over the full panel (Appendix~\ref{app:engineering}).
-
-OpenFold Train384/ESM2 establishes a Factor direction advantage on Length48,
-but not Confirm96-B. G+ nevertheless wins the two OpenFold long-chain
-comparisons (Appendix Table~\ref{tab:gplus}): a direction benefit can coexist
-with a better generic adapter.
-
-Neither an adaptation benefit nor an interaction is established for AtlasFold
-with either feature source. High baseline and native AtlasLM are unisolated explanations;
-its mixed-backend limits remain in Appendix~\ref{app:dh_fourcells}.
-In two diagnostic chains, adaptation-induced state differences persisted to the
-trunk output while structural changes remained small, without identifying the
-cause (Appendix~\ref{app:atlas_propagation}).
-
-\paragraph{Training data and budget.}
-Training-set changes provide another boundary. At fixed Full/1536, the Factor
-Native--Rotated score difference changes by \result{pt_scale} in Protenix and
-\result{of_scale_c96} in OpenFold on Confirm96-B; the OpenFold Length48 interval
-does not establish a change. All four OpenFold/ESM2 mean scores improve: rotated Factor catches
-up without an absolute Native decline. The direct, post-hoc change of the
-complete interaction, $\Psi_{384}-\Psi_{96}$, is
-\result{psi_train_c96_ca_lddt}
-[\result{psi_train_c96_ca_lddtLo}, \result{psi_train_c96_ca_lddtHi}] on
-Confirm96-B; Length48's interval includes zero (Appendix~\ref{app:training_psi}).
-Data coverage, training-set composition and repetitions (16 versus 4 average
-passes) change together, so neither difference identifies a universal data-size
-or convergence effect.
-
-On fixed Dev8, all four cells improve from saved step384 to step1536;
-$\Psi$ is nonmonotone and all six node intervals include zero
-(Appendix~\ref{app:checkpoint_curves}). This establishes neither convergence
-nor a uniform learning delay, and does not select checkpoints.
-
 \subsection{Does shared output freedom preferentially help rotated Factor?}
 \label{sec:e2_compensation}
-The four-cell interaction compares complete parameterizations and does not
-isolate output freedom. To test whether adding an output map gives rotated
-Factor a larger gain than Native Factor, we jointly train its parameters $\theta$ and a shared
-mean-preserving orthogonal map $C$:
-\begin{equation}
- U_N=U_0+C\Delta U_\theta,\qquad U_R=U_0+CR\Delta U_\theta.
- \label{eq:compensated_injection}
-\end{equation}
-This study uses two mean-preserving rotations from the separate eight-rotation
-prediction study, selected by low/high reconstruction error before their
-task-training scores were observed. They differ from the preceding four-cell
-study's three dense rotations. One 8,001-parameter $C$ is shared across targets,
-pairs and recycles within each model. Both $R$ and $C$ belong to
-$\mathcal H=\{Q\in SO(128):Qu=u\}$, where $u$ is the normalized all-ones vector.
-For this subgroup the compensated Factor function classes are equal in ideal
-arithmetic: $C_R=C_NR^\top$ absorbs $R$ (Appendix~\ref{app:e2_compensation}).
-Each execution trains nine compensated models from $C=I$ and zero residual
-under the fixed OpenFold/Train96/ESM2/1536 recipe. This is joint retraining,
-with no inverse-rotation initialization.
-
-\begin{table}[t]\centering\footnotesize
-\caption{Testing shared output freedom within Factor on observed Confirm96-B. Mean C$\alpha$
-pair-lDDT: (a) absolute scores over the same three seeds; (b) paired gains,
-with rotated gains averaged over both selected rotations. Both executions
-jointly train $C$ from identity and share the original fixed no-$C$ baseline.
-Intervals are unadjusted 95\% target intervals conditional on each execution's
-fitted models. The repeat adds no independent seeds. Contrasts use unrounded scores.}
-\label{tab:e2_absolute}\label{tab:e2_repeat_comparison}
-\textbf{(a) Absolute scores}\par\smallskip
-\begin{tabular}{lrrr}\toprule
-Condition & Without $C$ & Original $+C$ & Repeat $+C$ \\\midrule
-\input{generated/e2_execution_means}
-\end{tabular}
-\par\medskip\textbf{(b) Compensation gains and their difference}\par\smallskip
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{lrrrr}\toprule
-Contrast & Original & 95\% interval & Repeat & 95\% interval \\\midrule
-\input{generated/e2_retraining_comparison}
-\end{tabular}\end{table}
-
-Let $B_N=S(N+C)-S(N)$ and $B_R^{C}=S(R+C)-S(R)$, averaging $B_R^{C}$ over
-both rotations. We call $T_C=B_R^{C}-B_N$ the additional compensation gain
-for rotated Factor, relative to Native Factor's gain. It equals the reduction
-in the Native--Rotated score difference after adding $C$. Unlike $\Psi$,
-which compares Factor with G+, $T_C$ compares gains within Factor, not the
-absolute scores of the compensated models.
-
-Table~\ref{tab:e2_absolute} shows positive rotated-arm gains in both executions:
-\result{e2_pair_B_R} and \result{e2rep_pair_B_R}. The estimated gains for rotated
-Factor are similar across executions, whereas Native's estimated gain is larger
-in the repeat than in the original execution
-(\result{e2rep_pair_native_change} versus \result{e2_pair_native_change}).
-Only the original execution establishes a larger compensation gain for rotated
-Factor than for Native Factor:
-$T_C=\result{e2_pair_T_C}$ versus \result{e2rep_pair_T_C} in the repeat.
-Native improves in both, so the original smaller mean gap is not produced by
-harming it. The change in interval significance establishes neither a
-between-execution population difference nor zero additional gain in the repeat.
-
-Descriptively, the original $B_R^C$ is positive on
-\result{e2_pair_B_R_count_positive}/96 targets, but $T_C$ on only
-\result{e2_pair_T_C_count_positive}/96; only one rotation separately establishes
-a positive additional gain, and the average TM-score interval for $T_C$ includes zero.
-
-\paragraph{Same-seed retraining repeat.}
-The nine $+C$ fits were repeated with the same seeds and 1536-update recipe,
-keeping the original no-$C$ models fixed. This adds no independent seeds and
-is not pooled with the original execution. A positive additional compensation
-gain for rotated Factor was not re-established. Despite identical starting
-states, the numerical training trajectories can differ; the cause of the
-full-training outcome difference remains unresolved
-(Appendix~\ref{app:e2_repeat}). Output freedom and joint optimization remain coupled.
-
-\paragraph{Predicting post-training score differences.}
-A prespecified teacher-update reconstruction diagnostic did not establish
-its predicted ranking of Native--Rotated score differences across eight tested
-rotations ($\rho=\result{e1_ca_lddt_x_rho}$, exact one-sided
-$p=\result{e1_ca_lddt_x_p}$; Appendix~\ref{app:prediction_e1}). The useful
-rotated-arm compensation gains do not validate that prediction or identify
-output freedom as the unique explanation of the four-cell interaction.
-
-\paragraph{A global-norm alternative.}
-\label{sec:norm_cross}
-A robustness analysis crosses learned residual source and global Frobenius
-norm for fixed Protenix Train384/Full/1536 models on 24 observed Confirm96-B
-targets, evaluating all conditions on the same backend. Native-source advantages are \result{cross_ca_D_mN} at the
-native norm and \result{cross_ca_D_mR} at the rotated norm; the symmetric
-source effect is \result{cross_ca_Edir}
-[\result{cross_ca_EdirLo}, \result{cross_ca_EdirHi}]. Thus global norm alone is
-insufficient to explain this gap. Normalized residuals still differ in learned
-content, local magnitudes and channel organization. This is not a pure
-channel-rotation experiment (complete four cells in Appendix~\ref{app:norm_cross}).
+We jointly train a shared mean-preserving orthogonal map $C$ from identity
+with the head in Native and two preselected rotated Factor arms
+(Appendix~\ref{app:e2_compensation}). Let $B_N=S(N+C)-S(N)$ and
+$B_R^C=S(R+C)-S(R)$, averaging the latter over both rotations;
+$T_C=B_R^C-B_N$ compares their compensation gains.
+Rotated Factor improves in both the original execution and a complete
+same-seed repeat using the same fixed no-$C$ baselines
+(Appendix Table~\ref{tab:e2_absolute}). Only the original establishes
+a larger compensation gain than Native:
+$T_C=\result{e2_pair_T_C}$
+[\result{e2_pair_T_CLo}, \result{e2_pair_T_CHi}],
+versus \result{e2rep_pair_T_C}
+[\result{e2rep_pair_T_CLo}, \result{e2rep_pair_T_CHi}] in the repeat.
+The repeat adds no independent seeds and is not pooled with the original;
+its $T_C$ interval includes zero. Differing interval significance does not
+establish a between-execution population difference
+(Appendix~\ref{app:e2_repeat}). A prespecified reconstruction diagnostic
+also did not establish its predicted ranking of post-training score
+differences across eight rotations ($\rho=\result{e1_ca_lddt_x_rho}$,
+exact one-sided $p=\result{e1_ca_lddt_x_p}$;
+Appendix~\ref{app:prediction_e1}). The useful rotated-arm gains do not
+validate that prediction or identify output freedom as the unique
+explanation of the four-cell interaction; output freedom and joint
+optimization remain coupled.
