@@ -70,7 +70,7 @@ G+'s difference becomes more negative in point estimate, with a paired
 change interval including zero. The paired interaction change is
 $K=\Psi_{3072}-\Psi_{1536}=\result{budget_K}$
 [\result{budget_KLo}, \result{budget_KHi}],
-which does not establish an overall change. These results extend beyond
+which does not establish a change in $\Psi$. These results extend beyond
 the original stopping point without establishing convergence, budget
 invariance or another new-target confirmation
 (Appendix~\ref{app:budget_extension}).
@@ -103,10 +103,12 @@ scores than First-only, but a smaller interaction:
 $\Psi_{\mathrm{All}}-\Psi_{\mathrm{First}}=
 \result{schedule_D_write_R1}$
 [\result{schedule_D_write_R1Lo}, \result{schedule_D_write_R1Hi}].
-First has the largest interaction and lowest absolute quality
-(Table~\ref{tab:budget_schedule_overview}). Under All, Factor's difference
-has an interval including zero while G+'s is negative, yielding positive
-$\Psi$. A larger interaction need not identify a better schedule; a positive
+Among the three tested schedules, First-only has the largest estimated
+interaction and the lowest mean pair-lDDT in each of the four cells
+(Table~\ref{tab:budget_schedule_overview}). Under All, the interaction
+interval lies above zero, whereas Factor's difference interval includes
+zero and G+'s lies below zero. A larger interaction need not identify a
+better schedule; a positive
 interaction need not establish a positive Factor difference. Jointly
 retraining each schedule does not isolate a feedback mechanism.
 
