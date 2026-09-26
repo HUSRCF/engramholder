@@ -67,8 +67,9 @@ The prespecified final interaction remains positive:
 $\Psi_{3072}=\result{budget_interaction_3072}$
 [\result{budget_interaction_3072Lo}, \result{budget_interaction_3072Hi}].
 G+'s difference becomes more negative in point estimate, with a paired
-change interval including zero. The interaction change is
-$K=\result{budget_K}$ [\result{budget_KLo}, \result{budget_KHi}],
+change interval including zero. The paired interaction change is
+$K=\Psi_{3072}-\Psi_{1536}=\result{budget_K}$
+[\result{budget_KLo}, \result{budget_KHi}],
 which does not establish an overall change. These results extend beyond
 the original stopping point without establishing convergence, budget
 invariance or another new-target confirmation
@@ -105,15 +106,15 @@ $\Psi_{\mathrm{All}}-\Psi_{\mathrm{First}}=
 First has the largest interaction and lowest absolute quality
 (Table~\ref{tab:budget_schedule_overview}). Under All, Factor's difference
 has an interval including zero while G+'s is negative, yielding positive
-$\Psi$. A larger interaction therefore need not identify a better schedule
-or a positive Factor difference. Jointly retraining each schedule does not
-isolate a feedback mechanism.
+$\Psi$. A larger interaction need not identify a better schedule; a positive
+interaction need not establish a positive Factor difference. Jointly
+retraining each schedule does not isolate a feedback mechanism.
 
 \subsection{Where do effects transfer, and do they imply a better head?}
 \label{sec:esmc}
 \label{sec:protenix}
 \label{sec:length}
-Protenix retains Native--Rotated advantages across the tested residual
+Protenix Factor retains Native--Rotated advantages across the tested residual
 forms, checkpoints and mean-preserving rotations, and on complete sequences
 in Length48 (Appendix Figure~\ref{fig:scope}). Length transfer does not
 establish family or pretraining novelty. At Train384, Protenix interactions
@@ -125,9 +126,10 @@ $\Psi$. Feature family, width, precision and projection size change together
 (Appendix~\ref{app:dh_fourcells}); model size is not isolated.
 
 \label{sec:limits_results}
-Direction effects do not determine head competitiveness. Factor exceeds
-G+ in the matched Protenix comparison, whereas G+ wins both OpenFold
-long-chain comparisons (Appendix Table~\ref{tab:gplus}). Neither adaptation
+Direction effects do not determine head competitiveness. Native Factor
+exceeds Native G+ in the matched Protenix comparison, whereas Native G+
+outperforms Native Factor on Length48 under both OpenFold/ESM2 training
+scales (Appendix Table~\ref{tab:gplus}). Neither adaptation
 benefit nor interaction is established for AtlasFold with either feature
 source; high baseline and native AtlasLM remain unisolated explanations
 (Appendix~\ref{app:dh_fourcells}). Training-set changes also alter data
@@ -159,8 +161,9 @@ on MI250. These mix backends across heads or across seeds, respectively
 
 \subsection{Does shared output freedom preferentially help rotated Factor?}
 \label{sec:e2_compensation}
-In the Native and two preselected Rotated conditions, we jointly train
-each Factor head with its own mean-preserving orthogonal map $C$.
+Using OpenFold Train96/ESM2 and evaluating on observed Confirm96-B,
+we jointly train each Factor head with its own mean-preserving orthogonal
+map $C$ in Native and two preselected mean-preserving Rotated conditions.
 Initialized at identity, $C$ is shared across targets, pairs and recycles
 within that model (Appendix~\ref{app:e2_compensation}). Let
 $B_N=S(N+C)-S(N)$ and $B_R^C=S(R+C)-S(R)$, averaging the latter over both
