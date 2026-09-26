@@ -3,12 +3,14 @@
 \paragraph{Predictors and information.}
 We freeze Protenix-Mini/Tiny default checkpoints, official AF2
 \texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with native
-AtlasLM-3B retained. Folding inputs exclude evaluation homologs, templates and
-target structures. Native/Rotated/G+ share frozen ESM2-35M features
+AtlasLM-3B retained. Evaluation inputs exclude homologous sequences,
+templates and reference structures; adapter training uses structural
+supervision. All four arms within each recipe use the same frozen ESM2-35M features
 \citep{lin2023evolutionary} (480 channels, layer 12), or frozen ESMC-600M final-layer features
 \citep{candido2026language} (1152 channels; Section~\ref{sec:esmc}).
-Unadapted baselines lack these added features: gains over baseline combine
-feature access and adaptation; Native--Rotated isolates direction more closely.
+Unadapted baselines lack these added features, so gains over baseline combine
+feature access and adaptation. Within each head, Native--Rotated holds feature
+access fixed and measures the effect of output rotation after separate training.
 Table~\ref{tab:recipes} summarizes the paths.
 
 \begin{table}[t]
@@ -43,8 +45,9 @@ G+ also has three native and nine rotated fits in each core four-cell setting.
 The prediction and compensation studies use their separately specified rotation
 sets and parameter groups.
 We evaluate the fixed final checkpoint and one inference sample, without
-target-label selection or cropping. Native task losses backpropagate through
-the final recycle in the core recipes. The separate Protenix budget follow-up
+target-label selection or cropping. The predictor-specific task losses
+backpropagate only through the final recycle in every arm of the core recipes.
+The separate Protenix budget follow-up
 continues all 24 models to 3072 updates; the OpenFold schedule follow-up
 retrains 36 models with one rotation and gradients across four passes
 (Appendices~\ref{app:budget_extension} and~\ref{app:schedule_retraining}).
@@ -119,7 +122,7 @@ Protenix Train96 & Observed & C96-B $\Psi$ & Primary; no L48 study \\
 OpenFold Fresh96 & New targets & Fresh96 $\Psi$ & Sole primary; fixed models \\
 Protenix Fresh192 & New targets & Fresh192 $\Psi$ & Sole primary; fixed models \\
 Protenix budget & Observed Fresh192 & $\Psi_{3072}$ & Primary; paired budget change secondary \\
-OpenFold schedules & Observed C96-B & Original three-rotation matrix not completed & R1-only reporting amendment; All--First $\Psi$ difference \\
+OpenFold schedules & Observed C96-B & Three-rotation $\Psi_{\mathrm{All}}-\Psi_{\mathrm{First}}$ (not completed) & R1-only reporting amendment; All--First $\Psi$ difference \\
 OpenFold features & Observed & C96-B ESMC $\Delta_F$ & C96-B ESMC $\Psi$: secondary (Holm); other $\Psi$ unadjusted \\
 Protenix/Atlas features & Observed & C96-B ESMC $\Delta_F$, per backbone & Follow-up; no joint correction \\\bottomrule
 \end{tabular}\end{table}
