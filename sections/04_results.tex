@@ -67,6 +67,19 @@ for the fixed Protenix/ESMC models on screened short-chain targets
 scale, features and panel; their significance outcomes do not estimate a
 between-predictor interaction difference.
 
+\paragraph{A fixed budget extension.}
+After Fresh192 was observed, we continued all 24 Protenix/ESMC models from
+1536 to 3072 updates with their AdamW states and unchanged learning rate.
+The prespecified final interaction remains positive:
+$\Psi_{3072}=\result{budget_interaction_3072}$
+[\result{budget_interaction_3072Lo}, \result{budget_interaction_3072Hi}].
+All four cells improve; Factor's Native--Rotated gap shrinks, while the G+
+contrast also shifts in point estimate. The paired overall change is
+$K=\result{budget_K}$ [\result{budget_KLo}, \result{budget_KHi}],
+which does not establish a change in $\Psi$. This extends support beyond
+the original stopping point, without establishing convergence, budget
+invariance or another new-target confirmation (Appendix~\ref{app:budget_extension}).
+
 \paragraph{Observed-panel robustness.}
 For OpenFold Train96, all seed and rotation marginals are positive on both
 observed panels; 8/9 and 7/9 seed-by-rotation cells are positive, respectively.
@@ -254,6 +267,23 @@ its mixed-backend limits remain in Appendix~\ref{app:dh_fourcells}.
 In two diagnostic chains, adaptation-induced state differences persisted to the
 trunk output while structural changes remained small, without identifying the
 cause (Appendix~\ref{app:atlas_propagation}).
+
+\paragraph{Injection schedule and absolute quality.}
+A separate OpenFold Train96 study retrains First-only, All and Last-only
+injection, with one fixed rotation and three seeds per cell. Unlike the
+historical recipe, it retains gradients across four passes and uses a common
+Train/Dev-calibrated learning rate. All yields higher Factor mean scores,
+but $\Psi_{\mathrm{All}}-\Psi_{\mathrm{First}}=
+\result{schedule_D_write_R1}$
+[\result{schedule_D_write_R1Lo}, \result{schedule_D_write_R1Hi}].
+First has the largest interaction and lowest absolute quality, with both
+G+ arms near Query. All's positive interaction combines an unestablished
+Factor contrast (\result{schedule_all_factor_rotation}) with a negative G+
+contrast (\result{schedule_all_gplus_rotation}). Last does not establish a
+Native Factor advantage over G+. Thus a larger $\Psi$ need not identify a
+better schedule or a positive Factor direction effect. These are jointly
+retrained schedule comparisons, not an isolated feedback mechanism
+(Appendix~\ref{app:schedule_retraining}).
 
 \paragraph{Training data and budget.}
 Training-set changes provide another boundary. At fixed Full/1536, the Factor

@@ -43,7 +43,10 @@ The prediction and compensation studies use their separately specified rotation
 sets and parameter groups.
 We evaluate the fixed final checkpoint and one inference sample, without
 target-label selection or cropping. Native task losses backpropagate through
-the final recycle.
+the final recycle in the core recipes. The separate Protenix budget follow-up
+continues all 24 models to 3072 updates; the OpenFold schedule follow-up
+retrains 36 models with one rotation and gradients across four passes
+(Appendices~\ref{app:budget_extension} and~\ref{app:schedule_retraining}).
 
 \paragraph{Panels and study identity.}
 \label{sec:panels}
@@ -85,6 +88,7 @@ For target $i$ define
  \quad \Psi_i=d_{F,i}-d_{G+,i},\quad
  \Psi=\frac1N\sum_i\Psi_i.\label{eq:interaction}
 \end{equation}
+The single-rotation schedule study replaces the inner rotation average by R1.
 We write $\Delta_H=N^{-1}\sum_i d_{H,i}$ for the signed Native-minus-Rotated
 score contrast; positive values indicate a rotation penalty. Thus
 $\Psi=\Delta_F-\Delta_{G+}$.
@@ -109,6 +113,8 @@ OpenFold signed permutations & Observed & C96-B $\Psi$ & Primary; L48 secondary 
 Protenix Train96 & Observed & C96-B $\Psi$ & Primary; no L48 study \\
 OpenFold Fresh96 & New targets & Fresh96 $\Psi$ & Sole primary; fixed models \\
 Protenix Fresh192 & New targets & Fresh192 $\Psi$ & Sole primary; fixed models \\
+Protenix budget & Observed Fresh192 & $\Psi_{3072}$ & Primary; paired budget change secondary \\
+OpenFold schedules & Observed C96-B & Original three-rotation matrix not completed & R1-only reporting amendment; All--First $\Psi$ difference \\
 OpenFold features & Observed & C96-B ESMC $\Delta_F$ & C96-B ESMC $\Psi$: secondary (Holm); other $\Psi$ unadjusted \\
 Protenix/Atlas features & Observed & C96-B ESMC $\Delta_F$, per backbone & Follow-up; no joint correction \\\bottomrule
 \end{tabular}\end{table}

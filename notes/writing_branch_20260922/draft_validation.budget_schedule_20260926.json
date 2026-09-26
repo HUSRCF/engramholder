@@ -1,0 +1,60 @@
+{
+  "utc": "2026-09-26T07:39:11.744308+00:00",
+  "base_commit": "242e34a",
+  "source_lock": "v14",
+  "inputs": 384,
+  "numerical_fields": 1985,
+  "previous_inputs_unchanged": 349,
+  "previous_complete_cell_objects_unchanged": 1860,
+  "new_inputs": 35,
+  "new_fields": 125,
+  "score_verification": {
+    "passed": true,
+    "openfold_records": 3552,
+    "openfold_summaries": 138,
+    "protenix_records": 9984,
+    "protenix_summaries": 129,
+    "exact_historical_replay_rows": 4800,
+    "numeric_field_checks": 1404,
+    "maximum_absolute_error": 1.3877787807814457e-17,
+    "scope": "Saved score grids, paired bootstrap, marginals, source/receipt bindings; no GPU training or independent CIF rescoring."
+  },
+  "numeric_keys": {
+    "literal_references": 1904,
+    "distinct_keys": 1641,
+    "missing": []
+  },
+  "source_code_identity_checks": {
+    "openfold_execution_bound_files": 3,
+    "protenix_execution_bound_files": 4
+  },
+  "compile": {
+    "passed": true,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "pdf": "build/feedback_v47_budget_schedule/paper.pdf",
+    "pdf_sha256": "2d276d3c3b7c4ebc239550c2e6aad0445366eef40da8b7603a96eb73a88328ec",
+    "source_manifest": "build/feedback_v47_budget_schedule/compile_sources.json",
+    "page_limit_checked": false,
+    "full_visual_acceptance": false,
+    "local_visual_review": [
+      "new budget paragraph",
+      "new schedule paragraph",
+      "study-role table",
+      "budget means/effects tables",
+      "schedule means/direct-difference tables"
+    ]
+  },
+  "artifact": {
+    "path": "build/anonymous_budget_schedule_v47_final.zip",
+    "files": 536,
+    "sha256": "ce446da1bb1482cd39848aff141c6e751eaa73a5202018bd2b166ff2992acc69",
+    "tests": 27,
+    "operator_and_compensation_cpu_checks": true,
+    "numerical_values_unchanged": 1985,
+    "manuscript_tex_matches_compiled_sources": true,
+    "full_retraining": false,
+    "full_binary_anonymity_certification": false
+  },
+  "scope": "Writing-side reconstruction of saved scores, source bindings and manuscript compilation. No new training, prediction, CIF scoring or queue action. Original locks retained."
+}

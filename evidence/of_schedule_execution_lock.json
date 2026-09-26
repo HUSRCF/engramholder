@@ -1,0 +1,2018 @@
+{
+  "schema": "openfold_schedule_training72_v1",
+  "utc": "2026-09-25T19:34:06.276322+00:00",
+  "engineering_root": "/data/user/shuang886/Folding/engramfold/openfold_schedule_training36_20260926",
+  "engineering_lock_sha256": "0ceabf53462bc0278d788bd2edad34757faf20182b1c3dfbb7269a9f35932d03",
+  "formal": [
+    {
+      "name": "first_factor_native_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_factor_r20261001_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_generic_plus_native_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_generic_plus_r20261001_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_factor_native_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_factor_r20261001_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_generic_plus_native_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_generic_plus_r20261001_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_factor_native_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_factor_r20261001_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_generic_plus_native_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_generic_plus_r20261001_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_factor_native_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_factor_r20261001_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_generic_plus_native_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_generic_plus_r20261001_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_factor_native_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_factor_r20261001_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_generic_plus_native_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_generic_plus_r20261001_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_factor_native_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_factor_r20261001_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_generic_plus_native_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "all_generic_plus_r20261001_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_factor_native_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_factor_r20261001_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_generic_plus_native_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_generic_plus_r20261001_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_factor_native_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_factor_r20261001_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_generic_plus_native_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_generic_plus_r20261001_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_factor_native_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_factor_r20261001_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_generic_plus_native_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": null,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "last_generic_plus_r20261001_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "steps": 1536,
+      "wave": 1
+    },
+    {
+      "name": "first_factor_r20261002_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_factor_r20261003_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_generic_plus_r20261002_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_generic_plus_r20261003_s20260923",
+      "strategy": "first",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_factor_r20261002_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_factor_r20261003_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_generic_plus_r20261002_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_generic_plus_r20261003_s20260924",
+      "strategy": "first",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_factor_r20261002_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_factor_r20261003_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_generic_plus_r20261002_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "first_generic_plus_r20261003_s20260925",
+      "strategy": "first",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_factor_r20261002_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_factor_r20261003_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_generic_plus_r20261002_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_generic_plus_r20261003_s20260923",
+      "strategy": "all",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_factor_r20261002_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_factor_r20261003_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_generic_plus_r20261002_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_generic_plus_r20261003_s20260924",
+      "strategy": "all",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_factor_r20261002_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_factor_r20261003_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_generic_plus_r20261002_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "all_generic_plus_r20261003_s20260925",
+      "strategy": "all",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_factor_r20261002_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_factor_r20261003_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_generic_plus_r20261002_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_generic_plus_r20261003_s20260923",
+      "strategy": "last",
+      "seed": 20260923,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_factor_r20261002_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_factor_r20261003_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_generic_plus_r20261002_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_generic_plus_r20261003_s20260924",
+      "strategy": "last",
+      "seed": 20260924,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_factor_r20261002_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_factor_r20261003_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "factor",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_generic_plus_r20261002_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261002,
+      "steps": 1536,
+      "wave": 2
+    },
+    {
+      "name": "last_generic_plus_r20261003_s20260925",
+      "strategy": "last",
+      "seed": 20260925,
+      "kind": "generic_plus",
+      "rotation": 20261003,
+      "steps": 1536,
+      "wave": 2
+    }
+  ],
+  "calibration": [
+    {
+      "name": "cal_first_factor_None_lr5e-05",
+      "strategy": "first",
+      "kind": "factor",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_first_factor_20261001_lr5e-05",
+      "strategy": "first",
+      "kind": "factor",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_first_generic_plus_None_lr5e-05",
+      "strategy": "first",
+      "kind": "generic_plus",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_first_generic_plus_20261001_lr5e-05",
+      "strategy": "first",
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_all_factor_None_lr5e-05",
+      "strategy": "all",
+      "kind": "factor",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_all_factor_20261001_lr5e-05",
+      "strategy": "all",
+      "kind": "factor",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_all_generic_plus_None_lr5e-05",
+      "strategy": "all",
+      "kind": "generic_plus",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_all_generic_plus_20261001_lr5e-05",
+      "strategy": "all",
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_last_factor_None_lr5e-05",
+      "strategy": "last",
+      "kind": "factor",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_last_factor_20261001_lr5e-05",
+      "strategy": "last",
+      "kind": "factor",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_last_generic_plus_None_lr5e-05",
+      "strategy": "last",
+      "kind": "generic_plus",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_last_generic_plus_20261001_lr5e-05",
+      "strategy": "last",
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 5e-05
+    },
+    {
+      "name": "cal_first_factor_None_lr0.0001",
+      "strategy": "first",
+      "kind": "factor",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_first_factor_20261001_lr0.0001",
+      "strategy": "first",
+      "kind": "factor",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_first_generic_plus_None_lr0.0001",
+      "strategy": "first",
+      "kind": "generic_plus",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_first_generic_plus_20261001_lr0.0001",
+      "strategy": "first",
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_all_factor_None_lr0.0001",
+      "strategy": "all",
+      "kind": "factor",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_all_factor_20261001_lr0.0001",
+      "strategy": "all",
+      "kind": "factor",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_all_generic_plus_None_lr0.0001",
+      "strategy": "all",
+      "kind": "generic_plus",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_all_generic_plus_20261001_lr0.0001",
+      "strategy": "all",
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_last_factor_None_lr0.0001",
+      "strategy": "last",
+      "kind": "factor",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_last_factor_20261001_lr0.0001",
+      "strategy": "last",
+      "kind": "factor",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_last_generic_plus_None_lr0.0001",
+      "strategy": "last",
+      "kind": "generic_plus",
+      "rotation": null,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    },
+    {
+      "name": "cal_last_generic_plus_20261001_lr0.0001",
+      "strategy": "last",
+      "kind": "generic_plus",
+      "rotation": 20261001,
+      "seed": 20260922,
+      "steps": 192,
+      "lr": 0.0001
+    }
+  ],
+  "files": {
+    "operations/schedule_retraining_runner.py": "8d29b7cb6bdc2ea9219e259734a7f034474c7c0dbfcd1cad620ab367b01e9022",
+    "operations/submit.py": "06ff0552262f9eface83c17a59794e1e8716dfae705a76315c8e3c334f0d8ee3",
+    "operations/schedule_retraining_protocol.py": "8e5af401069db8860434ca7cb8f0a8503002d6085116909521a23f1c46e75153",
+    "operations/prepare.py": "c74088f74238838afe61b94f0670a3653796002ef323530f5d7da19addd1db4d",
+    "source/test_rotatable_gplus.py": "04cb1c7523ef8387400394a79c3d66072ee73a6f053a39d5ba59091744208d63",
+    "source/scripts/smoke_openfold_adapter.py": "71bc491ea623dde57d8be9cda10f5534bb38bbb4e70d10eb1db7ce3ca931b8f4",
+    "source/scripts/check_colabfold_runtime.py": "856e501c4b8e3f2d0b5018e04462c4daca4391e9139f7a878c7dd81f4db1572a",
+    "source/scripts/select_openfold_calibration.py": "b1c25d97591e78a55bdeaa6c85a8096b86b84b984e5e43a4209fe963707e46c0",
+    "source/scripts/slurm_openfold_acdu_handoff.sh": "f07194da541094dd7978fde352e670f0ca389c6b83d7eb534ad9fe1e4c2cae6a",
+    "source/scripts/check_openfold_updates.py": "a28794cb0006c5075b19ffe0d6968043fee133d00cde9a0514ccac15b824183f",
+    "source/scripts/score_cross_backbone.py": "9bab92689a26c2fb5e662eddb450a1da311572b2e06353a6c0186512f454451f",
+    "source/scripts/audit_openfold_inputs.py": "35e8910c0e9369425859e73d9ac3f1b0dceee5887448fb5556cbc19e0bed8f47",
+    "source/scripts/slurm_colabfold_panel.sh": "5edd420012a6d638d57bc1c709a8912402eafcec36905f81e967213ebef3b681",
+    "source/scripts/run_colabfold_panel.py": "74d0729214800a42ff20c6bc7200e32ed87dd2a2309b6e711af1e47dc1dd6bfd",
+    "source/scripts/status_cross_backbone.py": "e20d6b9d9df709f5cdf7d8e5f495e53238e1a3a1acfde50d06d6e0cc89db588a",
+    "source/scripts/slurm_cross_backbone_score.sh": "46ba142d6edf35e9cb0d28b081669b050e41b6bf1323bec8ea214fff32f77358",
+    "source/scripts/run_openfold_study.py": "70316ce506e2caa255e35da18f4f125badf2015ad9cdf5a111eaeac37a4c9ea8",
+    "source/scripts/slurm_openfold_study.sh": "798087c16997061f93a2a9b8e5421800263ce2f64738c77cd8399359539aa1e8",
+    "source/scripts/handoff_openfold_partition.py": "89f8e297ec48426438e844bb2730d5654f644538642b4e6bd0cd75fbc9f8babd",
+    "source/src/engramfold/__init__.py": "a5a2d03d803db38845274b22c373ba030b413f82b4bc455134bbae0d240a513b",
+    "source/src/engramfold/protenix/opm.py": "93c96aa82987da57e91ff0692f2e8a92f8db575cb7262ba3c13ae78f11a98c2c",
+    "source/src/engramfold/protenix/task_adaptation.py": "0e20b6b72c65dc48054315681c63fd7b40728c910ed3764f69feee158d27bcf4",
+    "source/src/engramfold/protenix/query_only.py": "b601bfc15b61cf984b559a87f3ec6f19f3de7d062ca1c7a5d4ef4eac694e384a",
+    "source/src/engramfold/protenix/__init__.py": "47f2870d59e2215e049104277c35d896c56d8588358cbb0c8ec640bbeb3f31e9",
+    "source/src/engramfold/protenix/capture.py": "aad7a6bdb4beb8b7d1fad982466df5896c14a725160a4e0ff030ea7f8b3b4bcf",
+    "source/src/engramfold/protenix/replay.py": "8ee49eae45f81ed52c33e5661e144f384f1a2baa096dc34bf8c37800774c51c6",
+    "source/src/engramfold/protenix/query_opm.py": "960ed78b1d782391831012dccde03b5d091bd2b742c42ea85f33476f4a618083",
+    "source/src/engramfold/data/fixed_msa.py": "4bba608cc8887ce884fd0edaf64202903411d6512872e0a9da12b0251aac756c",
+    "source/src/engramfold/data/diagnostic_manifest.py": "8b9ffb2ce60ed6f8942a8d6684f93def54a9b98e8220d37611d181a1c81fba33",
+    "source/src/engramfold/data/expanded_training.py": "4be735ccfcbc211c8ba85df6089ea6e9c450bd84e950f57e99f055659295f2d3",
+    "source/src/engramfold/data/independent_panel.py": "604a57f678349a57eee0cc30f889d3eae56aab3f53cc82328d4c6388862a0afe",
+    "source/src/engramfold/data/__init__.py": "22bfd9213f7a6fc1e164cca5232f13d1b9e6437c4d55422549fb47e38b5b3475",
+    "source/src/engramfold/data/native_direction_panel.py": "ce3eb08afea410ab04702428a80a2dd3245eaaa6bcda4b6586217a9c0aa3b3d4",
+    "source/src/engramfold/evaluation/paired_panel.py": "692847c311b4e26a84e9d19c97db000e49cc257d8ffdb2e3b5f26a5bc5d98773",
+    "source/src/engramfold/evaluation/structure.py": "7076157867a14fe83743b2ffa473abf0e616d37ddc3589306e0d4c4e74a429a3",
+    "source/src/engramfold/evaluation/blast_filter.py": "c2dfc5bea43196c6b1be22bfa3d00ab8e9c1d3ac211231943390ba7b7ea5cc49",
+    "source/src/engramfold/evaluation/post_validation.py": "68a8400526904f27d3a534db831d9ad8a5a51c7ee2ecf221d1116139e6f70cf5",
+    "source/src/engramfold/evaluation/sequence_range_lddt.py": "3d795b264ea5ada79e3c2225a0a5d2a9451bd53a07aa9d6a9244177fd564dc4a",
+    "source/src/engramfold/evaluation/independent.py": "89a51725455e957aa952011091a413f0c95a96c5f67ff02d46524a40d943926e",
+    "source/src/engramfold/evaluation/tangent_projection.py": "f7ea46feccdb64b67ef0f27251fd49726fca710cb5d9e4c68cace18d29fd1a14",
+    "source/src/engramfold/evaluation/__init__.py": "765db729dd93d4c7195dd0db5df7732094aec4911e73e5cab9db55a0bbc4f11c",
+    "source/src/engramfold/evaluation/sequence_filter_audit.py": "4ea955f0d8ced7bc9fdf72657b4ce565981b51cc75553c0cfd24aa7a3beebe75",
+    "source/src/engramfold/indexer/__init__.py": "d146435e9d516e22944bbb8aac8abee4a29488926df1c4c88c0a2ba93723e222",
+    "source/src/engramfold/models/interface_heads.py": "f1a2fb0de3bca444c9a5db1ac6bc9648b25824a11ab095a3801ba7ab84b52d9a",
+    "source/src/engramfold/models/live_opm.py": "fd8ca8acaebb5c1bac181d68b97336275a57774a0ab26a0d481c513b7ce6f662",
+    "source/src/engramfold/models/plm_memory.py": "f02c771205d5d310518a6462be0dbd5156f127ea621ce90127c7b395b24a338e",
+    "source/src/engramfold/models/direction_extension.py": "4c29cd878bc3f13bd22961dc0f197337344b17cb9220090fc7a7fd3897fa0ccc",
+    "source/src/engramfold/models/pair_predictors.py": "e5c49811116c7137902d9540ca70a07e8d0f179b6e33d248ffb3ad515df2d131",
+    "source/src/engramfold/models/residue_predictors.py": "ce98ec03dfe15c13f42305b78cbc7b9e922a36c3363eef9221b8b6dc474cb5f2",
+    "source/src/engramfold/models/__init__.py": "f2da674cd0498928163c73920ac33efa0d0e26b305f6d1abc89b5565ad3d879c",
+    "source/src/engramfold/models/native_geometry.py": "3173f554ed252ffbd3f1d5a261e91155a157cc41bcb24b2536c00f6bace0abfe",
+    "source/src/engramfold/experiments/analyze_direction_extension.py": "ad3c6c79e098d4b66d59a95d473f08604c8d977d3e84a1e6f8216aa8c6c20c12",
+    "source/src/engramfold/experiments/analyze_independent.py": "59a4066017f6bcbf044d8e91d50c5249bf9da371768896b43891bb03e0168680",
+    "source/src/engramfold/experiments/evaluate_independent.py": "26206c5857c46bd8346d5373628e65c24fa0f55dd911a5beececb9cbf584397d",
+    "source/src/engramfold/experiments/finite_shared_response.py": "f7095e0321e229c214699a21eb753c3fbf88ad90eec4fe2187914bc3559b0f24",
+    "source/src/engramfold/experiments/extension_runtime.py": "c7ec86ef4b445827c24f6a409a872ba731e9d62cb26fcae4c8efeb3fdfc42f1a",
+    "source/src/engramfold/experiments/gradient_runtime_v3.py": "72264571ee5508d3601c94e7a2a6cabb5cf9e7e4f571fff49b02db5a879516fd",
+    "source/src/engramfold/experiments/learned_direction.py": "a65b9bb833a97f755ee520e2f7f8289041c61f28108020e6da4189558726955a",
+    "source/src/engramfold/experiments/cross_backbone_protocol.py": "620eee78dd54c6f0c7f86ba7450ac080f037023dfec1dedd06c0e9985ec6ef68",
+    "source/src/engramfold/experiments/train_native_geometry.py": "887d9ae76e41945b571fd2b518934905fea43f158b267cde1e3ad98ab762c842",
+    "source/src/engramfold/experiments/fresh_interaction.py": "78872e84e1644e168ceaa32267f5ada0837ecd883e0266b1826b6626d183ab5b",
+    "source/src/engramfold/experiments/schedule_retraining_runner.py": "8d29b7cb6bdc2ea9219e259734a7f034474c7c0dbfcd1cad620ab367b01e9022",
+    "source/src/engramfold/experiments/evaluate_interface_control.py": "eedff98100ed3db25004586f2b0f43b369f672c46726a5fbd7aad5a89c9c5adb",
+    "source/src/engramfold/experiments/evaluate_native_geometry.py": "36088699bc40622fdb5d05365d093ccc58e95ff022f291e7d4f4a57f1051d1a0",
+    "source/src/engramfold/experiments/finite_response_statistics.py": "ce77b19a0c6b44b2093af47599fd5614c7a82a4515307f4a185c2ea7f27357ed",
+    "source/src/engramfold/experiments/export_extension_cache.py": "6190df70cee1cb1d74dfc8d638ba6441e07d41777e3813c5e23a836aa1d86687",
+    "source/src/engramfold/experiments/gradient_runtime.py": "8c4308b39b8c71c947dd108b1483da36d21bf1f48717ca6c17aba48131555172",
+    "source/src/engramfold/experiments/train_direction_extension.py": "ec09903a5d3b9f68b507ee48c2b303710e0f19bca485c693a6d5aad8b71be2ef",
+    "source/src/engramfold/experiments/smoke_extension_geometry.py": "d7ddd0e9c12dfad547c95ecd7b34ef6162251f55b2eacb55602b110f7ddb5c78",
+    "source/src/engramfold/experiments/train_plm_memory_control.py": "207477cdd1552e5a5254c9a7c2eb373d0ce76c5801597fced02e60b85f58d8d1",
+    "source/src/engramfold/experiments/audit_memory_addresses.py": "e6727673035f2407a95ac0bd70e6b142381ace79d96335e2cb22091e25f1d8bb",
+    "source/src/engramfold/experiments/analyze_interface_control.py": "4f8516110d1e0d95041b35e7bfcd3d54cd418068318a4590aaade2479e8fcb3f",
+    "source/src/engramfold/experiments/evaluate_direction_extension.py": "3bbe00545d76f1f528838553a7908ff40ba5b7be77a7c9a68968b326b5c32d99",
+    "source/src/engramfold/experiments/evaluate_plm_memory_control.py": "41a7e80b9f58635dc9a27b1555527739aa7daf8c774153609880897710b1c95d",
+    "source/src/engramfold/experiments/train_interface_control.py": "37aef30f7b067a4b2abe48b3e8769ffca8e61e0d9ce0bd1bdbd030dcd11677a6",
+    "source/src/engramfold/experiments/differentiable_recycling.py": "7760dbd87ba849b4f149b891eec97c75a012ea6970dc833e1297dbcb4a91fbce",
+    "source/src/engramfold/experiments/analyze_representation_control.py": "802333f0b0e0c7cb58c394ba79931331712a22211699c013a824d012965a3a3e",
+    "source/src/engramfold/experiments/analyze_memory_task_phase.py": "da6bdaf586e3016050014b90864267817f9140bd51827ec7cf375a4d527363fa",
+    "source/src/engramfold/experiments/interface_runtime.py": "2863ab1cbdc9b3a9bcb746b5a0d34bbe955a05ff896b0f3469b2cfad7082269e",
+    "source/src/engramfold/experiments/audit_structure_baselines.py": "6e2962425777f5a68002bcf47366e1b0ba7c80a76bf4c2c778470e448d072b6a",
+    "source/src/engramfold/experiments/export_esm2_features.py": "2f00cb885aa9fbb81ebd5f293585177def1a22584cc66332424db2f6ca2114da",
+    "source/src/engramfold/experiments/precision_probe.py": "9bac850d9884ead0119242821dd99a946981d3fc0f5c245eef2828b5bb57ac6e",
+    "source/src/engramfold/experiments/analyze_native_geometry.py": "cf350bbc6373c54445b6affc02cac488b36f65d35cce3ea37c80f7a6e6d84f5a",
+    "source/src/engramfold/experiments/analyze_residue_structure.py": "4ab1a8fd1733dabe1731b4a41cc1d12e8c313b981ae3fd055c3a35c6e2b4cc3c",
+    "source/src/engramfold/experiments/inference_read_guard.py": "40c146158269253cbc76d38d1dc41f182c5b3427cdeaf682dda3c6a9569d9453",
+    "source/src/engramfold/experiments/evaluate_stage_a_v2.py": "e0bcc2d662d218afb98fcb49367f44231ba8eea1f4740439b19a448ac9ecdea1",
+    "source/src/engramfold/experiments/residue_diagnostics.py": "470ae4e372c7523ce48c081df48a9b9d62959915d1844abc38aa8f21bc9ca3fc",
+    "source/src/engramfold/experiments/smoke_interface_control.py": "530c8ef93405a1d34cdb01b20c10e5246ce98a343af6dd50d8b3fd7d9fcd9da2",
+    "source/src/engramfold/experiments/stage_a_replay.py": "74e5e5c52aadaa775d475823c474e719a625731df9e3f2109568d1d0d3d5e382",
+    "source/src/engramfold/experiments/train_pair_student.py": "cd0132cd7ae867b147276b9abd1142734f89e369a1d7c445095573c6b5e29c94",
+    "source/src/engramfold/experiments/__init__.py": "79556b168e7ef7d5472016ec0748101475debe46d4c971dc6fe3dd3c0b70ff62",
+    "source/src/engramfold/experiments/analyze_residual_scan.py": "c49a63d7d440aaf078c4edfa70146e1f9fdc68463afe0d49561523a89e4fd602",
+    "source/src/engramfold/experiments/analyze_structure_control.py": "b2a79ddd2e11b68a862613cc2a0b2563e89cd88fbe8fbbab11a88fe27990c177",
+    "source/src/engramfold/experiments/diagnose_residual_structure.py": "ea13e84fa809b0e30655414a09b10009bec4eda906561a68a4e0b560777e38de",
+    "source/src/engramfold/experiments/audit_native_direction_metrics.py": "685c7d137fe88d394beca3d9ac2727339380a14dc60a0c06e70f64d331708eba",
+    "source/src/engramfold/experiments/launch_residue_exports.py": "d3a01c58d42f35ae7446dd2bc184e62bfb3448e912542526e3c105f3dbbc8963",
+    "source/src/engramfold/experiments/export_residue_targets.py": "88c31747ee85df83d8a7dc50d54d987a5c7cff9fe632a6f364490d7c217104f6",
+    "source/src/engramfold/experiments/sequence_feature_cache.py": "98785b23d77c4efdc79b4f64b2d1e297ba7b4684030eb0ecb3eeb304e12e06ff",
+    "source/src/engramfold/experiments/shared_transfer.py": "2080db4b73b5bd7a773bb744f7a3c4eea4fd0405e23bfdf99c9042042d3d837d",
+    "source/src/engramfold/experiments/train_structure_control.py": "eee7cc68b5fde90cb7903b04db88ec81fba618eef18a65fc080245a236fdbd5f",
+    "source/src/engramfold/experiments/stage_a_oracle.py": "6b6527879eb2587d1fec5e81f89ee03241f4a537b727595044a7ddc6a6b6b71e",
+    "source/src/engramfold/experiments/schedule_retraining_protocol.py": "8e5af401069db8860434ca7cb8f0a8503002d6085116909521a23f1c46e75153",
+    "source/src/engramfold/experiments/analyze_plm_memory_control.py": "8c680182f2fa93b82dafbc6d879e0eefc701eaf31f90e4ab8a16ac1680e18404",
+    "source/src/engramfold/experiments/audit_post_validation.py": "1dd7376fd93ddb892e2498f1917531ff12794b281ab755c65efc90693757006c",
+    "source/src/engramfold/experiments/budget_extension.py": "bbffbc4d81c9a2db7b2f26893ee44123d5bcd8e17b0d4173b64b472a5c5dd95f",
+    "source/src/engramfold/experiments/diagnose_residual_features.py": "9d5162bd24e04f516b711d5c695032ab41faca224dbb4fcf163313c9933ac5a2",
+    "source/src/engramfold/experiments/evaluate_residue_student_structure.py": "9cb5c829a6022d3893df09a75ce796f29b1d71c2172f8bb74b628f1fbe4d6bc8",
+    "source/src/engramfold/experiments/evaluate_structure_control.py": "f83ce08b5e2922c8fd9dc5fb1bd996c169c37ae30810a7f7bb5d846f5d3d2e16",
+    "source/src/engramfold/experiments/export_interface_cache.py": "70d834a24ed0bb9c1f4ad9e0be463bab461981142b33faae1110db6653b2acef",
+    "source/src/engramfold/experiments/export_native_task_cache.py": "e24bb3eb0b3137c1be99f1b7f19ee83a3e22ae36fce5b1388ddf7e466c15dc2b",
+    "source/src/engramfold/experiments/launch_stage_a.py": "8eef8961f439527d1997b9a93a4f2443d567c086d3be4c5c2de21fe2c113564d",
+    "source/src/engramfold/experiments/smoke_native_geometry.py": "f029bbca08c6558618f02fef9f24991ef1f27c8f6075285c3e4b3d0e85159a29",
+    "source/src/engramfold/experiments/openfold_adapter_runtime.py": "19a97fa53c143e80586a927005e01039d580fa12be68684482f2d7cb27f5737a",
+    "source/src/engramfold/experiments/train_residue_student.py": "32c91a57c72fab37e8e6677db95b29cc927d63404de9a5a6fe308b33562e6ed5",
+    "source/src/engramfold/experiments/analyze_pair_student_structure.py": "47d3288b92df072943c1be4d3329e24aee5c398f2e672d2080f387c430e9d1ba",
+    "source/src/engramfold/experiments/evaluate_pair_student_structure.py": "469d17023d656a433df3f9b138eb879fc12c0d32710e659b8fb23ba33dcb891c",
+    "source/src/engramfold/experiments/evaluate_stage_a.py": "affa125e645c997508777316cbf04bc8b4be207c223c03c354a6e5696a7afd2b",
+    "source/src/engramfold/experiments/smoke_sign_equivalence.py": "4db80d1393b9844b44a55d215304daa25370ffa9b46fa51eaec49c30778aa768",
+    "source/src/engramfold/experiments/stage_a_oracle_v2.py": "5323c136d81b0e39e5db1df52907888e4aeb9ba1f8d775e4cd907d4f87026666",
+    "source/src/engramfold/experiments/structure_writer.py": "3153b687cf1da49b67aafc8c8d5194c25caeb28abb27cb50d3735fe4767133bc",
+    "engineering_evidence/smoke_0.json": "3aa6025bad369105ba8fcc9e4fa7e54c2851f744f134d428880c8a2cbc8fa44b",
+    "engineering_evidence/smoke_1.json": "50bb74573ad32b799138cde8b16c1a390c18ea7f1c3878517c48e87211f8d47d",
+    "dev_sequences.json": "0b7cced1603a3a0483b1acfc06599e9b1bb090b585da552b1496e2757fbf69c9",
+    "train_manifest.json": "d09cddda61912767de2edcf77676e2cee2f8114b0f2f98ebcc47e7cc209b882e",
+    "reference_manifest.json": "d9c1efd90d8ff5bff448b10f7789bb5ecd607227be5d5b34db18d67b88d0f036",
+    "dev_manifest.json": "c974d069b8369b8b1c06fdc1dce8e7ce288a9712af3bf866b4a7abc28564d50e",
+    "inference_manifest.json": "a727fcff34545113598be32ef0fed4aeef597be0f5a10569d544528893a240d7",
+    "protocol.md": "f17937efb370ae1c04c38653d85f52e8113dc0d338f2c31129d17d4f2de1a625",
+    "job.sh": "c8b6a78e9bb4065bc38bc78f420f7604c1b10ec4b40756378ffb03b29cf59556"
+  },
+  "data_hashes": {
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7hln_A.cif.gz": "cfed12ca440e9a1f5118902a726fcddda390a1d51e4877666fe4cd6f71493adb",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7thc_A.cif.gz": "0a419b77b3c87c68793d103d6d7e7331693000f5c7e30ea909b5e9c0259d281d",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7h0m_A.cif.gz": "685614af782ea2b58a86088dce99927f28a3d98b19dcd896c0fa1337bcc60d0a",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5ppf_A.cif.gz": "fa0b4d7eddfa1fcbcf23e302f593430b3921bb13884ef75683108e15585ea75b",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3nxo_A.cif.gz": "fd7e3920d4af2d62e53b1e92217689d555c981717cb972f19c43194dd80fce7a",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5cn6_A.cif.gz": "86c6725f9666968bbca6a84b3c80413fddf26837d3322086e2794e6c30c62b47",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9uem_A.cif.gz": "20dda04cdaaaa54c6d66f6f881af5e0e1230bc77793b78ce99d827cbcfd43346",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7zge_A.cif.gz": "47de787e8a0d27aade851b8da6240531b70a28da95ba20f363f2c4c9cc826d06",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/8i52_A.cif.gz": "d898fea541abe2e0e1da4bc3fe8a1dba7430f074b1b838f87a663fb7f0eaed4d",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1h4g_A.cif.gz": "8983ddecea082654a77eb958ee90daae7f064745d6f878fc3604c78b8423b639",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3bk5_A.cif.gz": "c1d312aa2a29e782dcc076053197abcf24072cf77baccd0fd874c2d99014eefc",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5qgt_A.cif.gz": "2bd972e05ff80f5b3aab2dfd21ba55e60e500b71831fe49b2058218f245ce37c",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9zsc_A.cif.gz": "a18cf818088578543477688a812b955f9b0243fa414e194c351c7261a2bf8f9e",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7w44_A.cif.gz": "2afe7c9710ef1209c4f9be24ae37576da30ab0a0d23f12845d01868510eb58b5",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7mro_A.cif.gz": "47c71fb5c1e57dccdd3b1c4ccb40c22c525307c88cfe47e11c534054fa6f4dc4",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3zxy_A.cif.gz": "dfed86efa98344467b1d7fba94db2e9a85117f7f814dabfd472dd68c93d55e82",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4g7l_A.cif.gz": "646d7aa7abf2e63fe495597806236f59860e653feb4508fcbb3149fa220e87ac",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1cnx_A.cif.gz": "a896214714b46a5615bc1960312975bbe51ee1449cab5873f34a92346cf01d3f",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/8yoa_A.cif.gz": "bfa4fcdf96c59354b2b2497837285f52d009c12a21196b6f64bc9ae161f74952",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7qpm_A.cif.gz": "f0b395aecc5fe35a6ae36c5f4171b13d4856e67e4386544c397a4e8ed0010278",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9q8c_A.cif.gz": "aa002394b91db8b80558101618e4e5bb655733c5748a7dde8c74bf0a487b281f",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3r0t_A.cif.gz": "44c906e15bf7b544bb643875f5b29727ac08a9fb6709177f5554419813a66410",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3snl_A.cif.gz": "fac3466ff960fa8c65aa562d6ef0dfb2ebe398d3248f638aa166fceff27d9026",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5q9h_A.cif.gz": "2feb445d225cf2180a83f38d471a09a16bc01b69db74cf58b3d533d789c92ef7",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3k10_A.cif.gz": "75aea8c03b7077460b4bd9daab2b5ba5a3b209792dd9c9c96bcd56473590b712",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1zyo_A.cif.gz": "8c94af4b25d0b303c5427888d0712b0d813681108ab6efffbfa179659e78c1b5",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4oy6_A.cif.gz": "3d7334735ef9e2781aac05b190d5599041f0a397d0ee48681be4421e5baf98d7",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3eye_A.cif.gz": "e3486fbdcff98b59a5f051d54b98e1e16d542df354139135657cb97e19d77dd6",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1ukf_A.cif.gz": "e542466f7e2d4c341b76fa4729d83af13f52dea343d6389ab2a11a4fae6a63ea",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2o6r_A.cif.gz": "462570ab1dc0f63bb8588b1cf378bb5f4c7f2ee49b0a9a53565d7ec725f91f94",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6s8z_A.cif.gz": "5db5bf7e15ea1653d127a735269ec2a45491ab83001704c5bf81628b2329298e",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1iwm_A.cif.gz": "0a6a877a6d510613fa7231eb82561abdd652daaf7fc25618a5e1a4df04c623b7",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2rj2_A.cif.gz": "4d29347e25c48bb2d032f4a468e32a7a52e5f8b18e46ac987129075f3e2d8008",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2wo1_A.cif.gz": "d0e502b09aeed857aedde0d27d80d383529f9ddf4902203a76d2ddd588058a21",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3c80_A.cif.gz": "9dc9ed022059983f18b1c9eaf33bf7d62aeb1ecd13d430ed83854af5668aba60",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3gp6_A.cif.gz": "117247c3ecbacf0cd239cee644f67e308fd944491d8193a0081e7aea321e8827",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1dy0_A.cif.gz": "a9466effd92487d197a50b9a64c4ff32fe723407e88c21f47e274e88f4e531d9",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5nua_A.cif.gz": "1f0634d30d82229a34388c3cadf1096697c93e469a316aadf1c4de9a1eaeb63c",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2vnq_A.cif.gz": "60a2c19b477b41e92f13e72930bd2092adf5cc6e244b96407f4e94a16959809e",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6osx_A.cif.gz": "9952e08f1b0ec5b1a324415f3fe593e4dc03422434c948ffc070a6c7218a5f2c",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2r16_A.cif.gz": "1e3a9233bbff9cf2c8a82b99fc2c454a57ad923a007ff192732a92e182db7dd4",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4b1l_A.cif.gz": "4458d5a437eb6291aaee8f95b867c9cf24283b33b336c169a9da0d9b40b09519",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4zjh_A.cif.gz": "5ebeea84d98bf4a18fabe9117d2bae42e184aa538de83c4890b4ff1cf4e88cfa",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1fjr_A.cif.gz": "3a49bd34eba906eda46fc181e1479f694e7a0a52c1cf375d9fa0393844f66bce",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4z82_A.cif.gz": "108fc9fb2ff6174a14488289a7fe6ff4af42f34eab10888011890fe1a8396d1e",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5n9m_A.cif.gz": "c3fbecfc46cecc3402f3bcfe700a32843d07c696f663370dc060289c3ad913aa",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4c55_A.cif.gz": "6d596a3887624b84cc1276169e140b6c9712d4efc3a16c4415d746a4ca32815a",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4ado_A.cif.gz": "b5a3cf3bd675176c6bcb024a2396d95b79c063548006c8c896cf2f0b16f1de23",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5k0f_A.cif.gz": "9fab7eae94658261d5e3c71e32a04dd9cedea1a917c4bffb3ef192ad5840a077",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4kdu_A.cif.gz": "f5b1082faf816e895a08e202158bc8fe1a9d99c60728148e24feea794e6ab841",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4nfa_A.cif.gz": "213b338b5d9189e27720526791600b1231194a7fdc665a4f1ec5a4aebfc19307",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1w8g_A.cif.gz": "b07a7cc49f0443c189a78a9311e281a39e848b020591eac66e6576b682cff67b",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3fri_A.cif.gz": "89e77da2a681bab03936b1d37d51b5b0f17f2ef817e7ddbd3793337ebbb165ec",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1qy3_A.cif.gz": "72ba32d3e3281d13e32c0656302f7d9e4cb642f1c281785e316a322b985fc007",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5xeg_A.cif.gz": "2615f0faf5d497936ab02059da6e85490cb2e36c1e22093dd37ec00ae7195fde",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3rlk_A.cif.gz": "912b1ee72bea43290f173b97af87b4c839022db73bfbe5f7cea1d0c3cc0e3716",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4nun_A.cif.gz": "049a311c0fc96c8b60c287545d161b76f0db2dd79b5f7d0888f19e3b926d0585",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4emr_A.cif.gz": "037f9d9c1da3de132f8e3219004c44ef87e58262c28900aeef34bfb1ae6a5a79",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5boi_A.cif.gz": "0829905e3cf0a9a249b9bc6a2ae99591b65e8f92226746435b6099bbce43fad7",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1uzi_A.cif.gz": "0072221a55fc6e59971a87d3e5d37954006d872bc5a2d2176d547033ab3158d6",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1tkh_A.cif.gz": "414d202e26f3ade2d2e1158a9fd7e391ea401ee0b192e7e7b91229a978eee2d5",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4omk_A.cif.gz": "60fb2f531731f9d852442c395011284f3f85a24924401ab2b1a95b3668f8b9c2",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2zy1_A.cif.gz": "a1082343527905eda168934e5d1dc3825f9a2575dbe55a115050d6a082c4ee97",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3zgc_B.cif.gz": "08b3b7c682a275794f965368e5840a4a61882c68c2ad6c33be8be23389eb69e9",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4g8b_A.cif.gz": "9ff72e4feee7d3aa9bdb5310f0a552e71d29def37912978a67186cef781fdcb0",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5jgl_A.cif.gz": "490e73a504aeeca456d7d1c9a199b1866b36abd1779c0cb544cfd0d345aa6139",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6gpa_A.cif.gz": "43c2a25268f18e8fb130932d77045f4cf9c4fedb3491acddfbb4233b030a27b7",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3lid_A.cif.gz": "c2c2010a2a7c15cf3705b7a9dde787467df1d01992c3715e7b90805d73ca70ab",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ezo_A.cif.gz": "78997c6e04a30ed5895f40bb741f9c584547254d63a4702d06d702fc67263347",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1wwl_A.cif.gz": "ebf758bdff8bbe5cf08bc9d5c35e79696ec6feae2d01424af6ca5b1216dc3c0b",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1v93_A.cif.gz": "70dc9dcbb321aa8f38759b5ff4ad2b44c00b498192f2922f74d80564156deaf4",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2nsd_A.cif.gz": "2949eb6fa8f28f87ec634132eab38146ad5b19786b51ade38c419a97aae27a98",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1arb_A.cif.gz": "5b23d5fac9167a559cd94987b0ff9e6a1eb2a660072bc62b8535f32cb83814f9",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1gik_A.cif.gz": "1a233596f2463130f914b4394aaabdbb31c139b58eb64980e269be72620bd839",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5axo_A.cif.gz": "e385a15f7a86a2d432da477a1944fcb507e082a3ccc612d3ee4b8a74afdfa4a7",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6mrf_A.cif.gz": "78f0f2857492d8abe11db626bb2dbec7466baaeca586c046a4d4fce14cb92134",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6k7z_A.cif.gz": "1c0c802fd72d2680ff559800928ff15f2e8670cde1dd76d15640ef0caf1706de",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9abp_A.cif.gz": "721ab987c1630aaa7246960f7dc52e02dff0a721c898285249eb6fc3da2aff74",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6yec_A.cif.gz": "c57afa29bb16fa20eec3f687d2ea8476b7bbb2aa308f437428cadb5d40b6dc75",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3wwc_A.cif.gz": "109157c4691e2bf0833861d9cf4701373a53720ff0ae12598e7bcc1a2df9af48",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ly0_A.cif.gz": "bd4fa6bcc0c569847d52e9504d42778d351e3bf8514d01d2f16837e2711cc1cb",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1xix_A.cif.gz": "e36695c69bdd30faabbcee3ffc205d956c9f96467b511b9cf83cb784f587bcc2",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6rrm_A.cif.gz": "b2f4620d44f64499434edad710e664fe3397504d1e10aa85b39f20165b1b4694",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4nxt_A.cif.gz": "e0806bba815d2b3f9404858a4b8ee506b164e30fc6715c1ae6e3eea527aeb230",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5dtm_A.cif.gz": "fa321fc572d02eaba6b65c9acf454e6602fd782c59b895b27feb59a0f7f2e084",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3pvk_A.cif.gz": "3c56230ea04970a756464ce360af70c06dd68094942a419c9b5a5fd104764402",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3wwx_A.cif.gz": "392add32373bd7d4f276ef6a5606e9085f9fb3f31fd8c801c7d66ba80495a3f1",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ud1_A.cif.gz": "c3b3fa1baabdec2272d38c3693e6bbfda61bb92d7a7a3aade805b74f1c55c86c",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2v7k_A.cif.gz": "bad78d9f92c6936ac08f8ceeb2ffa97d5b9350156d78a2fcaccfbd7f22a1a874",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6uqt_A.cif.gz": "ffb83f446082e4951bdaf4c385b1aec88a30026d3387e82524ae94ebe5a53880",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4e2k_A.cif.gz": "e40bce77c8bd5e50de04a8c6a85f1d03668452df0e5ae1ef780f105c23bd5870",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5hgr_A.cif.gz": "a749840b224240bfa93880fce5ab52cb9d57fffdb9cb92fe8005aaa5abe68526",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4b5n_A.cif.gz": "11c4ad0ce57dc842d47ecb88e7df19c9d1e6827a457a1bab9914f6b053f5df41",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1d3k_A.cif.gz": "9da202fb7604590e872fb837f3d98d2cc79bf439eada5c3c81a7d77c7f3ab703",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ams_A.cif.gz": "bb4e2f9bfe0670f6f5b33429b2fc6b7647b4197eb9a0b74454495d0bafa542d9",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1z7w_A.cif.gz": "77e7a1a3a0aef62e8a9686c1f367d91ab0b0f82c9b86422e373064d3c12e0ffc",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9qdy_A.cif.gz": "22f402cf909787e74ac29a72a01f79ce53a1dd3cdafc7a565debc8d4fce705ec",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1yz7_A.cif.gz": "a6b8a827c430d8867b4dd293aa892d255f8487bd961083030f8392fa645abd93",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9f4s_A.cif.gz": "135886df5a0cc0774552d25b65a05fa298d55d6404aaa9358d32f57684e270c5",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5zyl_A.cif.gz": "27229d33804b77a02eab9a74d6db25d535924b48a177cbecbb90c31fc605d168",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/8w7p_A.cif.gz": "d1f31e705424eb25f9b2d6e4d78dc5843b64ca1b6f80f7116f5ee1935dfc1ee2",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5me4_A.cif.gz": "7ff0f3a154001efb191f89679aeae6067d8b82e5d804b523d764dbd9287f4bbf",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7f7m_A.cif.gz": "4fe9b9f3689850916452aa5125f7efcca131305c4e212b1e4da5a9fe3856a96e",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4anl_A.cif.gz": "ef8c2c58107e4e64056f92a7fe7a226001a48594521537ecc37fb183774b8062",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/gx/3gxb.cif.gz": "32bdefb0d6d76df44602720293333744e814a0c6f9c94f2e300e6176566a1513",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a8/6a89.cif.gz": "875b3c47863724fd392a16c835216eaca284ea161aa39b4b1e505bcf1bac567e",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xb/4xbc.cif.gz": "3dbf5a51124e9b439ad98d5568ec721999c7eab6e37390117db37b90c2683816",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/q3/6q3v.cif.gz": "982134816df5144de3806a266f32779f2367c78cc3a51faf56f94d443354e9cc",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nu/7nuw.cif.gz": "0e9372c5e69d470f74f401c1376609ae764410d177f0b53fd0a1c369dbb8e6b7",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ob/2obi.cif.gz": "a0f63d337f6f5837e4b507a387c7c56ef035cd0c129252cc2311003f3c1369ab",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/qz/3qzq.cif.gz": "e34b2577b615b0a0b4d830c7b4c7db35a0957f81dbe28fa7276ab11f23186be8",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wo/4woh.cif.gz": "f7a6f98ecacee3e559ab350d856f8450ce1af6f0f10049cda8bf6afb081f2936",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nd/6ndw.cif.gz": "69926c827d2ea7c31f2d7fcbdbd70f12e6b707c931d22ef7c7426082bf6c5edc",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/hn/3hny.cif.gz": "f2ad02f8a7d0546d0304b6a1869d5f96176fd17ceb1b509dd0fd9b2a0d9a9b50",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wb/1wba.cif.gz": "0fe72909ed7eb0cbe0c1f1a5ee7eec606cbaf97fd20dd6dbc3f39d854b4336f9",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/yn/1yn9.cif.gz": "723059038d1c79452b297f89a222387894d11aa46cd6b5db1d721057bf6cf131",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a4/1a44.cif.gz": "0b407f1cb8c46cccde9edc20ab9a01ce7bb0c96ebea4aa44f5b7bc5e57ec5c15",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xj/4xje.cif.gz": "b1e6cac08bb4751929d22c1ab876988c0122b3c261bbc1ff7f737a27a33f3797",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/cc/1ccz.cif.gz": "7ece6540f441511fd02821fe7c4b28a53805a68be273c3a379f8d44096045a0e",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/p3/2p3k.cif.gz": "b02551c127b58d39d70f5e36f1e1c2826534fea46a405237eb6f8f448400aa25",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ib/6ibj.cif.gz": "b6eb84296d56c8764f8c669f3358a2419ffc4f2996345b7250dc96372abb8c06",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/j8/1j84.cif.gz": "80e34499debddb99d43a82d00875115d28e2812d147cd31a1297def6776c0c24",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/es/3esx.cif.gz": "cb4f5b83401ce831f767e090cf4e291660be77b96523a9e59b195c2b46d24adb",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/p2/4p27.cif.gz": "5ef0c15a89954c7e45b3384316c6de27a1ad843afb14202554f2554f9271d6ab",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/fp/6fpc.cif.gz": "31c5c14220332cacc3da7e07d942f15397e5204a82e6b4764e33406cad177c66",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/c8/7c82.cif.gz": "0536634998d471320c2da2091a418f722b85d19177099f8dbdd52e883f786132",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/bk/1bk7.cif.gz": "46645e323bae7d6ef39899997eb297a955d8216a4f60434ea7fc9ab8bdfad237",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ht/6ht1.cif.gz": "ae4aa35ed52585a12519807205d48f9583223b4bff48671924727a3cca46996e",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/d6/5d6p.cif.gz": "2860ef5bcb82e20c2a10e4e4af188751a76dd1f1b0cb6b955d7f2ac97fcc925c",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/lx/1lxz.cif.gz": "6e2006041ac5fa4531547160969e74a2914a168d754db20218c79025100bbebd",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/kd/5kdi.cif.gz": "9958077a1f3f8a861024370bd010aeb8f346ad9de6101506463dd2a31bac0849",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/np/7np5.cif.gz": "d48ad51ab6cbaf666f7177d4614f9a9c5b3f49c0fef2c4d39e3806572b6ae727",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nl/5nl7.cif.gz": "f1e1594a052c5510b1cbe7fb11bc41be1ea7aa55cf34f56b69aa2ede8f62d1b0",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ei/3eii.cif.gz": "39d7af0abcb169562b964ed31cb818299036c56efa21ba670afd7df0b461938b",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/f9/3f95.cif.gz": "471e941fbd64cd7894da175891198e4effe4aa566cdf3cc476e988b1a5d94ce2",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/zj/3zj0.cif.gz": "a19e46f732a7c60c1acd5e6480762f84470aa71c3083e8d3a8a8fad788868abd",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nl/2nlr.cif.gz": "43d2f7973a7ffe42d42634b7956758314c62a5c5371d1bbb812bea1f706a0959",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/m1/1m1u.cif.gz": "acb5a9bfca1be47a3a22fb26601a89d70c549262c54cb67c3049d212ed02d974",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a7/2a7m.cif.gz": "d199be88df0a2310dc777d0f584e792addfd659cd6f9168088bd03f96e2ad559",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/n3/3n36.cif.gz": "9ea0d1d2d71fe0b4a765911edfe6da09ebb58548d8e6a4379018de6a4e79cfe4",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xa/1xa1.cif.gz": "943272838b8830f528dd8e3e38ac292bb9a8378537fa0fa9702b6500065462f9",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/j5/6j5q.cif.gz": "d4c8269da216b598543d204b321a4a54bd7e6dadf7acca6156a8d136e0490411",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/er/2erf.cif.gz": "5a9a60ca1ca7c2767953adb8b39d47337cc3978dd71de6cbb1c57ed5c76307f6",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/dr/4dr9.cif.gz": "7eac779a536d220ae5b836ecda2b434479c60a00954c01f08a7187e0738caff7",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/h5/1h5y.cif.gz": "0b77b22fe091601748368c031c846c8a2ecd7af340bbfb7a1bf663e20e3da207",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/g6/1g69.cif.gz": "eff228c2a8c91795f2c5dfd5b2ad4034e1020ab8561ba86fdd534998d797ca8a",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/zy/4zyx.cif.gz": "6513f8fa2d4f41cf0ae9737c8d111404700dea39906c7b5349307b60ab37e3d9",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/px/1pxr.cif.gz": "8093f829118f6c1229c2ea251a9fe40ca9fb975f117494c5c3d0f295a281b5ca",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xr/5xrb.cif.gz": "12e75b2135261f8f8a8ae1526e2666296aa83464a3e637c776c767a72db03d39",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/f1/4f1j.cif.gz": "74c347647d8c5414db7bf0b5ec18a631c15f109258d218998ffd7f152b2adfbc",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/du/1dua.cif.gz": "8c3a45db6f102addab27260f22da5112512e530bfa4913abb41ea6280a6f5923",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/oc/2ocg.cif.gz": "68e5ed70101dc669ea04d27b2c89a6c9946aab8faf7cf1c04decf4b6a585c6a9",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/vo/3voa.cif.gz": "87c16adcbee3fa75f6e9e619703f1e8889074d53953db7e9807f6d512f4e7cdc",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/c9/1c91.cif.gz": "7e051c1b90ac887853491e71ce56383d7bdd1fe8586070b255259c7ca53cfbea",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/f9/3f99.cif.gz": "1f7e721de97a4f5fe2ba114677eab7f4225caa65b4d9c26eeeabdf389eb9a928",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ah/3ah4.cif.gz": "1c714467ec88223e936c23783caf083f940778543437527feebbe44dd1d45e23",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/bw/7bwv.cif.gz": "144ba9beb352a34c9232673169fc88a58b6e9ba9989e4c690cd10bc65fec8945",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/q3/4q3c.cif.gz": "3e75c4e84b3f086d3a946cc524f8e873f5778dc5c54dfb6fb6f900bd72e49fc5",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/vi/2vi0.cif.gz": "cb2a8506b67b9fc175d002f826a956b01ed0be8c908f65b0f0af9f83aec45269",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/n1/4n13.cif.gz": "e9dee297bfedc641669a9b70d9f8d85a98c3b822d19d8f9e8a755834da644709",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/c6/2c6z.cif.gz": "187f29220b94fdf96ec016b398bd59e34c2865f8c77660e78e78a738e6c7a908",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/by/5byl.cif.gz": "54f480f0ffe7bd919e1ab7d7ae69141404c7add3e2159e447787fb853484081f",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ce/2cex.cif.gz": "45efe6d9de88c6e2cb3089f435e65933898ae9252792f5f2a3bd8c1b098ab997",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ea/3ea3.cif.gz": "876c9193eea2c9c83e337860e73010d7e92500639193dbe2752c8231de87b914",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ir/2iry.cif.gz": "25ef37d1cb04ea7fc6d70910b5bb7d7e3338c318cb12d6608c68943c88abbee5",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/dx/5dxn.cif.gz": "adfd12930588f483f49fc5d7011b31ccd144595b6f8589117367e93f162f5053",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/jp/4jpx.cif.gz": "d941077a1aeb44ec274899a65b99c3c8a1dbebb452581669eb439d8ec598d7ef",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/k2/7k27.cif.gz": "97e61a09cee453cd061e88113ed3eb781e8eba244a9b7fe7d2aeb79499f6aff0",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/bo/2bod.cif.gz": "63a1dd77ec337e1a640b4e53a164e73f6be2f3ce4b7132b9976af507e5095d4f",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/tr/5trq.cif.gz": "bdf42a4b9eca4e8f80e54efde46a12a88f024a35236353b22395bfa016e92632",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wi/3wib.cif.gz": "d87982b7575357d449f137ee8b7eb2a56801caa992c649f802373a8a74f45287",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/i6/4i6k.cif.gz": "7a3a2fe509f9ebb1f0361c7b3223112fd257b7bf74d1b1a5cd0041d21583d475",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/io/2ioy.cif.gz": "f296c76015ba8a536e840d91e8afcf3b875a0493888925c9aff3ccfe84891e37",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ap/6ap7.cif.gz": "f75e8dd9e6c6dccd0c177fea16e8416f6a7bdd26dcdb9662c174c71fb849a145",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/w2/6w2p.cif.gz": "f72bafc02c8e011ad17efc29e243c8aa69ab5f830b5f34722046c87bff5693d3",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ji/4jin.cif.gz": "00ba41364a43da8ab7ca7f397fc6abc1768d9b9f6b90cbd990232af214895585",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/it/3ita.cif.gz": "0afded86217e37d1e821a02aa9cb016971c6bf82d95bd554362880c4fb35cbdf",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ob/5obx.cif.gz": "bae0acc66ad3500292004ab5e886fbe9a5d520ff0a9648f2b329590adf1ebf66",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/fj/3fjl.cif.gz": "04c708e33eb5e617622c47eb9e64c31bbc7c806af9827328db68a19d84d7d300",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/v7/1v79.cif.gz": "5944802813ea219981fb6719f74906bad310d69885d58014729255df3855d808",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/kk/7kk6.cif.gz": "1a074a9cec963beb4bbf1e6971d0e0961de8dac0b625b25550330e40b8ea006c",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/tg/3tgh.cif.gz": "c39b6bffa435728c2702bd9c5f138ce594b653884490785eddd62b83180897f4",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xq/6xqx.cif.gz": "f413dbe731a5d222e44e10aace957194d10caf7cb0971e139c960d7f935c6308",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/l1/6l1h.cif.gz": "9eedd3cc6494d5fa5f9420dc48b4d5581e61b6f0142a3a221e6b692585fc3593",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a1/7a16.cif.gz": "f5ac8c733bbb3a7632ce2c0119fbff450ef415e4b11bdf4c2db131625a22ab79",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/zz/1zze.cif.gz": "d24a74a367bfe8a1122a388874da125c9bb0f77e7b805fcc619b0ea6d79fcbc3",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/pa/4pam.cif.gz": "d593f984cad881e085e9f17e2e85402584bba1ed0fd590c330888636dc7c44aa",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/m1/3m10.cif.gz": "b2248b28e45356d61697e9c931ab6579d1f94fc67794e3ee62dfccdf25e4fc17",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/z2/1z2n.cif.gz": "8df4ee6aacff093ba7a51c740d4c6de9f9e6d97a27ccd9796fbafdb478b6703e",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/lv/4lv8.cif.gz": "bc86de1c97dd0f59f69a992cec58d66de36590c72697fab9961e9773da55a2c4",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ih/4ihm.cif.gz": "88f97abd1b683b035ead6861cdf104fd37d2e09c88c8e625b5bf19ef4cb48f0e",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/dv/1dvn.cif.gz": "36b5122e8583ec34be5bc71e36db7e3925f2542a9bed80d02d1a0cff36bb586e",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/t8/6t8d.cif.gz": "60661e8516f281c6f58ee61a3ef57532e2844f6edfb01adf2f4dbbc6dcc138e2",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/jc/1jcf.cif.gz": "1a65527211bdfad416a54a7a926d0941fde9ae317a8a7fa4e1837b7fdea9716f",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ij/6ijn.cif.gz": "d3a71288edf1f5988d2c7fed1465ab0c948ff718cdaa60a83e7627e3e852e164",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/fk/4fk9.cif.gz": "cf0dca16adcea750105b1b8a3e9bce3959e5bdfc1d642cedd7a0a805f3873287",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wo/1woo.cif.gz": "600c512a6452abaf9bcfc09debb59fad32a51867d1ea4087968db3ae06f25ada",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ch/6ch1.cif.gz": "8eac838dbd74e0755e35a076977735076bdd4e47d7a587f83a555b5df7cde073",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/d5/2d5j.cif.gz": "421736d9d61c5b141d1fb627f2a2b5eb6e4c838dce55ef04a074d9679c455e5c",
+    "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/hb/1hb1.cif.gz": "68ffb3e57a4dd6e3317730eb1b2236a8266f6d9c6250ff01c13b320c01df23a9",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/train96.json": "17aa6ed1922e1f672a68e6733f915ea7b03bc78e3b8da35a649cd32ca347241c",
+    "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/dev8.json": "5a6d6de1394d1e329f39be0b385dca1712e7934b980858b4147740baaad28021"
+  },
+  "references": {
+    "7hln_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7hln_A.cif.gz",
+      "sha256": "cfed12ca440e9a1f5118902a726fcddda390a1d51e4877666fe4cd6f71493adb"
+    },
+    "7thc_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7thc_A.cif.gz",
+      "sha256": "0a419b77b3c87c68793d103d6d7e7331693000f5c7e30ea909b5e9c0259d281d"
+    },
+    "7h0m_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7h0m_A.cif.gz",
+      "sha256": "685614af782ea2b58a86088dce99927f28a3d98b19dcd896c0fa1337bcc60d0a"
+    },
+    "5ppf_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5ppf_A.cif.gz",
+      "sha256": "fa0b4d7eddfa1fcbcf23e302f593430b3921bb13884ef75683108e15585ea75b"
+    },
+    "3nxo_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3nxo_A.cif.gz",
+      "sha256": "fd7e3920d4af2d62e53b1e92217689d555c981717cb972f19c43194dd80fce7a"
+    },
+    "5cn6_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5cn6_A.cif.gz",
+      "sha256": "86c6725f9666968bbca6a84b3c80413fddf26837d3322086e2794e6c30c62b47"
+    },
+    "9uem_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9uem_A.cif.gz",
+      "sha256": "20dda04cdaaaa54c6d66f6f881af5e0e1230bc77793b78ce99d827cbcfd43346"
+    },
+    "7zge_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7zge_A.cif.gz",
+      "sha256": "47de787e8a0d27aade851b8da6240531b70a28da95ba20f363f2c4c9cc826d06"
+    },
+    "8i52_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/8i52_A.cif.gz",
+      "sha256": "d898fea541abe2e0e1da4bc3fe8a1dba7430f074b1b838f87a663fb7f0eaed4d"
+    },
+    "1h4g_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1h4g_A.cif.gz",
+      "sha256": "8983ddecea082654a77eb958ee90daae7f064745d6f878fc3604c78b8423b639"
+    },
+    "3bk5_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3bk5_A.cif.gz",
+      "sha256": "c1d312aa2a29e782dcc076053197abcf24072cf77baccd0fd874c2d99014eefc"
+    },
+    "5qgt_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5qgt_A.cif.gz",
+      "sha256": "2bd972e05ff80f5b3aab2dfd21ba55e60e500b71831fe49b2058218f245ce37c"
+    },
+    "9zsc_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9zsc_A.cif.gz",
+      "sha256": "a18cf818088578543477688a812b955f9b0243fa414e194c351c7261a2bf8f9e"
+    },
+    "7w44_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7w44_A.cif.gz",
+      "sha256": "2afe7c9710ef1209c4f9be24ae37576da30ab0a0d23f12845d01868510eb58b5"
+    },
+    "7mro_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7mro_A.cif.gz",
+      "sha256": "47c71fb5c1e57dccdd3b1c4ccb40c22c525307c88cfe47e11c534054fa6f4dc4"
+    },
+    "3zxy_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3zxy_A.cif.gz",
+      "sha256": "dfed86efa98344467b1d7fba94db2e9a85117f7f814dabfd472dd68c93d55e82"
+    },
+    "4g7l_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4g7l_A.cif.gz",
+      "sha256": "646d7aa7abf2e63fe495597806236f59860e653feb4508fcbb3149fa220e87ac"
+    },
+    "1cnx_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1cnx_A.cif.gz",
+      "sha256": "a896214714b46a5615bc1960312975bbe51ee1449cab5873f34a92346cf01d3f"
+    },
+    "8yoa_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/8yoa_A.cif.gz",
+      "sha256": "bfa4fcdf96c59354b2b2497837285f52d009c12a21196b6f64bc9ae161f74952"
+    },
+    "7qpm_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7qpm_A.cif.gz",
+      "sha256": "f0b395aecc5fe35a6ae36c5f4171b13d4856e67e4386544c397a4e8ed0010278"
+    },
+    "9q8c_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9q8c_A.cif.gz",
+      "sha256": "aa002394b91db8b80558101618e4e5bb655733c5748a7dde8c74bf0a487b281f"
+    },
+    "3r0t_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3r0t_A.cif.gz",
+      "sha256": "44c906e15bf7b544bb643875f5b29727ac08a9fb6709177f5554419813a66410"
+    },
+    "3snl_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3snl_A.cif.gz",
+      "sha256": "fac3466ff960fa8c65aa562d6ef0dfb2ebe398d3248f638aa166fceff27d9026"
+    },
+    "5q9h_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5q9h_A.cif.gz",
+      "sha256": "2feb445d225cf2180a83f38d471a09a16bc01b69db74cf58b3d533d789c92ef7"
+    },
+    "3k10_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3k10_A.cif.gz",
+      "sha256": "75aea8c03b7077460b4bd9daab2b5ba5a3b209792dd9c9c96bcd56473590b712"
+    },
+    "1zyo_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1zyo_A.cif.gz",
+      "sha256": "8c94af4b25d0b303c5427888d0712b0d813681108ab6efffbfa179659e78c1b5"
+    },
+    "4oy6_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4oy6_A.cif.gz",
+      "sha256": "3d7334735ef9e2781aac05b190d5599041f0a397d0ee48681be4421e5baf98d7"
+    },
+    "3eye_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3eye_A.cif.gz",
+      "sha256": "e3486fbdcff98b59a5f051d54b98e1e16d542df354139135657cb97e19d77dd6"
+    },
+    "1ukf_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1ukf_A.cif.gz",
+      "sha256": "e542466f7e2d4c341b76fa4729d83af13f52dea343d6389ab2a11a4fae6a63ea"
+    },
+    "2o6r_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2o6r_A.cif.gz",
+      "sha256": "462570ab1dc0f63bb8588b1cf378bb5f4c7f2ee49b0a9a53565d7ec725f91f94"
+    },
+    "6s8z_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6s8z_A.cif.gz",
+      "sha256": "5db5bf7e15ea1653d127a735269ec2a45491ab83001704c5bf81628b2329298e"
+    },
+    "1iwm_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1iwm_A.cif.gz",
+      "sha256": "0a6a877a6d510613fa7231eb82561abdd652daaf7fc25618a5e1a4df04c623b7"
+    },
+    "2rj2_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2rj2_A.cif.gz",
+      "sha256": "4d29347e25c48bb2d032f4a468e32a7a52e5f8b18e46ac987129075f3e2d8008"
+    },
+    "2wo1_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2wo1_A.cif.gz",
+      "sha256": "d0e502b09aeed857aedde0d27d80d383529f9ddf4902203a76d2ddd588058a21"
+    },
+    "3c80_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3c80_A.cif.gz",
+      "sha256": "9dc9ed022059983f18b1c9eaf33bf7d62aeb1ecd13d430ed83854af5668aba60"
+    },
+    "3gp6_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3gp6_A.cif.gz",
+      "sha256": "117247c3ecbacf0cd239cee644f67e308fd944491d8193a0081e7aea321e8827"
+    },
+    "1dy0_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1dy0_A.cif.gz",
+      "sha256": "a9466effd92487d197a50b9a64c4ff32fe723407e88c21f47e274e88f4e531d9"
+    },
+    "5nua_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5nua_A.cif.gz",
+      "sha256": "1f0634d30d82229a34388c3cadf1096697c93e469a316aadf1c4de9a1eaeb63c"
+    },
+    "2vnq_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2vnq_A.cif.gz",
+      "sha256": "60a2c19b477b41e92f13e72930bd2092adf5cc6e244b96407f4e94a16959809e"
+    },
+    "6osx_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6osx_A.cif.gz",
+      "sha256": "9952e08f1b0ec5b1a324415f3fe593e4dc03422434c948ffc070a6c7218a5f2c"
+    },
+    "2r16_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2r16_A.cif.gz",
+      "sha256": "1e3a9233bbff9cf2c8a82b99fc2c454a57ad923a007ff192732a92e182db7dd4"
+    },
+    "4b1l_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4b1l_A.cif.gz",
+      "sha256": "4458d5a437eb6291aaee8f95b867c9cf24283b33b336c169a9da0d9b40b09519"
+    },
+    "4zjh_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4zjh_A.cif.gz",
+      "sha256": "5ebeea84d98bf4a18fabe9117d2bae42e184aa538de83c4890b4ff1cf4e88cfa"
+    },
+    "1fjr_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1fjr_A.cif.gz",
+      "sha256": "3a49bd34eba906eda46fc181e1479f694e7a0a52c1cf375d9fa0393844f66bce"
+    },
+    "4z82_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4z82_A.cif.gz",
+      "sha256": "108fc9fb2ff6174a14488289a7fe6ff4af42f34eab10888011890fe1a8396d1e"
+    },
+    "5n9m_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5n9m_A.cif.gz",
+      "sha256": "c3fbecfc46cecc3402f3bcfe700a32843d07c696f663370dc060289c3ad913aa"
+    },
+    "4c55_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4c55_A.cif.gz",
+      "sha256": "6d596a3887624b84cc1276169e140b6c9712d4efc3a16c4415d746a4ca32815a"
+    },
+    "4ado_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4ado_A.cif.gz",
+      "sha256": "b5a3cf3bd675176c6bcb024a2396d95b79c063548006c8c896cf2f0b16f1de23"
+    },
+    "5k0f_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5k0f_A.cif.gz",
+      "sha256": "9fab7eae94658261d5e3c71e32a04dd9cedea1a917c4bffb3ef192ad5840a077"
+    },
+    "4kdu_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4kdu_A.cif.gz",
+      "sha256": "f5b1082faf816e895a08e202158bc8fe1a9d99c60728148e24feea794e6ab841"
+    },
+    "4nfa_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4nfa_A.cif.gz",
+      "sha256": "213b338b5d9189e27720526791600b1231194a7fdc665a4f1ec5a4aebfc19307"
+    },
+    "1w8g_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1w8g_A.cif.gz",
+      "sha256": "b07a7cc49f0443c189a78a9311e281a39e848b020591eac66e6576b682cff67b"
+    },
+    "3fri_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3fri_A.cif.gz",
+      "sha256": "89e77da2a681bab03936b1d37d51b5b0f17f2ef817e7ddbd3793337ebbb165ec"
+    },
+    "1qy3_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1qy3_A.cif.gz",
+      "sha256": "72ba32d3e3281d13e32c0656302f7d9e4cb642f1c281785e316a322b985fc007"
+    },
+    "5xeg_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5xeg_A.cif.gz",
+      "sha256": "2615f0faf5d497936ab02059da6e85490cb2e36c1e22093dd37ec00ae7195fde"
+    },
+    "3rlk_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3rlk_A.cif.gz",
+      "sha256": "912b1ee72bea43290f173b97af87b4c839022db73bfbe5f7cea1d0c3cc0e3716"
+    },
+    "4nun_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4nun_A.cif.gz",
+      "sha256": "049a311c0fc96c8b60c287545d161b76f0db2dd79b5f7d0888f19e3b926d0585"
+    },
+    "4emr_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4emr_A.cif.gz",
+      "sha256": "037f9d9c1da3de132f8e3219004c44ef87e58262c28900aeef34bfb1ae6a5a79"
+    },
+    "5boi_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5boi_A.cif.gz",
+      "sha256": "0829905e3cf0a9a249b9bc6a2ae99591b65e8f92226746435b6099bbce43fad7"
+    },
+    "1uzi_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1uzi_A.cif.gz",
+      "sha256": "0072221a55fc6e59971a87d3e5d37954006d872bc5a2d2176d547033ab3158d6"
+    },
+    "1tkh_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1tkh_A.cif.gz",
+      "sha256": "414d202e26f3ade2d2e1158a9fd7e391ea401ee0b192e7e7b91229a978eee2d5"
+    },
+    "4omk_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4omk_A.cif.gz",
+      "sha256": "60fb2f531731f9d852442c395011284f3f85a24924401ab2b1a95b3668f8b9c2"
+    },
+    "2zy1_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2zy1_A.cif.gz",
+      "sha256": "a1082343527905eda168934e5d1dc3825f9a2575dbe55a115050d6a082c4ee97"
+    },
+    "3zgc_B": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3zgc_B.cif.gz",
+      "sha256": "08b3b7c682a275794f965368e5840a4a61882c68c2ad6c33be8be23389eb69e9"
+    },
+    "4g8b_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4g8b_A.cif.gz",
+      "sha256": "9ff72e4feee7d3aa9bdb5310f0a552e71d29def37912978a67186cef781fdcb0"
+    },
+    "5jgl_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5jgl_A.cif.gz",
+      "sha256": "490e73a504aeeca456d7d1c9a199b1866b36abd1779c0cb544cfd0d345aa6139"
+    },
+    "6gpa_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6gpa_A.cif.gz",
+      "sha256": "43c2a25268f18e8fb130932d77045f4cf9c4fedb3491acddfbb4233b030a27b7"
+    },
+    "3lid_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3lid_A.cif.gz",
+      "sha256": "c2c2010a2a7c15cf3705b7a9dde787467df1d01992c3715e7b90805d73ca70ab"
+    },
+    "3ezo_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ezo_A.cif.gz",
+      "sha256": "78997c6e04a30ed5895f40bb741f9c584547254d63a4702d06d702fc67263347"
+    },
+    "1wwl_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1wwl_A.cif.gz",
+      "sha256": "ebf758bdff8bbe5cf08bc9d5c35e79696ec6feae2d01424af6ca5b1216dc3c0b"
+    },
+    "1v93_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1v93_A.cif.gz",
+      "sha256": "70dc9dcbb321aa8f38759b5ff4ad2b44c00b498192f2922f74d80564156deaf4"
+    },
+    "2nsd_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2nsd_A.cif.gz",
+      "sha256": "2949eb6fa8f28f87ec634132eab38146ad5b19786b51ade38c419a97aae27a98"
+    },
+    "1arb_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1arb_A.cif.gz",
+      "sha256": "5b23d5fac9167a559cd94987b0ff9e6a1eb2a660072bc62b8535f32cb83814f9"
+    },
+    "1gik_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1gik_A.cif.gz",
+      "sha256": "1a233596f2463130f914b4394aaabdbb31c139b58eb64980e269be72620bd839"
+    },
+    "5axo_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5axo_A.cif.gz",
+      "sha256": "e385a15f7a86a2d432da477a1944fcb507e082a3ccc612d3ee4b8a74afdfa4a7"
+    },
+    "6mrf_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6mrf_A.cif.gz",
+      "sha256": "78f0f2857492d8abe11db626bb2dbec7466baaeca586c046a4d4fce14cb92134"
+    },
+    "6k7z_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6k7z_A.cif.gz",
+      "sha256": "1c0c802fd72d2680ff559800928ff15f2e8670cde1dd76d15640ef0caf1706de"
+    },
+    "9abp_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9abp_A.cif.gz",
+      "sha256": "721ab987c1630aaa7246960f7dc52e02dff0a721c898285249eb6fc3da2aff74"
+    },
+    "6yec_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6yec_A.cif.gz",
+      "sha256": "c57afa29bb16fa20eec3f687d2ea8476b7bbb2aa308f437428cadb5d40b6dc75"
+    },
+    "3wwc_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3wwc_A.cif.gz",
+      "sha256": "109157c4691e2bf0833861d9cf4701373a53720ff0ae12598e7bcc1a2df9af48"
+    },
+    "3ly0_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ly0_A.cif.gz",
+      "sha256": "bd4fa6bcc0c569847d52e9504d42778d351e3bf8514d01d2f16837e2711cc1cb"
+    },
+    "1xix_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1xix_A.cif.gz",
+      "sha256": "e36695c69bdd30faabbcee3ffc205d956c9f96467b511b9cf83cb784f587bcc2"
+    },
+    "6rrm_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6rrm_A.cif.gz",
+      "sha256": "b2f4620d44f64499434edad710e664fe3397504d1e10aa85b39f20165b1b4694"
+    },
+    "4nxt_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4nxt_A.cif.gz",
+      "sha256": "e0806bba815d2b3f9404858a4b8ee506b164e30fc6715c1ae6e3eea527aeb230"
+    },
+    "5dtm_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5dtm_A.cif.gz",
+      "sha256": "fa321fc572d02eaba6b65c9acf454e6602fd782c59b895b27feb59a0f7f2e084"
+    },
+    "3pvk_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3pvk_A.cif.gz",
+      "sha256": "3c56230ea04970a756464ce360af70c06dd68094942a419c9b5a5fd104764402"
+    },
+    "3wwx_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3wwx_A.cif.gz",
+      "sha256": "392add32373bd7d4f276ef6a5606e9085f9fb3f31fd8c801c7d66ba80495a3f1"
+    },
+    "3ud1_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ud1_A.cif.gz",
+      "sha256": "c3b3fa1baabdec2272d38c3693e6bbfda61bb92d7a7a3aade805b74f1c55c86c"
+    },
+    "2v7k_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/2v7k_A.cif.gz",
+      "sha256": "bad78d9f92c6936ac08f8ceeb2ffa97d5b9350156d78a2fcaccfbd7f22a1a874"
+    },
+    "6uqt_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/6uqt_A.cif.gz",
+      "sha256": "ffb83f446082e4951bdaf4c385b1aec88a30026d3387e82524ae94ebe5a53880"
+    },
+    "4e2k_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4e2k_A.cif.gz",
+      "sha256": "e40bce77c8bd5e50de04a8c6a85f1d03668452df0e5ae1ef780f105c23bd5870"
+    },
+    "5hgr_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5hgr_A.cif.gz",
+      "sha256": "a749840b224240bfa93880fce5ab52cb9d57fffdb9cb92fe8005aaa5abe68526"
+    },
+    "4b5n_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4b5n_A.cif.gz",
+      "sha256": "11c4ad0ce57dc842d47ecb88e7df19c9d1e6827a457a1bab9914f6b053f5df41"
+    },
+    "1d3k_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1d3k_A.cif.gz",
+      "sha256": "9da202fb7604590e872fb837f3d98d2cc79bf439eada5c3c81a7d77c7f3ab703"
+    },
+    "3ams_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/3ams_A.cif.gz",
+      "sha256": "bb4e2f9bfe0670f6f5b33429b2fc6b7647b4197eb9a0b74454495d0bafa542d9"
+    },
+    "1z7w_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1z7w_A.cif.gz",
+      "sha256": "77e7a1a3a0aef62e8a9686c1f367d91ab0b0f82c9b86422e373064d3c12e0ffc"
+    },
+    "9qdy_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9qdy_A.cif.gz",
+      "sha256": "22f402cf909787e74ac29a72a01f79ce53a1dd3cdafc7a565debc8d4fce705ec"
+    },
+    "1yz7_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/1yz7_A.cif.gz",
+      "sha256": "a6b8a827c430d8867b4dd293aa892d255f8487bd961083030f8392fa645abd93"
+    },
+    "9f4s_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/9f4s_A.cif.gz",
+      "sha256": "135886df5a0cc0774552d25b65a05fa298d55d6404aaa9358d32f57684e270c5"
+    },
+    "5zyl_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5zyl_A.cif.gz",
+      "sha256": "27229d33804b77a02eab9a74d6db25d535924b48a177cbecbb90c31fc605d168"
+    },
+    "8w7p_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/8w7p_A.cif.gz",
+      "sha256": "d1f31e705424eb25f9b2d6e4d78dc5843b64ca1b6f80f7116f5ee1935dfc1ee2"
+    },
+    "5me4_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/5me4_A.cif.gz",
+      "sha256": "7ff0f3a154001efb191f89679aeae6067d8b82e5d804b523d764dbd9287f4bbf"
+    },
+    "7f7m_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/7f7m_A.cif.gz",
+      "sha256": "4fe9b9f3689850916452aa5125f7efcca131305c4e212b1e4da5a9fe3856a96e"
+    },
+    "4anl_A": {
+      "path": "/data/user/shuang886/Folding/engramfold/cross_backbone_20260921/data/4anl_A.cif.gz",
+      "sha256": "ef8c2c58107e4e64056f92a7fe7a226001a48594521537ecc37fb183774b8062"
+    },
+    "3gxb_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/gx/3gxb.cif.gz",
+      "sha256": "32bdefb0d6d76df44602720293333744e814a0c6f9c94f2e300e6176566a1513"
+    },
+    "6a89_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a8/6a89.cif.gz",
+      "sha256": "875b3c47863724fd392a16c835216eaca284ea161aa39b4b1e505bcf1bac567e"
+    },
+    "4xbc_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xb/4xbc.cif.gz",
+      "sha256": "3dbf5a51124e9b439ad98d5568ec721999c7eab6e37390117db37b90c2683816"
+    },
+    "6q3v_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/q3/6q3v.cif.gz",
+      "sha256": "982134816df5144de3806a266f32779f2367c78cc3a51faf56f94d443354e9cc"
+    },
+    "7nuw_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nu/7nuw.cif.gz",
+      "sha256": "0e9372c5e69d470f74f401c1376609ae764410d177f0b53fd0a1c369dbb8e6b7"
+    },
+    "2obi_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ob/2obi.cif.gz",
+      "sha256": "a0f63d337f6f5837e4b507a387c7c56ef035cd0c129252cc2311003f3c1369ab"
+    },
+    "3qzq_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/qz/3qzq.cif.gz",
+      "sha256": "e34b2577b615b0a0b4d830c7b4c7db35a0957f81dbe28fa7276ab11f23186be8"
+    },
+    "4woh_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wo/4woh.cif.gz",
+      "sha256": "f7a6f98ecacee3e559ab350d856f8450ce1af6f0f10049cda8bf6afb081f2936"
+    },
+    "6ndw_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nd/6ndw.cif.gz",
+      "sha256": "69926c827d2ea7c31f2d7fcbdbd70f12e6b707c931d22ef7c7426082bf6c5edc"
+    },
+    "3hny_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/hn/3hny.cif.gz",
+      "sha256": "f2ad02f8a7d0546d0304b6a1869d5f96176fd17ceb1b509dd0fd9b2a0d9a9b50"
+    },
+    "1wba_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wb/1wba.cif.gz",
+      "sha256": "0fe72909ed7eb0cbe0c1f1a5ee7eec606cbaf97fd20dd6dbc3f39d854b4336f9"
+    },
+    "1yn9_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/yn/1yn9.cif.gz",
+      "sha256": "723059038d1c79452b297f89a222387894d11aa46cd6b5db1d721057bf6cf131"
+    },
+    "1a44_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a4/1a44.cif.gz",
+      "sha256": "0b407f1cb8c46cccde9edc20ab9a01ce7bb0c96ebea4aa44f5b7bc5e57ec5c15"
+    },
+    "4xje_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xj/4xje.cif.gz",
+      "sha256": "b1e6cac08bb4751929d22c1ab876988c0122b3c261bbc1ff7f737a27a33f3797"
+    },
+    "1ccz_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/cc/1ccz.cif.gz",
+      "sha256": "7ece6540f441511fd02821fe7c4b28a53805a68be273c3a379f8d44096045a0e"
+    },
+    "2p3k_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/p3/2p3k.cif.gz",
+      "sha256": "b02551c127b58d39d70f5e36f1e1c2826534fea46a405237eb6f8f448400aa25"
+    },
+    "6ibj_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ib/6ibj.cif.gz",
+      "sha256": "b6eb84296d56c8764f8c669f3358a2419ffc4f2996345b7250dc96372abb8c06"
+    },
+    "1j84_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/j8/1j84.cif.gz",
+      "sha256": "80e34499debddb99d43a82d00875115d28e2812d147cd31a1297def6776c0c24"
+    },
+    "3esx_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/es/3esx.cif.gz",
+      "sha256": "cb4f5b83401ce831f767e090cf4e291660be77b96523a9e59b195c2b46d24adb"
+    },
+    "4p27_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/p2/4p27.cif.gz",
+      "sha256": "5ef0c15a89954c7e45b3384316c6de27a1ad843afb14202554f2554f9271d6ab"
+    },
+    "6fpc_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/fp/6fpc.cif.gz",
+      "sha256": "31c5c14220332cacc3da7e07d942f15397e5204a82e6b4764e33406cad177c66"
+    },
+    "7c82_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/c8/7c82.cif.gz",
+      "sha256": "0536634998d471320c2da2091a418f722b85d19177099f8dbdd52e883f786132"
+    },
+    "1bk7_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/bk/1bk7.cif.gz",
+      "sha256": "46645e323bae7d6ef39899997eb297a955d8216a4f60434ea7fc9ab8bdfad237"
+    },
+    "6ht1_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ht/6ht1.cif.gz",
+      "sha256": "ae4aa35ed52585a12519807205d48f9583223b4bff48671924727a3cca46996e"
+    },
+    "5d6p_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/d6/5d6p.cif.gz",
+      "sha256": "2860ef5bcb82e20c2a10e4e4af188751a76dd1f1b0cb6b955d7f2ac97fcc925c"
+    },
+    "1lxz_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/lx/1lxz.cif.gz",
+      "sha256": "6e2006041ac5fa4531547160969e74a2914a168d754db20218c79025100bbebd"
+    },
+    "5kdi_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/kd/5kdi.cif.gz",
+      "sha256": "9958077a1f3f8a861024370bd010aeb8f346ad9de6101506463dd2a31bac0849"
+    },
+    "7np5_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/np/7np5.cif.gz",
+      "sha256": "d48ad51ab6cbaf666f7177d4614f9a9c5b3f49c0fef2c4d39e3806572b6ae727"
+    },
+    "5nl7_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nl/5nl7.cif.gz",
+      "sha256": "f1e1594a052c5510b1cbe7fb11bc41be1ea7aa55cf34f56b69aa2ede8f62d1b0"
+    },
+    "3eii_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ei/3eii.cif.gz",
+      "sha256": "39d7af0abcb169562b964ed31cb818299036c56efa21ba670afd7df0b461938b"
+    },
+    "3f95_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/f9/3f95.cif.gz",
+      "sha256": "471e941fbd64cd7894da175891198e4effe4aa566cdf3cc476e988b1a5d94ce2"
+    },
+    "3zj0_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/zj/3zj0.cif.gz",
+      "sha256": "a19e46f732a7c60c1acd5e6480762f84470aa71c3083e8d3a8a8fad788868abd"
+    },
+    "2nlr_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/nl/2nlr.cif.gz",
+      "sha256": "43d2f7973a7ffe42d42634b7956758314c62a5c5371d1bbb812bea1f706a0959"
+    },
+    "1m1u_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/m1/1m1u.cif.gz",
+      "sha256": "acb5a9bfca1be47a3a22fb26601a89d70c549262c54cb67c3049d212ed02d974"
+    },
+    "2a7m_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a7/2a7m.cif.gz",
+      "sha256": "d199be88df0a2310dc777d0f584e792addfd659cd6f9168088bd03f96e2ad559"
+    },
+    "3n36_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/n3/3n36.cif.gz",
+      "sha256": "9ea0d1d2d71fe0b4a765911edfe6da09ebb58548d8e6a4379018de6a4e79cfe4"
+    },
+    "1xa1_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xa/1xa1.cif.gz",
+      "sha256": "943272838b8830f528dd8e3e38ac292bb9a8378537fa0fa9702b6500065462f9"
+    },
+    "6j5q_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/j5/6j5q.cif.gz",
+      "sha256": "d4c8269da216b598543d204b321a4a54bd7e6dadf7acca6156a8d136e0490411"
+    },
+    "2erf_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/er/2erf.cif.gz",
+      "sha256": "5a9a60ca1ca7c2767953adb8b39d47337cc3978dd71de6cbb1c57ed5c76307f6"
+    },
+    "4dr9_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/dr/4dr9.cif.gz",
+      "sha256": "7eac779a536d220ae5b836ecda2b434479c60a00954c01f08a7187e0738caff7"
+    },
+    "1h5y_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/h5/1h5y.cif.gz",
+      "sha256": "0b77b22fe091601748368c031c846c8a2ecd7af340bbfb7a1bf663e20e3da207"
+    },
+    "1g69_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/g6/1g69.cif.gz",
+      "sha256": "eff228c2a8c91795f2c5dfd5b2ad4034e1020ab8561ba86fdd534998d797ca8a"
+    },
+    "4zyx_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/zy/4zyx.cif.gz",
+      "sha256": "6513f8fa2d4f41cf0ae9737c8d111404700dea39906c7b5349307b60ab37e3d9"
+    },
+    "1pxr_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/px/1pxr.cif.gz",
+      "sha256": "8093f829118f6c1229c2ea251a9fe40ca9fb975f117494c5c3d0f295a281b5ca"
+    },
+    "5xrb_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xr/5xrb.cif.gz",
+      "sha256": "12e75b2135261f8f8a8ae1526e2666296aa83464a3e637c776c767a72db03d39"
+    },
+    "4f1j_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/f1/4f1j.cif.gz",
+      "sha256": "74c347647d8c5414db7bf0b5ec18a631c15f109258d218998ffd7f152b2adfbc"
+    },
+    "1dua_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/du/1dua.cif.gz",
+      "sha256": "8c3a45db6f102addab27260f22da5112512e530bfa4913abb41ea6280a6f5923"
+    },
+    "2ocg_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/oc/2ocg.cif.gz",
+      "sha256": "68e5ed70101dc669ea04d27b2c89a6c9946aab8faf7cf1c04decf4b6a585c6a9"
+    },
+    "3voa_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/vo/3voa.cif.gz",
+      "sha256": "87c16adcbee3fa75f6e9e619703f1e8889074d53953db7e9807f6d512f4e7cdc"
+    },
+    "1c91_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/c9/1c91.cif.gz",
+      "sha256": "7e051c1b90ac887853491e71ce56383d7bdd1fe8586070b255259c7ca53cfbea"
+    },
+    "3f99_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/f9/3f99.cif.gz",
+      "sha256": "1f7e721de97a4f5fe2ba114677eab7f4225caa65b4d9c26eeeabdf389eb9a928"
+    },
+    "3ah4_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ah/3ah4.cif.gz",
+      "sha256": "1c714467ec88223e936c23783caf083f940778543437527feebbe44dd1d45e23"
+    },
+    "7bwv_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/bw/7bwv.cif.gz",
+      "sha256": "144ba9beb352a34c9232673169fc88a58b6e9ba9989e4c690cd10bc65fec8945"
+    },
+    "4q3c_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/q3/4q3c.cif.gz",
+      "sha256": "3e75c4e84b3f086d3a946cc524f8e873f5778dc5c54dfb6fb6f900bd72e49fc5"
+    },
+    "2vi0_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/vi/2vi0.cif.gz",
+      "sha256": "cb2a8506b67b9fc175d002f826a956b01ed0be8c908f65b0f0af9f83aec45269"
+    },
+    "4n13_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/n1/4n13.cif.gz",
+      "sha256": "e9dee297bfedc641669a9b70d9f8d85a98c3b822d19d8f9e8a755834da644709"
+    },
+    "2c6z_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/c6/2c6z.cif.gz",
+      "sha256": "187f29220b94fdf96ec016b398bd59e34c2865f8c77660e78e78a738e6c7a908"
+    },
+    "5byl_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/by/5byl.cif.gz",
+      "sha256": "54f480f0ffe7bd919e1ab7d7ae69141404c7add3e2159e447787fb853484081f"
+    },
+    "2cex_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ce/2cex.cif.gz",
+      "sha256": "45efe6d9de88c6e2cb3089f435e65933898ae9252792f5f2a3bd8c1b098ab997"
+    },
+    "3ea3_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ea/3ea3.cif.gz",
+      "sha256": "876c9193eea2c9c83e337860e73010d7e92500639193dbe2752c8231de87b914"
+    },
+    "2iry_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ir/2iry.cif.gz",
+      "sha256": "25ef37d1cb04ea7fc6d70910b5bb7d7e3338c318cb12d6608c68943c88abbee5"
+    },
+    "5dxn_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/dx/5dxn.cif.gz",
+      "sha256": "adfd12930588f483f49fc5d7011b31ccd144595b6f8589117367e93f162f5053"
+    },
+    "4jpx_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/jp/4jpx.cif.gz",
+      "sha256": "d941077a1aeb44ec274899a65b99c3c8a1dbebb452581669eb439d8ec598d7ef"
+    },
+    "7k27_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/k2/7k27.cif.gz",
+      "sha256": "97e61a09cee453cd061e88113ed3eb781e8eba244a9b7fe7d2aeb79499f6aff0"
+    },
+    "2bod_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/bo/2bod.cif.gz",
+      "sha256": "63a1dd77ec337e1a640b4e53a164e73f6be2f3ce4b7132b9976af507e5095d4f"
+    },
+    "5trq_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/tr/5trq.cif.gz",
+      "sha256": "bdf42a4b9eca4e8f80e54efde46a12a88f024a35236353b22395bfa016e92632"
+    },
+    "3wib_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wi/3wib.cif.gz",
+      "sha256": "d87982b7575357d449f137ee8b7eb2a56801caa992c649f802373a8a74f45287"
+    },
+    "4i6k_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/i6/4i6k.cif.gz",
+      "sha256": "7a3a2fe509f9ebb1f0361c7b3223112fd257b7bf74d1b1a5cd0041d21583d475"
+    },
+    "2ioy_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/io/2ioy.cif.gz",
+      "sha256": "f296c76015ba8a536e840d91e8afcf3b875a0493888925c9aff3ccfe84891e37"
+    },
+    "6ap7_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ap/6ap7.cif.gz",
+      "sha256": "f75e8dd9e6c6dccd0c177fea16e8416f6a7bdd26dcdb9662c174c71fb849a145"
+    },
+    "6w2p_B": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/w2/6w2p.cif.gz",
+      "sha256": "f72bafc02c8e011ad17efc29e243c8aa69ab5f830b5f34722046c87bff5693d3"
+    },
+    "4jin_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ji/4jin.cif.gz",
+      "sha256": "00ba41364a43da8ab7ca7f397fc6abc1768d9b9f6b90cbd990232af214895585"
+    },
+    "3ita_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/it/3ita.cif.gz",
+      "sha256": "0afded86217e37d1e821a02aa9cb016971c6bf82d95bd554362880c4fb35cbdf"
+    },
+    "5obx_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ob/5obx.cif.gz",
+      "sha256": "bae0acc66ad3500292004ab5e886fbe9a5d520ff0a9648f2b329590adf1ebf66"
+    },
+    "3fjl_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/fj/3fjl.cif.gz",
+      "sha256": "04c708e33eb5e617622c47eb9e64c31bbc7c806af9827328db68a19d84d7d300"
+    },
+    "1v79_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/v7/1v79.cif.gz",
+      "sha256": "5944802813ea219981fb6719f74906bad310d69885d58014729255df3855d808"
+    },
+    "7kk6_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/kk/7kk6.cif.gz",
+      "sha256": "1a074a9cec963beb4bbf1e6971d0e0961de8dac0b625b25550330e40b8ea006c"
+    },
+    "3tgh_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/tg/3tgh.cif.gz",
+      "sha256": "c39b6bffa435728c2702bd9c5f138ce594b653884490785eddd62b83180897f4"
+    },
+    "6xqx_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/xq/6xqx.cif.gz",
+      "sha256": "f413dbe731a5d222e44e10aace957194d10caf7cb0971e139c960d7f935c6308"
+    },
+    "6l1h_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/l1/6l1h.cif.gz",
+      "sha256": "9eedd3cc6494d5fa5f9420dc48b4d5581e61b6f0142a3a221e6b692585fc3593"
+    },
+    "7a16_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/a1/7a16.cif.gz",
+      "sha256": "f5ac8c733bbb3a7632ce2c0119fbff450ef415e4b11bdf4c2db131625a22ab79"
+    },
+    "1zze_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/zz/1zze.cif.gz",
+      "sha256": "d24a74a367bfe8a1122a388874da125c9bb0f77e7b805fcc619b0ea6d79fcbc3"
+    },
+    "4pam_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/pa/4pam.cif.gz",
+      "sha256": "d593f984cad881e085e9f17e2e85402584bba1ed0fd590c330888636dc7c44aa"
+    },
+    "3m10_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/m1/3m10.cif.gz",
+      "sha256": "b2248b28e45356d61697e9c931ab6579d1f94fc67794e3ee62dfccdf25e4fc17"
+    },
+    "1z2n_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/z2/1z2n.cif.gz",
+      "sha256": "8df4ee6aacff093ba7a51c740d4c6de9f9e6d97a27ccd9796fbafdb478b6703e"
+    },
+    "4lv8_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/lv/4lv8.cif.gz",
+      "sha256": "bc86de1c97dd0f59f69a992cec58d66de36590c72697fab9961e9773da55a2c4"
+    },
+    "4ihm_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ih/4ihm.cif.gz",
+      "sha256": "88f97abd1b683b035ead6861cdf104fd37d2e09c88c8e625b5bf19ef4cb48f0e"
+    },
+    "1dvn_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/dv/1dvn.cif.gz",
+      "sha256": "36b5122e8583ec34be5bc71e36db7e3925f2542a9bed80d02d1a0cff36bb586e"
+    },
+    "6t8d_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/t8/6t8d.cif.gz",
+      "sha256": "60661e8516f281c6f58ee61a3ef57532e2844f6edfb01adf2f4dbbc6dcc138e2"
+    },
+    "1jcf_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/jc/1jcf.cif.gz",
+      "sha256": "1a65527211bdfad416a54a7a926d0941fde9ae317a8a7fa4e1837b7fdea9716f"
+    },
+    "6ijn_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ij/6ijn.cif.gz",
+      "sha256": "d3a71288edf1f5988d2c7fed1465ab0c948ff718cdaa60a83e7627e3e852e164"
+    },
+    "4fk9_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/fk/4fk9.cif.gz",
+      "sha256": "cf0dca16adcea750105b1b8a3e9bce3959e5bdfc1d642cedd7a0a805f3873287"
+    },
+    "1woo_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/wo/1woo.cif.gz",
+      "sha256": "600c512a6452abaf9bcfc09debb59fad32a51867d1ea4087968db3ae06f25ada"
+    },
+    "6ch1_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/ch/6ch1.cif.gz",
+      "sha256": "8eac838dbd74e0755e35a076977735076bdd4e47d7a587f83a555b5df7cde073"
+    },
+    "2d5j_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/d5/2d5j.cif.gz",
+      "sha256": "421736d9d61c5b141d1fb627f2a2b5eb6e4c838dce55ef04a074d9679c455e5c"
+    },
+    "1hb1_A": {
+      "path": "/data/user/shuang886/Folding/Dataset/raw/pdb_mmcif/hb/1hb1.cif.gz",
+      "sha256": "68ffb3e57a4dd6e3317730eb1b2236a8266f6d9c6250ff01c13b320c01df23a9"
+    }
+  },
+  "first_wave_fits": 36,
+  "second_wave_fits": 36,
+  "formal_updates": 110592,
+  "calibration_updates": 4608,
+  "max_hpc3_gpu_workers": 16,
+  "primary": "Psi_all - Psi_first; three seeds and three original rotations; Confirm96-B pair-lDDT",
+  "second_wave_status": "prepared, not submitted; prioritize completion of first 36"
+}

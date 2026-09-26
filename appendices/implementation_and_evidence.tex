@@ -1637,3 +1637,143 @@ Six additional ESMC Native propagation observations on the same two chains
 also retained trunk-state differences with small final structural changes.
 The supplement provides all fixed-node scores, secondary contrasts and replay
 records.
+
+\section{Protenix four-cell budget extension}
+\label{app:budget_extension}
+This observed-panel follow-up continues the 24 Protenix Train384/ESMC-600M
+Full models used for Fresh192. The training set, feature cache, three seeds,
+three rotations, loss, constant learning rate $5\times10^{-5}$ and inference
+recipe remain fixed. We restore each model's step1536 weights and AdamW state
+and train to step3072: 36,864 additional updates. The original checkpoints
+lack complete RNG states, so this is not a claim of bitwise equivalence to
+uninterrupted historical training. No compensator is added, and the final
+checkpoint is fixed independently of Dev or evaluation scores.
+
+The sole primary endpoint is $\Psi_{3072}$; the paired change
+$K=\Psi_{3072}-\Psi_{1536}$ is the key secondary endpoint. Fresh192 has already
+been observed, so this extends the budget range of the earlier recipe's
+evidence rather than providing another new-target confirmation. Four length
+strata of 48 targets each are resampled for 20,000 draws (seed20260926), with
+the same target indices for both budgets and every model. Seeds and rotations
+are averaged within target. Intervals condition on the fitted instances and
+secondary comparisons have no joint multiplicity correction.
+
+\begin{table}[!htbp]\centering\small
+\caption{Protenix/ESMC on observed Fresh192, before and after continuation.
+Absolute C$\alpha$ pair-lDDT means use four decimals; paired gains and their
+95\% target intervals use unrounded scores. Query is fixed.}
+\label{tab:budget_means}
+\begin{tabular}{lrrrr}\toprule
+System & 1536 & 3072 & Gain & 95\% interval \\\midrule
+\input{generated/budget_fourcell_rows}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\footnotesize
+\caption{Row effects and their direct budget changes on the same targets.
+The historical point estimates are unchanged. These intervals use the budget
+study's paired bootstrap stream; they do not overwrite the original Fresh192
+intervals. A change interval containing zero establishes neither equivalence
+nor convergence.}
+\label{tab:budget_effects}
+\setlength{\tabcolsep}{1.5pt}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Effect & 1536 & 95\% interval & 3072 & 95\% interval & Change & 95\% interval \\\midrule
+\input{generated/budget_effect_rows}
+\end{tabular}\end{table}
+
+All four cells improve (Table~\ref{tab:budget_means}). Factor's gap shrinks by
+\result{budget_factor_rotation_change}
+[\result{budget_factor_rotation_changeLo}, \result{budget_factor_rotation_changeHi}],
+while G+'s contrast also shifts in point estimate; their difference is $K$, whose interval includes
+zero (Table~\ref{tab:budget_effects}). The final interaction is positive on
+\result{budget_positive}/192 targets and in all three seed marginals, three
+rotation marginals and nine seed-by-rotation cells. Supplementary final
+interactions are \result{budget_psi_residue}
+[\result{budget_psi_residueLo}, \result{budget_psi_residueHi}] for residue-lDDT
+and \result{budget_psi_tm} [\result{budget_psi_tmLo}, \result{budget_psi_tmHi}]
+for TM-score. Their budget-change intervals include zero; one TM-score
+seed-by-rotation cell is negative. These metrics score the same structures.
+
+The study completed 9,408 Fresh192 predictions (both model budgets plus Query)
+and 576 Dev8 predictions at 1536/2304/3072, with no failures. Another 100
+predictions and 288 updates belonged to isolated engineering checks. All 4,800
+parent/Query replay score records match the original three metrics exactly.
+The first aggregation failed because Dev reference metadata also contained
+the training targets; the isolated repair selected only the sealed eight Dev
+IDs, sequence identities and order. All 9,984 saved score records retained
+their hashes. The supplement preserves the original execution lock, repair,
+completion receipts and independent score reconstruction. Increasing scores
+and three Dev nodes do not establish convergence.
+
+\section{OpenFold injection-schedule retraining}
+\label{app:schedule_retraining}
+We retrain First-only, All and Last-only injection with four trunk passes,
+holding OpenFold Train96/ESM2-35M/Full, final-pass task supervision and 1536
+updates fixed. A single adapter remains shared across passes; the schedule
+gates its residual at the first, every, or last pass. Native and rotated
+Factor and G+ are separately trained for each schedule. Baseline OPMs and the
+other Evoformer blocks remain active. Unlike the historical final-pass-only
+gradient recipe, this study retains the differentiable MSA/pair paths across
+passes; native coordinate-distance binning remains nondifferentiable. Its All
+condition is therefore newly trained, not the old All model reused.
+
+A bounded Train/Dev calibration compares learning rates $5\times10^{-5}$ and
+$10^{-4}$ across all 12 schedule/arm cells, using a separate development seed
+and 192 updates per fit. The average absolute Dev8 pair-lDDT selects the common
+rate $5\times10^{-5}$; neither interaction size nor Confirm96-B selects it.
+The original lock planned three rotations and 72 fits. A reporting amendment
+closed the study at the completed 36 fits: three schedules, four cells, three
+seeds and the first fixed rotation R1=20261001. The other two rotations were
+not run. We report the single-R1 analogue of the planned All--First comparison,
+not completion of the original three-rotation primary matrix. Original locks
+and the amendment remain in the artifact.
+
+\begin{table}[!htbp]\centering\small
+\caption{Retrained OpenFold schedules on observed Confirm96-B. Each absolute
+pair-lDDT mean averages three seeds; RF/RG+ use only R1. Query is
+\result{schedule_query}. The final columns are $\Psi$ and its conditional
+95\% target interval. Higher interaction need not mean higher absolute quality.}
+\label{tab:schedule_means}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}\toprule
+Schedule & F & RF & G+ & RG+ & $\Psi$ & 95\% interval \\\midrule
+\input{generated/schedule_fourcell_rows}
+\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\small
+\caption{Direct paired changes of $\Psi$, using shared target resamples.
+All--First is the single-R1 analogue of the original planned main comparison;
+the remaining comparisons are secondary. No familywise correction is applied.}
+\label{tab:schedule_differences}
+\begin{tabular}{lrr}\toprule
+Schedule contrast & $\Psi$ difference & 95\% interval \\\midrule
+\input{generated/schedule_difference_rows}
+\end{tabular}\end{table}
+
+First has the largest interaction, yet both G+ arms are near Query and its
+absolute scores are lowest (Table~\ref{tab:schedule_means}). All's Factor
+contrast is \result{schedule_all_factor_rotation}
+[\result{schedule_all_factor_rotationLo}, \result{schedule_all_factor_rotationHi}];
+its G+ contrast is \result{schedule_all_gplus_rotation}
+[\result{schedule_all_gplus_rotationLo}, \result{schedule_all_gplus_rotationHi}].
+Thus its positive $\Psi$ does not establish a positive Factor rotation penalty.
+Last's Native Factor--G+ contrast is \result{schedule_last_native_factor_minus_gplus}
+[\result{schedule_last_native_factor_minus_gplusLo},
+\result{schedule_last_native_factor_minus_gplusHi}].
+
+The All--First interaction difference is negative in all three seed means.
+Corresponding residue-lDDT and TM-score differences are
+\result{schedule_write_residue}
+[\result{schedule_write_residueLo}, \result{schedule_write_residueHi}] and
+\result{schedule_write_tm}
+[\result{schedule_write_tmLo}, \result{schedule_write_tmHi}].
+All 36 fits and 3,552 predictions (including Query) completed without failure.
+We resample the 96 targets 20,000 times (seed20260926), averaging seeds within
+target and sharing draws across schedules and contrasts. These intervals are
+conditional on the fitted models and R1. The full row effects, query gains,
+target arrays and seed marginals are supplied, including mixed Factor seed
+responses under All. This schedule study changes training and inference
+together; it does not isolate repeated writing from learning dynamics or
+identify a universal feedback mechanism. It is distinct from changing the
+deployment schedule of fixed All-trained models and from changing residual
+anchors while retaining the injection schedule.

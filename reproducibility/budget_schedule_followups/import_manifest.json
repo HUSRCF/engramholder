@@ -1,0 +1,134 @@
+{
+  "evidence/of_schedule_summary.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/analysis_wave1_R1/analysis.json",
+    "sha256": "6ed826e302b87eb3301d6b440b7461aae16b0f767c54a56bc2946ee957e8fa38"
+  },
+  "evidence/of_schedule_records.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/analysis_wave1_R1/metric_records.json",
+    "sha256": "b6951567bafb1c5728c44f06a5bf43214d7479439a514828d5a138cd1f939e00"
+  },
+  "evidence/of_schedule_execution_lock.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/execution_lock.json",
+    "sha256": "c609e62a6390b7383412fa29e6797f00b815e03f6e71dfe46ee47cf6eb9b2b91"
+  },
+  "evidence/of_schedule_reporting_amendment.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/analysis_wave1_R1/reporting_amendment.json",
+    "sha256": "d4aefe7f6a0837b3cee4ebde985c3bb91cee42b2ce52592db8b0ca219fe10868"
+  },
+  "evidence/of_schedule_complete.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/analysis_wave1_R1/complete.json",
+    "sha256": "3528be345e05579541b5bf0b615688ae44313e442a0f509919aed9a2a9608a44"
+  },
+  "evidence/of_schedule_calibration.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/calibration_selection.json",
+    "sha256": "f4f65636c264edb31e98d08fe41bfc5f4f7daec8d5d822009d8d0fe0cc518058"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/review/report.md": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/review/report.md",
+    "sha256": "d1f7c0107e8d7af0e47262574396b8b229c5911a04d231578984bec63c7460eb"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/analysis_wave1_R1/independent_verification.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/analysis_wave1_R1/independent_verification.json",
+    "sha256": "de75bf0aff13406aee47df31e9a4fead9667f07a0336db6803b3654ad61d4537"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/completion/wave1_completion_audit.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/completion/wave1_completion_audit.json",
+    "sha256": "6278aff879f131793543a80ee8b1954850e756dbb0c13340993e1213d2923001"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/completion/wave1_complete.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/completion/wave1_complete.json",
+    "sha256": "00e2120cfed5ed97074bf22539f7a308b007ce852bb14d28af6d953db1806254"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/protocol.md": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/protocol.md",
+    "sha256": "f17937efb370ae1c04c38653d85f52e8113dc0d338f2c31129d17d4f2de1a625"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/operations/schedule_retraining_runner.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/operations/schedule_retraining_runner.py",
+    "sha256": "8d29b7cb6bdc2ea9219e259734a7f034474c7c0dbfcd1cad620ab367b01e9022"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/operations/schedule_retraining_protocol.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/operations/schedule_retraining_protocol.py",
+    "sha256": "8e5af401069db8860434ca7cb8f0a8503002d6085116909521a23f1c46e75153"
+  },
+  "reproducibility/budget_schedule_followups/of_schedule/operations/wave1_scoring/scorer.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/openfold_schedule_training72_20260926/operations/wave1_scoring/scorer.py",
+    "sha256": "cb4a92158353d6808e71bc4638c5c69e91b846ad82e5d2b413685116bb62e0b0"
+  },
+  "evidence/pt_budget_summary.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/analysis.json",
+    "sha256": "f6f0b2ef06d1dafc4ec2f414b173a70a8693fd35744e0d456f1780f8c8f5e744"
+  },
+  "evidence/pt_budget_records.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/metric_records_before_recovery.json",
+    "sha256": "30ed0e78d8afc2215a671a0103e14c1e334b062f5c5f9c328df5fb0159cc09b2"
+  },
+  "evidence/pt_budget_execution_lock.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/execution_lock.json",
+    "sha256": "3e90778a46f6062fa136d49a85f6fc7cb6ebc5882e04a0916698f9295729ffd1"
+  },
+  "evidence/pt_budget_recovery_amendment.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/amendment.json",
+    "sha256": "32369ae0374794ca8cb4c881c35a985f25ead894170fb60cfa9db9657d62eff5"
+  },
+  "evidence/pt_budget_complete.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/complete.json",
+    "sha256": "51cc1de07c8388dd73ca71ea9d4d320f671d3d1ede18c66e12fbc26541fe2fdf"
+  },
+  "evidence/pt_budget_manifest.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/fresh_manifest.json",
+    "sha256": "4a138328c4f51344d300ee3b79cec284e8fda0f64628932786500b2ac6762d0c"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/review/report.md": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/review/report.md",
+    "sha256": "0172aa1db83e2850b44c5133738ec27829fee60dd2cd3873fa72295a6f39a072"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/recovery_results/recovery_complete.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/recovery_complete.json",
+    "sha256": "0e02ba4e95ed0c24c8be0bdd31c79adf80a6e567ef8cd8efc53eda7d12f44464"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/recovery_results/preflight.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/preflight.json",
+    "sha256": "74fc3f5af7c1002d4afea7c523d465fdd240fe0e5bdbb0bff7ccff9ead43b058"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/recovery_results/independent_verification.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/recovery_results/independent_verification.json",
+    "sha256": "8d1122a68553a05eec499a41e79ef5d8305d43d1ead58d86f883c9987423b2a6"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/restore_acceptance_snapshot.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/restore_acceptance_snapshot.json",
+    "sha256": "a865c501ba7549a5ff5a410db22c4937c4b03d7c796e49d92ac078504460687b"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/implementation_review.json": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/implementation_review.json",
+    "sha256": "2efefdd1291b124ea6d91b7ee9fbdd3e2fca3d27996c2b4a26165c877dca6077"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/README.md": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/README.md",
+    "sha256": "e53a14dd48e447cf09a59a01c2ed6c371086afa08763823bf0e1ede692bb5ff2"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/operations/reference_selection_fix/recover.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/operations/reference_selection_fix/recover.py",
+    "sha256": "e635dc25646081c2a8b1d9fcc070393f1d1e16f8859a12654d912184d9f81982"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/operations/reference_selection_fix/reference_subset.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/reports/protenix_fourcell_budget_20260926/operations/reference_selection_fix/reference_subset.py",
+    "sha256": "1286b12e290808225a14836a02dd59908eda1f8664cd923dac271f0fff5ce6f6"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/archived/train.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/protenix_budget_extension/train.py",
+    "sha256": "360e9547bd87fbd7f8334c357dfa20d7659f684352df17ca4d2892fb4f5fd839"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/archived/state.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/protenix_budget_extension/state.py",
+    "sha256": "a9ffca063e79aaeb64226433893ae61e14dd284d26e971b99e0ad420b9d2459a"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/archived/common.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/protenix_budget_extension/common.py",
+    "sha256": "8a9e2eb55e5353c74e6e7f8d317347effd749abdab90b97ce84cf8e10454eeb4"
+  },
+  "reproducibility/budget_schedule_followups/pt_budget/archived/predict.py": {
+    "source": "/home/husrcf/Code/onestepfold/engramfold/src/engramfold/experiments/protenix_budget_extension/predict.py",
+    "sha256": "42017e9d33733a158539a816a5b11896ee603f731f37fcf3bb46cba66cc73735"
+  }
+}

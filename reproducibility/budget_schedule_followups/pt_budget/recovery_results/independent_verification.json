@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "comparisons": 189,
+  "maximum_absolute_error": 4.0766001685454967e-16,
+  "records_sha256": "30ed0e78d8afc2215a671a0103e14c1e334b062f5c5f9c328df5fb0159cc09b2",
+  "analysis_sha256": "f6f0b2ef06d1dafc4ec2f414b173a70a8693fd35744e0d456f1780f8c8f5e744"
+}

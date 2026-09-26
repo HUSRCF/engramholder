@@ -139,6 +139,18 @@
     "evidence/atlas_probe_statistics.json": "6fedebaaa110c3d54161e7bbfa08738023f0b697157f5ee68709eb275097097b",
     "evidence/atlas_probe_execution_lock.json": "f4fd74939460ef6d92ba13d8104d8ae872809617f134b092fa85ab18702c7bf1",
     "evidence/atlas_esmc_propagation_summary.json": "572b1f9d9ec9b549a1f2e824fcd5af0cf708682012ac8e347702d3e037d63208",
+    "evidence/of_schedule_summary.json": "6ed826e302b87eb3301d6b440b7461aae16b0f767c54a56bc2946ee957e8fa38",
+    "evidence/of_schedule_records.json": "b6951567bafb1c5728c44f06a5bf43214d7479439a514828d5a138cd1f939e00",
+    "evidence/of_schedule_execution_lock.json": "c609e62a6390b7383412fa29e6797f00b815e03f6e71dfe46ee47cf6eb9b2b91",
+    "evidence/of_schedule_reporting_amendment.json": "d4aefe7f6a0837b3cee4ebde985c3bb91cee42b2ce52592db8b0ca219fe10868",
+    "evidence/of_schedule_complete.json": "3528be345e05579541b5bf0b615688ae44313e442a0f509919aed9a2a9608a44",
+    "evidence/of_schedule_calibration.json": "f4f65636c264edb31e98d08fe41bfc5f4f7daec8d5d822009d8d0fe0cc518058",
+    "evidence/pt_budget_summary.json": "f6f0b2ef06d1dafc4ec2f414b173a70a8693fd35744e0d456f1780f8c8f5e744",
+    "evidence/pt_budget_records.json": "30ed0e78d8afc2215a671a0103e14c1e334b062f5c5f9c328df5fb0159cc09b2",
+    "evidence/pt_budget_execution_lock.json": "3e90778a46f6062fa136d49a85f6fc7cb6ebc5882e04a0916698f9295729ffd1",
+    "evidence/pt_budget_recovery_amendment.json": "32369ae0374794ca8cb4c881c35a985f25ead894170fb60cfa9db9657d62eff5",
+    "evidence/pt_budget_complete.json": "51cc1de07c8388dd73ca71ea9d4d320f671d3d1ede18c66e12fbc26541fe2fdf",
+    "evidence/pt_budget_manifest.json": "4a138328c4f51344d300ee3b79cec284e8fda0f64628932786500b2ac6762d0c",
     "reproducibility/anchor_intervention/protocol.md": "f04d8995f3c4efd0efd58b7ba4ea851c3d972638251c271fffe7ce7f70e0478a",
     "reproducibility/anchor_intervention/acceptance.md": "6c89747431b4efea546145ff66e2107fed45702c3c146cb6d1a591d480f37ff1",
     "reproducibility/anchor_intervention/per_target.csv": "8896f4f1980a0a75ad82550221f82b2d9da5043a1e9e0182c660bf4e33b3aa61",
@@ -348,7 +360,30 @@
     "reproducibility/atlas_followup/records/9qdy_A/parent_s20260925_ca.npy": "880523c806944a026a7abfdcee1f9f511113f075cbc64afd8dd2a65ac4f5e946",
     "reproducibility/atlas_followup/records/9qdy_A/query.json": "9213aec9b7b74bf69ac65c8201c77e69f05c152b9c4f0c6e571626e999b1c733",
     "reproducibility/atlas_followup/records/9qdy_A/query_ca.npy": "7408f732bd1fd4439f04cd9fd84827ce84298c30b6270dba3b07cc7889c24e7b",
-    "reproducibility/atlas_followup/records/9qdy_A/query_smoke.json": "440a39aaabaf7433af4451696652246cf0890a6f8492de9d6a57723f7fe1b76a"
+    "reproducibility/atlas_followup/records/9qdy_A/query_smoke.json": "440a39aaabaf7433af4451696652246cf0890a6f8492de9d6a57723f7fe1b76a",
+    "reproducibility/budget_schedule_followups/README.md": "e428636ee2097cd684499e7821d2b8ebaab96e0fa5cd6caca93062817b276c1c",
+    "reproducibility/budget_schedule_followups/import_manifest.json": "5869cb872e7d8cfa749271446c1aeaf6979ed755402fdd718dc335d27e638893",
+    "reproducibility/budget_schedule_followups/of_schedule/analysis_wave1_R1/independent_verification.json": "de75bf0aff13406aee47df31e9a4fead9667f07a0336db6803b3654ad61d4537",
+    "reproducibility/budget_schedule_followups/of_schedule/completion/wave1_complete.json": "00e2120cfed5ed97074bf22539f7a308b007ce852bb14d28af6d953db1806254",
+    "reproducibility/budget_schedule_followups/of_schedule/completion/wave1_completion_audit.json": "6278aff879f131793543a80ee8b1954850e756dbb0c13340993e1213d2923001",
+    "reproducibility/budget_schedule_followups/of_schedule/operations/schedule_retraining_protocol.py": "8e5af401069db8860434ca7cb8f0a8503002d6085116909521a23f1c46e75153",
+    "reproducibility/budget_schedule_followups/of_schedule/operations/schedule_retraining_runner.py": "8d29b7cb6bdc2ea9219e259734a7f034474c7c0dbfcd1cad620ab367b01e9022",
+    "reproducibility/budget_schedule_followups/of_schedule/operations/wave1_scoring/scorer.py": "cb4a92158353d6808e71bc4638c5c69e91b846ad82e5d2b413685116bb62e0b0",
+    "reproducibility/budget_schedule_followups/of_schedule/protocol.md": "f17937efb370ae1c04c38653d85f52e8113dc0d338f2c31129d17d4f2de1a625",
+    "reproducibility/budget_schedule_followups/of_schedule/review/report.md": "d1f7c0107e8d7af0e47262574396b8b229c5911a04d231578984bec63c7460eb",
+    "reproducibility/budget_schedule_followups/pt_budget/README.md": "e53a14dd48e447cf09a59a01c2ed6c371086afa08763823bf0e1ede692bb5ff2",
+    "reproducibility/budget_schedule_followups/pt_budget/archived/common.py": "8a9e2eb55e5353c74e6e7f8d317347effd749abdab90b97ce84cf8e10454eeb4",
+    "reproducibility/budget_schedule_followups/pt_budget/archived/predict.py": "42017e9d33733a158539a816a5b11896ee603f731f37fcf3bb46cba66cc73735",
+    "reproducibility/budget_schedule_followups/pt_budget/archived/state.py": "a9ffca063e79aaeb64226433893ae61e14dd284d26e971b99e0ad420b9d2459a",
+    "reproducibility/budget_schedule_followups/pt_budget/archived/train.py": "360e9547bd87fbd7f8334c357dfa20d7659f684352df17ca4d2892fb4f5fd839",
+    "reproducibility/budget_schedule_followups/pt_budget/implementation_review.json": "2efefdd1291b124ea6d91b7ee9fbdd3e2fca3d27996c2b4a26165c877dca6077",
+    "reproducibility/budget_schedule_followups/pt_budget/operations/reference_selection_fix/recover.py": "e635dc25646081c2a8b1d9fcc070393f1d1e16f8859a12654d912184d9f81982",
+    "reproducibility/budget_schedule_followups/pt_budget/operations/reference_selection_fix/reference_subset.py": "1286b12e290808225a14836a02dd59908eda1f8664cd923dac271f0fff5ce6f6",
+    "reproducibility/budget_schedule_followups/pt_budget/recovery_results/independent_verification.json": "8d1122a68553a05eec499a41e79ef5d8305d43d1ead58d86f883c9987423b2a6",
+    "reproducibility/budget_schedule_followups/pt_budget/recovery_results/preflight.json": "74fc3f5af7c1002d4afea7c523d465fdd240fe0e5bdbb0bff7ccff9ead43b058",
+    "reproducibility/budget_schedule_followups/pt_budget/recovery_results/recovery_complete.json": "0e02ba4e95ed0c24c8be0bdd31c79adf80a6e567ef8cd8efc53eda7d12f44464",
+    "reproducibility/budget_schedule_followups/pt_budget/restore_acceptance_snapshot.json": "a865c501ba7549a5ff5a410db22c4937c4b03d7c796e49d92ac078504460687b",
+    "reproducibility/budget_schedule_followups/pt_budget/review/report.md": "0172aa1db83e2850b44c5133738ec27829fee60dd2cd3873fa72295a6f39a072"
   },
   "cells": {
     "pt384_c96_gplus": {
@@ -27802,6 +27837,1817 @@
       "operation": "identity",
       "value": 0.0062704690343835245,
       "formatted": "+0.006270"
+    },
+    "budget_query": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "query_mean"
+      ],
+      "operation": "identity",
+      "value": 0.39116416332388115,
+      "formatted": "0.3912"
+    },
+    "budget_factor_native_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "cells",
+        "factor_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.8281373031578751,
+      "formatted": "0.8281"
+    },
+    "budget_factor_native_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "cells",
+        "factor_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.8331972414096809,
+      "formatted": "0.8332"
+    },
+    "budget_gain_factor_native": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "factor_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.005059938251805692,
+      "formatted": "+0.00506"
+    },
+    "budget_gain_factor_nativeLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "factor_native",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0021840880984665763,
+      "formatted": "+0.00218"
+    },
+    "budget_gain_factor_nativeHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "factor_native",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.007965716840959512,
+      "formatted": "+0.00797"
+    },
+    "budget_factor_rotated_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "cells",
+        "factor_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.8042185535336633,
+      "formatted": "0.8042"
+    },
+    "budget_factor_rotated_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "cells",
+        "factor_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.8216928724384186,
+      "formatted": "0.8217"
+    },
+    "budget_gain_factor_rotated": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "factor_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.017474318904755523,
+      "formatted": "+0.01747"
+    },
+    "budget_gain_factor_rotatedLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "factor_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.013429280321450634,
+      "formatted": "+0.01343"
+    },
+    "budget_gain_factor_rotatedHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "factor_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02171573408937055,
+      "formatted": "+0.02172"
+    },
+    "budget_gplus_native_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "cells",
+        "gplus_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.728046605811488,
+      "formatted": "0.7280"
+    },
+    "budget_gplus_native_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "cells",
+        "gplus_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.7633198511917828,
+      "formatted": "0.7633"
+    },
+    "budget_gain_gplus_native": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "gplus_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03527324538029492,
+      "formatted": "+0.03527"
+    },
+    "budget_gain_gplus_nativeLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "gplus_native",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.027314714606576092,
+      "formatted": "+0.02731"
+    },
+    "budget_gain_gplus_nativeHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "gplus_native",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04345199101918694,
+      "formatted": "+0.04345"
+    },
+    "budget_gplus_rotated_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "cells",
+        "gplus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.7292818017607391,
+      "formatted": "0.7293"
+    },
+    "budget_gplus_rotated_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "cells",
+        "gplus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.7700189167543664,
+      "formatted": "0.7700"
+    },
+    "budget_gain_gplus_rotated": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "gplus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.040737114993627394,
+      "formatted": "+0.04074"
+    },
+    "budget_gain_gplus_rotatedLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "gplus_rotated",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.033744625241614604,
+      "formatted": "+0.03374"
+    },
+    "budget_gain_gplus_rotatedHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "cell_gains",
+        "gplus_rotated",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04817817383732763,
+      "formatted": "+0.04818"
+    },
+    "budget_factor_rotation_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.023918749624212005,
+      "formatted": "+0.02392"
+    },
+    "budget_factor_rotation_1536Lo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.018861002021617522,
+      "formatted": "+0.01886"
+    },
+    "budget_factor_rotation_1536Hi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029274266887267753,
+      "formatted": "+0.02927"
+    },
+    "budget_factor_rotation_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011504368971262181,
+      "formatted": "+0.01150"
+    },
+    "budget_factor_rotation_3072Lo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.007426271707151092,
+      "formatted": "+0.00743"
+    },
+    "budget_factor_rotation_3072Hi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016041929207733976,
+      "formatted": "+0.01604"
+    },
+    "budget_factor_rotation_change": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "factor_rotation_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.01241438065294983,
+      "formatted": "-0.01241"
+    },
+    "budget_factor_rotation_changeLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "factor_rotation_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.017360321006696783,
+      "formatted": "-0.01736"
+    },
+    "budget_factor_rotation_changeHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "factor_rotation_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.007544179951216299,
+      "formatted": "-0.00754"
+    },
+    "budget_gplus_rotation_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0012351959492512606,
+      "formatted": "-0.00124"
+    },
+    "budget_gplus_rotation_1536Lo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006196442787622129,
+      "formatted": "-0.00620"
+    },
+    "budget_gplus_rotation_1536Hi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00351422667490867,
+      "formatted": "+0.00351"
+    },
+    "budget_gplus_rotation_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00669906556258374,
+      "formatted": "-0.00670"
+    },
+    "budget_gplus_rotation_3072Lo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.012323053877792953,
+      "formatted": "-0.01232"
+    },
+    "budget_gplus_rotation_3072Hi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0015392667639209964,
+      "formatted": "-0.00154"
+    },
+    "budget_gplus_rotation_change": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "gplus_rotation_change",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.005463869613332478,
+      "formatted": "-0.00546"
+    },
+    "budget_gplus_rotation_changeLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "gplus_rotation_change",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01139854093672791,
+      "formatted": "-0.01140"
+    },
+    "budget_gplus_rotation_changeHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "gplus_rotation_change",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00034716646511686125,
+      "formatted": "+0.00035"
+    },
+    "budget_interaction_1536": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.02515394557346327,
+      "formatted": "+0.02515"
+    },
+    "budget_interaction_1536Lo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.018347532532763035,
+      "formatted": "+0.01835"
+    },
+    "budget_interaction_1536Hi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "1536",
+        "contrasts",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.03227829634391157,
+      "formatted": "+0.03228"
+    },
+    "budget_interaction_3072": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.018203434533845916,
+      "formatted": "+0.01820"
+    },
+    "budget_interaction_3072Lo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.011755239758890066,
+      "formatted": "+0.01176"
+    },
+    "budget_interaction_3072Hi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.025043365360483755,
+      "formatted": "+0.02504"
+    },
+    "budget_K": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "K",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.0069505110396173506,
+      "formatted": "-0.00695"
+    },
+    "budget_KLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "K",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.014228145271701216,
+      "formatted": "-0.01423"
+    },
+    "budget_KHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "budget_change",
+        "K",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0004581264199424326,
+      "formatted": "+0.00046"
+    },
+    "budget_psi_residue": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.01775984522787497,
+      "formatted": "+0.01776"
+    },
+    "budget_psi_residueLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.011590316729934795,
+      "formatted": "+0.01159"
+    },
+    "budget_psi_residueHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.024271857185606732,
+      "formatted": "+0.02427"
+    },
+    "budget_K_residue": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "budget_change",
+        "K",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.006759313761774083,
+      "formatted": "-0.00676"
+    },
+    "budget_K_residueLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "budget_change",
+        "K",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01372123315183255,
+      "formatted": "-0.01372"
+    },
+    "budget_K_residueHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "residue_ca_lddt",
+        "budget_change",
+        "K",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00034900106114909717,
+      "formatted": "+0.00035"
+    },
+    "budget_psi_tm": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "3072",
+        "contrasts",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.015286747685185181,
+      "formatted": "+0.01529"
+    },
+    "budget_psi_tmLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "3072",
+        "contrasts",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.007329006076388884,
+      "formatted": "+0.00733"
+    },
+    "budget_psi_tmHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "3072",
+        "contrasts",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.02367999710648147,
+      "formatted": "+0.02368"
+    },
+    "budget_K_tm": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "budget_change",
+        "K",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.007335474537037037,
+      "formatted": "-0.00734"
+    },
+    "budget_K_tmLo": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "budget_change",
+        "K",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.015685319733796298,
+      "formatted": "-0.01569"
+    },
+    "budget_K_tmHi": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "tm_score_fixed_full_length",
+        "budget_change",
+        "K",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0010123871527777752,
+      "formatted": "+0.00101"
+    },
+    "budget_positive": {
+      "source": "evidence/pt_budget_summary.json",
+      "field_path": [
+        "metrics",
+        "ca_lddt",
+        "3072",
+        "contrasts",
+        "interaction",
+        "positive_targets"
+      ],
+      "operation": "identity",
+      "value": 127.0,
+      "formatted": "127"
+    },
+    "schedule_first_factor_native": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "absolute",
+        "factor_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.33646553359487963,
+      "formatted": "0.3365"
+    },
+    "schedule_first_factor_rotated": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "absolute",
+        "factor_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3063383346675527,
+      "formatted": "0.3063"
+    },
+    "schedule_first_gplus_native": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "absolute",
+        "gplus_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3023933436994894,
+      "formatted": "0.3024"
+    },
+    "schedule_first_gplus_rotated": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "absolute",
+        "gplus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3025726701779811,
+      "formatted": "0.3026"
+    },
+    "schedule_first_factor_rotation": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.030127198927326893,
+      "formatted": "+0.03013"
+    },
+    "schedule_first_factor_rotationLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.021098227611042394,
+      "formatted": "+0.02110"
+    },
+    "schedule_first_factor_rotationHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.039857642530848544,
+      "formatted": "+0.03986"
+    },
+    "schedule_first_gplus_rotation": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.00017932647849172286,
+      "formatted": "-0.00018"
+    },
+    "schedule_first_gplus_rotationLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.0021857363760953907,
+      "formatted": "-0.00219"
+    },
+    "schedule_first_gplus_rotationHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0020875372221733995,
+      "formatted": "+0.00209"
+    },
+    "schedule_first_interaction": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.03030652540581862,
+      "formatted": "+0.03031"
+    },
+    "schedule_first_interactionLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.021030713747270658,
+      "formatted": "+0.02103"
+    },
+    "schedule_first_interactionHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0405533878122978,
+      "formatted": "+0.04055"
+    },
+    "schedule_first_native_factor_minus_gplus": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "native_factor_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.034072189895390244,
+      "formatted": "+0.03407"
+    },
+    "schedule_first_native_factor_minus_gplusLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "native_factor_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.024668228493098424,
+      "formatted": "+0.02467"
+    },
+    "schedule_first_native_factor_minus_gplusHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "first",
+        "native_factor_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.04437013771616415,
+      "formatted": "+0.04437"
+    },
+    "schedule_all_factor_native": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "absolute",
+        "factor_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.43912201915584,
+      "formatted": "0.4391"
+    },
+    "schedule_all_factor_rotated": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "absolute",
+        "factor_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.43706316067491496,
+      "formatted": "0.4371"
+    },
+    "schedule_all_gplus_native": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "absolute",
+        "gplus_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3337939041519313,
+      "formatted": "0.3338"
+    },
+    "schedule_all_gplus_rotated": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "absolute",
+        "gplus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.34658324955419784,
+      "formatted": "0.3466"
+    },
+    "schedule_all_factor_rotation": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.002058858480924934,
+      "formatted": "+0.00206"
+    },
+    "schedule_all_factor_rotationLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.007211407324041271,
+      "formatted": "-0.00721"
+    },
+    "schedule_all_factor_rotationHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0114490008262536,
+      "formatted": "+0.01145"
+    },
+    "schedule_all_gplus_rotation": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.012789345402266583,
+      "formatted": "-0.01279"
+    },
+    "schedule_all_gplus_rotationLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.018407159478794562,
+      "formatted": "-0.01841"
+    },
+    "schedule_all_gplus_rotationHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.007623825892992705,
+      "formatted": "-0.00762"
+    },
+    "schedule_all_interaction": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.014848203883191519,
+      "formatted": "+0.01485"
+    },
+    "schedule_all_interactionLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.005046194934509024,
+      "formatted": "+0.00505"
+    },
+    "schedule_all_interactionHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.025039256063698695,
+      "formatted": "+0.02504"
+    },
+    "schedule_all_native_factor_minus_gplus": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "native_factor_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.10532811500390869,
+      "formatted": "+0.10533"
+    },
+    "schedule_all_native_factor_minus_gplusLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "native_factor_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.08692489064301301,
+      "formatted": "+0.08692"
+    },
+    "schedule_all_native_factor_minus_gplusHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "all",
+        "native_factor_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.12439367840300597,
+      "formatted": "+0.12439"
+    },
+    "schedule_last_factor_native": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "absolute",
+        "factor_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3907240260503914,
+      "formatted": "0.3907"
+    },
+    "schedule_last_factor_rotated": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "absolute",
+        "factor_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.37922390203830564,
+      "formatted": "0.3792"
+    },
+    "schedule_last_gplus_native": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "absolute",
+        "gplus_native",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.38981363158820975,
+      "formatted": "0.3898"
+    },
+    "schedule_last_gplus_rotated": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "absolute",
+        "gplus_rotated",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.39171525891001496,
+      "formatted": "0.3917"
+    },
+    "schedule_last_factor_rotation": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "factor_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.011500124012085717,
+      "formatted": "+0.01150"
+    },
+    "schedule_last_factor_rotationLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "factor_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0038938797895249565,
+      "formatted": "+0.00389"
+    },
+    "schedule_last_factor_rotationHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "factor_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.01945786493493824,
+      "formatted": "+0.01946"
+    },
+    "schedule_last_gplus_rotation": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "gplus_rotation",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.001901627321805163,
+      "formatted": "-0.00190"
+    },
+    "schedule_last_gplus_rotationLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "gplus_rotation",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.00566618074895784,
+      "formatted": "-0.00567"
+    },
+    "schedule_last_gplus_rotationHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "gplus_rotation",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.0018551134914943806,
+      "formatted": "+0.00186"
+    },
+    "schedule_last_interaction": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.013401751333890882,
+      "formatted": "+0.01340"
+    },
+    "schedule_last_interactionLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.0044428133763609046,
+      "formatted": "+0.00444"
+    },
+    "schedule_last_interactionHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.022701080689669806,
+      "formatted": "+0.02270"
+    },
+    "schedule_last_native_factor_minus_gplus": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "native_factor_minus_gplus",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0009103944621815702,
+      "formatted": "+0.00091"
+    },
+    "schedule_last_native_factor_minus_gplusLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "native_factor_minus_gplus",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.006443803484228725,
+      "formatted": "-0.00644"
+    },
+    "schedule_last_native_factor_minus_gplusHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "conditions",
+        "last",
+        "native_factor_minus_gplus",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.00851596778817854,
+      "formatted": "+0.00852"
+    },
+    "schedule_query": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "query",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.3019105772713658,
+      "formatted": "0.3019"
+    },
+    "schedule_D_write_R1": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.015458321522627097,
+      "formatted": "-0.01546"
+    },
+    "schedule_D_write_R1Lo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.030474887548825064,
+      "formatted": "-0.03047"
+    },
+    "schedule_D_write_R1Hi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0008857274048663027,
+      "formatted": "-0.00089"
+    },
+    "schedule_D_timing_R1": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_timing_R1",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.016904774071927735,
+      "formatted": "+0.01690"
+    },
+    "schedule_D_timing_R1Lo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_timing_R1",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": 0.004728689832575762,
+      "formatted": "+0.00473"
+    },
+    "schedule_D_timing_R1Hi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_timing_R1",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.029882369405500354,
+      "formatted": "+0.02988"
+    },
+    "schedule_D_last_R1": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_last_R1",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": 0.0014464525493006351,
+      "formatted": "+0.00145"
+    },
+    "schedule_D_last_R1Lo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_last_R1",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.01387380267841491,
+      "formatted": "-0.01387"
+    },
+    "schedule_D_last_R1Hi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "ca_lddt",
+        "differences",
+        "D_last_R1",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": 0.016232639009215913,
+      "formatted": "+0.01623"
+    },
+    "schedule_write_residue": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "residue_ca_lddt",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.014300800887811273,
+      "formatted": "-0.01430"
+    },
+    "schedule_write_residueLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "residue_ca_lddt",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.028653037047809592,
+      "formatted": "-0.02865"
+    },
+    "schedule_write_residueHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "residue_ca_lddt",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.00043417608321773775,
+      "formatted": "-0.00043"
+    },
+    "schedule_write_tm": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "tm_score_fixed_full_length",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "mean"
+      ],
+      "operation": "identity",
+      "value": -0.020059027777777776,
+      "formatted": "-0.02006"
+    },
+    "schedule_write_tmLo": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "tm_score_fixed_full_length",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "ci95",
+        0
+      ],
+      "operation": "identity",
+      "value": -0.039082204861111115,
+      "formatted": "-0.03908"
+    },
+    "schedule_write_tmHi": {
+      "source": "evidence/of_schedule_summary.json",
+      "field_path": [
+        "statistics",
+        "tm_score_fixed_full_length",
+        "differences",
+        "D_write_R1",
+        "interaction",
+        "ci95",
+        1
+      ],
+      "operation": "identity",
+      "value": -0.0014742534722222268,
+      "formatted": "-0.00147"
     }
   },
   "verified_esmc_A_contrasts": 78,
@@ -27810,8 +29656,8 @@
   "verified_new_protenix_contrasts": 6,
   "verified_full_cross_cells_and_contrasts": 36,
   "numeric_key_audit": {
-    "literal_references": 1788,
-    "distinct_keys": 1540,
+    "literal_references": 1904,
+    "distinct_keys": 1641,
     "missing": []
   },
   "pending": [],
@@ -28371,5 +30217,16 @@
     "maximum_absolute_error": 2.7755575615628914e-17,
     "maximum_coordinate_distance_error": 0.0,
     "scope": "Saved probe scores/curves, receipt bindings and prediction-distance changes; no new fitting, cache extraction or structure-quality rescoring."
+  },
+  "verified_budget_schedule": {
+    "passed": true,
+    "openfold_records": 3552,
+    "openfold_summaries": 138,
+    "protenix_records": 9984,
+    "protenix_summaries": 129,
+    "exact_historical_replay_rows": 4800,
+    "numeric_field_checks": 1404,
+    "maximum_absolute_error": 1.3877787807814457e-17,
+    "scope": "Saved score grids, paired bootstrap, marginals, source/receipt bindings; no GPU training or independent CIF rescoring."
   }
 }

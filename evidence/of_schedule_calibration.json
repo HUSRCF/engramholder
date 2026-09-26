@@ -1,0 +1,35 @@
+{
+  "learning_rate": 5e-05,
+  "scores": {
+    "5e-05": 0.38236038460389915,
+    "0.0001": 0.3812485517865854
+  },
+  "rule": "mean absolute Dev8 pair-lDDT over all 12 strategy/arm cells; exact ties choose smaller LR",
+  "execution_lock_sha256": "c609e62a6390b7383412fa29e6797f00b815e03f6e71dfe46ee47cf6eb9b2b91",
+  "calibration_receipts": {
+    "cal_first_factor_None_lr5e-05": "9c8c2bddc1f21e70737078a19d852d04f12d1eb9e60e4415bbea665cd1ac30bb",
+    "cal_first_factor_20261001_lr5e-05": "b6b18365af19304b08719208db56f93fadcf810ad005a086ed21015505b2779b",
+    "cal_first_generic_plus_None_lr5e-05": "9cc8196a7426316132e5f6095a46845d07929b83d28cd286426e052f1b8966b0",
+    "cal_first_generic_plus_20261001_lr5e-05": "486091715f0c6976683e9f5f4d200e1b18be7f606ac4e8d98ff23a15b9646e5b",
+    "cal_all_factor_None_lr5e-05": "8b5fd3fcd0b3c9a1b4d4160218ca10f45a32c8e0043744da05e144dd630a0aa2",
+    "cal_all_factor_20261001_lr5e-05": "4e7b9004ac73d2d8a26304ad65db267fa83da8ecf48064149dd6685d8fdb970e",
+    "cal_all_generic_plus_None_lr5e-05": "b61ce758440049df2663cb51e0ac86ab4860c51c8486ebbcac9ff5d7616f21dd",
+    "cal_all_generic_plus_20261001_lr5e-05": "01611bccfe403a17ebbcad4e97b695c37d95eb7c68a15447651f5946aa86fce5",
+    "cal_last_factor_None_lr5e-05": "1ae62f83fd0d8c9792af544777e74bb0dac7f59e57562d30506b02bb8c7afba5",
+    "cal_last_factor_20261001_lr5e-05": "265b5e6c999c3d7a08642558acd81a66eec73541057a8a2840b845367186e108",
+    "cal_last_generic_plus_None_lr5e-05": "9ccf7438bead9fd0669434b426c8462ca4c8d8e4cc1feedbebaf04bcd1264cf7",
+    "cal_last_generic_plus_20261001_lr5e-05": "60e16253c8cf7341f15601a62b772a8702f2a3e315c742ca6f943258d6193c65",
+    "cal_first_factor_None_lr0.0001": "e08af794b9f2009b6b021e2aa7d62bbc092f90a799989e673ce43afbba6739a8",
+    "cal_first_factor_20261001_lr0.0001": "1a88de9166429e9804123021ab384a758f66b67076b2917e7c1f5dd5a891c49e",
+    "cal_first_generic_plus_None_lr0.0001": "a5bc282b7006be73d9f2c5747313f2aaa0aaef55693d9fded3e7fbce07ccabba",
+    "cal_first_generic_plus_20261001_lr0.0001": "d28eb4b2583f5ce7ae7a37ac7f548e08f73c126cd605a81e7ea3482f76f141ca",
+    "cal_all_factor_None_lr0.0001": "37a9f35adca73ba7e865ab2bc68974a24a89c0d1d6203d55ba7c5935b89e26ef",
+    "cal_all_factor_20261001_lr0.0001": "1667d604017c7eae8862c9b72ab4bd7337fef905a99c311724831f61e8df2027",
+    "cal_all_generic_plus_None_lr0.0001": "d0bbfe3984a0582dcf8fc50f219376f6032eaacb48c6a0f106f4e915ad33abc5",
+    "cal_all_generic_plus_20261001_lr0.0001": "bb001d97c5f5ca466d7777ade5e101018884a9faf86fbf9b1df30d83d0cd4b21",
+    "cal_last_factor_None_lr0.0001": "205bd8888958721aa0636224bf05e26e1cc69d23f2e478c2ebc85019ac9c02ea",
+    "cal_last_factor_20261001_lr0.0001": "eb5754ed94c6bdaf91b384ccc8e4bf7fde6d499c353e86b7f0c5751afb5aa68c",
+    "cal_last_generic_plus_None_lr0.0001": "611ce2b03d8d0e73e0c0d15a7aae371c5e36f0df0356240f8d74b1cac264589a",
+    "cal_last_generic_plus_20261001_lr0.0001": "6543a1e477c1a0f0d210590e5123b552f12759b5b18d72c1db5c8e3886632f7e"
+  }
+}

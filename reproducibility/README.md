@@ -5,11 +5,13 @@ operator check, and fixed configuration records. The paper asset generator at
 `../scripts/build_paper_assets.py` reconstructs numbers/tables/figures from fixed
 score JSON and verifies 348 system-by-metric means against target records,
 144 target-level OpenFold interactions, six Protenix G+ contrasts, and 36
-full-inference source/norm cells and contrasts. The active v13 input lock contains
-349 source files and 1,860 generated numerical fields. All 1,851 previously
-integrated values, display formats and scientific source mappings are unchanged;
-nine fields add the bounded Atlas native/ESMC readout study. The v12 additions
-cover the Atlas propagation table and Native-only calibration.
+full-inference source/norm cells and contrasts. The active v14 input lock contains
+384 source files and 1,985 generated numerical fields. All 1,860 previously
+integrated values, display formats and scientific source mappings are unchanged.
+The new [budget and schedule follow-ups](budget_schedule_followups/README.md)
+add 125 fields, 35 sources and independent reconstruction of 13,536 score rows.
+The v13/v12 additions cover the Atlas native/ESMC readout, propagation and
+Native-only calibration.
 The v11 additions cover Protenix Fresh192 and the same-seed compensation repeat. The earlier additions
 cover compensation (including explicitly post-hoc target-distribution summaries),
 signed permutations and developmental checkpoint studies.

@@ -1,0 +1,132 @@
+{
+  "checked_time": "2026-09-26T06:53:17.237610+08:00",
+  "restores": [
+    {
+      "system": "C_factor_native_s20260923",
+      "receipt_sha256": "82518baacbf0b74ee9cc4666e722c08b94d70315a0a0342d183040984f607cd5",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_native_s20260924",
+      "receipt_sha256": "26adada718cf0fbc02ceeabd056f3929329e3fdaf83c3917d2c006da60d2f2f5",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_native_s20260925",
+      "receipt_sha256": "cfe64974687ea4626562d471dc0e0cb57d944e9f80895ed8257762f92e6bb15b",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260923",
+      "receipt_sha256": "cce6004bfc936fea39c33ad6a38596e11df049b4de15fc8c2626339104e9c5f4",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260924",
+      "receipt_sha256": "e32e2664164c8a39c0fd97273668335fe1b9b25debb3d3257c10ffa40737cc67",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261001_s20260925",
+      "receipt_sha256": "f71698d61a69e2fe71ffad68176361684e0f36750fbc920f4421fc7a9e0436f7",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260923",
+      "receipt_sha256": "56d409844024a56b3685bf66e85d5ab8482f5e4fdd4ffc7da3823e8087fb5742",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260924",
+      "receipt_sha256": "7ba238508d118393d31f73e52f7408e4b1620b4dc777bc264bd4487b1f071a6c",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261002_s20260925",
+      "receipt_sha256": "76008386ba22e4275ad7608ad14d501cd6c263afe2eb433aa5db058320275699",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260923",
+      "receipt_sha256": "e2f6e135961b2050ac65827fff3b359cdc37c737d7cb44a94791c4ce70557e8f",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260924",
+      "receipt_sha256": "7004717b227669cf505c8e38bb3a990ac7a5ab054ca68ae2a20e7ce8918fb494",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_factor_r20261003_s20260925",
+      "receipt_sha256": "b0fff31bef64b07ad4afc02dc9297c3c37e920b6c10b3896b56cd96ee540c3a4",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260923",
+      "receipt_sha256": "b62d175a89e60570238cfda30099b59dd53e237519bb2182dda5deb3d35ab8e6",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260924",
+      "receipt_sha256": "7d7889233091d858dfa441b24528ef532830da5bbb26ed11b64dea351123e4bc",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_native_s20260925",
+      "receipt_sha256": "5fad9012582fde8cb7434d2a484a0416aa0fdfe7fcec0b52eaec1dc2cb7df6ea",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260923",
+      "receipt_sha256": "773b5d9d9cae1f040bf3748f0819da83abd395e1fba784743b9b4141b6d8df77",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260924",
+      "receipt_sha256": "ebe4b2f18d52cedf56ee9687c3c9c249c0006c8a38105bf830577b5e27b5ac15",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261001_s20260925",
+      "receipt_sha256": "9ba7f19c5fa32dc94a2c7aa949fe4800621d8d8e1099b0f2575517e45b600cbd",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260923",
+      "receipt_sha256": "1e76bfa9e00e12d7dcb81ed3daa3adccd200bf900b90eb1970da6cb15f84ce10",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260924",
+      "receipt_sha256": "f2f78333d5598b9a36fe7ff71a960bfbd2a39bd66bb40cdc33d2087c532f14d8",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261002_s20260925",
+      "receipt_sha256": "a3d69ac6a3755f59466e8921f3d46be4c165cab982a91e8cb51d40c0235ce85a",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260923",
+      "receipt_sha256": "b23490aabfeb3f95b2387e3764a7e667bcdd8ab3fa700487dd52bddaf62a9a12",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260924",
+      "receipt_sha256": "02613043e5ae07b17d47804b052b2e3c8d9b20aaf00521c653d5b8193e80202b",
+      "loss_writer_optimizer_rng_exact": true
+    },
+    {
+      "system": "C_generic_plus_r20261003_s20260925",
+      "receipt_sha256": "695b835f4dadd70b0a5d0d6ca1224e91e6c826fb9f2025a4f32ca8aa08157708",
+      "loss_writer_optimizer_rng_exact": true
+    }
+  ],
+  "total_engineering_updates": 288,
+  "status": {
+    "stage": "prediction_old_smoke",
+    "tasks": 25,
+    "time": "2026-09-25T22:51:43.425249+00:00",
+    "state": "RUNNING"
+  }
+}
