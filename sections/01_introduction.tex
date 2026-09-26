@@ -21,11 +21,15 @@ We distinguish the effect of rotation within an adapter from its prediction
 quality and from performance differences between adapters.
 
 Our four-cell design compares native and rotated versions of two heads.
-Factor composes increments with native interface anchors through the frozen operator;
-G+ receives the same extra sequence features and explicit anchors, with a free
-affine output layer. And orthogonal transforms act only on completed residuals.
-Each arm is trained separately under paired settings, beginning
-at the same zero-residual function. For each head $H$, we measure the signed
+Factor forms residual updates by composing predicted factor increments
+with native interface anchors through a frozen operator. G+ uses the
+same additional sequence features, receives the anchors explicitly, and
+produces its residual through a free affine output layer.
+In each Rotated arm, a fixed orthogonal transform acts only on the
+completed residual.
+All arms within a recipe start from the same unadapted predictor, with
+zero residuals, and are trained separately under paired settings.
+For each head $H$, we measure the signed
 Native--Rotated score difference $\Delta_H$ and compare heads through
 $\Psi=\Delta_F-\Delta_{G+}$. A positive interaction means a larger signed
 score difference for Factor; it establishes neither a larger absolute response
@@ -33,12 +37,13 @@ to rotation nor a positive Factor score difference by itself.
 
 G+'s free output layer can absorb a rotation without changing its function
 class, but this closure does not guarantee matching AdamW trajectories
-\citep{loshchilov2019adamw}. Within-head rotations preserve local writer
-spectra at identical inputs, interface anchors and parameters. Across heads,
-we match the initial function,
-approximate parameter count and training recipe, while Jacobians and
-effective learning scales can differ. The interaction therefore compares
-complete parameterizations without establishing an expressivity hierarchy.
+\citep{loshchilov2019adamw}. Within either head, an orthogonal output rotation
+preserves the singular values of the local update Jacobian at identical
+inputs, interface anchors, and parameters. Across heads, we match the initial
+predictor function and training recipe and use similar parameter counts.
+The heads can still have different Jacobians and effective learning scales.
+The interaction therefore compares the two complete parameterizations;
+it does not establish that either head's function class contains the other's.
 
 Our fixed-budget studies establish positive interactions in several Protenix
 recipes and in OpenFold \citep{ahdritz2024openfold} under the Train96/ESM2
@@ -58,9 +63,9 @@ conditional on its fitted models and one fixed rotation, finds the largest
 interaction with First-only injection, which also has the lowest absolute
 quality. With All injection, a positive interaction coexists with a Factor
 score difference whose interval includes zero and a negative G+ difference.
-Thus evidence beyond the original stopping point supports the interaction,
-while the schedule comparison demonstrates why maximizing $\Psi$ alone
-cannot select an adapter.
+The interaction remains positive after doubling the training budget, while
+the schedule comparison shows that a larger $\Psi$ need not imply higher
+prediction quality.
 
 Additional interventions test the limits of a mechanism account. We ask
 whether adding shared orthogonal output freedom helps rotated Factor more
