@@ -1,14 +1,14 @@
 \section{Introduction}
 \label{sec:introduction}
-Protein structure predictors couple sequence information to geometry through
+Protein structure predictors map sequence information to geometry through
 learned pairwise representations
 \citep{jumper2021alphafold,gong2025protenix,seo2026atlasfold}.
-An adapter can reuse a pretrained pair-generating operator, predicting
-residue-level factor increments and combining them in its native coordinates.
-We call this structured adapter the Factor head.
-Freezing the predictor lets us study two inherited properties of this
-construction: its restricted update form and its orientation relative to
-downstream computation.
+We adapt a frozen predictor by adding residual updates to these
+representations. Our Factor head constructs these updates by predicting
+residue-level factor increments and composing them through the predictor's
+native pair-generating operators. Reusing these operators gives the adapter
+both a structured update form and an inherited output-channel orientation
+relative to the frozen downstream network.
 
 Parameter-efficient methods constrain weight updates, as in LoRA
 \citep{hu2021lora}, or intervene on representations, as in ReFT
