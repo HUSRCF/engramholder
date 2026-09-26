@@ -48,7 +48,10 @@ Our primary score is C$\alpha$ pair-lDDT: for fixed reference pairs within
 credit with the reference denominator unchanged. This pair-averaged lDDT
 variant \citep{mariani2013lddt} differs from supplementary residue-average
 C$\alpha$ lDDT; fixed-correspondence TM-score \citep{zhang2004tm} is also
-supplementary. For target $i$ define
+supplementary. For head $H\in\{F,G+\}$, $S_{H,i,s}$ and
+$S_{H,R_r,i,s}$ denote Native and rotated scores on target $i$ under
+training seed $s$, respectively. Here $R_r$ denotes the $r$th fixed output
+rotation. With $N$ targets in the panel, define
 \begin{equation}
  d_{H,i}=\frac13\sum_s\left(S_{H,i,s}-\frac13\sum_rS_{H,R_r,i,s}\right),
  \quad \Psi_i=d_{F,i}-d_{G+,i},\quad
@@ -59,10 +62,12 @@ With $\Delta_H=N^{-1}\sum_i d_{H,i}$,
 $\Psi=\Delta_F-\Delta_{G+}$ compares signed score differences.
 Positive $\Psi$ alone implies neither $\Delta_F>0$ nor
 $|\Delta_F|>|\Delta_{G+}|$ and does not rank absolute prediction quality.
-We use 20,000 paired target-bootstrap draws, retaining each target's
-complete seed/rotation record; Fresh192 resamples within its four fixed
-length strata. Intervals condition on fitted models and rotations rather
-than quantifying variability over new training runs. Secondary and follow-up
-intervals are unadjusted; the OpenFold feature study separately reports
-its prespecified three-test Holm correction \citep{holm1979simple}
+For structure-score contrasts, we use 20,000 paired target-bootstrap draws,
+retaining complete within-target seed/rotation records and resampling
+within length strata where specified by the protocol. Fresh192 and its
+budget extension resample within four fixed length strata. Intervals
+condition on fitted models and rotations rather than quantifying
+variability over new training runs. Secondary and follow-up confidence
+intervals are unadjusted; the OpenFold feature study applies Holm correction
+to the $p$ values of three prespecified secondary tests \citep{holm1979simple}
 (Appendix~\ref{app:esmc}).

@@ -10,9 +10,10 @@ $\Psi=\result{p192_pair_interaction}$
 [\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}].
 Factor's Native--Rotated score difference is
 \result{p192_pair_factor_rotation}, while G+'s is
-\result{p192_pair_gplus_rotation}; its interval includes zero without proving
-training equivalence. Fresh192 establishes a larger signed score difference
-for Factor on screened short-chain targets (Appendix~\ref{app:fresh192});
+\result{p192_pair_gplus_rotation}; its interval includes zero without
+establishing equivalent Native and Rotated G+ scores. Fresh192 establishes
+a larger signed score difference for Factor than for G+ under this fixed
+recipe on screened short-chain targets (Appendix~\ref{app:fresh192});
 Table~\ref{tab:coverage} retains all five means.
 
 For OpenFold, we evaluated the 24 fixed Train96/ESM2 adapters and Query on
@@ -47,10 +48,10 @@ Length48; Protenix Train96 also supports it on Confirm96-B
 These observed-panel results do not replace new-target tests.
 Seed/rotation marginals and supplementary metrics are reported in
 Appendices~\ref{app:complete_results} and \ref{app:dh_fourcells}.
-Signed channel permutations retain a positive Confirm96-B interaction,
-while the Length48 interval includes zero. The effect is therefore not
-confined to dense mixing, although ideal AdamW coordinate compatibility
-does not establish equivalent FP32 trajectories
+Under the OpenFold Train96/ESM2 recipe, signed channel permutations retain
+a positive Confirm96-B interaction, while the Length48 interval includes
+zero. The effect is therefore not confined to dense mixing, although ideal
+AdamW coordinate compatibility does not establish equivalent FP32 trajectories
 (Appendix~\ref{app:signed_control}).
 
 \subsection{What changes with training budget and injection schedule?}
@@ -158,11 +159,12 @@ on MI250. These mix backends across heads or across seeds, respectively
 
 \subsection{Does shared output freedom preferentially help rotated Factor?}
 \label{sec:e2_compensation}
-We jointly train a shared mean-preserving orthogonal map $C$ from identity
-with the head in Native and two preselected rotated Factor arms
-(Appendix~\ref{app:e2_compensation}). Let $B_N=S(N+C)-S(N)$ and
-$B_R^C=S(R+C)-S(R)$, averaging the latter over both rotations;
-$T_C=B_R^C-B_N$ compares their compensation gains.
+In the Native and two preselected Rotated conditions, we jointly train
+each Factor head with its own mean-preserving orthogonal map $C$.
+Initialized at identity, $C$ is shared across targets, pairs and recycles
+within that model (Appendix~\ref{app:e2_compensation}). Let
+$B_N=S(N+C)-S(N)$ and $B_R^C=S(R+C)-S(R)$, averaging the latter over both
+rotations; $T_C=B_R^C-B_N$ compares their compensation gains.
 Rotated Factor improves in both the original execution and a complete
 same-seed repeat using the same fixed no-$C$ baselines
 (Appendix Table~\ref{tab:e2_absolute}). Only the original establishes
