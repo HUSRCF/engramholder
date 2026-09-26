@@ -2,10 +2,13 @@
 \label{sec:construction}
 \subsection{Residual adaptation with native interface anchors}
 \label{sec:residual}
-Let $e(x)$ be frozen sequence features and $f_\theta$ a shared trainable predictor
-of residue-level factor increments. At interface $k$ and recycle $t$, let
-$a_{k,t},b_{k,t}$ denote the interface anchors (native factors), $G_{k,t}$ the frozen pair-generating
-operator, and $U_{k,t,0}$ its native baseline update at the selected interface.
+Let $e(x)$ denote frozen sequence features. Each independently trained Factor
+adapter has its own trainable predictor $f_\theta$ of residue-level factor
+increments, with parameters shared across residues and interface calls.
+At interface $k$ and recycle $t$, let $a_{k,t},b_{k,t}$ denote the interface
+anchors (native factors), $G_{k,t}$ the frozen operator used to construct
+the residual, and $U_{k,t,0}$ the separately retained native update at the
+selected interface.
 This is an update, not the full pair state or a common query-only trajectory:
 OpenFold computes it on each arm's current state, while Protenix reuses its
 cached query update. We define
@@ -26,7 +29,9 @@ predictor receives sequence features, not structure labels.
 
 The operator is backbone-specific. Protenix reuses cached query anchors and
 the same update across passes within a prediction. OpenFold's first main
-Evoformer OPM reads live MSA/pair states shaped by adapted recycle history.
+Evoformer OPM derives its anchors from the current MSA representation, after
+pair-biased attention and other MSA updates; these anchors can therefore
+depend on adapted recycle history.
 AtlasFold's first LM difference/product hook reads the current pass's
 MLM-dependent features before fusion with recycled states; its anchor does
 not directly read adapted history. Figure~\ref{fig:construction} summarizes
@@ -34,7 +39,8 @@ the intervention.
 
 \subsection{Full and first-order factor updates}
 \label{sec:full_tangent}
-For Protenix's bilinear decoder, write
+For Protenix, let $a_q,b_q$ denote the cached query anchors and $U_q$ the
+original query update. Its frozen decoder is
 \begin{equation}
  G_D(a,b)_{ij}=\frac{D W\operatorname{vec}(a_i b_j^\top)+b_{\rm out}}{D+\epsilon},
  \qquad \widetilde W=\frac{D}{D+\epsilon}W.
@@ -68,9 +74,10 @@ starts from zero residual and receives task training, so the experiment does
 not perturb an already trained native adapter at inference time.
 Appendix~\ref{app:rotation_sampling} specifies the ordinary QR sampler,
 its separate random stream, and the implementation's multiplication convention.
-Within the same head at identical inputs, interface anchors and parameters,
-orthogonality preserves residual norms,
-decoder singular values and the local writer's $J^\top J$. It need not preserve
+With inputs and interface anchors held fixed, let $J$ denote the Jacobian
+of the vectorized residual with respect to the adapter parameters. At
+identical parameter values, orthogonal output rotation preserves residual
+norms, decoder singular values, and $J^\top J$. It need not preserve
 its composition with the frozen downstream Jacobian, AdamW dynamics, or norms
 of the different updates learned after training. For state-dependent anchors,
 this is a local control, not a spectral equivalence of the whole recycled model.
