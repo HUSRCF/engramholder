@@ -33,9 +33,41 @@ AtlasFold & First LM diff/product; MLM & $0.4D+2(M_w+S)$ & 5 trunk; 20/30 diffus
 Protenix's bond mask is empty here.
 \end{table}
 
+\paragraph{Training and evaluation data.}
+\label{sec:panels}
+Train24, Train96 and Train384 are nested training sets containing 24, 96 and
+384 chains, respectively; Dev8 is the development set. Train384 has no
+target-ID overlap with Dev8 or either Confirm96 panel.
+Confirm96-A supports the historical Factor--Generic comparison; Confirm96-B
+supports the original Protenix direction comparison. Both contain 96 short-chain
+targets selected from the existing Protein Data Bank (PDB) structure catalog
+\citep{berman2000pdb}: single-model
+X-ray entries released by 2021-09-30, resolution at most 2.5\,\AA, standard
+amino acids and at least 90\% mapped C$\alpha$ coverage. Each Confirm96 panel
+contains 24 targets in each of four length strata (128--191, 192--255,
+256--319, 320--384). The release cutoff for newly selected candidates does
+not apply to the inherited Train24/Dev8.
+Table~\ref{tab:data_composition} distinguishes set construction
+and first use. Length48 comprises 16 targets in each prespecified range
+385--512, 513--640 and 641--768; actual lengths are 392--750, beyond the
+Train384 adapter training range of 152--383. The original direction and
+length studies selected their evaluation targets before scoring; later uses
+of those panels are observed follow-ups.
+
+Fresh96 and Fresh192 test fixed OpenFold Train96/ESM2 and Protenix
+Train384/ESMC models, respectively, on newly selected short-chain targets.
+Their four length strata contain 24 and 48 targets each, with realized lengths
+of 129--384 and 128--383 residues. Selection precedes new predictions and
+excludes documented prior project exposure; each study's sole primary
+endpoint is its four-cell interaction $\Psi$
+(Appendices~\ref{app:fresh96} and~\ref{app:fresh192}). Sequence screening and
+study-specific exclusions are detailed in Appendix~\ref{app:chronology}; they
+do not establish family or foundation-model pretraining isolation.
+
 \paragraph{Training and pairing.}
 The original Protenix direction study trains on Train24 for 384 updates,
-with tangent as the prespecified primary comparison and Full as a secondary comparison.
+with Native--Rotated under the tangent construction as the prespecified primary
+comparison and the corresponding Full comparison as secondary.
 The larger-set studies use Full on Train96 and Train384, with 1536 updates
 in each case. OpenFold uses Full on Train96 and Train384, each for 1536 updates;
 AtlasFold trains on Train96 for 1536 updates.
@@ -44,51 +76,26 @@ rules and optimizer settings. Each of three fixed rotations uses all three seeds
 G+ also has three native and nine rotated fits in each core four-cell setting.
 The prediction and compensation studies use their separately specified rotation
 sets and parameter groups.
-We evaluate the fixed final checkpoint and one inference sample, without
-target-label selection or cropping. The predictor-specific task losses
+We evaluate the fixed final checkpoint with one inference sample per full
+sequence, without cropping. Evaluation labels are not used to select
+checkpoints or inference samples. The predictor-specific task losses
 backpropagate only through the final recycle in every arm of the core recipes.
 The separate Protenix budget follow-up
 continues all 24 models to 3072 updates; the OpenFold schedule follow-up
 retrains 36 models with one rotation and gradients across four passes
 (Appendices~\ref{app:budget_extension} and~\ref{app:schedule_retraining}).
 
-\paragraph{Panels and study identity.}
-\label{sec:panels}
-Confirm96-A supports the historical Factor--Generic comparison; Confirm96-B
-supports the original Protenix direction comparison. Both contain 96 short-chain
-targets selected from the existing Protein Data Bank (PDB) structure catalog
-\citep{berman2000pdb}: single-model
-X-ray entries released by 2021-09-30, resolution at most 2.5\,\AA, standard
-amino acids and at least 90\% mapped C$\alpha$ coverage. Four length strata
-(128--191, 192--255, 256--319, 320--384) contribute 24 targets each.
-Table~\ref{tab:data_composition} distinguishes their construction and first use. Length48 comprises 16 targets in each prespecified range 385--512,
-513--640 and 641--768; actual lengths are 392--750, beyond the Train384 adapter
-training range of 152--383. The original direction and length studies selected
-their evaluation targets before scoring;
-later uses of those panels are observed follow-ups. Table~\ref{tab:study_roles}
-separates panel novelty from each four-cell study's endpoint role. Fresh192
-contains 48 targets per short-chain stratum (actual 128--383 residues), selected
-before evaluation of fixed Protenix/ESMC models after updating exclusions
-for prior project exposure; its only
-primary endpoint is $\Psi$ (Appendix~\ref{app:fresh192}). The channel-compensation
-study predeclares mean benefit and gap reduction over two selected rotations;
-its original execution and same-seed repeat, the eight-rotation prediction test and Dev8
-checkpoint diagnostics retain distinct roles (Appendices~\ref{app:prediction_e1}--\ref{app:e2_compensation}). Earlier
-matched-G+ and norm-exchange endpoints remain in their respective appendices.
-Train24 $\subset$ Train96 $\subset$ Train384; Train384 has no target-ID
-overlap with Dev8 or either confirmation panel. The inherited Train24/Dev8
-are not restricted by the new-candidate release cutoff. Sequence screening and
-study-specific exclusions are recorded in Appendix~\ref{app:chronology}; they do not establish family or
-foundation-model pretraining isolation.
-
-\paragraph{Scores and uncertainty.}
+\paragraph{Scores and interaction.}
 Our primary score is C$\alpha$ pair-lDDT: for all fixed reference pairs within
 15\,\AA, average distance-preservation credit at thresholds 0.5, 1, 2 and
 4\,\AA, then give each target equal weight. Missing prediction pairs receive
 zero credit without changing the reference denominator. This is a C$\alpha$
 pair-averaged variant of lDDT \citep{mariani2013lddt}. Residue-average C$\alpha$
 lDDT and fixed-correspondence TM-score \citep{zhang2004tm} are supplementary.
-For target $i$ define
+For the core three-seed, three-rotation comparisons, let $S_{H,i,s}$ denote
+the Native score for head $H\in\{F,G+\}$ on target $i$ after training with
+seed $s$; $S_{H,R_r,i,s}$ is its counterpart trained with rotation $R_r$.
+For a panel of $N$ targets, define
 \begin{equation}
  d_{H,i}=\frac13\sum_s\left(S_{H,i,s}-\frac13\sum_rS_{H,R_r,i,s}\right),
  \quad \Psi_i=d_{F,i}-d_{G+,i},\quad
@@ -100,14 +107,27 @@ score difference; positive values favor Native. Thus
 $\Psi=\Delta_F-\Delta_{G+}$ compares signed score differences, not absolute rotation
 sensitivity. Positive $\Psi$ alone implies neither $\Delta_F>0$ nor
 $|\Delta_F|>|\Delta_{G+}|$ and does not rank absolute prediction quality.
-We resample whole target records for 20,000 paired bootstrap draws, preserving
-within-target seed/rotation pairing; Fresh192 resamples within its four fixed
-length strata. Intervals condition on the fitted models;
+\paragraph{Uncertainty and study identity.}
+For structure-score contrasts, we resample complete target records for 20,000
+paired bootstrap draws, preserving within-target seed/rotation pairing and
+protocol-specific stratification. Fresh192 and its budget extension resample
+within four fixed length strata. Intervals condition on the fitted models;
 seeds, rotations and supplementary metrics are not additional independent
-proteins. Secondary and follow-up intervals are unadjusted; the OpenFold feature-substitution
-study reports its own predeclared three-test Holm correction \citep{holm1979simple}
-(Appendix~\ref{app:esmc}). Protocol-specific
-bootstrap seeds and endpoint roles are preserved in the accompanying records.
+proteins. Reported confidence intervals are unadjusted for multiple comparisons.
+Separately, the OpenFold feature-substitution study applies Holm correction
+\citep{holm1979simple} to the $p$ values of its three prespecified secondary
+tests (Appendix~\ref{app:esmc}). No joint correction is applied across all
+follow-up studies.
+
+Table~\ref{tab:study_roles} separates panel novelty from each four-cell study's
+endpoint role. The output-map experiment predeclares rotated Factor's mean
+gain and its additional gain over Native across two selected rotations;
+its original execution and same-seed repeat are reported separately
+(Appendix~\ref{app:e2_compensation}). The reconstruction prediction test uses
+eight rotations as its units and an exact permutation test for its primary
+association (Appendix~\ref{app:prediction_e1}). Dev8 checkpoint diagnostics,
+matched-G+ and norm-exchange comparisons retain their distinct questions
+and endpoints in the corresponding appendices.
 
 \begin{table}[t]\centering\footnotesize
 \caption{Identity of the four-cell studies. A study-specific primary
@@ -123,6 +143,6 @@ OpenFold Fresh96 & New targets & Fresh96 $\Psi$ & Sole primary; fixed models \\
 Protenix Fresh192 & New targets & Fresh192 $\Psi$ & Sole primary; fixed models \\
 Protenix budget & Observed Fresh192 & $\Psi_{3072}$ & Primary; paired budget change secondary \\
 OpenFold schedules & Observed C96-B & Three-rotation $\Psi_{\mathrm{All}}-\Psi_{\mathrm{First}}$ (not completed) & All--First $\Psi$ difference using R1 only (amended scope) \\
-OpenFold features & Observed & C96-B ESMC $\Delta_F$ & C96-B ESMC $\Psi$: secondary (Holm); other $\Psi$ unadjusted \\
+OpenFold features & Observed & C96-B ESMC $\Delta_F$ & C96-B ESMC $\Psi$: secondary, Holm-adjusted $p$; confidence intervals unadjusted \\
 Protenix/Atlas features & Observed & C96-B ESMC $\Delta_F$, per backbone & Follow-up; no joint correction \\\bottomrule
 \end{tabular}\end{table}

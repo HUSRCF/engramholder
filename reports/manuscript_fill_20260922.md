@@ -4,14 +4,14 @@
 
 | 项目 | 当前状态 |
 |---|---|
-| 当前反馈版 | `main`匿名；本轮基于`05c2110`，清理工程验收叙述并补强新目标／预算／时序／机制检验的贡献顺序。作者资料不提交。 |
+| 当前反馈版 | `main`匿名；本轮基于`5809c08`，落实Experimental design组织、定义与统计范围四项修改。作者资料不提交。 |
 | 预算扩展完成 | [原方案](protenix_fourcell_budget_plan_20260926.md)已由执行侧完成：24条1536→3072续训，9984条正式／Dev预测；[本轮复核](budget_schedule_integration_20260926.md)。不追加训练。 |
 | 科学更新 | [联合整合报告](fresh192_retraining_integration_20260925.md)：Fresh192唯一主要Ψ得到支持；E2重训练保留旋转收益，但额外缓解T_C未重新建立。原结果与重训练分开，不合并为新种子。 |
-| 稿件呈现 | 验收清单与交付过程归入代码材料，论文保留科学条件、失败计分及方案变更；四格与Δ_F／Δ_G／Ψ同列，补偿定位为相对收益假说检验。[本轮修订](editorial_scope_cleanup_20260926.md)。 |
+| 稿件呈现 | 设计节先定义数据，再介绍训练；并列Fresh96/Fresh192、补充符号定义、限定目标bootstrap范围并明确Holm仅校正p值。其余论文章节保持不变。[本轮修订](design_revision_20260926.md)。 |
 | 来源与数值 | [v14锁](../notes/writing_branch_20260922/paper_sources.v14.lock.json)，384输入、1985字段。旧349输入哈希及1860完整数值对象不变；新增35输入、125字段。旧锁保留。 |
-| 直接核验 | [本轮验证](../notes/writing_branch_20260922/draft_validation.editorial_scope_20260926.json)：384输入哈希、1985完整数值对象不变；既有27项检查及CPU示例、编译与局部视觉检查通过。未重训或重新评分CIF。 |
-| 当前PDF | [反馈版PDF](../build/feedback_v50_editorial_scope/paper.pdf)。最终篇幅与全稿验收留到收尾。 |
-| 匿名材料 | [v50补充材料](../build/anonymous_editorial_scope_v50.zip)同步稿源及工程归档；全稿、二进制匿名性及最终篇幅仍待统一验收。 |
+| 直接核验 | [本轮验证](../notes/writing_branch_20260922/draft_validation.design_revision_20260926.json)：384输入、1985完整数值对象及生成表图不变；独立只读复核、27项检查、CPU示例、编译和局部视觉检查通过。无新训练或评分。 |
+| 当前PDF | [反馈版PDF](../build/feedback_v51_design/paper.pdf)。最终篇幅与全稿验收留到收尾。 |
+| 匿名材料 | [v51补充材料](../build/anonymous_design_v51_final.zip)同步当前稿源；全稿、二进制匿名性及最终篇幅仍待统一验收。 |
 | 已完成任务 | P192、R2六条件／384更新、R3九组／13824更新／864预测均完成。相关协议、分数、实现身份与收据已纳入；不再列为待启动。 |
 | 已审阅、尚未纳入 | [同起点通道校准A+B](posttraining_calibration_review_20260925/interpretation.md)：33组／3744预测完成，69项原比较及30项已有补充汇总独立复算一致。两项主要优势未建立，OpenFold联合续训保留次要平均收益。仍未纳入正文、v14或匿名包；本轮新增的是独立的 Atlas Native-only 校准。 |
 | 注入时序、报告阶段 | [第一阶段](openfold_injection_schedule_phase1_20260926.md)7,008轨迹／14,112评分／0失败，261项复算通过；All−First主要交互差未建立，First自身交互保留。只进入MD，未纳入正文、v14或匿名包。 |

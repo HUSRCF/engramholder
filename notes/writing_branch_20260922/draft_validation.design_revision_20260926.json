@@ -1,0 +1,56 @@
+{
+  "utc": "2026-09-26T11:02:21.142922+00:00",
+  "initial_head": "5809c08",
+  "source_lock": "v14",
+  "inputs_unchanged": 384,
+  "complete_numeric_objects_unchanged": 1985,
+  "generated_files_unchanged": true,
+  "all_figures_unchanged": true,
+  "manuscript_files_changed": [
+    "sections/03_design.tex"
+  ],
+  "preserved": [
+    "updated opening and recipe table",
+    "final-recycle sentence",
+    "interaction equation and notation",
+    "amended R1 schedule row",
+    "all other sections and appendices"
+  ],
+  "new_training": false,
+  "new_predictions": false,
+  "new_statistics": false,
+  "compile": {
+    "passed": true,
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 57,
+    "pdf": "build/feedback_v51_design/paper.pdf",
+    "sha256": "c2dd638b8fb517c16337ec940e1f92f39de8dfd9b6ceaa471055b0afe97a07d5",
+    "source_manifest": "build/feedback_v51_design/compile_sources.json",
+    "page_limit_checked": false,
+    "full_visual_acceptance": false,
+    "local_visual_review": [
+      "design section pages 4–6",
+      "data and training paragraphs",
+      "interaction definition",
+      "Holm table entry and uncertainty paragraph",
+      "transition to Results"
+    ]
+  },
+  "artifact": {
+    "path": "build/anonymous_design_v51_final.zip",
+    "sha256": "4d3223a4c95ca9ecd6d7a85170bcc04e2dc595bb85e238a9f13546c7d084803a",
+    "files": 538,
+    "manifest_entries_verified": 537,
+    "tests": 27,
+    "numerical_objects_unchanged": 1985,
+    "all_existing_score_verifiers_passed": true,
+    "operator_and_compensation_cpu_checks": true,
+    "check_device": "CPU on X570, BIO environment",
+    "manuscript_tex_matches_compiled_sources": true,
+    "full_retraining": false,
+    "full_binary_anonymity_certification": false
+  },
+  "review": "Independent read-only review confirmed Fresh panel definitions, protocol-specific resampling, rotation-level association test and Holm p-value scope against existing appendices.",
+  "scope": "Four authorized design-section clarifications; no experiment or numerical changes. Final page-limit and full-PDF review deferred."
+}
