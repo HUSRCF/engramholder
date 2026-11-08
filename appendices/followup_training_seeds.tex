@@ -1,0 +1,49 @@
+\subsection{Four-cell results with additional training seeds}
+\label{app:followup_seeds}
+
+We retrained the query-only Protenix/Train384/ESMC and
+OpenFold/Train96/ESM2 configurations with three additional training seeds
+per predictor. Each cohort used the original three fixed rotations and
+1,536 updates per fit: two heads, each with a Native fit and three
+Rotated fits per training seed, gave 24 fits per predictor. We evaluated
+the new models on the previously evaluated Fresh192 and Fresh96 panels,
+respectively (Appendices~\ref{app:fresh192} and~\ref{app:fresh96}).
+The new cohorts used separate execution environments from the original
+fits and are reported separately.
+
+All Protenix cells used the same three fixed inference seeds, with one
+structure sample per seed and target. We formed paired contrasts within
+each inference seed and averaged them within target and training seed.
+OpenFold used deterministic query-only inference. The 95\% intervals
+in Table~\ref{tab:followup_seeds} use 20,000 paired target-bootstrap
+draws, within the four fixed length strata for Protenix and over the
+full panel for OpenFold. They condition on the fitted models, the three
+fixed rotations, and the inference seeds where applicable.
+
+\begin{table}[!htbp]
+\centering\small
+\caption{C$\alpha$ pair-lDDT in the four cells and the signed interaction
+$\Psi=(F-RF)-(G^+-RG^+)$ for three additional training seeds. Rotated
+scores average the same three fixed rotations. The mean rows include
+conditional 95\% target-bootstrap intervals for $\Psi$; individual
+seed rows give point estimates.}
+\label{tab:followup_seeds}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Configuration & Seed & $F$ & $RF$ & $G^+$ & $RG^+$ & $\Psi$ \\
+\midrule
+\rebuttalCrossSeedRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+All three additional Protenix training seeds had positive interaction
+point estimates. Separately, holding each Protenix inference seed fixed
+and averaging over training seeds and rotations gave
+$\Psi=\rebuttalProtenixInferenceMeans$. The OpenFold cohort mean
+remained inconclusive. Exploratory intervals that resample both targets
+and training seeds were $\rebuttalProtenixSeedInterval$ for Protenix
+and $\rebuttalOpenFoldSeedInterval$ for OpenFold. The results provide
+evidence across additional training runs and the tested inference
+samples for the Protenix recipe. These analyses do not estimate
+uncertainty for a new random rotation.

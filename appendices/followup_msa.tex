@@ -1,0 +1,100 @@
+\subsection{Native heads with capped and full MSAs}
+\label{app:followup_msa}
+
+We compared Native Factor and Native G+ with their unadapted backbone
+at matched MSA inputs on the previously evaluated Fresh192 (Protenix)
+and Fresh96 (OpenFold) panels. For each input condition, we trained
+each head with three seeds for 1,536 updates. The heads used matched
+features and anchors: ESMC-600M on Train384 for Protenix Mini-default
+and ESM2-35M on Train96 for OpenFold. The unadapted backbones did not
+receive the added PLM features. These experiments compare absolute
+scores and adaptation gains with MSA inputs; no output rotations were
+applied.
+
+Protenix Mini-default v0.5.0 retained its native MSA pathway. We
+capped the assembled alignment at 32, 256 or 512 rows including the
+query, before native recycle subsampling, or supplied the available
+alignment subject to native assembly and sampling (full MSA).
+Training and evaluation used the same MSA condition. Protenix evaluations used
+four recycle passes, five diffusion steps and three paired inference
+seeds with one structure per seed and target, in FP32 without templates.
+The 32-row, 256-row and full conditions used the same runtime.
+The 512-row experiment used separate hardware and a separate runtime;
+its adapter comparisons use the baseline from that runtime.
+
+OpenFold used \texttt{model\_3\_ptm} with up to 512 clustered and
+1,024 extra MSA rows, four recycle passes, and no templates. The
+adapter used the query row factors at the first main Evoformer
+outer-product mean. Three fixed MSA feature-sampling seeds supplied
+matched features to the two heads and the unadapted backbone.
+
+\paragraph{Depth convention.}
+The 32-row cap was fixed before evaluating the adaptation gains.
+\href{https://elifesciences.org/articles/75751\#s4}{Del Alamo et al.\ (2022)}
+used shallow MSAs for AlphaFold2 conformational sampling, reporting
+\texttt{max\_extra\_msa} with \texttt{max\_msa\_clusters} set separately.
+Their depth convention differs from our assembled row count.
+
+The primary contrast was Factor minus the unadapted backbone at
+full MSA in the Protenix 32/full and OpenFold studies, and at the
+assigned cap in the separate Protenix 256- and 512-row experiments.
+For each contrast we average over the applicable training seeds and
+paired inference or feature-sampling seeds within target. The 95\%
+intervals use 20,000 paired target-bootstrap draws conditional on the
+fitted models and fixed seeds, within the four Fresh192 length
+strata for Protenix and over the full panel for OpenFold.
+Secondary intervals are unadjusted.
+
+\clearpage
+\begin{table}[!htb]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{C$\alpha$ pair-lDDT with MSA input. $B$ is the unadapted
+backbone, $F$ is Native Factor, and $G^+$ is Native G+. The contrasts
+show point estimates and 95\% target intervals; bold marks the
+primary comparison of each experiment. The 32-row condition was
+prespecified as secondary in the Protenix 32/full experiment. The
+256-row experiment was planned after the 32-row, 512-row and full
+results were known.}
+\label{tab:followup_msa_pair}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+MSA input & $B$ & $F$ & $G^+$ & $F-B$ & $F-G^+$ \\
+\midrule
+\rebuttalMsaPairRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htb]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Residue-average C$\alpha$ lDDT and fixed full-length TM-score
+for the same structures and contrasts as
+Table~\ref{tab:followup_msa_pair}. These secondary intervals are unadjusted.}
+\label{tab:followup_msa_other}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+MSA input & $B$ & $F$ & $G^+$ & $F-B$ & $F-G^+$ \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Residue-average C$\alpha$ lDDT}} \\
+\rebuttalMsaResidueRows
+\midrule
+\multicolumn{6}{@{}l}{\emph{TM-score}} \\
+\rebuttalMsaTmRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+Factor outscored G+ and the matched unadapted Protenix backbone at
+the 32- and 256-row caps (Table~\ref{tab:followup_msa_pair}). The
+same-runtime difference in Factor gains between the 32-row cap and
+full MSA, $(F_{32}-B_{32})-(F_{\mathrm{full}}-B_{\mathrm{full}})$,
+was $\rebuttalMsaDepthGain$ in pair-lDDT. The unadapted full-MSA
+backbone still scored higher in absolute terms than the capped models
+in that comparison. Factor did not establish a gain at the 512-row
+cap or with full Protenix MSA; with full OpenFold MSA, its pair-lDDT
+was slightly below the baseline. The results motivate evaluating heads
+at the intended MSA setting. Both training and evaluation depth changed
+in the 32-versus-full comparison. Artificial caps do not establish a
+universal depth threshold or transfer to naturally shallow alignments.

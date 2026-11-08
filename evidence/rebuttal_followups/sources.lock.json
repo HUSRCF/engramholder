@@ -1,0 +1,37 @@
+{
+  "openfold_cross_seed": {
+    "analysis_sha256": "bee8e74616b1cc5326f9598d5843be9e6225f6fb2b7a951987f27f37131a853e",
+    "records_sha256": "31592db3882abceedd57d63489514b516cb2563f147ec524caae64ee2f1c377b",
+    "snapshot_sha256": "013cc268fed108e8b3cf7d31e6a08df48622b914858b1e04683baa48ef39d40d"
+  },
+  "openfold_full_msa": {
+    "analysis_sha256": "58d0743fd3a652dba97bcdad4641fb0e50ba80be5468a81527459a9699f2b66c",
+    "records_sha256": "c1647d9e93790784470246b8cf0ea8d1a78a86ef26d267d1b461bb7a7d64a18d",
+    "snapshot_sha256": "ee7833ba73d314111b775a25ccf644438666df128553a7f6fab36fc3c0a66f7b"
+  },
+  "protenix_cross_seed": {
+    "analysis_sha256": "f8c5a25693f8e3845d540c916c738a0e9a3f44fd58cac16f5179ee23c147ecaa",
+    "records_sha256": "1285ea8421f575b74809f3ce06ac9d10588a94c346186ce2332487433a47cfe0",
+    "snapshot_sha256": "3f0ac98c5ae39f395dfd71d31856854b6fbbc12e60d993258e1591de7f57835a"
+  },
+  "protenix_frozen_map": {
+    "analysis_sha256": "52924119833adbaec344574697b401608861e3b40aea546145d425a727f8b5d7",
+    "records_sha256": "f859a7a59673268afabf7e63df27f6821c35fce20a9b29ee3be335638a12efc6",
+    "snapshot_sha256": "7ff2f1cf4c017ba0670da69d1e22c706c1b4b802f7738f31b97bbe33b44ff940"
+  },
+  "protenix_msa256": {
+    "analysis_sha256": "7de1c8f355d46b21cb776fc39c4a70fc8653c7558252269ac706c34c85edc4e1",
+    "records_sha256": "0eea462469f6805161aa24701f24cd8824973f7066f8c0ed00595300cae8511f",
+    "snapshot_sha256": "624e47b18f90cc0edf73acbce38183bfa07c67ab3a45387200ef4f39020d219b"
+  },
+  "protenix_msa32_full": {
+    "analysis_sha256": "172e37bbfafc4b6f98874f37c91c067662094b0c5dd30d0706fe87389faf5074",
+    "records_sha256": "3c1ced441c04ad4a4d607f10b4d4004915abec494f33ce9d1143d53bbcba3eaf",
+    "snapshot_sha256": "9257552b507364d8d18c8f7b940ea325ba44f0a88b35ee0f24fc10b901e86e3e"
+  },
+  "protenix_msa512": {
+    "analysis_sha256": "782285ae6672ea0929bde6524aab9684354b25fc5f22be2f56f9f5d54bf33f98",
+    "records_sha256": "f843c8f743bacf877f689f214b455b2570bd41f9a07f9a7341318392aad31b86",
+    "snapshot_sha256": "43890f6e102f93de85d340e9dd74a3a8e5b06458109b7b92f454691178d51be4"
+  }
+}

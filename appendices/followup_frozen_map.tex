@@ -1,0 +1,63 @@
+\subsection{Protenix output remapping with the Factor head frozen}
+\label{app:followup_map}
+
+The OpenFold compensation study above trained the residual generator and
+output map jointly. To test whether remapping alone can improve a
+trained head, we started from the 12 Protenix Factor fits in
+Appendix~\ref{app:followup_seeds}: one Native and three Rotated fits
+for each of three training seeds. We forked each parent into three
+512-update branches: map only (frozen head), head only (fixed identity
+map), and joint training. The branches used the same continuation
+target order and paired training noise; the two branches that updated
+the head inherited its optimizer state.
+
+Each branch with a trainable map learned its own identity-initialized
+$C\in SO(128)$ via the exponential of a full skew-symmetric matrix.
+The map is shared across targets, pairs, and recycles within that model.
+It is applied after the fixed rotation and before adding the query
+baseline, and preserves each pair's residual norm without a channel-mean
+constraint. We evaluated the new branches on the previously
+evaluated Fresh192 panel with the same three inference seeds as the
+parent predictions. For the map-only branch, let $B_N$ and $B_R$ be
+its paired gains over the corresponding parents, with the latter
+averaged over the three rotations. The primary contrast is $B_R-B_N$.
+
+\begin{table}[!htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Map-only gains in C$\alpha$ pair-lDDT with the trained
+Factor head frozen. The 95\% intervals use 20,000 paired bootstrap
+draws, resampling targets within the fixed Fresh192 length strata.
+The exploratory column additionally resamples the three training
+seeds; inference seeds and rotations stay fixed.}
+\label{tab:followup_map}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Contrast & Estimate & Target CI & Target and seed CI \\
+\midrule
+\rebuttalFrozenMapRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering\small
+\caption{C$\alpha$ pair-lDDT for the same Protenix parents and continuation
+branches. Contrast intervals resample targets only and are unadjusted.}
+\label{tab:followup_map_controls}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Branch or contrast & Native & Rotated \\
+\midrule
+\rebuttalBranchRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+The map improved the rotated head with the residual generator frozen.
+Native Factor also improved. The interval for the extra Rotated gain
+barely excluded zero when resampling targets alone and included zero
+when resampling training seeds as well (Table~\ref{tab:followup_map}).
+This intervention shows that remapping alone can improve predictions
+under this recipe. It leaves the cause of the original head-by-rotation
+interaction unresolved.
