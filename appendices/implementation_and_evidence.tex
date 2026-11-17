@@ -104,6 +104,33 @@ mean equal computation.
 
 \input{appendices/study_roles_table}
 
+\begin{table}[htbp]\centering\small
+\caption{Recipe selection and subsequent evaluation. This ordering separates
+evidence available when choosing the Protenix/Train384/ESMC recipe from
+results obtained after fixing that recipe for Fresh192. It is not a
+prespecified search over recipes.}
+\label{tab:recipe_selection}
+\begin{tabular}{@{}p{.17\linewidth}p{.44\linewidth}p{.33\linewidth}@{}}\toprule
+Stage & Evidence already available / action & What the next test can establish \\\midrule
+Observed exploration & Protenix residual forms, Mini/Tiny checkpoints,
+training-set sizes and Factor/G+ comparisons on observed panels; OpenFold
+and AtlasFold comparisons; ESM2/ESMC feature studies & Motivates a selected
+configuration; does not provide independent recipe-level confirmation \\[3pt]
+Fresh192 recipe lock & Select Mini-default, Train384, full Factor,
+ESMC-600M and 1536 updates from observed evidence; freeze all 24 adapters
+and their inference settings & New-target performance of those fixed
+adapters, conditional on historical recipe selection \\[3pt]
+Fresh192 target lock & Fix screened targets and the analysis before
+new predictions; no Fresh192 scores used for checkpoint selection &
+Original new-target interaction, not uncertainty over a recipe search \\[3pt]
+After Fresh192 scoring & Extend the original models to 3072 updates;
+later run new-seed, MSA and mechanism studies on observed panels &
+Budget, run and input sensitivity; not another independent target confirmation \\[3pt]
+Later external subset & Freeze existing MSA adapters and CASP16 subset
+before its predictions & Retrospective transfer to eight primary targets,
+without historical database or pretraining isolation \\\bottomrule
+\end{tabular}\end{table}
+
 \begin{table}[htbp]
 \caption{Data composition, separating inherited sets from additions. Quotas
 use four short-chain strata (128--191, 192--255, 256--319, 320--384) or three
@@ -741,6 +768,7 @@ Backbone / recipe & Panel & Difference & 95\% interval \\\midrule
 \end{table}
 
 \input{appendices/followup_msa}
+\input{appendices/followup_casp16}
 
 \section{Fresh96: fixed-model validation on new targets}
 \label{app:fresh96}
@@ -1219,6 +1247,7 @@ The repeat neither validates the failed reconstruction predictor nor tests
 compensation at reference anchors.
 
 \input{appendices/followup_frozen_map}
+\input{appendices/followup_rotation_prediction}
 
 \clearpage
 \section{Residual-anchor intervention}

@@ -29,28 +29,31 @@ absolute response to rotation.
 Fixed Protenix/ESMC models establish the primary interaction on 192 new
 targets locked before prediction (Fresh192). Fixed OpenFold Train96 models
 \citep{ahdritz2024openfold} do not establish their Fresh96 primary
-interaction. Native Factor outperforms G+ in the tested Protenix recipes,
-whereas G+ wins some OpenFold comparisons: the interaction does not determine
-which head gives higher prediction quality.
+interaction. A separate Protenix cohort with three new training seeds and
+three paired inference seeds retains a positive interaction on the observed
+Fresh192 panel. While Native Factor outperforms G+ in the tested query-only
+Protenix recipes, G+ prevails in some OpenFold comparisons, indicating that
+the interaction alone does not determine which head yields higher
+prediction quality.
 
-On the now-observed Fresh192 panel, a prespecified doubling of the Protenix
-update budget retains a positive interaction and reduces Factor's own score
-difference, without establishing a paired change in $\Psi$. An amended
-OpenFold schedule study on observed targets, using one fixed rotation R1,
-finds the largest interaction with First-only injection, which gives the
-lowest absolute quality. A larger $\Psi$ therefore need not identify a
-better adapter or schedule.
+Doubling the Protenix update budget retains a positive interaction without
+establishing convergence. An amended OpenFold schedule study using one
+fixed rotation finds the largest interaction with First-only injection,
+which gives the lowest absolute quality. Thus neither the interaction nor
+equal update counts alone selects a head or schedule.
 
-We also test whether a shared trainable orthogonal output map benefits
-rotated Factor more than Native Factor. Both selected rotated Factor arms
-improve in the original execution and a same-seed retraining repeat.
-Only the original establishes a larger compensation gain than Native's;
-the repeat gives a smaller positive estimate of this gain difference whose
-interval includes zero. A prespecified teacher-update reconstruction
-diagnostic did not establish the predicted ranking of post-training
-Native--Rotated score differences across eight tested rotations.
+MSA-enabled comparisons identify a practical boundary: Factor improves
+over the matched Protenix backbone at 32- and 256-row caps, with no
+established gain at 512 rows or full MSA. A retrospective CASP16 subset
+supports a 32-row adaptation gain without establishing superiority over G+
+or the full-MSA baseline. OpenFold provides weaker evidence of a 32-row
+adaptation gain.
+These are tests of utility under specified inputs, separate from the
+query-only rotation interaction.
 
-The new-target test and budget extension establish a Protenix/ESMC
-head-by-rotation interaction at both tested budgets. The OpenFold schedule
-study shows that a larger interaction need not yield higher prediction
-quality, while the mechanism studies leave its cause unresolved.
+The resulting contribution is a controlled parameterization-by-rotation
+finding and an empirical account of when adaptation helps. Compensation,
+reconstruction and a new gradient-based rotation prediction test leave
+the mechanism unresolved. The evidence motivates selecting heads and
+schedules by absolute validation scores under the intended MSA inputs,
+rather than maximizing $\Psi$.

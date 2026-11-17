@@ -3,7 +3,8 @@
 \subsection{Do Native--Rotated score differences vary between heads?}
 \label{sec:interaction_result}
 \paragraph{Prospective tests of fixed models.}
-For Protenix, we selected the Train384/ESMC recipe from observed evidence,
+For Protenix, we selected the Train384/ESMC recipe from observed evidence
+(Appendix Table~\ref{tab:recipe_selection}),
 then evaluated all 24 fixed adapters and Query on Fresh192 without further
 training. The sole primary interaction is
 $\Psi=\result{p192_pair_interaction}$
@@ -27,6 +28,16 @@ It is not established on new targets; a positive Factor difference cannot
 replace this endpoint. The studies differ in predictor, training scale,
 features and panel, so their significance outcomes do not estimate a
 between-predictor difference in $\Psi$.
+
+\paragraph{Additional training and inference seeds.}
+On the now-observed panels, three new training seeds per predictor give
+$\Psi=\rebuttalProtenixNewPsi$ for Protenix and
+$\rebuttalOpenFoldNewPsi$ for OpenFold (conditional 95\% target intervals).
+All three Protenix training-seed estimates are positive; its evaluation
+uses three paired inference seeds. The cohorts are reported separately
+from the original fits. Exploratory training-seed/target resampling also
+retains a positive Protenix interval, but does not estimate uncertainty
+for new random rotations (Appendix~\ref{app:followup_seeds}).
 
 \begin{figure}[t]
 \centering\includegraphics[width=\linewidth]{figures/interaction.pdf}
@@ -59,20 +70,15 @@ AdamW coordinate compatibility does not establish equivalent FP32 trajectories
 \paragraph{A fixed budget extension.}
 After Fresh192 was observed, we continued all 24 Protenix/ESMC models from
 1536 to 3072 updates with their AdamW states and unchanged learning rate.
-All four cells improve (Table~\ref{tab:budget_schedule_overview}). Factor's
-Native--Rotated score difference decreases, with a paired change of
-\result{budget_factor_rotation_change}
-[\result{budget_factor_rotation_changeLo}, \result{budget_factor_rotation_changeHi}].
+All four cells improve (Table~\ref{tab:budget_schedule_overview}), and
+Factor's Native--Rotated score difference decreases.
 The prespecified final interaction remains positive:
 $\Psi_{3072}=\result{budget_interaction_3072}$
 [\result{budget_interaction_3072Lo}, \result{budget_interaction_3072Hi}].
-G+'s difference becomes more negative in point estimate, with a paired
-change interval including zero. The paired interaction change is
-$K=\Psi_{3072}-\Psi_{1536}=\result{budget_K}$
-[\result{budget_KLo}, \result{budget_KHi}],
-which does not establish a change in $\Psi$. These results extend beyond
-the original stopping point without establishing convergence, budget
-invariance or another new-target confirmation
+G+'s difference becomes more negative in point estimate, but neither its
+paired change nor the paired change in $\Psi$ is established. This extends
+beyond the original stopping point without establishing convergence,
+budget invariance or another new-target confirmation
 (Appendix~\ref{app:budget_extension}).
 
 \begin{table}[t]\centering\footnotesize
@@ -116,38 +122,23 @@ retraining each schedule does not isolate a feedback mechanism.
 \label{sec:esmc}
 \label{sec:protenix}
 \label{sec:length}
-Protenix Factor retains Native--Rotated advantages across the tested residual
-forms, checkpoints and mean-preserving rotations, and on complete sequences
-in Length48 (Appendix Figure~\ref{fig:scope}). Length transfer does not
-establish family or pretraining novelty. At Train384, Protenix interactions
-are positive with both ESM2 and ESMC on the observed panels, while OpenFold
-establishes them with neither feature source
-(Appendix Table~\ref{tab:interaction_scope}). In these Train384 comparisons,
-ESMC improves prediction quality over ESM2 in both predictors without
-establishing changes in $\Delta_F$ or $\Psi$. Feature family, width,
-precision and projection size change together
-(Appendix~\ref{app:dh_fourcells}); model size is not isolated.
+Protenix Factor retains Native--Rotated advantages across the tested
+residual forms, checkpoints, mean-preserving rotations and Length48
+(Appendix Figure~\ref{fig:scope}). At Train384, interactions are positive
+with both ESM2 and ESMC on observed panels; OpenFold establishes them with
+neither feature source. ESMC improves absolute quality in both predictors
+without establishing changes in $\Delta_F$ or $\Psi$. Feature family,
+width, precision and projection size change together
+(Appendix~\ref{app:dh_fourcells}).
 
 \label{sec:limits_results}
-Direction effects do not determine head competitiveness. Native Factor
-exceeds Native G+ in the matched Protenix comparison, whereas Native G+
-outperforms Native Factor on Length48 under both OpenFold/ESM2 training
-scales (Appendix Table~\ref{tab:gplus}). Neither adaptation
-benefit nor interaction is established for AtlasFold with either feature
-source; high baseline and native AtlasLM remain unisolated explanations
-(Appendix~\ref{app:dh_fourcells}). Training-set changes also alter data
-composition and repetition counts, preventing a pure data-size attribution
-(Appendix~\ref{app:training_psi}). Saved Dev8 checkpoint curves establish
-neither convergence nor a uniform learning delay
-(Appendix~\ref{app:checkpoint_curves}). Table~\ref{tab:coverage} reports
-all four-cell means and backend differences.
-
-On previously evaluated Fresh192 targets, Native Factor outscored G+
-and the matched unadapted Mini-default backbone in C$\alpha$ pair-lDDT
-at MSA caps of 32 and 256 rows. At a 512-row cap, Factor trailed G+,
-with no established gain over the matched backbone. The unadapted
-full-MSA backbone still outscored Factor at the two shallower caps
-(Appendix~\ref{app:followup_msa}).
+Native G+ outperforms Factor on Length48 under both OpenFold/ESM2 training
+scales (Appendix Table~\ref{tab:gplus}). AtlasFold establishes neither
+adaptation benefit nor interaction. Training-scale changes also alter data
+composition and repetition counts, while saved Dev8 curves establish neither
+convergence nor a uniform learning delay
+(Appendices~\ref{app:training_psi} and~\ref{app:checkpoint_curves}).
+Table~\ref{tab:coverage} retains all four-cell means and backend differences.
 
 \begin{table}[t]
 \caption{Four-cell C$\alpha$ pair-lDDT means at 1536 updates. F/G+: three seeds;
@@ -169,34 +160,68 @@ on MI250. These mix backends across heads or across seeds, respectively
 (Appendix~\ref{app:dh_fourcells}).
 \end{table}
 
-\subsection{Does shared output freedom preferentially help rotated Factor?}
-\label{sec:e2_compensation}
-Using OpenFold Train96/ESM2 and evaluating on observed Confirm96-B,
-we jointly train each Factor head with its own mean-preserving orthogonal
-map $C$ in Native and two mean-preserving Rotated conditions selected for
-low and high reconstruction error before their task training.
-Initialized at identity, $C$ is shared across targets, pairs and recycles
-within that model (Appendix~\ref{app:e2_compensation}). Let
-$B_N=S(N+C)-S(N)$ and $B_R^C=S(R+C)-S(R)$, averaging the latter over both
-rotations; $T_C=B_R^C-B_N$ compares their compensation gains.
+\subsection{When does adaptation help with MSA inputs?}
+\label{sec:msa_utility}
+We trained Native Factor and G+ at matched MSA settings and compared them
+with the unadapted backbone (Table~\ref{tab:msa_utility}). On observed
+Fresh192, Factor outscored both G+ and Mini-default at 32- and 256-row
+caps, but did not establish a gain at 512 rows or full MSA. At 512 rows,
+G+ outscored Factor. The full-MSA baseline remained stronger than the
+capped adapters. These comparisons change training and evaluation depth
+together; artificial caps do not identify a universal depth threshold
+(Appendix~\ref{app:followup_msa}).
 
-Rotated Factor improves in both the original execution and a complete
-same-seed repeat using the same fixed no-$C$ baselines
-(Appendix Table~\ref{tab:e2_absolute}). Only the original establishes
-a larger compensation gain than Native:
-$T_C=\result{e2_pair_T_C}$
-[\result{e2_pair_T_CLo}, \result{e2_pair_T_CHi}],
-versus \result{e2rep_pair_T_C}
-[\result{e2rep_pair_T_CLo}, \result{e2rep_pair_T_CHi}] in the repeat.
-The repeat adds no independent seeds and is not pooled with the original;
-its $T_C$ interval includes zero. Differing interval significance does not
-establish a between-execution population difference
-(Appendix~\ref{app:e2_repeat}). Across eight rotations, the prespecified
-positive association between held-out reconstruction error and post-training
-Native--Rotated score differences was not established
+On observed Fresh96, OpenFold Factor's 32-row gain has a conditional
+interval just above zero, but its exploratory training-seed/target
+interval includes zero: $\rebuttalOpenFoldMsaSeedInterval$.
+Factor's advantage over G+ is not established. This is limited evidence
+of adaptation utility, not a replication of the rotation interaction.
+
+We also evaluated the fixed Protenix MSA adapters on a retrospective
+CASP16 subset. Among eight eligible A1 targets without component suffixes,
+the 32-row Factor gain passes the two-comparison correction; the 256-row
+gain does not. G+ also benefits at 32 rows, and neither cap establishes
+Factor superiority over G+. Full-MSA Mini-default has the highest mean
+score. The small, length-restricted subset does not establish blind CASP
+generalization (Appendix~\ref{app:casp16}). These results support evaluating
+heads at the intended MSA depth by absolute validation quality.
+
+\begin{table}[t]\centering\footnotesize
+\caption{MSA-enabled C$\alpha$ pair-lDDT. $B$: matched unadapted backbone;
+$F/G^+$: Native heads, each with three training seeds. Protenix and OpenFold
+use observed Fresh192 and Fresh96, respectively; CASP16 uses eight primary
+targets and the fixed Protenix adapters. Intervals condition on fitted models
+and paired inference/feature seeds: 95\% for Fresh panels, Bonferroni 97.5\%
+for the two CASP16 gains. Full-MSA baselines are retained. Other contrasts,
+residue-lDDT and TM-score appear in Appendices~\ref{app:followup_msa}
+and~\ref{app:casp16}.}
+\label{tab:msa_utility}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Setting & $B$ & $F$ & $G^+$ & $F-B$ [interval] \\\midrule
+\rebuttalUtilityRows
+\bottomrule\end{tabular}\end{table}
+
+\subsection{Do mechanism diagnostics explain the interaction?}
+\label{sec:e2_compensation}
+Jointly training each OpenFold Factor head with its own identity-initialized,
+mean-preserving orthogonal map improves the rotated arms in both executions,
+but preferential benefit over Native is not re-established in the same-seed
+repeat (Appendix~\ref{app:e2_compensation}). The map is shared across targets,
+pairs and recycles within each model. A separate Protenix frozen-head map
+study improves both Native and Rotated arms; its preferential gain interval
+crosses zero when training seeds are resampled
+(Appendix~\ref{app:followup_map}). Reconstruction error also fails to
+predict post-training direction gaps across eight rotations
 ($\rho=\result{e1_ca_lddt_x_rho}$,
 exact one-sided $p=\result{e1_ca_lddt_x_p}$;
-Appendix~\ref{app:prediction_e1}). The useful rotated-arm gains do not
-validate that prediction or identify output freedom as the unique
-explanation of the four-cell interaction; output freedom and joint
-optimization remain coupled.
+Appendix~\ref{app:prediction_e1}).
+
+A new test uses shared-head gradients at initialization to predict
+favorable and unfavorable rotations before full training. Eight pairs
+matched in rotation strength yield 96 fits and three paired inference
+seeds on observed Fresh192. The predicted Factor good-minus-bad contrast
+is $\rebuttalRotationFactor$; its difference from G+'s contrast is
+$T=\rebuttalRotationT$. Both intervals resample rotation pairs and targets;
+neither meets the prespecified positive prediction
+(Appendix~\ref{app:rotation_prediction}). The tested initialization-based
+criterion therefore does not explain the final structure-score differences.

@@ -27,6 +27,13 @@ OpenFold used \texttt{model\_3\_ptm} with up to 512 clustered and
 adapter used the query row factors at the first main Evoformer
 outer-product mean. Three fixed MSA feature-sampling seeds supplied
 matched features to the two heads and the unadapted backbone.
+In a later 32-row study, the actual aligned, deduplicated input contained
+at most 32 sequences including query, with 32 clustered slots and one
+fully masked extra-MSA padding slot. No extra homologous rows were supplied.
+We trained six new Native heads with three seeds and 1,536 updates each,
+using the original AdamW recipe and final-pass gradients. Three paired
+MSA feature seeds gave 2,016 predictions including the matched baseline.
+The study reused Fresh96 after the full-MSA results were known.
 
 \paragraph{Depth convention.}
 The 32-row cap was fixed before evaluating the adaptation gains.
@@ -36,8 +43,8 @@ used shallow MSAs for AlphaFold2 conformational sampling, reporting
 Their depth convention differs from our assembled row count.
 
 The primary contrast was Factor minus the unadapted backbone at
-full MSA in the Protenix 32/full and OpenFold studies, and at the
-assigned cap in the separate Protenix 256- and 512-row experiments.
+full MSA in the Protenix 32/full and OpenFold full-MSA studies, and at the
+assigned cap in the separate Protenix 256- and 512-row and OpenFold 32-row studies.
 For each contrast we average over the applicable training seeds and
 paired inference or feature-sampling seeds within target. The 95\%
 intervals use 20,000 paired target-bootstrap draws conditional on the
@@ -98,3 +105,10 @@ was slightly below the baseline. The results motivate evaluating heads
 at the intended MSA setting. Both training and evaluation depth changed
 in the 32-versus-full comparison. Artificial caps do not establish a
 universal depth threshold or transfer to naturally shallow alignments.
+
+OpenFold's 32-row Factor gain was $\rebuttalOpenFoldMsaGain$ under the
+conditional target bootstrap. All three training-seed gain estimates were
+positive, but the exploratory interval resampling training seeds and
+targets was $\rebuttalOpenFoldMsaSeedInterval$. Neither this analysis nor
+the conditional Factor-minus-G+ interval establishes a general head
+advantage. These Native-only studies do not estimate a rotation interaction.

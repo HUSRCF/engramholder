@@ -1,0 +1,81 @@
+\subsection{Predicting new rotations from initialization gradients}
+\label{app:rotation_prediction}
+
+This study tested whether the actual shared Factor head's task gradients
+could predict final structure-score differences before full retraining.
+It retained the query-only Protenix Mini-default/Train384/ESMC recipe and
+1,536 updates. Train24 and the disjoint Dev8 supplied the predictor;
+Fresh192 was already observed and supplied the final structure evaluation.
+The prediction phase used no Fresh192 scores or reference structures.
+
+\paragraph{Candidate family and predictor.}
+We generated 64 rotations in eight fixed groups of eight, all in
+$SO(128)$ with the same complete eigenangle spectrum, Frobenius distance
+16 from identity, and the same left and right action on the channel-mean
+direction. This is a restricted rotation family, not arbitrary Haar sampling.
+At zero-residual initialization, only the head's final shared affine layer
+has nonzero parameter gradients. For each rotation, each Train24 target's
+gradient generated one virtual first AdamW update under the original recipe.
+We averaged these parameter increments across training targets and took
+their negative inner product with the mean Dev8 gradient:
+\[
+q(R)=-\left\langle\overline{g}_{\mathrm{Dev8}}(R),
+                    \overline{\delta\theta}_{\mathrm{Train24}}(R)\right\rangle.
+\]
+The update is computed per target before averaging; this is not AdamW
+applied to the mean gradient. We averaged $q$ over three head initialization
+seeds and three task-noise seeds, retaining the original recycle-gradient
+truncation. The predictor uses shared head parameters, not independently
+fitted per-target residue factors.
+
+Within each group, the largest and smallest $q$ were labeled predicted
+good and bad, with candidate-order tie breaking. The prespecified gate
+required at least six of eight pairs to retain this order in at least
+two of three initialization marginals and two of three noise marginals,
+alongside gradient and virtual-update checks. All eight pairs passed;
+all were retained. This development gate is not evidence of successful
+prediction of final structure scores. The 16 selected rotations and
+analysis were fixed before their full-training structure predictions.
+
+\paragraph{Validation and estimand.}
+Eight pairs, two rotations per pair, two heads and three paired training
+seeds gave 96 fits. Three paired inference seeds on 192 targets gave
+55,296 predictions. For each head $H$, let
+$D_H=\operatorname{mean}_{\mathrm{pairs}}(S_{H,\mathrm{good}}-
+S_{H,\mathrm{bad}})$ after averaging targets and training/inference seeds.
+The primary contrast is $T=D_F-D_{G+}$. Equivalently, $T$ is the difference
+between the bad-rotation and good-rotation interactions because the Native
+terms cancel; the primary test requires no new Native fits. Predictive
+support requires both $D_F$ and $T$ to have positive estimates and primary
+intervals above zero. Labels are not reversed after observing scores.
+
+The primary 95\% intervals use 20,000 crossed paired bootstrap draws over
+rotation groups and targets within the four fixed Fresh192 length strata,
+preserving head, training-seed and inference-seed pairing. They condition
+on the three training and inference seeds. Additional training-seed
+resampling is exploratory. The eight selected pairs support inference
+only within this candidate-generation and selection procedure.
+
+\begin{table}[!htbp]\centering\small
+\caption{Prespecified C$\alpha$ pair-lDDT prediction contrasts. Primary
+intervals resample rotation groups and targets. Neither required contrast
+has an interval above zero.}
+\label{tab:rotation_prediction}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Contrast & Mean & Primary 95\% interval & Positive pairs \\\midrule
+\rebuttalRotationRows
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[!htbp]\centering\small
+\caption{All eight preselected rotation pairs, averaged over targets and
+training/inference seeds. Good/bad denote predictions, not observed rankings.}
+\label{tab:rotation_prediction_pairs}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Pair & Factor good $-$ bad & G+ good $-$ bad & $T$ \\\midrule
+\rebuttalRotationPairRows
+\bottomrule\end{tabular}\end{table}
+
+The joint predictive criterion is not met. Negative point estimates with
+intervals spanning zero establish neither the proposed ranking nor an
+opposite mechanism. This failure limits the tested initialization-based
+predictor; it does not rule out all task-dependent geometric explanations.

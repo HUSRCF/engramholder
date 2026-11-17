@@ -3,10 +3,11 @@
 \paragraph{Predictors and information.}
 We freeze Protenix-Mini/Tiny default checkpoints, official AF2
 \texttt{model\_3\_ptm} weights through OpenFold, and AtlasFold with native
-AtlasLM-3B retained. Evaluation inputs exclude homologous sequences,
-templates and reference structures; adapter training uses structural
-supervision. All four arms within each recipe use the same frozen
-ESM2-35M features \citep{lin2023evolutionary} or ESMC-600M features
+AtlasLM-3B retained. In the query-only orientation experiments, evaluation
+inputs exclude homologous sequences, templates and reference structures;
+adapter training uses structural supervision. Within each recipe, all four
+arms use the same frozen ESM2-35M features \citep{lin2023evolutionary} or
+ESMC-600M features
 \citep{candido2026language}. Unadapted baselines lack these added features,
 so their comparison with adapted models combines feature access and
 adaptation. Native--Rotated holds feature access fixed within each head.
@@ -17,9 +18,11 @@ inference settings.
 Core four-cell recipes use 1536 updates, three training seeds and three
 fixed rotations. Each head has three Native and nine Rotated fits.
 Within a recipe, arms share data order, seed choices, random-condition
-rules and optimizer settings. We evaluate the final checkpoint with one
-inference sample per complete target, without selection using evaluation
-labels. Task-loss gradients propagate only through the final recycle pass;
+rules and optimizer settings. Original evaluations use the final checkpoint
+and one inference sample per complete target without evaluation-label
+selection. The additional Protenix training cohort uses three paired
+inference seeds, with one sample per seed and target. Task-loss gradients
+propagate only through the final recycle pass;
 the separate injection-schedule study retains gradients across four passes.
 The historical Train24 tangent study and intervention-specific training
 settings are detailed in Appendices~\ref{app:recipes},
@@ -62,12 +65,16 @@ With $\Delta_H=N^{-1}\sum_i d_{H,i}$,
 $\Psi=\Delta_F-\Delta_{G+}$ compares signed score differences.
 Positive $\Psi$ alone implies neither $\Delta_F>0$ nor
 $|\Delta_F|>|\Delta_{G+}|$ and does not rank absolute prediction quality.
-For structure-score contrasts, we use 20,000 paired target-bootstrap draws,
+Original structure-score contrasts use 20,000 paired target-bootstrap draws,
 retaining complete within-target seed/rotation records and resampling
 within length strata where specified by the protocol. Fresh192 and its
 budget extension resample within four fixed length strata. Intervals
 condition on fitted models and rotations rather than quantifying
-variability over new training runs. Secondary and follow-up confidence
-intervals are unadjusted; the OpenFold feature study applies Holm correction
-to the $p$ values of three prespecified secondary tests \citep{holm1979simple}
+variability over new training runs. Follow-ups additionally report exploratory
+training-seed resampling; the rotation prediction test resamples rotation
+pairs and targets (Appendix~\ref{app:rotation_prediction}). Intervals are
+unadjusted except for the two CASP16 primary gains, which use Bonferroni
+97.5\% intervals (Appendix~\ref{app:casp16}). The OpenFold feature study
+applies Holm correction to the $p$ values of three prespecified secondary
+tests \citep{holm1979simple}
 (Appendix~\ref{app:esmc}).

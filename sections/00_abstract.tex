@@ -5,27 +5,22 @@ increments through a frozen predictor's native pair-generating operators.
 The generic head G+ explicitly receives the interface anchors and has a free
 output layer, making its function class closed under output rotation.
 Our four-cell design trains Native and Rotated versions of each head separately
-from the same zero-residual function under paired settings. At identical
-inputs, interface anchors and parameters, orthogonal rotations preserve local
-writer spectra. The interaction $\Psi$ is the difference between the two heads'
-signed Native--Rotated score differences, rather than their absolute responses.
-On 192 new targets locked before prediction, fixed Protenix/ESMC models
+from the same zero-residual function under paired settings. The interaction
+$\Psi$ is the difference between the heads' signed Native--Rotated score
+differences; it does not rank absolute prediction quality.
+On 192 new targets locked before prediction, fixed query-only Protenix/ESMC models
 establish a C$\alpha$ pair-lDDT interaction of \result{p192_pair_interaction}
-[\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}];
-OpenFold's Fresh96 primary interaction remains unestablished.
-In an observed-panel follow-up, the Protenix interaction remains positive
-after a prespecified doubling of the update budget: Factor's Native--Rotated
-difference decreases, while G+'s point estimate becomes more negative.
-In an OpenFold follow-up using one fixed rotation on previously evaluated
-targets, first-pass-only injection yields the largest interaction but the
-lowest prediction scores among the tested schedules. A positive interaction
-need not establish a positive Factor direction effect.
-We then test whether adding a shared trainable orthogonal output map gives
-rotated Factor a larger gain than Native Factor. Rotated Factor improves
-in both executions, but this gain difference was not re-established in the
-same-seed repeat. A prespecified reconstruction diagnostic did not establish
-the predicted ranking of post-training Native--Rotated score differences
-across eight tested rotations.
-Together, these findings motivate reporting absolute performance, signed
-within-head score differences and their interaction under explicit training budgets.
+[\result{p192_pair_interactionLo}, \result{p192_pair_interactionHi}],
+with uncertainty conditional on the fitted models, rotations and inference
+seed. The interaction remains positive after doubling the update budget
+and in a separate cohort with three new training seeds and three paired
+inference seeds. OpenFold's Fresh96 interaction remains unestablished.
+With MSA inputs, Factor improves over matched unadapted Protenix models
+at 32- and 256-row caps, with no established gain at 512 rows or full MSA.
+A retrospective eight-target CASP16 subset supports a gain at 32 rows;
+full-MSA baseline means remain higher. Compensation and reconstruction
+studies leave the mechanism unresolved, and a gradient-based prediction of
+new rotations' effects fails its prespecified test. These findings support evaluating
+heads and injection schedules by absolute validation quality under the
+intended MSA inputs and explicit training budgets.
 \end{abstract}

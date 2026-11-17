@@ -1,0 +1,70 @@
+\subsection{Fixed MSA adapters on a retrospective CASP16 subset}
+\label{app:casp16}
+
+We evaluated the existing Protenix Mini-default v0.5.0 MSA32 and MSA256
+Factor/G+ checkpoints, with three training seeds per head and cap and no
+retraining. Matched native baselines used caps of 32 and 256 or full MSA.
+All conditions used three paired inference seeds, four recycle passes,
+five diffusion steps, one structure per seed and target, FP32 and no templates.
+The 15 model/condition entries gave 1,125 predictions over 25 targets.
+
+\paragraph{Selection and scope.}
+We screened the existing official CASP16.T1 sequence catalog for lengths
+128--384, standard amino acids, exact reference sequence/residue-number
+agreement and at least 80\% C$\alpha$ reference coverage. A global BLOSUM62
+alignment with gap-open $-10$ and extension $-0.5$ excluded matches to
+Train384 or Dev8 with at least 30\% identity and 80\% coverage of both
+sequences. Of 31 length/alphabet-eligible targets, four failed reference
+coverage and two failed the homology screen. Selection used no model scores.
+The primary subset contained eight official A1 targets without component
+suffixes: T1207, T1231, T1246, T1266, T1276, T1278, T1280 and T1299.
+Only the target protein, MSA and adapter features were supplied, including
+when the experimental context contained DNA or ligands. The other 17
+targets comprised 12 complex components and five homooligomer/other chains;
+their scores remain descriptive and are not pooled into the primary subset.
+This retrospective, length-restricted evaluation neither represents all
+CASP16 targets nor isolates foundation-model pretraining or historical MSA
+database exposure. It is not a blind CASP benchmark.
+
+\paragraph{Endpoints and uncertainty.}
+The two co-primary endpoints were Factor-minus-matched-baseline C$\alpha$
+pair-lDDT at the two caps. After averaging training and paired inference
+seeds within each of the eight targets, 20,000 paired target-bootstrap
+draws provided Bonferroni 97.5\% intervals for these two gains. Intervals
+condition on the fixed models and inference seeds; eight targets limit
+precision. Other contrasts and metrics use unadjusted 95\% intervals.
+MSA assembly retained the original query row and at most 31 or 255 source
+sequences; recorded actual depths, rather than caps, describe each input.
+Baseline and adapter conditions shared the same processed MSA inputs.
+
+\begin{table}[!htbp]\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{CASP16 primary subset ($N=8$), C$\alpha$ pair-lDDT. $B$: matched
+unadapted Mini-default; $F/G^+$: fixed Native heads. The two $F-B$ intervals
+are Bonferroni 97.5\%; $F-G^+$ intervals are unadjusted 95\%. Full MSA is
+a descriptive native reference, with no full-MSA adapter evaluated here.}
+\label{tab:casp16_pair}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+MSA input & $B$ & $F$ & $G^+$ & $F-B$ & $F-G^+$ \\\midrule
+\rebuttalCaspPairRows
+\bottomrule\end{tabular}\end{table}
+
+The 32-row Factor gain passes the prespecified correction; the 256-row
+gain does not. G+ also gains at 32 rows under its unadjusted secondary
+interval. Neither cap establishes Factor superiority over G+, and the
+full-MSA baseline has the highest mean. These findings support capped-MSA
+adaptation on this subset without establishing a unique Factor benefit.
+
+\begin{table}[!htbp]\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Secondary CASP16 metrics on the same eight primary targets.
+All contrast intervals are unadjusted 95\% target-bootstrap intervals.}
+\label{tab:casp16_other}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+MSA input & $B$ & $F$ & $G^+$ & $F-B$ & $F-G^+$ \\\midrule
+\multicolumn{6}{@{}l}{\emph{Residue-average C$\alpha$ lDDT}} \\
+\rebuttalCaspResidueRows
+\midrule
+\multicolumn{6}{@{}l}{\emph{TM-score, normalized by full target length}} \\
+\rebuttalCaspTmRows
+\bottomrule\end{tabular}\end{table}

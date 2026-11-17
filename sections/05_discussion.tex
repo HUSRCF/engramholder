@@ -1,34 +1,36 @@
 \section{Discussion and limitations}
 \label{sec:discussion}
-For the fixed Protenix/ESMC recipe, the interaction remains positive at
-both tested budgets. In the OpenFold R1 schedule study, First-only has
-the largest interaction and lowest absolute scores. These results
-motivate joint reporting of $\Psi$, absolute quality and both within-head
-differences under explicit training budgets.
+The Protenix interaction persists at both tested budgets and across the
+additional training and inference seeds. Its magnitude does not select
+the best head or schedule. The MSA studies instead support testing adapters
+under the intended input depth and selecting head and schedule by absolute
+validation quality with comparable tuning budgets. Gains under artificial
+MSA caps do not establish a universal depth threshold or a replacement
+for full-MSA prediction.
 
-In OpenFold, compensation improves rotated Factor in both executions,
-but its additional gain over Native is not re-established in the repeat.
-The reconstruction and residual-anchor tests also fail to establish their
-predicted effects
-(Appendices~\ref{app:prediction_e1} and~\ref{app:anchor_intervention}).
-Output freedom and joint optimization remain coupled, and schedule
-retraining changes training and inference together.
+The compensation, reconstruction, residual-anchor and new rotation
+prediction tests do not validate a mechanism for the interaction
+(Appendices~\ref{app:prediction_e1}, \ref{app:anchor_intervention}
+and~\ref{app:rotation_prediction}). G+'s function-class closure does not
+make AdamW rotation-equivariant; the heads also differ in computation and
+parameter sharing. Equal update counts establish neither equal compute
+nor convergence, and schedule retraining changes training and inference together.
 
 On 24 observed Protenix targets, the native residual source retains an
 advantage at matched global norms (Appendix~\ref{app:norm_cross}).
 This source contrast includes learned content and relative pair/channel
 magnitudes, so it does not isolate a causal effect of channel orientation.
 
-Target intervals condition on fitted models and rotations, excluding
-variability across new training runs. The same-seed repeat adds no
-independent seeds or retrained no-$C$ controls; the two executions are not
-pooled. Different significance outcomes do not establish different
-population effects between executions. There is no joint multiplicity
-correction across follow-up studies; the OpenFold feature study retains
-its prespecified Holm correction of $p$ values.
+Target intervals condition on fitted models; exploratory seed-resampling
+intervals use only three new training seeds. The selected recipe and fixed
+or restricted rotations limit generalization. There is no joint
+multiplicity correction across follow-up studies; study-specific corrections
+are reported separately.
 
-AtlasFold showed no established adaptation benefit. Limited budgets, one
-inference sample, differing interfaces, losses and backends, and incomplete
-exposure records restrict generalization. Sequence screening establishes
-neither family nor foundation-model pretraining isolation. Gaps to native
-single-sequence systems limit deployment claims.
+AtlasFold showed no established adaptation benefit. The original Protenix
+evaluation used one inference sample per target; the additional training
+cohort used three paired inference seeds. Differing interfaces, losses and
+backends restrict cross-predictor interpretation. CASP16 covers eight primary targets,
+with no foundation-model or historical-MSA exposure isolation; it is not
+a comprehensive CASP benchmark. Sequence screening does not establish
+family independence. Higher full-MSA baseline scores limit deployment claims.
